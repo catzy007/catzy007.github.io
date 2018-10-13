@@ -46,7 +46,7 @@
 			background-color: #00BFFF;
 		}
 		.header a:hover, .ddown:hover .dbtn {
-			background-color: #1E90FF;
+			background-color: #BAE1F2;
 		}
 		.ddown-content {
 			display: none;
@@ -195,7 +195,7 @@
     <script type="text/babel">
 	function tick() {
 		const element = (
-			<p>Current Time Is {new Date().toLocaleTimeString()}</p>
+			<p>Current Time Is {new Date().toLocaleTimeString('en-US', { hour12: false })}</p>
 		);
 		ReactDOM.render(element,document.getElementById('clock'));
 	}
