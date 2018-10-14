@@ -10,104 +10,14 @@
 	<script src="https://unpkg.com/react@15/dist/react.min.js"></script>
 	<script src="https://unpkg.com/react-dom@15/dist/react-dom.min.js"></script>
 	<script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
-	<style>
-		body {
-			background-color: #5f5f5f;
-		}
-		img {
-			width:40%;
-			height:auto;
-		}
-		.header {
-			width: 100%;
-			overflow: hidden;
-			background-color: #00BFFF;
-			font-family: Arial;
-		}
-		.header a {
-			float: left;
-			font-size: 16;
-			color: white;
-			text-align: center;
-			padding: 14 16;
-			text-decoration: none;
-		}
-		.ddown {
-			float: left;
-			overflow: hidden;
-		}
-		.ddown .dbtn {
-			font-family: Arial;
-			font-size: 16;    
-			border: none;
-			outline: none;
-			color: white;
-			padding: 14 16;
-			background-color: #00BFFF;
-		}
-		.header a:hover, .ddown:hover .dbtn {
-			background-color: #BAE1F2;
-		}
-		.ddown-content {
-			display: none;
-			position: absolute;
-			background-color: #FFFFFF;
-			min-width: 160;
-			box-shadow: 1px 1px 4px #DDDDDD;
-			z-index: 1;
-		}
-		.ddown-content a {
-			float: none;
-			color: black;
-			padding: 12 16;
-			text-decoration: none;
-			display: block;
-			text-align: left;
-		}
-		.ddown-content a:hover {
-			background-color: #DDDDDD;
-		}
-		.ddown:hover .ddown-content {
-			display: block;
-		}
-		.container {
-			margin: auto;
-			background-color: #FFFFFF;
-			max-width: 90%;
-			min-height: 750px;
-			padding: 5%;
-		}
-		.footer {
-			width: 100%;
-			overflow: hidden;
-			background-color: #00BFFF;
-			font-family: Arial;
-			text-align: center;
-			padding: 14 0 0 0;
-		}
-		.clock{
-			display: block;
-			margin: auto;
-			width: 50%;
-			color: white;
-			font-size: 16;
-		}
-		.footer a {
-			display: block;
-			margin: auto;
-			width: 50%;
-			color: white;
-			font-size: 16;
-			padding: 14 16;
-		}
-	</style>
+	<!-- mycss -->
+	<link rel="stylesheet" href="./style.css">
 </head>
 <body>
 	<!-- BEGIN TOP NAVIGATION MENU -->
 	<div class="navbar-fixed-top">
 		<div class="header">
 			<a href='./'>Home</a>
-			<a href='./p/index.html'>Index</a>
 			<div class='ddown'>
 				<button class='dbtn'>Contact</button>
 				<div class='ddown-content'>
@@ -117,24 +27,31 @@
 					<a href='https://github.com/catzy007' target='_blank'>GitHub</a>
 				</div>
 			</div> 
-			<a href='./p/about.html'>About</a>
+			<a href='./page/about.html'>About</a>
+			<div class='ddown dusr'>
+				<button class='dbtn'>My Account <span class="glyphicon glyphicon-user myuser"></span></button>
+				<div class='ddown-content'>
+					<a href='./page/profile.html'>Profile</a>
+					<a href='#'>Logout</a>
+				</div>
+			</div> 
 		</div>
 	</div>
 	<!-- END TOP NAVIGATION MENU -->
 	
 	<!-- BEGIN CONTAINER AND CONTENT -->
-	<div class="container">
+	<div class="container mycontainer">
 		<div class="row">
-			<div class="col-sm-4" style="cursor: pointer;" onclick="window.location='./product';">
+			<div class="col-sm-4" style="cursor: pointer;" onclick="window.location='./item/item1.html';">
 				<img src="img/img1.jpg">
-				<h3>Teori & Konsep IPV6 Miktorik & CISCO</h3>
+				<h3>Teori & Konsep IPV6 Mikrotik & CISCO</h3>
 				<p>Terdiri dari 221 halaman
 				Karya Pesantren Networkers IDN
 				Bahasa Indonesia
 				Soft Cover
 				Cetakan Terbaru Maret 2017</p>
 			</div>
-			<div class="col-sm-4" style="cursor: pointer;" onclick="window.location='./product';">
+			<div class="col-sm-4" style="cursor: pointer;" onclick="window.location='./item/item2.html';">
 				<img src="img/img2.jpg">
 				<h3>RedHat Enterprise Server</h3>
 				<p>Terdiri dari 221 halaman
@@ -143,7 +60,7 @@
 				Soft Cover
 				Cetakan Terbaru Maret 2017</p>
 			</div>
-			<div class="col-sm-4" style="cursor: pointer;" onclick="window.location='./product';">
+			<div class="col-sm-4" style="cursor: pointer;" onclick="window.location='./item/item3.html';">
 				<img src="img/img3.jpg">
 				<h3>Superlab Mikrotik</h3>        
 				<p>Terdiri dari 471 halaman
@@ -154,7 +71,7 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-sm-4" style="cursor: pointer;" onclick="window.location='./product';">
+			<div class="col-sm-4" style="cursor: pointer;" onclick="window.location='./item/item4.html';">
 				<img src="img/img4.jpeg">
 				<h3>VPN Cisco & Mikrotik</h3>        
 				<p>Terdiri dari 422 lembar
@@ -164,7 +81,7 @@
 				Soft Cover
 				Cetakan Terbaru Mei 2017</p>
 			</div>
-			<div class="col-sm-4" style="cursor: pointer;" onclick="window.location='./product';">
+			<div class="col-sm-4" style="cursor: pointer;" onclick="window.location='./item/item5.html';">
 				<img src="img/img5.jpg">
 				<h3>Cloud Administration Openstack</h3>        
 				<p>Terdiri dari 210 halaman
@@ -173,7 +90,7 @@
 				Soft Cover
 				Cetakan Terbaru Maret 2017</p>
 			</div>
-			<div class="col-sm-4" style="cursor: pointer;" onclick="window.location='./product';">
+			<div class="col-sm-4" style="cursor: pointer;" onclick="window.location='./item/item6.html';">
 				<img src="img/img6.jpeg">
 				<h3>Operation & Administration Docker</h3>        
 				<p>Terdiri dari 181 lembar
