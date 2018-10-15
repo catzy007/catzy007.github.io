@@ -41,7 +41,54 @@
 	
 	<!-- BEGIN CONTAINER AND CONTENT -->
 	<div class="container mycontainer">
-		<p>Profile</p>
+		<div class="col-sm-3">
+			<br><br>
+			<span class="glyphicon glyphicon-user myprofile"></span>
+		</div>
+		<div class="col-sm-9">
+			<h3>Data Profil</h3>
+			<div class="row">
+				<div class="col-sm-3">
+					<p>Email</p>
+				</div>
+				<div class="col-sm-6">
+					<p>user@mail.com</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-3">
+					<p>Nama Lengkap</p>
+				</div>
+				<div class="col-sm-6">
+					<p>user name</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-3">
+					<p>Telepon</p>
+				</div>
+				<div class="col-sm-6">
+					<p>081234567890</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-3">
+					<p>Tanggal Lahir</p>
+				</div>
+				<div class="col-sm-6">
+					<input id="date2" type="date" name="date2" value="1999-11-15">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-3">
+					<p>Jenis Kelamin</p>
+				</div>
+				<div class="col-sm-6">
+					<label class="radio-inline"><input type="radio" name="optradio" checked>Pria</label>
+					<label class="radio-inline"><input type="radio" name="optradio">Wanita</label>
+				</div>
+			</div>
+		</div>
 	</div>
 	<!-- END CONTAINER AND CONTENT -->
     
@@ -60,5 +107,51 @@
 	}
 	setInterval(tick, 1000);
     </script>
+    <script>
+	yepnope({ // or Modernizr.load
+		test: Modernizr.inputtypes.date,
+		nope: [
+			'https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js',
+			'https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.css',
+			'https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.structure.min.css',
+			'https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.theme.min.css',
+		],
+		callback:function (url) {
+			if(url === 'https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js') {
+				var idx=0;
+				$('input[type="date"]').each( function() {
+					var _this=$(this),
+						prefix='alt'+ String(idx++) + '_',
+						_val=_this.val();
+					_this
+					.attr('placeholder', 'gg/mm/aaaa')
+					.attr('autocomplete', 'off')
+					.prop('readonly', true)
+					.after('<input type="text" class="altfield" id="' + prefix + _this.attr('id')  + '" name="' + _this.attr('name') + '" value="' + _val + '">')
+					.removeAttr('name')
+					.val('')
+					.datepicker({
+						altField: '#'+ prefix + _this.attr('id'),
+						dateFormat: 'dd/mm/yy',
+						altFormat: 'yy-mm-dd'
+					});
+					if(_val) {
+						_this.datepicker('setDate', $.datepicker.parseDate('yy-mm-dd', _val) );
+					};
+				});
+				// min attribute
+				$('input[type="date"][min]').each(function() {
+					var _this=$(this);
+					_this.datepicker( "option", "minDate", $.datepicker.parseDate('yy-mm-dd', _this.attr('min')));
+				});
+				// max attribute
+				$('input[type="date"][max]').each(function() {
+					var _this=$(this);
+					_this.datepicker( "option", "maxDate", $.datepicker.parseDate('yy-mm-dd', _this.attr('max')));
+				});
+			}
+		}
+	}); // end Modernizr.load
+	</script>
 </body>
 </html>
