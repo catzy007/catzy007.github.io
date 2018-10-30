@@ -1,0 +1,123 @@
+<html>
+<meta charset="UTF-8"> 
+<head>
+	<title>My Book</title>
+	<!-- bootstrap 3 -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<!-- react -->
+	<script src="https://unpkg.com/react@15/dist/react.min.js"></script>
+	<script src="https://unpkg.com/react-dom@15/dist/react-dom.min.js"></script>
+	<script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+	<!-- mycss -->
+	<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+	<!-- BEGIN TOP NAVIGATION MENU -->
+	<div class="navbar-fixed-top">
+		<div class="header">
+			<a href='./'>Home</a>
+			<div class='ddown'>
+				<button class='dbtn'>Contact</button>
+				<div class='ddown-content'>
+					<a href='https://twitter.com/catzymbs' target='_blank'>Twitter</a>
+					<a href='http://www.facebook.com/catzy.mbs' target='_blank'>Facebook</a>
+					<a href='http://steamcommunity.com/id/catzy007' target='_blank'>Steam</a>
+					<a href='https://github.com/catzy007' target='_blank'>GitHub</a>
+				</div>
+			</div> 
+			<a href='./page/about.html'>About</a>
+			<div class='ddown dusr'>
+				<button class='dbtn'>My Account <span class="glyphicon glyphicon-user myuser"></span></button>
+				<div class='ddown-content'>
+					<a href='./page/profile.html'>Profile</a>
+					<a href='#'>Logout</a>
+				</div>
+			</div> 
+		</div>
+	</div>
+	<!-- END TOP NAVIGATION MENU -->
+	
+	<!-- BEGIN CONTAINER AND CONTENT -->
+	<div class="container mycontainer">
+		<div class="row">
+			<div class="col-sm-4" style="cursor: pointer;" onclick="window.location='./item/item1.html';">
+				<img src="img/img1.jpg">
+				<h3>Teori & Konsep IPV6 Mikrotik & CISCO</h3>
+				<p>Terdiri dari 221 halaman
+				Karya Pesantren Networkers IDN
+				Bahasa Indonesia
+				Soft Cover
+				Cetakan Terbaru Maret 2017</p>
+			</div>
+			<div class="col-sm-4" style="cursor: pointer;" onclick="window.location='./item/item2.html';">
+				<img src="img/img2.jpg">
+				<h3>RedHat Enterprise Server</h3>
+				<p>Terdiri dari 221 halaman
+				Karya Pesantren Networkers IDN
+				Bahasa Indonesia
+				Soft Cover
+				Cetakan Terbaru Maret 2017</p>
+			</div>
+			<div class="col-sm-4" style="cursor: pointer;" onclick="window.location='./item/item3.html';">
+				<img src="img/img3.jpg">
+				<h3>Superlab Mikrotik</h3>        
+				<p>Terdiri dari 471 halaman
+				Karya Pesantren Networkers IDN
+				Bahasa Indonesia
+				Soft Cover
+				Cetakan Terbaru Mei 2017</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-4" style="cursor: pointer;" onclick="window.location='./item/item4.html';">
+				<img src="img/img4.jpeg">
+				<h3>VPN Cisco & Mikrotik</h3>        
+				<p>Terdiri dari 422 lembar
+				Karya Pesantren Networkers IDN
+				Bahasa Indonesia
+				Berat 1 Kg
+				Soft Cover
+				Cetakan Terbaru Mei 2017</p>
+			</div>
+			<div class="col-sm-4" style="cursor: pointer;" onclick="window.location='./item/item5.html';">
+				<img src="img/img5.jpg">
+				<h3>Cloud Administration Openstack</h3>        
+				<p>Terdiri dari 210 halaman
+				Karya Pesantren Networkers IDN
+				Bahasa Indonesia
+				Soft Cover
+				Cetakan Terbaru Maret 2017</p>
+			</div>
+			<div class="col-sm-4" style="cursor: pointer;" onclick="window.location='./item/item6.html';">
+				<img src="img/img6.jpeg">
+				<h3>Operation & Administration Docker</h3>        
+				<p>Terdiri dari 181 lembar
+				Karya Pesantren Networkers IDN
+				Bahasa Indonesia
+				Soft Cover
+				Cetakan Terbaru Maret 2017</p>
+			</div>
+		</div>	
+	</div>
+	<!-- END CONTAINER AND CONTENT -->
+    
+	<!-- BEGIN Footer -->
+		<div class="footer">
+			<div class="clock" id="clock"></div>
+		</div>
+	<!-- END Footer -->
+	
+    <script type="text/babel">
+	function tick() {
+		const element = (
+			<p>Current Time Is {new Date().toLocaleTimeString('en-US', { hour12: false })}</p>
+		);
+		ReactDOM.render(element,document.getElementById('clock'));
+	}
+	setInterval(tick, 1000);
+    </script>
+</body>
+</html>
+
