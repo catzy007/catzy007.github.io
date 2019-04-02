@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Metode Inferensi</title>
+	<style>
+		td{
+			vertical-align: top;
+		}
+		.tablefix{
+			width: 100%;
+			display: table;
+			table-layout:fixed; 
+		}
+	</style>
+</head>
+	
+<body>
+	<h2>Metode Inferensi</h2>
+	<table class="tablefix">
+		<tr><td>
+			<table>
+				<tr>
+					<td><a>Pilih Mode</a></td>
+					<td><a> : </a></td>
+					<td>
+						<select id="IptMode">
+							<option value="1" selected>Modus Ponens</option>
+							<option value="2">Modus Tollens</option>
+							<option value="3">Equivalence Elimination</option>
+							<option value="4">Silogisme Disjungtif</option>
+							<option value="5">Silogisme Hipotesis</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td><a>Premis 1</a></td>
+					<td><a> : </a></td>
+					<td><input type="text" id="IptPremis1"></td>
+				</tr>
+				<tr>
+					<td><a>Premis 2</a></td>
+					<td><a> : </a></td>
+					<td><input type="text" id="IptPremis2"></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td><input type="button" onclick="myFunction()" value="Submit"></td>
+				</tr>
+				<tr>
+					<td><br><a>Premis 1</a></td>
+					<td><br><a> : </a></td>
+					<td><br><a id="premis1"></a></td>
+				</tr>
+				<tr>
+					<td><a>Premis 2</a></td>
+					<td><a> : </a></td>
+					<td><a id="premis2"></a></td>
+				</tr>
+				<tr>
+					<td><a>Konklusi</a></td>
+					<td><a> : </a></td>
+					<td><a id="konklusi"></a></td>
+				</tr>
+				<tr>
+					<td colspan="3"><p id="errMsg"> </p></td>
+				</tr>
+			</table>
+		</td>
+	
+		<td>
+			<table>
+				<tr>
+					<td colspan="3"><br><a>Modus Ponens</a></td>
+				</tr>
+				<tr>
+					<td><a>P1</a></td>
+					<td><a> : </a></td>
+					<td><a>Jika Toni mandi maka saya pergi kuliah</a></td>
+				</tr>
+				<tr>
+					<td><a>P2</a></td>
+					<td><a> : </a></td>
+					<td><a>Toni mandi</a></td>
+				</tr>
+				<tr>
+					<td><a>K</a></td>
+					<td><a> : </a></td>
+					<td><a>Saya pergi kuliah</a></td>
+				</tr>
+				
+				<tr>
+					<td colspan="3"><br><a>Modus Tollens</a></td>
+				</tr>
+				<tr>
+					<td><a>P1</a></td>
+					<td><a> : </a></td>
+					<td><a>Jika Toni mandi maka saya pergi kuliah</a></td>
+				</tr>
+				<tr>
+					<td><a>P2</a></td>
+					<td><a> : </a></td>
+					<td><a>Saya tidak pergi kuliah</a></td>
+				</tr>
+				<tr>
+					<td><a>K</a></td>
+					<td><a> : </a></td>
+					<td><a>Toni tidak mandi</a></td>
+				</tr>
+				
+				<tr>
+					<td colspan="3"><br><a>Equivalence Elimination</a></td>
+				</tr>
+				<tr>
+					<td><a>P1</a></td>
+					<td><a> : </a></td>
+					<td><a>Toni mandi jika dan hanya jika Ia pergi ke pasar</a></td>
+				</tr>
+				<tr>
+					<td><a>P2</a></td>
+					<td><a> : </a></td>
+					<td><a>Jika Toni mandi maka ia pergi ke pasar</a></td>
+				</tr>
+				<tr>
+					<td><a>K</a></td>
+					<td><a> : </a></td>
+					<td><a>Jika Ia pergi ke pasar maka Toni mandi</a></td>
+				</tr>
+				
+				<tr>
+					<td colspan="3"><br><a>Silogisme Disjungtif</a></td>
+				</tr>
+				<tr>
+					<td><a>P1</a></td>
+					<td><a> : </a></td>
+					<td><a>Budi membeli es krim atau Bapak ke kantor</a></td>
+				</tr>
+				<tr>
+					<td><a>P2</a></td>
+					<td><a> : </a></td>
+					<td><a>Budi tidak membeli es krim</a></td>
+				</tr>
+				<tr>
+					<td><a>K</a></td>
+					<td><a> : </a></td>
+					<td><a>Bapak ke kantor</a></td>
+				</tr>
+				
+				<tr>
+					<td colspan="3"><br><a>Silogisme Hipotesis</a></td>
+				</tr>
+				<tr>
+					<td><a>P1</a></td>
+					<td><a> : </a></td>
+					<td><a>Jika Toni mandi maka saya pergi kuliah</a></td>
+				</tr>
+				<tr>
+					<td><a>P2</a></td>
+					<td><a> : </a></td>
+					<td><a>Jika saya pergi kuliah maka Jono tidur</a></td>
+				</tr>
+				<tr>
+					<td><a>K</a></td>
+					<td><a> : </a></td>
+					<td><a>Jika Toni mandi maka Jono tidur</a></td>
+				</tr>
+			</table>
+		</td></tr>
+	</table>
+
+	<script>
+	function myFunction() {
+		var str1 = document.getElementById('IptPremis1').value.toLowerCase();
+		var str2 = document.getElementById('IptPremis2').value.toLowerCase();
+		var mode = document.getElementById('IptMode').value;
+		
+		if(str1.length == 0 || str2.length == 0 ){
+			document.getElementById("errMsg").innerHTML = "Form tidak boleh kosong!";
+		}else{
+			document.getElementById("errMsg").innerHTML = " ";
+		}
+		
+		if(mode == 1 ){
+			modusPonens(str1, str2);
+		}else if(mode == 2){
+			modusTollens(str1, str2);
+		}else if(mode == 3){
+			equElim(str1, str2);
+		}else if(mode == 4){	
+			siloDisjungtif(str1, str2);
+		}else if(mode == 5){
+			siloHipotesis(str1, str2);
+		}else if(mode > 5){
+			document.getElementById("errMsg").innerHTML = "Unknown Error Occured!";
+		}
+	}
+	</script>
+
+	<!-- kumpulan function ========================================= -->
+	<script src="globalfunction.js"></script>
+
+	<!-- algoritma dibawah adalah modus Ponens ===================== -->
+	<script src="modusponens.js"></script>
+
+	<!-- algoritma dibawah adalah modus Tollens ==================== -->
+	<script src="modustollens.js"></script>
+	
+	<!-- algoritma dibawah adalah Equivalence Elemination ========== -->
+	<script src="equivalenceelimination.js"></script>
+
+	<!-- algoritma dibawah adalah silogisme disjungtif ============= -->
+	<script src="silogismedisjungtif.js"></script>
+	
+	<!-- algoritma dibawah adalah silogisme hipotesis ============== -->
+	<script src="silogismehipotesis.js"></script>
+
+	</body>
+</html> 
+
