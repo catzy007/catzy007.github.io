@@ -3,13 +3,22 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Logika Informatika</title>
-<link rel="stylesheet" href="bootstrap.min.css">
-<script src="jquery.min.js"></script>
-<script src="bootstrap.min.js"></script>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+	function show(element_id) {
+		var elements = document.getElementsByClassName('mycontainer');
+		for (var i = 0, length = elements.length; i < length; i++) {
+			elements[i].style.display = 'none';
+		}
+		document.getElementById(element_id).style.display = 'block';
+		//window.scrollTo(0, 0); 
+	}
+</script>
 <style>
     body{
-        background-image: url("background.jpg");
-        
+        background-image: url("assets/background.jpg");
     }
     .mycontainer{
         position: absolute;
@@ -20,12 +29,11 @@
 		margin-left:auto;
 		margin-right:auto;
 		background-color: rgba(253, 253, 253, 0.9);
-        height: 60%;
+        //height: 100%;
         min-height: 768px;
         width: 90%;
         border:  2px solid #ccc;
         border-radius: 10px;
-
     }
 </style>
 </head>
@@ -33,37 +41,65 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-sm-12">
-                <div class="mycontainer">        
-                        <form action="#">
-                            <div class="form-group">
-                                    <tr>
-                                        <label for="sel1">Pilih mode:</label>
-                                            <td>
-                                                <select class="form-control" id="IptMode">
-                                                    <option value="1" selected>Modus Ponens</option>
-                                                    <option value="2">Modus Tollens</option>
-                                                    <option value="3">Equivalence Elimination</option>
-                                                    <option value="4">Silogisme Disjungtif</option>
-                                                    <option value="5">Silogisme Hipotesis</option>
-                                                </select>
-                                            </td>
-                                        </tr>
-                                        <br>
-                              <label for="premis1">Premis 1:</label>
-                              <input type="text" class="form-control"  id="IptPremis1">
-                            </div>
-                            <div class="form-group">
-                              <label for="premis2">Premis 2:</label>
-                              <input type="text" class="form-control" id="IptPremis2">
-                            </div>
-                            <button type="submit" class="btn btn-success btn-block" onclick="myFunction()" value="Submit">Submit</button>
-                            <br>
-                            <p>premis 1 : <a id="premis1"></a></p>
-                            <p>premis 2 : <a id="premis2"></a></p>
-                            <p>kesimpulan : <a id="konklusi"></a></p>
-                            <p><a id="errMsg"></a></p>
-                          </form> 
-                </div>
+			<div id="main" class="mycontainer">
+				<div class="form-group">
+					<p><strong>Pilih mode :</strong></p>
+					<select class="form-control" id="IptMode">
+						<option value="1" selected>Modus Ponens</option>
+						<option value="2">Modus Tollens</option>
+						<option value="3">Equivalence Elimination</option>
+						<option value="4">Silogisme Disjungtif</option>
+						<option value="5">Silogisme Hipotesis</option>
+					</select>
+					<br>
+					<p><strong>Premis 1 :</strong></p>
+					<input type="text" class="form-control" id="IptPremis1">
+					<br>
+					<p><strong>Premis 2 :</strong></p>
+					<input type="text" class="form-control" id="IptPremis2">
+					<br>
+					<button type="submit" class="btn btn-success btn-block" onclick="myFunction()" value="Submit">Submit</button>
+				</div>
+				<br>
+				<p>premis 1 : <a id="premis1"></a></p>
+				<p>premis 2 : <a id="premis2"></a></p>
+				<p>kesimpulan : <a id="konklusi"></a></p>
+				<br>
+				<div class="col-sm-6">
+					<a id="errMsg"></a>
+				</div>
+				<div class="col-sm-6 text-right">
+					<a onclick="return show('info');">Info</a>
+				</div>
+				
+			</div>
+			
+			<div id="info" class="mycontainer" style="display:none" onclick="return show('main');">
+				<p><strong>Modus Ponens</strong></p>
+				<p>P1 : Jika Toni mandi maka saya pergi kuliah</p>
+				<p>P2 : Toni mandi</p>
+				<p>K : Saya pergi kuliah</p>
+				<br>
+				<p><strong>Modus Tollens</strong></p>
+				<p>P1 : Jika Toni mandi maka saya pergi kuliah</p>
+				<p>P2 : Saya tidak pergi kuliah</p>
+				<p>K : Toni tidak mandi</p>
+				<br>
+				<p><strong>Equivalence Elimination</strong></p>
+				<p>P1 : Toni mandi jika dan hanya jika Ia pergi ke pasar</p>
+				<p>P2 : Jika Toni mandi maka ia pergi ke pasar</p>
+				<p>K : Jika Ia pergi ke pasar maka Toni mandi</p>
+				<br>
+				<p><strong>Silogisme Disjungtif</strong></p>
+				<p>P1 : Budi membeli es krim atau Bapak ke kantor</p>
+				<p>P2 : Budi tidak membeli es krim</p>
+				<p>K : Bapak ke kantor</p>
+				<br>
+				<p><strong>Silogisme Hipotesis</strong></p>
+				<p>P1 : Jika Toni mandi maka saya pergi kuliah</p>
+				<p>P2 : Jika saya pergi kuliah maka Jono tidur</p>
+				<p>K : Jika Toni mandi maka Jono tidur</p>
+			</div>
         </div>
     </div>
 </div>
@@ -89,28 +125,28 @@
                 siloDisjungtif(str1, str2);
             }else if(mode == 5){
                 siloHipotesis(str1, str2);
-            }else if(mode > 5){
+            }else if(mode > 5 || mode < 1){
                 document.getElementById("errMsg").innerHTML = "Unknown Error Occured!";
             }
         }
         </script>
     
         <!-- kumpulan function ========================================= -->
-        <script src="globalfunction.js"></script>
+        <script src="js/globalfunction.js"></script>
     
         <!-- algoritma dibawah adalah modus Ponens ===================== -->
-        <script src="modusponens.js"></script>
+        <script src="js/modusponens.js"></script>
     
         <!-- algoritma dibawah adalah modus Tollens ==================== -->
-        <script src="modustollens.js"></script>
+        <script src="js/modustollens.js"></script>
         
         <!-- algoritma dibawah adalah Equivalence Elemination ========== -->
-        <script src="equivalenceelimination.js"></script>
+        <script src="js/equivalenceelimination.js"></script>
     
         <!-- algoritma dibawah adalah silogisme disjungtif ============= -->
-        <script src="silogismedisjungtif.js"></script>
+        <script src="js/silogismedisjungtif.js"></script>
         
         <!-- algoritma dibawah adalah silogisme hipotesis ============== -->
-        <script src="silogismehipotesis.js"></script>
+        <script src="js/silogismehipotesis.js"></script>
 </body>
 </html>
