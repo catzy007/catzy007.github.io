@@ -8,13 +8,16 @@
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script>
-	function show(element_id) {
-		var elements = document.getElementsByClassName('mycontainer');
-		for (var i = 0, length = elements.length; i < length; i++) {
-			elements[i].style.display = 'none';
+	function show(id) {
+		if (document.getElementById) {
+			var divid = document.getElementById(id);
+			var divs = document.getElementsByClassName("mycontainer");
+			for (var i = 0; i < divs.length; i = i + 1) {
+				$(divs[i]).fadeOut(1000);
+			}
+			$(divid).fadeIn(1000);
 		}
-		document.getElementById(element_id).style.display = 'block';
-		//window.scrollTo(0, 0); 
+		return false;
 	}
 </script>
 <style>
