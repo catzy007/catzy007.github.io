@@ -1,122 +1,116 @@
+<!DOCTYPE html>
 <html>
-<meta charset="UTF-8"> 
 <head>
-	<title>My Book</title>
-	<!-- bootstrap 3 -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<!-- react -->
-	<script src="https://unpkg.com/react@15/dist/react.min.js"></script>
-	<script src="https://unpkg.com/react-dom@15/dist/react-dom.min.js"></script>
-	<script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
-	<!-- mycss -->
-	<link rel="stylesheet" href="./style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Logika Informatika</title>
+<link rel="stylesheet" href="bootstrap.min.css">
+<script src="jquery.min.js"></script>
+<script src="bootstrap.min.js"></script>
+<style>
+    body{
+        background-image: url("background.jpg");
+        
+    }
+    .mycontainer{
+        position: absolute;
+		top: 50px;
+		left:0;
+		right:0;
+		padding:15%;
+		margin-left:auto;
+		margin-right:auto;
+		background-color: rgba(253, 253, 253, 0.9);
+        height: 60%;
+        min-height: 768px;
+        width: 90%;
+        border:  2px solid #ccc;
+        border-radius: 10px;
+
+    }
+</style>
 </head>
 <body>
-	<!-- BEGIN TOP NAVIGATION MENU -->
-	<div class="navbar-fixed-top">
-		<div class="header">
-			<a href='./'>Home</a>
-			<div class='ddown'>
-				<button class='dbtn'>Contact</button>
-				<div class='ddown-content'>
-					<a href='https://twitter.com/catzymbs' target='_blank'>Twitter</a>
-					<a href='http://www.facebook.com/catzy.mbs' target='_blank'>Facebook</a>
-					<a href='http://steamcommunity.com/id/catzy007' target='_blank'>Steam</a>
-					<a href='https://github.com/catzy007' target='_blank'>GitHub</a>
-				</div>
-			</div> 
-			<a href='./page/about.html'>About</a>
-			<div class='ddown dusr'>
-				<button class='dbtn'>My Account <span class="glyphicon glyphicon-user myuser"></span></button>
-				<div class='ddown-content'>
-					<a href='./page/profile.html'>Profile</a>
-					<a href='#'>Logout</a>
-				</div>
-			</div> 
-		</div>
-	</div>
-	<!-- END TOP NAVIGATION MENU -->
-	
-	<!-- BEGIN CONTAINER AND CONTENT -->
-	<div class="container mycontainer">
-		<div class="row">
-			<div class="col-sm-4" style="cursor: pointer;" onclick="window.location='./item/item1.html';">
-				<img src="img/img1.jpg">
-				<h3>Teori & Konsep IPV6 Mikrotik & CISCO</h3>
-				<p>Terdiri dari 221 halaman
-				Karya Pesantren Networkers IDN
-				Bahasa Indonesia
-				Soft Cover
-				Cetakan Terbaru Maret 2017</p>
-			</div>
-			<div class="col-sm-4" style="cursor: pointer;" onclick="window.location='./item/item2.html';">
-				<img src="img/img2.jpg">
-				<h3>RedHat Enterprise Server</h3>
-				<p>Terdiri dari 221 halaman
-				Karya Pesantren Networkers IDN
-				Bahasa Indonesia
-				Soft Cover
-				Cetakan Terbaru Maret 2017</p>
-			</div>
-			<div class="col-sm-4" style="cursor: pointer;" onclick="window.location='./item/item3.html';">
-				<img src="img/img3.jpg">
-				<h3>Superlab Mikrotik</h3>        
-				<p>Terdiri dari 471 halaman
-				Karya Pesantren Networkers IDN
-				Bahasa Indonesia
-				Soft Cover
-				Cetakan Terbaru Mei 2017</p>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-sm-4" style="cursor: pointer;" onclick="window.location='./item/item4.html';">
-				<img src="img/img4.jpeg">
-				<h3>VPN Cisco & Mikrotik</h3>        
-				<p>Terdiri dari 422 lembar
-				Karya Pesantren Networkers IDN
-				Bahasa Indonesia
-				Berat 1 Kg
-				Soft Cover
-				Cetakan Terbaru Mei 2017</p>
-			</div>
-			<div class="col-sm-4" style="cursor: pointer;" onclick="window.location='./item/item5.html';">
-				<img src="img/img5.jpg">
-				<h3>Cloud Administration Openstack</h3>        
-				<p>Terdiri dari 210 halaman
-				Karya Pesantren Networkers IDN
-				Bahasa Indonesia
-				Soft Cover
-				Cetakan Terbaru Maret 2017</p>
-			</div>
-			<div class="col-sm-4" style="cursor: pointer;" onclick="window.location='./item/item6.html';">
-				<img src="img/img6.jpeg">
-				<h3>Operation & Administration Docker</h3>        
-				<p>Terdiri dari 181 lembar
-				Karya Pesantren Networkers IDN
-				Bahasa Indonesia
-				Soft Cover
-				Cetakan Terbaru Maret 2017</p>
-			</div>
-		</div>	
-	</div>
-	<!-- END CONTAINER AND CONTENT -->
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-sm-12">
+                <div class="mycontainer">        
+                        <form action="#">
+                            <div class="form-group">
+                                    <tr>
+                                        <label for="sel1">Pilih mode:</label>
+                                            <td>
+                                                <select class="form-control" id="IptMode">
+                                                    <option value="1" selected>Modus Ponens</option>
+                                                    <option value="2">Modus Tollens</option>
+                                                    <option value="3">Equivalence Elimination</option>
+                                                    <option value="4">Silogisme Disjungtif</option>
+                                                    <option value="5">Silogisme Hipotesis</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <br>
+                              <label for="premis1">Premis 1:</label>
+                              <input type="text" class="form-control"  id="IptPremis1">
+                            </div>
+                            <div class="form-group">
+                              <label for="premis2">Premis 2:</label>
+                              <input type="text" class="form-control" id="IptPremis2">
+                            </div>
+                            <button type="submit" class="btn btn-success btn-block" onclick="myFunction()" value="Submit">Submit</button>
+                            <br>
+                            <p>premis 1 : <a id="premis1"></a></p>
+                            <p>premis 2 : <a id="premis2"></a></p>
+                            <p>kesimpulan : <a id="konklusi"></a></p>
+                            <p><a id="errMsg"></a></p>
+                          </form> 
+                </div>
+        </div>
+    </div>
+</div>
+<script>
+        function myFunction() {
+            var str1 = document.getElementById('IptPremis1').value.toLowerCase();
+            var str2 = document.getElementById('IptPremis2').value.toLowerCase();
+            var mode = document.getElementById('IptMode').value;
+            
+            if(str1.length == 0 || str2.length == 0 ){
+                document.getElementById("errMsg").innerHTML = "Form tidak boleh kosong!";
+            }else{
+                document.getElementById("errMsg").innerHTML = " ";
+            }
+            
+            if(mode == 1 ){
+                modusPonens(str1, str2);
+            }else if(mode == 2){
+                modusTollens(str1, str2);
+            }else if(mode == 3){
+                equElim(str1, str2);
+            }else if(mode == 4){	
+                siloDisjungtif(str1, str2);
+            }else if(mode == 5){
+                siloHipotesis(str1, str2);
+            }else if(mode > 5){
+                document.getElementById("errMsg").innerHTML = "Unknown Error Occured!";
+            }
+        }
+        </script>
     
-	<!-- BEGIN Footer -->
-		<div class="footer">
-			<div class="clock" id="clock"></div>
-		</div>
-	<!-- END Footer -->
-	
-    <script type="text/babel">
-	function tick() {
-		const element = (
-			<p>Current Time Is {new Date().toLocaleTimeString('en-US', { hour12: false })}</p>
-		);
-		ReactDOM.render(element,document.getElementById('clock'));
-	}
-	setInterval(tick, 1000);
-    </script>
+        <!-- kumpulan function ========================================= -->
+        <script src="globalfunction.js"></script>
+    
+        <!-- algoritma dibawah adalah modus Ponens ===================== -->
+        <script src="modusponens.js"></script>
+    
+        <!-- algoritma dibawah adalah modus Tollens ==================== -->
+        <script src="modustollens.js"></script>
+        
+        <!-- algoritma dibawah adalah Equivalence Elemination ========== -->
+        <script src="equivalenceelimination.js"></script>
+    
+        <!-- algoritma dibawah adalah silogisme disjungtif ============= -->
+        <script src="silogismedisjungtif.js"></script>
+        
+        <!-- algoritma dibawah adalah silogisme hipotesis ============== -->
+        <script src="silogismehipotesis.js"></script>
 </body>
 </html>
