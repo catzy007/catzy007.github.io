@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kalkulator Pajak Barang Impor</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <h2>Kalkulator Pajak Barang Impor</h2>
+                    <h4>HANYA UNTUK BARANG KIRIMAN MELALUI PJT/POS</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label class="font-weight-bold" for="nilBarang">Nilai Barang / Cost / FOB :</label>
+                        <input type="text" step="0.01" class="form-control" id="nilBarang" placeholder="Inputkan Nilai Barang Anda" name="nilBarang" required>
+                        <label>Nilai barang yang sebenarnya dibayar atau yang seharusnya dibayar. (Dalam USD)</label>
+                    </div>
+                    <div class="form-group">
+                        <label class="font-weight-bold" for="asrsBarang">Asuransi Barang / Insurance:</label>
+                        <input type="text" step="0.01" class="form-control" id="asrsBarang" placeholder="Inputkan Asuransi Barang Anda" name="asrsBarang" required>
+                        <label>Asuransi yang tercantum dalam polis asuransi (Dalam USD) (Jika tidak ada cek 
+                            <a href="http://bctemas.beacukai.go.id/yuk-belajar-menghitung-bea-masuk-bm-dan-pajak-dalam-rangka-impor-pdri/">
+                                http://bctemas.beacukai.go.id/yuk-belajar-menghitung-bea-masuk-bm-dan-pajak-dalam-rangka-impor-pdri/</a>)</label>
+                    </div>
+                    <div class="form-group">
+                        <label class="font-weight-bold" for="ongKirim">Ongkos Kirim / Freight :</label>
+                        <input type="text" step="0.01" class="form-control" id="ongKirim" placeholder="Inputkan Ongkos Kirim Barang" name="ongKirim" required>
+                        <label>Ongkos angkut sampai pelabuhan tujuan ditunjukan dengan B/L, AWB atau dokumen lainnya (Dalam USD) (Jika tidak ada cek 
+                                <a href="http://bctemas.beacukai.go.id/yuk-belajar-menghitung-bea-masuk-bm-dan-pajak-dalam-rangka-impor-pdri/">
+                                    http://bctemas.beacukai.go.id/yuk-belajar-menghitung-bea-masuk-bm-dan-pajak-dalam-rangka-impor-pdri/</a>)</label>
+                    </div>                        
+                    <div class="form-group">
+                        <label class="font-weight-bold" for="kursUSD">Kurs NDPBM (1 USD) :</label>
+                        <input type="text" step="0.01" class="form-control" id="kursUSD" placeholder="Inputkan Kurs NDPBM (1 USD)" name="kursUSD" required>
+                        <label>Kurs NDPBM 1 US Dollar ke Rupiah Pada Saat Ini (Dalam IDR). Silahkan Cek <a href="http://www.beacukai.go.id/kurs.html">http://www.beacukai.go.id/kurs.html</a></label>
+                    </div>
+                    <div class="form-group">
+                        <label class="font-weight-bold" for="trfBeaMsk">Tarif Bea Masuk / BM :</label>
+                        <input type="number" step="0.01" class="form-control" id="trfBeaMsk" placeholder="Inputkan Nilai Barang Anda" name="trfBeaMsk" value="7.5" required>
+                        <label>Default 7.5% (Dalam % "Persen"). Silahkan Cek <a href="http://bctemas.beacukai.go.id/btki/">http://bctemas.beacukai.go.id/btki/</a></label>
+                    </div>
+                    <div class="form-group">
+                        <label class="font-weight-bold" for="nilPpn">Nilai PPN (Bagian Dari PDRI) :</label>
+                        <input type="number" step="0.01" class="form-control" id="nilPpn" placeholder="Inputkan Nilai Barang Anda" name="nilPpn" value="10" required>
+                        <label>Default 10% (Dalam % "Persen"). Silahkan Cek <a href="http://bctemas.beacukai.go.id/btki/">http://bctemas.beacukai.go.id/btki/</a></label>
+                    </div>
+                    <div class="form-group">
+                        <label class="font-weight-bold" for="statNpwp">Status NPWP (Bagian Dari PDRI) :</label>
+                        <select class="form-control" id="statNpwp" name="statNpwp">
+                            <option>Punya NPWP PPh=10%</option>
+                            <option>Tidak Punya NPWP PPh=20%</option>
+                        </select>
+                        <label>Apakah anda memiliki NPWP? PPh Pasal 22 Impor</label>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label class="font-weight-bold" for="nilPabean">Nilai Pabean / CIF :</label>
+                        <input type="number" step="0.01" class="form-control" id="nilPabean" value="NULL" name="nilPabean" disabled>
+                        <label>Total Nilai Barang Impor ((Nilai Barang + Asuransi + Ongkos Kirim)*Kurs NDPBM) (Dalam IDR)</label>
+                    </div>
+                    <div class="form-group">
+                        <label class="font-weight-bold" for="beaMasuk">Bea Masuk / BM :</label>
+                        <input type="number" step="0.01" class="form-control" id="beaMasuk" value="NULL" name="beaMasuk" disabled>
+                        <label>Pungutan negara berdasarkan undang-undang yang dikenakan terhadap barang yang memasuki daerah pabean (Dalam IDR)</label>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="font-weight-bold" for="nilImpor">Nilai Impor :</label>
+                        <input type="number" step="0.01" class="form-control" id="nilImpor" value="NULL" name="nilImpor" disabled>
+                        <label>Nilai Pabean + Bea Masuk (Dalam IDR)</label>
+                    </div>
+                    <div class="form-group">
+                        <label class="font-weight-bold" for="hslPpn">PPN (Bagian Dari PDRI) :</label>
+                        <input type="number" step="0.01" class="form-control" id="hslPpn" value="NULL" name="hslPpn" disabled>
+                        <label>Pajak yang dikenakan atas setiap pertambahan nilai dari barang atau jasa dalam peredarannya dari produsen ke konsumen (Dalam IDR)</label>
+                    </div>
+                    <div class="form-group">
+                        <label class="font-weight-bold" for="hslPph">PPh (Bagian Dari PDRI) :</label>
+                        <input type="number" step="0.01" class="form-control" id="hslPph" value="NULL" name="hslPph" disabled>
+                        <label>Pajak yang dibebankan pada penghasilan perorangan, perusahaan atau badan hukum lainnya (Dalam IDR)</label>
+                    </div>
+                    <div class="form-group">
+                        <label class="font-weight-bold" for="hslJml">Jumlah :</label>
+                        <input type="number" step="0.01" class="form-control" id="hslJml" value="NULL" name="hslJml" disabled>
+                        <label>Kewajiban Anda (Dalam IDR) (Hitungan Ini Hanyalah Estimasi) (Belum termasuk Pajak Penjualan Barang Mewah)</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary" onclick="myFunction()">Hitung Pajak</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <h4>Ini bukanlah web official Beacukai, Silahkan Cek <a href="https://play.google.com/store/apps/details?id=id.go.beacukai.customer&hl=en">Aplikasi Official Beacukai</a></h4>
+                </div>
+            </div>
+        </div>
+        <script>
+            function myFunction() {
+                var nilBarang = document.getElementById('nilBarang').value;
+                    nilBarang = nilBarang.split('.').join('');
+                    nilBarang = nilBarang.split(',').join('.');
+                var asrsBarang = document.getElementById('asrsBarang').value;
+                    asrsBarang = asrsBarang.split('.').join('');
+                    asrsBarang = asrsBarang.split(',').join('.');
+                var ongKirim = document.getElementById('ongKirim').value;
+                    ongKirim = ongKirim.split('.').join('');
+                    ongKirim = ongKirim.split(',').join('.');
+                var kursUSD = document.getElementById('kursUSD').value;
+                    kursUSD = kursUSD.split('.').join('');
+                    kursUSD = kursUSD.split(',').join('.');
+                var trfBeaMsk = document.getElementById('trfBeaMsk').value;
+                var nilPpn = document.getElementById('nilPpn').value;
+                var statNpwp = document.getElementById('statNpwp').value;
+
+                console.log(kursUSD);
+
+                if(statNpwp == "Punya NPWP PPh=10%"){
+                    var nilPph = 10; //jika punya npwp 10%
+                }else{
+                    var nilPph = 20; //jika tak punya 20%
+                }
+
+                var nilPabean = (Number(nilBarang) + Number(asrsBarang) + Number(ongKirim)) * Number(kursUSD);
+                var beaMasuk = (Number(nilPabean) * (0.01 * Number(trfBeaMsk)));
+                var nilImpor = (Number(nilPabean) + Number(beaMasuk));
+                var hslPpn = ((Number(nilPpn) * (0.01)) * Number(nilImpor));
+                var hslPph = ((Number(nilPph) * (0.01)) * Number(nilImpor));
+                var hslJml = (Number(beaMasuk) + Number(hslPpn) + Number(hslPph));
+
+                document.getElementById("nilPabean").value = nilPabean;
+                document.getElementById("beaMasuk").value = beaMasuk;
+                document.getElementById("nilImpor").value = nilImpor;
+                document.getElementById("hslPpn").value = hslPpn;
+                document.getElementById("hslPph").value = hslPph;
+                document.getElementById("hslJml").value = hslJml;
+                
+            }
+        </script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>
