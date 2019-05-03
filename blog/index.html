@@ -66,6 +66,11 @@
 			<div id="Posts" class="col-sm-12"></div>
 		</div>
 		<div class="row">
+			<br>
+			<div id="BtnPrev" class="col-sm-6 text-left"></div>
+			<div id="BtnNext" class="col-sm-6 text-right"></div>
+		</div>
+		<div class="row">
 			<div class="col-sm-12 text-center">
 				<br>
 				<h4>This page is intended to be test page for markdown parser! <a href="https://www.umbrellafwd.tk/">https://www.umbrellafwd.tk/</a> will be migrated here!</h4>
@@ -75,25 +80,92 @@
     
     <!-- MARKDOWN PARSER SECTION -->
     <script>
-		fetch('./posts/post1.md').then(
+	//get post index
+		fetch('./posts/index.md').then(
 			function(response) {
 				if (response.status !== 200) {
 					showMarkdown('Looks like there was a problem. Status Code: ' +
 						response.status);
 					return;
 				}
-				response.text().then(text => showMarkdown(text));
-				console.log('fetch success!');
+				response.text().then(text => getPostsArray(text));
+				console.log('[INDEX] fetch success!');
 			}
 		)
 		.catch(function(err) {
 			console.log('Fetch Error :-S', err);
 		});
-        
-        function showMarkdown(markdown){
+		
+	//get post array and parse to markdown
+		function getPostsArray(text){
+			var arrPosts = text.split("\n");
+		//reverse post to show latest content
+			arrPosts.reverse(); 
+			//console.log(arrPosts);
+			
+		//get requested post from url
+			var url = window.location.hash.substr(1);
+			var hash = url.substring(url.indexOf('#')+1);
+			//console.log(hash);
+		
+		//if user request specific post
+			if(hash !== null && hash !== ''){
+			//check if post url valid
+				for(var i=0; i<arrPosts.length; i++){
+					if(hash == arrPosts[i]){
+					//set shown post
+						var post="./posts/"+hash+"/index.md";
+						//console.log(post);
+					//get post and parse to html
+						fetch(post).then(
+							function(response) {
+								if (response.status !== 200) {
+									showMarkdown('Looks like there was a problem. Status Code: ' +
+										response.status);
+									return;
+								}
+								response.text().then(text => showMarkdown(text));
+								console.log('[POST] fetch success!');
+							}
+						)
+						.catch(function(err) {
+							console.log('Fetch Error :-S', err);
+						});
+					}
+				}
+		//if no specific post requested
+			}else{
+				var post="./posts/"+arrPosts[0]+"/index.md";
+				//console.log(post);
+				fetch(post).then(
+					function(response) {
+						if (response.status !== 200) {
+							showMarkdown('Looks like there was a problem. Status Code: ' +
+								response.status,"#","#");
+							return;
+						}
+						response.text().then(text => showMarkdown(text,'#','#'+arrPosts[1]));
+						console.log('[POST] fetch success!');
+					}
+				)
+				.catch(function(err) {
+					console.log('Fetch Error :-S', err);
+				});
+			}
+		}
+		
+	//markdown parser
+        function showMarkdown(markdown,prevPost,nextPost){
 			var converter = new showdown.Converter();
 			var html = converter.makeHtml(markdown);
 			document.getElementById('Posts').innerHTML = html;
+			var BtnPrev = "<button class='btn btn-primary' onclick=\"location.href='"+prevPost+"';location.reload()\">Sebelumnya</button>";
+			var BtnNext = "<button class='btn btn-primary' onclick=\"location.href='"+nextPost+"';location.reload()\">Selanjutnya</button>"; 
+			console.log(BtnPrev);
+			console.log(BtnNext);
+			document.getElementById('BtnPrev').innerHTML = BtnPrev;
+			document.getElementById('BtnNext').innerHTML = BtnNext;
+			
 		}
     </script>
     
