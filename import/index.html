@@ -102,16 +102,20 @@
             function myFunction() {
                 var nilBarang = document.getElementById('nilBarang').value;
                     nilBarang = nilBarang.split('.').join('');
-                    nilBarang = nilBarang.split(',').join('.');
+                    nilBarang = nilBarang.split(',').join('');
+                document.getElementById("nilBarang").value = nilBarang;
                 var asrsBarang = document.getElementById('asrsBarang').value;
                     asrsBarang = asrsBarang.split('.').join('');
-                    asrsBarang = asrsBarang.split(',').join('.');
+                    asrsBarang = asrsBarang.split(',').join('');
+                document.getElementById("asrsBarang").value = asrsBarang;
                 var ongKirim = document.getElementById('ongKirim').value;
                     ongKirim = ongKirim.split('.').join('');
-                    ongKirim = ongKirim.split(',').join('.');
+                    ongKirim = ongKirim.split(',').join('');
+                document.getElementById("ongKirim").value = ongKirim;
                 var kursUSD = document.getElementById('kursUSD').value;
                     kursUSD = kursUSD.split('.').join('');
-                    kursUSD = kursUSD.split(',').join('.');
+                    kursUSD = kursUSD.split(',').join('');
+                document.getElementById("kursUSD").value = kursUSD;
                 var trfBeaMsk = document.getElementById('trfBeaMsk').value;
                 var nilPpn = document.getElementById('nilPpn').value;
                 var statNpwp = document.getElementById('statNpwp').value;
