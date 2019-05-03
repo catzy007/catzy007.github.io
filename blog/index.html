@@ -115,17 +115,22 @@
 					if(hash == arrPosts[i]){
 					//set shown post
 						var post="./posts/"+hash+"/index.md";
+						var prevPost;
+						if(i-1 < 0){prevPost = "#";}else{prevPost = '#'+arrPosts[i-1];}
+						var nextPost;
+						if(i+1 >= arrPosts.length){nextPost = "#";}else{nextPost = '#'+arrPosts[i+1];}
+						
 						//console.log(post);
 					//get post and parse to html
 						fetch(post).then(
 							function(response) {
 								if (response.status !== 200) {
 									showMarkdown('Looks like there was a problem. Status Code: ' +
-										response.status);
+										response.status,prevPost,nextPost);
 									return;
 								}
-								response.text().then(text => showMarkdown(text));
-								console.log('[POST] fetch success!');
+								response.text().then(text => showMarkdown(text,prevPost,nextPost));
+								console.log('[POST] fetch success! '+arrPosts.length);
 							}
 						)
 						.catch(function(err) {
@@ -159,13 +164,16 @@
 			var converter = new showdown.Converter();
 			var html = converter.makeHtml(markdown);
 			document.getElementById('Posts').innerHTML = html;
-			var BtnPrev = "<button class='btn btn-primary' onclick=\"location.href='"+prevPost+"';location.reload()\">Sebelumnya</button>";
-			var BtnNext = "<button class='btn btn-primary' onclick=\"location.href='"+nextPost+"';location.reload()\">Selanjutnya</button>"; 
-			console.log(BtnPrev);
-			console.log(BtnNext);
-			document.getElementById('BtnPrev').innerHTML = BtnPrev;
-			document.getElementById('BtnNext').innerHTML = BtnNext;
-			
+			if(prevPost != '#'){
+				var BtnPrev = "<button class='btn btn-primary' onclick=\"location.href='"+prevPost+"';location.reload()\">Sebelumnya</button>";
+				document.getElementById('BtnPrev').innerHTML = BtnPrev;
+				console.log(BtnPrev);
+			}
+			if(nextPost != '#'){
+				var BtnNext = "<button class='btn btn-primary' onclick=\"location.href='"+nextPost+"';location.reload()\">Selanjutnya</button>"; 				
+				document.getElementById('BtnNext').innerHTML = BtnNext;
+				console.log(BtnNext);
+			}
 		}
     </script>
     
