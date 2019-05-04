@@ -163,12 +163,10 @@
 			min-height: 768px;
 			padding: 3% 10% 3% 10%;
 		}
-		
-/* LOGIN + REGISTER */
-		.loginregister {
-			padding: 10% 30% 10% 30%;
+		.myexpander {
+			min-height: 768px;
 		}
-
+		
 /* FOOTER */
 		.footer {
 			color: white;
