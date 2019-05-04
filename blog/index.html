@@ -5,17 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>UMBRELLA</title>
-    <!-- Bootstrap4 -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Bootstrap 3 -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css"/>
+	<script src="./js/jquery.min.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
     <!-- Markdown Parser -->
     <script src="./js/showdown.min.js"></script>
     <!-- My CSS -->
     <link rel="stylesheet" href="css/style.css"/>
     <!-- Google Font -->
 	<link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet">
-
+	<!-- icon -->
+	<link href='./assets/spinner.gif' rel='SHORTCUT ICON'/>
     <!-- Refresher Script -->
     <script>
 		function refreshed(){
@@ -72,11 +73,11 @@
 						</div>
 					</div>
 					<!-- Left and right controls -->
-					<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+					<a class="left carousel-control" href="#myCarousel" data-slide="prev" style="display:none">
 						<span class="glyphicon glyphicon-chevron-left"></span>
 						<span class="sr-only">Previous</span>
 					</a>
-					<a class="right carousel-control" href="#myCarousel" data-slide="next">
+					<a class="right carousel-control" href="#myCarousel" data-slide="next" style="display:none">
 						<span class="glyphicon glyphicon-chevron-right"></span>
 						<span class="sr-only">Next</span>
 					</a>
@@ -121,6 +122,8 @@
 		
 	//get post array and parse to markdown
 		function getPostsArray(text){
+		//filter text
+			text = text.split(' ').join('');
 		//store original data
 			var arrPure = text.split("\n");
 			arrPure.reverse(); 
@@ -187,7 +190,7 @@
 									return;
 								}
 								var nextPost = '#' + arrPosts[1];
-								response.text().then(text => showMarkdown(text,'#',nextPost));
+								response.text().then(text => showMarkdown(text,'#','#'));
 								console.log('[POST] fetch success!');
 							}
 						)
@@ -205,7 +208,7 @@
 									return;
 								}
 								var nextPost = '#' + arrPosts[1];
-								response.text().then(text => showMarkdown(text,'#',nextPost));
+								response.text().then(text => showMarkdown(text,'#','#'));
 								console.log('[POST] fetch success!');
 							}
 						)
