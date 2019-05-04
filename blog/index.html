@@ -13,8 +13,8 @@
     <script src="./js/showdown.min.js"></script>
     <!-- My CSS -->
     <link rel="stylesheet" href="css/style.css"/>
-    
-<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet">
 
     <!-- Refresher Script -->
     <script>
@@ -28,9 +28,13 @@
 	<div class="container mycontainer">
 		<div class="row">
 			<div class="col-sm-12 text-right">
-				<a style="cursor: pointer;color:#5BC0DE;text-shadow: 0px 1px #ddd;font-size:22px;" onclick="location.href='#';refreshed()">Home</a>
-				<a style="color:#5BC0DE;text-shadow: 0px 1px #ddd;font-size:22px"> |</a>
-				<a style="cursor: pointer;color:#5BC0DE;text-shadow: 0px 1px #ddd;font-size:22px;" onclick="location.href='#About';refreshed()">About</a>
+				<a style="cursor: pointer;color:#55688A;text-shadow: 0px 1px #ddd;font-size:22px;" onclick="location.href='#';refreshed()">Home</a>
+				<a style="color:#55688A;text-shadow: 0px 1px #ddd;font-size:18px"> |</a>
+				<a style="cursor: pointer;color:#55688A;text-shadow: 0px 1px #ddd;font-size:22px;" onclick="location.href='#index';refreshed()">Index</a>
+				<a style="color:#55688A;text-shadow: 0px 1px #ddd;font-size:18px"> |</a>
+				<a style="cursor: pointer;color:#55688A;text-shadow: 0px 1px #ddd;font-size:22px;" onclick="location.href='#contact';refreshed()">Contact</a>
+				<a style="color:#55688A;text-shadow: 0px 1px #ddd;font-size:18px"> |</a>
+				<a style="cursor: pointer;color:#55688A;text-shadow: 0px 1px #ddd;font-size:22px;" onclick="location.href='#about';refreshed()">About</a>
 			</div>
 		</div>
 		<div class="row">
@@ -92,7 +96,7 @@
 		<div class="row">
 			<div class="col-sm-12 text-center">
 				<br>
-				<h4>This page is intended to be test page for markdown parser! <a href="https://www.umbrellafwd.tk/">https://www.umbrellafwd.tk/</a> will be migrated here!</h4>
+				<h4>2019 Maulana Bagus Saputra</h4>
 			</div>
 		</div>
     </div>
@@ -103,7 +107,7 @@
 		fetch('./posts/index.md').then(
 			function(response) {
 				if (response.status !== 200) {
-					showMarkdown('# Looks like there was a problem. Status Code: ' +
+					showMarkdown('## Looks like there was a problem. Status Code: ' +
 						response.status,'#','#');
 					return;
 				}
@@ -117,46 +121,102 @@
 		
 	//get post array and parse to markdown
 		function getPostsArray(text){
+		//store original data
+			var arrPure = text.split("\n");
+			arrPure.reverse(); 
+		//store processed data
+			text = text.toLowerCase();
 			var arrPosts = text.split("\n");
-		//reverse post to show latest content
 			arrPosts.reverse(); 
 		//filter array (remove empty value)
 			var arrPosts = arrPosts.filter(function(el) { return el; });
+			var arrPure = arrPure.filter(function(el) { return el; });
 			//console.log(arrPosts);
 			
 		//get requested post from url
 			var url = window.location.hash.substr(1);
 			var hash = url.substring(url.indexOf('#')+1);
+			hash = hash.toLowerCase();
 			//console.log(hash);
 		
 		//if user request specific post
 			if(hash !== null && hash !== ''){
 			//check if post url valid
 				for(var i=0; i<arrPosts.length; i++){
+				//requested page
 					if(hash == arrPosts[i]){
 					//set shown post
 						var post="./posts/"+hash+"/index.md";
 						//console.log(post);
 					//set prev and next post
-						var prevPost;
-						if(i-1 < 0){prevPost = "#";}else{prevPost = '#'+arrPosts[i-1];}
-						var nextPost;
-						if(i+1 >= arrPosts.length){nextPost = "#";}else{nextPost = '#'+arrPosts[i+1];}
+						var prevPost;var nextPost;
+							if(i-1 < 0){prevPost = "#";}else{prevPost = '#'+arrPosts[i-1];}
+							if(i+1 >= arrPosts.length){nextPost = "#";}else{nextPost = '#'+arrPosts[i+1];}
 					//get post and parse to html
 						fetch(post).then(
 							function(response) {
 								if (response.status !== 200) {
-									showMarkdown('Looks like there was a problem. Status Code: ' +
+									showMarkdown('## Looks like there was a problem. Status Code: ' +
 										response.status,prevPost,nextPost);
 									return;
 								}
 								response.text().then(text => showMarkdown(text,prevPost,nextPost));
-								console.log('[POST] fetch success! '+arrPosts.length);
+								console.log('[POST] fetch success! Len='+arrPosts.length);
 							}
 						)
 						.catch(function(err) {
 							console.log('Fetch Error :-S', err);
 						});
+				//index page
+					}else if(hash == "index"){
+						var post="## Index\n";
+						for(var i=0; i<arrPosts.length; i++){
+							post=post + "<a style=\"font-size:18px;\" onclick=\"location.href='#"+ 
+							arrPosts[i] +"';refreshed()\">"+ arrPure[i].split('-').join(' ') +"</a>\n<br>";
+							//console.log(i + " " + arrPosts[i] + " " + arrPure[i]);
+						}
+						showMarkdown(post,'#','#');
+				//contact page
+					}else if(hash == "contact"){
+						var post="./posts/contact/index.md";
+						fetch(post).then(
+							function(response) {
+								if (response.status !== 200) {
+									showMarkdown('## Looks like there was a problem. Status Code: ' +
+										response.status,"#","#");
+									return;
+								}
+								var nextPost = '#' + arrPosts[1];
+								response.text().then(text => showMarkdown(text,'#',nextPost));
+								console.log('[POST] fetch success!');
+							}
+						)
+						.catch(function(err) {
+							console.log('Fetch Error :-S', err);
+						});
+				//about page
+					}else if(hash == "about"){
+						var post="./posts/about/index.md";
+						fetch(post).then(
+							function(response) {
+								if (response.status !== 200) {
+									showMarkdown('## Looks like there was a problem. Status Code: ' +
+										response.status,"#","#");
+									return;
+								}
+								var nextPost = '#' + arrPosts[1];
+								response.text().then(text => showMarkdown(text,'#',nextPost));
+								console.log('[POST] fetch success!');
+							}
+						)
+						.catch(function(err) {
+							console.log('Fetch Error :-S', err);
+						});
+				//if no page match
+					}else{
+						showMarkdown('## Looks like there was a problem. Status Code: 404'
+							,"#","#");
+						console.log('[POST] page not found!');
 					}
 				}
 		//if no specific post requested
@@ -166,7 +226,7 @@
 				fetch(post).then(
 					function(response) {
 						if (response.status !== 200) {
-							showMarkdown('Looks like there was a problem. Status Code: ' +
+							showMarkdown('## Looks like there was a problem. Status Code: ' +
 								response.status,"#","#");
 							return;
 						}
@@ -187,12 +247,12 @@
 			var html = converter.makeHtml(markdown);
 			document.getElementById('Posts').innerHTML = html;
 			if(prevPost != '#'){
-				var BtnPrev = "<button class='btn btn-info' onclick=\"location.href='"+prevPost+"';refreshed()\">Sebelumnya</button>";
+				var BtnPrev = "<button class='btn btn-info' onclick=\"location.href='"+prevPost+"';refreshed()\">Newer Post</button>";
 				document.getElementById('BtnPrev').innerHTML = BtnPrev;
 				//console.log(BtnPrev);
 			}
 			if(nextPost != '#'){
-				var BtnNext = "<button class='btn btn-info' onclick=\"location.href='"+nextPost+"';refreshed()\">Selanjutnya</button>"; 				
+				var BtnNext = "<button class='btn btn-info' onclick=\"location.href='"+nextPost+"';refreshed()\">Older Post</button>"; 				
 				document.getElementById('BtnNext').innerHTML = BtnNext;
 				//console.log(BtnNext);
 			}

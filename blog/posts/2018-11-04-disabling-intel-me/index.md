@@ -9,7 +9,7 @@ Why disabling that if the function is very critical? Because intel ME has many v
 
 But i have other reason too. I want to check if intel ME has responsibility to lock cpu upgrade in mobile sandybridge device. I mean i have Lenovo G480 with pentium B960 installed. When i look up the motherboard, it has G2 socket and i can remove the processor easily. Knowing that, i go find some info that i5-2520M support G2 socket. I bought it and install that fancy i5 processor. Then you know what it works! kind of. After 30 mins it just shutdown with no warning. When i check intel me status, something seems wrong. Then i come with this idea, what if partially disable intel me make me replace that pentium processor with i5.
 
-Thankfully now we can remove Intel ME. But yeah it's still very difficult. Some people trying to remove it and finally it's work [Me Cleaner](https://github.com/corna/me_cleaner) based on this [How to apply Me Cleaner](https://github.com/corna/me_cleaner/wiki/How-to-apply-me_cleaner) me cleaner can be applied using 2 method. 1st method is using external flasher. basically the procedure is to take your BIOS chip, put it on bios programmer, read and copy all of it's content, apply me cleaner, and put the firmware back. it's sound simple right? but actually it's difficult. take bios chip need advanced knowledge about hardware, spi pin, clock pin, and bios chip can be vary from one computer to another. using bios flasher is very recommended. but yeah the risk is very high. the second method is internal flashing. some computer very difficult to flash by internal flashing so yeah the 1st method is the choice.
+Thankfully now we can remove Intel ME. But yeah it's still very difficult. Some people trying to remove it and finally it's working [Me Cleaner](https://github.com/corna/me_cleaner) based on this [How to apply Me Cleaner](https://github.com/corna/me_cleaner/wiki/How-to-apply-me_cleaner) me cleaner can be applied using 2 method. 1st method is using external flasher. basically the procedure is to take your BIOS chip, put it on bios programmer, read and copy all of it's content, apply me cleaner, and put the firmware back. it's sound simple right? but actually it's difficult. take bios chip need advanced knowledge about hardware, spi pin, clock pin, and bios chip can be vary from one computer to another. using bios flasher is very recommended. but yeah the risk is very high. the second method is internal flashing. some computer very difficult to flash by internal flashing so yeah the 1st method is the choice.
 
 I'm already tried method 2 and got nothing to work... bios file provided by manufacture in *.cap format... and me cleaner need bin file to work... maybe some asus user had some luck. because they can convert cab to bin using special software.
 
@@ -365,6 +365,8 @@ Done! Good luck!
 ```
 cd ../ 
 flashrom -p linux_spi:dev=/dev/spidev0.0,spispeed=10000 -c EN25Q64 -w cleanbios.bin
+```
+```
 flashrom v0.9.9-r1954 on Linux 4.14.71-v7+ (armv7l)
 flashrom is free software, get the source code at https://flashrom.org
 
