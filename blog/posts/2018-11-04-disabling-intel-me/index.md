@@ -1,22 +1,22 @@
-Sunday, November 4, 2018
+### **Disabling Intel ME (Management Engine)**
+#### Sunday, November 4, 2018
 
-Disabling Intel ME (Management Engine)
+> This post originally dated at 29 September 2017 but delayed due to lack of knowledge and hardware to perform some operations. After a year of delay, i'm back to bring this again.
 
-This post originally dated at 29 September 2017 but delayed due to lack of knowledge and hardware to perform some operations. After a year of delay, i'm back to bring this again.
-
-Okay First, What is Intel ME? Based on wikipedia,  Intel Active Management Technology (AMT) is hardware and firmware technology for remote out-of-band management of personal computers, in order to monitor, maintain, update, upgrade, and repair them. Out-of-band (OOB) or hardware-based management is different from software-based (or in-band) management and software management agents. 
+Okay First, What is Intel ME? Based on wikipedia,  **Intel Active Management Technology (AMT)** is hardware and firmware technology for remote out-of-band management of personal computers, in order to monitor, maintain, update, upgrade, and repair them. Out-of-band (OOB) or hardware-based management is different from software-based (or in-band) management and software management agents. 
 
 Why disabling that if the function is very critical? Because intel ME has many vulnerabilities. one of the most critical vulnerabilities is Silent Bob is Silent. The vulnerability was described as giving remote attackers : "full control of affected machines, including the ability to read and modify everything. It can be used to install persistent malware (possibly in firmware), and read and modify any data." — Tatu Ylönen, ssh.com so yeah it's very critical. installing malware in firmware level (~'-')~
 
 But i have other reason too. I want to check if intel ME has responsibility to lock cpu upgrade in mobile sandybridge device. I mean i have Lenovo G480 with pentium B960 installed. When i look up the motherboard, it has G2 socket and i can remove the processor easily. Knowing that, i go find some info that i5-2520M support G2 socket. I bought it and install that fancy i5 processor. Then you know what it works! kind of. After 30 mins it just shutdown with no warning. When i check intel me status, something seems wrong. Then i come with this idea, what if partially disable intel me make me replace that pentium processor with i5.
 
-Thankfully now we can remove Intel ME. But yeah it's still very difficult. Some people trying to remove it and finally it's work https://github.com/corna/me_cleaner based on this https://github.com/corna/me_cleaner/wiki/How-to-apply-me_cleaner me cleaner can be applied using 2 method. 1st method is using external flasher. basically the procedure is to take your BIOS chip, put it on bios programmer, read and copy all of it's content, apply me cleaner, and put the firmware back. it's sound simple right? but actually it's difficult. take bios chip need advanced knowledge about hardware, spi pin, clock pin, and bios chip can be vary from one computer to another. using bios flasher is very recommended. but yeah the risk is very high. the second method is internal flashing. some computer very difficult to flash by internal flashing so yeah the 1st method is the choice.
+Thankfully now we can remove Intel ME. But yeah it's still very difficult. Some people trying to remove it and finally it's work [Me Cleaner](https://github.com/corna/me_cleaner) based on this [How to apply Me Cleaner](https://github.com/corna/me_cleaner/wiki/How-to-apply-me_cleaner) me cleaner can be applied using 2 method. 1st method is using external flasher. basically the procedure is to take your BIOS chip, put it on bios programmer, read and copy all of it's content, apply me cleaner, and put the firmware back. it's sound simple right? but actually it's difficult. take bios chip need advanced knowledge about hardware, spi pin, clock pin, and bios chip can be vary from one computer to another. using bios flasher is very recommended. but yeah the risk is very high. the second method is internal flashing. some computer very difficult to flash by internal flashing so yeah the 1st method is the choice.
 
 I'm already tried method 2 and got nothing to work... bios file provided by manufacture in *.cap format... and me cleaner need bin file to work... maybe some asus user had some luck. because they can convert cab to bin using special software.
 
 Then i tried 1st method. Using SbC as media to flash BIOS chip (SPI Flash Chip). the tools i use is raspberrypi 3, SOP-8 Bios clipper, some jumper wire and that's it.
 
-Finding bios chip and wire everything
+### Finding bios chip and wire everything
+
 First disassemble your laptop/pc unplug power, ram, bios battery, basically unplug everything... then find the bios chip by inspecting your motherboard. Mine is cFeon Q64-104HIP
  
 
@@ -27,27 +27,35 @@ then wire everything according to this schematics, followed by clipping SOP-8 cl
  
 my setup. all pin connected to rpi GPIO, WP NC VCC connected to breadboard into 3.3V rpi GPIO
 
-Enable SPI pin and download some tools
+### Enable SPI pin and download some tools
 next enable spi pin on raspberrypi https://learn.sparkfun.com/tutorials/raspberry-pi-spi-and-i2c-tutorial/all
 
 then download flashrom
+
+```
 sudo apt-get install build-essential pciutils usbutils libpci-dev libusb-dev libftdi1 libftdi-dev zlib1g-dev subversion libusb-1.0-0-dev
 sudo apt-get install flashrom
+```
 
 then make working directory and download some tools
+```
 cd ~
 mkdir INTELME
 cd INTELME
 wget https://github.com/corna/me_cleaner/archive/v1.2.zip
 unzip *.zip
+```
 
-Copy image to RPI
+### Copy image to RPI
 then copy the image files to rpi using flashrom
+```
 flashrom -p linux_spi:dev=/dev/spidev0.0,spispeed=10000 -c EN25Q64 -r bios1.bin
 flashrom -p linux_spi:dev=/dev/spidev0.0,spispeed=10000 -c EN25Q64 -r bios2.bin
 flashrom -p linux_spi:dev=/dev/spidev0.0,spispeed=10000 -c EN25Q64 -r bios3.bin
+```
 
 the output should look like this
+```
 $ flashrom -p linux_spi:dev=/dev/spidev0.0,spispeed=10000 -c EN25Q64 -r bios1.bin
 flashrom v0.9.9-r1954 on Linux 4.14.71-v7+ (armv7l)
 flashrom is free software, get the source code at https://flashrom.org
@@ -55,30 +63,34 @@ flashrom is free software, get the source code at https://flashrom.org
 Calibrating delay loop... OK.
 Found Eon flash chip "EN25Q64" (8192 kB, SPI) on linux_spi.
 Reading flash... done.
-view raw
-flashrom-p-c-r.cfg hosted with ❤ by GitHub
+```
+
 *EN25Q64 found in datasheet of my bios chip
 
-Check integrity of all image
+### Check integrity of all image
 next check all images if they're match
-md5sum *.bin
+
+`md5sum *.bin`
 
 the output should same across all readings
+```
 4d6b41f26efafecb4f4ba829a899fae4  bios1.bin
 4d6b41f26efafecb4f4ba829a899fae4  bios2.bin
 4d6b41f26efafecb4f4ba829a899fae4  bios3.bin
-view raw
-md5sumbin.cfg hosted with ❤ by GitHub
+```
 *if md5sum didn't match, check your wiring and repeat all steps!
 
 Check if image is valid
-next check if image is valid using ifdtool
+next check if image is valid using *ifdtool*
+```
 git clone --depth=1 https://review.coreboot.org/p/coreboot
 cd coreboot/util/ifdtool
 make
 ./ifdtool -d ../../../bios1.bin
+```
 
 the output should look similar to this
+```
 File ../../../bios1.bin is 8388608 bytes
 ICH Revision: 6 series Cougar Point
 FLMAP0:    0x02040003
@@ -266,12 +278,16 @@ Found Processor Strap Section
 ????:      0xffffffff
 ????:      0xffffffff
 ????:      0xffffffff
-view raw
-ifdtool-d.cfg hosted with ❤ by GitHub
-Check if image file can be analyze by me_cleaner
+```
+
+### Check if image file can be analyze by me_cleaner
+```
 cd ../../../
 cd me_cleaner-1.2/
 ./me_cleaner.py -c ../bios1.bin
+```
+the output will look like this
+```
 Full image detected
 The ME/TXE region goes from 0x1000 to 0x400000
 Found FPT header at 0x1010
@@ -281,10 +297,13 @@ ME/TXE firmware version 8.0.4.1441
 Public key match: Intel ME, firmware versions 7.x.x.x, 8.x.x.x
 The AltMeDisable bit is NOT SET
 Checking the FTPR RSA signature... VALID
-view raw
-mecleaner-c.cfg hosted with ❤ by GitHub
-Apply Me Cleaner
+```
+
+### Apply Me Cleaner
+```
 ./me_cleaner.py -S -O ../cleanbios.bin ../bios1.bin
+```
+```
 Full image detected
 The ME/TXE region goes from 0x1000 to 0x400000
 Found FPT header at 0x1010
@@ -331,9 +350,10 @@ The ME region can be reduced up to:
 Setting the AltMeDisable bit in PCHSTRP10 to disable Intel ME...
 Checking the FTPR RSA signature... VALID
 Done! Good luck!
-view raw
-me_cleaner-S-O.cfg hosted with ❤ by GitHub
-Put modified bios image back
+```
+
+### Put modified bios image back
+```
 cd ../ 
 flashrom -p linux_spi:dev=/dev/spidev0.0,spispeed=10000 -c EN25Q64 -w cleanbios.bin
 flashrom v0.9.9-r1954 on Linux 4.14.71-v7+ (armv7l)
@@ -344,12 +364,11 @@ Found Eon flash chip "EN25Q64" (8192 kB, SPI) on linux_spi.
 Reading old flash chip contents... done.
 Erasing and writing flash chip... Erase/write done.
 Verifying flash... VERIFIED.
-view raw
-flashrom-p-c-w.cfg hosted with ❤ by GitHub
+```
 just like that now you're successfully clean intel me.
 
 this before intel me was cleaned
-
+```
 Intel(R) MEInfo Version: 8.1.56.1541
 Copyright(C) 2005 - 2014, Intel Corporation. All rights reserved.
 
@@ -392,10 +411,10 @@ Capability Licensing Service Status:    Permit info not available
 OEM Tag:                                0x00000000
 Localized Language:                     Unknown
 Independent Firmware Recovery:          Enabled
-view raw
-meinfo1.cfg hosted with ❤ by GitHub
-this after
+```
 
+this after
+```
 Intel(R) MEInfo Version: 8.1.56.1541
 Copyright(C) 2005 - 2014, Intel Corporation. All rights reserved.
 
@@ -403,27 +422,43 @@ Copyright(C) 2005 - 2014, Intel Corporation. All rights reserved.
 Error 9458: Communication error between application and Intel(R) ME module (FW Update client)
 
 Error 9459: Internal error (Could not determine FW features information)
-view raw
-meinfo2.cfg hosted with ❤ by GitHub
-conclusion.
-cleaning intel me is relatively hard process but fun. I learn a lot from this experiment. Based on this project, even after cleaning intel me, i still can't remove 30 min barrier on replacing Pentium B960 with I5-2520M in HM70 motherboard. But i'm looking forward to other options and new finding in the future.
-[UPDATE 9/29/17] actually this project is half going.. because it takes many hour and i haven't done yet so yeah that's it for now.
-[UPDATE 11/4/18] THIS PROJECT IS ONGOING AGAIN!
-[UPDATE 11/11/18] THIS PROJECT IS COMPLETED!
+```
 
-btw you can read some page below for more information
+### Conclusion.
 
-https://en.wikipedia.org/wiki/Intel_Active_Management_Technology
-https://tomvanveen.eu/flashing-bios-chip-raspberry-pi
-https://www.flashrom.org/RaspberryPi
-http://embedsec.systems/firmware/2016/11/17/neutralize_ME_firmware_on_sandybridge_and_ivybridge.html
-https://hackaday.com/2016/11/28/neutralizing-intels-management-engine/
-https://github.com/corna/me_cleaner/issues/62
-https://github.com/corna/me_cleaner/issues/186
-https://github.com/corna/me_cleaner/wiki/How-to-apply-me_cleaner
-https://mail.coreboot.org/pipermail/coreboot/2016-September/082016.html
-http://blog.ptsecurity.com/2017/08/disabling-intel-me.html
-https://puri.sm/learn/intel-me
-https://recon.cx/2014/slides/Recon%202014%20Skochinsky.pdf
-https://libreboot.org/docs/install/rpi_setup.html
+Cleaning intel me is relatively hard process but fun. I learn a lot from this experiment. Based on this project, even after cleaning intel me, i still can't remove 30 min barrier on replacing Pentium B960 with I5-2520M in HM70 motherboard. But i'm looking forward to other options and new finding in the future.
+
+> [UPDATE 9/29/17] actually this project is half going.. because it takes many hour and i haven't done yet so yeah that's it for now.
+
+> [UPDATE 11/4/18] THIS PROJECT IS ONGOING AGAIN!
+
+> [UPDATE 11/11/18] THIS PROJECT IS COMPLETED!
+
+### btw you can read some page below for more information
+
+<https://en.wikipedia.org/wiki/Intel_Active_Management_Technology>
+
+<https://tomvanveen.eu/flashing-bios-chip-raspberry-pi>
+
+<https://www.flashrom.org/RaspberryPi>
+
+<http://embedsec.systems/firmware/2016/11/17/neutralize_ME_firmware_on_sandybridge_and_ivybridge.html>
+
+<https://hackaday.com/2016/11/28/neutralizing-intels-management-engine/>
+
+<https://github.com/corna/me_cleaner/issues/62>
+
+<https://github.com/corna/me_cleaner/issues/186>
+
+<https://github.com/corna/me_cleaner/wiki/How-to-apply-me_cleaner>
+
+<https://mail.coreboot.org/pipermail/coreboot/2016-September/082016.html>
+
+<http://blog.ptsecurity.com/2017/08/disabling-intel-me.html>
+
+<https://puri.sm/learn/intel-me>
+
+<https://recon.cx/2014/slides/Recon%202014%20Skochinsky.pdf>
+
+<https://libreboot.org/docs/install/rpi_setup.html>
 

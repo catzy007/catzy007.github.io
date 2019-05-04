@@ -101,6 +101,8 @@
 			var arrPosts = text.split("\n");
 		//reverse post to show latest content
 			arrPosts.reverse(); 
+		//filter array (remove empty value)
+			var arrPosts = arrPosts.filter(function(el) { return el; });
 			//console.log(arrPosts);
 			
 		//get requested post from url
@@ -166,14 +168,14 @@
 			var html = converter.makeHtml(markdown);
 			document.getElementById('Posts').innerHTML = html;
 			if(prevPost != '#'){
-				var BtnPrev = "<button class='btn btn-primary' onclick=\"location.href='"+prevPost+"';location.reload()\">Sebelumnya</button>";
+				var BtnPrev = "<button class='btn btn-info' onclick=\"location.href='"+prevPost+"';location.reload()\">Sebelumnya</button>";
 				document.getElementById('BtnPrev').innerHTML = BtnPrev;
-				console.log(BtnPrev);
+				//console.log(BtnPrev);
 			}
 			if(nextPost != '#'){
-				var BtnNext = "<button class='btn btn-primary' onclick=\"location.href='"+nextPost+"';location.reload()\">Selanjutnya</button>"; 				
+				var BtnNext = "<button class='btn btn-info' onclick=\"location.href='"+nextPost+"';location.reload()\">Selanjutnya</button>"; 				
 				document.getElementById('BtnNext').innerHTML = BtnNext;
-				console.log(BtnNext);
+				//console.log(BtnNext);
 			}
 		}
     </script>
