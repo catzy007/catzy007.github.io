@@ -10,10 +10,8 @@
 2017-11-25-Making-Your-Own-PC-HDMI-Virtual-Reality-Headset
 2017-12-13-Make-Cluster-Computer-Supercomputer-for-Parallel-Computing
 2018-05-05-Internet-Freedom-using-OpenVPN
-
 2018-07-08-XP-PEN-Star-G430S-in-Ubuntu-1710
 2018-07-13-Repair-GRUB-After-Installing-Windows
-
 2018-09-14-Dasar-Pemrograman-C-Part7-Array
 2018-09-14-Dasar-Pemrograman-C-Part6-Perulangan
 2018-09-14-Dasar-Pemrograman-C-Part5-Nested-If
@@ -21,7 +19,7 @@
 2018-04-24-Dasar-Pemrograman-C-Part3-Input-dan-Operator
 2018-03-10-Dasar-Pemrograman-C-Part2-Tipe-Data
 2018-09-14-Dasar-Pemrograman-C-Part1-The-Beginning
-
 2018-09-21-Making-Parallel-Computing-Program-Using-MPI-and-C
+2019-02-06-Starting-Life-as-Designer
+
 2018-11-04-Disabling-Intel-Me
-2019-02-06-Starting-Life-as-Designer 
