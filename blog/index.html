@@ -13,12 +13,26 @@
     <script src="./js/showdown.min.js"></script>
     <!-- My CSS -->
     <link rel="stylesheet" href="css/style.css"/>
+    <!-- Refresher Script -->
+    <script>
+		function refreshed(){
+			location.reload();
+			window.scrollTo(0, 0); 
+		}
+    </script>
 </head>
 <body>
 	<div class="container mycontainer">
 		<div class="row">
+			<div class="col-sm-12 text-right">
+				<a style="cursor: pointer;color:#000000;font-size:18px;" onclick="location.href='#';refreshed()">Home</a>
+				<a style="font-size:18px;"> | </a>
+				<a style="cursor: pointer;color:#000000;font-size:18px;" onclick="location.href='#About';refreshed()">About</a>
+			</div>
+		</div>
+		<div class="row">
 			<div class="col-sm-12 text-center">
-				<h1>Welcome to my blog</h1>
+				<!--<h1>Welcome to my blog</h1>-->
 				<!-- BEGIN IMAGE SLIDER -->
 				<div id="myCarousel" class="carousel slide" data-ride="carousel">
 					<!-- Indicators -->
@@ -171,12 +185,12 @@
 			var html = converter.makeHtml(markdown);
 			document.getElementById('Posts').innerHTML = html;
 			if(prevPost != '#'){
-				var BtnPrev = "<button class='btn btn-info' onclick=\"location.href='"+prevPost+"';location.reload()\">Sebelumnya</button>";
+				var BtnPrev = "<button class='btn btn-info' onclick=\"location.href='"+prevPost+"';refreshed()\">Sebelumnya</button>";
 				document.getElementById('BtnPrev').innerHTML = BtnPrev;
 				//console.log(BtnPrev);
 			}
 			if(nextPost != '#'){
-				var BtnNext = "<button class='btn btn-info' onclick=\"location.href='"+nextPost+"';location.reload()\">Selanjutnya</button>"; 				
+				var BtnNext = "<button class='btn btn-info' onclick=\"location.href='"+nextPost+"';refreshed()\">Selanjutnya</button>"; 				
 				document.getElementById('BtnNext').innerHTML = BtnNext;
 				//console.log(BtnNext);
 			}
