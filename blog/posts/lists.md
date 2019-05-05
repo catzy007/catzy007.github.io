@@ -1,11 +1,11 @@
-2017-05-31-analysis-of-exambro-client
+>2017-05-31-analysis-of-exambro-client
 #2017-06-01-random-ping
 2017-07-09-how-to-customize-your-steam-profile-with-mmd-part-4
 2017-07-09-how-to-customize-your-steam-profile-with-mmd-part-3
 2017-07-08-how-to-customize-your-steam-profile-with-mmd-part-2
 2017-07-08-how-to-customize-your-steam-profile-with-mmd-part-1
 2017-07-09-how-to-customize-your-steam-profile-with-mmd
->2017-08-18-3-axis-cnc-machine
+#2017-08-18-3-axis-cnc-machine
 #2017-11-01-random-ping-linux
 #2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset
 2017-12-13-make-cluster-computer-supercomputer-for-parallel-computing
