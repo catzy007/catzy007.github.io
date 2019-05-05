@@ -6,12 +6,9 @@
 <p align="center">
 	<img src="./posts/about/xmg.png" height="250px" alt="MXMG address">
 </p> 
-<br>
 
-> I have no responsibility if anything happen due to your activity following instruction in this blog and so on! 
- 
 <br>
-> “It feels a little bit funny coming here and telling you that Linux and open source are the future of gaming” - Gabe Newell
+> I have no responsibility if anything happen due to your activity following instruction in this blog and so on! 
 
 <br>
 > This blog is intended to be test for markdown parser! <https://www.umbrellafwd.tk> will be migrated here!
@@ -20,3 +17,6 @@
 > This blog is made possible using [ShowdownJS](https://github.com/showdownjs/showdown), 
 [Bootstrap 3](https://getbootstrap.com/) and [Barlow Font](https://fonts.google.com/specimen/Barlow). 
 Thank you
+ 
+<br>
+> “It feels a little bit funny coming here and telling you that Linux and open source are the future of gaming” - Gabe Newell
