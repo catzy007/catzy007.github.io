@@ -19,7 +19,7 @@ goggles with a screen in front of the eyes, but can also be created through spec
 designed spaces with multiple large screens.
 
 <br>
-#### Ok First we need to get all parts.
+#### **Ok First we need to get all parts.**
 *  Screen 5" to 7" with highest possible PPI
    <https://www.aliexpress.com/store/product/60HZ-5-5-inch-1440p-display-1440-2560-with-hdmi-to-mipi-board-for-oculus-rift/1764418_32366781090.html> 
    but i'm using 5" 480x800px screen for raspberrypi with around 235ppi or you can use 
@@ -43,7 +43,7 @@ designed spaces with multiple large screens.
 * Some usb cable, power supply or just use power from your laptop/pc.
 
 <br>
-#### Tools
+#### **Tools**
 * Soldering iron + solder tin
 * Some wire
 * Some glue. i'm using hot-glue
@@ -51,7 +51,7 @@ designed spaces with multiple large screens.
 * Basically any tools you think you'll need lol
 
 <br>
-#### Next, software
+#### **Next, software**
 1. Arduino IDE <https://www.arduino.cc/en/Main/Software>
 2. Some arduino code to read data from sensor i'm using code from thanks to mirkoBastianini <https://github.com/catzy007/HeadTracking-Arduino-FreePie/>
 3. FreePie <http://andersmalmgren.github.io/FreePIE/>
@@ -59,7 +59,7 @@ designed spaces with multiple large screens.
 5. VR Player to play your video or anything to VR <https://archive.codeplex.com/?p=vrplayer>
 
 <br>
-#### Then we come to building parts yaay.
+#### **Then we come to building parts yaay.**
 1. First we need to measure length and width of our screen
 <p align="center">
 	<img src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/1.png" height="250px" alt="measure">
@@ -100,7 +100,7 @@ designed spaces with multiple large screens.
 > pro tips6 : make sure your tape doesn't conductive! especially when you're using GY-85 '-') use multimeter to check that
 
 <br>
-#### Next comes to software part (~'-')~
+#### **Next comes to software part (~'-')~**
 1. Install and open arduino IDE followed by load `Arduino script\YawPtichRoll.ino` you download 
 from [github](https://github.com/catzy007/HeadTracking-Arduino-FreePie/)
 <p align="center">
@@ -137,7 +137,7 @@ show 1 then emulation enabled
 7. To reset position, press `left shift + X`. To make cursor absolute center, press `left shift + C`
 
 <br>
-#### Almost final. Next we'll try to play game and movie with our crude VR headset
+#### **Almost final. Next we'll try to play game and movie with our crude VR headset**
 >  pro tips 9 : **NEVER** open VIREIRO and VRPLAYER at same time!... just never or if you do, and 
 get some error, restart your computer
 
@@ -160,7 +160,7 @@ get some error, restart your computer
 </p> 
 
 <br>
-** Next let's play video with our crude VR**
+**Next let's play video with our crude VR**
 1. First, plug everything, run freepie+script, and make sure everything working as it should be
 
 2. Next, install and open VR Player
@@ -195,12 +195,13 @@ freepie, stop script manually, wait for 10sec, then close and unplug everything.
 >  pro tips10 : Playing video using this method "GDI" is going to make video a little bit laggy so yeah
 
 <br>
-#### The reason why this take so long
+#### **The reason why this take so long**
 Is sensor i used "GY-85" burned 3 times, adruino i used "pro micro" broken 2 times... 
 that was freaking stupid '-') now i'm gonna explain why and how to avoid that.
 
 <br>
-##### **First, GY-85**
+**First, GY-85**
+
 It's a very great sensors because it very similar to RAZOR IMU 
 <https://www.sparkfun.com/products/retired/10736> but without ATmega328p. 
 so basically we need to add arduino nano then we can use almost same code 
@@ -227,7 +228,8 @@ and based on this datasheet from ivensense <https://store.invensense.com/datashe
 maybe MPU-6050 is same as MPU-6000 or at least almost. so yeah using oculus sensors... i'm feeling little bit happy lol.
 
 <br>
-##### **Next Pro micro** 
+**Next Pro micro**
+
 My first plan is to use mouse emulation from pro micro ATmega32u4 so i 
 don't have to use software like freepie to translate gyro+accel motion 
 into mouse XY motion. But you need to make sure that micro usb connector 
@@ -275,7 +277,7 @@ if you're finally decide that to use 32u4 board to your VR headset, you can use 
 <https://github.com/pocketmoon/MPU-6050-Arduino-Micro-Head-Tracker>
 
 <br>
-#### UPDATE 4/22/18 Playing VRChat on our crude VR Heasdet
+#### **UPDATE 4/22/18 Playing VRChat on our crude VR Heasdet**
 > THIS GUARANTEE WORKS ON WINDOWS10 CREATOR UPDATE OR LATER. VERSION 1703+
 
 1. First, make sure you have steam and vrchat downloaded
@@ -301,7 +303,7 @@ if you're finally decide that to use 32u4 board to your VR headset, you can use 
 </p>
 
 <br>
-#### Some Sauce
+#### **Some Sauce**
 <https://github.com/ayildirim/OpenVR>
 
 <https://github.com/mirkoBastianini/HeadTracking-Arduino-FreePie>
