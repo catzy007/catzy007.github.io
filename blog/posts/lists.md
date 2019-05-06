@@ -17,7 +17,7 @@
 2018-09-14-dasar-pemrograman-c-part5-nested-if
 2018-06-22-dasar-pemrograman-c-part4-if-else-switch
 2018-04-24-dasar-pemrograman-c-part3-input-dan-operator
-2018-03-10-dasar-pemrograman-c-part2-tipe-data
+>2018-03-10-dasar-pemrograman-c-part2-tipe-data
 #2018-09-14-dasar-pemrograman-c-part1-the-beginning
 #2018-09-21-making-parallel-computing-program-using-mpi-and-c
 #2018-11-04-disabling-intel-me
