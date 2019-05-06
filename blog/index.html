@@ -24,6 +24,29 @@
 			window.scrollTo(0, 0); 
 		}
     </script>
+    <!-- MARKDOWN PARSER AND CORE -->
+	<script>
+	window.onload = function mainLoader(){
+		var reqIDX = new XMLHttpRequest();
+		reqIDX.open("GET", "./posts/index.md", true);
+		reqIDX.onreadystatechange = function(oEvent){
+			if(reqIDX.readyState === 4){
+				if(reqIDX.status === 200){
+					var mylog = "#[INDEX] XMLHttpRequest Success!";
+					getPostsArray(reqIDX.responseText);
+					console.log(mylog);
+				}else{
+					var mylog = "#[INDEX] XMLHttpRequest Error! " + reqIDX.statusText;
+					showMarkdown(mylog, prevPost, nextPost);
+					console.log(mylog);
+				}
+			}
+		}; 
+		reqIDX.send(null);
+	}
+	</script>
+	<script src="./js/core.js"></script>
+    <script src="./js/mdparser.js"></script>
 </head>
 <body>
 	<div class="container mycontainer">
@@ -104,166 +127,5 @@
 			</div>
 		</div>
     </div>
-    
-    <!-- MARKDOWN PARSER SECTION -->
-    <script>
-	//get post index
-		fetch('./posts/index.md').then(
-			function(response) {
-				if (response.status !== 200) {
-					showMarkdown('## Looks like there was a problem. Status Code: ' +
-						response.status,'#','#');
-					return;
-				}
-				response.text().then(text => getPostsArray(text));
-				console.log('[INDEX] fetch success!');
-			}
-		)
-		.catch(function(err) {
-			console.log('Fetch Error :-S', err);
-		});
-		
-	//get post array and parse to markdown
-		function getPostsArray(text){
-		//filter text
-			text = text.split(' ').join('');
-		//store original data
-			var arrPure = text.split("\n");
-			arrPure.reverse(); 
-		//store processed data
-			text = text.toLowerCase();
-			var arrPosts = text.split("\n");
-			arrPosts.reverse(); 
-		//filter array (remove empty value)
-			var arrPosts = arrPosts.filter(function(el) { return el; });
-			var arrPure = arrPure.filter(function(el) { return el; });
-			//console.log(arrPosts);
-			
-		//get requested post from url
-			var url = window.location.hash.substr(1);
-			var hash = url.substring(url.indexOf('#')+1);
-			hash = hash.toLowerCase();
-			//console.log(hash);
-		
-		//if user request specific post
-			if(hash !== null && hash !== ''){
-			//check if post url valid
-				for(var i=0; i<arrPosts.length; i++){
-				//requested page
-					if(hash == arrPosts[i]){
-					//set shown post
-						var post="./posts/"+hash+"/index.md";
-						//console.log(post);
-					//set prev and next post
-						var prevPost;var nextPost;
-							if(i-1 < 0){prevPost = "#";}else{prevPost = '#'+arrPosts[i-1];}
-							if(i+1 >= arrPosts.length){nextPost = "#";}else{nextPost = '#'+arrPosts[i+1];}
-					//get post and parse to html
-						fetch(post).then(
-							function(response) {
-								if (response.status !== 200) {
-									showMarkdown('## Looks like there was a problem. Status Code: ' +
-										response.status,prevPost,nextPost);
-									return;
-								}
-								response.text().then(text => showMarkdown(text,prevPost,nextPost));
-								console.log('[POST] fetch success! Len='+arrPosts.length);
-							}
-						)
-						.catch(function(err) {
-							console.log('Fetch Error :-S', err);
-						});
-				//index page
-					}else if(hash == "index"){
-						var post="## Index\n";
-						for(var i=0; i<arrPosts.length; i++){
-							post=post + "<a style=\"font-size:18px;\" onclick=\"location.href='#"+ 
-							arrPosts[i] +"';refreshed()\">"+ arrPure[i].split('-').join(' ') +"</a>\n<br>";
-							//console.log(i + " " + arrPosts[i] + " " + arrPure[i]);
-						}
-						showMarkdown(post,'#','#');
-				//contact page
-					}else if(hash == "contact"){
-						var post="./posts/contact/index.md";
-						fetch(post).then(
-							function(response) {
-								if (response.status !== 200) {
-									showMarkdown('## Looks like there was a problem. Status Code: ' +
-										response.status,"#","#");
-									return;
-								}
-								var nextPost = '#' + arrPosts[1];
-								response.text().then(text => showMarkdown(text,'#','#'));
-								console.log('[POST] fetch success!');
-							}
-						)
-						.catch(function(err) {
-							console.log('Fetch Error :-S', err);
-						});
-				//about page
-					}else if(hash == "about"){
-						var post="./posts/about/index.md";
-						fetch(post).then(
-							function(response) {
-								if (response.status !== 200) {
-									showMarkdown('## Looks like there was a problem. Status Code: ' +
-										response.status,"#","#");
-									return;
-								}
-								var nextPost = '#' + arrPosts[1];
-								response.text().then(text => showMarkdown(text,'#','#'));
-								console.log('[POST] fetch success!');
-							}
-						)
-						.catch(function(err) {
-							console.log('Fetch Error :-S', err);
-						});
-				//if no page match
-					}else{
-						showMarkdown('## Looks like there was a problem. Status Code: 404'
-							,"#","#");
-						console.log('[POST] page not found!');
-					}
-				}
-		//if no specific post requested
-			}else{
-				var post="./posts/"+arrPosts[0]+"/index.md";
-				//console.log(post);
-				fetch(post).then(
-					function(response) {
-						if (response.status !== 200) {
-							showMarkdown('## Looks like there was a problem. Status Code: ' +
-								response.status,"#","#");
-							return;
-						}
-						var nextPost = '#' + arrPosts[1];
-						response.text().then(text => showMarkdown(text,'#',nextPost));
-						console.log('[POST] fetch success!');
-					}
-				)
-				.catch(function(err) {
-					console.log('Fetch Error :-S', err);
-				});
-			}
-		}
-		
-	//markdown parser
-        function showMarkdown(markdown,prevPost,nextPost){
-			var converter = new showdown.Converter();
-			var html = converter.makeHtml(markdown);
-			document.getElementById('Posts').innerHTML = html;
-			if(prevPost != '#'){
-				var BtnPrev = "<button class='btn btn-info' onclick=\"location.href='"+prevPost+"';refreshed()\">Previous Post</button>";
-				document.getElementById('BtnPrev').innerHTML = BtnPrev;
-				//console.log(BtnPrev);
-			}
-			if(nextPost != '#'){
-				var BtnNext = "<button class='btn btn-info' onclick=\"location.href='"+nextPost+"';refreshed()\">Next Post</button>"; 				
-				document.getElementById('BtnNext').innerHTML = BtnNext;
-				//console.log(BtnNext);
-			}
-		}
-    </script>
-    
 </body>
 </html>
