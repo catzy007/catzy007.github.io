@@ -231,6 +231,7 @@ security, maka sebaiknya tidak digunakan.
 gets(ipt);
 ```
 `gets` memanggil fungsi gets
+
 `ipt` variabel penyimpan
 
 contoh
@@ -261,9 +262,13 @@ maka harus ada pengganti untuk itu. perkenalkan fgets
 ```
 fgets(ipt, sizeof(ipt), stdin);
 ```
+
 `fgets` pemanggil fungsi fgets
+
 `ipt` variabel penyimpan
+
 `sizeof(ipt)` sizeof diikuti variabel penyimpan || isi dengan ukuran maksimal variabel penyimpan misal 255
+
 `stdin` asal ikuti saja lah
 
 contoh
