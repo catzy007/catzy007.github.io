@@ -1,4 +1,5 @@
 ### **Dasar Pemrograman C Part6 : Perulangan**
+#### Friday, September 14, 2018
 Adakalanya dalam pemrograman diperlukan beberapa proses yang sama. 
 daripada menuliskan program tersebut berulang ulang, loop atau 
 perulangan dapat digunakan.
