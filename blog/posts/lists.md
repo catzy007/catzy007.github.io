@@ -12,10 +12,10 @@
 #2018-05-05-internet-freedom-using-openvpn
 #2018-07-08-xp-pen-star-g430s-in-ubuntu-1710
 #2018-07-13-repair-grub-after-installing-windows
-2018-09-14-dasar-pemrograman-c-part7-array
-2018-09-14-dasar-pemrograman-c-part6-perulangan
-2018-09-14-dasar-pemrograman-c-part5-nested-if
->2018-06-22-dasar-pemrograman-c-part4-if-else-switch
+#2018-09-14-dasar-pemrograman-c-part7-array
+#2018-09-14-dasar-pemrograman-c-part6-perulangan
+#2018-09-14-dasar-pemrograman-c-part5-nested-if
+#2018-06-22-dasar-pemrograman-c-part4-if-else-switch
 #2018-04-24-dasar-pemrograman-c-part3-input-dan-operator
 #2018-03-10-dasar-pemrograman-c-part2-tipe-data
 #2018-09-14-dasar-pemrograman-c-part1-the-beginning
