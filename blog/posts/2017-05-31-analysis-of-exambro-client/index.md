@@ -83,19 +83,19 @@ Your Settings may be different. depend on your system
 Basically this is default settings of ExamBrowser.exe.Config
 <p align="center">
 	<img src="./posts/2017-05-31-analysis-of-exambro-client/13.png" height="250px" alt="img13">
-	<img src="./posts/2017-05-31-analysis-of-exambro-client/14.png" height="250px" alt="img14">
 </p> 
 
 <br>
 #### 7. ExamBrowser.XmlSerializers.dll
 <p align="center">
+	<img src="./posts/2017-05-31-analysis-of-exambro-client/14.png" height="250px" alt="img14">
 	<img src="./posts/2017-05-31-analysis-of-exambro-client/15.png" height="250px" alt="img15">
-	<img src="./posts/2017-05-31-analysis-of-exambro-client/16.png" height="250px" alt="img16">
 </p> 
 
 <br>
 #### 8. Gma.UserActivityMonitor.dll
 <p align="center">
+	<img src="./posts/2017-05-31-analysis-of-exambro-client/16.png" height="250px" alt="img16">
 	<img src="./posts/2017-05-31-analysis-of-exambro-client/17.png" height="250px" alt="img17">
 </p> 
 let me take the text
