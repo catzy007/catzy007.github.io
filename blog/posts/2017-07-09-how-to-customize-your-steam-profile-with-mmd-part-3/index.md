@@ -1,4 +1,4 @@
-### *How to customize your steam profile with MMD [Part 3]*
+### **How to customize your steam profile with MMD [Part 3]**
 #### Sunday, July 9, 2017
 
 <h3 align="center">PART 3 : Animate it!</h3>
@@ -64,5 +64,6 @@ then it'll show something like this.
 > Third : search for another motion file or even create yourself
 
 
-MMD model used here is KizunaAI http://kizunaai.com/
-NEXT : PART 4 : Make em GIF
+MMD model used here is KizunaAI <http://kizunaai.com/>
+
+#### **NEXT : PART 4 : Make em GIF**
