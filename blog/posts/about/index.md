@@ -17,6 +17,9 @@
 > This blog is made possible using [ShowdownJS](https://github.com/showdownjs/showdown), 
 [Bootstrap 3](https://getbootstrap.com/) and [Barlow Font](https://fonts.google.com/specimen/Barlow). 
 Thank you
- 
+
+<br>
+> This blog uses very little server side processing as possible. I hope you're understand if page slowdown or any other problem happen.
+
 <br>
 > “It feels a little bit funny coming here and telling you that Linux and open source are the future of gaming” - Gabe Newell
