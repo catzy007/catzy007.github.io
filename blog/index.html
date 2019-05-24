@@ -23,6 +23,14 @@
 			location.reload();
 			window.scrollTo(0, 0); 
 		}
+		
+		jQuery( document ).ready(function( $ ) {
+			//Use this inside your document ready jQuery 
+			$(window).on('popstate', function() {
+				location.reload(true);
+				window.scrollTo(0, 0);
+			});
+		});
     </script>
     <!-- MARKDOWN PARSER AND CORE -->
 	<script>
