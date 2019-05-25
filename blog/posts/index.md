@@ -21,5 +21,6 @@
 2018-09-14-Dasar-Pemrograman-C-Part1-The-Beginning
 2018-09-21-Making-Parallel-Computing-Program-Using-MPI-and-C
 2019-02-06-Starting-Life-as-Designer
+2019-05-25-Log-Building-Poor-Man-Workstation
 
 2018-11-04-Disabling-Intel-Me
