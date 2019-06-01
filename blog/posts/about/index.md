@@ -11,7 +11,7 @@
 > I have no responsibility if anything happen due to your activity following instruction in this blog and so on! 
 
 <br>
-> This blog is intended to be test for markdown parser! <https://www.umbrellafwd.tk> will be migrated here!
+> This blog is intended to be test for markdown parser! <https://umbrellafwd.blogspot.com/> will be migrated here!
 
 <br>
 > This blog is made possible using [ShowdownJS](https://github.com/showdownjs/showdown), 
