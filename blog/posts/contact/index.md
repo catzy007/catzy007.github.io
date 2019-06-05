@@ -13,6 +13,8 @@ High Performance Computing and Artificial Intelligence.
 
 > <https://github.com/catzy007>
 
+> <https://www.linkedin.com/in/bagus-saputra-b3035915b>
+
 > <mailto:catzy.rais@gmail.com>
 
 * Physcal location :
