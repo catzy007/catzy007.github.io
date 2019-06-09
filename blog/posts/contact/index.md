@@ -5,17 +5,21 @@ High Performance Computing and Artificial Intelligence.
 <br>
 #### You can find me at
 * Virtual location :
+> <mailto:catzy.rais@gmail.com>
+
+> <https://www.linkedin.com/in/bagus-saputra-b3035915b>
+
+> <https://github.com/catzy007>
+
+> <https://www.pixiv.net/member.php?id=10151753>
+
+> <https://www.instagram.com/catzymbs>
+
 > <https://twitter.com/catzymbs>
 
 > <http://www.facebook.com/catzy.mbs>
 
 > <http://steamcommunity.com/id/catzy007>
-
-> <https://github.com/catzy007>
-
-> <https://www.linkedin.com/in/bagus-saputra-b3035915b>
-
-> <mailto:catzy.rais@gmail.com>
 
 * Physcal location :
 > DOSCOM, Gedung D Lantai 1 Universitas Dian Nuswantoro, Jalan Nakula I No 1 - 15 Semarang, Jawa Tengah, Indonesia. 50131
