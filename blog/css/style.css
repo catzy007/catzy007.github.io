@@ -17,23 +17,30 @@
 /* MYCONTAINER */
 		.mycontainer {
 			margin: auto;
-			margin-top: 2%;
-			margin-bottom: 2%;
+			margin-top: 4vh;
+			margin-bottom: 4vh;
 			background-color: rgba(253, 253, 253, 0.95);
-			max-width: 90%;
-			min-height: 768px;
-			padding: 3% 10% 3% 10%;
+			padding: 6vh 20vh 6vh 20vh;
 		}
 
-	/* for display with more than 1920px width */
-		@media screen and (min-width: 1920px) {
+	/* for display with more than 2048px width */
+		@media screen and (min-width: 2048px) {
 			.mycontainer {
 				margin: auto;
 				margin-top: 2vh;
 				margin-bottom: 2vh;
 				background-color: rgba(253, 253, 253, 0.95);
-				max-width: 90vh;
-				min-height: 768px;
+				padding: 3vh 7vh 3vh 7vh;
+			}
+		}
+
+	/* for display with less than 800px width */
+		@media screen and (max-width: 800px) {
+			.mycontainer {
+				margin: auto;
+				margin-top: 2vh;
+				margin-bottom: 2vh;
+				background-color: rgba(253, 253, 253, 0.95);
 				padding: 3vh 7vh 3vh 7vh;
 			}
 		}
