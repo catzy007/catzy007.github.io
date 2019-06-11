@@ -1,5 +1,13 @@
 ### **How to customize your steam profile with MMD [Part 1]**
 #### Saturday, July 8, 2017
+Steam Profile is something like your identity in steam world. In some case people are making their profile as good as possible because they're seller or just for fun like me.
+
+MikuMikuDance, commonly abbreviated to MMD, is a freeware animation program that lets users animate and create 3D animated movies, originally produced for the Vocaloid character Hatsune Miku. according to <https://en.wikipedia.org/wiki/MikuMikuDance>
+
+> CAUTION : This tutorial made without any specialized tools so do it with your own risk!
+
+**In this post ill show you how to customize your steam profile with MMD. If your steam profile at least level 10 or higher then you can continue. if you're not then sorry you need to level up your steam profile!**
+
 
 <h3 align="center">Gathering Required File</h3>
 
