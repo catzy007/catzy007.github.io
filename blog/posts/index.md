@@ -4,7 +4,6 @@
 2017-07-09-How-to-customize-your-steam-profile-with-MMD-Part-3
 2017-07-08-How-to-customize-your-steam-profile-with-MMD-Part-2
 2017-07-08-How-to-customize-your-steam-profile-with-MMD-Part-1
-2017-07-09-How-to-customize-your-steam-profile-with-MMD
 2017-08-18-3-Axis-CNC-Machine
 2017-11-01-Random-Ping-Linux
 2017-11-25-Making-Your-Own-PC-HDMI-Virtual-Reality-Headset
