@@ -15,35 +15,37 @@
 		}
 		
 /* MYCONTAINER */
+	/* for mobile device like phone and tablet */
+	.mycontainer {
+		margin: auto;
+		margin-top: 2vh;
+		margin-bottom: 2vh;
+		background-color: rgba(253, 253, 253, 0.95);
+		padding: 3vh 3vh 3vh 3vh;
+	}
+
+	/* for device like laptop, standard computer, mid-end tv */
+	@media screen and (min-width: 800px) {
 		.mycontainer {
 			margin: auto;
-			margin-top: 4vh;
-			margin-bottom: 4vh;
+			margin-top: 2vh;
+			margin-bottom: 2vh;
 			background-color: rgba(253, 253, 253, 0.95);
-			padding: 6vh 20vh 6vh 20vh;
+			padding: 6vh 12vh 6vh 12vh;
 		}
+	}
 
-	/* for display with more than 2048px width */
-		@media screen and (min-width: 2048px) {
+	/* for device with high end display */
+		@media screen and (min-width: 2880px) {
 			.mycontainer {
 				margin: auto;
-				margin-top: 2vh;
-				margin-bottom: 2vh;
+				margin-top: 4vh;
+				margin-bottom: 4vh;
 				background-color: rgba(253, 253, 253, 0.95);
-				padding: 3vh 7vh 3vh 7vh;
+				padding: 2vh 4vh 2vh 4vh;
 			}
 		}
 
-	/* for display with less than 800px width */
-		@media screen and (max-width: 800px) {
-			.mycontainer {
-				margin: auto;
-				margin-top: 2vh;
-				margin-bottom: 2vh;
-				background-color: rgba(253, 253, 253, 0.95);
-				padding: 3vh 7vh 3vh 7vh;
-			}
-		}
 		.myexpander {
 			min-height: 100vh;
 			overflow: auto;
