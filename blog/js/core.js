@@ -59,7 +59,12 @@
 					reqParseMarkdown("POST", post, "#", "#");
 			//if requested url = NONE
 				}else{
-					var mylog = "#[POST] XMLHttpRequest Error! Page Not Found";
+					var mylog = "<br><br>\
+						<h1 align=\"center\">404 Page Not Found</h1>\n\
+						<h3 align=\"center\">Sorry the page you're looking for was not exist!</h3>\
+						<h4 align=\"center\">[POST] XMLHttpRequest Error!</h4>\
+						<br>\
+						<h3 align=\"center\"><a href=\"./\">Homepage</a></h3>";
 					showMarkdown(mylog, "#", "#");
 					console.log(mylog);
 				}
