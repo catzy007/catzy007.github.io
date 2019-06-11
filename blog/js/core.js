@@ -60,8 +60,10 @@
 			//if requested url = NONE
 				}else{
 					var mylog = "#[POST] XMLHttpRequest Error!";
-					var pagelog = "<br><br>\
-						<h1 align=\"center\">404 Page Not Found!</h1>\n\
+					var pagelog = "<br><br><br><br>\
+						<img src=\"./assets/404.png\" width=\"70%\" height=\"auto\"\
+							style=\"display: block;margin-left: auto;margin-right: auto;\">\
+						<h1 align=\"center\">Page Not Found!</h1>\n\
 						<h3 align=\"center\">Sorry the page you're looking for could not be found.</h3>\
 						<h4 align=\"center\">[POST] XMLHttpRequest Error!</h4>\
 						<br>\
