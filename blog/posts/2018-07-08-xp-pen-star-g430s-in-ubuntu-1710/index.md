@@ -9,9 +9,14 @@ ubuntu machine and use krita to draw and.... nothing works! by googling for 5
 mins and came to this [thread](https://ubuntuforums.org/showthread.php?t=2326961) 
 try it out and it's works. okay enough talks let's get into it.
 
-* First open terminal and make sure you're in home
+* First plug your pen tab, open terminal and make sure you're in home
 ```
  cd ~
+```
+* Then Install some dependency
+```
+sudo apt update
+sudo apt install libelf-dev
 ```
 * Next clone into DIGImend repo
 ```
@@ -30,6 +35,7 @@ sudo rmmod hid-uclogic
 sudo rmmod hid-huion
 ```
 * Then unplug and plug your pen tab
+* If your pen tab still won't work, try rebooting
 * Aand that's it!
 <p align="center">
 	<img src="./posts/2018-07-08-xp-pen-star-g430s-in-ubuntu-1710/1.png" height="250px" alt="Pressure">
