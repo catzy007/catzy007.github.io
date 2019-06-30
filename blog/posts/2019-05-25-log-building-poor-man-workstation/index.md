@@ -1,16 +1,16 @@
 ### **Log Building Poor Man Workstation**
 #### Saturday, 25 May 2019
 
-Hello, this is my first post after migrating to <github.io>. Okay this 
+Hello, this is my first post after migrating to <https://catzy007.github.io>. Okay this 
 is the story, I need a multi core machine with as high 
 performance/price as possible. But building machine from new part that 
-equivalent with my need can empty my wallet in no time. So i watch 
+equivalent with my need is pricey enough for me. Then i watch 
 this video <https://www.youtube.com/watch?v=7IK0Yer4XTc> and surprise 
-that 10 years old processor can hold up. So i looking around a 
-overclockable motherboard and found that still surprisingly expensive. 
-So i'm doing more research and found this motherboard 
-[Asus Z8NA-D6](https://www.asus.com/Commercial-Servers-Workstations/Z8NAD6/) 
-It has 2 socket LGA1366 with 6 bank of ram an support for ECC 
+that 10 years old processor can hold up even in 2019. So i looking around a 
+overclockable motherboard like Rampage 3 and found that still surprisingly 
+expensive. So i'm doing more research and found this motherboard that 
+i think is enough for my need [Asus Z8NA-D6](https://www.asus.com/Commercial-Servers-Workstations/Z8NAD6/) 
+It is dual socket LGA1366 with 6 bank of ram and support for ECC 
 Registered ram. Perfect.
 
 And day after that i quickly made this build plan.
@@ -36,6 +36,8 @@ ANY BOARD < 130$ !
  Z8NR-D12 ~120$
 ```
 
+<br>
+#### [UPDATE 05/22/19 13:39]
 Fast forward and some time with customs and the first item has arrive. 
 That was the motherboard. It even come with IO Shield too
 <p align="center">
@@ -53,4 +55,12 @@ Model. | CLK  | CB.  | $  | cb/$  | DLT | $DLT
 ```
 Hopefully i can get X5670 without much problem.
 
-
+<br>
+#### [UPDATE 06/30/19 22:42]
+After around 2 weeks, the processor was arrive. I quickly search for old DDR3 ram and bought 700W PSU from AeroCool for 30USD.
+Yeah i know not the best PSU but i hope it get job done. After quick plug and test, the system wont boot. . . yeah f*ck. 
+<p align="center">
+	<img src="./posts/2019-05-25-log-building-poor-man-workstation/2.jpg" height="250px" alt="img2">
+</p>
+My quick diagnose was my old RAM was bad or BIOS in my motherboard was too old, so yeah trying to find working 
+RAM and buying 2009 CPU and update the bios that way. Hopefully i can get E5506 without any problem (once for ever)
