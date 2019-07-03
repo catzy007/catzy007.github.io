@@ -73,5 +73,5 @@ After bought two stick of RAM and old AMD HSF from work, i'm ready to test this 
 	<img src="./posts/2019-05-25-log-building-poor-man-workstation/4.jpg" height="250px" alt="img4">
 </p>
 The actual problem was my ram is dead.. so yeah it mean that i can update BIOS later. Next in my list was getting true on spec HSF.
-Hopefully i can get Deepcool Gammaxx 400 and two of those because of 2 cpu. And for cooler, i can only go with LGA2011/1366 screw 
+Hopefully i can get [Deepcool Gammaxx 400](https://www.blibli.com/p/deepcool-gammaxx-400-cpu-cooler/ps--FRC-24438-00061?ds=FRC-24438-00061-00001&source=BRAND_PAGE) or [Deepcool Ice Blade 200M](https://www.blibli.com/p/deepcool-ice-blade-200m-cpu-cooler/ps--FRC-24438-00060?ds=FRC-24438-00060-00001&source=SEARCH_OR_CATEGORY_PAGE). And for cooler, i can only go with LGA2011/1366 screw 
 based cooler because 1366 server board include onboard backplate for CPU mounting.
