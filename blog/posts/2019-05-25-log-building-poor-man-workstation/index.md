@@ -64,3 +64,14 @@ Yeah i know not the best PSU but i hope it get job done. After quick plug and te
 </p>
 My quick diagnose was my old RAM was bad or BIOS in my motherboard was too old, so yeah trying to find working 
 RAM and buying 2009 CPU and update the bios that way. Hopefully i can get E5506 without any problem (once for ever)
+
+<br>
+#### [UPDATE 07/03/19 09:54]
+After bought two stick of RAM and old AMD HSF from work, i'm ready to test this machine again.. aand it turned on. Great.
+<p align="center">
+	<img src="./posts/2019-05-25-log-building-poor-man-workstation/3.jpg" height="250px" alt="img3">
+	<img src="./posts/2019-05-25-log-building-poor-man-workstation/4.jpg" height="250px" alt="img4">
+</p>
+The actual problem was my ram is dead.. so yeah it mean that i can update BIOS later. Next in my list was getting true on spec HSF.
+Hopefully i can get Deepcool Gammaxx 400 and two of those because of 2 cpu. And for cooler, i can only go with LGA2011/1366 screw 
+based cooler because 1366 server board include onboard backplate for CPU mounting.
