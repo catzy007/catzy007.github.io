@@ -47,98 +47,118 @@
         <div class="col-sm-12">
 			<div id="main" class="mycontainer">
 				<div class="form-group">
-					<p><strong>Pilih mode :</strong></p>
-					<textarea class="form-control" rows="8" id="comment"></textarea>
+					<p><strong>Inputkan Literal :</strong></p>
+					<textarea class="form-control" rows="5" id="IptProlog" style="resize: none;"></textarea>
+					<br>
+					<p><strong>Bahasa Predikat :</strong></p>
+					<input type="text" class="form-control" id="IptQuery">
 					<br>
 					<button type="submit" class="btn btn-success btn-block" onclick="myFunction()" value="Submit">Submit</button>
 				</div>
-				<br>
-				<p>premis 1 : <a id="premis1"></a></p>
-				<p>premis 2 : <a id="premis2"></a></p>
-				<p>kesimpulan : <a id="konklusi"></a></p>
-				<br>
 				<div class="col-sm-6">
 					<a id="errMsg"></a>
 				</div>
 				<div class="col-sm-6 text-right">
 					<a onclick="return show('info');">ⓘ</a>
 				</div>
-				
 			</div>
 			
 			<div id="info" class="mycontainer" style="display:none" onclick="return show('main');">
-				<p><strong>Modus Ponens</strong></p>
-				<p>P1 : Jika Toni mandi maka saya pergi kuliah</p>
-				<p>P2 : Toni mandi</p>
-				<p>K : Saya pergi kuliah</p>
+				<p><strong>Contoh</strong></p>
+				<p>Natural : Semua bilangan integer mempunyai faktor prima</p>
+				<p>Literal : untuk setiap X dimana X adalah bilangan integer maka X adalah mempunyai faktor prima</p>
+				<p>FOL     : ∀x.bilangan_integer(x)→mempunyai_faktor_prim(x)</p>
 				<br>
-				<p><strong>Modus Tollens</strong></p>
-				<p>P1 : Jika Toni mandi maka saya pergi kuliah</p>
-				<p>P2 : Saya tidak pergi kuliah</p>
-				<p>K : Toni tidak mandi</p>
-				<br>
-				<p><strong>Equivalence Elimination</strong></p>
-				<p>P1 : Toni mandi jika dan hanya jika Ia pergi ke pasar</p>
-				<p>P2 : Jika Toni mandi maka ia pergi ke pasar</p>
-				<p>K : Jika Ia pergi ke pasar maka Toni mandi</p>
-				<br>
-				<p><strong>Silogisme Disjungtif</strong></p>
-				<p>P1 : Budi membeli es krim atau Bapak ke kantor</p>
-				<p>P2 : Budi tidak membeli es krim</p>
-				<p>K : Bapak ke kantor</p>
-				<br>
-				<p><strong>Silogisme Hipotesis</strong></p>
-				<p>P1 : Jika Toni mandi maka saya pergi kuliah</p>
-				<p>P2 : Jika saya pergi kuliah maka Jono tidur</p>
-				<p>K : Jika Toni mandi maka Jono tidur</p>
+				<p>Natural : Beberapa mahasiswa adalah intelektual</p>
+				<p>Literal : Paling sedikit ada satu X dimana X adalah mahasiswa dan X adalah intelektual</p>
+				<p>FOL     : ∃x.mahasiswa(x)∧intelektual(x)</p>
 			</div>
         </div>
     </div>
 </div>
 <script>
         function myFunction() {
-            var str1 = document.getElementById('IptPremis1').value.toLowerCase();
-            var str2 = document.getElementById('IptPremis2').value.toLowerCase();
-            var mode = document.getElementById('IptMode').value;
-            
-            if(str1.length == 0 || str2.length == 0 ){
+            var str = document.getElementById('IptProlog').value.toLowerCase();
+			var array = str.split('\n'); //pisah string input dalam array
+			var output = '';
+			
+			//cek jika form kosong
+			if(str.length == 0){
                 document.getElementById("errMsg").innerHTML = "Form tidak boleh kosong!";
             }else{
                 document.getElementById("errMsg").innerHTML = " ";
             }
-            
-            if(mode == 1 ){
-                modusPonens(str1, str2);
-            }else if(mode == 2){
-                modusTollens(str1, str2);
-            }else if(mode == 3){
-                equElim(str1, str2);
-            }else if(mode == 4){	
-                siloDisjungtif(str1, str2);
-            }else if(mode == 5){
-                siloHipotesis(str1, str2);
-            }else if(mode > 5 || mode < 1){
-                document.getElementById("errMsg").innerHTML = "Unknown Error Occured!";
-            }
+
+			//loop array dan jalankan parser
+			for (var i = 0; i < array.length; i++) {
+				output += myParser(array[i].trim());
+			}
+			console.log(output);
+
+			document.getElementById('IptQuery').value = output;
         }
+
+		function myParser(str){
+			if(KuantorCek(str) !== '0x000') {
+				return KuantorCek(str);
+			}else if(BuatPredikat(str) !== '0x000') {
+				return BuatPredikat(str);
+			}else if(PenghubungCek(str) !== '0x000') {
+				return PenghubungCek(str);
+			}else{
+				return BuatKalimat(str);
+			}
+		}
+		
+		function KuantorCek(str){
+			var output;
+			if(globalValidator(str,'semua ') 
+			|| globalValidator(str,'setiap ') 
+			|| globalValidator(str,'tidak ada ')){
+				output = globalGetRight(str,'semua ');
+				output = globalGetRight(output,'setiap ');
+				output = globalGetRight(output,'tidak ada ');
+				output = globalRemover(output,' dimana');
+				return '\u2200' + output + '.';
+			}else if(globalValidator(str,'beberapa ')
+			|| globalValidator(str,'paling sedikit ')
+			|| globalValidator(str,'ada ')){
+				output = globalGetRight(str,'beberapa ');
+				output = globalGetRight(output,'paling sedikit ');
+				output = globalGetRight(output,'ada satu ');
+				output = globalGetRight(output,'ada ');
+				output = globalRemover(output,' dimana');
+				return '\u2203' + output + '.';
+			}
+			return '0x000';
+		}
+		
+		function BuatPredikat(str){
+			var output;
+			if(globalValidator(str,' adalah ')){
+				return globalGetRight(str,' adalah ') + '(' + globalGetLeft(str,' adalah ') + ')';
+			}
+			return '0x000';
+		}
+		
+		function PenghubungCek(str){
+			if(globalValidator(str,'maka') && str.length === 'maka'.length){
+				return '\u2192';
+			}else if(globalValidator(str,'dan') && str.length === 'dan'.length){
+				return '\u2227';
+			}else if(globalValidator(str,'atau') && str.length === 'atau'.length){
+				return '\u2228';
+			}
+			return '0x000';
+		}
+		
+		function BuatKalimat(str){
+			var array = str.split('\ ');
+			return array[1] + '(' + array[0] + ',' + array[2] + ')';
+		}
         </script>
     
         <!-- kumpulan function ========================================= -->
         <script src="js/globalfunction.js"></script>
-    
-        <!-- algoritma dibawah adalah modus Ponens ===================== -->
-        <script src="js/modusponens.js"></script>
-    
-        <!-- algoritma dibawah adalah modus Tollens ==================== -->
-        <script src="js/modustollens.js"></script>
-        
-        <!-- algoritma dibawah adalah Equivalence Elemination ========== -->
-        <script src="js/equivalenceelimination.js"></script>
-    
-        <!-- algoritma dibawah adalah silogisme disjungtif ============= -->
-        <script src="js/silogismedisjungtif.js"></script>
-        
-        <!-- algoritma dibawah adalah silogisme hipotesis ============== -->
-        <script src="js/silogismehipotesis.js"></script>
 </body>
 </html>
