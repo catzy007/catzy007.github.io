@@ -48,10 +48,10 @@
 			<div id="main" class="mycontainer">
 				<div class="form-group">
 					<p><strong>Inputkan Literal :</strong></p>
-					<textarea class="form-control" rows="5" id="IptProlog" style="resize: none;"></textarea>
+					<textarea class="form-control" rows="16" id="IptProlog" style="resize: none;"></textarea>
 					<br>
 					<p><strong>Bahasa Predikat :</strong></p>
-					<input type="text" class="form-control" id="IptQuery">
+					<input type="text" class="form-control" id="OutRslt">
 					<br>
 					<button type="submit" class="btn btn-success btn-block" onclick="myFunction()" value="Submit">Submit</button>
 				</div>
@@ -66,7 +66,7 @@
 			<div id="info" class="mycontainer" style="display:none" onclick="return show('main');">
 				<p><strong>Contoh</strong></p>
 				<p>Natural : Semua bilangan integer mempunyai faktor prima</p>
-				<p>Literal : untuk setiap X dimana X adalah bilangan integer maka X adalah mempunyai faktor prima</p>
+				<p>Literal : untuk setiap X dimana X adalah bilangan_integer maka X adalah mempunyai_faktor_prima</p>
 				<p>FOL     : ∀x.bilangan_integer(x)→mempunyai_faktor_prim(x)</p>
 				<br>
 				<p>Natural : Beberapa mahasiswa adalah intelektual</p>
@@ -79,86 +79,27 @@
 <script>
         function myFunction() {
             var str = document.getElementById('IptProlog').value.toLowerCase();
-			var array = str.split('\n'); //pisah string input dalam array
-			var output = '';
+			var array = str.split('\n'); //=================== pisah string input dalam array
+			var output = ''; //=============================== buat container untuk output
 			
-			//cek jika form kosong
+			//================================================ cek jika form kosong
 			if(str.length == 0){
                 document.getElementById("errMsg").innerHTML = "Form tidak boleh kosong!";
             }else{
                 document.getElementById("errMsg").innerHTML = " ";
+                //============================================ loop array dan jalankan parser
+				for (var i = 0; i < array.length; i++) {
+					output += myParser(array[i].trim()); //=== hasil output berupa (hasil return masing2 fungsi)
+				}
+				//console.log(output); //debug_line_can_be_removed
+				//============================================ set output pada OutRslt
+				document.getElementById('OutRslt').value = output;
             }
-
-			//loop array dan jalankan parser
-			for (var i = 0; i < array.length; i++) {
-				output += myParser(array[i].trim());
-			}
-			console.log(output);
-
-			document.getElementById('IptQuery').value = output;
         }
-
-		function myParser(str){
-			if(KuantorCek(str) !== '0x000') {
-				return KuantorCek(str);
-			}else if(BuatPredikat(str) !== '0x000') {
-				return BuatPredikat(str);
-			}else if(PenghubungCek(str) !== '0x000') {
-				return PenghubungCek(str);
-			}else{
-				return BuatKalimat(str);
-			}
-		}
-		
-		function KuantorCek(str){
-			var output;
-			if(globalValidator(str,'semua ') 
-			|| globalValidator(str,'setiap ') 
-			|| globalValidator(str,'tidak ada ')){
-				output = globalGetRight(str,'semua ');
-				output = globalGetRight(output,'setiap ');
-				output = globalGetRight(output,'tidak ada ');
-				output = globalRemover(output,' dimana');
-				return '\u2200' + output + '.';
-			}else if(globalValidator(str,'beberapa ')
-			|| globalValidator(str,'paling sedikit ')
-			|| globalValidator(str,'ada ')){
-				output = globalGetRight(str,'beberapa ');
-				output = globalGetRight(output,'paling sedikit ');
-				output = globalGetRight(output,'ada satu ');
-				output = globalGetRight(output,'ada ');
-				output = globalRemover(output,' dimana');
-				return '\u2203' + output + '.';
-			}
-			return '0x000';
-		}
-		
-		function BuatPredikat(str){
-			var output;
-			if(globalValidator(str,' adalah ')){
-				return globalGetRight(str,' adalah ') + '(' + globalGetLeft(str,' adalah ') + ')';
-			}
-			return '0x000';
-		}
-		
-		function PenghubungCek(str){
-			if(globalValidator(str,'maka') && str.length === 'maka'.length){
-				return '\u2192';
-			}else if(globalValidator(str,'dan') && str.length === 'dan'.length){
-				return '\u2227';
-			}else if(globalValidator(str,'atau') && str.length === 'atau'.length){
-				return '\u2228';
-			}
-			return '0x000';
-		}
-		
-		function BuatKalimat(str){
-			var array = str.split('\ ');
-			return array[1] + '(' + array[0] + ',' + array[2] + ')';
-		}
         </script>
     
         <!-- kumpulan function ========================================= -->
         <script src="js/globalfunction.js"></script>
+        <script src="js/predicate.js"></script>
 </body>
 </html>
