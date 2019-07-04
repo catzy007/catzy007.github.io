@@ -23,6 +23,9 @@
 <style>
     body{
         background-image: url("assets/background.jpg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-attachment: fixed;
     }
     .mycontainer{
         position: absolute;
@@ -72,6 +75,12 @@
 				<p>Natural : Beberapa mahasiswa adalah intelektual</p>
 				<p>Literal : Paling sedikit ada satu X dimana X adalah mahasiswa dan X adalah intelektual</p>
 				<p>FOL     : ∃x.mahasiswa(x)∧intelektual(x)</p>
+				<br>
+				<p>Bapak(Tono,Budi)</p>
+				<p>Bapak(Budi,Andi)</p>
+				<p>Ekspresi Kakek dalam FOL adalah</p>
+				<p>Literal : untuk setiap x,y,z, y adalah bapak x, dan, y adalah anak z, maka, z adalah kakek x</p>
+				<p>FOL     : ∀x,y,z.bapak(y,x)∧anak(y,z)→kakek(z,x)</p>
 			</div>
         </div>
     </div>
