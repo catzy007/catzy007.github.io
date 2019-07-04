@@ -62,25 +62,38 @@
 					<a id="errMsg"></a>
 				</div>
 				<div class="col-sm-6 text-right">
-					<a onclick="return show('info');">ⓘ</a>
+					<a onclick="return show('info');" style="cursor: pointer;">ⓘ</a>
 				</div>
 			</div>
 			
-			<div id="info" class="mycontainer" style="display:none" onclick="return show('main');">
-				<p><strong>Contoh</strong></p>
-				<p>Natural : Semua bilangan integer mempunyai faktor prima</p>
-				<p>Literal : untuk setiap X dimana X adalah bilangan_integer maka X adalah mempunyai_faktor_prima</p>
-				<p>FOL     : ∀x.bilangan_integer(x)→mempunyai_faktor_prim(x)</p>
-				<br>
-				<p>Natural : Beberapa mahasiswa adalah intelektual</p>
-				<p>Literal : Paling sedikit ada satu X dimana X adalah mahasiswa dan X adalah intelektual</p>
-				<p>FOL     : ∃x.mahasiswa(x)∧intelektual(x)</p>
-				<br>
-				<p>Bapak(Tono,Budi)</p>
-				<p>Bapak(Budi,Andi)</p>
-				<p>Ekspresi Kakek dalam FOL adalah</p>
-				<p>Literal : untuk setiap x,y,z, y adalah bapak x, dan, y adalah anak z, maka, z adalah kakek x</p>
-				<p>FOL     : ∀x,y,z.bapak(y,x)∧anak(y,z)→kakek(z,x)</p>
+			<div id="info" class="mycontainer" style="display:none">
+				<div class="col-sm-12 text-right">
+					<h3 onclick="return show('main');" style="cursor: pointer;">
+						<a>x</a>
+					</h3>
+				</div>
+				<div class="col-sm-12">
+					<p><strong>Contoh</strong></p>
+					<p>Natural : Semua bilangan integer mempunyai faktor prima</p>
+					<p>Literal : untuk setiap X dimana X adalah bilangan_integer maka X adalah mempunyai_faktor_prima</p>
+					<p>FOL     : ∀x.bilangan_integer(x)→mempunyai_faktor_prim(x)</p>
+					<br>
+					<p>Natural : Beberapa mahasiswa adalah intelektual</p>
+					<p>Literal : Paling sedikit ada satu X dimana X adalah mahasiswa dan X adalah intelektual</p>
+					<p>FOL     : ∃x.mahasiswa(x)∧intelektual(x)</p>
+					<br>
+					<br>
+					<p>Bapak(Tono,Budi)</p>
+					<p>Bapak(Budi,Andi)</p>
+					<br>
+					<p>Ekspresi Kakek dalam FOL adalah</p>
+					<p>Literal : untuk setiap x,y,z, y adalah bapak x, dan, y adalah anak z, maka, z adalah kakek x</p>
+					<p>FOL     : ∀x,y,z.bapak(y,x)∧anak(y,z)→kakek(z,x)</p>
+					<br>
+					<p>Ekspresi Anak pada FOL</p>
+					<p>Literal : untuk semua x,y, x bapak dari y, maka, y anak dari x</p>
+					<p>FOL     : ∀x,y.bapak(x,y)→anak(y,x)</p>
+				</div>
 			</div>
         </div>
     </div>

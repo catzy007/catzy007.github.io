@@ -47,6 +47,7 @@
 
 		function BuatPredikat(str){ //======================== misal (budi bapak ani --- bapak(budi, ani)
 			str = globalRemover(str,' adalah'); //============ hilangkan kata adalah pada str
+			str = globalRemover(str,' dari'); //============== hilangkan kata dari pada str
 			var array = str.split('\ '); //=================== ubah kalimat menjadi array of kata
 			var output = '';
 			if(array.length > 1){ //========================== jika kata lebih dari satu
