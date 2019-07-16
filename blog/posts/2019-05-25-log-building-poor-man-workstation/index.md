@@ -78,10 +78,10 @@ based cooler because 1366 server board include onboard backplate for CPU mountin
 
 <br>
 #### [UPDATE 07/16/19 22:31]
-After waiting a week and still didn't get my monthly wage, i decide to continue and test my system anyway. The results was
+After waiting a week and still didn't get my monthly wage on time, i decide to continue and test my system anyway. The results was
 <p align="center">
-	<img src="./posts/2019-05-25-log-building-poor-man-workstation/5.jpg" height="250px" alt="img5">
+	<img src="./posts/2019-05-25-log-building-poor-man-workstation/5.png" height="250px" alt="img5">
 	<img src="./posts/2019-05-25-log-building-poor-man-workstation/6.png" height="250px" alt="img6">
 	<img src="./posts/2019-05-25-log-building-poor-man-workstation/7.jpg" height="250px" alt="img7">
 </p>
-yeah some number are great but, my temperature was pretty high there. Hopefully i can get the cooler and retest everything.
+Yeah some number are great but, the temperature was pretty high there. Hopefully i can get the cooler and retest everything.
