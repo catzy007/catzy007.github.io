@@ -95,7 +95,7 @@ okay the problem is this
 	<br>
 	<a href="https://forums.servethehome.com/index.php?threads/guide-1356-1366-xeon-aftermarket-heatsink-selection-installation.5003/">image source</a>
 </p>
-Then i cut the four corner of backplate using handsaw and this what it look like. The pink thing is nail polish to prevent short circuit
+Then i cut the four corner of backplate using handsaw and this what it look like. The pink thing is nail polish to prevent short circuit from my rough cut
 <p align="center">
 	<img src="./posts/2019-05-25-log-building-poor-man-workstation/8.jpg" height="250px" alt="img8">
 </p>
