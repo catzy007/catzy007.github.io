@@ -85,3 +85,27 @@ After waiting a week and still didn't get my monthly wage on time, i decide to c
 	<img src="./posts/2019-05-25-log-building-poor-man-workstation/7.jpg" height="250px" alt="img7">
 </p>
 Yeah some number are great but, the temperature was pretty high there. Hopefully i can get the cooler and retest everything.
+
+<br>
+#### [UPDATE 07/22/19 22:00]
+Today my cooler arrive it's deepcool Ice Blade 200M. I quickly open and mount it on the motherboard aand yeah the LGA2011 screw was too big '-') sh*t.
+okay the problem is this
+<p align="center">
+	<img src="./posts/2019-05-25-log-building-poor-man-workstation/add1.jpg" height="250px" alt="add1">
+	<br>
+	<a href="https://forums.servethehome.com/index.php?threads/guide-1356-1366-xeon-aftermarket-heatsink-selection-installation.5003/">image source</a>
+</p>
+Then i cut the four corner of backplate using handsaw and this what it look like. The pink thing is nail polish to prevent short circuit
+<p align="center">
+	<img src="./posts/2019-05-25-log-building-poor-man-workstation/8.jpg" height="250px" alt="img8">
+</p>
+Finally i can mount the cooler using standar intel push-pin fastener
+<p align="center">
+	<img src="./posts/2019-05-25-log-building-poor-man-workstation/9.jpg" height="250px" alt="img9">
+</p>
+Aand here is some benchmark. I get a minute less in blender than previous benchmark not that bad. The problem still the processor get up to 90+ centigrade.
+I think that because the exhaust of second CPU was directed to the first CPU. In other word feeding hot air into heatsink... i tried to change the heatsink direction but i have clearance issues. Maybe someday i will re route everything.
+<p align="center">
+	<img src="./posts/2019-05-25-log-building-poor-man-workstation/10.png" height="250px" alt="img10">
+	<img src="./posts/2019-05-25-log-building-poor-man-workstation/11.png" height="250px" alt="img11">
+</p>
