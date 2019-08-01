@@ -25,12 +25,12 @@ First disassemble your laptop/pc unplug power, ram, bios battery, basically unpl
 
 Next you need to find datasheet for it (just google the chip name + datasheet) ex. "Q64-104HIP datasheet" then look at the pinout. This will be wiring guide for next step! you can read more info too. Some manufacture has different configurations.
 <p align="center">
-	<img src="./posts/2018-11-04-disabling-intel-me/2.png" height="250px" alt="datasheet">
+	<img src="./posts/2018-11-04-disabling-intel-me/2.jpg" height="250px" alt="datasheet">
 </p>
 
 then wire everything according to this schematics, followed by clipping SOP-8 clipper to bios chip.
 <p align="center">
-	<img src="./posts/2018-11-04-disabling-intel-me/3.png" height="250px" alt="Schematics">
+	<img src="./posts/2018-11-04-disabling-intel-me/3.jpg" height="250px" alt="Schematics">
 	<img src="./posts/2018-11-04-disabling-intel-me/4.jpg" height="250px" alt="My setup">
 </p> 
  

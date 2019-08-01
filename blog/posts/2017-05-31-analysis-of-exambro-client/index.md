@@ -7,7 +7,7 @@ this article is simple analysis of Exambro Cilent V16.1030 REL based on amateur 
 
 In client folder we got file like this
 <p align="center">
-	<img src="./posts/2017-05-31-analysis-of-exambro-client/1.png" height="250px" alt="img1">
+	<img src="./posts/2017-05-31-analysis-of-exambro-client/1.jpg" height="250px" alt="img1">
 </p> 
 
 Let me show some details
@@ -15,26 +15,26 @@ Let me show some details
 <br>
 #### 1. Chrome Installer 32 and 64 Bit
 <p align="center">
-	<img src="./posts/2017-05-31-analysis-of-exambro-client/2.png" height="300px" alt="img2">
-	<img src="./posts/2017-05-31-analysis-of-exambro-client/3.png" height="300px" alt="img3">
+	<img src="./posts/2017-05-31-analysis-of-exambro-client/2.jpg" height="300px" alt="img2">
+	<img src="./posts/2017-05-31-analysis-of-exambro-client/3.jpg" height="300px" alt="img3">
 </p> 
 
 <br>
 #### 2. eb000.dat
 <p align="center">
-	<img src="./posts/2017-05-31-analysis-of-exambro-client/4.png" height="300px" alt="img4">
+	<img src="./posts/2017-05-31-analysis-of-exambro-client/4.jpg" height="300px" alt="img4">
 </p> 
 
 <br>
 #### 3. eb001.dat
 <p align="center">
-	<img src="./posts/2017-05-31-analysis-of-exambro-client/5.png" height="300px" alt="img5">
+	<img src="./posts/2017-05-31-analysis-of-exambro-client/5.jpg" height="300px" alt="img5">
 </p> 
 
 <br>
 #### 4. ExamBrowser.exe
 <p align="center">
-	<img src="./posts/2017-05-31-analysis-of-exambro-client/6.png" height="200px" alt="img6">
+	<img src="./posts/2017-05-31-analysis-of-exambro-client/6.jpg" height="200px" alt="img6">
 </p> 
 
 This have 4 function
@@ -50,26 +50,26 @@ To begin Exam
 Another Details
 * Properties
 <p align="center">
-	<img src="./posts/2017-05-31-analysis-of-exambro-client/7.png" height="300px" alt="img7">
-	<img src="./posts/2017-05-31-analysis-of-exambro-client/8.png" height="300px" alt="img8">
+	<img src="./posts/2017-05-31-analysis-of-exambro-client/7.jpg" height="300px" alt="img7">
+	<img src="./posts/2017-05-31-analysis-of-exambro-client/8.jpg" height="300px" alt="img8">
 </p> 
 * Version Info
 <p align="center">
-	<img src="./posts/2017-05-31-analysis-of-exambro-client/9.png" height="300px" alt="img9">
+	<img src="./posts/2017-05-31-analysis-of-exambro-client/9.jpg" height="300px" alt="img9">
 </p> 
 * Manifest
 <p align="center">
-	<img src="./posts/2017-05-31-analysis-of-exambro-client/10.png" height="300px" alt="img10">
+	<img src="./posts/2017-05-31-analysis-of-exambro-client/10.jpg" height="300px" alt="img10">
 </p> 
 * File Header
 <p align="center">
-	<img src="./posts/2017-05-31-analysis-of-exambro-client/11.png" height="300px" alt="img11">
+	<img src="./posts/2017-05-31-analysis-of-exambro-client/11.jpg" height="300px" alt="img11">
 </p> 
 
 <br>
 #### 5. ExamBrowser.exe.Config 
 <p align="center">
-	<img src="./posts/2017-05-31-analysis-of-exambro-client/12.png" height="300px" alt="img12">
+	<img src="./posts/2017-05-31-analysis-of-exambro-client/12.jpg" height="300px" alt="img12">
 </p> 
 let me explain
 * `Blue` is Exambro password to unlock settings
@@ -82,21 +82,21 @@ Your Settings may be different. depend on your system
 #### 6. ExamBrowser.vshost.exe.Config
 Basically this is default settings of ExamBrowser.exe.Config
 <p align="center">
-	<img src="./posts/2017-05-31-analysis-of-exambro-client/13.png" height="250px" alt="img13">
+	<img src="./posts/2017-05-31-analysis-of-exambro-client/13.jpg" height="250px" alt="img13">
 </p> 
 
 <br>
 #### 7. ExamBrowser.XmlSerializers.dll
 <p align="center">
-	<img src="./posts/2017-05-31-analysis-of-exambro-client/14.png" height="250px" alt="img14">
-	<img src="./posts/2017-05-31-analysis-of-exambro-client/15.png" height="250px" alt="img15">
+	<img src="./posts/2017-05-31-analysis-of-exambro-client/14.jpg" height="250px" alt="img14">
+	<img src="./posts/2017-05-31-analysis-of-exambro-client/15.jpg" height="250px" alt="img15">
 </p> 
 
 <br>
 #### 8. Gma.UserActivityMonitor.dll
 <p align="center">
-	<img src="./posts/2017-05-31-analysis-of-exambro-client/16.png" height="250px" alt="img16">
-	<img src="./posts/2017-05-31-analysis-of-exambro-client/17.png" height="250px" alt="img17">
+	<img src="./posts/2017-05-31-analysis-of-exambro-client/16.jpg" height="250px" alt="img16">
+	<img src="./posts/2017-05-31-analysis-of-exambro-client/17.jpg" height="250px" alt="img17">
 </p> 
 let me take the text
 ```
@@ -118,7 +118,7 @@ Creator : <https://www.codeproject.com/Articles/7294/Processing-Global-Mouse-and
 <br>
 #### 9. log.txt
 <p align="center">
-	<img src="./posts/2017-05-31-analysis-of-exambro-client/18.png" height="250px" alt="img18">
+	<img src="./posts/2017-05-31-analysis-of-exambro-client/18.jpg" height="250px" alt="img18">
 </p> 
 
 That's some simple analysis of Exambro Client more analysis 

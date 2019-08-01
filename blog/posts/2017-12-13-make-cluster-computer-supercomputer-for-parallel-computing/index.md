@@ -25,7 +25,7 @@ Cortex-A7@1.2Ghz, 512MB RAM, 8GB Memory, and running armbian with MPICH.
 <br>
 #### **2. Part List And Price**
 <p align="center">
-	<img src="./posts/2017-12-13-make-cluster-computer-supercomputer-for-parallel-computing/1.png" height="150px" alt="price">
+	<img src="./posts/2017-12-13-make-cluster-computer-supercomputer-for-parallel-computing/1.jpg" height="150px" alt="price">
 </p> 
 That's almost all part i used to make this cluster computer around 
 114.96USD at December 17. The reason i choose Orangepi zero is very 
@@ -42,7 +42,7 @@ cooling. any fan and heatsink will work so yeah.
 <br>
 #### **3. Network Map**
 <p align="center">
-	<img src="./posts/2017-12-13-make-cluster-computer-supercomputer-for-parallel-computing/2.png" height="250px" alt="netmap">
+	<img src="./posts/2017-12-13-make-cluster-computer-supercomputer-for-parallel-computing/2.jpg" height="250px" alt="netmap">
 </p> 
 Here i have two connected via WDS. router0 connected to world wide web 
 and control PC and. router1 connected to switch which is connected to 
@@ -133,7 +133,7 @@ need ATLAS for some scientific calculation then go ahead. Oh yeah, if
 you want to perform some HPL "High Performance Linpack" test then go 
 ahead.
 <p align="center">
-	<img src="./posts/2017-12-13-make-cluster-computer-supercomputer-for-parallel-computing/3.png" height="250px" alt="4.3Gflops">
+	<img src="./posts/2017-12-13-make-cluster-computer-supercomputer-for-parallel-computing/3.jpg" height="250px" alt="4.3Gflops">
 </p> 
 
 Here I'm Using 4 nodes with total of 16 core.. i'm getting around 
@@ -200,18 +200,18 @@ your system has no disk manager, use `sudo apt-get install gnome-disk-utility`
 First plug your sdcard into sdcard reader and plug it into your computer. 
 next open `Disks`
 <p align="center">
-	<img src="./posts/2017-12-13-make-cluster-computer-supercomputer-for-parallel-computing/4.png" height="250px" alt="Disks">
+	<img src="./posts/2017-12-13-make-cluster-computer-supercomputer-for-parallel-computing/4.jpg" height="250px" alt="Disks">
 </p> 
 
 Then click on dropdown menu and clik `"Create Disk Image"`
 <p align="center">
-	<img src="./posts/2017-12-13-make-cluster-computer-supercomputer-for-parallel-computing/5.png" height="250px" alt="Create">
+	<img src="./posts/2017-12-13-make-cluster-computer-supercomputer-for-parallel-computing/5.jpg" height="250px" alt="Create">
 </p> 
 
 Next change file name and directory "if you want", and start creating. 
 type your password if system ask it. and take a coffee or 10.
 <p align="center">
-	<img src="./posts/2017-12-13-make-cluster-computer-supercomputer-for-parallel-computing/6.png" height="250px" alt="Name">
+	<img src="./posts/2017-12-13-make-cluster-computer-supercomputer-for-parallel-computing/6.jpg" height="250px" alt="Name">
 </p> 
 
 And it's done simple right. next flashing image to your another card. 
@@ -239,7 +239,7 @@ change `iface eth0 inet dynamic` to `iface eth0 inet static` next
 change or add address according to your network configuration. 
 for example mine 
 <p align="center">
-	<img src="./posts/2017-12-13-make-cluster-computer-supercomputer-for-parallel-computing/7.png" height="250px" alt="ipconfig">
+	<img src="./posts/2017-12-13-make-cluster-computer-supercomputer-for-parallel-computing/7.jpg" height="250px" alt="ipconfig">
 </p> 
 
 
@@ -372,7 +372,7 @@ next run it... aand it's done ez right (~'-')~
 $ mpiexec -f hosfile -n 16 ~/mpitutorial/tutorials/mpi-hello-world/code/mpi_hello_world
 ```
 <p align="center">
-	<img src="./posts/2017-12-13-make-cluster-computer-supercomputer-for-parallel-computing/8.png" height="350px" alt="run">
+	<img src="./posts/2017-12-13-make-cluster-computer-supercomputer-for-parallel-computing/8.jpg" height="350px" alt="run">
 </p> 
 > it should look something like that
 
@@ -412,7 +412,7 @@ Lin, Y., Hwang, R., & Baker, F. (2012). Computer networks: an open source approa
 <br>
 #### **13. UPDATE 30.03.18**
 <p align="center">
-	<img src="./posts/2017-12-13-make-cluster-computer-supercomputer-for-parallel-computing/10.png" height="250px" alt="MPI-TEST">
+	<img src="./posts/2017-12-13-make-cluster-computer-supercomputer-for-parallel-computing/10.jpg" height="250px" alt="MPI-TEST">
 </p> 
 Today after months not touching this project, finally i'm getting 
 around 3.7GigaFLOPS of computational power that's good enough. but 

@@ -111,7 +111,7 @@ int main() {
 }
 ```
 <p align="center">
-	<img src="./posts/2018-03-10-dasar-pemrograman-c-part2-tipe-data/1.png" height="250px" alt="img1">
+	<img src="./posts/2018-03-10-dasar-pemrograman-c-part2-tipe-data/1.jpg" height="250px" alt="img1">
 </p> 
 
 informasi mengenai float dari <https://www.tutorialspoint.com/cprogramming/c_data_types.htm>

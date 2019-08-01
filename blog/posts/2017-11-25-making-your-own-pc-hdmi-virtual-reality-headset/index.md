@@ -62,14 +62,14 @@ designed spaces with multiple large screens.
 #### **Then we come to building parts yaay.**
 1. First we need to measure length and width of our screen
 <p align="center">
-	<img src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/1.png" height="250px" alt="measure">
+	<img src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/1.jpg" height="250px" alt="measure">
 </p> 
 <p align="center">measurement on image not to be scaled!</p>
 > and make sure screen is working before doing anything stupid!
 
 2. Make some hole to mount your screen to vr case based on your measurements
 <p align="center">
-	<img src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/2.png" height="250px" alt="measure">
+	<img src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/2.jpg" height="250px" alt="measure">
 </p> 
 <p align="center">image not to be scaled with your working vr headset</p>
 > pro tips1 : use dremel to make initial holes then use saw or anything you have to cut the rest.. if cut was ruff then just sand it using sand paper
@@ -78,13 +78,13 @@ designed spaces with multiple large screens.
 
 3. Mount screen to case and add some glue... i'm using hot-glue but you can use silicon glue or anything that doesn't destroy pcb
 <p align="center">
-	<img src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/3.png" height="250px" alt="measure">
+	<img src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/3.jpg" height="250px" alt="measure">
 </p> 
 <p align="center">re test your screen to make sure everything is going daijobu ~('-'~)</p>
 
 4. Solder your MPU6050 or any Gyro+Acceleration sensors you use to arduino nano or pro micro
 <p align="center">
-	<img src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/4.png" height="250px" alt="measure">
+	<img src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/4.jpg" height="250px" alt="measure">
 </p> 
 <p align="center">make sure all sensors is working properly or you'll have bad time fixing all of them!</p>
 > pro tips3 : if you have conductive hand like me then use gloves when handling all of this
@@ -95,7 +95,7 @@ designed spaces with multiple large screens.
 
 5. Mount sensors to your case.. i'm using foam double sided tape.. if you have sugru or something similar then use it.
 <p align="center">
-	<img src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/5.png" height="250px" alt="measure">
+	<img src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/5.jpg" height="250px" alt="measure">
 </p> 
 > pro tips6 : make sure your tape doesn't conductive! especially when you're using GY-85 '-') use multimeter to check that
 
@@ -104,7 +104,7 @@ designed spaces with multiple large screens.
 1. Install and open arduino IDE followed by load `Arduino script\YawPtichRoll.ino` you download 
 from [github](https://github.com/catzy007/HeadTracking-Arduino-FreePie/)
 <p align="center">
-	<img src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/6.png" height="250px" alt="software 1">
+	<img src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/6.jpg" height="250px" alt="software 1">
 </p>
 
 2. Next plug arduino to your pc and upload that code to your arduino.. don't forget to change 
@@ -112,24 +112,24 @@ board, processor, and com port!
 
 3. Then change open serial monitor, change baud rate to 115200 and you'll see something like this
 <p align="center">
-	<img src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/7.png" height="250px" alt="software 3">
+	<img src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/7.jpg" height="250px" alt="software 3">
 </p> 
 
 4. Plug everything from HDMI, screen power, arduino then install followed by opening FreePIE. 
 then open `FreePIE Script\FreeIMU-MouseEMU.py`
 <p align="center">
-	<img src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/8.png" height="250px" alt="software 4">
+	<img src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/8.jpg" height="250px" alt="software 4">
 </p> 
 5. Then Click `Settings>Plugins>FreeIMU`... change com port to arduino port and baud rate to `115200`
 <p align="center">
-	<img src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/9.png" height="250px" alt="software 5">
+	<img src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/9.jpg" height="250px" alt="software 5">
 </p> 
 >  pro tips7 : your com port might be different from picture above!
 
 6. Next run script and press `left shift + Z`. If you're moving headset around, it'll move your cursor 
 too. Now your VR headset is ready to do it's job ~('-'~)
 <p align="center">
-	<img src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/10.png" height="250px" alt="software 6">
+	<img src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/10.jpg" height="250px" alt="software 6">
 </p> 
 >  pro tips8 : if emulation status show 0 then mouse emulation disabled, else if emulation status 
 show 1 then emulation enabled
@@ -149,7 +149,7 @@ get some error, restart your computer
 
 3. Next open `Perception.exe` change config to `DIY rift, No Tracking, Primary Monitor`
 <p align="center">
-	<img src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/11.png" height="250px" alt="game 3">
+	<img src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/11.jpg" height="250px" alt="game 3">
 </p> 
 
 4. Then Launch Portal2... That's it
@@ -167,23 +167,23 @@ get some error, restart your computer
 
 3. Goto `tools > Load Preset > From File...` then open `vrplayer\vrplayer.json`
 <p align="center">
-	<img src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/13.png" height="250px" alt="video 3">
+	<img src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/13.jpg" height="250px" alt="video 3">
 </p> 
 
 4. Goto `Device > tracker > mouse`
 <p align="center">
-	<img src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/14.png" height="250px" alt="video 4">
+	<img src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/14.jpg" height="250px" alt="video 4">
 </p> 
 
 5. Next, open your favorite video player and play some video and play it in full screen if possible... 
 here i'm using MPC-HC
 <p align="center">
-	<img src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/15.png" height="250px" alt="video 5">
+	<img src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/15.jpg" height="250px" alt="video 5">
 </p> 
 
 6. just `alt+tab` and go to `VR Player` again, then `file > open process > with GDI > click process dropdown > select your video player`.
 <p align="center">
-	<img src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/16.png" height="250px" alt="video 6">
+	<img src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/16.jpg" height="250px" alt="video 6">
 </p> 
 
 7. aaand it's done... double click to fullscreen, click to make movement... to pause video just alt+tab 
@@ -223,7 +223,7 @@ MPU-6000 <http://developers-club.com/posts/181159/>
 
 and based on this datasheet from ivensense <https://store.invensense.com/datasheets/invensense/MPU-6050_DataSheet_V3%204.pdf>
 <p align="center">
-	<img src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/18.png" height="250px" alt="story 2">
+	<img src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/18.jpg" height="250px" alt="story 2">
 </p>
 maybe MPU-6050 is same as MPU-6000 or at least almost. so yeah using oculus sensors... i'm feeling little bit happy lol.
 
@@ -286,20 +286,20 @@ if you're finally decide that to use 32u4 board to your VR headset, you can use 
 4. Open FreePIE, load that mouse emulation script, run, press `Lshift+Z`
 5. Launch VRChat using `non steamvr mode`
 <p align="center">
-	<img src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/24.png" height="250px" alt="update 1">
+	<img src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/24.jpg" height="250px" alt="update 1">
 </p>
 6. Open `DesktopSBS`
 <p align="center">
-	<img src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/25.png" height="250px" alt="update 2">
+	<img src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/25.jpg" height="250px" alt="update 2">
 </p>
 7. aaaand enjoy SteamVR games using our crude VR Headset (~'-')~
 <p align="center">
-	<img src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/26.png" height="250px" alt="update 3">
+	<img src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/26.jpg" height="250px" alt="update 3">
 </p>
 
 >  pro tips11 : to check windows 10 version in your machine, goto `windows settings > system > about > scroll a little bit` and done.
 <p align="center">
-	<img src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/27.png" height="250px" alt="check 1">
+	<img src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/27.jpg" height="250px" alt="check 1">
 </p>
 
 <br>

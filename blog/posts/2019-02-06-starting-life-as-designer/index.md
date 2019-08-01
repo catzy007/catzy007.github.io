@@ -43,22 +43,22 @@ if you can get 2nd hand part with deals, that would be great.
 
 If you're draw using pen tablet, i suggest you to install Krita
 <p align="center">
-	<img src="./posts/2019-02-06-starting-life-as-designer/1.png" height="250px" alt="Krita">
+	<img src="./posts/2019-02-06-starting-life-as-designer/1.jpg" height="250px" alt="Krita">
 </p>
 
 if you're illustrator and do lot of vector graphic, use Inkscape
 <p align="center">
-	<img src="./posts/2019-02-06-starting-life-as-designer/2.png" height="250px" alt="Inkscape">
+	<img src="./posts/2019-02-06-starting-life-as-designer/2.jpg" height="250px" alt="Inkscape">
 </p>
 
 if you're doing light photo editing, use GIMP
 <p align="center">
-	<img src="./posts/2019-02-06-starting-life-as-designer/3.png" height="250px" alt="GIMP">
+	<img src="./posts/2019-02-06-starting-life-as-designer/3.jpg" height="250px" alt="GIMP">
 </p>
 
 if you're 3d artist, 3d animator, almost anything using 3d graphic, use Blender
 <p align="center">
-	<img src="./posts/2019-02-06-starting-life-as-designer/4.png" height="250px" alt="Blender">
+	<img src="./posts/2019-02-06-starting-life-as-designer/4.jpg" height="250px" alt="Blender">
 </p>
 
 <br>
@@ -87,12 +87,12 @@ for blender users
 
 go to start menu and search for `software & updates`
 <p align="center">
-	<img src="./posts/2019-02-06-starting-life-as-designer/5.png" height="250px" alt="Nvidia1">
+	<img src="./posts/2019-02-06-starting-life-as-designer/5.jpg" height="250px" alt="Nvidia1">
 </p>
 
 then select `additional drivers` and select `Using NVIDIA driver metapackage`
 <p align="center">
-	<img src="./posts/2019-02-06-starting-life-as-designer/6.png" height="250px" alt="Nvidia2">
+	<img src="./posts/2019-02-06-starting-life-as-designer/6.jpg" height="250px" alt="Nvidia2">
 </p>
 
 then click `Apply Changes`

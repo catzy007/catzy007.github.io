@@ -25,7 +25,7 @@ sudo lsusb
 ```
 it will do the same thing but via usb
 <p align="center">
-	<img src="./posts/2019-06-12-fix-network-adapter-not-detected/1.png" height="250px" alt="1">
+	<img src="./posts/2019-06-12-fix-network-adapter-not-detected/1.jpg" height="250px" alt="1">
 </p>
 as you can see in my `Network Controller` it is `BCM43142` try to remember that.
 
@@ -33,7 +33,7 @@ as you can see in my `Network Controller` it is `BCM43142` try to remember that.
 #### Next google how to install wifi driver
 just do simple googling.
 <p align="center">
-	<img src="./posts/2019-06-12-fix-network-adapter-not-detected/2.png" height="250px" alt="2">
+	<img src="./posts/2019-06-12-fix-network-adapter-not-detected/2.jpg" height="250px" alt="2">
 </p>
 > You might need to plug LAN cable or use verified wifi dongle to proceed
 
@@ -41,16 +41,16 @@ just do simple googling.
 #### Next install your wifi driver
 in my case it's `sudo apt install bcmwl-kernel-source`
 <p align="center">
-	<img src="./posts/2019-06-12-fix-network-adapter-not-detected/3.png" height="250px" alt="3">
+	<img src="./posts/2019-06-12-fix-network-adapter-not-detected/3.jpg" height="250px" alt="3">
     <br>
-    <img src="./posts/2019-06-12-fix-network-adapter-not-detected/4.png" height="250px" alt="4">
+    <img src="./posts/2019-06-12-fix-network-adapter-not-detected/4.jpg" height="250px" alt="4">
 </p>
 > Your specific device might be different
 
 <br>
 #### Then reboot your machine and your wifi will work
 <p align="center">
-	<img src="./posts/2019-06-12-fix-network-adapter-not-detected/5.png" height="250px" alt="5">
+	<img src="./posts/2019-06-12-fix-network-adapter-not-detected/5.jpg" height="250px" alt="5">
 </p>
 
 > This method can be use to install any device. Just find the model number and google it

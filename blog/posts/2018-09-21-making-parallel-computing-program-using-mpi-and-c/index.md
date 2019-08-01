@@ -17,7 +17,7 @@ C (/siː/, as in the letter c) is a general-purpose, imperative computer program
 Okay now we're going to make Parallel Computing program using MPI and C
 
 <p align="center">
-	<img src="./posts/2018-09-21-making-parallel-computing-program-using-mpi-and-c/1.png" height="250px" alt="My MPI MD5 brute force">
+	<img src="./posts/2018-09-21-making-parallel-computing-program-using-mpi-and-c/1.jpg" height="250px" alt="My MPI MD5 brute force">
 </p>
 
 > You would need at least basic knowledge about writing program in C before proceed!

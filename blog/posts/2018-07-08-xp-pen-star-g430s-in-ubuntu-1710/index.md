@@ -38,7 +38,7 @@ sudo rmmod hid-huion
 * If your pen tab still won't work, try rebooting
 * Aand that's it!
 <p align="center">
-	<img src="./posts/2018-07-08-xp-pen-star-g430s-in-ubuntu-1710/1.png" height="250px" alt="Pressure">
+	<img src="./posts/2018-07-08-xp-pen-star-g430s-in-ubuntu-1710/1.jpg" height="250px" alt="Pressure">
 </p> 
 
 even the pressure works just fine.

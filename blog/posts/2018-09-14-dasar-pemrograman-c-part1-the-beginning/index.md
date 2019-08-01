@@ -47,57 +47,57 @@ pertama buka codeblocks. buat linux user buka text editor macam nano, leafpad dl
 
 * pertama buka codeblocks
 <p align="center">
-	<img src="./posts/2018-09-14-dasar-pemrograman-c-part1-the-beginning/1.png" height="250px" alt="codeblocks 1">
+	<img src="./posts/2018-09-14-dasar-pemrograman-c-part1-the-beginning/1.jpg" height="250px" alt="codeblocks 1">
 </p>
 
 * lalu tekan `file > new > Project`
 <p align="center">
-	<img src="./posts/2018-09-14-dasar-pemrograman-c-part1-the-beginning/2.png" height="250px" alt="codeblocks 2">
+	<img src="./posts/2018-09-14-dasar-pemrograman-c-part1-the-beginning/2.jpg" height="250px" alt="codeblocks 2">
 </p>
 
 * Lalu Pilih `"Console Application"`
 <p align="center">
-	<img src="./posts/2018-09-14-dasar-pemrograman-c-part1-the-beginning/3.png" height="250px" alt="codeblocks 3">
+	<img src="./posts/2018-09-14-dasar-pemrograman-c-part1-the-beginning/3.jpg" height="250px" alt="codeblocks 3">
 </p>
 
 * Tekan Next
 <p align="center">
-	<img src="./posts/2018-09-14-dasar-pemrograman-c-part1-the-beginning/4.png" height="250px" alt="codeblocks 4">
+	<img src="./posts/2018-09-14-dasar-pemrograman-c-part1-the-beginning/4.jpg" height="250px" alt="codeblocks 4">
 </p>
 
 * Pilih `"C"` paling atas lalu tekan next
 <p align="center">
-	<img src="./posts/2018-09-14-dasar-pemrograman-c-part1-the-beginning/5.png" height="250px" alt="codeblocks 5">
+	<img src="./posts/2018-09-14-dasar-pemrograman-c-part1-the-beginning/5.jpg" height="250px" alt="codeblocks 5">
 </p>
 
 * Masukkan nama project yang anda inginkan.. disini saya mengisi coba1. lalu tekan next
 <p align="center">
-	<img src="./posts/2018-09-14-dasar-pemrograman-c-part1-the-beginning/6.png" height="250px" alt="codeblocks 6">
+	<img src="./posts/2018-09-14-dasar-pemrograman-c-part1-the-beginning/6.jpg" height="250px" alt="codeblocks 6">
 </p>
 
 * lalu finish
 <p align="center">
-	<img src="./posts/2018-09-14-dasar-pemrograman-c-part1-the-beginning/7.png" height="250px" alt="codeblocks 7">
+	<img src="./posts/2018-09-14-dasar-pemrograman-c-part1-the-beginning/7.jpg" height="250px" alt="codeblocks 7">
 </p>
 
 * next tekan segitiga yang saya tandai dalam kotak merah
 <p align="center">
-	<img src="./posts/2018-09-14-dasar-pemrograman-c-part1-the-beginning/8.png" height="250px" alt="codeblocks 8">
+	<img src="./posts/2018-09-14-dasar-pemrograman-c-part1-the-beginning/8.jpg" height="250px" alt="codeblocks 8">
 </p>
 
 * tekan `"main.c"`
 <p align="center">
-	<img src="./posts/2018-09-14-dasar-pemrograman-c-part1-the-beginning/9.png" height="250px" alt="codeblocks 9">
+	<img src="./posts/2018-09-14-dasar-pemrograman-c-part1-the-beginning/9.jpg" height="250px" alt="codeblocks 9">
 </p>
  
 * lalu tekan `icon build and run` atau tekan F9 pada keyboard. kemudian tunggu sebentar
 <p align="center">
-	<img src="./posts/2018-09-14-dasar-pemrograman-c-part1-the-beginning/10.png" height="250px" alt="codeblocks 10">
+	<img src="./posts/2018-09-14-dasar-pemrograman-c-part1-the-beginning/10.jpg" height="250px" alt="codeblocks 10">
 </p>
 
 * lalu akan muncul program dengan text "Hello World". Selamat anda mulai menjadi programmer level 1 lol....
 <p align="center">
-	<img src="./posts/2018-09-14-dasar-pemrograman-c-part1-the-beginning/11.png" height="250px" alt="codeblocks 11">
+	<img src="./posts/2018-09-14-dasar-pemrograman-c-part1-the-beginning/11.jpg" height="250px" alt="codeblocks 11">
 </p>
 
 <br>
@@ -144,7 +144,7 @@ Bagi anda yang sudah lumayan familiar dengan linux terminal dan tak mau mengguna
 
 * keempat save program yang anda buat (ctrl+x)(y)(isi nama file)(enter). misal program.c
 <p align="center">
-	<img src="./posts/2018-09-14-dasar-pemrograman-c-part1-the-beginning/12.png" height="250px" alt="codeblocks 12">
+	<img src="./posts/2018-09-14-dasar-pemrograman-c-part1-the-beginning/12.jpg" height="250px" alt="codeblocks 12">
 </p>
 
 * kelima compile program dengan cara `gcc -o program program.c` pastikan tak ada error
@@ -153,7 +153,7 @@ Bagi anda yang sudah lumayan familiar dengan linux terminal dan tak mau mengguna
 
 * selamat anda telah compile program tanpa menggunakan IDE
 <p align="center">
-	<img src="./posts/2018-09-14-dasar-pemrograman-c-part1-the-beginning/13.png" height="250px" alt="codeblocks 13">
+	<img src="./posts/2018-09-14-dasar-pemrograman-c-part1-the-beginning/13.jpg" height="250px" alt="codeblocks 13">
 </p>
 
 <br>

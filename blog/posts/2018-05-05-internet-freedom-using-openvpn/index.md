@@ -32,25 +32,25 @@ any vpn provider you want.
 to get that, go to <vpngate.net> choose address you want and ping that ip. if it's 
 up then use it. 
 <p align="center">
-	<img src="./posts/2018-05-05-internet-freedom-using-openvpn/1.png" height="250px" alt="ping">
+	<img src="./posts/2018-05-05-internet-freedom-using-openvpn/1.jpg" height="250px" alt="ping">
 </p> 
 
 If it's frustrating to ping all address one by one, use tools i made 
 <https://github.com/catzy007/UMBRELLAVPNTEST> compile with `gcc -o vpntest vpntest.c` 
 just use ip with lowest time
 <p align="center">
-	<img src="./posts/2018-05-05-internet-freedom-using-openvpn/2.png" height="250px" alt="vpntest">
+	<img src="./posts/2018-05-05-internet-freedom-using-openvpn/2.jpg" height="250px" alt="vpntest">
 </p> 
 
 next click `"OpenVPN Config file"`, select tcp or udp it's up to you, then download the config files
 <p align="center">
-	<img src="./posts/2018-05-05-internet-freedom-using-openvpn/3.png" height="250px" alt="download">
+	<img src="./posts/2018-05-05-internet-freedom-using-openvpn/3.jpg" height="250px" alt="download">
 </p> 
 
 then run openvpn with this command `sudo openvpn CONFIG_FILE_NAME` change CONFIG_FILE_NAME with your 
 actual config file name
 <p align="center">
-	<img src="./posts/2018-05-05-internet-freedom-using-openvpn/4.png" height="250px" alt="run ovpn">
+	<img src="./posts/2018-05-05-internet-freedom-using-openvpn/4.jpg" height="250px" alt="run ovpn">
 </p> 
 
 and make sure you get `initialization sequence completed`

@@ -218,7 +218,7 @@ int main(){
 }
 ```
 <p align="center">
-	<img src="./posts/2018-04-24-dasar-pemrograman-c-part3-input-dan-operator/1.png" height="250px" alt="img1">
+	<img src="./posts/2018-04-24-dasar-pemrograman-c-part3-input-dan-operator/1.jpg" height="250px" alt="img1">
 </p> 
 
 <br>
@@ -249,7 +249,7 @@ int main(){
 ```
 
 <p align="center">
-	<img src="./posts/2018-04-24-dasar-pemrograman-c-part3-input-dan-operator/2.png" height="250px" alt="img2">
+	<img src="./posts/2018-04-24-dasar-pemrograman-c-part3-input-dan-operator/2.jpg" height="250px" alt="img2">
 </p> 
 > seperti yang anda lihat, program dapat dicompile dan dijalankan, 
 namun mendapat banyak peringatan seperti diatas.
@@ -285,7 +285,7 @@ int main(){
 }
 ```
 <p align="center">
-	<img src="./posts/2018-04-24-dasar-pemrograman-c-part3-input-dan-operator/3.png" height="250px" alt="img3">
+	<img src="./posts/2018-04-24-dasar-pemrograman-c-part3-input-dan-operator/3.jpg" height="250px" alt="img3">
 </p> 
 
 <br>

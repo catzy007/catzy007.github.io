@@ -17,7 +17,7 @@ First, make ubuntu bootable cd or usb
 * Press tri dot on right corner `...`
 * Select your linux `ISO`
 <p align="center">
-	<img src="./posts/2018-07-13-repair-grub-after-installing-windows/1.png" height="250px" alt="unetbootin">
+	<img src="./posts/2018-07-13-repair-grub-after-installing-windows/1.jpg" height="250px" alt="unetbootin">
 </p> 
 
 * Next boot the usb in `live mode` and connect it into internet
