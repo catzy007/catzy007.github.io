@@ -80,8 +80,8 @@ based cooler because 1366 server board include onboard backplate for CPU mountin
 #### [UPDATE 07/16/19 22:31]
 After waiting a week and still didn't get my monthly wage on time, i decide to continue and test my system anyway. The results was
 <p align="center">
-	<img src="./posts/2019-05-25-log-building-poor-man-workstation/5.png" height="250px" alt="img5">
-	<img src="./posts/2019-05-25-log-building-poor-man-workstation/6.png" height="250px" alt="img6">
+	<img src="./posts/2019-05-25-log-building-poor-man-workstation/5.jpg" height="250px" alt="img5">
+	<img src="./posts/2019-05-25-log-building-poor-man-workstation/6.jpg" height="250px" alt="img6">
 	<img src="./posts/2019-05-25-log-building-poor-man-workstation/7.jpg" height="250px" alt="img7">
 </p>
 Yeah some number are great but, the temperature was pretty high there. Hopefully i can get the cooler and retest everything.
@@ -106,6 +106,19 @@ Finally i can mount the cooler using standar intel push-pin fastener
 Aand here is some benchmark. I get a minute less in blender than previous benchmark not that bad. The problem still the processor get up to 90+ centigrade.
 I think that because the exhaust of second CPU was directed to the first CPU. In other word feeding hot air into heatsink... i tried to change the heatsink direction but i have clearance issues. Maybe someday i will re route everything.
 <p align="center">
-	<img src="./posts/2019-05-25-log-building-poor-man-workstation/10.png" height="250px" alt="img10">
-	<img src="./posts/2019-05-25-log-building-poor-man-workstation/11.png" height="250px" alt="img11">
+	<img src="./posts/2019-05-25-log-building-poor-man-workstation/10.jpg" height="250px" alt="img10">
+	<img src="./posts/2019-05-25-log-building-poor-man-workstation/11.jpg" height="250px" alt="img11">
 </p>
+
+<br>
+#### [UPDATE 07/01/2019 13:23]
+Yesterday i bought some DDR3 Registered ram for my server. It's 1GB per stick so in total i have 6GB of RAM.
+<p align="center">
+	<img src="./posts/2019-05-25-log-building-poor-man-workstation/12.jpg" height="250px" alt="img10">
+</p>
+And i made some remote management too. It just simple relay and sbc glued together. Actually i plan to make 
+custom PCB and using arduino + ethernet module to make that but i only had a week to make this so yeah... maybe next time i will make that.
+<p align="center">
+	<img src="./posts/2019-05-25-log-building-poor-man-workstation/13.jpg" height="250px" alt="img10">
+</p>
+Next thing to buy is case. At first, i plan to buy 2U rackmount case.. But here everything server related is expensive as hell so i will buy standard ATX case.
