@@ -19,9 +19,9 @@
 2018-03-10-Dasar-Pemrograman-C-Part2-Tipe-Data
 2018-09-14-Dasar-Pemrograman-C-Part1-The-Beginning
 2018-09-21-Making-Parallel-Computing-Program-Using-MPI-and-C
+2018-11-04-Disabling-Intel-Me
 2019-02-06-Starting-Life-as-Designer
 2019-06-12-Fix-Network-Adapter-Not-Detected
 2019-07-25-use-usb-tv-or-usb-capture-on-linux
-2019-05-25-Log-Building-Poor-Man-Workstation
 
-2018-11-04-Disabling-Intel-Me
+2019-05-25-Log-Building-Poor-Man-Workstation

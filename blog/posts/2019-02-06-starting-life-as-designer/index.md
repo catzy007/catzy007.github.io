@@ -84,7 +84,6 @@ for blender users
 
 <br>
 #### **If you're using NVIDIA Graphic, do this**
-
 go to start menu and search for `software & updates`
 <p align="center">
 	<img src="./posts/2019-02-06-starting-life-as-designer/5.jpg" height="250px" alt="Nvidia1">
@@ -96,6 +95,10 @@ then select `additional drivers` and select `Using NVIDIA driver metapackage`
 </p>
 
 then click `Apply Changes`
+
+<br>
+#### **If you have Pen Tablet, try this**
+Hopefully someone has made driver for your pen tablet on linux <a href="./#2018-07-08-xp-pen-star-g430s-in-ubuntu-1710">link</a>
 
 <br>
 #### **And you're done!**
