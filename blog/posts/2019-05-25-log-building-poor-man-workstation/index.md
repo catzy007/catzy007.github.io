@@ -112,7 +112,8 @@ I think that because the exhaust of second CPU was directed to the first CPU. In
 
 <br>
 #### [UPDATE 07/01/2019 13:23]
-Yesterday i bought some DDR3 Registered ram for my server. It's 1GB per stick so in total i have 6GB of RAM.
+Yesterday i bought some DDR3 Registered ram for my server. It's 1GB per stick so in total i have 6GB of RAM. 
+The ram itself is very cheap less than 1USD per stick yeah great deal. Maybe some day i will get 4GB stick from aliexpress
 <p align="center">
 	<img src="./posts/2019-05-25-log-building-poor-man-workstation/12.jpg" height="250px" alt="img10">
 </p>
