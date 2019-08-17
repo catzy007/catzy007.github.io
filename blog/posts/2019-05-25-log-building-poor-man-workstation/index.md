@@ -115,11 +115,18 @@ I think that because the exhaust of second CPU was directed to the first CPU. In
 Yesterday i bought some DDR3 Registered ram for my server. It's 1GB per stick so in total i have 6GB of RAM. 
 The ram itself is very cheap less than 1USD per stick yeah great deal. Maybe some day i will get 4GB stick from aliexpress
 <p align="center">
-	<img src="./posts/2019-05-25-log-building-poor-man-workstation/12.jpg" height="250px" alt="img10">
+	<img src="./posts/2019-05-25-log-building-poor-man-workstation/12.jpg" height="250px" alt="img12">
 </p>
 And i made some remote management too. It just simple relay and sbc glued together. Actually i plan to make 
 custom PCB and using arduino + ethernet module to make that but i only had a week to make this so yeah... maybe next time i will make that.
 <p align="center">
-	<img src="./posts/2019-05-25-log-building-poor-man-workstation/13.jpg" height="250px" alt="img10">
+	<img src="./posts/2019-05-25-log-building-poor-man-workstation/13.jpg" height="250px" alt="img13">
 </p>
 Next thing to buy is case. At first, i plan to buy 2U rackmount case.. But here everything server related is expensive as hell so i will buy standard ATX case.
+
+#### [UPDATE 08/17/2019 16:20]
+After getting a random 20USD case from local store, this workstation is 80% finished. 
+<p align="center">
+	<img src="./posts/2019-05-25-log-building-poor-man-workstation/14.jpg" height="250px" alt="img14">
+</p>
+The last thing i need is Graphic Card. Maybe some day i will get RX570 uder 100USD or something.
