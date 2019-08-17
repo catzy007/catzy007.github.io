@@ -124,6 +124,7 @@ custom PCB and using arduino + ethernet module to make that but i only had a wee
 </p>
 Next thing to buy is case. At first, i plan to buy 2U rackmount case.. But here everything server related is expensive as hell so i will buy standard ATX case.
 
+<br>
 #### [UPDATE 08/17/2019 16:20]
 After getting a random 20USD case from local store, this workstation is 80% finished. 
 <p align="center">
