@@ -131,3 +131,16 @@ After getting a random 20USD case from local store, this workstation is 80% fini
 	<img src="./posts/2019-05-25-log-building-poor-man-workstation/14.jpg" height="250px" alt="img14">
 </p>
 The last thing i need is Graphic Card. Maybe some day i will get RX570 uder 100USD or something.
+
+<br>
+#### [UPDATE 09/13/2019 19:57]
+Today the case fan is arrive it's Xfan 120 from deepcool. I hope this will tame that beast ultra hot power hungry CPUs. 
+I bought three fan and set it in Push-Pull configuration
+<p align="center">
+	<img src="./posts/2019-05-25-log-building-poor-man-workstation/15.jpg" height="250px" alt="img15">
+	<img src="./posts/2019-05-25-log-building-poor-man-workstation/16.jpg" height="250px" alt="img16">
+</p>
+Also last week i'm bulding new remote management system using ESP8266 and relay, it still has some problem but i hope some day i can fix it.
+<p align="center">
+	<img src="./posts/2019-05-25-log-building-poor-man-workstation/17.jpg" height="250px" alt="img17">
+</p>
