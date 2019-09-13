@@ -62,6 +62,6 @@ sudo ./make.sh --add
 
 Then open VMM and you'll see macOS-Simple-KVM on the list.
 <p align="center">
-	<img src="./posts/2019-09-13-running-macos-on-any-linux-machine/1.jpg" height="250px" alt="1">
+	<img src="./posts/2019-09-13-running-macos-on-any-linux-machine/1.png" height="250px" alt="1">
 </p>
 To run it, click `macOS-Simple-KVM` and press the play button
