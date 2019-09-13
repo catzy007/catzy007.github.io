@@ -9,7 +9,7 @@ second method is using [Virtual Machine](https://en.wikipedia.org/wiki/Virtual_m
 runs on virtual computer inside a linux machine. Okay enough talk, lets do this.
 
 But i have to warn you that MacOS is not a lightweight operating system. And running it inside virtual machine 
-mean that it need more resource than usual than running it on bare metal. So make sure your hardware is capable. 
+mean that it need more resource than running it on bare metal. So make sure your hardware is capable enough. 
 Some newer version of MacOS need processor with AVX instruction set to run properly make sure your processor is 
 supported. For reference here's my spec
 ```
@@ -37,6 +37,7 @@ Info:      Processes: 241 Uptime: 1:00 Memory: 1903.3/7857.7MB Client: Shell (su
 ```
 My recommendation is to use at minimum Intel Core i5 and 8GB of system memory.
 
+<br>
 First clone [macOS-Simple-KVM](https://github.com/foxlet/macOS-Simple-KVM) repository
 ```
 git clone https://github.com/foxlet/macOS-Simple-KVM
@@ -58,3 +59,9 @@ After download complete, add configuration to our Virtual Machine Manager
 ```
 sudo ./make.sh --add
 ```
+
+Then open VMM and you'll see macOS-Simple-KVM on the list.
+<p align="center">
+	<img src="./posts/2019-09-13-running-macos-on-any-linux-machine/1.jpg" height="250px" alt="1">
+</p>
+To run it, click `macOS-Simple-KVM` and press the play button
