@@ -62,6 +62,21 @@ sudo ./make.sh --add
 
 Then open VMM and you'll see macOS-Simple-KVM on the list.
 <p align="center">
-	<img src="./posts/2019-09-13-running-macos-on-any-linux-machine/1.png" height="250px" alt="1">
+	<img src="./posts/2019-09-13-running-macos-on-any-linux-machine/1.png" height="300px" alt="1">
 </p>
-To run it, click `macOS-Simple-KVM` and press the play button
+To run it, click `macOS-Simple-KVM`, press the play button then press computer icon on the left. 
+<p align="center">
+	<img src="./posts/2019-09-13-running-macos-on-any-linux-machine/2.png" height="250px" alt="2">
+</p>
+In the clover boot menu, press enter and the system will boot into `MacOS Utilities`
+<p align="center">
+	<img src="./posts/2019-09-13-running-macos-on-any-linux-machine/3.png" height="250px" alt="3">
+</p>
+First select `Disk Utility` then delete partition you want to use
+<p align="center">
+	<img src="./posts/2019-09-13-running-macos-on-any-linux-machine/4.png" height="250px" alt="4">
+</p>
+Next go to `Reinstall macOS`, Continue, Select partition, Set username, Password, etc.
+<p align="center">
+	<img src="./posts/2019-09-13-running-macos-on-any-linux-machine/5.png" height="250px" alt="5">
+</p>
