@@ -105,3 +105,37 @@ and slide to low value
 <p align="center">
 	<img src="./posts/2019-09-13-running-macos-on-any-linux-machine/11.png" height="250px" alt="11">
 </p>
+
+<br>
+Next if you want to have your windows keyboard working on MacOS, you can try [DoubleCommand](http://doublecommand.sourceforge.net/)
+<p align="center">
+	<img src="./posts/2019-09-13-running-macos-on-any-linux-machine/13.png" height="250px" alt="13">
+</p>
+
+<br>
+Then if you want the system run automatically go to `Boot Options > Check on Start virtual machine on host boot up`
+<p align="center">
+	<img src="./posts/2019-09-13-running-macos-on-any-linux-machine/12.png" height="250px" alt="12">
+</p>
+Next create autostart. Here i'm using xubuntu so i can create `macos.desktop` in `/etc/xdg/autostart` 
+you may not have this so refer to your Linux distro
+first install vinagre
+```
+sudo apt update
+sudo apt install vinagre
+```
+then write this `macos.desktop` to `/etc/xdg/autostart` 
+```
+[Desktop Entry]
+Name=CustomMacOSLauncher
+Comment=Custom MacOS Launcher
+Icon=blueman
+Exec=vinagre -f spice://localhost    
+Terminal=false
+Type=Application
+Categories=
+NotShowIn=LXDE
+```
+
+<br>
+Aand that's it now you can run MacOS on your linux machine!
