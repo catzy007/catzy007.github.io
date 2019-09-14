@@ -89,3 +89,19 @@ This will take some time because the installer is downloading some files too.
 <p align="center">
 	<img src="./posts/2019-09-13-running-macos-on-any-linux-machine/5.png" height="250px" alt="5">
 </p>
+After that you'll be  greeted with MacOS desktop
+<p align="center">
+	<img src="./posts/2019-09-13-running-macos-on-any-linux-machine/8.png" height="250px" alt="8">
+</p>
+Then power off the MacOS and add more CPU, RAM, add PCIe Passtrough, etc
+<p align="center">
+	<img src="./posts/2019-09-13-running-macos-on-any-linux-machine/9.png" height="250px" alt="9">
+    <img src="./posts/2019-09-13-running-macos-on-any-linux-machine/10.png" height="250px" alt="10">
+</p>
+
+<br>
+If you're getting random keypress, go to `System Preferences > Accessibility > Keyboard > Enable Slow Keys > Options` 
+and slide to low value
+<p align="center">
+	<img src="./posts/2019-09-13-running-macos-on-any-linux-machine/11.png" height="250px" alt="11">
+</p>
