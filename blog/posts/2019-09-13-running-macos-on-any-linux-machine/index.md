@@ -119,6 +119,7 @@ Then if you want the system run automatically go to `Boot Options > Check on Sta
 </p>
 Next create autostart. Here i'm using xubuntu so i can create `macos.desktop` in `/etc/xdg/autostart` 
 you may not have this so refer to your Linux distro
+
 first install vinagre
 ```
 sudo apt update
