@@ -1,5 +1,8 @@
 ### **Running MacOS on Any Linux Machine**
 #### Saturday, September 14, 2019
+While i'm enjoying watching youtube videos, i'm stumbleupon at [Linus Tech Tips videos](https://www.youtube.com/watch?v=ATnpEOo3GJA) where he run MacOS on Virtual Machine and then i be like what? 
+then some weeks later i decided to try that myself and here we go.
+
 Okay what were doing here? Basically i'm going to tell you how to install MacOS on non Apple computers. 
 Actually you have some choice, first using [Hackintosh](https://hackintosh.com/) it's basically customized version of MacOS so 
 you can install it on non apple computer but it came with some problem some has no wifi, bluetooth, 
