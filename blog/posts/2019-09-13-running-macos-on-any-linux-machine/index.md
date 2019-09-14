@@ -100,14 +100,12 @@ Then power off the MacOS and add more CPU, RAM, add PCIe Passtrough, etc
 </p>
 
 <br>
-If you're getting random keypress, go to `System Preferences > Accessibility > Keyboard > Enable Slow Keys > Options` 
+If you're getting random keypress in my case it's numlock so it's annoying, go to `System Preferences > Accessibility > Keyboard > Enable Slow Keys > Options` 
 and slide to low value
 <p align="center">
 	<img src="./posts/2019-09-13-running-macos-on-any-linux-machine/11.png" height="250px" alt="11">
 </p>
-
-<br>
-Next if you want to have your windows keyboard working on MacOS, you can try [DoubleCommand](http://doublecommand.sourceforge.net/)
+Then get [Karabiner](https://pqrs.org/osx/karabiner/) and disable the faulty key
 <p align="center">
 	<img src="./posts/2019-09-13-running-macos-on-any-linux-machine/13.png" height="250px" alt="13">
 </p>
