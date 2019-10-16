@@ -13,6 +13,10 @@
 			margin-left: auto;
 			margin-right: auto;
 		}
+		.not-found-nmbr {
+		    font-family: 'Josefin Slab', serif;
+			font-size: 1200%;
+		}
 		
 /* MYCONTAINER */
 	/* for mobile device like phone and tablet */

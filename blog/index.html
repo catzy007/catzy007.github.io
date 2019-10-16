@@ -16,6 +16,7 @@
     <!-- <link rel="stylesheet" href="css/github-markdown.css"/> -->
     <!-- Google Font -->
 	<link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100&display=swap" rel="stylesheet">
 	<!-- icon -->
 	<link rel="icon" href='./assets/spinner.gif' type="image/x-icon"/>
     <!-- Refresher Script -->
@@ -46,7 +47,14 @@
 					console.log(mylog);
 				}else{
 					var mylog = "#[INDEX] XMLHttpRequest Error! " + reqIDX.statusText;
-					showMarkdown(mylog, prevPost, nextPost);
+					var pagelog = "<br><br><br><br><br><br><br>\
+						<div align=\"center\">\
+							<h1 class=\"not-found-nmbr\">404</h1>\n\
+							<h1>Index Not Found!</h1>\n\
+							<h3>Sorry the main index for this website could not be found.</h3>\
+							<h4>[INDEX] XMLHttpRequest Error!</h4>\
+						</div>";
+					showMarkdown(pagelog, "#", "#");
 					console.log(mylog);
 				}
 			}

@@ -60,14 +60,15 @@
 			//if requested url = NONE
 				}else{
 					var mylog = "#[POST] XMLHttpRequest Error!";
-					var pagelog = "<br><br><br><br>\
-						<img src=\"./assets/404.png\" width=\"70%\" height=\"auto\"\
-							style=\"display: block;margin-left: auto;margin-right: auto;\">\
-						<h1 align=\"center\">Page Not Found!</h1>\n\
-						<h3 align=\"center\">Sorry the page you're looking for could not be found.</h3>\
-						<h4 align=\"center\">[POST] XMLHttpRequest Error!</h4>\
-						<br>\
-						<h3 align=\"center\"><a href=\"./\">Homepage</a></h3>";
+					var pagelog = "<br><br><br><br><br><br><br>\
+						<div align=\"center\">\
+							<h1 class=\"not-found-nmbr\">404</h1>\n\
+							<h1>Page Not Found!</h1>\n\
+							<h3>Sorry the page you're looking for could not be found.</h3>\
+							<h4>[POST] XMLHttpRequest Error!</h4>\
+							<br>\
+							<h3><a href=\"./\">Homepage</a></h3>\
+						</div>";
 					showMarkdown(pagelog, "#", "#");
 					console.log(mylog);
 				}
