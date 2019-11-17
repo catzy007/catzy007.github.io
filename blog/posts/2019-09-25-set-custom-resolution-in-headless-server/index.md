@@ -18,7 +18,7 @@ sudo apt update && sudo apt install xserver-xorg-video-dummy -y
 </p>
 
 <br>
-Then write config `sudo nano /usr/share/X11/xorg.conf.d/xorg.conf` fill the config with
+Then write config `sudo nano /etc/X11/xorg.conf` fill the config with
 ```
 Section "Device"    Identifier  "Configured Video Device"
     Driver      "dummy"
