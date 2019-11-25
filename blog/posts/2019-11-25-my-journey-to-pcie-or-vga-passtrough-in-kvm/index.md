@@ -170,3 +170,97 @@ nvram = [
 ```
 the line may be different but it should look similar. Then do `reboot`
 
+<br><br>
+Then create simple and quick VM using `Virtual Machine Manager`
+<p align="center">
+	<img src="./posts/2019-11-25-my-journey-to-pcie-or-vga-passtrough-in-kvm/01.png" height="250px" alt="img01">
+</p>
+<p align="center">
+	<img src="./posts/2019-11-25-my-journey-to-pcie-or-vga-passtrough-in-kvm/02.png" height="250px" alt="img02">
+</p>
+<p align="center">
+	<img src="./posts/2019-11-25-my-journey-to-pcie-or-vga-passtrough-in-kvm/03.png" height="250px" alt="img03">
+</p>
+<p align="center">
+	<img src="./posts/2019-11-25-my-journey-to-pcie-or-vga-passtrough-in-kvm/04.png" height="250px" alt="img04">
+</p>
+<p align="center">
+	<img src="./posts/2019-11-25-my-journey-to-pcie-or-vga-passtrough-in-kvm/05.png" height="250px" alt="img05">
+</p>
+Don't forget to check `Customize configuration before install`
+<p align="center">
+	<img src="./posts/2019-11-25-my-journey-to-pcie-or-vga-passtrough-in-kvm/06.png" height="250px" alt="img06">
+	<img src="./posts/2019-11-25-my-journey-to-pcie-or-vga-passtrough-in-kvm/07.png" height="250px" alt="img07">
+</p>
+Here i'm using Q35 Chipset and regular BIOS as my setup. You can use i440FX and UEFI if you encounter some problem.
+<p align="center">
+	<img src="./posts/2019-11-25-my-journey-to-pcie-or-vga-passtrough-in-kvm/08.png" height="250px" alt="img08">
+</p>
+Then go to `CPUs tab` and configure as you need.
+<p align="center">
+	<img src="./posts/2019-11-25-my-journey-to-pcie-or-vga-passtrough-in-kvm/09.png" height="250px" alt="img09">
+</p>
+Next, `Add Hardware` select `Input Tab` and select `EvTouch USB Graphic Tablet`.
+Then install Windows as usual.
+
+<br><br>
+After Windows installation finished, then shutdown the VM and add a new hardware and pass both Video output and sound
+<p align="center">
+	<img src="./posts/2019-11-25-my-journey-to-pcie-or-vga-passtrough-in-kvm/10.png" height="250px" alt="img10">
+</p>
+Then boot your VM and install the necessary drivers and hope that your PCI device is working as intended
+<p align="center">
+	<img src="./posts/2019-11-25-my-journey-to-pcie-or-vga-passtrough-in-kvm/11.png" height="250px" alt="img11">
+</p>
+And That's it, You have full Windows system running in KVM and the best part is you can play games or other 
+heavy task as well
+
+<br><br>
+In my case, because i'm using my server primarily as GUI remote machine, the vesa frame buffer is using the VGA 
+memory so i cannot pass that into KVM. So i need to disable vesafb by editing grub config
+```
+GRUB_CMDLINE_LINUX_DEFAULT="quiet splash iommu=1 intel_iommu=on vga=normal nofb nomodeset video=vesafb:off i915.modeset=0"
+```
+If you're using Nvidia card, you might need to do
+```
+virsh edit YOUR-VM-NAME
+```
+do something like
+```
+...
+<features>
+	<hyperv>
+		...
+		<vendor_id state='on' value='1234567890ab'/>
+		...
+	</hyperv>
+	...
+	<kvm>
+	<hidden state='on'/>
+	</kvm>
+</features>
+...
+```
+If you still doesn't get output from your VGA, try to change Chipset to Q35 or i440FX 
+or change from BIOS to UEFI.
+
+If that still won't work, you might need to copy your VBIOS and put that inside the KVM
+
+Keep trying and good luck!
+
+<br><br>
+Some Sauce
+
+<https://dominicm.com/gpu-passthrough-qemu-arch-linux/>
+
+<https://linustechtips.com/main/topic/978579-guide-linux-pci-gpu-vfio-passthrough/>
+
+<https://mathiashueber.com/windows-virtual-machine-gpu-passthrough-ubuntu/>
+
+<https://blog.zerosector.io/2018/07/28/kvm-qemu-windows-10-gpu-passthrough/>
+
+<https://forums.unraid.net/topic/78188-rx-580-passthrough-hard-hanging-host/>
+
+<https://bbs.archlinux.org/viewtopic.php?id=230386>
+
+<https://youtu.be/3yhwJxWSqXI>
