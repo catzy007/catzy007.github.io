@@ -8,8 +8,9 @@ with lot of cores so that i can use KVM (Kernel-based Virtual Machine) so i can 
 VM and pass a Video Graphic Adapter and use it as normal Windows machine... Neat. So here's my journey.
 
 Make sure that your hardware support [Hypervisor](https://en.wikipedia.org/wiki/Hypervisor) first, 
-make sure that your Processor, Chipset, and Motherboard support VT-D or AMD-Vi. Here i'm using X58 
-based motherboard from ASUS Z8NA-D6 and Xeon X5670. As for PCIE device, i'm using my Radeon RX 560. 
+make sure that your Processor, Chipset, and Motherboard support VT-D or AMD-Vi. Here i'm using LGA1366 
+based motherboard ASUS Z8NA-D6 and Xeon X5670. As for PCIE device, i'm using my Radeon RX 560. As for 
+Operating system, i'm using Xubuntu 18.04 and kernel version 4.15.0-70-generic if you curious about it. 
 For more information, you can read <https://en.wikipedia.org/wiki/List_of_IOMMU-supporting_hardware> 
 and <https://wiki.xen.org/wiki/VTd_HowTo> and don't forget to enable that in BIOS. Make sure that 
 you have two video adapter. Here i have onboard Aspeed as primary display and RX 560 that will be 
@@ -21,6 +22,18 @@ First, install virt-manager and ovmf. Here i'm using VMM to make our life easy.
 ```
 sudo apt install virt-manager ovmf -y
 ```
+
+<br><br>
+Next enable IOMMU in linux
+```
+sudo nano /etc/default/grub 
+```
+then add `iommu=1 intel_iommu=on` after `GRUB_CMDLINE_LINUX_DEFAULT="quiet splash` 
+or if you're using AMD based system, use `iommu=1 amd_iommu=on` then do the following
+```
+sudo update-grub
+```
+and `reboot` your system.
 
 <br><br>
 Then check if IOMMU is enabled
@@ -36,20 +49,8 @@ in my case it will output.
 You may get similar output.
 
 <br><br>
-Next enable IOMMU in linux
-```
-sudo nano /etc/default/grub 
-```
-then add `iommu=1 intel_iommu=on` after `GRUB_CMDLINE_LINUX_DEFAULT="quiet splash` 
-or if you're using AMD based system, use `iommu=1 amd_iommu=on` then do the following
-```
-sudo grub-update
-```
-and `reboot` your system.
-
-<br><br>
 Next step is to make sure that your motherboard has good IOMMU Group.
-Copy, save as `check.sh` and run the script
+Copy, save as `check.sh` do `chmod +x check.sh` and run the script as root
 ```
 #!/bin/bash
 shopt -s nullglob
@@ -77,7 +78,7 @@ That was a good sign because we can proceed to next step. If you get multiple de
 IOMMU group, you have two basic options. If your system is running fine even that device is 
 used in KVM, you MUST pass everything into KVM. If that device is critical to your system then 
 you can stop there. Or Arch linux users has made custom patch to bypass IOMMU Group `ACS override patch` 
-but DO THAT WITH YOUR OWN RISKS.
+but DO THAT WITH YOUR OWN RISKS. Some device should not passed into KVM for example `PCI Bridge`.
 
 <br><br>
 Try to take a note for PCI Numeric id's. mine is
@@ -105,7 +106,7 @@ amdgpu
 ```
 then
 ```
-sudo nano sudo nano /etc/modules
+sudo nano /etc/modules
 ```
 add the line
 ```
@@ -130,7 +131,9 @@ add the line
 options vfio-pci ids=1002:67ef,1002:aae0
 ```
 Change the PCI ids with your PCI ids. Some of the line used because i'm 
-using AMD GPU. for Nvidia GPU, the process is similar.
+using AMD GPU. for Nvidia GPU, the process is similar. Read this 
+[forum post](https://linustechtips.com/main/topic/978579-guide-linux-pci-gpu-vfio-passthrough/) 
+for more information
 
 <br><br>
 Then update the initramfs
@@ -217,11 +220,12 @@ heavy task as well
 
 <br><br>
 In my case, because i'm using my server primarily as GUI remote machine, the vesa frame buffer is using the VGA 
-memory so i cannot pass that into KVM. So i need to disable vesafb by editing grub config
+memory so i cannot pass that into KVM. So i need to disable vesafb by editing grub config.
 ```
 GRUB_CMDLINE_LINUX_DEFAULT="quiet splash iommu=1 intel_iommu=on vga=normal nofb nomodeset video=vesafb:off i915.modeset=0"
 ```
-If you're using Nvidia card, you might need to do
+
+If you're using Nvidia card and you're getting error 43 in device manager, you might need to do
 ```
 virsh edit YOUR-VM-NAME
 ```
@@ -241,10 +245,11 @@ do something like
 </features>
 ...
 ```
-If you still doesn't get output from your VGA, try to change Chipset to Q35 or i440FX 
-or change from BIOS to UEFI.
 
-If that still won't work, you might need to copy your VBIOS and put that inside the KVM
+If you still doesn't get output from your VGA, Try different Video source 
+(HDMI, DVI, Displayport) or change Chipset to Q35 or i440FX and change from BIOS to UEFI.
+
+If that still won't work, you might need to copy your VBIOS and put that inside the KVM.
 
 Keep trying and good luck!
 
