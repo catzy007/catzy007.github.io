@@ -144,3 +144,19 @@ Also last week i'm bulding new remote management system using ESP8266 and relay,
 <p align="center">
 	<img src="./posts/2019-05-25-log-building-poor-man-workstation/17.jpg" height="250px" alt="img17">
 </p>
+
+<br>
+#### [UPDATE 12/01/2019 15:07]
+Few months pass and here i am. In the mean time, i'm modifying my case so i can get more air coming from that 120mm fans.
+It's not that pretty but it works really well, I just cut the front case with dremel and put mesh behind followed by some plastic plate.
+<p align="center">
+	<img src="./posts/2019-05-25-log-building-poor-man-workstation/18.jpg" height="250px" alt="img18">
+</p>
+And finally i got my graphic card. It's RX460 4GB from Sapphire. Yeah it wasn't rx 570 i know, but it's cheap and it works well.
+<p align="center">
+	<img src="./posts/2019-05-25-log-building-poor-man-workstation/19.jpg" height="250px" alt="img19">
+</p>
+
+<br>
+And that's wrap this journey to build my own workstation. Next upgrade in my plan is to get 24GB of DDR3 ECC ram from china. So yeah 
+thank you for reading this far. Hope you have a good day!
