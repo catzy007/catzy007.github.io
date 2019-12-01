@@ -176,32 +176,32 @@ the line may be different but it should look similar. Then do `reboot`
 <br><br>
 Then create simple and quick VM using `Virtual Machine Manager`
 <p align="center">
-	<img src="./posts/2019-11-25-my-journey-to-pcie-or-vga-passtrough-in-kvm/01.png" height="250px" alt="img01">
+	<img src="./posts/2019-11-25-my-journey-to-pcie-or-vga-passtrough-in-kvm/01.jpg" height="250px" alt="img01">
 </p>
 <p align="center">
-	<img src="./posts/2019-11-25-my-journey-to-pcie-or-vga-passtrough-in-kvm/02.png" height="250px" alt="img02">
+	<img src="./posts/2019-11-25-my-journey-to-pcie-or-vga-passtrough-in-kvm/02.jpg" height="250px" alt="img02">
 </p>
 <p align="center">
-	<img src="./posts/2019-11-25-my-journey-to-pcie-or-vga-passtrough-in-kvm/03.png" height="250px" alt="img03">
+	<img src="./posts/2019-11-25-my-journey-to-pcie-or-vga-passtrough-in-kvm/03.jpg" height="250px" alt="img03">
 </p>
 <p align="center">
-	<img src="./posts/2019-11-25-my-journey-to-pcie-or-vga-passtrough-in-kvm/04.png" height="250px" alt="img04">
+	<img src="./posts/2019-11-25-my-journey-to-pcie-or-vga-passtrough-in-kvm/04.jpg" height="250px" alt="img04">
 </p>
 <p align="center">
-	<img src="./posts/2019-11-25-my-journey-to-pcie-or-vga-passtrough-in-kvm/05.png" height="250px" alt="img05">
+	<img src="./posts/2019-11-25-my-journey-to-pcie-or-vga-passtrough-in-kvm/05.jpg" height="250px" alt="img05">
 </p>
 Don't forget to check `Customize configuration before install`
 <p align="center">
-	<img src="./posts/2019-11-25-my-journey-to-pcie-or-vga-passtrough-in-kvm/06.png" height="250px" alt="img06">
-	<img src="./posts/2019-11-25-my-journey-to-pcie-or-vga-passtrough-in-kvm/07.png" height="250px" alt="img07">
+	<img src="./posts/2019-11-25-my-journey-to-pcie-or-vga-passtrough-in-kvm/06.jpg" height="250px" alt="img06">
+	<img src="./posts/2019-11-25-my-journey-to-pcie-or-vga-passtrough-in-kvm/07.jpg" height="250px" alt="img07">
 </p>
 Here i'm using Q35 Chipset and regular BIOS as my setup. You can use i440FX and UEFI if you encounter some problem.
 <p align="center">
-	<img src="./posts/2019-11-25-my-journey-to-pcie-or-vga-passtrough-in-kvm/08.png" height="250px" alt="img08">
+	<img src="./posts/2019-11-25-my-journey-to-pcie-or-vga-passtrough-in-kvm/08.jpg" height="250px" alt="img08">
 </p>
 Then go to `CPUs tab` and configure as you need.
 <p align="center">
-	<img src="./posts/2019-11-25-my-journey-to-pcie-or-vga-passtrough-in-kvm/09.png" height="250px" alt="img09">
+	<img src="./posts/2019-11-25-my-journey-to-pcie-or-vga-passtrough-in-kvm/09.jpg" height="250px" alt="img09">
 </p>
 Next, `Add Hardware` select `Input Tab` and select `EvTouch USB Graphic Tablet`.
 Then install Windows as usual.
@@ -209,11 +209,11 @@ Then install Windows as usual.
 <br><br>
 After Windows installation finished, then shutdown the VM and add a new hardware and pass both Video output and sound
 <p align="center">
-	<img src="./posts/2019-11-25-my-journey-to-pcie-or-vga-passtrough-in-kvm/10.png" height="250px" alt="img10">
+	<img src="./posts/2019-11-25-my-journey-to-pcie-or-vga-passtrough-in-kvm/10.jpg" height="250px" alt="img10">
 </p>
 Then boot your VM and install the necessary drivers and hope that your PCI device is working as intended
 <p align="center">
-	<img src="./posts/2019-11-25-my-journey-to-pcie-or-vga-passtrough-in-kvm/11.png" height="250px" alt="img11">
+	<img src="./posts/2019-11-25-my-journey-to-pcie-or-vga-passtrough-in-kvm/11.jpg" height="250px" alt="img11">
 </p>
 And That's it, You have full Windows system running in KVM and the best part is you can play games or other 
 heavy task as well

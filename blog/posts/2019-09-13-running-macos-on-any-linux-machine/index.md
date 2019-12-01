@@ -65,52 +65,52 @@ sudo ./make.sh --add
 
 Then open VMM and you'll see macOS-Simple-KVM on the list.
 <p align="center">
-	<img src="./posts/2019-09-13-running-macos-on-any-linux-machine/1.png" height="300px" alt="1">
+	<img src="./posts/2019-09-13-running-macos-on-any-linux-machine/1.jpg" height="300px" alt="1">
 </p>
 Next click `macOS-Simple-KVM` and click `Open`. Then click `Add Hardware` on bottom left
 <p align="center">
-	<img src="./posts/2019-09-13-running-macos-on-any-linux-machine/7.png" height="300px" alt="7">
+	<img src="./posts/2019-09-13-running-macos-on-any-linux-machine/7.jpg" height="300px" alt="7">
 </p>
 Select `Storage` and add the amount of disk you want to have
 <p align="center">
-	<img src="./posts/2019-09-13-running-macos-on-any-linux-machine/6.png" height="300px" alt="6">
+	<img src="./posts/2019-09-13-running-macos-on-any-linux-machine/6.jpg" height="300px" alt="6">
 </p>
 To run it press the `Play Button` then press `Computer Icon` on the left. 
 <p align="center">
-	<img src="./posts/2019-09-13-running-macos-on-any-linux-machine/2.png" height="250px" alt="2">
+	<img src="./posts/2019-09-13-running-macos-on-any-linux-machine/2.jpg" height="250px" alt="2">
 </p>
 In the clover boot menu, press enter and the system will boot into `MacOS Utilities`
 <p align="center">
-	<img src="./posts/2019-09-13-running-macos-on-any-linux-machine/3.png" height="250px" alt="3">
+	<img src="./posts/2019-09-13-running-macos-on-any-linux-machine/3.jpg" height="250px" alt="3">
 </p>
 First select `Disk Utility` then erase partition you want to use
 <p align="center">
-	<img src="./posts/2019-09-13-running-macos-on-any-linux-machine/4.png" height="250px" alt="4">
+	<img src="./posts/2019-09-13-running-macos-on-any-linux-machine/4.jpg" height="250px" alt="4">
 </p>
 Next go to `Reinstall macOS`, Continue, Select partition, Set username, Password, etc. 
 This will take some time because the installer is downloading some files too.
 <p align="center">
-	<img src="./posts/2019-09-13-running-macos-on-any-linux-machine/5.png" height="250px" alt="5">
+	<img src="./posts/2019-09-13-running-macos-on-any-linux-machine/5.jpg" height="250px" alt="5">
 </p>
 After that you'll be  greeted with MacOS desktop
 <p align="center">
-	<img src="./posts/2019-09-13-running-macos-on-any-linux-machine/8.png" height="250px" alt="8">
+	<img src="./posts/2019-09-13-running-macos-on-any-linux-machine/8.jpg" height="250px" alt="8">
 </p>
 Then power off the MacOS and add more CPU, RAM, add PCIe Passtrough, etc
 <p align="center">
-	<img src="./posts/2019-09-13-running-macos-on-any-linux-machine/9.png" height="250px" alt="9">
-    <img src="./posts/2019-09-13-running-macos-on-any-linux-machine/10.png" height="250px" alt="10">
+	<img src="./posts/2019-09-13-running-macos-on-any-linux-machine/9.jpg" height="250px" alt="9">
+    <img src="./posts/2019-09-13-running-macos-on-any-linux-machine/10.jpg" height="250px" alt="10">
 </p>
 
 <br>
 If you're getting random keypress in my case it's numlock so it's annoying, go to `System Preferences > Accessibility > Keyboard` 
 check `Enable Slow Keys` then go to `Options` and slide to low value
 <p align="center">
-	<img src="./posts/2019-09-13-running-macos-on-any-linux-machine/11.png" height="250px" alt="11">
+	<img src="./posts/2019-09-13-running-macos-on-any-linux-machine/11.jpg" height="250px" alt="11">
 </p>
 Next get [Karabiner](https://pqrs.org/osx/karabiner/) and disable the faulty key
 <p align="center">
-	<img src="./posts/2019-09-13-running-macos-on-any-linux-machine/13.png" height="250px" alt="13">
+	<img src="./posts/2019-09-13-running-macos-on-any-linux-machine/13.jpg" height="250px" alt="13">
 </p>
 Then uncheck The Slow key in `System Preferences > Accessibility > Keyboard > Enable Slow Keys`
 
@@ -118,7 +118,7 @@ Then uncheck The Slow key in `System Preferences > Accessibility > Keyboard > En
 <br>
 Then if you want the system run automatically go to `Boot Options > Check on Start virtual machine on host boot up`
 <p align="center">
-	<img src="./posts/2019-09-13-running-macos-on-any-linux-machine/12.png" height="250px" alt="12">
+	<img src="./posts/2019-09-13-running-macos-on-any-linux-machine/12.jpg" height="250px" alt="12">
 </p>
 Next create autostart. Here i'm using xubuntu so i can create `macos.desktop` in `/etc/xdg/autostart` 
 you may not have this so refer to your Linux distro
