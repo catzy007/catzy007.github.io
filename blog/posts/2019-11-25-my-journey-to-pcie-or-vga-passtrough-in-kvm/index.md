@@ -2,7 +2,8 @@
 #### Sunday, November 25, 2019
 For a long time, Linux users has to face a fact that Microsoft Windows have some strength in 
 lot of applications such as Games, CAD application, Many Adobe product and list goes on. Yes 
-i know there are some alternatives and some steam games support linux, but that wasn't enough 
+i know there are some alternatives and [DXVK](https://github.com/doitsujin/dxvk)-[Proton](https://github.com/ValveSoftware/Proton) 
+is a thing. Even some steam games run natively on Linux, but that wasn't enough 
 for me. And that was the main reason why [i build my own server](/blog/#2019-05-25-log-building-poor-man-workstation) 
 with lot of cores so that i can use KVM (Kernel-based Virtual Machine) so i can create Windows 
 VM and pass a Video Graphic Adapter and use it as normal Windows machine... Neat. So here's my journey.
@@ -99,8 +100,8 @@ softdep amdgpu pre: vfio vfio_pci
 vfio
 vfio_iommu_type1
 vfio_virqfd
-options vfio_pci ids=1002:67ef,1002:aae0
-vfio_pci ids=1002:67ef,1002:aae0
+options vfio_pci ids=1002:67ff,1002:aae0
+vfio_pci ids=1002:67ff,1002:aae0
 vfio_pci
 amdgpu
 ```
@@ -112,7 +113,7 @@ add the line
 ```
 vfio
 vfio_iommu_type1
-vfio_pci ids=1002:67ef,1002:aae0
+vfio_pci ids=1002:67ff,1002:aae0
 ```
 Then
 ```
@@ -128,7 +129,7 @@ sudo nano /etc/modprobe.d/vfio.conf
 ```
 add the line 
 ```
-options vfio-pci ids=1002:67ef,1002:aae0
+options vfio-pci ids=1002:67ff,1002:aae0
 ```
 Change the PCI ids with your PCI ids. Some of the line used because i'm 
 using AMD GPU. for Nvidia GPU, the process is similar. Read this 
