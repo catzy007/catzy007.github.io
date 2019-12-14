@@ -2,7 +2,6 @@
 	function reqParseMarkdown(type, url, prevPost, nextPost){
 		var reqMD = new XMLHttpRequest();
 		reqMD.open("GET", url, true);
-		reqMD.overrideMimeType("text/html");
 		reqMD.onreadystatechange = function(oEvent){
 			if(reqMD.readyState === 4){
 				if(reqMD.status === 200){
