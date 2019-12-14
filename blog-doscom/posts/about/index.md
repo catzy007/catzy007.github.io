@@ -18,4 +18,7 @@ This blog uses very little server side processing as possible. I hope you're und
 > This blog does not do data collection, tracker, targeted ad or anything like that. This page is made using `Github Pages` therefore any form of data collection is refer to [GitHub Privacy Statement](https://help.github.com/en/articles/github-privacy-statement). Contact page contain part from Google Maps so there might be some [Cookies](https://policies.google.com/technologies/cookies) therefore any form of data collection in Contact page refers to [Google Privacy Policy](https://policies.google.com/privacy?hl=en-US)
 
 <br>
+> "Walaupun kami beda Sistem Operasi dan Software Aplikasi dengan kebanyakan orang tapi bukan berarti kami terpinggirkan, justru kami merasa di depan untuk siap sedia memberikan solusi sekaligus pembelajaran keterbukaan tentang ilmu dan teknologi informasi." - Edy Mulyanto, S.Si, M.Kom (Founder of doscom)
+
+<br>
 > "Galatians 4:16. Have I now become your enemy by telling you the truth?"
