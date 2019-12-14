@@ -1,0 +1,56 @@
+/* BASIC CSS */
+		body {
+			background-color: #55688A;
+			font-family: 'Barlow', sans-serif;
+		}
+		hr {
+			margin: 0;
+			border-width: 3px;
+			border-color: #DB2C30;
+		}
+		.center-block {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.not-found-nmbr {
+		    font-family: 'Josefin Slab', serif;
+			font-size: 1200%;
+		}
+		
+/* MYCONTAINER */
+	/* for mobile device like phone and tablet */
+	.mycontainer {
+		margin: auto;
+		margin-top: 2vh;
+		margin-bottom: 2vh;
+		background-color: rgba(253, 253, 253, 0.95);
+		padding: 3vh 3vh 3vh 3vh;
+	}
+
+	/* for device like laptop, standard computer, mid-end tv */
+	@media screen and (min-width: 800px) {
+		.mycontainer {
+			margin: auto;
+			margin-top: 2vh;
+			margin-bottom: 2vh;
+			background-color: rgba(253, 253, 253, 0.95);
+			padding: 6vh 12vh 6vh 12vh;
+		}
+	}
+
+	/* for device with high end display */
+		@media screen and (min-width: 2880px) {
+			.mycontainer {
+				margin: auto;
+				margin-top: 4vh;
+				margin-bottom: 4vh;
+				background-color: rgba(253, 253, 253, 0.95);
+				padding: 2vh 4vh 2vh 4vh;
+			}
+		}
+
+		.myexpander {
+			min-height: 100vh;
+			overflow: auto;
+		}
