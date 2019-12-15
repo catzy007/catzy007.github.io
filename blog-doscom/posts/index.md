@@ -73,3 +73,8 @@
 2013-01-31-tealinux-os-5-0-named-kukicha-tea
 
 2014-08-25-cara-memasang-mate-desktop-di-tealinuxos
+
+2016-04-22-release-party-tealinux-os-8-dan-seminar-nasional-open-source-everywhere
+
+2017-03-01-4-kategori-distribusi-linux
+2017-03-04-tutorial-instalasi-spotify-di-linux
