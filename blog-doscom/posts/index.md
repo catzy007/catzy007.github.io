@@ -75,6 +75,7 @@
 2014-08-25-cara-memasang-mate-desktop-di-tealinuxos
 
 2016-04-22-release-party-tealinux-os-8-dan-seminar-nasional-open-source-everywhere
+2016-04-23-theme-switcher-tray-beta-testing
 
 2017-03-01-4-kategori-distribusi-linux
 2017-03-04-tutorial-instalasi-spotify-di-linux
