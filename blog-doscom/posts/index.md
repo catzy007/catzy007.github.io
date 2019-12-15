@@ -63,4 +63,13 @@
 2011-01-04-vgasismint10
 2011-01-23-memperbaiki-youtube-freeze+
 
+2012-01-21-sharing-printer-di-ubuntu
+2012-01-25-proteksi-data-di-nfs-server-pada-nas
+2012-01-29-snmp
+2012-01-29-cacti-network-monitoring
+2012-01-29-arpon+
+
+2013-01-13-perayaan-software-freedom-day-2012
+2013-01-31-tealinux-os-5-0-named-kukicha-tea
+
 2014-08-25-cara-memasang-mate-desktop-di-tealinuxos
