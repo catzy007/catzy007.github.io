@@ -16,7 +16,11 @@
 2009-08-10-pindahkan-partisi-instalasi-ke-partisi-lain
 2009-08-13-domain-baru-doscom
 
-
+2010-01-20-multiget-file-downloader-for-linux
+2010-01-20-capture-screenshot-dengan-menggunakan-gimp
+2010-01-21-edit-grub-di-ubuntu-910
+2010-01-25-cara-mengembalikan-boot-loader-ubuntu
+2010-01-27-instalisasi-mikrotik-di-virtual-box-dan
 2010-02-08-coming-soon-tealinuxos-20
 2010-02-10-buku-gratis-bagi-yang-ingin-mahir-open
 2010-02-12-splash-image-ubuntu-910
@@ -51,7 +55,7 @@
 2010-11-22-fitur-baru-inkscape-spray-tool-dan-multipath-editing-part-1
 2010-11-23-fitur-baru-di-inkscape-0-48-part-2-improved-text-editor-connector-dan-bitmap-embedding
 2010-12-12-install-lan-card-dan-wifi-toshiba-l640-di-ubuntu-10-04
-2010-12-13-migrasi-oss-pemkab-semarang+
+2010-12-13-migrasi-oss-pemkab-semarang
 2010-12-17-firewallmikrotik
 2010-12-17-instalasi-joomla-di-linux
 
