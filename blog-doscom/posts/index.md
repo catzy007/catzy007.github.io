@@ -72,6 +72,9 @@
 2013-01-13-perayaan-software-freedom-day-2012
 2013-01-31-tealinux-os-5-0-named-kukicha-tea
 
+2013-12-21-ngoding-bareng-pake-togetherjs
+2013-12-23-cara-menginstall-blender-2-96-lastest-version-dengan-ppa+
+
 2014-01-03-install-mysql-queery-browser-di-ubuntu-12-04-atau-versi-diatasnya+
 2014-08-12-kendalikan-aplikasi-dengan-jasper
 2014-08-12-cara-memasang-skippy-xd-task-switcher-di-tealinuxos
