@@ -72,7 +72,25 @@
 2013-01-13-perayaan-software-freedom-day-2012
 2013-01-31-tealinux-os-5-0-named-kukicha-tea
 
+2014-01-03-install-mysql-queery-browser-di-ubuntu-12-04-atau-versi-diatasnya+
+2014-08-12-kendalikan-aplikasi-dengan-jasper
+2014-08-12-cara-memasang-skippy-xd-task-switcher-di-tealinuxos
+2014-08-13-cheat-aplikasi-untuk-belajar-perintah-dasar-linux
+2014-08-16-menggunakan-tealinuxos-ide-installer-tanpa-dvd
+2014-08-19-triple-boot-windows-8-android-dan-tealinuxosubuntu
+2014-08-25-mengecek-partisi-dan-sisa-hard-drive-pada-server
 2014-08-25-cara-memasang-mate-desktop-di-tealinuxos
+2014-08-26-selamat-ulang-tahun-linux
+2014-09-26-ulasan-aplikasi-stackedit
+2014-10-04-tutorial-kembalikan-ikon-dropbox-yang-hilang-elementaryos
+2014-10-12-ulasan-aplikasi-zeal
+2014-10-29-pojok-panda-programmer-inkscape-introduction
+2014-11-06-bootcamp-2014-level-up
+2014-11-11-google-talk-plugin-untuk-linux
+2014-11-11-tutorial-workshop-ionic-dengan-angular-js-3
+2014-11-11-persiapan-bootcamp-doscom-2014-level-up
+2014-12-03-ulasan-aplikasi-godot-game-engine
+2014-12-16-software-freedom-day-mozilla-maker-party-udinus-2014
 
 2015-01-08-workshop-pembuatan-game-space-radian-dengan-godot-engine
 2015-05-04-release-party-tealinuxos-7-0

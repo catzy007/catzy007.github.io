@@ -114,13 +114,13 @@
 			2014 (Migrasi ke doscom.org/blog)
 		</td>
 		<td>
-			1
+			19
 		</td>
 		<td>
 			19
 		</td>
 		<td>
-			??
+			1
 		</td>
 	</tr>
 	<tr>
