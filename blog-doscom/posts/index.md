@@ -88,10 +88,10 @@
 2013-07-03-
 2013-07-14-
 2013-07-29-
-2013-08-05-
-2013-08-15-
-2013-08-27-
-2013-09-07-
+2013-08-05-pesan-assuming-drive-cache-write-through-saat-startup-di-linux
+2013-08-15-mengakses-database-mysql-menggunakan-libreoffice-base
+2013-08-27-pengenalan-jaringan-komputer
+2013-09-07-whatsapp-client-di-linux-dengan-plugin-pidgin
 2013-11-08-brackets-code-editor-untuk-html-css-dan-javascript
 2013-12-21-ngoding-bareng-pake-togetherjs
 2013-12-23-cara-menginstall-blender-2-96-lastest-version-dengan-ppa+
