@@ -72,6 +72,7 @@
 2013-01-13-perayaan-software-freedom-day-2012
 2013-01-31-tealinux-os-5-0-named-kukicha-tea
 
+2013-11-08-brackets-code-editor-untuk-html-css-dan-javascript
 2013-12-21-ngoding-bareng-pake-togetherjs
 2013-12-23-cara-menginstall-blender-2-96-lastest-version-dengan-ppa+
 
