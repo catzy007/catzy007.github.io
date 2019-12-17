@@ -85,9 +85,9 @@
 2013-05-03-
 2013-05-24-
 2013-06-04-
-2013-07-03-
-2013-07-14-
-2013-07-29-
+2013-07-03-install-oracle-java-di-ubuntu
+2013-07-14-kalilinux
+2013-07-29-membuat-aplikasi-firefoxos-part-1
 2013-08-05-pesan-assuming-drive-cache-write-through-saat-startup-di-linux
 2013-08-15-mengakses-database-mysql-menggunakan-libreoffice-base
 2013-08-27-pengenalan-jaringan-komputer
