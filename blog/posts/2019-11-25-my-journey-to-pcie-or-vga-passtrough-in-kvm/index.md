@@ -8,12 +8,12 @@ for me. And that was the main reason why [i build my own server](/blog/#2019-05-
 with lot of cores so that i can use KVM (Kernel-based Virtual Machine) so i can create Windows 
 VM and pass a Video Graphic Adapter and use it as normal Windows machine... Neat. So here's my journey.
 
-Make sure that your hardware support [Hypervisor](https://en.wikipedia.org/wiki/Hypervisor) first, 
+First, make sure that your hardware support [Hypervisor](https://en.wikipedia.org/wiki/Hypervisor), 
 make sure that your Processor, Chipset, and Motherboard support VT-D or AMD-Vi. Here i'm using LGA1366 
-based motherboard ASUS Z8NA-D6 and Xeon X5670. As for PCIE device, i'm using my Radeon RX 560. As for 
-Operating system, i'm using Xubuntu 18.04 and kernel version 4.15.0-70-generic if you curious about it. 
+based motherboard ASUS Z8NA-D6 and Xeon X5670. As for PCIE device, i'm using my Radeon RX 560. For 
+Operating system, i'm using Xubuntu 18.04 and kernel version `4.15.0-70-generic` if you curious about it. 
 For more information, you can read <https://en.wikipedia.org/wiki/List_of_IOMMU-supporting_hardware> 
-and <https://wiki.xen.org/wiki/VTd_HowTo> and don't forget to enable that in BIOS. Make sure that 
+and <https://wiki.xen.org/wiki/VTd_HowTo> and don't forget to enable Virtualization in BIOS. Make sure that 
 you have two video adapter. Here i have onboard Aspeed as primary display and RX 560 that will be 
 passtrough into KVM. Server grade processor and board is your best bet but sometimes it can be little 
 bit tricky. Do your best research and hope for the best.
@@ -253,6 +253,10 @@ If you still doesn't get output from your VGA, Try different Video source
 If that still won't work, you might need to copy your VBIOS and put that inside the KVM.
 
 Keep trying and good luck!
+
+<br><br>
+> Update 13/01/2020
+> Recently i boot into my windows 10 vm and after few second it just freeze, then i find out that kernel `4.15.0-74-generic` was the culprit. after going back to `4.15.0-72-generic`, everything back to normal.
 
 <br><br>
 Some Sauce
