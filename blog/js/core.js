@@ -12,7 +12,13 @@
 	//filter array (remove empty value)
 		var arrPosts = arrPosts.filter(function(el) { return el; });
 		var arrPure = arrPure.filter(function(el) { return el; });
-		//console.log(arrPosts);console.log(arrPure);
+		console.log(arrPosts);console.log(arrPure);
+	//filter array post (remove seperator)
+		for(var i=0; i<arrPosts.length; i++){
+			if(arrPosts[i].length == "1" && arrPosts[i] == "-"){
+				arrPosts.splice(i,1);
+			}
+		}
 	//get requested post from url
 		var url = window.location.hash.substr(1);
 		var hash = url.substring(url.indexOf('#')+1);
@@ -42,6 +48,10 @@
 				if(hash == "index"){
 					var post="## Index\n";
 					for(var i=0; i<arrPosts.length; i++){
+						if(arrPure[i].length == "1" && arrPure[i] == "-"){
+							arrPure.splice(i,1);
+							post=post+"<br>";
+						}
 						post=post + "<a style=\"font-size:18px;\" onclick=\"location.href='#"+ 
 						arrPosts[i] +"';refreshed()\">"+ arrPure[i].split('-').join(' ') +"</a>\n<br>";
 						//console.log(i + " " + arrPosts[i] + " " + arrPure[i]);
