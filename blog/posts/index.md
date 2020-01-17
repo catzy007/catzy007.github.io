@@ -26,5 +26,6 @@
 2019-07-25-Use-USB-TV-or-USB-Capture-on-Linux
 2019-09-13-Running-MacOS-on-Any-Linux-Machine
 2019-09-25-Set-Custom-Resolution-In-Headless-Server
+2020-01-17-Ubuntu-Chroot-Container-in-Android
 
 2019-11-25-my-journey-to-pcie-or-vga-passtrough-in-kvm
