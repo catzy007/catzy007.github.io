@@ -113,7 +113,7 @@ add the line
 ```
 vfio
 vfio_iommu_type1
-vfio_pci ids=1002:67ff,1002:aae0
+# vfio_pci ids=1002:67ff,1002:aae0
 ```
 Then
 ```
