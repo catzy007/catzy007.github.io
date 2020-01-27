@@ -89,6 +89,8 @@ The idea of running (almost full) linux machine inside your pocket size device i
 is written in nano inside that chroot container.
 <p align="center">
 	<img src="./posts/2020-01-17-ubuntu-chroot-container-in-android/11.jpg" height="550px" alt="img11">
+    <br><br>
+    <img src="./posts/2020-01-17-ubuntu-chroot-container-in-android/12.jpg" height="350px" alt="img12">
 </p>
 
 #### Some reading
