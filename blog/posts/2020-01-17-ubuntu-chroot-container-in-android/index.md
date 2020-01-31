@@ -84,7 +84,19 @@ you can connect vnc from other machine too.
     <img src="./posts/2020-01-17-ubuntu-chroot-container-in-android/10.jpg" height="350px" alt="img10">
 </p>
 
-#### 5. Finishing
+<br>
+
+#### 5. Some Fix
+In my case, the user that i use cannot connect to the internet. So i need to do some fix
+```
+sudo echo "inet:x:3003:$(whoami)" >> /etc/group
+sudo echo "net_raw:x:3004:$(whoami)" >> /etc/group
+```
+After that, stop and start the container and you good to go.
+
+<br>
+
+#### 6. Finishing
 The idea of running (almost full) linux machine inside your pocket size device is great. In fact, 1/3 of this post 
 is written in nano inside that chroot container.
 <p align="center">
