@@ -54,14 +54,6 @@
 		console.log(window.location.href);
 		console.log(res);
 		
-		var disqus_config = function () {
-			// Replace PAGE_URL with your page's canonical URL variable
-			this.page.url = window.location.href;  
-			
-			// Replace PAGE_IDENTIFIER with your page's unique identifier variable
-			this.page.identifier = res; 
-		};
-		
 		(function() {  // REQUIRED CONFIGURATION VARIABLE: EDIT THE SHORTNAME BELOW
 			var d = document, s = d.createElement('script');
 			
