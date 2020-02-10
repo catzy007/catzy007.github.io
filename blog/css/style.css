@@ -17,6 +17,17 @@
 		    font-family: 'Josefin Slab', serif;
 			font-size: 1200%;
 		}
+		.text-pages {
+			cursor: pointer;
+			color:#55688A;
+			text-shadow: 0px 1px #ddd;
+			font-size:22px;
+		}
+		.text-pages-seperator {
+			color:#55688A;
+			text-shadow: 0px 1px #ddd;
+			font-size:18px
+		}
 		
 /* MYCONTAINER */
 	/* for mobile device like phone and tablet */

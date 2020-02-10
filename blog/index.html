@@ -37,16 +37,16 @@
     <!-- MARKDOWN PARSER AND CORE -->
 	<script>
 	window.onload = function mainLoader(){
-		var reqIDX = new XMLHttpRequest();
-		reqIDX.open("GET", "./posts/index.md", true);
-		reqIDX.onreadystatechange = function(oEvent){
-			if(reqIDX.readyState === 4){
-				if(reqIDX.status === 200){
-					var mylog = "#[INDEX] XMLHttpRequest Success!";
-					getPostsArray(reqIDX.responseText);
+		var reqPGE = new XMLHttpRequest();
+		reqPGE.open("GET","./pages/index.md", true);
+		reqPGE.onreadystatechange = function(oEvent){
+			if(reqPGE.readyState === 4){
+				if(reqPGE.status === 200){
+					var mylog = "#[PAGE] XMLHttpRequest Success!";
+					getPagesArray(reqPGE.responseText);
 					console.log(mylog);
 				}else{
-					var mylog = "#[INDEX] XMLHttpRequest Error! " + reqIDX.statusText;
+					var mylog = "#[PAGES] XMLHttpRequest Error! " + reqPGE.statusText;
 					var pagelog = "<br><br><br><br><br><br><br>\
 						<div align=\"center\">\
 							<h1 class=\"not-found-nmbr\">404</h1>\n\
@@ -54,12 +54,12 @@
 							<h3>Sorry the main index for this website could not be found.</h3>\
 							<h4>[INDEX] XMLHttpRequest Error!</h4>\
 						</div>";
-					showMarkdown(pagelog, "#", "#");
+					showMarkdown(pagelog, "#", "#", "PAGE");
 					console.log(mylog);
 				}
 			}
-		}; 
-		reqIDX.send(null);
+		};
+		reqPGE.send(null);
 	}
 	</script>
 	<script src="./js/core.js"></script>
@@ -69,13 +69,7 @@
 	<div class="container mycontainer">
 		<div class="row">
 			<div class="col-sm-12 text-right">
-				<a style="cursor: pointer;color:#55688A;text-shadow: 0px 1px #ddd;font-size:22px;" onclick="location.href='#';refreshed()">Home</a>
-				<a style="color:#55688A;text-shadow: 0px 1px #ddd;font-size:18px"> |</a>
-				<a style="cursor: pointer;color:#55688A;text-shadow: 0px 1px #ddd;font-size:22px;" onclick="location.href='#index';refreshed()">Index</a>
-				<a style="color:#55688A;text-shadow: 0px 1px #ddd;font-size:18px"> |</a>
-				<a style="cursor: pointer;color:#55688A;text-shadow: 0px 1px #ddd;font-size:22px;" onclick="location.href='#contact';refreshed()">Contact</a>
-				<a style="color:#55688A;text-shadow: 0px 1px #ddd;font-size:18px"> |</a>
-				<a style="cursor: pointer;color:#55688A;text-shadow: 0px 1px #ddd;font-size:22px;" onclick="location.href='#about';refreshed()">About</a>
+				<div id="Pages"></div>
 			</div>
 		</div>
 		<div class="row">
@@ -132,7 +126,7 @@
 				or change your browser to Google Chrome or Mozilla Firefox
 				</h3>
 			</div>
-			<div id="disqus_thread"></div>
+			<div id="Comments" class="col-sm-12"></div>
 		</div>
 		<div class="row">
 			<br>
@@ -147,57 +141,4 @@
 		</div>
     </div>
 </body>
-
-<!-- <script>
-	var disqus_shortname = 'catzy007';
-
-	(function(){
-		var dsq = document.createElement('script');
-		dsq.type = 'text/javascript';
-		dsq.async = true;
-		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-	}());
-</script> -->
-
-<script>
-    /**
-     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT 
-     *  THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR 
-     *  PLATFORM OR CMS.
-     *  
-     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: 
-     *  https://disqus.com/admin/universalcode/#configuration-variables
-     */
-
-	var str = window.location.href;
-	var res = str.replace("http://" + window.location.hostname + "/blog", "");
-	res = res.replace("https://" + window.location.hostname + "/blog", "");
-	console.log(window.location.href);
-	console.log(res);
-    
-    var disqus_config = function () {
-        // Replace PAGE_URL with your page's canonical URL variable
-        this.page.url = window.location.href;  
-        
-        // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-        this.page.identifier = res; 
-    };
-    
-    (function() {  // REQUIRED CONFIGURATION VARIABLE: EDIT THE SHORTNAME BELOW
-        var d = document, s = d.createElement('script');
-        
-        // IMPORTANT: Replace EXAMPLE with your forum shortname!
-        s.src = 'https://catzy007.disqus.com/embed.js';
-        
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>
-    Please enable JavaScript to view the 
-    <a href="https://disqus.com/?ref_noscript" rel="nofollow">
-        comments powered by Disqus.
-    </a>
-</noscript>
 </html>
