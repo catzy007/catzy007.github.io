@@ -48,14 +48,6 @@
 		 *  https://disqus.com/admin/universalcode/#configuration-variables
 		 */
 
-		var disqus_config = function () {
-			// Replace PAGE_URL with your page's canonical URL variable
-			this.page.url = window.location.href;  
-			
-			// Replace PAGE_IDENTIFIER with your page's unique identifier variable
-			this.page.identifier = res; 
-		};
-
 		var str = window.location.href;
 		var res = str.replace("http://" + window.location.hostname + "/blog", "");
 		res = res.replace("https://" + window.location.hostname + "/blog", "");
