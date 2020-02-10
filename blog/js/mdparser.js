@@ -39,21 +39,6 @@
 	//enable comment on post
 	if(type == "POST"){
 		document.getElementById('Comments').innerHTML = "<div id=\"disqus_thread\"></div>";
-		/**
-		 *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT 
-		 *  THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR 
-		 *  PLATFORM OR CMS.
-		 *  
-		 *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: 
-		 *  https://disqus.com/admin/universalcode/#configuration-variables
-		 */
-
-		var str = window.location.href;
-		var res = str.replace("http://" + window.location.hostname + "/blog", "");
-		res = res.replace("https://" + window.location.hostname + "/blog", "");
-		console.log(window.location.href);
-		console.log(res);
-		
 		(function() {  // REQUIRED CONFIGURATION VARIABLE: EDIT THE SHORTNAME BELOW
 			var d = document, s = d.createElement('script');
 			
