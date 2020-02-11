@@ -126,7 +126,9 @@
 				or change your browser to Google Chrome or Mozilla Firefox
 				</h3>
 			</div>
-			<div id="Comments" class="col-sm-12"></div>
+			<div id="Comments" class="col-sm-12">
+				<div id="disqus_thread"></div>
+			</div>
 		</div>
 		<div class="row">
 			<br>
@@ -151,8 +153,9 @@
 	 *  https://disqus.com/admin/universalcode/#configuration-variables
 	 */
 	
-	function getTitle(pUrl, pTitle, pIdnt){
+	function showComments(pUrl, pTitle, pIdnt){
 		console.log(pUrl, pTitle, pIdnt);
+
 		var disqus_config = function () {
 			// Replace PAGE_URL with your page's canonical URL variable
 			this.page.url = pUrl;  
@@ -162,6 +165,16 @@
 			// Replace PAGE_IDENTIFIER with your page's unique identifier variable
 			this.page.identifier = pIdnt; 
 		};
+
+		(function() {  // REQUIRED CONFIGURATION VARIABLE: EDIT THE SHORTNAME BELOW
+			var d = document, s = d.createElement('script');
+			
+			// IMPORTANT: Replace EXAMPLE with your forum shortname!
+			s.src = 'https://catzy007.disqus.com/embed.js';
+			
+			s.setAttribute('data-timestamp', +new Date());
+			(d.head || d.body).appendChild(s);
+		})();
 	}
 	
 </script>

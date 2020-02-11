@@ -37,16 +37,16 @@
 		}
 
 	//enable comment on post
-	if(type == "POST"){
-		document.getElementById('Comments').innerHTML = "<div id=\"disqus_thread\"></div>";
-		(function() {  // REQUIRED CONFIGURATION VARIABLE: EDIT THE SHORTNAME BELOW
-			var d = document, s = d.createElement('script');
+	// if(type == "POST"){
+	// 	document.getElementById('Comments').innerHTML = "<div id=\"disqus_thread\"></div>";
+	// 	(function() {  // REQUIRED CONFIGURATION VARIABLE: EDIT THE SHORTNAME BELOW
+	// 		var d = document, s = d.createElement('script');
 			
-			// IMPORTANT: Replace EXAMPLE with your forum shortname!
-			s.src = 'https://catzy007.disqus.com/embed.js';
+	// 		// IMPORTANT: Replace EXAMPLE with your forum shortname!
+	// 		s.src = 'https://catzy007.disqus.com/embed.js';
 			
-			s.setAttribute('data-timestamp', +new Date());
-			(d.head || d.body).appendChild(s);
-		})();
-	}
+	// 		s.setAttribute('data-timestamp', +new Date());
+	// 		(d.head || d.body).appendChild(s);
+	// 	})();
+	// }
 	}

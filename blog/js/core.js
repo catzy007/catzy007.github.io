@@ -105,7 +105,7 @@ function getPagesArray(text){
 		
 	//if user request specific page
 		if(hash !== null && hash !== ''){
-			getTitle(window.location.href, hash, "/blog/#" + hash);
+			
 		//check if post url valid
 			for(var i=0; i<arrPosts.length; i++){
 			//requested page
@@ -118,6 +118,7 @@ function getPagesArray(text){
 					if(i+1 >= arrPosts.length){nextPost = "#";}else{nextPost = '#'+arrPosts[i+1];}
 				//get post and parse to html
 					reqParseMarkdown("POST", post, prevPost, nextPost);
+					showComments(window.location.href, hash, "/blog/#" + hash);
 					break;
 				}
 			}
@@ -154,7 +155,7 @@ function getPagesArray(text){
 			}
 	//if no specific post requested = show homepage/first post in index
 		}else{
-			getTitle(window.location.href, arrPosts[0], "/blog/#" + arrPosts[0]);
+			showComments(window.location.href, arrPosts[0], "/blog/#" + arrPosts[0]);
 			var post="./posts/"+arrPosts[0]+"/index.md";
 			var prevPost = "#";
 			var nextPost = "#" + arrPosts[1];
