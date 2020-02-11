@@ -150,17 +150,19 @@
 	 *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: 
 	 *  https://disqus.com/admin/universalcode/#configuration-variables
 	 */
-	var str = window.location.href;
-	var res = str.replace("http://" + window.location.hostname + "/blog", "");
-	res = res.replace("https://" + window.location.hostname + "/blog", "");
-	console.log(window.location.href);
-	console.log(res);
-	var disqus_config = function () {
-		// Replace PAGE_URL with your page's canonical URL variable
-		this.page.url = window.location.href;  
-		
-		// Replace PAGE_IDENTIFIER with your page's unique identifier variable
-		this.page.identifier = res; 
-	};
+	
+	function getTitle(pUrl, pTitle, pIdnt){
+		console.log(pUrl, pTitle, pIdnt);
+		var disqus_config = function () {
+			// Replace PAGE_URL with your page's canonical URL variable
+			this.page.url = pUrl;  
+
+			this.page.title = pTitle;
+			
+			// Replace PAGE_IDENTIFIER with your page's unique identifier variable
+			this.page.identifier = pIdnt; 
+		};
+	}
+	
 </script>
 </html>
