@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>UMBRELLA</title>
-    <!-- Bootstrap 3 -->
-    <link rel="stylesheet" href="./css/bootstrap.min.css"/>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>UMBRELLA</title>
+	<!-- Bootstrap 3 -->
+	<link rel="stylesheet" href="./css/bootstrap.min.css"/>
 	<script src="./js/jquery.min.js"></script>
 	<script src="./js/bootstrap.min.js"></script>
-    <!-- Markdown Parser -->
-    <script src="./js/showdown.min.js"></script>
-    <!-- My CSS -->
-    <link rel="stylesheet" href="css/style.css"/>
-    <!-- <link rel="stylesheet" href="css/github-markdown.css"/> -->
-    <!-- Google Font -->
+	<!-- Markdown Parser -->
+	<script src="./js/showdown.min.js"></script>
+	<!-- My CSS -->
+	<link rel="stylesheet" href="css/style.css"/>
+	<!-- <link rel="stylesheet" href="css/github-markdown.css"/> -->
+	<!-- Google Font -->
 	<link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100&display=swap" rel="stylesheet">
 	<!-- icon -->
 	<link rel="icon" href='./assets/spinner.gif' type="image/x-icon"/>
-    <!-- Refresher Script -->
-    <script>
+	<!-- Refresher Script -->
+	<script>
 		function refreshed(){
 			location.reload();
 			window.scrollTo(0, 0); 
@@ -33,37 +33,37 @@
 				window.scrollTo(0, 0);
 			});
 		});
-    </script>
-    <!-- MARKDOWN PARSER AND CORE -->
+  </script>
+  <!-- MARKDOWN PARSER AND CORE -->
 	<script>
-	window.onload = function mainLoader(){
-		var reqPGE = new XMLHttpRequest();
-		reqPGE.open("GET","./pages/index.md", true);
-		reqPGE.onreadystatechange = function(oEvent){
-			if(reqPGE.readyState === 4){
-				if(reqPGE.status === 200){
-					var mylog = "#[PAGE] XMLHttpRequest Success!";
-					getPagesArray(reqPGE.responseText);
-					console.log(mylog);
-				}else{
-					var mylog = "#[PAGES] XMLHttpRequest Error! " + reqPGE.statusText;
-					var pagelog = "<br><br><br><br><br><br><br>\
-						<div align=\"center\">\
-							<h1 class=\"not-found-nmbr\">404</h1>\n\
-							<h1>Index Not Found!</h1>\n\
-							<h3>Sorry the main index for this website could not be found.</h3>\
-							<h4>[INDEX] XMLHttpRequest Error!</h4>\
-						</div>";
-					showMarkdown(pagelog, "#", "#", "PAGE");
-					console.log(mylog);
+		window.onload = function mainLoader(){
+			var reqPGE = new XMLHttpRequest();
+			reqPGE.open("GET","./pages/index.md", true);
+			reqPGE.onreadystatechange = function(oEvent){
+				if(reqPGE.readyState === 4){
+					if(reqPGE.status === 200){
+						var mylog = "#[PAGE] XMLHttpRequest Success!";
+						getPagesArray(reqPGE.responseText);
+						console.log(mylog);
+					}else{
+						var mylog = "#[PAGES] XMLHttpRequest Error! " + reqPGE.statusText;
+						var pagelog = "<br><br><br><br><br><br><br>\
+							<div align=\"center\">\
+								<h1 class=\"not-found-nmbr\">404</h1>\n\
+								<h1>Index Not Found!</h1>\n\
+								<h3>Sorry the main index for this website could not be found.</h3>\
+								<h4>[INDEX] XMLHttpRequest Error!</h4>\
+							</div>";
+						showMarkdown(pagelog, "#", "#", "PAGE");
+						console.log(mylog);
+					}
 				}
-			}
-		};
-		reqPGE.send(null);
-	}
+			};
+			reqPGE.send(null);
+		}
 	</script>
 	<script src="./js/core.js"></script>
-    <script src="./js/mdparser.js"></script>
+  <script src="./js/mdparser.js"></script>
 </head>
 <body>
 	<div class="container mycontainer">
@@ -127,7 +127,6 @@
 				</h3>
 			</div>
 			<div id="Comments" class="col-sm-12">
-				<div id="disqus_thread"></div>
 			</div>
 		</div>
 		<div class="row">
@@ -144,38 +143,9 @@
     </div>
 </body>
 <script>
-	/**
-	 *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT 
-	 *  THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR 
-	 *  PLATFORM OR CMS.
-	 *  
-	 *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: 
-	 *  https://disqus.com/admin/universalcode/#configuration-variables
-	 */
-	
-	function showComments(pUrl, pTitle, pIdnt){
-		console.log(pUrl, pTitle, pIdnt);
-
-		var disqus_config = function () {
-			// Replace PAGE_URL with your page's canonical URL variable
-			this.page.url = pUrl;  
-
-			this.page.title = pTitle;
-			
-			// Replace PAGE_IDENTIFIER with your page's unique identifier variable
-			this.page.identifier = pIdnt; 
-		};
-
-		var disqus_shortname = 'catzy007';
-
-        (function(){
-            var dsq = document.createElement('script');
-            dsq.type = 'text/javascript';
-            dsq.async = true;
-            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        }());
+	function enableComments(){
+		//change if necesscary
+		return false;
 	}
-	
 </script>
 </html>

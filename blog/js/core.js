@@ -117,8 +117,8 @@ function getPagesArray(text){
 					if(i-1 < 0){prevPost = "#";}else{prevPost = '#'+arrPosts[i-1];}
 					if(i+1 >= arrPosts.length){nextPost = "#";}else{nextPost = '#'+arrPosts[i+1];}
 				//get post and parse to html
-					reqParseMarkdown("POST", post, prevPost, nextPost);
-					showComments(window.location.href, hash, "/blog/#" + hash);
+					reqParseMarkdown("POST", post, prevPost, nextPost, window.location.href, hash, "/blog/#" + hash);
+					//showComments(window.location.href, hash, "/blog/#" + hash);
 					break;
 				}
 			}
@@ -155,12 +155,12 @@ function getPagesArray(text){
 			}
 	//if no specific post requested = show homepage/first post in index
 		}else{
-			showComments(window.location.href, arrPosts[0], "/blog/#" + arrPosts[0]);
+			//showComments(window.location.href, arrPosts[0], "/blog/#" + arrPosts[0]);
 			var post="./posts/"+arrPosts[0]+"/index.md";
 			var prevPost = "#";
 			var nextPost = "#" + arrPosts[1];
 		//get post and parse to html
-			reqParseMarkdown("POST", post, prevPost, nextPost);
+			reqParseMarkdown("POST", post, prevPost, nextPost, window.location.href, hash, "/blog/#" + hash);
 		}	
 	}
 
