@@ -20,12 +20,12 @@ function getPagesArray(text){
 			}
 		}
 	//show menu in all pages
-		var pages="<a class=\"text-pages\" onclick=\"location.href='#';refreshed()\">Home</a>" + 
+		var pages="<a class=\"text-pages\" onclick=\"location.href='#!';refreshed()\">Home</a>" + 
 				"<a class=\"text-pages-seperator\"> | </a>" +
-				"<a class=\"text-pages\" onclick=\"location.href='#index';refreshed()\">Index</a>";
+				"<a class=\"text-pages\" onclick=\"location.href='#!index';refreshed()\">Index</a>";
 		for(var i=0; i<arrPages.length; i++){
 			pages=pages + "<a class=\"text-pages-seperator\"> | </a>" +
-					"<a class=\"text-pages\" onclick=\"location.href='#" + arrPages[i] + 
+					"<a class=\"text-pages\" onclick=\"location.href='#!" + arrPages[i] + 
 					"';refreshed()\">" + arrPure[i].split('-').join(' ') +"</a>";
 			//console.log(i + " " + arrPages[i] + " " + arrPure[i]);
 		}
@@ -33,9 +33,11 @@ function getPagesArray(text){
 		//console.log(pages);
 	//get requested post from url
 		var url = window.location.hash.substr(1);
-		var hash = url.substring(url.indexOf('#')+1);
+		//var hash = url.substring(url.indexOf('#!')+1);
+		var hash = url.replace("#", "");
+		hash = hash.replace("!","");
 		hash = hash.toLowerCase();
-		//console.log(hash);
+		console.log(hash);
 	
 	//if post url match with page index
 		for(var i=0; i<arrPages.length; i++){
@@ -44,7 +46,7 @@ function getPagesArray(text){
 			//set shown page
 				var page="./pages/"+hash+"/index.md";
 			//get page and parse to html
-				reqParseMarkdown("PAGE", page, "#", "#");
+				reqParseMarkdown("PAGE", page, "#!", "#!");
 				break;
 			}
 		}
@@ -55,11 +57,11 @@ function getPagesArray(text){
 			reqIDX.onreadystatechange = function(oEvent){
 				if(reqIDX.readyState === 4){
 					if(reqIDX.status === 200){
-						var mylog = "#[INDEX] XMLHttpRequest Success!";
+						var mylog = "#![INDEX] XMLHttpRequest Success!";
 						getPostsArray(reqIDX.responseText);
 						console.log(mylog);
 					}else{
-						var mylog = "#[INDEX] XMLHttpRequest Error! " + reqIDX.statusText;
+						var mylog = "#![INDEX] XMLHttpRequest Error! " + reqIDX.statusText;
 						var pagelog = "<br><br><br><br><br><br><br>\
 							<div align=\"center\">\
 								<h1 class=\"not-found-nmbr\">404</h1>\n\
@@ -67,7 +69,7 @@ function getPagesArray(text){
 								<h3>Sorry the main index for this website could not be found.</h3>\
 								<h4>[INDEX] XMLHttpRequest Error!</h4>\
 							</div>";
-						showMarkdown(pagelog, "#", "#", "PAGE");
+						showMarkdown(pagelog, "#!", "#!", "PAGE");
 						console.log(mylog);
 					}
 				}
@@ -99,7 +101,9 @@ function getPagesArray(text){
 		}
 	//get requested post from url
 		var url = window.location.hash.substr(1);
-		var hash = url.substring(url.indexOf('#')+1);
+		//var hash = url.substring(url.indexOf('#!')+1);
+		var hash = url.replace("#!", "");
+		hash = hash.replace("!","");
 		hash = hash.toLowerCase();
 		//console.log(hash);
 		
@@ -114,11 +118,11 @@ function getPagesArray(text){
 					var post="./posts/"+hash+"/index.md";
 				//set prev and next post
 					var prevPost;var nextPost;
-					if(i-1 < 0){prevPost = "#";}else{prevPost = '#'+arrPosts[i-1];}
-					if(i+1 >= arrPosts.length){nextPost = "#";}else{nextPost = '#'+arrPosts[i+1];}
+					if(i-1 < 0){prevPost = "#!";}else{prevPost = '#!'+arrPosts[i-1];}
+					if(i+1 >= arrPosts.length){nextPost = "#!";}else{nextPost = '#!'+arrPosts[i+1];}
 				//get post and parse to html
-					reqParseMarkdown("POST", post, prevPost, nextPost, window.location.href, hash, "/blog/#" + hash);
-					//showComments(window.location.href, hash, "/blog/#" + hash);
+					reqParseMarkdown("POST", post, prevPost, nextPost);
+					setBlogIdentifier("/blog/#!" + hash, window.location.href, arrPure[i].split('-').join(' ').substring(11), "en");
 					break;
 				}
 			}
@@ -132,14 +136,14 @@ function getPagesArray(text){
 							arrPure.splice(i,1);
 							post=post+"<br>";
 						}
-						post=post + "<a style=\"font-size:18px;\" onclick=\"location.href='#"+ 
+						post=post + "<a style=\"font-size:18px;\" onclick=\"location.href='#!"+ 
 						arrPosts[i] +"';refreshed()\">"+ arrPure[i].split('-').join(' ') +"</a>\n<br>";
 						//console.log(i + " " + arrPosts[i] + " " + arrPure[i]);
 					}
-					showMarkdown(post, '#', '#', "PAGE");
+					showMarkdown(post, '#!', '#!', "PAGE");
 			//if requested url = NONE
 				}else{
-					var mylog = "#[POST] XMLHttpRequest Error!";
+					var mylog = "#![POST] XMLHttpRequest Error!";
 					var pagelog = "<br><br><br><br><br><br><br>\
 						<div align=\"center\">\
 							<h1 class=\"not-found-nmbr\">404</h1>\n\
@@ -149,18 +153,35 @@ function getPagesArray(text){
 							<br>\
 							<h3><a href=\"./\">Homepage</a></h3>\
 						</div>";
-					showMarkdown(pagelog, "#", "#", "PAGE");
+					showMarkdown(pagelog, "#!", "#!", "PAGE");
 					console.log(mylog);
 				}
 			}
 	//if no specific post requested = show homepage/first post in index
 		}else{
-			//showComments(window.location.href, arrPosts[0], "/blog/#" + arrPosts[0]);
+			setBlogIdentifier("/blog/#!" + arrPosts[0], window.location.href, arrPure[0].split('-').join(' ').substring(11), "en");
 			var post="./posts/"+arrPosts[0]+"/index.md";
-			var prevPost = "#";
-			var nextPost = "#" + arrPosts[1];
+			var prevPost = "#!";
+			var nextPost = "#!" + arrPosts[1];
 		//get post and parse to html
-			reqParseMarkdown("POST", post, prevPost, nextPost, window.location.href, hash, "/blog/#" + hash);
+			reqParseMarkdown("POST", post, prevPost, nextPost);
 		}	
 	}
 
+//set and get web identifier
+var bgIdnt;
+var bgUrl;
+var bgTitle;
+var bgLang;
+var tOp = "UMBRELLA";
+
+function setBlogIdentifier(pIdnt, pUrl, pTitle, pLang){
+	bgIdnt = pIdnt;
+	bgUrl = pUrl;
+	bgTitle = tOp + " - " + pTitle;
+	bgLang = pLang;
+}
+
+function getBlogIdentifier(){
+	return [bgUrl, bgUrl, bgTitle, bgLang];
+}

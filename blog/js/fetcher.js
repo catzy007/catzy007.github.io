@@ -3,7 +3,7 @@
 		function(response) {
 			if (response.status !== 200) {
 				showMarkdown('## Looks like there was a problem. Status Code: ' +
-					response.status,'#','#');
+					response.status,'#!','#!');
 				return;
 			}
 			response.text().then(text => getPostsArray(text));

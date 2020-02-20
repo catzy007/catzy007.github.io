@@ -28,4 +28,4 @@
 2019-09-25-Set-Custom-Resolution-In-Headless-Server
 2020-01-17-Ubuntu-Chroot-Container-in-Android
 
-2019-11-25-my-journey-to-pcie-or-vga-passtrough-in-kvm
+2019-11-25-My-Journey-To-Pcie-or-VGA-Passtrough-in-KVM

@@ -42,7 +42,7 @@
 			reqPGE.onreadystatechange = function(oEvent){
 				if(reqPGE.readyState === 4){
 					if(reqPGE.status === 200){
-						var mylog = "#[PAGE] XMLHttpRequest Success!";
+						var mylog = "#![PAGE] XMLHttpRequest Success!";
 						getPagesArray(reqPGE.responseText);
 						console.log(mylog);
 					}else{
@@ -54,7 +54,7 @@
 								<h3>Sorry the main index for this website could not be found.</h3>\
 								<h4>[INDEX] XMLHttpRequest Error!</h4>\
 							</div>";
-						showMarkdown(pagelog, "#", "#", "PAGE");
+						showMarkdown(pagelog, "#!", "#!", "PAGE");
 						console.log(mylog);
 					}
 				}
@@ -127,6 +127,7 @@
 				</h3>
 			</div>
 			<div id="Comments" class="col-sm-12">
+				<div id="disqus_thread"></div>
 			</div>
 		</div>
 		<div class="row">
@@ -146,6 +147,27 @@
 	function enableComments(){
 		//change if necesscary
 		return false;
+	}
+
+	var disqus_config = function () {
+		this.page.identifier = getBlogIdentifier()[0];
+		this.page.url = getBlogIdentifier()[1];
+	};
+	
+	/* * * Disqus Reset Function * * */
+	var disqus_config = function () {
+		this.callbacks.onPaginate = [function(data) {
+			DISQUS.reset({
+				reload: true,
+				config: function () {
+					this.page.identifier = getBlogIdentifier()[0];
+					this.page.url = getBlogIdentifier()[1];
+					this.page.title = getBlogIdentifier()[2];
+					this.language = getBlogIdentifier()[3];
+				}
+			});
+		}];
+		console.log(getBlogIdentifier());
 	}
 </script>
 </html>
