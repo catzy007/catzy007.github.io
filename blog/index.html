@@ -146,28 +146,33 @@
 <script>
 	function enableComments(){
 		//change if necesscary
-		return false;
+		return true;
 	}
-
-	var disqus_config = function () {
-		this.page.identifier = getBlogIdentifier()[0];
-		this.page.url = getBlogIdentifier()[1];
-	};
 	
 	/* * * Disqus Reset Function * * */
-	var disqus_config = function () {
-		this.callbacks.onPaginate = [function(data) {
+	var reset = function (newIdentifier, newUrl, newTitle, newLanguage) {
 			DISQUS.reset({
-				reload: true,
-				config: function () {
-					this.page.identifier = getBlogIdentifier()[0];
-					this.page.url = getBlogIdentifier()[1];
-					this.page.title = getBlogIdentifier()[2];
-					this.language = getBlogIdentifier()[3];
-				}
+					reload: true,
+					config: function () {
+							this.page.identifier = newIdentifier;
+							this.page.url = newUrl;
+							this.page.title = newTitle;
+							this.language = newLanguage;
+					}
 			});
+	};
+
+	var isLoaded = false;
+	var disqus_config = function () {
+		console.log("A" + isLoaded);
+		this.callbacks.onReady = [function(data) {
+			if(isLoaded == false){
+				isLoaded = true;
+				console.log(getBlogIdentifier());
+				console.log("B" + isLoaded);
+				reset(getBlogIdentifier()[0], getBlogIdentifier()[1], getBlogIdentifier()[2], getBlogIdentifier()[3]);
+			}
 		}];
-		console.log(getBlogIdentifier());
 	}
 </script>
 </html>

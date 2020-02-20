@@ -183,5 +183,5 @@ function setBlogIdentifier(pIdnt, pUrl, pTitle, pLang){
 }
 
 function getBlogIdentifier(){
-	return [bgUrl, bgUrl, bgTitle, bgLang];
+	return [bgIdnt, bgUrl, bgTitle, bgLang];
 }
