@@ -34,36 +34,15 @@
 			});
 		});
   </script>
-  <!-- MARKDOWN PARSER AND CORE -->
-	<script>
-		window.onload = function mainLoader(){
-			var reqPGE = new XMLHttpRequest();
-			reqPGE.open("GET","./pages/index.md", true);
-			reqPGE.onreadystatechange = function(oEvent){
-				if(reqPGE.readyState === 4){
-					if(reqPGE.status === 200){
-						var mylog = "#![PAGE] XMLHttpRequest Success!";
-						getPagesArray(reqPGE.responseText);
-						console.log(mylog);
-					}else{
-						var mylog = "#[PAGES] XMLHttpRequest Error! " + reqPGE.statusText;
-						var pagelog = "<br><br><br><br><br><br><br>\
-							<div align=\"center\">\
-								<h1 class=\"not-found-nmbr\">404</h1>\n\
-								<h1>Index Not Found!</h1>\n\
-								<h3>Sorry the main index for this website could not be found.</h3>\
-								<h4>[INDEX] XMLHttpRequest Error!</h4>\
-							</div>";
-						showMarkdown(pagelog, "#!", "#!", "PAGE");
-						console.log(mylog);
-					}
-				}
-			};
-			reqPGE.send(null);
-		}
-	</script>
+	<!-- MARKDOWN PARSER AND CORE -->
+	<script src="./js/fetcher.js"></script>
 	<script src="./js/core.js"></script>
   <script src="./js/mdparser.js"></script>
+	<script>
+		window.onload = function mainLoader(){
+			executeXhr("./pages/index.md", getPagesArray, "PAGE-INDEX");
+		}
+	</script>
 </head>
 <body>
 	<div class="container mycontainer">
@@ -146,7 +125,7 @@
 <script>
 	function enableComments(){
 		//change if necesscary
-		return true;
+		return false;
 	}
 	
 	/* * * Disqus Reset Function * * */
@@ -164,12 +143,12 @@
 
 	var isLoaded = false;
 	var disqus_config = function () {
-		console.log("A" + isLoaded);
+		console.log("#![DISQUS] " + isLoaded);
 		this.callbacks.onReady = [function(data) {
 			if(isLoaded == false){
 				isLoaded = true;
-				console.log(getBlogIdentifier());
-				console.log("B" + isLoaded);
+				//console.log(getBlogIdentifier());
+				console.log("#![DISQUS] " + isLoaded);
 				reset(getBlogIdentifier()[0], getBlogIdentifier()[1], getBlogIdentifier()[2], getBlogIdentifier()[3]);
 			}
 		}];

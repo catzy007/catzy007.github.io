@@ -1,5 +1,6 @@
 //get and show pages====================================================================================
-function getPagesArray(text){
+function getPagesArray(){
+		var text = this.responseText;
 	//filter text from space
 		text = text.split(' ').join('');
 	//store original data
@@ -33,11 +34,10 @@ function getPagesArray(text){
 		//console.log(pages);
 	//get requested post from url
 		var url = window.location.hash.substr(1);
-		//var hash = url.substring(url.indexOf('#!')+1);
 		var hash = url.replace("#", "");
 		hash = hash.replace("!","");
 		hash = hash.toLowerCase();
-		console.log(hash);
+		//console.log(hash);
 	
 	//if post url match with page index
 		for(var i=0; i<arrPages.length; i++){
@@ -52,34 +52,13 @@ function getPagesArray(text){
 		}
 	//if requested url not found in page index
 		if(i == arrPages.length){
-			var reqIDX = new XMLHttpRequest();
-			reqIDX.open("GET", "./posts/index.md", true);
-			reqIDX.onreadystatechange = function(oEvent){
-				if(reqIDX.readyState === 4){
-					if(reqIDX.status === 200){
-						var mylog = "#![INDEX] XMLHttpRequest Success!";
-						getPostsArray(reqIDX.responseText);
-						console.log(mylog);
-					}else{
-						var mylog = "#![INDEX] XMLHttpRequest Error! " + reqIDX.statusText;
-						var pagelog = "<br><br><br><br><br><br><br>\
-							<div align=\"center\">\
-								<h1 class=\"not-found-nmbr\">404</h1>\n\
-								<h1>Index Not Found!</h1>\n\
-								<h3>Sorry the main index for this website could not be found.</h3>\
-								<h4>[INDEX] XMLHttpRequest Error!</h4>\
-							</div>";
-						showMarkdown(pagelog, "#!", "#!", "PAGE");
-						console.log(mylog);
-					}
-				}
-			}; 
-			reqIDX.send(null);
+			executeXhr("./posts/index.md", getPostsArray, "POST-INDEX")
 		}
 	}
 
 //get and show posts========================================================================================
-	function getPostsArray(text){
+	function getPostsArray(){
+		var text = this.responseText;
 	//filter text from space
 		text = text.split(' ').join('');
 	//store original data
@@ -101,7 +80,6 @@ function getPagesArray(text){
 		}
 	//get requested post from url
 		var url = window.location.hash.substr(1);
-		//var hash = url.substring(url.indexOf('#!')+1);
 		var hash = url.replace("#!", "");
 		hash = hash.replace("!","");
 		hash = hash.toLowerCase();
@@ -109,7 +87,6 @@ function getPagesArray(text){
 		
 	//if user request specific page
 		if(hash !== null && hash !== ''){
-			
 		//check if post url valid
 			for(var i=0; i<arrPosts.length; i++){
 			//requested page
@@ -140,7 +117,7 @@ function getPagesArray(text){
 						arrPosts[i] +"';refreshed()\">"+ arrPure[i].split('-').join(' ') +"</a>\n<br>";
 						//console.log(i + " " + arrPosts[i] + " " + arrPure[i]);
 					}
-					showMarkdown(post, '#!', '#!', "PAGE");
+					showMarkdown("PAGE", ["#!", "#!", post])
 			//if requested url = NONE
 				}else{
 					var mylog = "#![POST] XMLHttpRequest Error!";
@@ -153,7 +130,7 @@ function getPagesArray(text){
 							<br>\
 							<h3><a href=\"./\">Homepage</a></h3>\
 						</div>";
-					showMarkdown(pagelog, "#!", "#!", "PAGE");
+					showMarkdown("PAGE", ["#!", "#!", pagelog]);
 					console.log(mylog);
 				}
 			}
