@@ -1,2 +1,3 @@
 About
 Contact
+Category
