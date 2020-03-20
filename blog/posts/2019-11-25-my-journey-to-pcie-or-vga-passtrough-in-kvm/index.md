@@ -259,6 +259,31 @@ Keep trying and good luck!
 > Recently i boot into my windows 10 vm and after few second it just freeze, then i find out that kernel `4.15.0-74-generic` was the culprit. after going back to `4.15.0-72-generic`, everything back to normal.
 
 <br><br>
+To hide vm status in windows
+
+* set cpu to `Copy host CPU configuration`
+* do `sudo virsh edit <vmname>`
+* change
+```
+  <cpu mode='host-model' check='partial'>
+     <model fallback='allow'/>
+  </cpu>
+```
+* to
+```
+  <cpu mode='host-model' check='partial'>
+    <model fallback='allow'/>
+    <feature policy='disable' name='hypervisor'/>
+  </cpu>
+```
+* then add
+```
+  <kvm>
+    <hidden state='on'/>
+  </kvm>
+```
+
+<br><br>
 Some Sauce
 
 <https://dominicm.com/gpu-passthrough-qemu-arch-linux/>
