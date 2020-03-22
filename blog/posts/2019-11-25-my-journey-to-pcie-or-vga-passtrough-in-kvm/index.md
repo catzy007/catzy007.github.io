@@ -30,7 +30,11 @@ Next enable IOMMU in linux
 sudo nano /etc/default/grub 
 ```
 then add `iommu=1 intel_iommu=on` after `GRUB_CMDLINE_LINUX_DEFAULT="quiet splash` 
-or if you're using AMD based system, use `iommu=1 amd_iommu=on` then do the following
+or if you're using AMD based system, use `iommu=1 amd_iommu=on`. Here's mine
+```
+GRUB_CMDLINE_LINUX_DEFAULT="quiet splash iommu=1 intel_iommu=on vfio-pci.ids=1002:67ff,1186:1300 vga=normal nofb nomodeset video=vesafb:off i915.modeset=0"
+```
+then do the following
 ```
 sudo update-grub
 ```
