@@ -17,9 +17,8 @@ function getCategoryArray(){
             arrPure.splice(i,1);
             post=post+"<br>\n";
         }
-        category=category + "<a onclick=\"location.href='#!subcategory-"+ 
-        arrPosts[i] +"';refreshed()\"><h3>"+
-        arrPure[i].split('-').join(' ') +"</h3></a>\n";
+        category=category + "<a style=\"font-size:x-large;\" onclick=\"location.href='#!subcategory-"+ 
+        arrPosts[i] +"';refreshed()\">"+arrPure[i].split('-').join(' ') +"</a>\n<br>\n";
         //console.log(i + " " + arrPosts[i] + " " + arrPure[i]);
     }
     //console.log(category);
