@@ -42,7 +42,10 @@ function getPagesArray(){
 	//if post url match with page index
 		for(var i=0; i<arrPages.length; i++){
 		//requested page
-			if(hash == arrPages[i]){
+			if(hash == arrPages[i] && hash == "category"){
+				executeXhr("./pages/category/kegiatan.md", getCategoryArray, "PAGE-INDEX");
+				break;
+			}else if(hash == arrPages[i]){
 			//set shown page
 				var page="./pages/"+hash+"/index.md";
 			//get page and parse to html
@@ -144,21 +147,3 @@ function getPagesArray(){
 			reqParseMarkdown("POST", post, prevPost, nextPost);
 		}	
 	}
-
-//set and get web identifier
-var bgIdnt;
-var bgUrl;
-var bgTitle;
-var bgLang;
-var tOp = "UMBRELLA";
-
-function setBlogIdentifier(pIdnt, pUrl, pTitle, pLang){
-	bgIdnt = pIdnt;
-	bgUrl = pUrl;
-	bgTitle = tOp + " - " + pTitle;
-	bgLang = pLang;
-}
-
-function getBlogIdentifier(){
-	return [bgIdnt, bgUrl, bgTitle, bgLang];
-}
