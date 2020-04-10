@@ -1,6 +1,9 @@
-function getCategoryArray(){
-    var category = "## Category\n";
+function getSubcategoryArray(){
     var text = this.responseText;
+    var category = "## Category\n";
+    var subcategory = this.arguments[1];
+    subcategory = subcategory[0].toUpperCase()+subcategory.slice(1); 
+    category += "### "+subcategory+"\n";
 //filter text from space
     text = text.split(' ').join('');
 //store original data
@@ -17,9 +20,8 @@ function getCategoryArray(){
             arrPure.splice(i,1);
             post=post+"<br>\n";
         }
-        category=category + "<a onclick=\"location.href='#!subcategory-"+ 
-        arrPosts[i] +"';refreshed()\"><h3>"+
-        arrPure[i].split('-').join(' ') +"</h3></a>\n";
+        category=category + "<a style=\"font-size:18px;\" onclick=\"location.href='#!"+ 
+        arrPosts[i] +"';refreshed()\">"+ arrPure[i].split('-').join(' ') +"</a>\n<br>\n";
         //console.log(i + " " + arrPosts[i] + " " + arrPure[i]);
     }
     //console.log(category);

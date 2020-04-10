@@ -43,13 +43,18 @@ function getPagesArray(){
 	for(var i=0; i<arrPages.length; i++){
 	//requested page
 		if(hash == arrPages[i] && hash == "category"){
-			executeXhr("./pages/category/index.md", getCategoryArray, "PAGE-INDEX");
+		//show category page
+			executeXhr("./pages/category/index.md", getCategoryArray, "CATEGORY");
 			break;
 		}else if(hash == arrPages[i]){
 		//set shown page
 			var page="./pages/"+hash+"/index.md";
 		//get page and parse to html
 			reqParseMarkdown("PAGE", page, "#!", "#!");
+			break;
+		}else if(hash.includes("subcategory-")){
+			var subcat = hash.replace("subcategory-",'');
+			executeXhr("./pages/category/"+subcat+".md", getSubcategoryArray, "SUBCATEGORY", subcat);
 			break;
 		}
 	}
