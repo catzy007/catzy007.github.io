@@ -21,12 +21,20 @@
 			cursor: pointer;
 			color:#55688A;
 			text-shadow: 0px 1px #ddd;
-			font-size:22px;
+			font-size: x-large;
 		}
 		.text-pages-seperator {
 			color:#55688A;
 			text-shadow: 0px 1px #ddd;
-			font-size:18px
+			font-size: large;
+		}
+		.text-index-subcategory {
+			cursor: pointer;
+			font-size: large;
+		}
+		.text-category {
+			cursor: pointer;
+			font-size: x-large;
 		}
 		
 /* MYCONTAINER */
@@ -51,17 +59,17 @@
 	}
 
 	/* for device with high end display */
-		@media screen and (min-width: 2880px) {
-			.mycontainer {
-				margin: auto;
-				margin-top: 4vh;
-				margin-bottom: 4vh;
-				background-color: rgba(253, 253, 253, 0.95);
-				padding: 2vh 4vh 2vh 4vh;
-			}
+	@media screen and (min-width: 2880px) {
+		.mycontainer {
+			margin: auto;
+			margin-top: 4vh;
+			margin-bottom: 4vh;
+			background-color: rgba(253, 253, 253, 0.95);
+			padding: 2vh 4vh 2vh 4vh;
 		}
+	}
 
-		.myexpander {
-			min-height: 100vh;
-			overflow: auto;
-		}
+	.myexpander {
+		min-height: 100vh;
+		overflow: auto;
+	}

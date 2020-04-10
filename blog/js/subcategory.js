@@ -20,7 +20,7 @@ function getSubcategoryArray(){
             arrPure.splice(i,1);
             post=post+"<br>\n";
         }
-        category=category + "<a style=\"font-size:18px;\" onclick=\"location.href='#!"+ 
+        category=category + "<a class=\"text-index-subcategory\" onclick=\"location.href='#!"+ 
         arrPosts[i] +"';refreshed()\">"+ arrPure[i].split('-').join(' ') +"</a>\n<br>\n";
         //console.log(i + " " + arrPosts[i] + " " + arrPure[i]);
     }

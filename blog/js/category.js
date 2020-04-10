@@ -17,7 +17,7 @@ function getCategoryArray(){
             arrPure.splice(i,1);
             post=post+"<br>\n";
         }
-        category=category + "<a style=\"font-size:x-large;\" onclick=\"location.href='#!subcategory-"+ 
+        category=category + "<a class=\"text-category\" onclick=\"location.href='#!subcategory-"+ 
         arrPosts[i] +"';refreshed()\">"+arrPure[i].split('-').join(' ') +"</a>\n<br>\n";
         //console.log(i + " " + arrPosts[i] + " " + arrPure[i]);
     }

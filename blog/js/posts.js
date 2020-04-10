@@ -49,20 +49,20 @@ function getPostsArray(){
     //if requested url not found in index
         if(i == arrPosts.length){
         //if requested url = index page
-            if(hash == "index"){
-                var post="## Index\n";
-                for(var i=0; i<arrPosts.length; i++){
-                    if(arrPure[i].length == "1" && arrPure[i] == "-"){
-                        arrPure.splice(i,1);
-                        post=post+"<br>";
-                    }
-                    post=post + "<a style=\"font-size:18px;\" onclick=\"location.href='#!"+ 
-                    arrPosts[i] +"';refreshed()\">"+ arrPure[i].split('-').join(' ') +"</a>\n<br>";
-                    //console.log(i + " " + arrPosts[i] + " " + arrPure[i]);
-                }
-                showMarkdown("PAGE", ["#!", "#!", post])
+            // if(hash == "index"){
+                // var post="## Index\n";
+                // for(var i=0; i<arrPosts.length; i++){
+                //     if(arrPure[i].length == "1" && arrPure[i] == "-"){
+                //         arrPure.splice(i,1);
+                //         post=post+"<br>";
+                //     }
+                //     post=post + "<a style=\"font-size:18px;\" onclick=\"location.href='#!"+ 
+                //     arrPosts[i] +"';refreshed()\">"+ arrPure[i].split('-').join(' ') +"</a>\n<br>";
+                //     //console.log(i + " " + arrPosts[i] + " " + arrPure[i]);
+                // }
+                // showMarkdown("PAGE", ["#!", "#!", post])
         //if requested url = NONE
-            }else{
+            //} else{
                 var mylog = "#![POST] XMLHttpRequest Error!";
                 var pagelog = "<br><br><br><br><br><br><br>\
                     <div align=\"center\">\
@@ -75,7 +75,7 @@ function getPostsArray(){
                     </div>";
                 showMarkdown("PAGE", ["#!", "#!", pagelog]);
                 console.log(mylog);
-            }
+            // }
         }
 //if no specific post requested = show homepage/first post in index
     }else{
