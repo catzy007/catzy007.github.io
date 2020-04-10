@@ -30,7 +30,7 @@
 	//enable comment on post
 		if(type == "POST" && enableComments()){
 			/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-			var disqus_shortname = 'umbrella-test';
+			var disqus_shortname = getDisqusShortname();
 			var disqus_identifier = getBlogIdentifier()[0];
 			var disqus_url = getBlogIdentifier()[1];
 			var disqus_config = function () { 

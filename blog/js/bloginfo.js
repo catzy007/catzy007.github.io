@@ -4,6 +4,7 @@ var bgUrl;
 var bgTitle;
 var bgLang;
 var tOp = "UMBRELLA";
+var disqus = "umbrella-test";
 
 function setBlogIdentifier(pIdnt, pUrl, pTitle, pLang){
 	bgIdnt = pIdnt;
@@ -14,4 +15,8 @@ function setBlogIdentifier(pIdnt, pUrl, pTitle, pLang){
 
 function getBlogIdentifier(){
 	return [bgIdnt, bgUrl, bgTitle, bgLang];
+}
+
+function getDisqusShortname(){
+	return disqus;
 }
