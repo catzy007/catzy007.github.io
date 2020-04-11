@@ -11,7 +11,7 @@
 		var html = converter.makeHtml(markdown);
 		document.getElementById('Posts').innerHTML = html;
 
-		if(type == "POST" && getBlogIdentifier()[2] !== ""){
+		if(getBlogIdentifier()[2] !== ""){
 			document.title = getBlogIdentifier()[2];
 		}
 		

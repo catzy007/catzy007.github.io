@@ -10,6 +10,7 @@ function xhrSuccess() {
 }
 
 function xhrError(type, status) { 
+	setBlogIdentifier("/blog/#!", window.location.href, (this.statusText || status), "en");
 	var mylog = "#![" + (this.arguments || type) + "] XMLHttpRequest Error! " + (this.statusText || status);
 	console.log(mylog);
 	var pagelog = "<br><br><br><br><br><br><br>\

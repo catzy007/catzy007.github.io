@@ -20,3 +20,7 @@ function getBlogIdentifier(){
 function getDisqusShortname(){
 	return disqus;
 }
+
+function enableComments(){
+	return false;
+}

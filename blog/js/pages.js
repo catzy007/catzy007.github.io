@@ -11,6 +11,7 @@ function getPagesArray(){
 //if post url match with page index
 	for(var i=0; i<arrPages.length; i++){
 	//requested page
+		setBlogIdentifier("", "", arrPure[i], "");
 		if(hash == arrPages[i] && hash == "index"){
 		//show post index page
 			executeXhr("./posts/index.md", getIndexArray, "POST-INDEX");
