@@ -200,7 +200,7 @@ Don't forget to check `Customize configuration before install`
 	<img src="./posts/2019-11-25-my-journey-to-pcie-or-vga-passtrough-in-kvm/06.jpg" height="250px" alt="img06">
 	<img src="./posts/2019-11-25-my-journey-to-pcie-or-vga-passtrough-in-kvm/07.jpg" height="250px" alt="img07">
 </p>
-Here i'm using Q35 Chipset and regular BIOS as my setup. You can use i440FX and UEFI if you encounter some problem.
+Here i'm using Q35 Chipset and regular BIOS as my setup. You can combination of i440FX, Q35 and UEFI, BIOS if you encounter some problem.
 <p align="center">
 	<img src="./posts/2019-11-25-my-journey-to-pcie-or-vga-passtrough-in-kvm/08.jpg" height="250px" alt="img08">
 </p>
