@@ -19,7 +19,15 @@ passtrough into KVM. Server grade processor and board is your best bet but somet
 bit tricky. Do your best research and hope for the best.
 
 <br><br>
-First, install virt-manager and ovmf. Here i'm using VMM to make our life easy.
+First, go to the BIOS settings and enable VT-D or AMD-Vi
+<p align="center">
+	<img src="./posts/2019-11-25-my-journey-to-pcie-or-vga-passtrough-in-kvm/001.jpg" height="250px" alt="img01">
+</p>
+If your motherboard support SR-IOV, enable it too
+<p align="center">
+	<img src="./posts/2019-11-25-my-journey-to-pcie-or-vga-passtrough-in-kvm/002.jpg" height="250px" alt="img01">
+</p>
+Then, install virt-manager and ovmf. Here i'm using VMM to make our life easy.
 ```
 sudo apt install virt-manager ovmf -y
 ```
@@ -58,8 +66,7 @@ Next step is to make sure that your motherboard has good IOMMU Group.
 Copy, save as `check.sh` do `chmod +x check.sh` and run the script as root
 ```
 #!/bin/bash
-shopt -s nullglob
-for d in /sys/kernel/iommu_groups/*/devices/*; do 
+for d in /sys/kernel/iommu_groups/*/devices/*; do
     n=${d#*/iommu_groups/*}; n=${n%%/*}
     printf 'IOMMU Group %s ' "$n"
     lspci -nns "${d##*/}"
