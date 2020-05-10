@@ -29,6 +29,6 @@
 2020-01-17-Ubuntu-Chroot-Container-in-Android
 2020-02-06-Block-Internet-Advertisements-Using-PI-Hole
 2020-05-02-Install-PPSSPP-Emulator-on-Raspberrypi
-2020-05-10-Install-Apache-PHP-Mariadb-Phpmyadmin
+2020-05-10-Install-Apache-PHP-Mariadb-phpMyAdmin
 
 2019-11-25-My-Journey-To-Pcie-or-VGA-Passtrough-in-KVM
