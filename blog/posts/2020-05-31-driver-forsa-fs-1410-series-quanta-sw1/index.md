@@ -9,7 +9,7 @@ If you want to learn something new, i recommend you using linux. If your process
 
 If you want to run Windows XP or Windows Vista for retro system or you just simply want to use this old system, then you come to the right place.
 
-#### [DOWNLOAD Forsa FS-1410 Series Driver](https://drive.google.com/open?id=181lBV3P01H1e4MSYsjK8mHJ-KsdqYywP)
+#### [DOWNLOAD Forsa FS-1410 Series Driver](https://archive.org/details/fs-1410-series)
 
 It basically ripped driver installation CD. The content driver content listed below
 
