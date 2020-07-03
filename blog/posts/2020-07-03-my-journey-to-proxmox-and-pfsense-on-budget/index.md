@@ -40,6 +40,12 @@ still working (at least when this post is written it still do). Yeah it basicall
 	<img src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/3.png" height="300px" alt="img3">
 </p>
 
+The problem about this processor for me is actually found one. They aren't that expensive (yet) but finding one 
+that reasonable and work is really hard. My tips is just look at random listing using generic keyword 
+`turion mobile`, `turion laptop` or something like that. Look at the posted picture and you'll see `Part Number`. 
+For example, my Athlon TK-55 part number is `AMDTK55HAX4DC` just google that and you'll get exact processor. If 
+you still unsure, just chat the seller.
+
 Now we should talk about power and thermal constraint. Okay first is the Sempron 2100+ has 9W of TDP. Okay that's 
 pretty low, now look at the TL-50 it had 31W of TDP. More than 3x the TDP just going from single core to dual core. 
 Okay it isn't as simple but you got the idea. Which means that we **MUST** use active cooling instead of passive one. 
