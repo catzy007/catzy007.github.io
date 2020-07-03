@@ -33,6 +33,6 @@
 2020-05-12-Virtual-Webcam-Linux
 2020-05-31-Driver-Forsa-FS-1410-Series-Quanta-SW1
 2020-06-27-Harddisk-Sentinel-Linux
-2020-07-03-My-Journey-To-Proxmox-and-pFsense-On-Budget
+2020-07-03-My-Journey-To-Proxmox-and-pfSense-On-Budget
 
 2019-11-25-My-Journey-To-Pcie-or-VGA-Passtrough-in-KVM

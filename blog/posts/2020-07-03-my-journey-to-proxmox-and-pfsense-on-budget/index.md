@@ -1,4 +1,4 @@
-### **My Journey To Proxmox and pFsense On Budget**
+### **My Journey To Proxmox and pfSense On Budget**
 _Friday, July 3, 2020_
 
 Few weeks ago, i come to an online listing. They sell an `HP Thin Client T5730` at around 20 USD, 
