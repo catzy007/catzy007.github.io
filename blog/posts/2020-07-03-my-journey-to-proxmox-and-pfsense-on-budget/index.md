@@ -17,6 +17,7 @@ Dual Core processor in that, give it 2GB ram, and anything that can make SATA dr
 
 <br>
 #### **Chapter 1 - Upgrading the CPU**
+
 The cpu come with the system is `AMD Sempron 2100+` which is 64Bit single core processor based on AMD 
 K8 microarchitecture which is early x86-x64 implementation. The system itself using Socket S1 Gen 1 `S1g1` 
 so the processor choice is little bit limited. You can look at the compatibility list <http://www.cpu-world.com/Related_CPUs/Socket%20S1%20_S1g1__K8.html>. However in my local area, i can only find two processor that are reasonably 
@@ -51,3 +52,25 @@ pretty low, now look at the TL-50 it had 31W of TDP. More than 3x the TDP just g
 Okay it isn't as simple but you got the idea. Which means that we **MUST** use active cooling instead of passive one. 
 The next one is powersupply. The included supply only comes with around 50W of power. If you plug lot of thing, you 
 should consider upgrading you powersupply.
+<p align="center">
+	<img src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/4.jpg" height="300px" alt="img4">
+</p>
+
+<br>
+#### **Chapter 2 - Upgrading RAM and Storage**
+
+The system i got has one slot of RAM populated with 1GB of Hynix DDR2 667Mhz. Yeah just simple swap that with 2GB 
+of old stock RAM and done! Actually this machine had solder pad for second memory but you must get correct socket 
+for that, solder that little SMD pad, and solder some resistor and capacitor to make it works. And yes someone has 
+sucessfully done this. <https://www.parkytowers.me.uk/thin/hp/t5730/mods.shtml> <https://www.phoneservicesupport.com/new-mods-t5730-a-dual-core-64-bit-cpu-pcie-g-card-t3517.html>
+
+
+For storage, my system got 2GB 44 pin IDE Flash memory which is basically early generation of SLC SSD. But yeah 2GB 
+of raw storage in 2020 won't get you anywhere. My first idea is using `44 pin IDE to SATA converter` and uses random 
+SATA SSD, the adapter itself costs me around 10 USD shipped from china. Dont forget to get 44 pin cable.
+<p align="center">
+	<img src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/5.jpg" height="300px" alt="img5">
+	<img src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/6.jpg" height="300px" alt="img6">
+</p>
+As you can see in the red marked image, it should be jumper. For my purpose, i just unplug the jumper to make it work. 
+I think if you put the jumper on, it work in SATA to IDE mode and other way around.
