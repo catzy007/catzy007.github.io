@@ -74,3 +74,37 @@ SATA SSD, the adapter itself costs me around 10 USD shipped from china. Dont for
 </p>
 As you can see in the red marked image, it should be jumper. For my purpose, i just unplug the jumper to make it work. 
 I think if you put the jumper on, it work in SATA to IDE mode and other way around.
+
+My second idea is to use generic USB to SATA adapter. It really cheap around 5 USD and i got it from my local 
+computer store.
+<p align="center">
+	<img src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/7.jpg" height="300px" alt="img7">
+</p>
+
+Okay now let's see some speed test result.
+<p align="center">
+	<img src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/8.png" height="400px" alt="img8">
+	<br>
+	<span>This is my random chinese SSD i plugged into my laptop via USB 3.0</span> 
+	<br><br>
+	<img src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/9.png" height="400px" alt="img9">
+	<br>
+	<span>Okay this is the built-in 2GB SSD that i got from the system</span> 
+	<br><br>
+	<img src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/10.png" height="400px" alt="img10">
+	<br>
+	<span>Now this is my SATA ssd connected to 44 pin IDE converter</span> 
+	<br><br>
+	<img src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/11.png" height="400px" alt="img11">
+	<br>
+	<span>Then this is my SATA ssd connected to random USB 3.0 to SATA</span> 
+	<br>
+</p>
+
+Okay you seen enough data right, well that told us we got some major bottleneck. My SATA SSD capable of reaching 
+around 400MB/s but it being bottleneck by IDE converter and maybe USB controller in the system. Theoritically 
+i should get around 1 Gigabit from my IDE converter and 480 Megabit from USB2.0 controller and none of them can 
+even reach that "theoritical" speed. Instead i only get around 256 Megabit (32MBps*8) so yeah if anyone will get 
+HP T5730, go with USB to SATA adapter it's cheaper, readily available and perfectly fine for the job. Oh i forgot 
+to mention that other expansion may be possible such as TF-Card and some model had mini PCIE adapter on the bottom. 
+Yeah that may be the way to go.
