@@ -102,9 +102,24 @@ Okay now let's see some speed test result.
 </p>
 
 Okay you seen enough data right, well that told us we got some major bottleneck. My SATA SSD capable of reaching 
-around 400MB/s but it being bottleneck by IDE converter and maybe USB controller in the system. Theoritically 
+around 400MB/s but it being bottleneck by IDE controller and maybe USB controller in the system. Theoritically 
 i should get around 1 Gigabit from my IDE converter and 480 Megabit from USB2.0 controller and none of them can 
 even reach that "theoritical" speed. Instead i only get around 256 Megabit (32MBps*8) so yeah if anyone will get 
 HP T5730, go with USB to SATA adapter it's cheaper, readily available and perfectly fine for the job. Oh i forgot 
-to mention that other expansion may be possible such as TF-Card and some model had mini PCIE adapter on the bottom. 
+to mention that other expansion may be possible such as CF-Card and some model had mini PCIE adapter on the bottom. 
 Yeah that may be the way to go.
+
+<br>
+#### **Chapter 3 - Proxmox Installation**
+
+Okay now comes the fun part. At first, my intention was to install pfSense on baremetal but eveything i've tried 
+and it just won't even detect the bootable and i tought wow installing BSD based OS on this old machine is really 
+hard. And then i remembered i've seen pfSense can run inside KVM so i download proxmox and try to install it. 
+At least the bootable was working fine but after the installation, the system just stuck in BIOS splash screen. 
+I tought what the heck. Then i realize if i plugged my 32GB `GPT` SSD into the system during boot, it just stuck and 
+the worse part is proxmox only install in GPT mode. Then i found this <https://www.reddit.com/r/homelab/comments/7knwk7/proxmox_with_mbr/> someone posted that i can install debian in `MBR` then install proxmox on top and i did just that.
+
+First i install debian and unfortunately i forgot to uncheck the GUI mode so yeah i had to dealt with that later. 
+Next install proxmox. Just follow this wonderful tutorial <https://pve.proxmox.com/wiki/Install_Proxmox_VE_on_Debian_Buster> 
+hehe. Okay really their explanation is better than me and mostly you just do `apt install` so yeah.
+
