@@ -123,3 +123,6 @@ First i install debian and unfortunately i forgot to uncheck the GUI mode so yea
 Next install proxmox. Just follow this wonderful tutorial <https://pve.proxmox.com/wiki/Install_Proxmox_VE_on_Debian_Buster> 
 hehe. Okay really their explanation is better than me and mostly you just do `apt install` so yeah.
 
+<p align="center">
+	<img src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/12.png" height="300px" alt="img12">
+</p>
