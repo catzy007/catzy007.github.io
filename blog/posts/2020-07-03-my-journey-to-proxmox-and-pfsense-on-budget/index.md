@@ -126,3 +126,27 @@ hehe. Okay really their explanation is better than me and mostly you just do `ap
 <p align="center">
 	<img src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/12.png" height="300px" alt="img12">
 </p>
+
+<br>
+#### **Chapter 4 - pfSense Installation**
+
+Okay now it's come the pfSense part. The installation itself is 
+not as hard because installing pfSense in proxmox VM was 
+officially supported <https://docs.netgate.com/pfsense/en/latest/virtualization/virtualizing-pfsense-with-proxmox.html>
+
+Okay first, download pfSense iso image from <https://www.pfsense.org/download/> make sure to download the `CD Image (ISO) Installer` 
+file not the other one.
+<p align="center">
+	<img src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/13.png" height="300px" alt="img13">
+</p>
+And copy the ISO to `/var/lib/vz/template/iso`
+
+Then create (at least) two `Network Bridge` in proxmox for WAN and 
+LAN, then pass physcal port to each bridge.
+
+Next create new VM in proxmox, Choose `Other` for OS type, locate 
+your pfSense ISO, set cpu as `Default (kvm64)`, add at least 
+`1024MB` as memory, add `Network Bridge` and set model as `VirtIO  (paravirtualized)`.
+
+Then add second `Network Bridge` and start the VM to install 
+pfSense.
