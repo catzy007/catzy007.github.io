@@ -127,6 +127,8 @@ hehe. Okay really their explanation is better than me and mostly you just do `ap
 	<img src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/12.png" height="300px" alt="img12">
 </p>
 
+To access the proxmox, open `your-server-ip-address:8006` and login using `root` and `your-root-password`.
+
 <br>
 #### **Chapter 4 - pfSense Installation**
 
@@ -145,8 +147,12 @@ Then create (at least) two `Network Bridge` in proxmox for WAN and
 LAN, then pass physcal port to each bridge.
 
 Next create new VM in proxmox, Choose `Other` for OS type, locate 
-your pfSense ISO, set cpu as `Default (kvm64)`, add at least 
-`1024MB` as memory, add `Network Bridge` and set model as `VirtIO  (paravirtualized)`.
+your pfSense ISO, set cpu as `Default (kvm64)`, add `at least  1024MB` as memory, add `Network Bridge` and set model as `VirtIO  (paravirtualized)`.
 
 Then add second `Network Bridge` and start the VM to install 
 pfSense.
+<p align="center">
+	<img src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/14.png" height="300px" alt="img14">
+</p>
+
+Last, configure pfSense as you need and that's it!
