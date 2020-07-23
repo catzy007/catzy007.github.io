@@ -75,16 +75,27 @@ Pada bagian yang berwarna <span style="color:blue">biru</span> adalah `timeline 
 <p align="center">
 	<img src="./posts/2020-07-21-kdenlive-dasar/6.png" height="400px" alt="img6">
 </p>
+Pertama buat folder baru, copykan semua clip,video,gambar kedalam folder tersebut
+
+`Sebisa mungkin untuk tidak memindah dan merubah nama file dalam folder! untuk mencegah data corrupt`
 
 <p align="center">
 	<img src="./posts/2020-07-21-kdenlive-dasar/7.png" height="400px" alt="img7">
 </p>
+Kemudian buka kdenlive dan masukkan clip kedalam projek bin dengan cara `drag and drop` 
+atau dengan `klik kanan pada projek bin > add clip or folder`
 
 <p align="center">
 	<img src="./posts/2020-07-21-kdenlive-dasar/8.png" height="400px" alt="img8">
+	<br>
+	<img src="./posts/2020-07-21-kdenlive-dasar/9.png" height="400px" alt="img9">
 </p>
+Selanjutnya masukkan clip kedalam timeline dengan cara `drag and drop`
 
-
+<p align="center">
+	<img src="./posts/2020-07-21-kdenlive-dasar/10.png" height="400px" alt="img10">
+</p>
+Sebelum melakukan apapun, pastikan lakukan save dan simpan file dalam folder yang sama dengan clip
 
 
 <https://userbase.kde.org/Kdenlive/Manual>
