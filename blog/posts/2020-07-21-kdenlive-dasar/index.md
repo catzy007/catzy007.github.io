@@ -100,41 +100,53 @@ Sebelum melakukan apapun, pastikan lakukan save dan simpan file dalam folder yan
 <p align="center">
 	<img src="./posts/2020-07-21-kdenlive-dasar/11.png" height="400px" alt="img11">
 </p>
+Semisal ingin memotong clip pada detik ke 13, maka click cut atau razor tools
 
 
 <p align="center">
 	<img src="./posts/2020-07-21-kdenlive-dasar/12.png" height="400px" alt="img12">
 </p>
+lalu saat cursor berwarna merah, arahkan pada detik ke 13 di timeline
 
 
 <p align="center">
 	<img src="./posts/2020-07-21-kdenlive-dasar/13.png" height="400px" alt="img13">
 </p>
+kemudian clip akan terpisah menjadi 2 bagian
 
 
 <p align="center">
 	<img src="./posts/2020-07-21-kdenlive-dasar/14.png" height="400px" alt="img14">
 </p>
+selanjutnya disini saya akan membuang clip dengan cara click select tool, lalu click pada clip yang ingin dibuang, klik kanan, delete selected item.
 
 
 <p align="center">
 	<img src="./posts/2020-07-21-kdenlive-dasar/15.png" height="400px" alt="img15">
 </p>
+lalu clip akan hilang
 
 
 <p align="center">
 	<img src="./posts/2020-07-21-kdenlive-dasar/16.png" height="400px" alt="img16">
 </p>
+kemudian saya akan tambahkan clip baru, pada projek bin, lalu drag and drop ke timeline
 
 
 <p align="center">
 	<img src="./posts/2020-07-21-kdenlive-dasar/17.png" height="400px" alt="img17">
 </p>
+untuk mendapatkan hasil video yang telah diedit, lakukan proses render dengan cara click project menu > render
 
 
 <p align="center">
 	<img src="./posts/2020-07-21-kdenlive-dasar/18.png" height="400px" alt="img18">
 </p>
+lalu arahkan output file ke tempat yang diinginkan, pilih MP4 (atau format lain sesuaikan), lalu render to file.
+
+kemudian tunggu proses render, proses ini membutuhkan waktu sesuai dengan kapasitas CPU/GPU juga panjang video dan kualitas video.
+
+> Pastikan untuk melakukan save setiap melakukan editing untuk mencegah data corrupt
 
 
-<https://userbase.kde.org/Kdenlive/Manual>
+Untuk informasi lebih lanjut dan akurat dapat menuju ke <https://userbase.kde.org/Kdenlive/Manual>
