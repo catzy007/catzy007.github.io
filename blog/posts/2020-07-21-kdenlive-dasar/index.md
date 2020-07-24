@@ -130,7 +130,7 @@ lalu clip akan hilang
 <p align="center">
 	<img src="./posts/2020-07-21-kdenlive-dasar/16.png" height="400px" alt="img16">
 </p>
-kemudian saya akan tambahkan clip baru, pada projek bin, lalu drag and drop ke timeline
+kemudian saya akan tambahkan clip baru pada projek bin, lalu drag and drop clip baru ke timeline
 
 
 <p align="center">
