@@ -97,5 +97,44 @@ Selanjutnya masukkan clip kedalam timeline dengan cara `drag and drop`
 </p>
 Sebelum melakukan apapun, pastikan lakukan save dan simpan file dalam folder yang sama dengan clip
 
+<p align="center">
+	<img src="./posts/2020-07-21-kdenlive-dasar/11.png" height="400px" alt="img11">
+</p>
+
+
+<p align="center">
+	<img src="./posts/2020-07-21-kdenlive-dasar/12.png" height="400px" alt="img12">
+</p>
+
+
+<p align="center">
+	<img src="./posts/2020-07-21-kdenlive-dasar/13.png" height="400px" alt="img13">
+</p>
+
+
+<p align="center">
+	<img src="./posts/2020-07-21-kdenlive-dasar/14.png" height="400px" alt="img14">
+</p>
+
+
+<p align="center">
+	<img src="./posts/2020-07-21-kdenlive-dasar/15.png" height="400px" alt="img15">
+</p>
+
+
+<p align="center">
+	<img src="./posts/2020-07-21-kdenlive-dasar/16.png" height="400px" alt="img16">
+</p>
+
+
+<p align="center">
+	<img src="./posts/2020-07-21-kdenlive-dasar/17.png" height="400px" alt="img17">
+</p>
+
+
+<p align="center">
+	<img src="./posts/2020-07-21-kdenlive-dasar/18.png" height="400px" alt="img18">
+</p>
+
 
 <https://userbase.kde.org/Kdenlive/Manual>
