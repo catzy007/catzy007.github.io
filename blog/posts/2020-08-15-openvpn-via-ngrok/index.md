@@ -16,6 +16,9 @@ Before proceed, make sure you have a ngrok account <https://dashboard.ngrok.com/
     sudo apt update
     sudo apt install curl openvpn
     ```
+
+<br>
+#### Setting up OpenVPN
 * Get and install openvpn using [openvpn-install script](https://github.com/angristan/openvpn-install)
 
     ```
@@ -23,23 +26,23 @@ Before proceed, make sure you have a ngrok account <https://dashboard.ngrok.com/
     chmod +x openvpn-install.sh
     sudo ./openvpn-install.sh
     ```
+* Here is my basic config. You can follow exact or customize to fill your need
 
-<br>
-#### Setting up OpenVPN
-Here is my basic config. You can follow exact or customize to fill your need
-```
-IP Address: <your local static ip address>
-Public IPv4 address or hostname: 0.tcp.ngrok.io (or 1.tcp.ngrok.io)
-Do you want to enable IPv6 support (NAT)? [y/n]: n
-Port choice [1-3]: 1 (Port 1194)
-Protocol [1-2]: 2 (TCP) (Ngrok only support TCP by default)
-DNS [1-12]: 9 (Google or anything for your taste)
-Enable compression? [y/n]: n
-Customize encryption settings? [y/n]: n (default should suffice)
+    ```
+    IP Address: <your local static ip address>
+    Public IPv4 address or hostname: 0.tcp.ngrok.io (or 1.tcp.ngrok.io)
+    Do you want to enable IPv6 support (NAT)? [y/n]: n
+    Port choice [1-3]: 1 (Port 1194)
+    Protocol [1-2]: 2 (TCP) (Ngrok only support TCP by default)
+    DNS [1-12]: 9 (Google or anything for your taste)
+    Enable compression? [y/n]: n
+    Customize encryption settings? [y/n]: n (default should suffice)
 
-Client name: nana (anything suffice)
-Select an option [1-2]: 1 (passwordless or password)
-```
+    Client name: nana (anything suffice)
+    Select an option [1-2]: 1 (passwordless or password)
+    ```
+* Then you should receive file with `.ovpn` extension. Copy this file and keep it private
+* In this case my file is `nana.ovpn` your filename might be different
 
 <br>
 #### Setting up Ngrok
@@ -99,3 +102,19 @@ Select an option [1-2]: 1 (passwordless or password)
         CGroup: /system.slice/ngrok.service
                 └─682 /home/nana/ngrok start --all --config /home/nana/.ngrok2/ngrok.yml
     ```
+
+<br>
+#### Connecting to your VPN
+* Install openvpn in your device (it could be your laptop or anything)
+* Copy `nana.ovpn` file to device (obtained from step Setting up OpenVPN)
+* Open `nana.ovpn` file using your favorite text editor
+* Find line `remote 0.tcp.ngrok.io 1194`
+* Change line to match tunnels url <https://dashboard.ngrok.com/status/tunnels>
+
+    ```
+    for example if your tunnel url is    tcp://1.tcp.ngrok.io:15342
+    then change line to                  remote 1.tcp.ngrok.io 15342
+    ```
+* Then connect to vpn by doing `sudo openvpn nana.ovpn`
+* Then wait a little and if nothing goes wrong, you sould get a message `Initialization Sequence Completed`
+* And that's it, now you're connected to your VPN
