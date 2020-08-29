@@ -4,7 +4,9 @@ _Saturday, August 15, 2020_
 For quite sometimes, i don't always stay at home. When i need some files from my workstation, 
 make some change to my project, or perform basic monitoring in my local network i cant just do 
 a 45 Min trip to my home. Instead i just connect to my local home network using VPN and do all 
-that. System i use for this is basic 2 core computer running Ubuntu Server inside Proxmox VM.
+that. System i use for this is basic 2 core computer running Ubuntu Server inside Proxmox VM. 
+You can use almost anything, even raspberrypi would work. As long as it stay connected to 
+internet.
 
 Before proceed, make sure you have a ngrok account <https://dashboard.ngrok.com/signup>
 
@@ -29,17 +31,16 @@ Before proceed, make sure you have a ngrok account <https://dashboard.ngrok.com/
 * Here is my basic config. You can follow exact or customize to fill your need
 
     ```
-    IP Address: <your local static ip address>
-    Public IPv4 address or hostname: 0.tcp.ngrok.io (or 1.tcp.ngrok.io)
+    IP Address: 192.168.0.1                             (your local static ip address)
+    Public IPv4 address or hostname: 0.tcp.ngrok.io     (or 1.tcp.ngrok.io)
     Do you want to enable IPv6 support (NAT)? [y/n]: n
-    Port choice [1-3]: 1 (Port 1194)
-    Protocol [1-2]: 2 (TCP) (Ngrok only support TCP by default)
-    DNS [1-12]: 9 (Google or anything for your taste)
+    Port choice [1-3]: 1                                (Port 1194)
+    Protocol [1-2]: 2                                   (TCP) (Ngrok only support TCP by default)
+    DNS [1-12]: 9                                       (Google or anything for your taste)
     Enable compression? [y/n]: n
-    Customize encryption settings? [y/n]: n (default should suffice)
-
-    Client name: nana (anything suffice)
-    Select an option [1-2]: 1 (passwordless or password)
+    Customize encryption settings? [y/n]: n             (default should suffice)
+    Client name: nana                                   (anything suffice)
+    Select an option [1-2]: 1                           (passwordless or password)
     ```
 * Then you should receive file with `.ovpn` extension. Copy this file and keep it private
 * In this case my file is `nana.ovpn` your filename might be different
@@ -118,3 +119,6 @@ Before proceed, make sure you have a ngrok account <https://dashboard.ngrok.com/
 * Then connect to vpn by doing `sudo openvpn nana.ovpn`
 * Then wait a little and if nothing goes wrong, you sould get a message `Initialization Sequence Completed`
 * And that's it, now you're connected to your VPN
+
+If you using [free tier](https://ngrok.com/pricing) from ngrok, the tunnel url and port will always changing. 
+Make sure you set it to the correct one.
