@@ -41,8 +41,38 @@ the system by it's Chip/Processor manufacturer so (your might be different).
 	<img src="./posts/2020-09-06-turn-sbc-into-openwrt-router/1.png" height="400px" alt="img1">
 </p>
 
-First, go to current supportted version `(mine 19.07.3)`, then go to `targets`, then go to chip manuf 
-`(mine sunxi)`, then go to architecture `(mine cortexa7)` then download the image `(mine sun8i-h2-plus-orangepi-zero-ext4-sdcard.img.gz)`
+First, go to current supportted version, then go to `targets`, then go to chip manuf, then go to architecture, 
+then download the image
+
+Okay according to my SBC, `19.07.3/targets/sunxi/cortexa7/sun8i-h2-plus-orangepi-zero-ext4-sdcard.img.gz` 
+yours might be different
 <p align="center">
 	<img src="./posts/2020-09-06-turn-sbc-into-openwrt-router/2.png" height="400px" alt="img2">
 </p>
+
+Then prepare your sdcard dont forget to back up your data and flash the firmware to your sdcard. Here i'm using 
+[Etcher](https://www.balena.io/etcher/) you can use dd, win32diskimager or any tools similar.
+<p align="center">
+	<img src="./posts/2020-09-06-turn-sbc-into-openwrt-router/3.png" height="300px" alt="img3">
+</p>
+
+After done flashing, plug the sdcard to sbc, plug the power and connect to your computer using LAN cable.
+
+Then go to web browser and go to [192.168.1.1](http://192.168.1.1)
+<p align="center">
+	<img src="./posts/2020-09-06-turn-sbc-into-openwrt-router/4.png" height="300px" alt="img4">
+</p>
+
+Because no password set, just click `Login`. 
+
+The first thing to do is set a password. To do that, go to `System > Administration` set your password and `Save`
+
+Next thing to do is install all driver. Go to `System > Software > Update lists...` wait a second then find and 
+install all necessary package.
+<p align="center">
+	<img src="./posts/2020-09-06-turn-sbc-into-openwrt-router/5.png" height="300px" alt="img5">
+</p>
+
+After all package has beed installed, do a reboot `System > Reboot > Perform reboot`
+
+Then go to `Network > Wireless` and wala your wifi is working.
