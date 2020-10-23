@@ -3,8 +3,8 @@ _Friday, October 23, 2020_
 
 Sebelumnya perlu diketahui apa itu thermal throttling dan apa manfaatnya bagi anda dan laptop/pc anda. 
 Thermal throttling atau [Dynamic frequency scaling](https://en.wikipedia.org/wiki/Dynamic_frequency_scaling) 
-adalah proses untuk mengubah kecepatan (frekuensi) sebuah prosesor dapat berupa CPU / GPU. Thermal throttling 
-dapat berupa positif (Overcloking/Boost) yang meningkatkan performa maupun negatif (Undercloking). 
+adalah proses untuk mengubah kecepatan (frekuensi) CPU/GPU sesuai kebutuhan. Thermal throttling 
+dapat berupa (Overcloking/Boost) yang meningkatkan performa maupun (Undercloking).
 
 Pada [kondisi normal](https://en.wikipedia.org/wiki/Advanced_Configuration_and_Power_Interface#Power_states), 
 CPU/GPU modern akan meningkatkan dan mengurangi frekuensi sesuai beban. Misalnya pada saat idle (nganggur), 
