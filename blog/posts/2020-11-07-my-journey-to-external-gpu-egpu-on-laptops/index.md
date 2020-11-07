@@ -25,7 +25,7 @@ find it in amazon, ebay, aliexpress or something like that.
 Here i'm using AMD Radeon RX 560 from sapphire, EGPU adapter with 6PIN and 
 basically do some mod to it. The PSU i'm using is standard ATX psu with 
 750W from aerocool and random old psu. What should you do is to jump a connection 
-between Green wire and black wire or PS_ON# with GND. it basically force a PSU to stay on. 
+between Green wire and Black wire or *PS_ON#* with *COM*. it basically force a PSU to stay on. 
 <p align="center">
     <img src="./posts/2020-11-07-my-journey-to-external-gpu-egpu-on-laptops/3.png" height="400em" alt="img3">
     <br>
