@@ -38,5 +38,6 @@
 2020-08-15-OpenVPN-via-Ngrok
 2020-09-06-Turn-SBC-Into-OpenWRT-Router
 2020-10-23-Apakah-Laptop-Anda-Thermal-Throttling
+2020-11-07-My-Journey-to-External-GPU-EGPU-on-Laptops
 
 2020-07-03-My-Journey-To-Proxmox-and-pfSense-On-Budget
