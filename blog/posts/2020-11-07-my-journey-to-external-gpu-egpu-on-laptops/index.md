@@ -69,4 +69,15 @@ in GPU-Z. But still no gaming test.
     <img src="./posts/2020-11-07-my-journey-to-external-gpu-egpu-on-laptops/2.jpg" height="400em" alt="img2">
 </p>
 
+<br>
+#### [UPDATE 8 Nov 20]
+Today i got access to Lenovo E10-30. After disassembly, i found out that it uses M.2 connector. As you can see 
+from the picture, the Mini-PCIe connector is bigger than M.2 connector. From <https://www.delock.de/infothek/M.2/M.2_e.html> 
+i assume that the M.2 Connector is Key-E, and the Wifi card is Key-A+E, which means M.2 Key-E adapter is needed 
+to use EGPU in this laptop.
+<p align="center">
+    <img src="./posts/2020-11-07-my-journey-to-external-gpu-egpu-on-laptops/6.jpg" height="300em" alt="img6">
+</p>
+
+
 If i had access to more device, i'll post it here. Maybe with gaming number as well.

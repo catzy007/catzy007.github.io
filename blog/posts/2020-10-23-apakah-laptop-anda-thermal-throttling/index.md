@@ -70,7 +70,7 @@ dan bantal dapat menghalangi ventilasi udara yang dibutuhkan laptop.
 1. Periksa suhu ruangan anda. Udara sekitar yang panas dapat menyulitkan sistem pendingin laptop untuk 
 mendinginkan CPU/GPU dan menyebabkan pendingin harus bekerja ekstra.
 1. Ganti Pasta Thermal secara berkala (biasanya setiap 6 bulan hingga 1 tahun sekali). Pasta thermal berfungsi untuk 
-menghantarkan panas dari sistem pendingin ke CPU/GPU. Pasta thermal dapat menjadi keras dan mengurangi daya hantar 
+menghantarkan panas dari CPU/GPU ke sistem pendingin. Pasta thermal dapat menjadi keras dan mengurangi daya hantar 
 panas. Ganti pasta thermal secara hati - hati karena CPU/GPU pada laptop berwujud [kristal silikon](https://en.wikipedia.org/wiki/Wafer_(electronics)). 
 Salah langkah maka CPU/GPU dapat retak dan tak dapat digunakan.
 1. Beberapa laptop tidak memiliki sistem pendingin untuk beban berkelanjutan. Biasanya laptop berupa Ultrabook 
