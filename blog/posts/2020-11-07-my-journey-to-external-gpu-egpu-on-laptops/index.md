@@ -25,7 +25,7 @@ find it in amazon, ebay, aliexpress or something like that.
 Here i'm using AMD Radeon RX 560 from sapphire, EGPU adapter with 6PIN and 
 basically do some mod to it. The PSU i'm using is standard ATX psu with 
 750W from aerocool and random old psu. What should you do is to jump a connection 
-between Green wire and Black wire or *PS_ON#* with *COM*. it basically force a PSU to stay on. 
+between Green wire and Black wire or **PS_ON#** with **COM**. it basically force a PSU to stay on. 
 <p align="center">
     <img src="./posts/2020-11-07-my-journey-to-external-gpu-egpu-on-laptops/3.png" height="400em" alt="img3">
     <br>
@@ -79,5 +79,68 @@ to use EGPU in this laptop.
     <img src="./posts/2020-11-07-my-journey-to-external-gpu-egpu-on-laptops/6.jpg" height="300em" alt="img6">
 </p>
 
+<br>
+#### [UPDATE 10 Nov 20]
+Today i got free time and i can test EGPU on my primary laptop. It is ASUS X550VXK with UEFI BIOS, i7-7700HQ, 
+Nvidia 950M, Windows 10 2004 + Ubuntu 20.04. As usual just dissasemble the laptop and plug Mini-PCIE adapter in.
+<p align="center">
+    <img src="./posts/2020-11-07-my-journey-to-external-gpu-egpu-on-laptops/7.jpg" height="300em" alt="img7">
+</p>
+Aaand it works, first try. But it doesnt have a driver so i download it then bluescreen dank. After reboot, it just stuck 
+in the bios, just blank screen. After few try and try suggestion from interweb to unplug the adapter at transition from 
+BIOS to Windows, still no luck. Either it doesn't boot, or it doesn't detected. Then i go to BIOS and Enable **Compatibility 
+Support Module (CSM)**
+<p align="center">
+    <img src="./posts/2020-11-07-my-journey-to-external-gpu-egpu-on-laptops/8.jpg" height="300em" alt="img8">
+</p>
+Then it did the trick, just boot normally and detected! my second monitor even works just well. It even detected in 
+Ubuntu 20.04 just fine.
+<p align="center">
+    <img src="./posts/2020-11-07-my-journey-to-external-gpu-egpu-on-laptops/9.jpg" height="300em" alt="img9">
+    <br>
+    <img src="./posts/2020-11-07-my-journey-to-external-gpu-egpu-on-laptops/10.jpg" height="300em" alt="img10">
+</p>
+After all that, i install AMD Radeon driver and it work just fine. Then let's test some game what about DotA2
+<p align="center">
+    <img src="./posts/2020-11-07-my-journey-to-external-gpu-egpu-on-laptops/11.jpg" height="300em" alt="img11">
+</p>
+Well it still updates, so current hot game? Genshin Impact with Max settings at 1080p
+<p align="center">
+   <img src="./posts/2020-11-07-my-journey-to-external-gpu-egpu-on-laptops/12.jpg" height="300em" alt="img12">
+   <br>
+   <iframe width="420" height="315"
+   src="https://www.youtube.com/embed/FQ-bXqkbFKA">
+   </iframe> 
+</p>
+Because current version this game has no built-in fps counter, i just felt it and the results is kinda great, 
+i meant usually in Mondstadt at night especially when my GPU is overheating, it just mess of fps but now it's butter 
+smooth. Then DotA2 is finished updating and this is the results.
+<p align="center">
+    <img src="./posts/2020-11-07-my-journey-to-external-gpu-egpu-on-laptops/13.jpg" height="300em" alt="img13">
+    <br>
+    <img src="./posts/2020-11-07-my-journey-to-external-gpu-egpu-on-laptops/14.jpg" height="300em" alt="img14">
+    <br>
+    <img src="./posts/2020-11-07-my-journey-to-external-gpu-egpu-on-laptops/15.jpg" height="300em" alt="img15">
+    <br>
+    <img src="./posts/2020-11-07-my-journey-to-external-gpu-egpu-on-laptops/16.jpg" height="500em" alt="img16">
+</p>
+As you can see, i'm using 1080p max setting with DirectX11 and i got around 40-70 fps at normal combat. At intense 
+combat it down to 35fps Not bad. But as you can see from Task manager and GPU-Z, GPU utilization is only 60% at 
+most, so what happend? it think it's down to PCIE-1X used in Mini-PCIE so the GPU bandwith is little bit bottlenecked. 
+What we can do is to use M.2 NVME adapter which is rated Up to PCIE-4X bandwith. Last game i want to test is No Man's Sky.
+<p align="center">
+    <img src="./posts/2020-11-07-my-journey-to-external-gpu-egpu-on-laptops/17.jpg" height="300em" alt="img17">
+    <br>
+    <img src="./posts/2020-11-07-my-journey-to-external-gpu-egpu-on-laptops/18.jpg" height="500em" alt="img18">
+</p>
+This game is little weird. As you can see in video options, i allredy set GPU to RX 560 yet Task manager report 
+nvidia 950M uses 100% utilization and i only get around 22 fps not great at all. I think, the game doesn't understand 
+the hardware configuration or something.
 
-If i had access to more device, i'll post it here. Maybe with gaming number as well.
+As you can see with powerful enough CPU and Mini-PCIE adapter which is PCIE-1X bandwith, you can still game with reasonable 
+enough FPS. But i don't recommend GPU Higher than this RX 560 because of bandwith limitation. If you want to get more, 
+go with M.2 NVME adapter which is require newer laptops and different adapter. As for GPU goes, and you're only using it 
+for gaming, go with old-ish Radeon GPU. Because driver is pretty much stable and can be used in many weird situation like GPU 
+Passtruogh or EGPU like this. As for some games like No Man's Sky, you can try to disable NVIDIA dGPU try again.
+
+If i had access to more device, i'll post it here. Maybe with more gaming number as well.
