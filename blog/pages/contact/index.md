@@ -11,16 +11,6 @@ High Performance Computing and Artificial Intelligence.
 
 > <https://github.com/catzy007>
 
-> <https://www.pixiv.net/member.php?id=10151753>
-
-> <https://www.instagram.com/catzymbs>
-
-> <https://twitter.com/catzymbs>
-
-> <http://www.facebook.com/catzy.mbs>
-
-> <http://steamcommunity.com/id/catzy007>
-
 * Physcal location :
 > DOSCOM, Gedung D Lantai 1 Universitas Dian Nuswantoro, Jalan Nakula I No 1 - 15 Semarang, Jawa Tengah, Indonesia. 50131
 
