@@ -40,5 +40,6 @@
 2020-10-23-Apakah-Laptop-Anda-Thermal-Throttling
 2020-11-07-My-Journey-to-External-GPU-EGPU-on-Laptops
 2021-01-09-Windows-ME-on-Linux-KVM
+2021-02-03-My-Journey-Using-Yamaha-YMF724-PCI-Sound-Card
 
 2020-07-03-My-Journey-To-Proxmox-and-pfSense-On-Budget
