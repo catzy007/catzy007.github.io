@@ -5,12 +5,18 @@ Few days ago, i'm looking for a sound card because i'm using basically server as
 and yes it has modern-ish GPU with HDMI+HDA but i'm using DP monitor and no it doesn't had 
 onboard sound because who the hell would play music on a freakin server. So i began to search 
 around my local online shop and found this Yamaha YMF724F-V at less than 2 USD with another 2 
-for shipping, I could not resist. I read the [datasheet](./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/YMF724F_ETC.pdf) thanks to <https://datasheetspdf.com/pdf/285420/ETC/YMF724F/1> 
+for shipping, I could not resist. I read the [datasheet](./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/YMF724F_ETC.pdf) thanks to 
+<https://datasheetspdf.com/pdf/285420/ETC/YMF724F/1> 
 from the datasheet, it should support FM Synth which is basically OPL3 and it should support 
 Sound Blaster Pro Compatibility and many others all that in one single package so yeah DOS 
-gaming in this sound card should be interesting.
+gaming in this sound card should be interesting and this is review from back in the day 
+<https://assets.hardwarezone.com/2009/reviews/sound/roundup/soundcards.htm> maybe some day i 
+can get Sound Blaster Live or something.
 
 <br>
+<p align="center">
+    <img src="./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/2.jpg" height="400em" alt="img2">
+</p>
 After few days i't arrive i just plug it to Windows 10 64Bit system and nothing. Then i actually 
 remember something really important "Windows device is using proprietary driver" so yeah here 
 i am looking for a way to check if this card is working. The problem is that driver made for this 
@@ -18,6 +24,9 @@ card is 32Bit WDM driver for Windows XP so in order to make this work in 64Bit w
 recompile the driver to 64Bit. 
 
 <br>
+<p align="center">
+    <img src="./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/3.jpg" height="300em" alt="img3">
+</p>
 Other alternative is of course Linux which basically runs everything. I use Lubuntu 18.04 
 and Ubuntu 20.04 and it works just fine. And the chip itself is lsted in ALSA project <https://www.alsa-project.org/wiki/Matrix:Vendor-Yamaha> the problem is that there is a some kind of Crackling noise coming out 
 and i think there is something wrong in the card configuration and in linux there is no easy way 
