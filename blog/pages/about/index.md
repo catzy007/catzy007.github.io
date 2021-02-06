@@ -3,6 +3,8 @@
 <br>
 
 ### Like my content? give me a coffee or 10 <https://ko-fi.com/catzy007>, or
+
+<br>
 <h4 align="center">9BeaFrk5xXJ5agiqvVCjK7CUNsR8shX891 <strong>XMG (MAGI) Only</strong></h4>
 <p align="center">
 	<img src="./pages/about/xmg.jpg" height="250px" alt="MXMG address">
