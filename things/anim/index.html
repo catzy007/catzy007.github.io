@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+		<style>
+			.teaContainer {
+				background-image: url('tea-linux-os.png');
+				background-repeat: no-repeat;
+				background-size: 100% auto;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<br>
+			<div class="row teaContainer videoPlay">
+				<div class="col-lg-6 text-right">
+					<br><br><br><br><br><br>
+					<p style="color: white">
+						TeaLinuxOS adalah distro Linux turunan Ubuntu yang dikembangkan 
+						oleh Dinus Open Source Community (DOSCOM) dan kawan-kawan yang 
+						berorientasi pemrograman. Dengan menghadirkan filosofi, “Nikmatnya 
+						sebuah racikan”, TeaLinuxOS dikembangkan secara terbuka dan 
+						bersama-sama untuk menghasilkan distro Linux pemrograman untuk 
+						dunia pendidikan.
+					</p>
+				</div>
+				<div class=" col-lg-6 text-left">
+					<video id="videoContent" width="100%" muted="muted">
+					  <source src="rawA0001-0031.webm" type="video/webm">
+						Sorry, your browser does not support the video tag.
+					</video>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script>
+		var vidEnd = false;
+		var figure = $(".videoPlay").hover( hoverVideo );
+		function hoverVideo(e) {
+			if(vidEnd == false){
+				$('video', this).get(0).play();
+				vidEnd = true;
+			}
+		}
+	</script>
+</html>
