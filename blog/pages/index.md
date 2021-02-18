@@ -1,4 +1,0 @@
-About
-Contact
-Index
-Home
