@@ -167,7 +167,7 @@ domain](https://en.wikipedia.org/wiki/Public_domain) or considered as [Abandonwa
 
 <https://sourceforge.net/projects/vdmsound/>
 
-[Mirror WDM XP Driver](./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/dsxgxp.exe)
+[Mirror WDM XP Driver](./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/dsxgxp.zip)
 
 [Mirror PowerYMF](./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/powerymf201.zip)
 
