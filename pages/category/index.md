@@ -1,0 +1,2 @@
+Kegiatan
+Lomba
