@@ -17,7 +17,7 @@ This blog is intended to be test for markdown parser! <https://umbrellafwd.blogs
 This blog uses very little server side processing as possible. I hope you're understand if page slowdown or any other problem happen.
 
 <br>
-> This blog does not do data collection, tracker, targeted ad or anything like that. This page is made using `Github Pages` therefore any form of data collection is refer to [GitHub Privacy Statement](https://help.github.com/en/articles/github-privacy-statement). Contact page contain part from Google Maps so there might be some [Cookies](https://policies.google.com/technologies/cookies) therefore any form of data collection in Contact page refers to [Google Privacy Policy](https://policies.google.com/privacy?hl=en-US)
+> This blog does not do data collection, tracker, targeted ad or anything like that. This page is made using `Github Pages` therefore any form of data collection is refer to [GitHub Privacy Statement](https://help.github.com/en/articles/github-privacy-statement). Contact page contain part from Google Maps so there might be some [Cookies](https://policies.google.com/technologies/cookies) therefore any form of data collection in Contact page refers to [Google Privacy Policy](https://policies.google.com/privacy?hl=en-US). To improve site's presence in Google Search results, this blog uses [google-site-verification meta tag](https://support.google.com/webmasters/answer/9008080), therefore any form of tracking and data collection is refer to [Google Privacy Policy](https://policies.google.com/privacy?hl=en-US)
 
 <br>
 > I have no responsibility if anything happen due to your activity following instruction in this blog and so on! 
