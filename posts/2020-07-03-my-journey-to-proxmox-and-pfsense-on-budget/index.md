@@ -197,4 +197,5 @@ and proper storage system (SATA, NVME) or anything faster than IDE and USB 2.0. 
 is `HP Thin Client T610` which had Dual Core processor, DDR3 RAM, Internal SATA port, USB 3.0 all of that 
 out of the box with the current listing price around 80 USD in my local area. Which seems little bit much 
 but hopefully with less headache so you can sleep well and not dealing with system downtime while updating 
-or heavy disk load.
+or heavy disk load. And check other [Thin Client](https://www.parkytowers.me.uk/thin/hware/hardware.shtml) 
+if you want spesific device for your need.
