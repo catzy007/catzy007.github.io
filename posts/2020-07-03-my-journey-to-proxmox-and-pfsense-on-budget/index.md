@@ -156,3 +156,45 @@ pfSense.
 </p>
 
 Last, configure pfSense as you need and that's it!
+
+<br>
+#### **[UPDATE 2021/02/22] - My Insight Using This System for More Than 6 Months**
+
+Allright for starter, this system is working great. I actually running this for more than 6 months 
+straight with minor downtime consisting of maintenance and power outage. For some of you might asking 
+if the hardware still the same, yes still the same CPU TL-50, 2GB RAM, 32GB SSD connected via USB to 
+SATA adapter, same cooler. For the software side of thing, it basically still the same proxmox sit on 
+top of the debian installation. 
+<p align="center">
+	<img src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/15.png" height="400px" alt="img14">
+</p>
+
+As you can see i actually using more resources than before because i'm trying to run few service in 
+form of container (LXC) to fit more service in one system rather than using VM which is more resource 
+hungry and of course there still few things that only run on VM. On top of LXC, i also run docker which 
+is another form of container. How that works, go to 
+`Container Menu -> Options -> Features -> Enable Keyctl and Nesting` then install docker on your LXC and 
+it should works just fine. At the time of writing, this is tested and working in PVE 6.3.3 in kernel 
+5.4.78-2-pve with Ubuntu 20.04 LXC image.
+
+Allright now for the not good thing. While the system itself working almost 24/7 for 6 months without 
+any major problem `basically like set and forget`, there still few thing that i would change and 
+encourage. The first is lack of memory support, while 2GB is actually plenty for what i do right now, 
+there is still things that need more memory, and i actually encounter few service (docker image) that 
+require more memory and just crash the entire system. While yes i know 4GB DDR2 SODIMM stick is exist 
+in the wild, it is `in my opinion` not worth financially. Because i need to get it from overseas and 
+who know how much stock still left out in the wild.
+
+The other thing that lacking from this system is dedicated port for high speed storage. There is no SATA 
+port on this thing, let alone USB 3.0. The problem is actually high intensive data moving with random 
+read write or just simple sequential data transfer and the bandwith is not cutting it. That's probably 
+what i overlooked, this actually causes problem more often than you probably think. If for any reason 
+I/O delay is maxed out by extracting image files or even plain system (kernel) update, then your service 
+is done until the system finished what it's doing.
+
+So if in the future anyone who want to replicate this project, i recommend to get at least with DDR3 RAM 
+and proper storage system (SATA, NVME) or anything faster than IDE and USB 2.0. My recommendation for now 
+is `HP Thin Client T610` which had Dual Core processor, DDR3 RAM, Internal SATA port, USB 3.0 all of that 
+out of the box with the current listing price around 80 USD in my local area. Which seems little bit much 
+but hopefully with less headache so you can sleep well and not dealing with system downtime while updating 
+or heavy disk load.
