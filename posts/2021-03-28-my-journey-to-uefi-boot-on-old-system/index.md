@@ -60,3 +60,24 @@ with Enable Fixed Disks mode. Then just save the image and that's it.
 
 Next i will do another testing with some picture and hopefully in the end, i can boot NVME SSD in x58 based 
 system.
+
+<br>
+#### [UPDATE - Mar 29 2021]
+Suddenly i have some free time and just happen to found my HDMI USB Capture so here's some pictures
+<p align="center">
+    <img src="./posts/2021-03-28-my-journey-to-uefi-boot-on-old-system/1.jpg" height="300em" alt="img1">
+    <br>
+    <label>This is a old x58 based system with basic non-uefi firmware</label>
+    <br><br>
+    <img src="./posts/2021-03-28-my-journey-to-uefi-boot-on-old-system/2.jpg" height="300em" alt="img2">
+    <br>
+    <label>This is boot selection menu, the Kingston is Clover and Sandisk is Ubuntu 20.04</label>
+    <br><br>
+    <img src="./posts/2021-03-28-my-journey-to-uefi-boot-on-old-system/3.jpg" height="300em" alt="img3">
+    <br>
+    <label>This is Clover, if you want to see more option, press F1</label>
+    <br><br>
+    <img src="./posts/2021-03-28-my-journey-to-uefi-boot-on-old-system/4.jpg" height="300em" alt="img4">
+    <br>
+    <label>This is Ubuntu 20.04. And i check UEFI mode using "efibootmgr -v" if no error shown then it works</label>
+</p>
