@@ -2,8 +2,8 @@
 _Saturday, January 9, 2021_
 
 After few weeks catching up my study, it finally almost done and i need to take a rest and have fun. So why not install a 
-old windows and play some old games and apps. Here i'm using i7 but you can go as low as latest(ish) i3 or ryzen equivalent. 
-as long as Virtualization is enabled. To get WinME installer, check <https://archive.org> and this what i use 
+old windows and play some old games and apps. Here i'm using i7 but you can go almost anything. as long as Virtualization 
+is supported and enabled. To get WinME installer, check <https://archive.org> and this what i use 
 <https://archive.org/details/windows-me-101-retail-full>. 
 
 <br>
