@@ -145,6 +145,23 @@ I just cancel the printer part
 
 Then go to `Control Panel` then `Add New Hardware` Then just follow the instruction and that's it.
 
+After using for some time, i found out that SB16 doesn't work well in my setup so i change that 
+to adlib (OPL2). Other problem i found is NE2K_ISA doesn't do it's job. So i change that to PCNET
+```
+qemu-system-i386 -netdev user,id=mynet0 -device pcnet,netdev=mynet0 \
+ -cpu pentium \
+ -m 128 \
+ -vga cirrus \
+ -soundhw adlib -soundhw pcspk \
+ -cdrom Disk01.iso \
+ -hda win95.qcow2 \
+ -boot d
+```
+<p align="center">
+    <img src="./posts/2021-04-05-windows-95-on-linux-qemu/13.png" height="400em" alt="img13">
+</p>
+And i finally able to browse some web, play games using ADLIB and some MIDI playback.
+
 <br>
 #### Sauce
 <https://wiki.qemu.org/Documentation/GuestOperatingSystems/Windows95>
