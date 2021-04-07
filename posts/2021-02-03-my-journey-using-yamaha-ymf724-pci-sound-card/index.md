@@ -49,7 +49,7 @@ the problematic port, everything work just fine.
 </p>
 Next thing i want to try is to run this on Windows XP system. But i don't feel like installing XP 
 on my system just to listen some music, so i decided to run yes you probably guess it a KVM 
-Virtualization with PCI (yes not PCIE) passtrough. The way i did it basically follow my old Post and 
+Virtualization with PCI (yes not PCIE) passthrough. The way i did it basically follow my old Post and 
 fix some error around interrupt sharing.
 ```
 Failed to set up TRIGGER eventfd signaling for interrupt INTX-0: VFIO_DEVICE_SET_IRQS failure: Device or resource busy
@@ -62,7 +62,7 @@ is clear, it work just fine.
 </p>
 
 <br>
-As for KVM passtrough configuration, well basically make sure you hardware supprot VT-D or AMD-VI, 
+As for KVM passthrough configuration, well basically make sure you hardware supprot VT-D or AMD-VI, 
 enable that in BIOS, and make sure your motherboard support IOMMU group seperation or you have to use 
 [ACS Patch](https://wiki.archlinux.org/index.php/PCI_passthrough_via_OVMF#Bypassing_the_IOMMU_groups_(ACS_override_patch)) don't forget to install `virt-manager and ovmf`. after all that clear do.
 
@@ -172,3 +172,43 @@ domain](https://en.wikipedia.org/wiki/Public_domain) or considered as [Abandonwa
 [Mirror PowerYMF](./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/powerymf201.zip)
 
 [Mirror VDMSound](./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/VDMSound2.1.0.zip)
+
+<br>
+> [UPDATE April 7 2021]
+
+After failing to install Windows 95 in KVM, then going to QEMU TCG, then do PCI passthrough using libvirt, 
+Installing the driver and finally sound blaster mode still not working in DOS games. And here is how i 
+done it.
+
+* First create vm in `Virtual Machine Manager` with this config
+    ```
+    Single core CPU with Westmere mode
+    128MB RAM
+    VGA Cirrus
+    Network Pcnet
+    HDD 1GB
+    ```
+
+* Then do XML edit and change `<domain type="kvm">` to `<domain type="qemu">` this will force libvirt 
+to use TCG accelerator instead of KVM which a bit forgiving to older system.
+* Next follow this for installation <https://catzy007.github.io/#!2021-04-05-windows-95-on-linux-qemu> 
+Similar process but you have to manualy change boot order instead of changing qemu parameter.
+* After that, follow this to <https://catzy007.github.io/#!2021-01-09-windows-me-on-linux-kvm> 
+`Fix PCI Bus device driver` again similar process but with Windows 95 instead of ME.
+* Then do a PCI passthrough. Similar to how i did it with XP.
+* Next, download and install a driver <https://www.philscomputerlab.com/yamaha-ymf744-pci-sound-card.html>
+* If everything works, you should see something like this
+* Here my libvirt [XML](./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/win95.xml)
+
+<p align="center">
+    <img src="./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/4.png" height="400em" alt="img4">
+</p>
+
+
+Then after that i just play DOS game in Win95 DOS window mode and no sound, I reboot to DOS mode still no sound, 
+Then i reboot to DOS mode and use DOS driver (SETUPDS/S and DSDMA) then enable EMS still no sound. The only 
+thing that i still not tried is using regular DOS (Win3.1 etc) but here i end this journey. So after reading old 
+forum posts, i discover that in order to use this card in DOS mode, you need a special cable called `PC/PCI` 
+connector or i think similar to `SB-LINK` which connect your card to special header on the motherboard. Or you 
+need a special motherboard with special chipset on it. So there is no way i can get it in modern-ish system or 
+even hardware passthrough like this.
