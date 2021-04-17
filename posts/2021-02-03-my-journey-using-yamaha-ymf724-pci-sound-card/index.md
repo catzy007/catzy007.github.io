@@ -212,3 +212,10 @@ forum posts, i discover that in order to use this card in DOS mode, you need a s
 connector or i think similar to `SB-LINK` which connect your card to special header on the motherboard. Or you 
 need a special motherboard with special chipset on it. So there is no way i can get it in modern-ish system or 
 even hardware passthrough like this.
+
+<br>
+> Further reading
+
+<https://www.vogons.org/viewtopic.php?t=24769>
+
+<https://www.vogons.org/viewtopic.php?f=46&t=48983>
