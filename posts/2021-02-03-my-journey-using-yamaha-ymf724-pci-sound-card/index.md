@@ -207,7 +207,7 @@ Similar process but you have to manualy change boot order instead of changing qe
 
 Then after that i just play DOS game in Win95 DOS window mode and no sound, I reboot to DOS mode still no sound, 
 Then i reboot to DOS mode and use DOS driver (SETUPDS/S and DSDMA) then enable EMS still no sound. The only 
-thing that i still not tried is using regular DOS (Win3.1 etc) but here i end this journey. So after reading old 
+thing that i still not tried is using regular DOS (6.22 etc) but here i end this journey. So after reading old 
 forum posts, i discover that in order to use this card in DOS mode, you need a special cable called `PC/PCI` 
 connector or i think similar to `SB-LINK` which connect your card to special header on the motherboard. Or you 
 need a special motherboard with special chipset on it. So there is no way i can get it in modern-ish system or 
