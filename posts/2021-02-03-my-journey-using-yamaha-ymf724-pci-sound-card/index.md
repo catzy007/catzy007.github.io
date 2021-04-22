@@ -204,7 +204,6 @@ Similar process but you have to manualy change boot order instead of changing qe
     <img src="./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/4.png" height="400em" alt="img4">
 </p>
 
-
 Then after that i just play DOS game in Win95 DOS window mode and no sound, I reboot to DOS mode still no sound, 
 Then i reboot to DOS mode and use DOS driver (SETUPDS/S and DSDMA) then enable EMS still no sound. The only 
 thing that i still not tried is using regular DOS (6.22 etc) but here i end this journey. So after reading old 
@@ -214,8 +213,47 @@ need a special motherboard with special chipset on it. So there is no way i can 
 even hardware passthrough like this.
 
 <br>
+> [UPDATE April 22 2021]
+
+After having a some free time from mid test, i decided to unplug my sb audigy and use yamaha once again to test if 
+running it in DOS 6.22 with KVM acceleration will make a difference.
+
+<p align="center">
+    <img src="./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/5.png" height="400em" alt="img5">
+</p>
+
+The system spec is similar as win95 with single core cpu, 128 megs ram, 500 megs hdd, but in KVM instead of TCG. 
+Then i use [Phils MS-DOS starter pack](https://www.philscomputerlab.com/ms-dos-starter-pack.html) to easily use 
+mouse and extended memory support.
+
+<p align="center">
+    <img src="./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/6.png" height="400em" alt="img6">
+</p>
+
+Then i just use `setupds/s` then `dsdma` and still nothing. Then i just run setupds and simply test the sound ouput, 
+the Native 16 bit output is working just fine. The SB mode is disabled or greyed out and the FM mode throw a error.
+
+<p align="center">
+    <img src="./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/7.png" height="400em" alt="img7">
+</p>
+
+Then i try edit `FIRSTTRY=` in `ds.ini` file, then run `loadtrs.bat` and get this error instead.
+
+<p align="center">
+    <img src="./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/8.png" height="400em" alt="img8">
+</p>
+
+So my take is there is probably a way to make this work, but the effort might not worth at least for me, i think 
+you can use virtio IRQ remapping mode or something like that but don't quote me on this. In the mean time, i just 
+gonna stick to my SB Audigy and maybe revisit dos gaming in dedicated box.
+
+<br>
 > Further reading
 
 <https://www.vogons.org/viewtopic.php?t=24769>
 
 <https://www.vogons.org/viewtopic.php?f=46&t=48983>
+
+<https://www.youtube.com/watch?v=vNCg_zy1_d4>
+
+<https://www.vogons.org/viewtopic.php?f=61&t=61044>
