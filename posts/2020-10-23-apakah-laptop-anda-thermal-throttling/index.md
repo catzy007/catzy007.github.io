@@ -1,6 +1,8 @@
 ### **Apakah laptop anda thermal throttling**
 _Friday, October 23, 2020_
 
+#### **PC Troubleshooting 101 Series** 
+
 Sebelumnya perlu diketahui apa itu thermal throttling dan apa manfaatnya bagi anda dan laptop/pc anda. 
 Thermal throttling atau [Dynamic frequency scaling](https://en.wikipedia.org/wiki/Dynamic_frequency_scaling) 
 adalah proses untuk mengubah kecepatan (frekuensi) sebuah prosesor dapat berupa CPU / GPU. Thermal throttling 
