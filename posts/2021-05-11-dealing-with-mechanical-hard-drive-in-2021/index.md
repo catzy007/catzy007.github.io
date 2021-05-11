@@ -29,18 +29,18 @@ has internal system to dealt with that called TRIM and Garbage Collection, and L
 has internal algorithm to dealt with that as well.
 
 How to do a disk defragmentation
-* First, right-click on your hard drive and select `Properties`
-* Then go to `Tools` and select `Optimize`
+* First, right-click on your hard drive and select `Properties`.
+* Then go to `Tools` and select `Optimize`.
 <p align="center">
     <img src="./posts/2021-05-11-dealing-with-mechanical-hard-drive-in-2021/tools.png" height="400em" alt="img1">
 </p>
 
-* Next, select `Analyze` to see how much your disk fragmentation is
+* Next, select `Analyze` to see how much your disk fragmentation is.
 <p align="center">
     <img src="./posts/2021-05-11-dealing-with-mechanical-hard-drive-in-2021/defrag2.png" height="400em" alt="img2">
 </p>
 
-* If your disk fragmentation is more than 3%, select `Optimize`
+* If your disk fragmentation is more than 3%, select `Optimize`.
 > Before proceeding, you need to make sure your PC are plugged in into a steady power source. 
 If somehow you lost power during a defragmentation process, your drive might get damaged and 
 your files might be corrupted.
@@ -66,20 +66,20 @@ something like that, there is a chance that some of your files get corrupted, or
 you got a problem called [Bad Sector](https://en.wikipedia.org/wiki/Bad_sector). To fix 
 that, you can try to Check disk.
 
-* First, right-click on your hard drive and select `Properties`
-* Next, Then go to `Tools` and select `Check`
+* First, right-click on your hard drive and select `Properties`.
+* Next, Then go to `Tools` and select `Check`.
 <p align="center">
     <img src="./posts/2021-05-11-dealing-with-mechanical-hard-drive-in-2021/tools.png" height="400em" alt="img5">
 </p>
 
-* Then select `Scan drive`
+* Then select `Scan drive`.
 <p align="center">
     <img src="./posts/2021-05-11-dealing-with-mechanical-hard-drive-in-2021/scan1.png" height="175em" alt="img6">
 </p>
 
 > Before proceeding, you need to make sure your PC are plugged in into a steady power source. 
 
-* If no errors found, the process will be fast and if error found, the program will try to fix it
+* If no errors found, the process will be fast and if error found, the program will try to fix it.
 <p align="center">
     <img src="./posts/2021-05-11-dealing-with-mechanical-hard-drive-in-2021/scan2.png" height="200em" alt="img7">
 </p>
@@ -92,13 +92,13 @@ This method require you to manually type a command and probably restart your PC 
 
 > Before proceeding, you need to make sure your PC are plugged in into a steady power source. 
 
-* First, open `Start Menu` and type `CMD`
-* Then select `Run As Administrator`
+* First, open `Start Menu` and type `CMD`.
+* Then select `Run As Administrator`.
 <p align="center">
     <img src="./posts/2021-05-11-dealing-with-mechanical-hard-drive-in-2021/chkdsk1.png" height="400em" alt="img8">
 </p>
 
-* Then type `chkdsk /F /R /X /I /B D:` notice `D:`, change that to your partition letter
+* Then type `chkdsk /F /R /X /I /B D:` notice `D:`, change that to your partition letter.
 * If the drive you check is a system partition, it might ask you to restart your PC if it's not 
 then it will continue as is.
 
