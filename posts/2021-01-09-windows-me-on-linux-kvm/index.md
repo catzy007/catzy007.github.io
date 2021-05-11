@@ -1,9 +1,9 @@
 ### **Windows ME on Linux KVM**
 _Saturday, January 9, 2021_
 
-After few weeks catching up my study, it finally almost done and i need to take a rest and have fun. So why not install a 
-old windows and play some old games and apps. Here i'm using i7 but you can go almost anything. as long as Virtualization 
-is supported and enabled. To get WinME installer, check <https://archive.org> and this what i use 
+After few weeks catching up my study, it finally almost done and i need to take a rest and have fun. So why not install an 
+old windows and play some old games and apps. Here i'm using i7, but you can go almost anything. As long as Virtualization 
+is supported and enabled. To get Win ME installer, check <https://archive.org> and this what i use 
 <https://archive.org/details/windows-me-101-retail-full>. 
 
 <br>
@@ -26,9 +26,9 @@ is supported and enabled. To get WinME installer, check <https://archive.org> an
 #### Create New VM
 * Open `Virtual Machine Manager`
 * Click `Create New Virtual Machine`
-* Browse your WINME `iso`
+* Browse your Win ME `iso`
 * If OS not detected, uncheck automatic detection and type `generic`
-* Set Memory to `128` and CPUS to `1`
+* Set Memory to `128` and CPUs to `1`
 * Choose `Select or create custom storage` then `Manage`
 * Click plus button `+`, set name `WINME`, set max capacity `2GB` then finish, choose volume
 * Check `Customize configuration before install`
@@ -47,7 +47,7 @@ is supported and enabled. To get WinME installer, check <https://archive.org> an
 * Begin Installation
 
 Installation process should be easy, just follow the on screen guide, basically just enter or next, enter serial number, 
-enter username, location, datetime and you good to go.
+enter username, location, date time, and you are good to go.
 
 <p align="center">
     <img src="./posts/2021-01-09-windows-me-on-linux-kvm/0.jpg" height="300em" alt="img1">
@@ -58,8 +58,8 @@ enter username, location, datetime and you good to go.
 <br>
 
 #### Fix PCI Bus device driver
-After successful installation, there is few thing that wrong, graphic is broken, sound not working, cd/dvd controller not working, etc. 
-To fix all that, do
+After successful installation, there are few things that wrong, graphic is broken, sound not working, CD/DVD controller not working, etc. 
+To fix all that, do.
 
 * Open `My Computer` and right click > properties
 * Go to `Device Manager` tab, then select `Plug and Play BIOS` and `Properties`
@@ -106,8 +106,8 @@ To fix all that, do
     <img src="./posts/2021-01-09-windows-me-on-linux-kvm/driver-fix/10.jpg" height="300em" alt="img1">
 </p>
 
-Basically all that does is force the device to become PCI Bus, instead of WinME false detection as Plug and Play BIOS. 
-After PCI bus device detected and installed correct(ish), all other PCI device will start working to. Including graphic ethernet and sound.
+Basically all that does is force the device to become PCI Bus, instead of Win ME false detection as Plug and Play BIOS. 
+After PCI bus device detected and installed corrects, all other PCI device will start working to. Including graphic Ethernet and sound.
 
 <p align="center">
     <img src="./posts/2021-01-09-windows-me-on-linux-kvm/2.jpg" height="300em" alt="img1">
@@ -118,9 +118,9 @@ After PCI bus device detected and installed correct(ish), all other PCI device w
 </p>
 
 After all that, the system work well enough, for basic usage like old office app, old medical app, light gaming, it works just fine.
-even Duke works. Because ethernet is working, you can even browse the interweb. 
+Even Duke works. Because Ethernet is working, you can even browse the internet. 
 
-To transter files, install webserver (apache) on your linux host, and use browser to transfer files
+To transfer files, install web server (Apache) on your Linux host, and use browser to transfer files
 <p align="center">
     <img src="./posts/2021-01-09-windows-me-on-linux-kvm/5.jpg" height="300em" alt="img1">
 </p>

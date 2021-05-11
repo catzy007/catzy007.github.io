@@ -1,23 +1,23 @@
 ### **My Journey To UEFI Boot On Old System**
 _Sunday, March 28, 2021_
 
-First of all, what is UEFI boot. Well it basically replacement of BIOS. But don't quote me on that. 
+First, what is UEFI boot. Well it basically replacement of BIOS. But don't quote me on that. 
 UEFI is form of interface between your hardware, firmware (software written to manage hardware) and 
 operating system. 
 
-In boot process after you press the power button, your pc detect that it being 
-turned on so it call the firmware and check if connected hardware is working properly if it's not 
-then it will beep or you get error POST Code, then it pass the boot process to UEFI and then look for 
+In boot process after you press the power button, your PC detect that it being 
+turned on, so it calls the firmware and check if connected hardware is working properly if it's not 
+then it will beep, or you get error POST Code, then it passes the boot process to UEFI and then look for 
 bootloader (EFI) file in your disk. 
 
-In other hand, after POST, the boot process is handle to BIOS. Then BIOS will search for spesific string 
+In other hand, after POST, the boot process is handle to BIOS. Then BIOS will search for specific string 
 or key (MBR) in your disk header which then point that to operating system bootloader.
 
 Then why UEFI, Well because old BIOS boot is based on 80s technology it can't keep up with modern 
-need with new platform and hardware capabilities. While yes you can adapt or create custom system 
-for that, it need lot of workaround and lot of investment in time, human and resources.
+need with new platform and hardware capabilities. While yes, you can adapt or create custom system 
+for that, it needs a lot of workarounds and a lot of investment in time, human and resources.
 
-Don't quote me on this, lot of important detail is not present. If you want to read more, check this out
+Don't quote me on this, lot of important detail is not present. If you want to read more, check this out.
 
 <https://www.happyassassin.net/posts/2014/01/25/uefi-boot-how-does-that-actually-work-then/>
 
@@ -27,8 +27,8 @@ Don't quote me on this, lot of important detail is not present. If you want to r
 
 <https://uefi.org/specs/access>
 
-Allright then good enough, but what are we doing here? Well you see UEFI is relatively new standard so 
-many old device simply don't come with it. And as we move to the future, many old device with relatively 
+Alright then good enough, but what are we doing here? Well you see UEFI is relatively new standard, so 
+many old devices simply don't come with it. And as we move to the future, many old devices with relatively 
 capable hardware simply cannot be used in modern days. For example, some OS only shipped in UEFI mode for 
 security reason i guess, some GPU only works in UEFI, and sometimes some PCIE device only work in UEFI. 
 While the method i use here might not solve all problem, at least there is a workaround you can try.
@@ -39,7 +39,7 @@ emulation stuff.
 
 > Please note that everything here will delete any content of your USB device. Please do a backup.
 
-The official clover project only comes with Mac installer, so linux and windows users need other way. In 
+The official clover project only comes with Mac installer, so Linux and Windows users need other way. In 
 windows, you can use [BDUtility](http://cvad-mac.narod.ru/index/bootdiskutility_exe/0-5) in Linux, you can 
 use [Clover Linux installer](https://github.com/m13253/clover-linux-installer) or just command line-fu yourself. 
 That's the normal way to do things.
@@ -47,18 +47,18 @@ That's the normal way to do things.
 The other way is to create [Ventoy USB](https://www.ventoy.net/en/index.html) then download 
 [Clover ISO](https://github.com/CloverHackyColor/CloverBootloader/releases) image, and put the ISO image on 
 Ventoy USB. This is one of the easiest and relatively safe way to do things because everything is open-source. 
-but using ISO image has limitation, you cant simply just edit the content. So you cant just randomly modify 
-config file, add random efi driver. Something like that. Also somehow in my machine, the system not goes into 
+But using ISO image has limitation, you cannot simply just edit the content. So you can't just randomly modify 
+config file, add random EFI driver. Something like that. Also, somehow in my machine, the system not goes into 
 Clover. But instead it goes into OpenCore.
 
 Other way to do this which i finally using is just download Clover boot image i made myself. What you need 
-to do is just download the [bootimage](./posts/2021-03-28-my-journey-to-uefi-boot-on-old-system/clover-r5131-bootimage.zip) 
+to do is just download the [boot image](./posts/2021-03-28-my-journey-to-uefi-boot-on-old-system/clover-r5131-bootimage.zip) 
 file then use Etcher, dd, win32disk imager or something similar to flash the disk image to your USB drive.
 
-The way i made this image is using VM with windows 7 and attach a 300MB raw disk image. Then using BDUtility 
+The way i made this image is using VM with Windows 7 and attach a 300 MB raw disk image. Then using BDUtility 
 with Enable Fixed Disks mode. Then just save the image and that's it.
 
-Next i will do another testing with some picture and hopefully in the end, i can boot NVME SSD in x58 based 
+Next i will do another testing with some picture and hopefully in the end, i can boot NVMe SSD in x58 based 
 system.
 
 <br>

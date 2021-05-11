@@ -1,7 +1,7 @@
 ### **Windows 98 on Linux QEMU**
 _Sunday, April 5, 2021_
 
-Today i need to make a paperworks, but i cannot think about anything. So instead i just 
+Today i need to make a paperwork, but i cannot think about anything. So instead i just 
 spend my day trying to install a Win95 on KVM. But it doesn't work, so i just use simple 
 QEMU.
 

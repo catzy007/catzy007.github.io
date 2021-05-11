@@ -1,19 +1,19 @@
 ### **My Journey to External GPU (EGPU) on Laptops**
 _Saturday, November 7, 2020_
 
-When i was a kid, i used to play lot of videogames with my friend. 
-Wether it was a Playstation 2 or PC game and we both enjoy that. 
-One day he got a brand new i3 laptop from HP and we tought 
+When i was a kid, i used to play a lot of video games with my friend. 
+Whether it was a PlayStation 2 or PC game and we both enjoy that. 
+One day he got a brand new i3 laptop from HP, and we thought 
 that laptop has a great CPU, what if we can slap a GPU on that. 
 Then come a product called EXP GDC. Which does what we want, But 
 at the time it is very expensive especially for us. Then time goes on 
 my interest about tech still there and now i can finally test can 
 you even plug a GPU on laptop and game on it!
 
-But first let me introduce to egpu adapter from China. And yes it 
+But first let me introduce to EGPU adapter from China. And yes it 
 isn't from EXP GDC, this adapter basically remains from mining craze 
 few years back. The original plug is actually PCIE 1x and changed to 
-Mini PCIE so it can be repurpose as external GPU adapter. And the best 
+Mini PCIE, so it can be repurposed as external GPU adapter. And the best 
 is it only cost 7-10 USD, yeah great deal.
 <p align="center">
     <img src="./posts/2020-11-07-my-journey-to-external-gpu-egpu-on-laptops/1.png" height="300em" alt="img1">
@@ -23,9 +23,9 @@ In my case, i get all this stuff from my local online store. You can
 find it in amazon, ebay, aliexpress or something like that. 
 
 Here i'm using AMD Radeon RX 560 from sapphire, EGPU adapter with 6PIN and 
-basically do some mod to it. The PSU i'm using is standard ATX psu with 
-750W from aerocool and random old psu. What should you do is to jump a connection 
-between Green wire and Black wire or **PS_ON#** with **COM**. it basically force a PSU to stay on. 
+basically do some mod to it. The PSU i'm using is standard ATX PSU with 
+750W from Aerocool and random old PSU. What should you do is to jump a connection 
+between Green wire and Black wire or **PS_ON#** with **COM**. It basically forces a PSU to stay on. 
 <p align="center">
     <img src="./posts/2020-11-07-my-journey-to-external-gpu-egpu-on-laptops/3.png" height="400em" alt="img3">
     <br>
@@ -36,7 +36,7 @@ replace WIFI card with EGPU adapter, plug the mini-PCIe adapter cable to the egp
 to EGPU adapter, plug a (modded) PSU to EGPU adapter, plug a GPU power cable (if your GPU need it)
 and done.
 
-The power on Sequence is turn on the ATX PSU, wait for few second, then turn on the laptop.
+The power on Sequence is turn on the ATX PSU, wait for few seconds, then turn on the laptop.
 
 <p align="center">
     <img src="./posts/2020-11-07-my-journey-to-external-gpu-egpu-on-laptops/4.jpg" height="300em" alt="img4">
@@ -137,10 +137,10 @@ This game is little weird. As you can see in video options, i allredy set GPU to
 nvidia 950M uses 100% utilization and i only get around 22 fps not great at all. I think, the game doesn't understand 
 the hardware configuration or something.
 
-As you can see with powerful enough CPU and Mini-PCIE adapter which is PCIE-1X bandwith, you can still game with reasonable 
-enough FPS. But i don't recommend GPU Higher than this RX 560 because of bandwith limitation. If you want to get more, 
-go with M.2 NVME adapter which is require newer laptops and different adapter. As for GPU goes, and you're only using it 
-for gaming, go with old-ish Radeon GPU. Because driver is pretty much stable and can be used in many weird situation like GPU 
-Passtruogh or EGPU like this. As for some games like No Man's Sky, you can try to disable NVIDIA dGPU try again.
+As you can see with powerful enough CPU and Mini-PCIE adapter which is PCIE-1X bandwidth, you can still game with reasonable 
+enough FPS. But i don't recommend GPU Higher than this RX 560 because of bandwidth limitation. If you want to get more, 
+go with M.2 NVMe adapter which is required newer laptops and different adapter. As for GPU goes, and you're only using it 
+for gaming, go with oldish Radeon GPU. Because driver is pretty much stable and can be used in many weird situations like GPU 
+Passthrough or EGPU like this. As for some games like No Man's Sky, you can try to disable NVIDIA dGPU try again.
 
 If i had access to more device, i'll post it here. Maybe with more gaming number as well.

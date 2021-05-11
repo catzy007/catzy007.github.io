@@ -244,8 +244,15 @@ Then i try edit `FIRSTTRY=` in `ds.ini` file, then run `loadtrs.bat` and get thi
 </p>
 
 So my take is there is probably a way to make this work, but the effort might not worth at least for me, i think 
-you can use virtio IRQ remapping mode or something like that but don't quote me on this. In the mean time, i just 
+you can use virtio IRQ remapping mode or something like that but don't quote me on this. In the meantime, i just 
 gonna stick to my SB Audigy and maybe revisit dos gaming in dedicated box.
+
+<br>
+> [UPDATE May 11 2021]
+
+After somehow i manage to install MS-DOS 6.22 in a USB flash drive, then i plug the card in my 12 core Xeon, boot it 
+up and the FM Synth works. The SB mode won't work because it need EMS but somehow EMS won't initialize. Maybe EMS can't 
+deal with 12GB of RAM, or somehow it has problem with IMC. But at least FM/Adlib mode works.
 
 <br>
 > Further reading
