@@ -32,12 +32,12 @@ How to do a disk defragmentation
 * First, right-click on your hard drive and select `Properties`.
 * Then go to `Tools` and select `Optimize`.
 <p align="center">
-    <img src="./posts/2021-05-11-dealing-with-mechanical-hard-drive-in-2021/tools.png" height="400em" alt="img1">
+    <img src="./posts/2021-05-11-dealing-with-mechanical-hard-drive-in-2021/1.png" height="400em" alt="img1">
 </p>
 
 * Next, select `Analyze` to see how much your disk fragmentation is.
 <p align="center">
-    <img src="./posts/2021-05-11-dealing-with-mechanical-hard-drive-in-2021/defrag2.png" height="400em" alt="img2">
+    <img src="./posts/2021-05-11-dealing-with-mechanical-hard-drive-in-2021/2.png" height="400em" alt="img2">
 </p>
 
 * If your disk fragmentation is more than 3%, select `Optimize`.
@@ -47,13 +47,13 @@ your files might be corrupted.
 
 * After that, wait for the process to finished.
 <p align="center">
-    <img src="./posts/2021-05-11-dealing-with-mechanical-hard-drive-in-2021/defrag3.png" height="400em" alt="img3">
+    <img src="./posts/2021-05-11-dealing-with-mechanical-hard-drive-in-2021/3.png" height="400em" alt="img3">
 </p>
 
 * During defragmentation process, your drive will be used of it's maximum capabilities, please 
 leave it as is until the process is finished.
 <p align="center">
-    <img src="./posts/2021-05-11-dealing-with-mechanical-hard-drive-in-2021/defrag4.png" height="400em" alt="img4">
+    <img src="./posts/2021-05-11-dealing-with-mechanical-hard-drive-in-2021/4.png" height="400em" alt="img4">
 </p>
 
 * I suggest you do defragmentation every 3 months. 
@@ -69,19 +69,19 @@ that, you can try to Check disk.
 * First, right-click on your hard drive and select `Properties`.
 * Next, Then go to `Tools` and select `Check`.
 <p align="center">
-    <img src="./posts/2021-05-11-dealing-with-mechanical-hard-drive-in-2021/tools.png" height="400em" alt="img5">
+    <img src="./posts/2021-05-11-dealing-with-mechanical-hard-drive-in-2021/1.png" height="400em" alt="img5">
 </p>
 
 * Then select `Scan drive`.
 <p align="center">
-    <img src="./posts/2021-05-11-dealing-with-mechanical-hard-drive-in-2021/scan1.png" height="175em" alt="img6">
+    <img src="./posts/2021-05-11-dealing-with-mechanical-hard-drive-in-2021/6.png" height="175em" alt="img6">
 </p>
 
 > Before proceeding, you need to make sure your PC are plugged in into a steady power source. 
 
 * If no errors found, the process will be fast and if error found, the program will try to fix it.
 <p align="center">
-    <img src="./posts/2021-05-11-dealing-with-mechanical-hard-drive-in-2021/scan2.png" height="200em" alt="img7">
+    <img src="./posts/2021-05-11-dealing-with-mechanical-hard-drive-in-2021/7.png" height="200em" alt="img7">
 </p>
 
 <br>
@@ -95,7 +95,7 @@ This method require you to manually type a command and probably restart your PC 
 * First, open `Start Menu` and type `CMD`.
 * Then select `Run As Administrator`.
 <p align="center">
-    <img src="./posts/2021-05-11-dealing-with-mechanical-hard-drive-in-2021/chkdsk1.png" height="400em" alt="img8">
+    <img src="./posts/2021-05-11-dealing-with-mechanical-hard-drive-in-2021/8.png" height="400em" alt="img8">
 </p>
 
 * Then type `chkdsk /F /R /X /I /B D:` notice `D:`, change that to your partition letter.
