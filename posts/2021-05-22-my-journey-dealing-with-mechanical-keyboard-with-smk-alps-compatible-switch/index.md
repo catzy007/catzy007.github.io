@@ -75,5 +75,9 @@ sand it off and then put some primer on it.
 
 Then i paint it black and put it back together again, so yeah.
 
+<p align="center">
+    <img src="./posts/2021-05-22-my-journey-dealing-with-mechanical-keyboard-with-smk-alps-compatible-switch/8.jpg" height="300em" alt="img">
+</p>
+
 Maybe some day i could replace the controller with [Teensey](https://deskthority.net/viewtopic.php?f=7&t=6050&start=) or 
 something like that. 
