@@ -45,5 +45,6 @@
 2021-04-05-Windows-95-on-Linux-QEMU
 2021-05-11-Dealing-With-Mechanical-Hard-Drive-in-2021
 2021-05-12-Disable-Hard-Drive-Clicking-Noise
+2021-05-22-My-Journey-Dealing-With-Mechanical-Keyboard-With-SMK-Alps-Compatible-Switch
 
 2020-07-03-My-Journey-To-Proxmox-and-pfSense-On-Budget

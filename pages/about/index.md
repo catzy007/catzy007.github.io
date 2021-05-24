@@ -5,9 +5,9 @@
 ### Like my content? give me a coffee or 10 <https://ko-fi.com/catzy007>, or
 
 <br>
-<h4 align="center">9BeaFrk5xXJ5agiqvVCjK7CUNsR8shX891 <strong>XMG (MAGI) Only</strong></h4>
+<h4 align="center">3MaeSaxxfj3r5rZkE53KgPXbqhz13rQC59<strong> BTC (Nicehash)</strong></h4>
 <p align="center">
-	<img src="./pages/about/xmg.jpg" height="250px" alt="MXMG address">
+	<img src="./pages/about/btc.jpg" height="250px" alt="MXMG address">
 </p> 
 
 <br>
