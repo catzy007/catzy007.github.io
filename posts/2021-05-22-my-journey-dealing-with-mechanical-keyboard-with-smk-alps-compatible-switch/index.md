@@ -81,3 +81,34 @@ Then i paint it black and put it back together again, so yeah.
 
 Maybe some day i could replace the controller with [Teensey](https://deskthority.net/viewtopic.php?f=7&t=6050&start=) or 
 something like that. 
+
+#### Bonus - How to reassemble SMK Alps Switch
+<p align="center">
+    <img src="./posts/2021-05-22-my-journey-dealing-with-mechanical-keyboard-with-smk-alps-compatible-switch/img/0.jpg" height="300em" alt="img">
+    <br>
+    <img src="./posts/2021-05-22-my-journey-dealing-with-mechanical-keyboard-with-smk-alps-compatible-switch/img/1.jpg" height="300em" alt="img">
+    <br>
+    <img src="./posts/2021-05-22-my-journey-dealing-with-mechanical-keyboard-with-smk-alps-compatible-switch/img/2.jpg" height="300em" alt="img">
+    <br>
+    <img src="./posts/2021-05-22-my-journey-dealing-with-mechanical-keyboard-with-smk-alps-compatible-switch/img/3.jpg" height="300em" alt="img">
+    <br>
+    <img src="./posts/2021-05-22-my-journey-dealing-with-mechanical-keyboard-with-smk-alps-compatible-switch/img/4.jpg" height="300em" alt="img">
+    <br>
+    <img src="./posts/2021-05-22-my-journey-dealing-with-mechanical-keyboard-with-smk-alps-compatible-switch/img/5.jpg" height="300em" alt="img">
+    <br>
+    <img src="./posts/2021-05-22-my-journey-dealing-with-mechanical-keyboard-with-smk-alps-compatible-switch/img/6.jpg" height="300em" alt="img">
+    <br>
+    <img src="./posts/2021-05-22-my-journey-dealing-with-mechanical-keyboard-with-smk-alps-compatible-switch/img/7.jpg" height="300em" alt="img">
+    <br>
+    <img src="./posts/2021-05-22-my-journey-dealing-with-mechanical-keyboard-with-smk-alps-compatible-switch/img/8.jpg" height="300em" alt="img">
+    <br>
+    <img src="./posts/2021-05-22-my-journey-dealing-with-mechanical-keyboard-with-smk-alps-compatible-switch/img/9.jpg" height="300em" alt="img">
+    <br>
+    <img src="./posts/2021-05-22-my-journey-dealing-with-mechanical-keyboard-with-smk-alps-compatible-switch/img/10.jpg" height="300em" alt="img">
+    <br>
+    <img src="./posts/2021-05-22-my-journey-dealing-with-mechanical-keyboard-with-smk-alps-compatible-switch/img/11.jpg" height="300em" alt="img">
+    <br>
+    <img src="./posts/2021-05-22-my-journey-dealing-with-mechanical-keyboard-with-smk-alps-compatible-switch/img/12.jpg" height="300em" alt="img">
+    <br>
+    <img src="./posts/2021-05-22-my-journey-dealing-with-mechanical-keyboard-with-smk-alps-compatible-switch/img/13.jpg" height="300em" alt="img">
+</p>
