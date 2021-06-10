@@ -40,6 +40,9 @@ elegant or something but it goes really well to me.
 
 * First create MS-DOS bootable USB. Download [this](./posts/2021-06-10-repurpose-old-thin-client-as-dos-gaming-system/dos622-disk-image.zip)
 * Then flash it to USB drive using DD or Etcher
+
+> If you only need MS-DOS, you can stop here and use USB directly as primary disk.
+
 * Next, boot the USB drive and follow this
 
     ```
@@ -84,4 +87,8 @@ After that, plug your USB drive and create a bootable using Unetbootin or someth
 * Or if you confused, check this <https://www.youtube.com/watch?v=7_GEsE2_j4Y> (different approach)
 <p align="center">
     <img src="./posts/2021-06-10-repurpose-old-thin-client-as-dos-gaming-system/3.jpg" height="300em" alt="img">
+</p>
+
+<p align="center">
+    <img src="./posts/2021-06-10-repurpose-old-thin-client-as-dos-gaming-system/4.jpg" height="300em" alt="img">
 </p>
