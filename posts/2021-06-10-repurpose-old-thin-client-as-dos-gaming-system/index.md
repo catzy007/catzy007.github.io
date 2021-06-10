@@ -28,7 +28,12 @@ The specification for this is Transmeta Crusoe TM5800 in my case the clock speed
 512MB of DDR memory and 512MB of storage (IDE DOM) and ATI Rage XL GPU. From the sticker it should come 
 with 192/256 whatever that is. As for the operating system, it comes with Windows XP Embedded. 
 Other interesting thing about this is that from lscpu BogoMIPS, it got 1463.19 which according to 
-<https://tldp.org/HOWTO/BogoMips/bogo-list.html> is similar to Pentium III at 700MHz.
+<https://tldp.org/HOWTO/BogoMips/bogo-list.html> is similar to Pentium III at 700MHz. Then to add a 
+cherry on top, this processor are not x86. But how it can run windows and such, well it actually 
+running x86 code using [Code Morphing](https://en.wikipedia.org/wiki/Transmeta#Code_Morphing_Software). 
+As far as i can remember, only few company that has x86 license. Intel, AMD, VIA and other that i can't 
+remember so the way Transmeta achieve this is to translate x86 code to native code then execute it 
+accordingly.
 <p align="center">
     <img src="./posts/2021-06-10-repurpose-old-thin-client-as-dos-gaming-system/2.jpg" height="300em" alt="img">
 </p>
