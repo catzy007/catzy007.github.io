@@ -97,3 +97,7 @@ After that, plug your USB drive and create a bootable using Unetbootin or someth
 <p align="center">
     <img src="./posts/2021-06-10-repurpose-old-thin-client-as-dos-gaming-system/4.jpg" height="300em" alt="img">
 </p>
+
+<p align="center">
+    <img src="./posts/2021-06-10-repurpose-old-thin-client-as-dos-gaming-system/5.jpg" height="300em" alt="img">
+</p>

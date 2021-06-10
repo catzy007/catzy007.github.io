@@ -20,18 +20,19 @@ Then i tried 1st method. Using SbC as media to flash BIOS chip (SPI Flash Chip).
 First disassemble your laptop/pc unplug power, ram, bios battery, basically unplug everything... then find the bios chip by inspecting your motherboard. Mine is cFeon Q64-104HIP
 
 <p align="center">
-	<img src="./posts/2018-11-04-disabling-intel-me/1.jpg" height="250px" alt="My BIOS chip">
+	<img src="./posts/2018-11-04-disabling-intel-me/1.jpg" height="300em" alt="My BIOS chip">
 </p>
 
 Next you need to find datasheet for it (just google the chip name + datasheet) ex. "Q64-104HIP datasheet" then look at the pinout. This will be wiring guide for next step! you can read more info too. Some manufacture has different configurations.
 <p align="center">
-	<img src="./posts/2018-11-04-disabling-intel-me/2.jpg" height="250px" alt="datasheet">
+	<img src="./posts/2018-11-04-disabling-intel-me/2.jpg" height="300em" alt="datasheet">
 </p>
 
 then wire everything according to this schematics, followed by clipping SOP-8 clipper to bios chip.
 <p align="center">
-	<img src="./posts/2018-11-04-disabling-intel-me/3.jpg" height="250px" alt="Schematics">
-	<img src="./posts/2018-11-04-disabling-intel-me/4.jpg" height="250px" alt="My setup">
+	<img src="./posts/2018-11-04-disabling-intel-me/3.jpg" height="200em" alt="Schematics">
+  <br>
+	<img src="./posts/2018-11-04-disabling-intel-me/4.jpg" height="300em" alt="My setup">
 </p> 
  
 my setup. all pin connected to rpi GPIO, WP NC VCC connected to breadboard into 3.3V rpi GPIO
