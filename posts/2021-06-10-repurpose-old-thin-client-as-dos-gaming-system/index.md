@@ -38,10 +38,31 @@ accordingly.
     <img src="./posts/2021-06-10-repurpose-old-thin-client-as-dos-gaming-system/2.jpg" height="300em" alt="img">
 </p>
 
-Then i change the IDE DOM to 2GB then i try to install Windows 98 on it. The problem is 
-Windows 98 doesn't go well if you install it with other drive. Meaning you cant just make 
-a bootable Windows 98 USB installer and plug it in. The way i install it might not be the most 
-elegant or something but it goes really well to me.
+Then i change the IDE DOM to 2GB then i try to install Windows 98 on it. The 
+problem is Windows 98 doesn't go well if you install it with other drive. Meaning 
+you cant just make a bootable Windows 98 USB installer and plug it in. The way i 
+install it might not be the most elegant or something but it goes really well to 
+me. Tutorial below will cover using this as MS-DOS machine, and installing 
+Windows 98 as well.
+
+### Using this as MS-DOS machine
+
+The easiest and in my opinion the most elegant solution for this is to install 
+MS-DOS (in my case i'm using 6.22) inside a virtual machine. Then use disk image 
+to and flash it to USB drive. Fortunately, i'm already did that so follow this.
+* First, Download [this](./posts/2021-06-10-repurpose-old-thin-client-as-dos-gaming-system/dos622-disk-image.zip) 
+This is 2GB disk image, use at least 4GB USB drive.
+* Then prepare your USB drive and plug it into your computer.
+* Next, flash the disk image using [dd](https://www.geeksforgeeks.org/dd-command-linux/) or [Etcher](https://www.balena.io/etcher/)
+* Finally plug it and set to boot in BIOS and that's it.
+
+If somehow you doesn't trust me and rather create your own disk image, then follow this.
+* First, obtain a MS-DOS installer disk.
+* Then create a 2GB RAW disk image (raw disk image is important so we can use it to flash USB drive)
+* Next, mount and install MS-DOS to disk image
+* And that's it.
+
+### Using this as Windows 98 machine
 
 * First create MS-DOS bootable USB. Download [this](./posts/2021-06-10-repurpose-old-thin-client-as-dos-gaming-system/dos622-disk-image.zip)
 * Then flash it to USB drive using DD or Etcher
