@@ -61,15 +61,17 @@ If somehow you doesn't trust me and rather create your own disk image, then foll
 * Then create a 2GB RAW disk image (raw disk image is important so we can use it to flash USB drive)
 * Next, mount and install MS-DOS to disk image
 * And that's it.
+<p align="center">
+    <img src="./posts/2021-06-10-repurpose-old-thin-client-as-dos-gaming-system/5.jpg" height="300em" alt="img">
+</p>
 
 ### Using this as Windows 98 machine
 
-* First create MS-DOS bootable USB. Download [this](./posts/2021-06-10-repurpose-old-thin-client-as-dos-gaming-system/dos622-disk-image.zip)
-* Then flash it to USB drive using DD or Etcher
-
-> If you only need MS-DOS, you can stop here and use USB directly as primary disk.
-
-* Next, boot the USB drive and follow this
+**This solution is not perfect and easy**. The way i did this is to make a USB 
+MS-DOS bootable, then i format DOM as MS-DOS partition, then copy necessary files 
+to it, make DOM bootable, copy Windows 98 installer on it, and install it from DOM.
+* First create MS-DOS bootable by following above tutorial.
+* Next, boot MS-DOS USB drive and follow this
 
     ```
     fdisk
@@ -83,18 +85,20 @@ If somehow you doesn't trust me and rather create your own disk image, then foll
     press y enter (to confirm)
     press esc esc (system will reboot)
     ```
-* Then Follow this
+* Then follow this
 
     ```
     format d: /s
     sys d:
     ```
 * After that copy Windows 98 Installer to DOM
-* Then get a linux, not any other linux because modern linux os need specific CPU instruction set 
-to even run and other linux may contain heavy GUI which slow tings and make it unusable. So what i 
-use is Tiny Core Linux [(The 16MB CLI one)](http://tinycorelinux.net/12.x/x86/release/Core-current.iso). 
-After that, plug your USB drive and create a bootable using Unetbootin or something similar. 
+* Then get a linux, not any other linux because modern linux os need specific CPU 
+instruction set to even run and other linux may contain heavy GUI which slow 
+tings and make it unusable. So what i use is Tiny Core Linux [(The 16MB CLI one)](http://tinycorelinux.net/12.x/x86/release/Core-current.iso). 
+After that, plug your USB drive and create a bootable using Unetbootin or 
+something similar. 
 * Then follow this
+
     ```
     sudo fdisk -l
     ```
@@ -110,15 +114,10 @@ After that, plug your USB drive and create a bootable using Unetbootin or someth
 * After that unplug the usb and boot from DOM
 * Then look for `setup.exe` and run it.
 * Just follow the On-screen instruction.
+* And that's it.
 * Or if you confused, check this <https://www.youtube.com/watch?v=7_GEsE2_j4Y> (different approach)
 <p align="center">
     <img src="./posts/2021-06-10-repurpose-old-thin-client-as-dos-gaming-system/3.jpg" height="300em" alt="img">
-</p>
-
-<p align="center">
-    <img src="./posts/2021-06-10-repurpose-old-thin-client-as-dos-gaming-system/4.jpg" height="300em" alt="img">
-</p>
-
-<p align="center">
-    <img src="./posts/2021-06-10-repurpose-old-thin-client-as-dos-gaming-system/5.jpg" height="300em" alt="img">
+    <br>
+    <img src="./posts/2021-06-10-repurpose-old-thin-client-as-dos-gaming-system/4.jpg" height="400em" alt="img">
 </p>
