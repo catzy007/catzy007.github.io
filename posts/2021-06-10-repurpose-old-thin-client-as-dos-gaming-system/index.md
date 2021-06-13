@@ -33,9 +33,13 @@ cherry on top, this processor are not x86. But how it can run windows and such, 
 running x86 code using [Code Morphing](https://en.wikipedia.org/wiki/Transmeta#Code_Morphing_Software). 
 As far as i can remember, only few company that has x86 license. Intel, AMD, VIA and other that i can't 
 remember so the way Transmeta achieve this is to translate x86 code to native code then execute it 
-accordingly. Here some CPU-Z details <https://valid.x86.fr/ivd4ak>
+accordingly.
 <p align="center">
     <img src="./posts/2021-06-10-repurpose-old-thin-client-as-dos-gaming-system/2.jpg" height="300em" alt="img">
+</p>
+Here some CPU-Z details <https://valid.x86.fr/ivd4ak>
+<p align="center">
+    <a href="https://valid.x86.fr/ivd4ak"><img src="https://valid.x86.fr/cache/banner/ivd4ak-99.png" alt="img"></a>
 </p>
 
 Then i change the IDE DOM to 2GB then i try to install Windows 98 on it. The 
