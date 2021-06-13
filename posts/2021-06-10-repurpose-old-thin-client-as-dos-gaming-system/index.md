@@ -58,19 +58,45 @@ This is 2GB disk image, use at least 4GB USB drive.
 
 If somehow you doesn't trust me and rather create your own disk image, then follow this.
 * First, obtain a MS-DOS installer disk.
-* Then create a 2GB RAW disk image (raw disk image is important so we can use it to flash USB drive)
-* Next, mount and install MS-DOS to disk image
+* Then create a 2GB RAW disk image (raw disk image is important so we can use it to flash USB drive).
+* Next, mount and install MS-DOS to disk image.
 * And that's it.
 <p align="center">
     <img src="./posts/2021-06-10-repurpose-old-thin-client-as-dos-gaming-system/5.jpg" height="300em" alt="img">
 </p>
+
+### Enable SB and Adlib DOS compatibility
+
+Thanks to [JazeFox](https://www.vogons.org/viewtopic.php?t=73270) and [PhilsComputerLab](https://www.youtube.com/watch?v=W4Fv2DwlldI)
+* First, get it [here](https://www.vogons.org/viewtopic.php?t=73270) or [mirror](./posts/2021-06-10-repurpose-old-thin-client-as-dos-gaming-system/VIASBFM.zip).
+* Then extract and copy to your MS-DOS USB drive.
+* Boot your system and save batch script below as `VIASBFM.BAT`.
+    
+    ```
+    @echo off
+    SET BLASTER=A220 I5 D1 P0 J0
+    LH VIASBCFG /V50 /VW50 /VF50 /VP50
+    LH VIAFMTSR
+    ```
+* Run the `VIASBFM.BAT` and it should works.
+* If you want to adjust volume, edit `VIASBFM.BAT` according tho this.
+    
+    ```
+    LH VIASBCFG /V50 /VW50 /VF50 /VP50
+
+    /V  Master Volume
+    /VW Wave Volume
+    /VF FM Volume
+    /VP PCSPK Volume
+    ```
 
 ### Using this as Windows 98 machine
 
 **This solution is not perfect and easy**. The way i did this is to make a USB 
 MS-DOS bootable, then i format DOM as MS-DOS partition, then copy necessary files 
 to it, make DOM bootable, copy Windows 98 installer on it, and install it from DOM.
-* First create MS-DOS bootable by following above tutorial.
+* First create MS-DOS bootable by following `this as MS-DOS machine` tutorial 
+above.
 * Next, boot MS-DOS USB drive and follow this
 
     ```
