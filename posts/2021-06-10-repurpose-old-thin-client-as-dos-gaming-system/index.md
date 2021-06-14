@@ -54,8 +54,8 @@ Windows 98 as well.
 The easiest and in my opinion the most elegant solution for this is to install 
 MS-DOS (in my case i'm using 6.22) inside a virtual machine. Then take the disk 
 image and flash it to USB drive. Fortunately, i'm already did that so follow this.
-* First, Download [this](./posts/2021-06-10-repurpose-old-thin-client-as-dos-gaming-system/dos622-starter-disk-image.zip) 
-This is 2GB disk image, use at least 4GB USB drive.
+* First, Download [this](./posts/2021-06-10-repurpose-old-thin-client-as-dos-gaming-system/dos622-starter-disk-image.zip). 
+it is a 2GB disk image, use it with at least 4GB USB drive.
 * Then prepare your USB drive and plug it into your computer.
 * Next, flash the disk image using [dd](https://www.geeksforgeeks.org/dd-command-linux/) or [Etcher](https://www.balena.io/etcher/)
 * Finally plug it and set to boot in BIOS and that's it.
