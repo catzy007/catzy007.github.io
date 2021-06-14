@@ -65,9 +65,6 @@ If somehow you doesn't trust me and rather create your own disk image, then foll
 * Then create a 2GB RAW disk image (raw disk image is important so we can use it to flash USB drive).
 * Next, mount and install MS-DOS to disk image.
 * And that's it.
-<p align="center">
-    <img src="./posts/2021-06-10-repurpose-old-thin-client-as-dos-gaming-system/5.jpg" height="300em" alt="img">
-</p>
 
 ### Enable SB and Adlib DOS compatibility
 
@@ -93,6 +90,9 @@ Thanks to [JazeFox](https://www.vogons.org/viewtopic.php?t=73270) and [PhilsComp
     /VF FM Volume
     /VP PCSPK Volume
     ```
+<p align="center">
+    <img src="./posts/2021-06-10-repurpose-old-thin-client-as-dos-gaming-system/5.jpg" height="300em" alt="img">
+</p>
 
 ### Using this as Windows 98 machine
 
@@ -151,3 +151,13 @@ something similar.
     <br>
     <img src="./posts/2021-06-10-repurpose-old-thin-client-as-dos-gaming-system/4.jpg" height="400em" alt="img">
 </p>
+
+### Installing Windows 98 Driver
+
+Just download and install [this driver](https://drive.google.com/file/d/1_qAMr6ya9WrNFGmSSIAg9PoIOa_oht_O/view?usp=sharing). 
+Thanks to [PhilsComputerLab](https://www.philscomputerlab.com/hp-t5710.html) and other source which i'm really sorry i forgot.
+
+Thing you need to watch out is that USB on Win98 doesn't work in the first boot, so copy generic USB 1.1 driver manually and then 
+install the rest. As for GPU, in T5000/T5700 you need to install ATI Rage XL driver. As for ATI Radeon 7000M is for T5700. The 
+other thing is you need to watch out for Audio, Chipset, and Generic VIA driver. There might some error and hopefully nothing 
+bad happen. If somehow installer don't work, try to install using `INF` file. And i think that's it Good Luck and Have Fun.
