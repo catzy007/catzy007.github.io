@@ -157,7 +157,7 @@ something similar.
 Just download and install [this driver](https://drive.google.com/file/d/1_qAMr6ya9WrNFGmSSIAg9PoIOa_oht_O/view?usp=sharing). 
 Thanks to [PhilsComputerLab](https://www.philscomputerlab.com/hp-t5710.html) and other source which i'm really sorry i forgot.
 
-Thing you need to watch out is that USB on Win98 doesn't work in the first boot, so copy generic USB 1.1 driver manually and then 
+Thing you need to watch out is that USB on Win98 doesn't work in the first boot, so copy `Generic USB 1.1` driver manually and then 
 install the rest. As for GPU, in T5000/T5700 you need to install ATI Rage XL driver. As for ATI Radeon 7000M is for T5700. The 
 other thing is you need to watch out for Audio, Chipset, and Generic VIA driver. There might some error and hopefully nothing 
 bad happen. If somehow installer don't work, try to install using `INF` file. And i think that's it Good Luck and Have Fun.
