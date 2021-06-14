@@ -52,8 +52,8 @@ Windows 98 as well.
 ### Using this as MS-DOS machine
 
 The easiest and in my opinion the most elegant solution for this is to install 
-MS-DOS (in my case i'm using 6.22) inside a virtual machine. Then use disk image 
-to and flash it to USB drive. Fortunately, i'm already did that so follow this.
+MS-DOS (in my case i'm using 6.22) inside a virtual machine. Then take the disk 
+image and flash it to USB drive. Fortunately, i'm already did that so follow this.
 * First, Download [this](./posts/2021-06-10-repurpose-old-thin-client-as-dos-gaming-system/dos622-starter-disk-image.zip) 
 This is 2GB disk image, use at least 4GB USB drive.
 * Then prepare your USB drive and plug it into your computer.
