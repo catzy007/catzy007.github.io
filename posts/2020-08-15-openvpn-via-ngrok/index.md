@@ -2,10 +2,10 @@
 _Saturday, August 15, 2020_
 
 For quite sometimes, i don't always stay at home. When i need some files from my workstation, 
-make some change to my project, or perform basic monitoring in my local network i cant just do 
-a 45 Min trip to my home. Instead i just connect to my local home network using VPN and do all 
+make some change to my project, or perform basic monitoring in my local network i can't just do 
+a 45-Min trip to my home. Instead, i just connect to my local home network using VPN and do all 
 that. System i use for this is basic 2 core computer running Ubuntu Server inside Proxmox VM. 
-You can use almost anything, even raspberrypi would work. As long as it stay connected to 
+You can use almost anything, even Raspberry Pi would work, as long as it stays connected to 
 internet.
 
 Before proceed, make sure you have a ngrok account <https://dashboard.ngrok.com/signup>
@@ -28,7 +28,7 @@ Before proceed, make sure you have a ngrok account <https://dashboard.ngrok.com/
     chmod +x openvpn-install.sh
     sudo ./openvpn-install.sh
     ```
-* Here is my basic config. You can follow exact or customize to fill your need
+* Here is my basic config. You can follow exact or customize to fill your need.
 
     ```
     IP Address: 192.168.0.1                             (your local static ip address)
@@ -117,8 +117,8 @@ Before proceed, make sure you have a ngrok account <https://dashboard.ngrok.com/
     then change line to                  remote 1.tcp.ngrok.io 15342
     ```
 * Then connect to vpn by doing `sudo openvpn nana.ovpn`
-* Then wait a little and if nothing goes wrong, you sould get a message `Initialization Sequence Completed`
+* Then wait a little and if nothing goes wrong, you should get a message `Initialization Sequence Completed`
 * And that's it, now you're connected to your VPN
 
-If you using [free tier](https://ngrok.com/pricing) from ngrok, the tunnel url and port will always changing. 
+If you're using [free tier](https://ngrok.com/pricing) from ngrok, the tunnel URL and port will always change. 
 Make sure you set it to the correct one.
