@@ -1,17 +1,18 @@
 ### **My Journey Using Yamaha YMF724 PCI Sound Card**
 _Wednesday, February 3, 2021_
 
-Few days ago, i'm looking for a sound card because i'm using basically server as workstation 
-and yes it has modern-ish GPU with HDMI+HDA but i'm using DP monitor and no it doesn't had 
-onboard sound because who the hell would play music on a freakin server. So i began to search 
-around my local online shop and found this Yamaha YMF724F-V at less than 2 USD with another 2 
-for shipping, I could not resist. I read the [datasheet](./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/YMF724F_ETC.pdf) thanks to 
-<https://datasheetspdf.com/pdf/285420/ETC/YMF724F/1> 
-from the datasheet, it should support FM Synth which is basically OPL3 and it should support 
+Few days ago, i'm looking for a sound card. Well why anyone looking for a sound card in 2021? 
+Because i'm using server board as workstation and yes it has modern-ish GPU with HDMI+HDA but 
+i'm using DP monitor and no it doesn't have onboard sound because who the hell would play music 
+on a freakin server. So i began to search around my local online shop and found this Yamaha 
+YMF724F-V at less than 2 USD with another 2 for shipping and i could not resist so i bought it. 
+In the meantime, i read the [datasheet](./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/YMF724F_ETC.pdf) 
+thanks to <https://datasheetspdf.com/pdf/285420/ETC/YMF724F/1> 
+from the datasheet, it said support for FM Synth which is basically OPL3, and it should support 
 Sound Blaster Pro Compatibility and many others all that in one single package so yeah DOS 
-gaming in this sound card should be interesting and this is review from back in the day 
-<https://assets.hardwarezone.com/2009/reviews/sound/roundup/soundcards.htm> maybe some day i 
-can get Sound Blaster Live or something.
+gaming in this sound card should be interesting. Also, i found this is review from back in the day 
+<https://assets.hardwarezone.com/2009/reviews/sound/roundup/soundcards.htm> if this sound card 
+doesn't work, maybe some day i can get Sound Blaster Live or something like that as a replacement.
 
 <br>
 <p align="center">
@@ -28,10 +29,11 @@ recompile the driver to 64Bit.
     <img src="./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/3.jpg" height="300em" alt="img3">
 </p>
 Other alternative is of course Linux which basically runs everything. I use Lubuntu 18.04 
-and Ubuntu 20.04 and it works just fine. And the chip itself is lsted in ALSA project <https://www.alsa-project.org/wiki/Matrix:Vendor-Yamaha> the problem is that there is a some kind of Crackling noise coming out 
-and i think there is something wrong in the card configuration and in linux there is no easy way 
-to configure lot of input and output for this card so yeah. At least the card is working which is 
-a good thing.
+and Ubuntu 20.04 and it works just fine. And the chip itself is lsted in ALSA project 
+<https://www.alsa-project.org/wiki/Matrix:Vendor-Yamaha> the problem is that there is a some kind 
+of Crackling noise coming out and i think there is something wrong in the card configuration and 
+in linux there is no easy way to configure lot of input and output for this card so yeah. At least 
+the card is working which is a good thing.
 
 <br>
 The next thing i try is 32Bit Windows 7 and force WDM driver to install and you know what, it 
@@ -67,15 +69,15 @@ enable that in BIOS, and make sure your motherboard support IOMMU group seperati
 [ACS Patch](https://wiki.archlinux.org/index.php/PCI_passthrough_via_OVMF#Bypassing_the_IOMMU_groups_(ACS_override_patch)) don't forget to install `virt-manager and ovmf`. after all that clear do.
 
 1. First you need to enable [IOMMU](https://wiki.archlinux.org/index.php/PCI_passthrough_via_OVMF#Setting_up_IOMMU) 
-in the linux. To do that, go to GRUB config file, find `quiet splash` and add 
+in the Linux. To do that, go to GRUB config file, find `quiet splash` and add 
 `iommu=1 intel_iommu=on` or `iommu=1 amd_iommu=on` depending on your system.
 1. Then `sudo update-grub` and reboot your system.
-1. Next Make sure IOMMU and VT is enabled `sudo dmesg | grep -e DMAR -e IOMMU -e vfio` then you'll find
+1. Next Make sure IOMMU and VT is enabled `sudo dmesg | grep -e DMAR -e IOMMU -e vfio` then you'll find.
     ```
     DMAR: IOMMU enabled
     ```
 
-1. After that, you need to find PCI/E id for your device, to do that, copy to `.sh` file and run it.
+1. After that, you need to find PCI/E ID for your device, to do that, copy to `.sh` file and run it.
     ```
     #!/bin/bash
     for d in /sys/kernel/iommu_groups/*/devices/*; do
@@ -85,9 +87,9 @@ in the linux. To do that, go to GRUB config file, find `quiet splash` and add
     done;
     ```
 
-1. After done correctly, you'll find lot of device with IOMMU group and different PCI/E. Make sure your 
+1. After done correctly, you'll find a lot of devices with IOMMU group and different PCI/E. Make sure your 
 device IOMMU is different. For example mine is Group 25 with PCI Bridge that is fine, if the group is 16 
-Shared to GPU, USB, Sound, PCI Bridge, then you done! or use ACS patch.
+Shared to GPU, USB, Sound, PCI Bridge, then you're done! Or use ACS patch.
     ```
     IOMMU Group 23 02:00.0 Ethernet controller [0200]: Intel Corporation 82574L Gigabit Network Connection [8086:10d3]
     IOMMU Group 23 03:00.0 Ethernet controller [0200]: Intel Corporation 82574L Gigabit Network Connection [8086:10d3]
@@ -104,9 +106,9 @@ Shared to GPU, USB, Sound, PCI Bridge, then you done! or use ACS patch.
 1. Then edit GRUB again and add `vfio-pci.ids=1073:000d vfio_iommu_type1.allow_unsafe_interrupts=1` make sure 
 `vfio-pci.ids` is match with your device.
 1. Next do it again `sudo update-grub`
-1. Then update some kernel module. Open terminal and do
+1. Then update some kernel module. Open terminal and do.
 
-    a. `sudo nano /etc/initramfs-tools/modules` and add
+    a. `sudo nano /etc/initramfs-tools/modules` and add.
     ```
     vfio
     vfio_iommu_type1
@@ -116,17 +118,17 @@ Shared to GPU, USB, Sound, PCI Bridge, then you done! or use ACS patch.
     vfio_pci
     ```
 
-    b. `sudo nano /etc/modules` and add
+    b. `sudo nano /etc/modules` and add.
     ```
     vfio
     vfio_iommu_type1
     ```
 
-    c. `sudo nano /etc/modprobe.d/vfio.conf` and add
+    c. `sudo nano /etc/modprobe.d/vfio.conf` and add.
     ```
     options vfio-pci ids=1073:000d
     ```
-    d. **Make sure your pci ids is match**
+    d. **Make sure your PCI IDs is match.**
 
 1. Then apply all that by doing `sudo update-initramfs -u` then reboot
 1. Check if everything is working by doing `sudo dmesg | grep -e DMAR -e IOMMU -e vfio` it should look similar
@@ -177,7 +179,7 @@ domain](https://en.wikipedia.org/wiki/Public_domain) or considered as [Abandonwa
 > [UPDATE April 7 2021]
 
 After failing to install Windows 95 in KVM, then going to QEMU TCG, then do PCI passthrough using libvirt, 
-Installing the driver and finally sound blaster mode still not working in DOS games. And here is how i 
+Installing the driver and finally sound blaster mode still not working in DOS games. And here is how i have 
 done it.
 
 * First create vm in `Virtual Machine Manager` with this config
@@ -192,7 +194,7 @@ done it.
 * Then do XML edit and change `<domain type="kvm">` to `<domain type="qemu">` this will force libvirt 
 to use TCG accelerator instead of KVM which a bit forgiving to older system.
 * Next follow this for installation <https://catzy007.github.io/#!2021-04-05-windows-95-on-linux-qemu> 
-Similar process but you have to manualy change boot order instead of changing qemu parameter.
+Similar process, but you have to manually change boot order instead of changing qemu parameter.
 * After that, follow this to <https://catzy007.github.io/#!2021-01-09-windows-me-on-linux-kvm> 
 `Fix PCI Bus device driver` again similar process but with Windows 95 instead of ME.
 * Then do a PCI passthrough. Similar to how i did it with XP.
@@ -215,14 +217,14 @@ even hardware passthrough like this.
 <br>
 > [UPDATE April 22 2021]
 
-After having a some free time from mid test, i decided to unplug my sb audigy and use yamaha once again to test if 
+After having a some free time from mid-test, i decided to unplug my SB Audigy and use Yamaha once again to test if 
 running it in DOS 6.22 with KVM acceleration will make a difference.
 
 <p align="center">
     <img src="./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/5.png" height="400em" alt="img5">
 </p>
 
-The system spec is similar as win95 with single core cpu, 128 megs ram, 500 megs hdd, but in KVM instead of TCG. 
+The system spec is similar as win95 with single core CPU, 128 megs RAM, 500 megs HDD, but in KVM instead of TCG. 
 Then i use [Phils MS-DOS starter pack](https://www.philscomputerlab.com/ms-dos-starter-pack.html) to easily use 
 mouse and extended memory support.
 
@@ -230,7 +232,7 @@ mouse and extended memory support.
     <img src="./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/6.png" height="400em" alt="img6">
 </p>
 
-Then i just use `setupds/s` then `dsdma` and still nothing. Then i just run setupds and simply test the sound ouput, 
+Then i just use `setupds/s` then `dsdma` and still nothing, then i just run setupds and simply test the sound output, 
 the Native 16 bit output is working just fine. The SB mode is disabled or greyed out and the FM mode throw a error.
 
 <p align="center">
@@ -251,7 +253,7 @@ gonna stick to my SB Audigy and maybe revisit dos gaming in dedicated box.
 > [UPDATE May 11 2021]
 
 After somehow i manage to install MS-DOS 6.22 in a USB flash drive, then i plug the card in my 12 core Xeon, boot it 
-up and the FM Synth works. The SB mode won't work because it need EMS but somehow EMS won't initialize. Maybe EMS can't 
+up and the FM Synth works. The SB mode won't work because it needs EMS, but somehow EMS won't initialize. Maybe EMS can't 
 deal with 12GB of RAM, or somehow it has problem with IMC. But at least FM/Adlib mode works.
 
 <br>
