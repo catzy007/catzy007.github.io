@@ -1,12 +1,12 @@
 ### **Repurpose Old Thin Client as DOS Gaming System**
 _Thursday, June 10, 2021_
 
-Few weeks ago i need to test my DOS program in baremetal. So i started looking around 
+Few weeks ago i need to test my DOS program in bare-metal. So i started looking around 
 local shop and shock to find that old i486 computer cost double than i3 sandy bridge computer. 
-Even Pentium 3 cost little bit more than i3 sandy bridge computer. So you know what, forget 
+Even Pentium 3 cost little more than i3 sandy bridge computer. So you know what, forget 
 about it. 
 
-The problem was i need to interface with sound system (Sound Blaster or Adlib) and newer computer 
+The problem was i need to interface with old sound system (Sound Blaster or Adlib) and newer computer 
 simply doesn't support old sound system anymore. So i started to looking around the internet and 
 found out that some Thin Client with specific chipset can do Sound Blaster and Adlib. 
 <https://www.youtube.com/watch?v=W4Fv2DwlldI> and <https://www.vogons.org/viewtopic.php?p=840879>.
@@ -25,14 +25,14 @@ and the other one said T5700. If any of you need this, look for both keyword.
 </p>
 
 The specification for this is Transmeta Crusoe TM5800 in my case the clock speed is 733MHz with 
-512MB of DDR memory and 512MB of storage (IDE DOM) and ATI Rage XL GPU. From the sticker it should come 
+512MB of DDR memory, 512MB of storage (IDE DOM) and ATI Rage XL GPU. From the sticker it should come 
 with 192/256 whatever that is. As for the operating system, it comes with Windows XP Embedded. 
 Other interesting thing about this is that from lscpu BogoMIPS, it got 1463.19 which according to 
 <https://tldp.org/HOWTO/BogoMips/bogo-list.html> is similar to Pentium III at 700MHz. Then to add a 
-cherry on top, this processor are not x86. But how it can run windows and such, well it actually 
+cherry on top, this processor is not x86. But how it can run windows and such, well it actually 
 running x86 code using [Code Morphing](https://en.wikipedia.org/wiki/Transmeta#Code_Morphing_Software). 
-As far as i can remember, only few company that has x86 license. Intel, AMD, VIA and other that i can't 
-remember so the way Transmeta achieve this is to translate x86 code to native code then execute it 
+As far as i can remember, only few companies own x86 license. Intel, AMD, VIA and other that i can't 
+remember. So the way Transmeta achieve this is to translate x86 code to native code then execute it 
 accordingly.
 <p align="center">
     <img src="./posts/2021-06-10-repurpose-old-thin-client-as-dos-gaming-system/2.jpg" height="300em" alt="img">
@@ -42,10 +42,10 @@ Here some CPU-Z details <https://valid.x86.fr/ivd4ak>
     <a href="https://valid.x86.fr/ivd4ak"><img src="https://valid.x86.fr/cache/banner/ivd4ak-99.png" alt="img"></a>
 </p>
 
-Then i change the IDE DOM to 2GB then i try to install Windows 98 on it. The 
-problem is Windows 98 doesn't go well if you install it with other drive. Meaning 
-you cant just make a bootable Windows 98 USB installer and plug it in. The way i 
-install it might not be the most elegant or something but it goes really well to 
+Then i change the IDE DOM to 2GB and try to install Windows 98 on it. The problem 
+is Windows 98 doesn't go well if you install it with other drive. Meaning you 
+can't just make a bootable Windows 98 USB installer and plug it in. The way i 
+install it might not be the most elegant or something, but it goes really well to 
 me. Tutorial below will cover using this as MS-DOS machine, and installing 
 Windows 98 as well.
 
@@ -55,15 +55,16 @@ The easiest and in my opinion the most elegant solution for this is to install
 MS-DOS (in my case i'm using 6.22) inside a virtual machine. Then take the disk 
 image and flash it to USB drive. Fortunately, i'm already did that so follow this.
 * First, Download [this](./posts/2021-06-10-repurpose-old-thin-client-as-dos-gaming-system/dos622-starter-disk-image.zip). 
-it is a 2GB disk image, use it with at least 4GB USB drive.
+It is a 2GB disk image, use it with at least 4GB USB drive.
 * Then prepare your USB drive and plug it into your computer.
 * Next, flash the disk image using [dd](https://www.geeksforgeeks.org/dd-command-linux/) or [Etcher](https://www.balena.io/etcher/)
 * Finally plug it and set to boot in BIOS and that's it.
 
-If somehow you doesn't trust me and rather create your own disk image, then follow this.
+If somehow you don't trust me and rather create your own disk image, then follow this.
 * First, obtain a MS-DOS installer disk.
 * Then create a 2GB RAW disk image (raw disk image is important so we can use it to flash USB drive).
-* Next, mount and install MS-DOS to disk image.
+* Next, mount the disk to VM.
+* install MS-DOS to disk image via VM.
 * And that's it.
 
 ### Enable SB and Adlib DOS compatibility
@@ -79,7 +80,7 @@ Thanks to [JazeFox](https://www.vogons.org/viewtopic.php?t=73270) and [PhilsComp
     LH VIASBCFG /V50 /VW50 /VF50 /VP50
     LH VIAFMTSR
     ```
-* Run the `VIASBFM.BAT` and it should works.
+* Run the `VIASBFM.BAT` and it should work.
 * If you want to adjust volume, edit `VIASBFM.BAT` according tho this.
     
     ```
@@ -122,12 +123,12 @@ above.
     sys d:
     ```
 * After that copy Windows 98 Installer to DOM
-* Then get a linux, not any other linux because modern linux os need specific CPU 
+* Then get a linux, not any other linux because modern linux OS need specific CPU 
 instruction set to even run and other linux may contain heavy GUI which slow 
 tings and make it unusable. So what i use is Tiny Core Linux [(The 16MB CLI one)](http://tinycorelinux.net/12.x/x86/release/Core-current.iso). 
 After that, plug your USB drive and create a bootable using Unetbootin or 
 something similar. 
-* Then follow this
+* Then follow this.
 
     ```
     sudo fdisk -l
@@ -141,7 +142,7 @@ something similar.
     Press W enter (to write changes)
     sudo poweroff (to shutdown system)
     ```
-* After that unplug the usb and boot from DOM
+* After that unplug the USB and boot from DOM
 * Then look for `setup.exe` and run it.
 * Just follow the On-screen instruction.
 * And that's it.
@@ -158,6 +159,6 @@ Just download and install [this driver](https://drive.google.com/file/d/1_qAMr6y
 Thanks to [PhilsComputerLab](https://www.philscomputerlab.com/hp-t5710.html) and other source which i'm really sorry i forgot.
 
 Thing you need to watch out is that USB on Win98 doesn't work in the first boot, so copy `Generic USB 1.1` driver manually and then 
-install the rest. As for GPU, in T5000/T5700 you need to install ATI Rage XL driver. As for ATI Radeon 7000M is for T5700. The 
+install the rest. As for GPU, in T5000/T5700 you need to install ATI Rage XL driver. As for ATI Radeon 7000M is for T5710. The 
 other thing is you need to watch out for Audio, Chipset, and Generic VIA driver. There might some error and hopefully nothing 
 bad happen. If somehow installer don't work, try to install using `INF` file. And i think that's it Good Luck and Have Fun.

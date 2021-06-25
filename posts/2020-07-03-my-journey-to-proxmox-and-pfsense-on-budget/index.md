@@ -169,7 +169,7 @@ if the hardware still the same, yes still the same CPU TL-50, 2 GB RAM, 32 GB 
 SATA adapter, same cooler. For the software side of thing, it basically still the same Proxmox sit on 
 top of the Debian installation. 
 <p align="center">
-	<img src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/15.png" height="400px" alt="img14">
+	<img src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/15.png" height="400px" alt="img15">
 </p>
 
 As you can see i actually using more resources than before because i'm trying to run few service in 
@@ -202,3 +202,73 @@ out of the box with the current listing price around 80 USD in my local area. Wh
 but hopefully with less headache, so you can sleep well and not dealing with system downtime while updating 
 or heavy disk load. And check other [Thin Client](https://www.parkytowers.me.uk/thin/hware/hardware.shtml) 
 if you want specific device for your need.
+
+<br>
+#### **[UPDATE 2021/06/25] - Investigation on high I/O delay when performing write operation**
+
+For quite some time i wondering about this system Achilles Heel, which is poor performance or even system 
+halt when data intensive write happen. This includes creating a new disk image, uploading new image file, 
+or simply doing system and kernel update. 
+<p align="center">
+	<img src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/16.jpg" height="300px" alt="img">
+</p>
+
+My current solution which is adding extra memory or by the extent is to add secondary disk as swap disk 
+because DDR2 4 GB SODIMM Memory is not cheap, doesn't seem to do much. Even recently i bought a 2 GB DOM 
+and then upgrade to 16 GB DOM as swap disk still doesn't solve the issue. So i began this investigation to 
+end this once and for all what is wrong with this system.
+
+What i'm going to do is to test most storage combination to get the best possible speed from the available 
+port the system have, which is USB 2.0 and 44 Pins IDE. The way i'm going to test this is to use Gnome Disks 
+Utility built in benchmark to test average read, write, and access time of each combination with parameter below.
+<p align="center">
+	<img src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/17.png" height="300px" alt="img">
+</p>
+
+The combination is
+* C1: KEBIDU Cable Converter SATA to USB 3.0 HDD / SSD (Triangle shaped one i use all this time) + Kingfast 32 GB MLC SSD
+* C2: Orico 1-Bay 2.5 Inch External HDD Enclosure Sata 2 USB 3.0 + Kingfast 32 GB MLC SSD
+* C3: Apacer 16 GB IDE Disk on Module (DOM)
+For ease, i'm going to call C1 as Triangle, C2 as Orico and C3 as DOM.
+
+First, let's get a baseline, Here i'm testing C1 and C2 plug it in to my Asus laptop with USB 3.0 and test it.
+<p align="center">
+	<img src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/18.png" height="400px" alt="img">
+	<br>
+	<span>Here is C2</span>
+</p>
+
+<p align="center">
+	<img src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/19.png" height="400px" alt="img">
+	<br>
+	<span>Here is C1</span>
+</p>
+
+As you can see there is a lot of difference between Orico adapter and Triangle adapter, not only Random adapter 
+can't deliver the speed it advertises which is only 36 MBPS instead of 300MBPS, it also fluctuates more. Next test 
+is USB 2.0 in the thin client system.
+<p align="center">
+	<img src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/20.png" height="400px" alt="img">
+	<br>
+	<span>Here is C2</span>
+</p>
+
+<p align="center">
+	<img src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/21.png" height="400px" alt="img">
+	<br>
+	<span>Here is C1</span>
+</p>
+
+<p align="center">
+	<img src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/22.png" height="400px" alt="img">
+	<br>
+	<span>Here is C3</span>
+</p>
+
+Now let's talk about the final results, as you can see the C2 (Orico) deliver fine enough performance, while yes there 
+are some dips it still relatively good performance overall, and C2 (Triangle) at first, it's fine then it just drops to 
+mostly below 4 MBPS which is explained a lot why the system just halt when high intensive write happen. And then the last 
+one C3 (DOM) while not fast, it delivers the most stable result so far.
+
+And now the conclusion which is to get product from reputable brand, while you can save some and get the cheapest product, 
+the performance impact in my opinion is not worth at all.
