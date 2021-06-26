@@ -50,14 +50,14 @@ Before proceed, make sure you have a ngrok account <https://dashboard.ngrok.com/
 * Download Ngrok binary from <https://ngrok.com/download>
 * Unzip downloaded file to `/home/nana`
 * Create new dir `/home/nana/.ngrok2`
-* Create `ngrok2.yml` inside `/home/nana/.ngrok2/`
+* Create `ngrok.yml` file inside `/home/nana/.ngrok2/`
 
     ```
     authtoken: <YOUR AUTHTOKEN>
     tunnels:
-    openvpn:
-        addr: 1194
-        proto: tcp
+        openvpn:
+            addr: 1194
+            proto: tcp
     ```
 * Change `<YOUR AUTHTOKEN>` to your ngrok authtoken <https://dashboard.ngrok.com/auth/your-authtoken> 
 > `KEEP YOUR AUTHTOKEN PRIVATE!`
