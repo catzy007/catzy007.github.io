@@ -1,19 +1,19 @@
 # Push notification ad list by Catzy
 # License: MIT
 
-(\.|^)adsbytranssion\.com$ 
-(\.|^)eazzycredit\.com$
-(\.|^)gamegamb\.com$
-(\.|^)halacredit\.com$
-(\.|^)hippoad\.com$
-(\.|^)hippocoins\.com$
-(\.|^)inonegame\.com$
-(\.|^)mobadvent\.com$
-(\.|^)shalltry\.com$
-(\.|^)transacme\.com$
-(\.|^)trasre\.com$
-(\.|^)trbottle\.com$
-(\.|^)tsigma\.net$
-(\.|^)twibida\.com$
+adsbytranssion.com$ 
+eazzycredit.com$
+gamegamb.com$
+halacredit.com$
+hippoad.com$
+hippocoins.com$
+inonegame.com$
+mobadvent.com$
+shalltry.com$
+transacme.com$
+trasre.com$
+trbottle.com$
+tsigma.net$
+twibida.com$
 
 # src https://domain.glass/tcm.shalltry.com
