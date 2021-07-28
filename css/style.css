@@ -73,3 +73,18 @@
 		min-height: 100vh;
 		overflow: auto;
 	}
+
+/* IMG RESP */
+	/* for mobile device like phone and tablet */
+	#imgresp {
+		width: 100%;
+		height: auto;
+	}
+
+	/* for device like laptop, standard computer, mid-end tv */
+	@media screen and (min-width: 800px) {
+		#imgresp {
+			width: 30em;
+			height: auto;
+		}
+	}
