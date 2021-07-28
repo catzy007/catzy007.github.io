@@ -48,7 +48,7 @@
 	}
 
 	/* for device like laptop, standard computer, mid-end tv */
-	@media screen and (min-width: 800px) {
+	@media screen and (min-width: 768px) {
 		.mycontainer {
 			margin: auto;
 			margin-top: 2vh;
@@ -82,7 +82,7 @@
 	}
 
 	/* for device like laptop, standard computer, mid-end tv */
-	@media screen and (min-width: 800px) {
+	@media screen and (min-width: 768px) {
 		#imgresp {
 			width: 30em;
 			height: auto;
