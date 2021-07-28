@@ -18,20 +18,20 @@ Alright, now how to run OpenVPN inside LXC?
 and how to create LXC container.
 * First, create new container as usual but with one catch, Uncheck `Unprivileged container`
     <p align="center">
-        <img src="./posts/2021-07-09-openvpn-via-proxmox-lxc/01.png" height="250em" alt="img">
+        <img class="imgresp" src="./posts/2021-07-09-openvpn-via-proxmox-lxc/01.png" alt="img">
     </p>
 
 * Next, boot the container and do update/upgrade.
 * Then, power off the container then open Proxmox `shell`.
 * After that, type `nano /etc/pve/lxc/100.conf` change `100` to your container id.
-* Add line below
+* Add line below.
     ```
     lxc.cgroup.devices.allow: c 10:200 rwm
     lxc.mount.entry: /dev/net/tun dev/net/tun none bind,create=file
     ```
 
 * Then do save, exit `ctrl+x, ctrl+y, enter` and start the container back up.
-* Next, install OpenVPN
+* Next, install OpenVPN.
     ```
     curl -O https://raw.githubusercontent.com/angristan/openvpn-install/master/openvpn-install.sh
     chmod +x openvpn-install.sh

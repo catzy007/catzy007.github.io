@@ -17,12 +17,12 @@
 		
 	//get and parse next, prev posts
 		if(postInfo[0] != '#!'){
-			var BtnPrev = "<button class='btn btn-info' onclick=\"location.href='"+postInfo[0]+"';refreshed()\">Previous Post</button>";
+			var BtnPrev = "<button class='btn btn-info btnresp' onclick=\"location.href='"+postInfo[0]+"';refreshed()\">Previous Post</button>";
 			document.getElementById('BtnPrev').innerHTML = BtnPrev;
 			//console.log(BtnPrev);
 		}
 		if(postInfo[1] != '#!'){
-			var BtnNext = "<button class='btn btn-info' onclick=\"location.href='"+postInfo[1]+"';refreshed()\">Next Post</button>"; 				
+			var BtnNext = "<button class='btn btn-info btnresp' onclick=\"location.href='"+postInfo[1]+"';refreshed()\">Next Post</button>"; 				
 			document.getElementById('BtnNext').innerHTML = BtnNext;
 			//console.log(BtnNext);
 		}

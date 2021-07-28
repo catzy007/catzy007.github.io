@@ -76,15 +76,28 @@
 
 /* IMG RESP */
 	/* for mobile device like phone and tablet */
-	#imgresp {
+	.imgresp {
 		width: 100%;
 		height: auto;
 	}
 
 	/* for device like laptop, standard computer, mid-end tv */
 	@media screen and (min-width: 768px) {
-		#imgresp {
+		.imgresp {
 			width: 30em;
 			height: auto;
+		}
+	}
+
+/* BTN RESP */
+	/* for mobile device like phone and tablet */
+	.btnresp {
+		width: 100%;
+	}
+
+	/* for device like laptop, standard computer, mid-end tv */
+	@media screen and (min-width: 768px) {
+		.btnresp {
+			width: auto;
 		}
 	}
