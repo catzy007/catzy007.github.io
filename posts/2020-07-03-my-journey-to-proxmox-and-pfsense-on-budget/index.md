@@ -25,7 +25,7 @@ so the processor choice is little limited. You can look at the compatibility lis
 only find two processors that are reasonably 
 priced which is `Athlon 64 X2 TK-55` and `Turion 64 X2 TL-50`.
 <p align="center">
-	<img class="imgresp" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/1.jpg" alt="img1">
+	<img class="imgrespXS" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/1.jpg" alt="img1">
 </p>
 
 The first is the `Athlon TK-55`, i ordered it and came tomorrow afternoon. I pop the cover off, undo the 
@@ -34,13 +34,13 @@ the CPU is faulty, i upgrade the bios, and it doesn't support the CPU, or i do s
 fried the CPU. I don't know it just works when it wants, and doesn't when it won't. The good thing is it just 
 6USD CPU so yeah not a big deal. But i kinda hope it works in the first run (just hoping).
 <p align="center">
-	<img class="imgresp" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/2.jpg" alt="img2">
+	<img class="imgrespXS" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/2.jpg" alt="img2">
 </p>
 
 The Final processor i use is `Turion 64 X2 TL-50` which i got for around 4USD, it works in the first time and 
 still working (at least when this post is written it still do). Yeah, it basically works just fine
 <p align="center">
-	<img class="imgresp" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/3.png" alt="img3">
+	<img class="imgrespS" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/3.png" alt="img3">
 </p>
 
 The problem about this processor for me is actually found one. They aren't that expensive (yet) but finding one 
@@ -55,7 +55,7 @@ Okay it isn't as simple, but you got the idea. Which means that we **MUST** use 
 The next one is power supply. The included supply only comes with around 50W of power. If you plug a lot of things, you 
 should consider upgrading you power supply.
 <p align="center">
-	<img class="imgresp" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/4.jpg" alt="img4">
+	<img class="imgrespXS" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/4.jpg" alt="img4">
 </p>
 
 <br>
@@ -71,8 +71,8 @@ For storage, my system got 2 GB 44 pin IDE Flash memory which is basically earl
 of raw storage in 2020 won't get you anywhere. My first idea is using `44 pin IDE to SATA converter` and uses random 
 SATA SSD, the adapter itself costs me around 10 USD shipped from China. Don't forget to get 44 pin cable.
 <p align="center">
-	<img class="imgresp" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/5.jpg" alt="img5">
-	<img class="imgresp" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/6.jpg" alt="img6">
+	<img class="imgrespS" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/5.jpg" alt="img5">
+	<img class="imgrespS" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/6.jpg" alt="img6">
 </p>
 As you can see in the red marked image, it should be jumper. For my purpose, i just unplug the jumper to make it work. 
 I think if you put the jumper on, it work in SATA to IDE mode and other way around.
@@ -80,24 +80,24 @@ I think if you put the jumper on, it work in SATA to IDE mode and other way arou
 My second idea is to use generic USB to SATA adapter. It is really cheap around 5 USD and i got it from my local 
 computer store.
 <p align="center">
-	<img class="imgresp" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/7.jpg" alt="img7">
+	<img class="imgrespS" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/7.jpg" alt="img7">
 </p>
 
 Okay now let's see some speed test result.
 <p align="center">
-	<img class="imgresp" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/8.png" alt="img8">
+	<img class="imgrespS" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/8.png" alt="img8">
 	<br>
 	<span>This is my random chinese SSD i plugged into my laptop via USB 3.0</span> 
 	<br><br>
-	<img class="imgresp" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/9.png" alt="img9">
+	<img class="imgrespS" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/9.png" alt="img9">
 	<br>
 	<span>Okay this is the built-in 2GB SSD that i got from the system</span> 
 	<br><br>
-	<img class="imgresp" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/10.png" alt="img10">
+	<img class="imgrespS" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/10.png" alt="img10">
 	<br>
 	<span>Now this is my SATA ssd connected to 44 pin IDE converter</span> 
 	<br><br>
-	<img class="imgresp" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/11.png" alt="img11">
+	<img class="imgrespS" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/11.png" alt="img11">
 	<br>
 	<span>Then this is my SATA ssd connected to random USB 3.0 to SATA</span> 
 	<br>
@@ -127,7 +127,7 @@ Next install Proxmox. Just follow this wonderful tutorial <https://pve.proxmox.c
 hehe. Okay really their explanation is better than me, and mostly you just do `apt install` so yeah.
 
 <p align="center">
-	<img class="imgresp" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/12.png" alt="img12">
+	<img class="imgrespXL" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/12.png" alt="img12">
 </p>
 
 To access the Proxmox, open `https://your-server-ip-address:8006` and login using `root` and `your-root-password`.
@@ -142,7 +142,7 @@ officially supported <https://docs.netgate.com/pfsense/en/latest/virtualization/
 Okay first, download pfSense ISO image from <https://www.pfsense.org/download/> make sure to download the `CD Image (ISO) Installer` 
 file not the other one.
 <p align="center">
-	<img class="imgresp" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/13.png" alt="img13">
+	<img class="imgrespS" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/13.png" alt="img13">
 </p>
 And copy the ISO to `/var/lib/vz/template/iso`
 
@@ -155,7 +155,7 @@ your pfSense ISO, set CPU as `Default (kvm64)`, add `at least  1024MB` as memory
 Then add second `Network Bridge` and start the VM to install 
 pfSense.
 <p align="center">
-	<img class="imgresp" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/14.png" alt="img14">
+	<img class="imgrespXL" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/14.png" alt="img14">
 </p>
 
 Last, configure pfSense as you need and that's it!
@@ -169,7 +169,7 @@ if the hardware still the same, yes still the same CPU TL-50, 2 GB RAM, 32 GB 
 SATA adapter, same cooler. For the software side of thing, it basically still the same Proxmox sit on 
 top of the Debian installation. 
 <p align="center">
-	<img class="imgresp" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/15.png" alt="img15">
+	<img class="imgrespM" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/15.png" alt="img15">
 </p>
 
 As you can see i actually using more resources than before because i'm trying to run few service in 
@@ -210,7 +210,7 @@ For quite some time i wondering about this system Achilles Heel, which is poor p
 halt when data intensive write happen. This includes creating a new disk image, uploading new image file, 
 or simply doing system and kernel update. 
 <p align="center">
-	<img class="imgresp" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/16.jpg" alt="img">
+	<img class="imgrespS" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/16.jpg" alt="img">
 </p>
 
 My current solution which is adding extra memory or by the extent is to add secondary disk as swap disk 
@@ -222,7 +222,7 @@ What i'm going to do is to test most storage combination to get the best possibl
 port the system have, which is USB 2.0 and 44 Pins IDE. The way i'm going to test this is to use Gnome Disks 
 Utility built in benchmark to test average read, write, and access time of each combination with parameter below.
 <p align="center">
-	<img class="imgresp" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/17.png" alt="img">
+	<img class="imgrespS" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/17.png" alt="img">
 </p>
 
 The combination is
@@ -233,13 +233,13 @@ For ease, i'm going to call C1 as Triangle, C2 as Orico and C3 as DOM.
 
 First, let's get a baseline, Here i'm testing C1 and C2 plug it in to my Asus laptop with USB 3.0 and test it.
 <p align="center">
-	<img class="imgresp" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/18.png" alt="img">
+	<img class="imgrespS" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/18.png" alt="img">
 	<br>
 	<span>Here is C2</span>
 </p>
 
 <p align="center">
-	<img class="imgresp" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/19.png" alt="img">
+	<img class="imgrespS" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/19.png" alt="img">
 	<br>
 	<span>Here is C1</span>
 </p>
@@ -248,19 +248,19 @@ As you can see there is a lot of difference between Orico adapter and Triangle a
 can't deliver the speed it advertises which is only 36 MBPS instead of 300MBPS, it also fluctuates more. Next test 
 is USB 2.0 in the thin client system.
 <p align="center">
-	<img class="imgresp" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/20.png" alt="img">
+	<img class="imgrespS" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/20.png" alt="img">
 	<br>
 	<span>Here is C2</span>
 </p>
 
 <p align="center">
-	<img class="imgresp" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/21.png" alt="img">
+	<img class="imgrespS" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/21.png" alt="img">
 	<br>
 	<span>Here is C1</span>
 </p>
 
 <p align="center">
-	<img class="imgresp" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/22.png" alt="img">
+	<img class="imgrespS" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/22.png" alt="img">
 	<br>
 	<span>Here is C3</span>
 </p>

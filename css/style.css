@@ -76,15 +76,75 @@
 
 /* IMG RESP */
 	/* for mobile device like phone and tablet */
-	.imgresp {
+	.imgrespXXL {
 		width: 100%;
+		height: auto;
+	}
+
+	.imgrespXL {
+		width: 100%;
+		height: auto;
+	}
+
+	.imgrespL {
+		width: 100%;
+		height: auto;
+	}
+
+	.imgrespM {
+		width: 100%;
+		height: auto;
+	}
+
+	.imgrespS {
+		width: 100%;
+		height: auto;
+	}
+
+	.imgrespXS {
+		width: 75%;
+		height: auto;
+	}
+
+	.imgrespXXS {
+		width: 50%;
 		height: auto;
 	}
 
 	/* for device like laptop, standard computer, mid-end tv */
 	@media screen and (min-width: 768px) {
-		.imgresp {
+		.imgrespXXL {
+			width: 60em;
+			height: auto;
+		}
+	
+		.imgrespXL {
+			width: 50em;
+			height: auto;
+		}
+
+		.imgrespL {
+			width: 40em;
+			height: auto;
+		}
+
+		.imgrespM {
+			width: 35em;
+			height: auto;
+		}
+
+		.imgrespS {
 			width: 30em;
+			height: auto;
+		}
+
+		.imgrespXS {
+			width: 20em;
+			height: auto;
+		}
+
+		.imgrespXXS {
+			width: 10em;
 			height: auto;
 		}
 	}
