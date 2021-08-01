@@ -48,5 +48,6 @@
 2021-05-22-My-Journey-Dealing-With-Mechanical-Keyboard-With-SMK-Alps-Compatible-Switch
 2021-06-10-Repurpose-Old-Thin-Client-As-DOS-Gaming-System
 2021-07-09-OpenVPN-via-Proxmox-LXC
+2021-08-03-Dealing-With-Laggy-YouTube-Video
 
 2020-07-03-My-Journey-To-Proxmox-and-pfSense-On-Budget

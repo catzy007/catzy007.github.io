@@ -16,7 +16,7 @@ doesn't work, maybe some day i can get Sound Blaster Live or something like that
 
 <br>
 <p align="center">
-    <img src="./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/2.jpg" height="400em" alt="img2">
+    <img class="imgrespS" src="./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/2.jpg" height="400em" alt="img2">
 </p>
 After few days i't arrive i just plug it to Windows 10 64Bit system and nothing. Then i actually 
 remember something really important "Windows device is using proprietary driver" so yeah here 
@@ -26,7 +26,7 @@ recompile the driver to 64Bit.
 
 <br>
 <p align="center">
-    <img src="./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/3.jpg" height="300em" alt="img3">
+    <img class="imgrespM" src="./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/3.jpg" height="300em" alt="img3">
 </p>
 Other alternative is of course Linux which basically runs everything. I use Lubuntu 18.04 
 and Ubuntu 20.04 and it works just fine. And the chip itself is lsted in ALSA project 
@@ -45,7 +45,7 @@ the problematic port, everything work just fine.
 
 <br>
 <p align="center">
-    <img src="./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/meme.jpeg" height="200em" alt="meme">
+    <img class="imgrespXS" src="./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/meme.jpeg" height="200em" alt="meme">
     <br>
     <a href="https://makeameme.org/meme/virtualize-all-the">makeameme.org</a>
 </p>
@@ -60,7 +60,7 @@ genirq: Flags mismatch irq 18. 00000000 (vfio-intx(0000:01:04.0)) vs. 00000080 (
 The way i solve it is disabling some USB controller in the motherboard from BIOS. Then after everything 
 is clear, it work just fine.
 <p align="center">
-    <img src="./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/1.png" height="400em" alt="img1">
+    <img class="imgrespXL" src="./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/1.png" height="400em" alt="img1">
 </p>
 
 <br>
@@ -203,7 +203,7 @@ Similar process, but you have to manually change boot order instead of changing 
 * Here my libvirt [XML](./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/win95.xml)
 
 <p align="center">
-    <img src="./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/4.png" height="400em" alt="img4">
+    <img class="imgrespXL" src="./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/4.png" height="400em" alt="img4">
 </p>
 
 Then after that i just play DOS game in Win95 DOS window mode and no sound, I reboot to DOS mode still no sound, 
@@ -221,7 +221,7 @@ After having a some free time from mid-test, i decided to unplug my SB Audigy an
 running it in DOS 6.22 with KVM acceleration will make a difference.
 
 <p align="center">
-    <img src="./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/5.png" height="400em" alt="img5">
+    <img class="imgrespM" src="./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/5.png" height="400em" alt="img5">
 </p>
 
 The system spec is similar as win95 with single core CPU, 128 megs RAM, 500 megs HDD, but in KVM instead of TCG. 
@@ -229,20 +229,20 @@ Then i use [Phils MS-DOS starter pack](https://www.philscomputerlab.com/ms-dos-s
 mouse and extended memory support.
 
 <p align="center">
-    <img src="./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/6.png" height="400em" alt="img6">
+    <img class="imgrespM" src="./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/6.png" height="400em" alt="img6">
 </p>
 
 Then i just use `setupds/s` then `dsdma` and still nothing, then i just run setupds and simply test the sound output, 
 the Native 16 bit output is working just fine. The SB mode is disabled or greyed out and the FM mode throw a error.
 
 <p align="center">
-    <img src="./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/7.png" height="400em" alt="img7">
+    <img class="imgrespM" src="./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/7.png" height="400em" alt="img7">
 </p>
 
 Then i try edit `FIRSTTRY=` in `ds.ini` file, then run `loadtrs.bat` and get this error instead.
 
 <p align="center">
-    <img src="./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/8.png" height="400em" alt="img8">
+    <img class="imgrespM" src="./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/8.png" height="400em" alt="img8">
 </p>
 
 So my take is there is probably a way to make this work, but the effort might not worth at least for me, i think 

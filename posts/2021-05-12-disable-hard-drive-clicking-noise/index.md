@@ -28,48 +28,48 @@ and [Bad Sector](https://en.wikipedia.org/wiki/Bad_sector).
     1. Open `Start` type `Computer Management` enter.
     1. Expand `Task Scheduler` then `right click` on `Task Scheduler Library` and select `Create Basic Task`
     <p align="center">
-        <img src="./posts/2021-05-12-disable-hard-drive-clicking-noise/1.png" height="400em" alt="img1">
+        <img class="imgrespM" src="./posts/2021-05-12-disable-hard-drive-clicking-noise/1.png" height="400em" alt="img1">
     </p>
     1. Fill name with `hdparm`
     <p align="center">
-        <img src="./posts/2021-05-12-disable-hard-drive-clicking-noise/2.png" height="400em" alt="img2">
+        <img class="imgrespM" src="./posts/2021-05-12-disable-hard-drive-clicking-noise/2.png" height="400em" alt="img2">
     </p>
     1. Select trigger as `When I log on`
     <p align="center">
-        <img src="./posts/2021-05-12-disable-hard-drive-clicking-noise/3.png" height="400em" alt="img3">
+        <img class="imgrespM" src="./posts/2021-05-12-disable-hard-drive-clicking-noise/3.png" height="400em" alt="img3">
     </p>
     1. Select action as `Start a program`
     <p align="center">
-        <img src="./posts/2021-05-12-disable-hard-drive-clicking-noise/4.png" height="400em" alt="img4">
+        <img class="imgrespM" src="./posts/2021-05-12-disable-hard-drive-clicking-noise/4.png" height="400em" alt="img4">
     </p>
     1. Fill program/script as `"C:\Program Files (x86)\hdparm\bin\hdparm"` (note quotation mark)
     1. Then fill arguments as `-B 255 hdb` 
         * In my case, my hdd is secondary drive so the corresponding letter is `sdb`, if your drive is primary, set it as `sda`
     <p align="center">
-        <img src="./posts/2021-05-12-disable-hard-drive-clicking-noise/5.png" height="400em" alt="img5">
+        <img class="imgrespM" src="./posts/2021-05-12-disable-hard-drive-clicking-noise/5.png" height="400em" alt="img5">
     </p>
     1. Next, `right click` on your newly created entry and select `properties`
     <p align="center">
-        <img src="./posts/2021-05-12-disable-hard-drive-clicking-noise/6.png" height="400em" alt="img6">
+        <img class="imgrespM" src="./posts/2021-05-12-disable-hard-drive-clicking-noise/6.png" height="400em" alt="img6">
     </p>
     1. In `General` tab, check the `Run with highest privileges`
     <p align="center">
-        <img src="./posts/2021-05-12-disable-hard-drive-clicking-noise/7.png" height="400em" alt="img7">
+        <img class="imgrespM" src="./posts/2021-05-12-disable-hard-drive-clicking-noise/7.png" height="400em" alt="img7">
     </p>
     1. Then in `Trigger` tab, change to `At logon of any user`
     <p align="center">
-        <img src="./posts/2021-05-12-disable-hard-drive-clicking-noise/8.png" height="400em" alt="img8">
+        <img class="imgrespM" src="./posts/2021-05-12-disable-hard-drive-clicking-noise/8.png" height="400em" alt="img8">
     </p>
 * And that's it, restart your computer to see if anything changed.
 * If you really want to make sure, Install [Crystal Disk Info.](https://crystalmark.info/en/software/crystaldiskinfo/)
 * Then go to `Function > Advanced Feature > AAM/APM Control`
 <p align="center">
-    <img src="./posts/2021-05-12-disable-hard-drive-clicking-noise/9.png" height="400em" alt="img9">
+    <img class="imgrespM" src="./posts/2021-05-12-disable-hard-drive-clicking-noise/9.png" height="400em" alt="img9">
 </p>
 
 * If everything works fine, you should see `APM OFF`
 <p align="center">
-    <img src="./posts/2021-05-12-disable-hard-drive-clicking-noise/10.png" height="300em" alt="img10">
+    <img class="imgrespS" src="./posts/2021-05-12-disable-hard-drive-clicking-noise/10.png" height="300em" alt="img10">
 </p>
 
 <br>

@@ -21,7 +21,7 @@ data still there. So what i do is format the disk and everything is mine now. Th
 interesting is that the two different sticker said different thing, so one of them said T5000 
 and the other one said T5700. If any of you need this, look for both keyword.
 <p align="center">
-    <img src="./posts/2021-06-10-repurpose-old-thin-client-as-dos-gaming-system/1.jpg" height="300em" alt="img">
+    <img class="imgrespM" src="./posts/2021-06-10-repurpose-old-thin-client-as-dos-gaming-system/1.jpg" height="300em" alt="img">
 </p>
 
 The specification for this is Transmeta Crusoe TM5800 in my case the clock speed is 733MHz with 
@@ -35,11 +35,11 @@ As far as i can remember, only few companies own x86 license. Intel, AMD, VIA an
 remember. So the way Transmeta achieve this is to translate x86 code to native code then execute it 
 accordingly.
 <p align="center">
-    <img src="./posts/2021-06-10-repurpose-old-thin-client-as-dos-gaming-system/2.jpg" height="300em" alt="img">
+    <img class="imgrespM" src="./posts/2021-06-10-repurpose-old-thin-client-as-dos-gaming-system/2.jpg" height="300em" alt="img">
 </p>
 Here some CPU-Z details <https://valid.x86.fr/ivd4ak>
 <p align="center">
-    <a href="https://valid.x86.fr/ivd4ak"><img src="https://valid.x86.fr/cache/banner/ivd4ak-99.png" alt="img"></a>
+    <a href="https://valid.x86.fr/ivd4ak"><img class="imgrespM" src="https://valid.x86.fr/cache/banner/ivd4ak-99.png" alt="img"></a>
 </p>
 
 Then i change the IDE DOM to 2GB and try to install Windows 98 on it. The problem 
@@ -92,7 +92,7 @@ Thanks to [JazeFox](https://www.vogons.org/viewtopic.php?t=73270) and [PhilsComp
     /VP PCSPK Volume
     ```
 <p align="center">
-    <img src="./posts/2021-06-10-repurpose-old-thin-client-as-dos-gaming-system/5.jpg" height="300em" alt="img">
+    <img class="imgrespM" src="./posts/2021-06-10-repurpose-old-thin-client-as-dos-gaming-system/5.jpg" height="300em" alt="img">
 </p>
 
 ### Using this as Windows 98 machine
@@ -148,9 +148,9 @@ something similar.
 * And that's it.
 * Or if you confused, check this <https://www.youtube.com/watch?v=7_GEsE2_j4Y> (different approach)
 <p align="center">
-    <img src="./posts/2021-06-10-repurpose-old-thin-client-as-dos-gaming-system/3.jpg" height="300em" alt="img">
+    <img class="imgrespM" src="./posts/2021-06-10-repurpose-old-thin-client-as-dos-gaming-system/3.jpg" height="300em" alt="img">
     <br>
-    <img src="./posts/2021-06-10-repurpose-old-thin-client-as-dos-gaming-system/4.jpg" height="400em" alt="img">
+    <img class="imgrespM" src="./posts/2021-06-10-repurpose-old-thin-client-as-dos-gaming-system/4.jpg" height="400em" alt="img">
 </p>
 
 ### Installing Windows 98 Driver
