@@ -128,7 +128,7 @@ to fit your specific configuration.
 
 In my case some smartphone won't detect 5GHz band. By disabling cellular 
 connection using airplane mode or unplugging SIM Card it will detect right 
-SSID and connect just fine.
+SSID and connect just fine. <https://www.ifixit.com/Answers/View/536206/Why+The+phone+Can't+detect+5+Ghz+Wifi>
 
 <br>
 And i think that's it. If you did something similar, i hope the best for you.
