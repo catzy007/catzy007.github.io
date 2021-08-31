@@ -123,7 +123,8 @@ PASSPHRASE=password5Ghz
 USE_PSK=
 ```
 
-You probably need to change `GATEWAY, COUNTRY, SSID, PASSPHRASE`.
+You probably need to change `GATEWAY, COUNTRY, SSID, PASSPHRASE, WIFI_IFACE, INTERNET_IFACE` 
+to fit your specific configuration.
 
 In my case some smartphone won't detect 5GHz band. By disabling cellular 
 connection using airplane mode or unplugging SIM Card it will detect right 
