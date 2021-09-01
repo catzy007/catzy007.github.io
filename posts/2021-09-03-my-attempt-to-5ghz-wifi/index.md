@@ -73,8 +73,8 @@ distros.
 
 After installation complete i create AP for it and it work. After few hours, no 
 device can connect to it anymore. According to <https://www.fastoe.com/blog/install-rtl8812bu-usb-wifi-dongle-on-linux> 
-There is a bug about power management that if the adapter going into power saving 
-mode. To fix it simply follow
+There is a bug about power management, If the adapter going into power saving 
+mode something not good happen. To fix it simply follow
 * `sudo nano /etc/modprobe.d/88x2bu.conf`
 * Change `rtw_power_mgnt=1`
 * To `rtw_power_mgnt=0 rtw_ips_mode=0 rtw_enusbss=0`
@@ -86,7 +86,7 @@ After that, it should work just fine. Check your AP status from `iwconfig`.
 To create AP and simplify my life a little, i'm using <https://github.com/lakinduakash/linux-wifi-hotspot>. 
 ```
 sudo add-apt-repository ppa:lakinduakash/lwh
-sudo apt install linux-wifi-hotspot
+sudo apt install -y linux-wifi-hotspot util-linux procps hostapd iproute2 iw dnsmasq iptables
 ```
 
 Then i'm using `create_ap --config myconfig.conf` command with following config
@@ -126,15 +126,35 @@ USE_PSK=
 You probably need to change `GATEWAY, COUNTRY, SSID, PASSPHRASE, WIFI_IFACE, INTERNET_IFACE` 
 to fit your specific configuration.
 
+<br>
+#### **Things to Keep In Mind**
+
 In my case some smartphone won't detect 5GHz band. By disabling cellular 
 connection using airplane mode or unplugging SIM Card it will detect right 
 SSID and connect just fine. <https://www.ifixit.com/Answers/View/536206/Why+The+phone+Can't+detect+5+Ghz+Wifi>
+
+Then in my system, if i'm using 802.11AC mode the Bit Rate shown as 54 Mb/s. 
+Instead of if i'm using 802.11N, i'm getting 300 Mb/s. To test this, simply change 
+
+```
+IEEE80211N=0
+IEEE80211AC=1
+```
+
+to
+
+```
+IEEE80211N=1
+IEEE80211AC=0
+```
+
+My test uses 5GHZ band at channel 36.
 
 <br>
 And i think that's it. If you did something similar, i hope the best for you.
 
 <br>
-#### **More reading if you need.**
+#### **More Reading If You Need**
 
 <https://github.com/morrownr/88x2bu/blob/5.8.7.4/Bridged_Wireless_Access_Point.md>
 
