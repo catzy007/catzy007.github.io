@@ -131,7 +131,7 @@ to fit your specific configuration.
 
 In my case some smartphone won't detect 5GHz band. By disabling cellular 
 connection using airplane mode or unplugging SIM Card it will detect right 
-SSID and connect just fine. <https://www.ifixit.com/Answers/View/536206/Why+The+phone+Can't+detect+5+Ghz+Wifi>
+SSID and connect just fine [iFixit Why The phone Can't detect 5 Ghz Wifi](https://www.ifixit.com/Answers/View/536206/Why+The+phone+Can't+detect+5+Ghz+Wifi).
 
 Then in my system, if i'm using 802.11AC mode the Bit Rate shown as 54 Mb/s. 
 Instead of if i'm using 802.11N, i'm getting 300 Mb/s. To test this, simply change 
