@@ -34,7 +34,7 @@ list chipset used is `RTL8812BU` and speaking about Linux driver, it had few dri
 but most of them had to be compiled manually.
 
 <p align="center">
-    <img class="imgrespM" src="./posts/2021-09-03-my-attempt-to-5ghz-wifi/01.jpg" alt="img">
+    <img class="imgrespM" src="./posts/2021-09-03-my-attempt-to-5ghz-usb-wifi-access-point/01.jpg" alt="img">
 </p>
 
 <br>
