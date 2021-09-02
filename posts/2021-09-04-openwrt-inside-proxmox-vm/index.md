@@ -43,5 +43,8 @@ and you should get Wi-Fi.
 Or you can create another network bridge with no physical adapter attached to it, add another 
 network to your OpenWrt and attach it to new network bridge. This way, if you create other VM or 
 Container attached to new bridge, you can manage their network from OpenWrt.
+<p align="center">
+    <img class="imgrespL" src="./posts/2021-09-04-openwrt-inside-proxmox-vm/03.png" alt="img">
+</p>
 
 And i think that's it, Good luck and Have Fun.
