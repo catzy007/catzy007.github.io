@@ -1,4 +1,4 @@
-### **My Attempt to 5GHz WIFI**
+### **My Attempt to 5GHz USB WIFI Access Point**
 _Friday, September 3, 2021_
 
 Recently i wanted to try 5GHz AC wifi in my house. But there are some constraints, 
