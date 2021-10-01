@@ -1,7 +1,7 @@
 ### **My Attempt to 5GHz USB WIFI Access Point**
 _Friday, September 3, 2021_
 
-Recently i wanted to try 5GHz AC wifi in my house. But there are some constraints, 
+Recently i wanted to try 5GHz AC Wi-Fi in my house. But there are some constraints, 
 first is space constraint i'm going to deploy this under my TV cabinet and space 
 is premium there. Second is price constraint i don't want to put a lot of money 
 into something that doesn't work. But in the end this backfires a little.
@@ -71,7 +71,7 @@ distros.
 <br>
 #### **AP Creation and Power Workaround**
 
-After installation complete i create AP for it and it work. After few hours, no 
+After installation complete i create AP for it, and it works. After few hours, no 
 device can connect to it anymore. According to <https://www.fastoe.com/blog/install-rtl8812bu-usb-wifi-dongle-on-linux> 
 There is a bug about power management, If the adapter going into power saving 
 mode something not good happen. To fix it simply follow
@@ -159,3 +159,39 @@ And i think that's it. If you did something similar, i hope the best for you.
 <https://github.com/morrownr/88x2bu/blob/5.8.7.4/Bridged_Wireless_Access_Point.md>
 
 <https://linux-hardware.org/index.php?id=usb:0bda-b812>
+
+<br>
+#### **[UPDATE 2021/10/1] Go above and beyond**
+
+Recently or what i mean is few hours ago, i get a breakthrough. I finally 
+able to use 802.11AC mode at 80MHz channel width and 867Mbps throughput. 
+I found this from `morrownr/88x2bu` note about Bridged AP mode <https://github.com/morrownr/88x2bu/blob/5.8.7.4/Bridged_Wireless_Access_Point.md>. 
+In his note, to get the best performance out of `rtl8812au, rtl8814au, and rtl8812bu` 
+chipsets, we need to pass this to `/etc/modprobe.d/88x2bu.conf` parameter.
+```
+rtw_vht_enable=2 rtw_switch_usb_mode=1
+```
+In my case i'm passing `rtw_vht_enable=2 rtw_switch_usb_mode=2`, 
+but it should be fine for my purpose. So what we got?
+
+Using `iwconfig` i managed to get 867Mbps bit rate and other nice info. Interestingly enough, 
+the mode still shown as `802.11bgn` which is not actually the case as you see later.
+
+<p align="center">
+    <img class="imgrespL" src="./posts/2021-09-03-my-attempt-to-5ghz-usb-wifi-access-point/02.jpg" alt="img">
+</p>
+
+Then using [WiFiman](https://play.google.com/store/apps/details?id=com.ubnt.usurvey&hl=in&gl=US) 
+a great mobile apps developed by `Ubiquiti Inc`, so clearly they know what they're doing and highly 
+recommended. From the apps, it has shown that the mode is `802.11ac` and the channel width is `80MHz`
+Awesome.
+
+<p align="center">
+    <img class="imgrespXS" src="./posts/2021-09-03-my-attempt-to-5ghz-usb-wifi-access-point/03.jpg" alt="img">
+</p>
+
+So what we learn here is that a random 5Ghz Wi-Fi adapter can be used as Wi-Fi AP with all 
+the tricks and quirks that needed to make it works. In my case, i finally managed to get 867Mbps 
+bit rate and learn few things along the way. My set-up still has issues like DHCP is detached from 
+AP after few days or system reset and the AP is missing altogether after certain amount of time. 
+Maybe this is caused by using USB 2.0 port instead of USB 3.0.
