@@ -164,7 +164,7 @@ And i think that's it. If you did something similar, i hope the best for you.
 #### **[UPDATE 2021/10/1] Go above and beyond**
 
 Recently or what i mean is few hours ago, i get a breakthrough. I finally 
-able to use 802.11AC mode at 80MHz channel width and 867Mbps throughput. 
+able to use 802.11AC mode at 80MHz channel width and 867Mbps bit rate. 
 I found this from `morrownr/88x2bu` note about Bridged AP mode <https://github.com/morrownr/88x2bu/blob/5.8.7.4/Bridged_Wireless_Access_Point.md>. 
 In his note, to get the best performance out of `rtl8812au, rtl8814au, and rtl8812bu` 
 chipsets, we need to pass this to `/etc/modprobe.d/88x2bu.conf` parameter.
