@@ -71,3 +71,30 @@ maybe the kernal is damaged from other suspicious firmware IDK the point is it n
 i might try other method instead. Check 
 [linfoxdomain flashcart mirror](https://www.linfoxdomain.com/nintendo/ds/)
 
+The next thing i tried is to boot a custom firmware from SD Card. The way it works is to 
+use a memory buffer overflow exploit found in photo apps metadata sound fancy right? You can 
+follow [dsi.cfw.guide](https://dsi.cfw.guide/) tutorial. Just prepare a SD Card, format it 
+to FAT32, download pit.bin to match your firmware version, and then create a folder with 
+specific structure, put pit.bin inside, get and put TWiLightMenu in the SD Card, and it should 
+ready to go. 
+
+To launch the system, Open Camera Apps, go to Album, select SD Card, and it should 
+boot into TWiLightMenu. At this point, you can stop and put "Legally owned ROM files" to 
+the SD Card and play it. This mod is `NOT` permanent, so you can format the SD Card and 
+everything will back to normal, but if you want to do a Homebrew then you can install 
+Unlaunch. Or [Watch this](https://www.youtube.com/watch?v=qW6DDLM56ps)
+
+With TWiLightMenu you can also play GB GBC GBA games using emulators. As for usability, 
+sometimes i use my DSI to play music. You can use included music apps which sound amazing 
+but require you to convert all of your mp3 to MP4-AAC files. I use [VLC](https://www.videolan.org/) 
+to do this and manage to do a batch conversion so i don't have to manually convert hundreds 
+of music file. The only inconvenience that i encounter is that the included music apps 
+while i can play music with earphone plugged in and closed lid, i can't control play pause and 
+next track without opening the lid.
+
+My solution to this is using Homebrew apps called `Moonshell 1.7` this specific apps with 
+this specific version obtained from linfoxdomain. With this apps, i can play mp3 files 
+and do `Hold L` then `Press R` to pause/play and `Hold R` then `Press L` to play next track. 
+The problem is that this app is not stable at all and the output sound is not that good. 
+If you want to try it out, follow [GBAtemp forum post](https://gbatemp.net/threads/moonshell-without-flashcard.547225/)
+
