@@ -44,7 +44,8 @@ Then i look for the Button Switches and get a listing 10 pcs at 1 USD + Shipping
 
 Few days later my switches arrive and i start my disassembly again, then using micro pencil 
 solder tip i desolder the old switches, clean the pad, solder new switches and to my surprise 
-it works.
+it works. One thing to note here is that the new switches feel different from the original 
+but as long as it's working just fine then i'll take it.
 <p align="center">
     <img class="imgrespS" src="./posts/2021-10-18-nintendo-dsi-in-2021/07.jpg" alt="img">
 </p>
@@ -59,4 +60,7 @@ to do a system wipe and try to update the firmware to the latest version.
 </p>
 
 So i just connect it to Wi-Fi and update the system firmware from 1.0 to 1.45 then i go to 
-dsiware and download web browser just to make the system complete.
+dsiware and download web browser just to make the system more useable.
+<p align="center">
+    <img class="imgrespM" src="./posts/2021-10-18-nintendo-dsi-in-2021/10.jpg" alt="img">
+</p>
