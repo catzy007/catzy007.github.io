@@ -64,3 +64,10 @@ dsiware and download web browser just to make the system more useable.
 <p align="center">
     <img class="imgrespM" src="./posts/2021-10-18-nintendo-dsi-in-2021/10.jpg" alt="img">
 </p>
+
+The next thing i tried is R4 card which result nothing so far. I can say that i do all sort 
+of format and firmware combination but still none of them works maybe my R4 flashcart is faulty 
+maybe the kernal is damaged from other suspicious firmware IDK the point is it not working and 
+i might try other method instead. Check 
+[linfoxdomain flashcart mirror](https://www.linfoxdomain.com/nintendo/ds/)
+
