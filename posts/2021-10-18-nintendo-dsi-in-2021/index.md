@@ -62,7 +62,7 @@ to do a system wipe and try to update the firmware to the latest version.
 So i just connect it to Wi-Fi and update the system firmware from 1.0 to 1.45 then i go to 
 dsiware and download web browser just to make the system more useable.
 <p align="center">
-    <img class="imgrespM" src="./posts/2021-10-18-nintendo-dsi-in-2021/10.jpg" alt="img">
+    <img class="imgrespS" src="./posts/2021-10-18-nintendo-dsi-in-2021/10.jpg" alt="img">
 </p>
 
 The next thing i tried is R4 card which result nothing so far. I can say that i do all sort 
@@ -92,9 +92,18 @@ of music file. The only inconvenience that i encounter is that the included musi
 while i can play music with earphone plugged in and closed lid, i can't control play pause and 
 next track without opening the lid.
 
-My solution to this is using Homebrew apps called `Moonshell 1.7` this specific apps with 
+My solution to this is using Homebrew apps called `Moonshell 1.71` this specific apps with 
 this specific version obtained from linfoxdomain. With this apps, i can play mp3 files 
 and do `Hold L` then `Press R` to pause/play and `Hold R` then `Press L` to play next track. 
 The problem is that this app is not stable at all and the output sound is not that good. 
 If you want to try it out, follow [GBAtemp forum post](https://gbatemp.net/threads/moonshell-without-flashcard.547225/)
+<p align="center">
+    <img class="imgrespXL" src="./posts/2021-10-18-nintendo-dsi-in-2021/11.png" alt="img">
+</p>
 
+The last thing i need is Charger (DSI, 3DS, 2DS is the same), Case, and acrylic strap and 
+that's it. Also, here is my vacation picture taken using DSI rear camera, not bad for decade 
+plus camera.
+<p align="center">
+    <img class="imgrespM" src="./posts/2021-10-18-nintendo-dsi-in-2021/12.jpg" alt="img">
+</p>
