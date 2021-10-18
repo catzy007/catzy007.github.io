@@ -136,8 +136,8 @@ To access the Proxmox, open `https://your-server-ip-address:8006` and login usin
 #### **Chapter 4 - pfSense Installation**
 
 Okay now it's come the pfSense part. The installation itself is 
-not as hard because installing pfSense in Proxmox VM was 
-officially supported <https://docs.netgate.com/pfsense/en/latest/virtualization/virtualizing-pfsense-with-proxmox.html>
+not as hard because installing pfSense in Proxmox VM is 
+[officially supported](https://docs.netgate.com/pfsense/en/latest/recipes/virtualize-proxmox-ve.html)
 
 Okay first, download pfSense ISO image from <https://www.pfsense.org/download/> make sure to download the `CD Image (ISO) Installer` 
 file not the other one.
