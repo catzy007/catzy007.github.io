@@ -1,7 +1,7 @@
-### **Nintendo DSI in 2021**
+### **Nintendo DSi in 2021**
 _Monday, October 18, 2021_
 
-Recently, i found interesting listing about Nintendo DSI. It's White DSI with JP language, 
+Recently, i found interesting listing about Nintendo DSi. It's White DSi with JP language, 
 working battery, vibrant screen no crack no dead pixel at least from the picture. 
 The seller said that it just stuck in this Japanese error message, the digitizer 
 doesn't work, the button is not working at the price of 10 USD, i just take it. 
@@ -85,7 +85,7 @@ everything will back to normal, but if you want to do a Homebrew then you can in
 Unlaunch. Or [Watch this](https://www.youtube.com/watch?v=qW6DDLM56ps)
 
 With TWiLightMenu you can also play GB GBC GBA games using emulators. As for usability, 
-sometimes i use my DSI to play music. You can use included music apps which sound amazing 
+sometimes i use my DSi to play music. You can use included music apps which sound amazing 
 but require you to convert all of your mp3 to MP4-AAC files. I use [VLC](https://www.videolan.org/) 
 to do this and manage to do a batch conversion so i don't have to manually convert hundreds 
 of music file. The only inconvenience that i encounter is that the included music apps 
@@ -94,15 +94,15 @@ next track without opening the lid.
 
 My solution to this is using Homebrew apps called `Moonshell 1.71` this specific apps with 
 this specific version obtained from linfoxdomain. With this apps, i can play mp3 files 
-and do `Hold L` then `Press R` to pause/play and `Hold R` then `Press L` to play next track. 
+and do `Hold R` then `Press L` to pause/play and `Hold L` then `Press R` to play next track. 
 The problem is that this app is not stable at all and the output sound is not that good. 
 If you want to try it out, follow [GBAtemp forum post](https://gbatemp.net/threads/moonshell-without-flashcard.547225/)
 <p align="center">
     <img class="imgrespXL" src="./posts/2021-10-18-nintendo-dsi-in-2021/11.png" alt="img">
 </p>
 
-The last thing i need is Charger (DSI, 3DS, 2DS is the same), Case, and acrylic strap and 
-that's it. Also, here is my vacation picture taken using DSI rear camera, not bad for decade 
+The last thing i need is Charger (DSi, 3DS, 2DS uses the same charger), Case, and acrylic strap and 
+that's it. Also, here is my vacation picture taken using DSi rear camera, not bad for decade 
 plus camera.
 <p align="center">
     <img class="imgrespM" src="./posts/2021-10-18-nintendo-dsi-in-2021/12.jpg" alt="img">
