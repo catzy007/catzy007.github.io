@@ -309,7 +309,7 @@ $ mkdir TEST
 
 next, configure nfs server
 ```
-$ sudo nano /etc/export
+$ sudo nano /etc/exports
 ```
 
 fill with
