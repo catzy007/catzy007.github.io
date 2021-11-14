@@ -107,3 +107,42 @@ plus camera.
 <p align="center">
     <img class="imgrespM" src="./posts/2021-10-18-nintendo-dsi-in-2021/12.jpg" alt="img">
 </p>
+
+<br>
+#### **[UPDATE 2021/11/14] Game Cart and Linux**
+
+Few days ago i found a listing about Mario Party DS (JP Version) from local shop. With asking 
+price of 5 USD incl. shipping hey, i'll take it. If it's original i save some money if it's not 
+then fine i'll take it anyways. Then the package arrive and what a great news.
+<p align="center">
+    <img class="imgrespM" src="./posts/2021-10-18-nintendo-dsi-in-2021/13.jpg" alt="img">
+    <br>
+    <img class="imgrespM" src="./posts/2021-10-18-nintendo-dsi-in-2021/14.jpg" alt="img">
+    <br>
+    <img class="imgrespM" src="./posts/2021-10-18-nintendo-dsi-in-2021/15.jpg" alt="img">
+    <br>
+</p>
+
+As far as i can tell, i think it is a original cartridge. It has nice vibrant artwork with right font, 
+right code, no error in DSi. And from some source that i read and watch, the original cart should have 
+a `Plastic Molding Mark` that comes from manufacturing process. As you can see lines above red mark and 
+some kind of slit in the middle. 
+
+I don't know why Nintendo left it and from what i know if you want to make a plastic mold, you need 
+to hire a specialized machine shop, and they can carve the design to stainless steel or aluminium 
+block using CNC machine, manual lathe or something like that, and it costs quite a lot of money. So 
+People who copy the cart usually left it smooth because it doesn't make economic sense to pay extra 
+for little details. Unless they want to make a `Supercopy` or something like that. More info 
+<https://rlaphoenix.github.io/IsMyNDSCartFake/> <>
+<p align="center">
+    <img class="imgrespS" src="./posts/2021-10-18-nintendo-dsi-in-2021/16.jpg" alt="img">
+</p>
+
+The last thing i tried is [DSLinux](https://www.dslinux.org/). It works really well but if you're 
+using DSi then you need to install Unlaunch or use flashcart instead. It has few apps <https://www.dslinux.org/wiki/AppDir.html> 
+and if you can manage to cross-compile your own binary, it will be amazing too. As for me, i need more 
+practical system because i can't really type fast using touch keyboard. But still amazing nonetheless. 
+Oh yeah the default username is `root` and password `uClinux`.
+<p align="center">
+    <img class="imgrespM" src="./posts/2021-10-18-nintendo-dsi-in-2021/17.jpg" alt="img">
+</p>
