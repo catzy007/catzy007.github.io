@@ -116,9 +116,9 @@ price of 5 USD incl. shipping hey, i'll take it. If it's original i save some mo
 then fine i'll take it anyways. Then the package arrive and good news.
 <p align="center">
     <img class="imgrespM" src="./posts/2021-10-18-nintendo-dsi-in-2021/13.jpg" alt="img">
-    <br>
+    <br><br>
     <img class="imgrespM" src="./posts/2021-10-18-nintendo-dsi-in-2021/14.jpg" alt="img">
-    <br>
+    <br><br>
     <img class="imgrespM" src="./posts/2021-10-18-nintendo-dsi-in-2021/15.jpg" alt="img">
     <br>
 </p>
