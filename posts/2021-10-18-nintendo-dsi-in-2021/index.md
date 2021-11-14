@@ -113,7 +113,7 @@ plus camera.
 
 Few days ago i found a listing about Mario Party DS (JP Version) from local shop. With asking 
 price of 5 USD incl. shipping hey, i'll take it. If it's original i save some money if it's not 
-then fine i'll take it anyways. Then the package arrive and what a great news.
+then fine i'll take it anyways. Then the package arrive and good news.
 <p align="center">
     <img class="imgrespM" src="./posts/2021-10-18-nintendo-dsi-in-2021/13.jpg" alt="img">
     <br>
@@ -133,7 +133,7 @@ to hire a specialized machine shop, and they can carve the design to stainless s
 block using CNC machine, manual lathe or something like that, and it costs quite a lot of money. So 
 People who copy the cart usually left it smooth because it doesn't make economic sense to pay extra 
 for little details. Unless they want to make a `Supercopy` or something like that. More info 
-<https://rlaphoenix.github.io/IsMyNDSCartFake/> <>
+<https://rlaphoenix.github.io/IsMyNDSCartFake/> <https://www.youtube.com/watch?v=yNm6cHq3QWE>
 <p align="center">
     <img class="imgrespS" src="./posts/2021-10-18-nintendo-dsi-in-2021/16.jpg" alt="img">
 </p>
