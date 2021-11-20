@@ -4,9 +4,8 @@ _Friday, July 3, 2020_
 Few weeks ago, i come to an online listing. They sell a `HP Thin Client T5730` at around 20 USD, 
 i thought it was really good price. Yeah, you can comment `its not a good deal you dumb` yeah i know 
 i live in region where even 10-year-old computer still hold its price really strong. So i might try 
-to snatch it in. Then i watch video about this thin client from `PhilsComputerLab` 
-<https://www.youtube.com/watch?v=ekRQS-uyJ4Y> and find out that this thin client has upgradeable 
-processor and that would be interesting.
+to snatch it in. Then i watch video about this thin client from [PhilsComputerLab](https://www.youtube.com/watch?v=ekRQS-uyJ4Y) 
+and find out that this thin client has upgradeable processor and that would be interesting.
 
 The feature i was looking from this thin client is 64Bit support. Many newer Ubuntu based distros 
 has dropped support for 32Bit based system. The other thin client `T5740` has intel Atom with 
@@ -20,10 +19,10 @@ Dual Core processor in that, give it 2 GB ram, and anything that can make SATA 
 
 The CPU come with the system is `AMD Sempron 2100+` which is 64Bit single core processor based on AMD 
 K8 microarchitecture which is early x86-x64 implementation. The system itself using Socket S1 Gen 1 `S1g1`, 
-so the processor choice is little limited. You can look at the compatibility list 
-<http://www.cpu-world.com/Related_CPUs/Socket%20S1%20_S1g1__K8.html>. However, in my local area, i can 
-only find two processors that are reasonably 
-priced which is `Athlon 64 X2 TK-55` and `Turion 64 X2 TL-50`.
+so the processor choice is little limited. You can look at the 
+[Compatibility lists](http://www.cpu-world.com/Related_CPUs/Socket%20S1%20_S1g1__K8.html). 
+However, in my local area, i can only find two processors that are reasonably priced which is `Athlon 64 X2 TK-55` 
+and `Turion 64 X2 TL-50`.
 <p align="center">
 	<img class="imgrespXS" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/1.jpg" alt="img1">
 </p>
@@ -64,7 +63,8 @@ should consider upgrading you power supply.
 The system i got has one slot of RAM populated with 1 GB of Hynix DDR2 667Mhz. Yeah, just simple swap that with 2 GB 
 of old stock RAM and done! Actually this machine had solder pad for second memory, but you must get correct socket 
 for that, solder that little SMD pad, and solder some resistor and capacitor to make it works. And yes someone has 
-successfully done this. <https://www.parkytowers.me.uk/thin/hp/t5730/mods.shtml> <https://www.phoneservicesupport.com/new-mods-t5730-a-dual-core-64-bit-cpu-pcie-g-card-t3517.html>
+successfully done this. [parkytowers.me.uk](https://www.parkytowers.me.uk/thin/hp/t5730/mods.shtml) amd 
+[phoneservicesupport.com](https://www.phoneservicesupport.com/new-mods-t5730-a-dual-core-64-bit-cpu-pcie-g-card-t3517.html)
 
 
 For storage, my system got 2 GB 44 pin IDE Flash memory which is basically early generation of SLC SSD. But yeah 2 GB 
@@ -119,11 +119,11 @@ and it just won't even detect the bootable and i thought wow installing BSD base
 hard. And then i remembered i've seen pfSense can run inside KVM so i download Proxmox and try to install it. 
 At least the bootable was working fine but after the installation, the system just stuck in BIOS splash screen. 
 I thought what the heck. Then i realize if i plugged my 32 GB `GPT` SSD into the system during boot, it just stuck and 
-the worse part is Proxmox only install in GPT mode. Then i found this <https://www.reddit.com/r/homelab/comments/7knwk7/proxmox_with_mbr/> 
+the worse part is Proxmox only install in GPT mode. Then i found this [Reddit post](https://www.reddit.com/r/homelab/comments/7knwk7/proxmox_with_mbr/) 
 someone posted that i can install Debian in `MBR` then install Proxmox on top and i did just that.
 
 First i install Debian and unfortunately i forgot to uncheck the GUI mode so yeah i had to dealt with that later. 
-Next install Proxmox. Just follow this wonderful tutorial <https://pve.proxmox.com/wiki/Install_Proxmox_VE_on_Debian_Buster> 
+Next install Proxmox. Just follow this [wonderful tutorial](https://pve.proxmox.com/wiki/Install_Proxmox_VE_on_Debian_Buster) 
 hehe. Okay really their explanation is better than me, and mostly you just do `apt install` so yeah.
 
 <p align="center">
@@ -139,7 +139,7 @@ Okay now it's come the pfSense part. The installation itself is
 not as hard because installing pfSense in Proxmox VM is 
 [officially supported](https://docs.netgate.com/pfsense/en/latest/recipes/virtualize-proxmox-ve.html)
 
-Okay first, download pfSense ISO image from <https://www.pfsense.org/download/> make sure to download the `CD Image (ISO) Installer` 
+Okay first, download [pfSense ISO image](https://www.pfsense.org/download/) and make sure to download the `CD Image (ISO) Installer` 
 file not the other one.
 <p align="center">
 	<img class="imgrespS" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/13.png" alt="img13">
