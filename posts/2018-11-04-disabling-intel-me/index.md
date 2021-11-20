@@ -20,19 +20,19 @@ Then i tried the first method but instead of using Hot-air soldering gun to pull
 First disassemble your laptop/pc unplug power, ram, bios battery, basically unplug everything... then find the bios chip by inspecting your motherboard. Mine is cFeon Q64-104HIP
 
 <p align="center">
-	<img src="./posts/2018-11-04-disabling-intel-me/1.jpg" height="300em" alt="My BIOS chip">
+	<img class="imgrespS" src="./posts/2018-11-04-disabling-intel-me/1.jpg" height="300em" alt="My BIOS chip">
 </p>
 
 Next you need to find datasheet for it (just google the chip name + datasheet) ex. "Q64-104HIP datasheet" then look at the pinout. This will be wiring guide for next step! you can read more info too. Some manufacture has different configurations.
 <p align="center">
-	<img src="./posts/2018-11-04-disabling-intel-me/2.jpg" height="300em" alt="datasheet">
+	<img class="imgrespL" src="./posts/2018-11-04-disabling-intel-me/2.jpg" height="300em" alt="datasheet">
 </p>
 
 Then wire everything according to the schematics provided by datasheet, followed by clipping SOP-8 clipper to bios chip.
 <p align="center">
-	<img src="./posts/2018-11-04-disabling-intel-me/3.jpg" height="200em" alt="Schematics">
+	<img class="imgrespS" src="./posts/2018-11-04-disabling-intel-me/3.jpg" height="200em" alt="Schematics">
   <br>
-	<img src="./posts/2018-11-04-disabling-intel-me/4.jpg" height="300em" alt="My setup">
+	<img class="imgrespM" src="./posts/2018-11-04-disabling-intel-me/4.jpg" height="300em" alt="My setup">
 </p> 
  
 My setup. All pin connected to RPI GPIO, WP NC VCC connected to breadboard into 3.3V RPI GPIO
@@ -448,29 +448,29 @@ Cleaning intel me is relatively hard process but fun. I learn a lot from this ex
 
 ### btw you can read some page below for more information
 
-<https://en.wikipedia.org/wiki/Intel_Active_Management_Technology>
+[EN Wiki Intel AMT](https://en.wikipedia.org/wiki/Intel_Active_Management_Technology)
 
-<https://tomvanveen.eu/flashing-bios-chip-raspberry-pi>
+[Flashing BIOS with RPI](https://tomvanveen.eu/flashing-bios-chip-raspberry-pi)
 
-<https://www.flashrom.org/RaspberryPi>
+[RPI FlashROM](https://www.flashrom.org/RaspberryPi)
 
-<http://embedsec.systems/firmware/2016/11/17/neutralize_ME_firmware_on_sandybridge_and_ivybridge.html>
+[Embedsec.systems Neutralize ME Firmware](http://embedsec.systems/firmware/2016/11/17/neutralize_ME_firmware_on_sandybridge_and_ivybridge.html)
 
-<https://hackaday.com/2016/11/28/neutralizing-intels-management-engine/>
+[Hackaday.com Neutralize intel ME](https://hackaday.com/2016/11/28/neutralizing-intels-management-engine/)
 
-<https://github.com/corna/me_cleaner/issues/62>
+[ME_Cleaner issues 62](https://github.com/corna/me_cleaner/issues/62)
 
-<https://github.com/corna/me_cleaner/issues/186>
+[ME_Cleaner issues 186](https://github.com/corna/me_cleaner/issues/186)
 
-<https://github.com/corna/me_cleaner/wiki/How-to-apply-me_cleaner>
+[ME_Cleaner wiki how to apply](https://github.com/corna/me_cleaner/wiki/How-to-apply-me_cleaner)
 
-<https://mail.coreboot.org/pipermail/coreboot/2016-September/082016.html>
+[Coreboot Mail disabling the ME on x230](https://mail.coreboot.org/pipermail/coreboot/2016-September/082016.html)
 
-<http://blog.ptsecurity.com/2017/08/disabling-intel-me.html>
+[Ptsecurity.com disabling intel ME](http://blog.ptsecurity.com/2017/08/disabling-intel-me.html)
 
-<https://puri.sm/learn/intel-me>
+[Learn about intel ME](https://puri.sm/learn/intel-me)
 
-<https://recon.cx/2014/slides/Recon%202014%20Skochinsky.pdf>
+[Intel ME Secrets](https://recon.cx/2014/slides/Recon%202014%20Skochinsky.pdf)
 
-<https://libreboot.org/docs/install/rpi_setup.html>
+[Libreboot RPI Setup](https://libreboot.org/docs/install/rpi_setup.html)
 
