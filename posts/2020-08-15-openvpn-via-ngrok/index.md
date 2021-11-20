@@ -8,7 +8,7 @@ that. System i use for this is basic 2 core computer running Ubuntu Server insid
 You can use almost anything, even Raspberry Pi would work, as long as it stays connected to 
 internet.
 
-Before proceed, make sure you have a ngrok account <https://dashboard.ngrok.com/signup>
+Before proceed, make sure you have a [ngrok account](https://dashboard.ngrok.com/signup)
 
 <br>
 #### Installing dependencies
@@ -47,7 +47,7 @@ Before proceed, make sure you have a ngrok account <https://dashboard.ngrok.com/
 
 <br>
 #### Setting up Ngrok
-* Download Ngrok binary from <https://ngrok.com/download>
+* Download Ngrok binary from [ngrok.com](https://ngrok.com/download)
 * Unzip downloaded file to `/home/nana`
 * Create new dir `/home/nana/.ngrok2`
 * Create `ngrok.yml` file inside `/home/nana/.ngrok2/`
@@ -59,7 +59,7 @@ Before proceed, make sure you have a ngrok account <https://dashboard.ngrok.com/
             addr: 1194
             proto: tcp
     ```
-* Change `<YOUR AUTHTOKEN>` to your ngrok authtoken <https://dashboard.ngrok.com/auth/your-authtoken> 
+* Change `<YOUR AUTHTOKEN>` to your [ngrok authtoken](https://dashboard.ngrok.com/auth/your-authtoken)
 > `KEEP YOUR AUTHTOKEN PRIVATE!`
 
 <br>
@@ -110,11 +110,13 @@ Before proceed, make sure you have a ngrok account <https://dashboard.ngrok.com/
 * Copy `nana.ovpn` file to device (obtained from step Setting up OpenVPN)
 * Open `nana.ovpn` file using your favorite text editor
 * Find line `remote 0.tcp.ngrok.io 1194`
-* Change line to match tunnels url <https://dashboard.ngrok.com/status/tunnels>
+* Change line to match [tunnels url](https://dashboard.ngrok.com/status/tunnels)
 
     ```
-    for example if your tunnel url is    tcp://1.tcp.ngrok.io:15342
-    then change line to                  remote 1.tcp.ngrok.io 15342
+    for example if your tunnel url is
+        tcp://1.tcp.ngrok.io:15342
+    then change line to
+        remote 1.tcp.ngrok.io 15342
     ```
 * Then connect to vpn by doing `sudo openvpn nana.ovpn`
 * Then wait a little and if nothing goes wrong, you should get a message `Initialization Sequence Completed`

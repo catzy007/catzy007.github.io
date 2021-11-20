@@ -63,7 +63,7 @@ should consider upgrading you power supply.
 The system i got has one slot of RAM populated with 1 GB of Hynix DDR2 667Mhz. Yeah, just simple swap that with 2 GB 
 of old stock RAM and done! Actually this machine had solder pad for second memory, but you must get correct socket 
 for that, solder that little SMD pad, and solder some resistor and capacitor to make it works. And yes someone has 
-successfully done this. [parkytowers.me.uk](https://www.parkytowers.me.uk/thin/hp/t5730/mods.shtml) amd 
+successfully done this. Check [parkytowers.me.uk](https://www.parkytowers.me.uk/thin/hp/t5730/mods.shtml) and 
 [phoneservicesupport.com](https://www.phoneservicesupport.com/new-mods-t5730-a-dual-core-64-bit-cpu-pcie-g-card-t3517.html)
 
 
