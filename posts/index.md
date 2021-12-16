@@ -52,5 +52,6 @@
 2021-09-03-My-Attempt-to-5GHz-USB-WIFI-Access-Point
 2021-09-04-OpenWRT-Inside-Proxmox-VM
 2021-10-18-Nintendo-DSi-in-2021
+2021-12-16-Trying-Portable-Cassette-Player-in-2021
 
 2020-07-03-My-Journey-To-Proxmox-and-pfSense-On-Budget
