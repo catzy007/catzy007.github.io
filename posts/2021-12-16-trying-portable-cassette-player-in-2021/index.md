@@ -1,7 +1,8 @@
 ### **Trying Portable Cassette Player in 2021**
 _Thursday, December 16, 2021_
 
-If you live around 80s to 90s, or you watch older movie from that era, you'll find something like this. 
+First, what exactly is Cassette player? If you live around 80s to 90s, or you watch older movie from that era, 
+you'll find something like this. 
 <p align="center">
     <img class="imgrespM" src="./posts/2021-12-16-trying-portable-cassette-player-in-2021/01.jpg" alt="img">
     <br>
