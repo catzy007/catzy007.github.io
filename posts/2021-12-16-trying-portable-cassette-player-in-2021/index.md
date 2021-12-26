@@ -32,8 +32,8 @@ is not that bad unless it is.
 </p>
 
 Starting from the left is Panasonic RX-SX20 including battery adapter but seems like the paint is destroyed 
-by what i think is battery acid. Then in the middle is Sony WM-FX37 which from the outside. Then the last one 
-is Aiwa which is the most interesting for me.
+by what i think is battery acid. Then in the middle is Sony WM-FX37. Then the last one is Aiwa which is the 
+most interesting for me.
 
 Here is my attempt to fix RX-SX20. Some traces clearly broken and with my current capability of fixing things 
 now, i don't think that i can do it. Here is my [iFixit forum post](https://www.ifixit.com/Answers/View/714615/Battery+leak+require+board+level+repair)
