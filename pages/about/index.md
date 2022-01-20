@@ -2,12 +2,14 @@
 
 <br>
 
-### Like my content? give me a coffee or 10 <https://ko-fi.com/catzy007>, or
+### Like my content? give me a coffee or 10
 
 <br>
+<h4 align="center"><a>https://ko-fi.com/catzy007</a></h4>
+<h4 align="center"><a>https://paypal.me/catzy007?country.x=ID&locale.x=en_US</a></h4>
 <h4 align="center">3MaeSaxxfj3r5rZkE53KgPXbqhz13rQC59<strong> BTC (Nicehash)</strong></h4>
 <p align="center">
-	<img src="./pages/about/btc.jpg" height="250px" alt="MXMG address">
+	<img src="./pages/about/btc.jpg" height="250px" alt="btc address">
 </p> 
 
 <br>
