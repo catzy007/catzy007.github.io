@@ -1,5 +1,5 @@
 //set and get web identifier
-var WebsiteName = "Stevia Page";
+var WebsiteName = "Catzy's Blog";
 var disqusShortname = "umbrella-test";
 var copyrightOwner = "Bagus Saputra";
 var disqusID; var disqusUrl;
