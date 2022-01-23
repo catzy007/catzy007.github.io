@@ -1,3 +1,13 @@
+function executeXhr(url, callback) {
+    var xhr = new XMLHttpRequest();
+    xhr.callback = callback;
+	xhr.arguments = Array.prototype.slice.call(arguments, 2);
+	xhr.onload = xhrSuccess;
+    xhr.onerror = xhrError;
+    xhr.open("GET", url, true);
+	xhr.send(null);
+}
+
 function xhrSuccess() { 
 	if (this.status !== 200) {
 		xhrError(this.arguments[0], this.statusText);
@@ -9,25 +19,19 @@ function xhrSuccess() {
 }
 
 function xhrError(type, status) { 
-	console.log(type + " " + this.arguments);
-	setBlogIdentifier("/blog/#!", window.location.href, (this.statusText || status), "en");
+	// console.log(type + " " + this.arguments);
 	console.log("#![" + (this.arguments || type) + "] XMLHttpRequest Error! " + (this.statusText || status));
-	// var pagelog = "<br><br><br><br><br><br><br>\
-	// 	<div align=\"center\">\
-	// 		<h1 class=\"not-found-nmbr\">404</h1>\n\
-	// 		<h1>"+ (this.arguments || type) +" Not Found!</h1>\n\
-	// 		<h3>Sorry the "+ (this.arguments || type) +" you're looking could not be found.</h3>\
-	// 		<h4>["+ (this.arguments || type) +"] XMLHttpRequest Error!</h4>\
-	// 	</div>";
-	// showMarkdown((this.arguments || type), ["#!", "#!", pagelog]);
+	showError((this.arguments || type), (this.statusText || status));
 }
 
-function executeXhr(url, callback) {
-    var xhr = new XMLHttpRequest();
-    xhr.callback = callback;
-	xhr.arguments = Array.prototype.slice.call(arguments, 2);
-	xhr.onload = xhrSuccess;
-    xhr.onerror = xhrError;
-    xhr.open("GET", url, true);
-	xhr.send(null);
+function showError(type, status){
+	var pagelog = "<br><br><br><br><br><br><br>\
+		<div align=\"center\">\
+			<h3 class=\"not-found-nmbr\">404 "+ (this.arguments || type) +" Not Found!</h3>\n\
+			<p>Sorry the "+ (this.arguments || type) +" you're looking could not be found.</p>\
+			<p>["+ (this.arguments || type) +"] XMLHttpRequest Error! \
+			Click <a href='./'>here</a> to come back</p>\
+		</div>\
+		<br><br><br><br><br><br><br><br><br>";
+	document.getElementById('main-content').innerHTML = pagelog;
 }

@@ -16,3 +16,7 @@ function getSlicedTitle(title){
 function getTitleOnly(title){
     return getSlicedTitle(getCleanedTitle(title));
 }
+
+function capitalize(s){
+    return s && s[0].toUpperCase() + s.slice(1);
+}
