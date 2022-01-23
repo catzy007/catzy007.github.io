@@ -17,7 +17,7 @@ function loadHomepageCategory(){
             arrCategory.splice(i,1);
         }
         categoryList+= "<p class=\"clickable\"" +
-                    "onclick=\"location.href='./loader.html#!subcategory-" + 
+                    "onclick=\"location.href='./loader.html?category=" + 
                     arrCategoryL[i] +"'\">" + 
                     arrCategory[i] + "</p>\n";
         // console.log(i + " " + arrCategory[i] + " " + arrCategoryL[i]);

@@ -39,7 +39,7 @@ function loadContentCategory(){
             arrCategory.splice(i,1);
         }
         categoryList+= "<p class=\"clickable\"" +
-                    "onclick=\"location.href='./loader.html#!subcategory-" + 
+                    "onclick=\"location.href='./loader.html?category=" + 
                     arrCategoryL[i] +"'\">" + 
                     arrCategory[i] + "</p>\n";
         // console.log(i + " " + arrCategory[i] + " " + arrCategoryL[i]);
@@ -67,7 +67,6 @@ function loadPageIndex(arrIndex, arrLower, urlRequest, pageRequest){
     document.getElementById("featuredPostImg").src = checkImgExist("./pages/" + pageRequest + "/thumbnail.jpg");
     setSiteIdentifier(pageRequest, urlRequest, capitalize(pageRequest), "en-us");
     for(var i=0; i<arrIndex.length; i++){
-        // pageIndex += "<p>"+arrIndex[i]+"</p>";
         pageIndex = pageIndex.concat("<a href='./loader.html?post="+ arrLower[i] +"'>");
         pageIndex = pageIndex.concat("<p>"+getTitleDate(arrIndex[i])+" - "+getTitleOnly(arrIndex[i])+"</p>");
         pageIndex = pageIndex.concat("</a>");
