@@ -1,2 +1,4 @@
-Kegiatan
-Lomba
+Networking
+Programming
+TipsTricksBasics
+Miscellaneous

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Stevia Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/stevia-style.css">
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/showdown.min.js"></script>
+    <link rel="icon" href='./assets/spinner.gif' type="image/x-icon"/>
+    <script src="./js/website-info.js"></script>
+    <script src="./js/main-engine/xhr-fetcher.js"></script>
+    <script src="./js/main-engine/index-parser.js"></script>
+    <script src="./js/main-engine/title-parser.js"></script>
+    <script src="./js/main-engine/check-image.js"></script>
+    <script src="./js/markdown-parser.js"></script>
+    <script src="./js/content-engine/content-loader.js"></script>
+</head>
+<body>
+<div class="container mycontainer container-min">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Stevia Page</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="../">Home</a></li>
+                    <li><a href="./loader.html">Index</a></li>
+                    <li><a href="./loader.html">Things</a></li>
+                    <li><a href="./loader.html">Contact</a></li>
+                    <li><a href="./loader.html">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <br>
+    <div class="row">
+        <div class="col-sm-8">
+            <div id="featuredPostCard" hidden class="featured-card">
+                <div class="img-thumbnail embed-responsive embed-responsive-4by3">
+                    <img id="featuredPostImg" class="embed-responsive-item" src="./assets/2.png" alt="Featured Posts" width="800" height="600"> 
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="input-group search-container">
+                <input type="text" class="form-control" placeholder="Search.." id="txtSearch"/>
+                <div class="input-group-btn">
+                    <button class="btn" type="submit" onclick="startSearch();">
+                        <span class="fa fa-search"></span>
+                    </button>
+                </div>
+            </div>
+            <br>
+            <h4 class="text-page-color">Category</h4>
+            <div id="categoryList" hidden></div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div id="main-content" class="col-sm-12 content">
+            <h4 class="text-center">
+            Loading Webpages. If nothing happen in 
+            few second, check your connection and 
+            make sure to use latest Chrome 
+            or Firefox web browser.
+            </h4>
+        </div>
+        <div id="Comments" class="col-sm-12">
+            <div id="disqus_thread"></div>
+        </div>
+    </div>
+</div>
+
+<div class="container container-footer">
+    <br><br>
+    <div class="row">
+        <div class="col-sm-12 text-center">
+            <p><script>document.write(new Date().getFullYear()); document.write(" " + getSiteCopyright());</script></p>
+            <p>Made with <a style="color:red">&#9829;</a> using Stevia Page</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    window.onload = function mainLoader(){
+        window.scrollTo(0, 0); 
+        executeXhr("./posts/index.md", loadContentIndex, "POST-INDEX", "latest-post");
+    }
+</script>
+</body>
+</html>

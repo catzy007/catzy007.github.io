@@ -1,4 +1,4 @@
-### **Repurpose Old Thin Client as DOS Gaming System**
+### Repurpose Old Thin Client as DOS Gaming System
 _Thursday, June 10, 2021_
 
 Few weeks ago i need to test my DOS program in bare-metal. So i started looking around 
@@ -49,7 +49,7 @@ install it might not be the most elegant or something, but it goes really well t
 me. Tutorial below will cover using this as MS-DOS machine, and installing 
 Windows 98 as well.
 
-### Using this as MS-DOS machine
+#### Using this as MS-DOS machine
 
 The easiest and in my opinion the most elegant solution for this is to install 
 MS-DOS (in my case i'm using 6.22) inside a virtual machine. Then take the disk 
@@ -67,7 +67,7 @@ If somehow you don't trust me and rather create your own disk image, then follow
 * install MS-DOS to disk image via VM.
 * And that's it.
 
-### Enable SB and Adlib DOS compatibility
+#### Enable SB and Adlib DOS compatibility
 
 Thanks to [JazeFox](https://www.vogons.org/viewtopic.php?t=73270) and [PhilsComputerLab](https://www.youtube.com/watch?v=W4Fv2DwlldI)
 * First, get it [here](https://www.vogons.org/viewtopic.php?t=73270) or [mirror](./posts/2021-06-10-repurpose-old-thin-client-as-dos-gaming-system/VIASBFM.zip).
@@ -95,7 +95,7 @@ Thanks to [JazeFox](https://www.vogons.org/viewtopic.php?t=73270) and [PhilsComp
     <img class="imgrespM" src="./posts/2021-06-10-repurpose-old-thin-client-as-dos-gaming-system/5.jpg" height="300em" alt="img">
 </p>
 
-### Using this as Windows 98 machine
+#### Using this as Windows 98 machine
 
 **This solution is not perfect and easy**. The way i did this is to make a USB 
 MS-DOS bootable, then i format DOM as MS-DOS partition, then copy necessary files 
@@ -153,7 +153,7 @@ something similar.
     <img class="imgrespM" src="./posts/2021-06-10-repurpose-old-thin-client-as-dos-gaming-system/4.jpg" height="400em" alt="img">
 </p>
 
-### Installing Windows 98 Driver
+#### Installing Windows 98 Driver
 
 Just download and install [this driver](https://drive.google.com/file/d/1_qAMr6ya9WrNFGmSSIAg9PoIOa_oht_O/view?usp=sharing). 
 Thanks to [PhilsComputerLab](https://www.philscomputerlab.com/hp-t5710.html) and other source which i'm really sorry i forgot.
