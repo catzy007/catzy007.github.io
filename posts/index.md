@@ -34,6 +34,7 @@
 2020-05-12-Virtual-Webcam-Linux
 2020-05-31-Driver-Forsa-FS-1410-Series-Quanta-SW1
 2020-06-27-Harddisk-Sentinel-Linux
+2020-07-03-My-Journey-To-Proxmox-and-pfSense-On-Budget
 2020-07-21-Kdenlive-Dasar
 2020-08-15-OpenVPN-via-Ngrok
 2020-09-06-Turn-SBC-Into-OpenWRT-Router
@@ -54,4 +55,3 @@
 2021-10-18-Nintendo-DSi-in-2021
 2021-12-16-Trying-Portable-Cassette-Player-in-2021
 
-2020-07-03-My-Journey-To-Proxmox-and-pfSense-On-Budget

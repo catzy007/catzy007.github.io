@@ -1,8 +1,11 @@
-function loadHomepageFeatured(arrIndex, arrLower){
-    document.getElementById("featuredPostCard").onclick = function () { location.href='./loader.html?post=' + arrLower[0] };
-    document.getElementById("featuredPostImg").src = checkImgExist("./posts/" + arrLower[0] + "/thumbnail.jpg");
-    document.getElementById("featuredPostDate").innerHTML = getTitleDate(arrIndex[0]);
-    document.getElementById("featuredPostTitle").innerHTML = getTitleOnly(arrIndex[0]);
+function loadHomepageFeatured(){
+    var text = this.responseText;
+    var featured = text
+    var featuredLower = text.toLowerCase();
+    document.getElementById("featuredPostCard").onclick = function () { location.href='./loader.html?post=' + featuredLower };
+    document.getElementById("featuredPostImg").src = checkImgExist("./posts/" + featuredLower + "/thumbnail.jpg");
+    document.getElementById("featuredPostDate").innerHTML = getTitleDate(featured);
+    document.getElementById("featuredPostTitle").innerHTML = getTitleOnly(featured);
     // arrIndex.splice(0, 1); arrLower.splice(0, 1);
     document.getElementById("featuredPostCard").style.display = 'block';
 }

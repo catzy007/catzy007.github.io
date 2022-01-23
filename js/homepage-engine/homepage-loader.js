@@ -4,7 +4,7 @@ function loadHomepageIndex(){
     var arrLower = parseIndexLower(text);    
     // console.log(arrIndex); console.log(arrLower);
 
-    loadHomepageFeatured(arrIndex, arrLower);
+    executeXhr("./posts/featured.md", loadHomepageFeatured, "FEATURED", "featured");
     loadHomepageLatest(arrIndex, arrLower);
     loadHomepageRecommended(arrIndex, arrLower);
     executeXhr("./pages/category/index.md", loadHomepageCategory, "CATEGORY", "category");
