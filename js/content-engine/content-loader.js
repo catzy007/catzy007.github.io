@@ -2,21 +2,25 @@ function loadContentIndex(){
     var text = this.responseText;
 	var arrIndex = parseIndexArray(text);
     var arrLower = parseIndexLower(text);
-    // console.log(arrIndex); console.log(arrLower);
     var urlRequest = getUrlRequest();
     var pageRequest = urlRequest.split("=");
     var typeRequest = pageRequest[0].split("?");
+    // console.log(arrIndex); console.log(arrLower);
     // console.log(pageRequest); console.log(urlRequest);
     // console.log(typeRequest[1]);
 
     if(pageRequest[1]){
         executeXhr("./pages/category/index.md", loadContentCategory, "CATEGORY", "category");
         if(typeRequest[1] == "post"){
-            document.getElementById("featuredPostImg").src = checkImgExist("./posts/" + pageRequest[1] + "/thumbnail.jpg");
-            loadContentPost(arrIndex, arrLower, urlRequest, pageRequest[1]);
+            loadContentPost(urlRequest, pageRequest[1]);
         }else if(typeRequest[1] == "pages"){
-            document.getElementById("featuredPostImg").src = checkImgExist("./pages/" + pageRequest[1] + "/thumbnail.jpg");
             loadContentPages(urlRequest, pageRequest[1]);
+        }else if(typeRequest[1] == "index"){
+            loadPageIndex(arrIndex, arrLower, urlRequest, pageRequest[1]);
+        }else if(typeRequest[1] == "category"){
+            console.log("category");
+        }else{
+            document.location.href = './';
         }
         document.getElementById("featuredPostCard").style.display = 'block';
         loadContentRecommended(arrIndex, arrLower);
@@ -44,16 +48,31 @@ function loadContentCategory(){
     document.getElementById("categoryList").style.display = 'block';
 }
 
-function loadContentPost(arrIndex, arrLower, urlRequest, pageRequest){
+function loadContentPost(urlRequest, pageRequest){
     var contentPath = "./posts/"+pageRequest+"/index.md";
+    document.getElementById("featuredPostImg").src = checkImgExist("./posts/" + pageRequest + "/thumbnail.jpg");
     setSiteIdentifier(pageRequest, urlRequest, capitalize(getTitleOnly(pageRequest)), "en-us");
     reqParseMarkdown("POST", contentPath);
 }
 
 function loadContentPages(urlRequest, pageRequest){
     var contentPath = "./pages/"+pageRequest+"/index.md";
+    document.getElementById("featuredPostImg").src = checkImgExist("./pages/" + pageRequest + "/thumbnail.jpg");
     setSiteIdentifier(pageRequest, urlRequest, capitalize(pageRequest), "en-us");
     reqParseMarkdown("PAGES", contentPath);
+}
+
+function loadPageIndex(arrIndex, arrLower, urlRequest, pageRequest){
+    var pageIndex = "<h3>Index</h3>";
+    document.getElementById("featuredPostImg").src = checkImgExist("./pages/" + pageRequest + "/thumbnail.jpg");
+    setSiteIdentifier(pageRequest, urlRequest, capitalize(pageRequest), "en-us");
+    for(var i=0; i<arrIndex.length; i++){
+        // pageIndex += "<p>"+arrIndex[i]+"</p>";
+        pageIndex = pageIndex.concat("<a href='./loader.html?post="+ arrLower[i] +"'>");
+        pageIndex = pageIndex.concat("<p>"+getTitleDate(arrIndex[i])+" - "+getTitleOnly(arrIndex[i])+"</p>");
+        pageIndex = pageIndex.concat("</a>");
+    }
+    document.getElementById('main-content').innerHTML = pageIndex;
 }
 
 function loadContentRecommended(arrIndex, arrLower){
