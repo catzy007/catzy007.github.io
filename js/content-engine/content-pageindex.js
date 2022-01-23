@@ -1,5 +1,5 @@
 function loadPageIndex(arrIndex, arrLower, urlRequest, pageRequest){
-    var pageHTML = "<h3>Index</h3>";
+    var pageHTML = "<h4>Index</h4>";
     document.getElementById("featuredPostImg").src = checkImgExist("./pages/" + pageRequest + "/thumbnail.jpg");
     setSiteIdentifier(pageRequest, urlRequest, capitalize("index"), "en-us");
     document.title = getSiteIdentifier()[2];

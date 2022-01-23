@@ -25,7 +25,7 @@ function loadCategoryPage(urlRequest, pageRequest){
 
 function parseCategoryPage(urlRequest, pageRequest){
     var text = this.responseText;
-    var pageHTML = "<h3>"+capitalize(pageRequest)+"</h3>";
+    var pageHTML = "<h4>"+capitalize(pageRequest)+"</h4>";
     var arrCategory = parseIndexArray(text);
     var arrCategoryL = parseIndexLower(text);
     for(var i=0; i<arrCategory.length; i++){
