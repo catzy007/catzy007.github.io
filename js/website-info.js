@@ -2,9 +2,9 @@
 var WebsiteName = "Stevia Page";
 var disqusShortname = "umbrella-test";
 var copyrightOwner = "Bagus Saputra";
-var enableDisqus = false;
 var disqusID; var disqusUrl;
 var disqusTitle; var disqusLang;
+var enableDisqus = false;
 
 function setSiteIdentifier(pageIdentifier, pageUrl, pageTitle, pageLang){
 	disqusID = pageIdentifier;

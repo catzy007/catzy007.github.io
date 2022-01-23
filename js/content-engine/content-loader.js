@@ -3,18 +3,27 @@ function loadContentIndex(){
 	var arrIndex = parseIndexArray(text);
     var arrLower = parseIndexLower(text);
     // console.log(arrIndex); console.log(arrLower);
-
     executeXhr("./pages/category/index.md", loadContentCategory, "CATEGORY", "category");
 
     var urlRequest = getUrlRequest();
     var pageRequest = urlRequest.split("=");
+    var typeRequest = pageRequest[0].split("?");
     // console.log(pageRequest); console.log(urlRequest);
-    if(pageRequest[1]){
-        document.getElementById("featuredPostImg").src = checkImgExist("./posts/" + pageRequest[1] + "/thumbnail.jpg");
-        loadContentPost(arrIndex, arrLower, urlRequest, pageRequest[1]);
-    }
+    console.log(typeRequest[1]);
 
-    document.getElementById("featuredPostCard").style.display = 'block';
+    if(pageRequest[1]){
+        if(typeRequest[1] == "post"){
+            document.getElementById("featuredPostImg").src = checkImgExist("./posts/" + pageRequest[1] + "/thumbnail.jpg");
+            loadContentPost(arrIndex, arrLower, urlRequest, pageRequest[1]);
+        }else if(typeRequest[1] == "pages"){
+            document.getElementById("featuredPostImg").src = checkImgExist("./pages/" + pageRequest[1] + "/thumbnail.jpg");
+            // executeXhr("./pages/"+pageRequest[1]+"/index.md", loadContentPages, "PAGES", "pages");
+            loadContentPages(urlRequest, pageRequest[1]);
+        }
+        document.getElementById("featuredPostCard").style.display = 'block';
+    }else{
+        document.location.href = './';
+    }
 }
 
 function loadContentCategory(){
@@ -45,4 +54,10 @@ function loadContentPost(arrIndex, arrLower, urlRequest, pageRequest){
             reqParseMarkdown("POST", contentPath);
         }
     }
+}
+
+function loadContentPages(urlRequest, pageRequest){
+    var contentPath = "./pages/"+pageRequest+"/index.md";
+    setSiteIdentifier(pageRequest, urlRequest, pageRequest, "en-us");
+    reqParseMarkdown("PAGES", contentPath);
 }

@@ -17,6 +17,8 @@
 
 	//enable comment on post
 		if(type == "POST" && enableComments()){
+			document.getElementById('contentComments').style.display = 'block';
+
 			/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
 			var disqus_shortname = getDisqusShortname();
 			var disqus_identifier = getSiteIdentifier()[0];
