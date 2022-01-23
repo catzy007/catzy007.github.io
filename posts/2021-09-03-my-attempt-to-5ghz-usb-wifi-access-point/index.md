@@ -1,4 +1,4 @@
-### **My Attempt to 5GHz USB WIFI Access Point**
+#### My Attempt to 5GHz USB WIFI Access Point
 _Friday, September 3, 2021_
 
 Recently i wanted to try 5GHz AC Wi-Fi in my house. But there are some constraints, 
@@ -33,9 +33,15 @@ with no box just bubble wrap and no cardboard, at 10 USD what you expect. The se
 list chipset used is `RTL8812BU` and speaking about Linux driver, it had few drivers 
 but most of them had to be compiled manually.
 
-<p align="center">
-    <img class="imgrespM" src="./posts/2021-09-03-my-attempt-to-5ghz-usb-wifi-access-point/01.jpg" alt="img">
-</p>
+<div class="row">
+	<div class=col-sm-3></div>
+	<div class="col-sm-6">
+		<div class="thumbnail">
+			<img class="img-responsive" src="./posts/2021-09-03-my-attempt-to-5ghz-usb-wifi-access-point/01.jpg" alt="img">
+		</div>
+	</div>
+	<div class=col-sm-3></div>
+</div>
 
 <br>
 #### **Initial Testing and Driver Installation**
@@ -177,18 +183,30 @@ but it should be fine for my purpose. So what we got?
 Using `iwconfig` i managed to get 867Mbps bit rate and other nice info. Interestingly enough, 
 the mode still shown as `802.11bgn` which is not actually the case as you see later.
 
-<p align="center">
-    <img class="imgrespL" src="./posts/2021-09-03-my-attempt-to-5ghz-usb-wifi-access-point/02.jpg" alt="img">
-</p>
+<div class="row">
+	<div class=col-sm-2></div>
+	<div class="col-sm-8">
+		<div class="thumbnail">
+			<img class="img-responsive" src="./posts/2021-09-03-my-attempt-to-5ghz-usb-wifi-access-point/02.jpg" alt="img">
+		</div>
+	</div>
+	<div class=col-sm-2></div>
+</div>
 
 Then using [WiFiman](https://play.google.com/store/apps/details?id=com.ubnt.usurvey&hl=in&gl=US) 
 a great mobile apps developed by `Ubiquiti Inc`, so clearly they know what they're doing and highly 
 recommended. From the apps, it has shown that the mode is `802.11ac` and the channel width is `80MHz`
 Awesome.
 
-<p align="center">
-    <img class="imgrespXS" src="./posts/2021-09-03-my-attempt-to-5ghz-usb-wifi-access-point/03.jpg" alt="img">
-</p>
+<div class="row">
+	<div class=col-sm-4></div>
+	<div class="col-sm-4">
+		<div class="thumbnail">
+			<img class="img-responsive" src="./posts/2021-09-03-my-attempt-to-5ghz-usb-wifi-access-point/03.jpg" alt="img">
+		</div>
+	</div>
+	<div class=col-sm-4></div>
+</div>
 
 So what we learn here is that a random 5Ghz Wi-Fi adapter can be used as Wi-Fi AP with all 
 the tricks and quirks that needed to make it works. In my case, i finally managed to get 867Mbps 

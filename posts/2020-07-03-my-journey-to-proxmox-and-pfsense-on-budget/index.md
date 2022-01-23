@@ -1,4 +1,4 @@
-### My Journey To Proxmox and pfSense On Budget
+#### My Journey To Proxmox and pfSense On Budget
 _Friday, July 3, 2020_
 
 Few weeks ago, i come to an online listing. They sell a `HP Thin Client T5730` at around 20 USD, 
@@ -27,7 +27,7 @@ and `Turion 64 X2 TL-50`.
 	<div class=col-sm-4></div>
 	<div class="col-sm-4">
 		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/2.jpg" alt="img2">
+			<img class="img-responsive" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/2.jpg" alt="img">
 		</div>
 	</div>
 	<div class=col-sm-4></div>
@@ -42,7 +42,7 @@ fried the CPU. I don't know it just works when it wants, and doesn't when it won
 	<div class=col-sm-4></div>
 	<div class="col-sm-4">
 		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/2.jpg" alt="img2">
+			<img class="img-responsive" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/2.jpg" alt="img">
 		</div>
 	</div>
 	<div class=col-sm-4></div>
@@ -54,7 +54,7 @@ still working (at least when this post is written it still do). Yeah, it basical
 	<div class=col-sm-2></div>
 	<div class="col-sm-8">
 		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/3.png" alt="img2">
+			<img class="img-responsive" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/3.png" alt="img">
 		</div>
 	</div>
 	<div class=col-sm-2></div>
@@ -75,7 +75,7 @@ should consider upgrading you power supply.
 	<div class=col-sm-4></div>
 	<div class="col-sm-4">
 		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/4.jpg" alt="img2">
+			<img class="img-responsive" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/4.jpg" alt="img">
 		</div>
 	</div>
 	<div class=col-sm-4></div>
@@ -98,7 +98,7 @@ SATA SSD, the adapter itself costs me around 10 USD shipped from China. Don't fo
 	<div class=col-sm-3></div>
 	<div class="col-sm-6">
 		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/5.jpg" alt="img2">
+			<img class="img-responsive" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/5.jpg" alt="img">
 		</div>
 	</div>
 	<div class=col-sm-3></div>
@@ -107,7 +107,7 @@ SATA SSD, the adapter itself costs me around 10 USD shipped from China. Don't fo
 	<div class=col-sm-3></div>
 	<div class="col-sm-6">
 		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/6.jpg" alt="img2">
+			<img class="img-responsive" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/6.jpg" alt="img">
 		</div>
 	</div>
 	<div class=col-sm-3></div>
@@ -121,7 +121,7 @@ computer store.
 	<div class=col-sm-3></div>
 	<div class="col-sm-6">
 		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/7.jpg" alt="img2">
+			<img class="img-responsive" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/7.jpg" alt="img">
 		</div>
 	</div>
 	<div class=col-sm-3></div>
@@ -132,7 +132,7 @@ Okay now let's see some speed test result.
 	<div class=col-sm-3></div>
 	<div class="col-sm-6">
 		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/8.png" alt="img2">
+			<img class="img-responsive" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/8.png" alt="img">
 		<span>This is my random chinese SSD i plugged into my laptop via USB 3.0</span> 
 		</div>
 	</div>
@@ -142,7 +142,7 @@ Okay now let's see some speed test result.
 	<div class=col-sm-3></div>
 	<div class="col-sm-6">
 		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/9.png" alt="img2">
+			<img class="img-responsive" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/9.png" alt="img">
 		<span>Okay this is the built-in 2GB SSD that i got from the system</span> 
 		</div>
 	</div>
@@ -152,7 +152,7 @@ Okay now let's see some speed test result.
 	<div class=col-sm-3></div>
 	<div class="col-sm-6">
 		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/10.png" alt="img2">
+			<img class="img-responsive" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/10.png" alt="img">
 		<span>Now this is my SATA ssd connected to 44 pin IDE converter</span> 
 		</div>
 	</div>
@@ -162,7 +162,7 @@ Okay now let's see some speed test result.
 	<div class=col-sm-3></div>
 	<div class="col-sm-6">
 		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/11.png" alt="img2">
+			<img class="img-responsive" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/11.png" alt="img">
 		<span>Then this is my SATA ssd connected to random USB 3.0 to SATA</span> 
 		</div>
 	</div>
@@ -197,7 +197,7 @@ hehe. Okay really their explanation is better than me, and mostly you just do `a
 	<div class=col-sm-2></div>
 	<div class="col-sm-8">
 		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/12.png" alt="img2">
+			<img class="img-responsive" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/12.png" alt="img">
 		</div>
 	</div>
 	<div class=col-sm-2></div>
@@ -218,7 +218,7 @@ file not the other one.
 	<div class=col-sm-4></div>
 	<div class="col-sm-4">
 		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/13.png" alt="img2">
+			<img class="img-responsive" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/13.png" alt="img">
 		</div>
 	</div>
 	<div class=col-sm-4></div>
@@ -237,7 +237,7 @@ pfSense.
 	<div class=col-sm-2></div>
 	<div class="col-sm-8">
 		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/14.png" alt="img2">
+			<img class="img-responsive" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/14.png" alt="img">
 		</div>
 	</div>
 	<div class=col-sm-2></div>
@@ -257,7 +257,7 @@ top of the Debian installation.
 	<div class=col-sm-3></div>
 	<div class="col-sm-6">
 		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/15.png" alt="img2">
+			<img class="img-responsive" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/15.png" alt="img">
 		</div>
 	</div>
 	<div class=col-sm-3></div>
@@ -304,7 +304,7 @@ or simply doing system and kernel update.
 	<div class=col-sm-3></div>
 	<div class="col-sm-6">
 		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/16.jpg" alt="img2">
+			<img class="img-responsive" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/16.jpg" alt="img">
 		</div>
 	</div>
 	<div class=col-sm-3></div>
@@ -322,7 +322,7 @@ Utility built in benchmark to test average read, write, and access time of each 
 	<div class=col-sm-3></div>
 	<div class="col-sm-6">
 		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/17.png" alt="img2">
+			<img class="img-responsive" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/17.png" alt="img">
 		</div>
 	</div>
 	<div class=col-sm-3></div>
@@ -339,7 +339,7 @@ First, let's get a baseline, Here i'm testing C1 and C2 plug it in to my Asus la
 	<div class=col-sm-3></div>
 	<div class="col-sm-6">
 		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/18.png" alt="img2">
+			<img class="img-responsive" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/18.png" alt="img">
 		<span>Here is C2</span>
 		</div>
 	</div>
@@ -350,7 +350,7 @@ First, let's get a baseline, Here i'm testing C1 and C2 plug it in to my Asus la
 	<div class=col-sm-3></div>
 	<div class="col-sm-6">
 		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/19.png" alt="img2">
+			<img class="img-responsive" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/19.png" alt="img">
 		<span>Here is C1</span>
 		</div>
 	</div>
@@ -364,7 +364,7 @@ is USB 2.0 in the thin client system.
 	<div class=col-sm-3></div>
 	<div class="col-sm-6">
 		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/20.png" alt="img2">
+			<img class="img-responsive" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/20.png" alt="img">
 		<span>Here is C2</span>
 		</div>
 	</div>
@@ -375,7 +375,7 @@ is USB 2.0 in the thin client system.
 	<div class=col-sm-3></div>
 	<div class="col-sm-6">
 		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/21.png" alt="img2">
+			<img class="img-responsive" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/21.png" alt="img">
 		<span>Here is C1</span>
 		</div>
 	</div>
@@ -386,7 +386,7 @@ is USB 2.0 in the thin client system.
 	<div class=col-sm-3></div>
 	<div class="col-sm-6">
 		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/22.png" alt="img2">
+			<img class="img-responsive" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/22.png" alt="img">
 			<span>Here is C3</span>
 		</div>
 	</div>

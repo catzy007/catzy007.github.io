@@ -1,7 +1,7 @@
-### **Dealing With Laggy YouTube Video**
+#### Dealing With Laggy YouTube Video
 _Tuesday, August 3, 2021_
 
-#### **PC Troubleshooting 101 Series** 
+##### PC Troubleshooting 101 Series 
 
 It's a nice and slow Sunday morning, and you suddenly got a call from your friend about 
 ooh why suddenly laptop can't play YouTube properly, or it's laggy or something like that. 
@@ -20,9 +20,15 @@ browser, and watch the memory usage. If it's using more than 80% of the system m
 then you have a problem. The solution is to upgrade the system memory to 4 or 8 GB or 
 just change the device entirely.
 
-<p align="center">
-    <img class="imgrespM" src="./posts/2021-08-03-dealing-with-laggy-youtube-video/01.png" alt="img">
-</p>
+<div class="row">
+	<div class=col-sm-2></div>
+	<div class="col-sm-8">
+		<div class="thumbnail">
+			<img class="img-responsive" src="./posts/2021-08-03-dealing-with-laggy-youtube-video/01.png" alt="img">
+		</div>
+	</div>
+	<div class=col-sm-2></div>
+</div>
 
 * The third one is simply a Video Decoder in the device can't decode codec used by YouTube 
 videos. So basically YouTube is trying to compress the video with smaller data size while 

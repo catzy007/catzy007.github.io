@@ -1,4 +1,4 @@
-### **OpenWrt inside Proxmox VM**
+#### OpenWrt inside Proxmox VM
 _Saturday, September 4, 2021_
 
 Recently i wanted to consolidate all my network stuff into single box. Which contain 
@@ -15,9 +15,15 @@ to create a VM inside Proxmox.
 
 * At the `OS` tab, select `Do not use any media`
 * Then at `Hard Disk` tab, Set `Disk size` as `1GB` and `Format` as `Raw disk image`
-<p align="center">
-    <img class="imgrespS" src="./posts/2021-09-04-openwrt-inside-proxmox-vm/01.png" alt="img">
-</p>
+<div class="row">
+	<div class=col-sm-3></div>
+	<div class="col-sm-6">
+		<div class="thumbnail">
+			<img class="img-responsive" src="./posts/2021-09-04-openwrt-inside-proxmox-vm/01.png" alt="img">
+		</div>
+	</div>
+	<div class=col-sm-3></div>
+</div>
 * At the `Network` tab, change `Model` to `Intel E1000`
 * Then confirm, finish and `Do not boot` the VM yet.
 
@@ -33,9 +39,15 @@ Next, use `wget <downloadlink>` to download OpenWrt disk image and extract it us
 Then delete `VM-<VMID>-disk-0.raw` and replace it with OpenWrt disk image.
 
 Last, boot it up and if everything goes well, OpenWrt should work right away.
-<p align="center">
-    <img class="imgrespXL" src="./posts/2021-09-04-openwrt-inside-proxmox-vm/02.png" alt="img">
-</p>
+<div class="row">
+	<div class=col-sm-2></div>
+	<div class="col-sm-8">
+		<div class="thumbnail">
+			<img class="img-responsive" src="./posts/2021-09-04-openwrt-inside-proxmox-vm/02.png" alt="img">
+		</div>
+	</div>
+	<div class=col-sm-32></div>
+</div>
 
 If you need, you can attach USB Wi-Fi Adapter, set it as USB Passthrough, Install some `kmod` package, 
 and you should get Wi-Fi.
@@ -43,8 +55,14 @@ and you should get Wi-Fi.
 Or you can create another network bridge with no physical adapter attached to it, add another 
 network to your OpenWrt and attach it to new network bridge. This way, if you create other VM or 
 Container attached to new bridge, you can manage their network from OpenWrt.
-<p align="center">
-    <img class="imgrespL" src="./posts/2021-09-04-openwrt-inside-proxmox-vm/03.png" alt="img">
-</p>
+<div class="row">
+	<div class=col-sm-2></div>
+	<div class="col-sm-8">
+		<div class="thumbnail">
+			<img class="img-responsive" src="./posts/2021-09-04-openwrt-inside-proxmox-vm/03.png" alt="img">
+		</div>
+	</div>
+	<div class=col-sm-2></div>
+</div>
 
 And i think that's it, Good luck and Have Fun.
