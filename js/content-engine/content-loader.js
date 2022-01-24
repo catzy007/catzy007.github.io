@@ -20,7 +20,8 @@ function loadContentIndex(){
         }else if(typeRequest[1] == "category"){
             loadCategoryPage(urlRequest, pageRequest[1]);
         }else if(typeRequest[1] == "search"){
-            console.log("search");
+            //require search-engine/search.js
+            loadContentSearch(arrIndex, arrLower, urlRequest, pageRequest[1]);
         }else{
             document.location.href = './';
         }

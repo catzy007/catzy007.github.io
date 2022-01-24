@@ -17,6 +17,7 @@
     <script src="./js/main-engine/title-parser.js"></script>
     <script src="./js/main-engine/check-image.js"></script>
     <script src="./js/main-engine/markdown-parser.js"></script>
+    <script src="./js/search-engine/search.js"></script>
     <script src="./js/content-engine/content-loader.js"></script>
     <script src="./js/content-engine/content-category.js"></script>
     <script src="./js/content-engine/content-post-page.js"></script>
@@ -58,7 +59,7 @@
         </div>
         <div class="col-sm-4">
             <div class="input-group search-container">
-                <input type="text" class="form-control" placeholder="Search.." id="txtSearch"/>
+                <input id="searchInput" type="text" class="form-control" placeholder="Search.."/>
                 <div class="input-group-btn">
                     <button class="btn" type="submit" onclick="startSearch();">
                         <span class="fa fa-search"></span>
