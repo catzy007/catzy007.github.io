@@ -1,4 +1,4 @@
-### **OpenVPN via Proxmox LXC**
+#### OpenVPN via Proxmox LXC
 _Friday, July 9, 2021_
 
 Recently, i'm trying to run most service on my home server using 
@@ -17,9 +17,15 @@ Alright, now how to run OpenVPN inside LXC?
 * In this case, i assume that you already know how to add LXC image to Proxmox 
 and how to create LXC container.
 * First, create new container as usual but with one catch, Uncheck `Unprivileged container`
-    <p align="center">
-        <img class="imgrespS" src="./posts/2021-07-09-openvpn-via-proxmox-lxc/01.png" alt="img">
-    </p>
+<div class="row">
+	<div class="col-sm-3"></div>
+	<div class="col-sm-6">
+		<div class="thumbnail">
+			<img class="img-responsive" src="./posts/2021-07-09-openvpn-via-proxmox-lxc/01.png" alt="img">
+		</div>
+	</div>
+	<div class="col-sm-3"></div>
+</div>
 
 * Next, boot the container and do update/upgrade.
 * Then, power off the container then open Proxmox `shell`.

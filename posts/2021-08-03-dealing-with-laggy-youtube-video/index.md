@@ -21,13 +21,13 @@ then you have a problem. The solution is to upgrade the system memory to 4 or 8 
 just change the device entirely.
 
 <div class="row">
-	<div class=col-sm-2></div>
+	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
 		<div class="thumbnail">
 			<img class="img-responsive" src="./posts/2021-08-03-dealing-with-laggy-youtube-video/01.png" alt="img">
 		</div>
 	</div>
-	<div class=col-sm-2></div>
+	<div class="col-sm-2"></div>
 </div>
 
 * The third one is simply a Video Decoder in the device can't decode codec used by YouTube 

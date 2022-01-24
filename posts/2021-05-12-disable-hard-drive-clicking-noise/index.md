@@ -1,7 +1,7 @@
-### **Disable Hard Drive Clicking Noise**
+#### Disable Hard Drive Clicking Noise
 _Wednesday, May 12, 2021_
 
-#### **PC Troubleshooting 101 Series** 
+#### PC Troubleshooting 101 Series 
 
 You wake up in the morning, getting ready to do some work, you sat down in front of the computer 
 with your fresh new hard drive installed and wait, why is the hard drive make clicking noises?
@@ -27,54 +27,114 @@ and [Bad Sector](https://en.wikipedia.org/wiki/Bad_sector).
 * Next, add a startup system to make sure `hdparm` run immediately after Windows boot.
     1. Open `Start` type `Computer Management` enter.
     1. Expand `Task Scheduler` then `right click` on `Task Scheduler Library` and select `Create Basic Task`
-    <p align="center">
-        <img class="imgrespM" src="./posts/2021-05-12-disable-hard-drive-clicking-noise/1.png" height="400em" alt="img1">
-    </p>
+    <div class="row">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-6">
+            <div class="thumbnail">
+                <img class="img-responsive" src="./posts/2021-05-12-disable-hard-drive-clicking-noise/1.png" alt="img">
+            </div>
+        </div>
+        <div class="col-sm-3"></div>
+    </div>
     1. Fill name with `hdparm`
-    <p align="center">
-        <img class="imgrespM" src="./posts/2021-05-12-disable-hard-drive-clicking-noise/2.png" height="400em" alt="img2">
-    </p>
+    <div class="row">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-6">
+            <div class="thumbnail">
+                <img class="img-responsive" src="./posts/2021-05-12-disable-hard-drive-clicking-noise/2.png" alt="img">
+            </div>
+        </div>
+        <div class="col-sm-3"></div>
+    </div>
     1. Select trigger as `When I log on`
-    <p align="center">
-        <img class="imgrespM" src="./posts/2021-05-12-disable-hard-drive-clicking-noise/3.png" height="400em" alt="img3">
-    </p>
+    <div class="row">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-6">
+            <div class="thumbnail">
+                <img class="img-responsive" src="./posts/2021-05-12-disable-hard-drive-clicking-noise/3.png" alt="img">
+            </div>
+        </div>
+        <div class="col-sm-3"></div>
+    </div>
     1. Select action as `Start a program`
-    <p align="center">
-        <img class="imgrespM" src="./posts/2021-05-12-disable-hard-drive-clicking-noise/4.png" height="400em" alt="img4">
-    </p>
+    <div class="row">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-6">
+            <div class="thumbnail">
+                <img class="img-responsive" src="./posts/2021-05-12-disable-hard-drive-clicking-noise/4.png" alt="img">
+            </div>
+        </div>
+        <div class="col-sm-3"></div>
+    </div>
     1. Fill program/script as `"C:\Program Files (x86)\hdparm\bin\hdparm"` (note quotation mark)
     1. Then fill arguments as `-B 255 hdb` 
         * In my case, my hdd is secondary drive so the corresponding letter is `sdb`, if your drive is primary, set it as `sda`
-    <p align="center">
-        <img class="imgrespM" src="./posts/2021-05-12-disable-hard-drive-clicking-noise/5.png" height="400em" alt="img5">
-    </p>
+    <div class="row">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-6">
+            <div class="thumbnail">
+                <img class="img-responsive" src="./posts/2021-05-12-disable-hard-drive-clicking-noise/5.png" alt="img">
+            </div>
+        </div>
+        <div class="col-sm-3"></div>
+    </div>
     1. Next, `right click` on your newly created entry and select `properties`
-    <p align="center">
-        <img class="imgrespM" src="./posts/2021-05-12-disable-hard-drive-clicking-noise/6.png" height="400em" alt="img6">
-    </p>
+    <div class="row">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-6">
+            <div class="thumbnail">
+                <img class="img-responsive" src="./posts/2021-05-12-disable-hard-drive-clicking-noise/6.png" alt="img">
+            </div>
+        </div>
+        <div class="col-sm-3"></div>
+    </div>
     1. In `General` tab, check the `Run with highest privileges`
-    <p align="center">
-        <img class="imgrespM" src="./posts/2021-05-12-disable-hard-drive-clicking-noise/7.png" height="400em" alt="img7">
-    </p>
+    <div class="row">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-6">
+            <div class="thumbnail">
+                <img class="img-responsive" src="./posts/2021-05-12-disable-hard-drive-clicking-noise/7.png" alt="img">
+            </div>
+        </div>
+        <div class="col-sm-3"></div>
+    </div>
     1. Then in `Trigger` tab, change to `At logon of any user`
-    <p align="center">
-        <img class="imgrespM" src="./posts/2021-05-12-disable-hard-drive-clicking-noise/8.png" height="400em" alt="img8">
-    </p>
+    <div class="row">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-6">
+            <div class="thumbnail">
+                <img class="img-responsive" src="./posts/2021-05-12-disable-hard-drive-clicking-noise/8.png" alt="img">
+            </div>
+        </div>
+        <div class="col-sm-3"></div>
+    </div>
 * And that's it, restart your computer to see if anything changed.
 * If you really want to make sure, Install [Crystal Disk Info.](https://crystalmark.info/en/software/crystaldiskinfo/)
 * Then go to `Function > Advanced Feature > AAM/APM Control`
-<p align="center">
-    <img class="imgrespM" src="./posts/2021-05-12-disable-hard-drive-clicking-noise/9.png" height="400em" alt="img9">
-</p>
+<div class="row">
+	<div class="col-sm-3"></div>
+	<div class="col-sm-6">
+		<div class="thumbnail">
+			<img class="img-responsive" src="./posts/2021-05-12-disable-hard-drive-clicking-noise/9.png" alt="img">
+		</div>
+	</div>
+	<div class="col-sm-3"></div>
+</div>
 
 * If everything works fine, you should see `APM OFF`
-<p align="center">
-    <img class="imgrespS" src="./posts/2021-05-12-disable-hard-drive-clicking-noise/10.png" height="300em" alt="img10">
-</p>
+<div class="row">
+	<div class="col-sm-3"></div>
+	<div class="col-sm-6">
+		<div class="thumbnail">
+			<img class="img-responsive" src="./posts/2021-05-12-disable-hard-drive-clicking-noise/10.png" alt="img">
+		</div>
+	</div>
+	<div class="col-sm-3"></div>
+</div>
 
 <br>
 
-#### **More readings**
+#### More readings
 <https://www.techpowerup.com/forums/threads/beware-of-aggressive-apm-on-windows-10-build-1809.254023/>
 
 <https://superuser.com/questions/1013553/how-to-prevent-a-secondary-hdd-from-spinning-down>

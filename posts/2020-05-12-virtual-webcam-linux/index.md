@@ -1,4 +1,4 @@
-### **Virtual Webcam Linux**
+#### Virtual Webcam Linux
 _Tuesday, May 12, 2020_
 
 Let just be honest, we all tired in the current pandemic, some people had endless work to do and 
@@ -33,8 +33,14 @@ if you got `No such file or directory`, try again
 
 <br>
 Next, go to [webcamoid website](https://webcamoid.github.io/) and download the appimage
-<div align="center">
-    <img src="./posts/2020-05-12-virtual-webcam-linux/1.png" height="200px" alt="img1">
+<div class="row">
+	<div class="col-sm-3"></div>
+	<div class="col-sm-6">
+		<div class="thumbnail">
+			<img class="img-responsive" src="./posts/2020-05-12-virtual-webcam-linux/1.png" alt="img">
+		</div>
+	</div>
+	<div class="col-sm-3"></div>
 </div>
 Then go to download folder and do
 ```
@@ -47,30 +53,67 @@ and run it by doing
 
 <br>
 Then go to `Preferences` (thing with gear icon) and create new `Virtual Camera`
-<div align="center">
-    <img src="./posts/2020-05-12-virtual-webcam-linux/2.png" height="300px" alt="img2">
+<div class="row">
+	<div class="col-sm-3"></div>
+	<div class="col-sm-6">
+		<div class="thumbnail">
+			<img class="img-responsive" src="./posts/2020-05-12-virtual-webcam-linux/2.png" alt="img">
+		</div>
+	</div>
+	<div class="col-sm-3"></div>
 </div>
 Next, go to `Configure Sources` and press the `Big + Green Button` and add your `Pre Recorded Video File`
-<div align="center">
-    <img src="./posts/2020-05-12-virtual-webcam-linux/3.png" height="300px" alt="img3">
-    <br><br>
-    <img src="./posts/2020-05-12-virtual-webcam-linux/4.png" height="200px" alt="img4">
+<div class="row">
+	<div class="col-sm-3"></div>
+	<div class="col-sm-6">
+		<div class="thumbnail">
+			<img class="img-responsive" src="./posts/2020-05-12-virtual-webcam-linux/3.png" alt="img">
+		</div>
+	</div>
+	<div class="col-sm-3"></div>
+</div>
+<div class="row">
+	<div class="col-sm-3"></div>
+	<div class="col-sm-6">
+		<div class="thumbnail">
+			<img class="img-responsive" src="./posts/2020-05-12-virtual-webcam-linux/4.png" alt="img">
+		</div>
+	</div>
+	<div class="col-sm-3"></div>
 </div>
 Then select your media in `Left Panel`
-<div align="center">
-    <img src="./posts/2020-05-12-virtual-webcam-linux/5.png" height="300px" alt="img5">
+<div class="row">
+	<div class="col-sm-3"></div>
+	<div class="col-sm-6">
+		<div class="thumbnail">
+			<img class="img-responsive" src="./posts/2020-05-12-virtual-webcam-linux/5.png" alt="img">
+		</div>
+	</div>
+	<div class="col-sm-3"></div>
 </div>
-
 <br>
 After all that, open video conference service (in my case, i'm using google meet)
 
 Then allow all permission from `Audio` and `Webcam`
 
 And go to config, and change camera source to virtual camera
-<div align="center">
-    <img src="./posts/2020-05-12-virtual-webcam-linux/6.png" height="300px" alt="img6">
-    <br><br>
-    <img src="./posts/2020-05-12-virtual-webcam-linux/7.png" height="300px" alt="img7">
+<div class="row">
+	<div class="col-sm-3"></div>
+	<div class="col-sm-6">
+		<div class="thumbnail">
+			<img class="img-responsive" src="./posts/2020-05-12-virtual-webcam-linux/6.png" alt="img">
+		</div>
+	</div>
+	<div class="col-sm-3"></div>
+</div>
+<div class="row">
+	<div class="col-sm-3"></div>
+	<div class="col-sm-6">
+		<div class="thumbnail">
+			<img class="img-responsive" src="./posts/2020-05-12-virtual-webcam-linux/7.png" alt="img">
+		</div>
+	</div>
+	<div class="col-sm-3"></div>
 </div>
 
 > Modern problem require modern solution.

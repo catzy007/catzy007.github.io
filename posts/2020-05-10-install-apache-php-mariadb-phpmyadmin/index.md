@@ -1,4 +1,4 @@
-### **Install Apache PHP Mariadb phpMyAdmin**
+#### Install Apache PHP Mariadb phpMyAdmin
 _Sunday, May 10, 2020_
 
 For quite some time, i have been asked by my colleague about how to setup 
@@ -9,10 +9,12 @@ Fresh install of `Ubuntu 20.04` and latest LAMP package at the time
 `php 7.4`. If you already had old installation of LAMP stack, then remove 
 or purge it first!
 
-> WARNING : Because of some security risks, this article should not be used 
-in `Production Environment` and only meant to be used in 
-`Development and Learning Environment` keep that in mind!
+<br>
+`WARNING : Because of some security risks, this article should not be used 
+in `*Production Environment*` and only meant to be used in `
+*Development and Learning Environment*` keep that in mind!`
 
+<br>
 First update and upgrade your system
 ```
 sudo apt update
@@ -65,7 +67,7 @@ Last, open web browser and fill with `localhost/pma` and type username password 
 And that's it. Now you should able to use LAMP stack and phpmyadmin.
 
 <br>
-#### **Some Sauce**
+#### Some Sauce
 <https://www.digitalocean.com/community/tutorials/how-to-create-a-new-user-and-grant-permissions-in-mysql>
 
 <https://www.phpmyadmin.net/>

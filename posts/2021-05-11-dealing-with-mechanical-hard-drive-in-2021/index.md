@@ -1,7 +1,7 @@
-### **Dealing With Mechanical Hard Drive in 2021**
+#### Dealing With Mechanical Hard Drive in 2021
 _Tuesday, May 11, 2021_
 
-#### **PC Troubleshooting 101 Series** 
+#### PC Troubleshooting 101 Series 
 
 Mechanical hard-drive or some people called spinning rust. Basically an old storage 
 technology and first commercially shipped by IBM in 1956, and somehow it still used 
@@ -18,7 +18,7 @@ But how to deal with hard drive? Here's how.
 
 <br>
 
-#### **First, do a defragmentation**
+#### First, do a defragmentation
 In windows based PC with NTFS file system, you need to regularly do a defragmentation. 
 If you use a PC for long time, you might do add and delete files from your hard drive 
 regularly, and the problem is that over time, your files is physically scatter all over 
@@ -31,14 +31,26 @@ has internal algorithm to dealt with that as well.
 How to do a disk defragmentation
 * First, right-click on your hard drive and select `Properties`.
 * Then go to `Tools` and select `Optimize`.
-<p align="center">
-    <img class="imgrespXS" src="./posts/2021-05-11-dealing-with-mechanical-hard-drive-in-2021/1.png" height="400em" alt="img1">
-</p>
+<div class="row">
+	<div class="col-sm-3"></div>
+	<div class="col-sm-6">
+		<div class="thumbnail">
+			<img class="img-responsive" src="./posts/2021-05-11-dealing-with-mechanical-hard-drive-in-2021/1.png" alt="img">
+		</div>
+	</div>
+	<div class="col-sm-3"></div>
+</div>
 
 * Next, select `Analyze` to see how much your disk fragmentation is.
-<p align="center">
-    <img class="imgrespM" src="./posts/2021-05-11-dealing-with-mechanical-hard-drive-in-2021/2.png" height="400em" alt="img2">
-</p>
+<div class="row">
+	<div class="col-sm-3"></div>
+	<div class="col-sm-6">
+		<div class="thumbnail">
+			<img class="img-responsive" src="./posts/2021-05-11-dealing-with-mechanical-hard-drive-in-2021/2.png" alt="img">
+		</div>
+	</div>
+	<div class="col-sm-3"></div>
+</div>
 
 * If your disk fragmentation is more than 3%, select `Optimize`.
 > Before proceeding, you need to make sure your PC are plugged in into a steady power source. 
@@ -46,21 +58,33 @@ If somehow you lost power during a defragmentation process, your drive might get
 your files might be corrupted.
 
 * After that, wait for the process to finished.
-<p align="center">
-    <img class="imgrespM" src="./posts/2021-05-11-dealing-with-mechanical-hard-drive-in-2021/3.png" height="400em" alt="img3">
-</p>
+<div class="row">
+	<div class="col-sm-3"></div>
+	<div class="col-sm-6">
+		<div class="thumbnail">
+			<img class="img-responsive" src="./posts/2021-05-11-dealing-with-mechanical-hard-drive-in-2021/3.png" alt="img">
+		</div>
+	</div>
+	<div class="col-sm-3"></div>
+</div>
 
 * During defragmentation process, your drive will be used of it's maximum capabilities, please 
 leave it as is until the process is finished.
-<p align="center">
-    <img class="imgrespM" src="./posts/2021-05-11-dealing-with-mechanical-hard-drive-in-2021/4.png" height="400em" alt="img4">
-</p>
+<div class="row">
+	<div class="col-sm-3"></div>
+	<div class="col-sm-6">
+		<div class="thumbnail">
+			<img class="img-responsive" src="./posts/2021-05-11-dealing-with-mechanical-hard-drive-in-2021/4.png" alt="img">
+		</div>
+	</div>
+	<div class="col-sm-3"></div>
+</div>
 
 * I suggest you do defragmentation every 3 months. 
 
 <br>
 
-#### **Second, do a Check Disk**
+#### Second, do a Check Disk
 If your PC recently lost power during a file copy, document writing, Windows update or 
 something like that, there is a chance that some of your files get corrupted, or even 
 you got a problem called [Bad Sector](https://en.wikipedia.org/wiki/Bad_sector). To fix 
@@ -68,25 +92,43 @@ that, you can try to Check disk.
 
 * First, right-click on your hard drive and select `Properties`.
 * Next, Then go to `Tools` and select `Check`.
-<p align="center">
-    <img class="imgrespXS" src="./posts/2021-05-11-dealing-with-mechanical-hard-drive-in-2021/1.png" height="400em" alt="img5">
-</p>
+<div class="row">
+	<div class="col-sm-3"></div>
+	<div class="col-sm-6">
+		<div class="thumbnail">
+			<img class="img-responsive" src="./posts/2021-05-11-dealing-with-mechanical-hard-drive-in-2021/1.png" alt="img">
+		</div>
+	</div>
+	<div class="col-sm-3"></div>
+</div>
 
 * Then select `Scan drive`.
-<p align="center">
-    <img class="imgrespM" src="./posts/2021-05-11-dealing-with-mechanical-hard-drive-in-2021/6.png" height="175em" alt="img6">
-</p>
+<div class="row">
+	<div class="col-sm-3"></div>
+	<div class="col-sm-6">
+		<div class="thumbnail">
+			<img class="img-responsive" src="./posts/2021-05-11-dealing-with-mechanical-hard-drive-in-2021/6.png" alt="img">
+		</div>
+	</div>
+	<div class="col-sm-3"></div>
+</div>
 
 > Before proceeding, you need to make sure your PC are plugged in into a steady power source. 
 
 * If no errors found, the process will be fast and if error found, the program will try to fix it.
-<p align="center">
-    <img class="imgrespS" src="./posts/2021-05-11-dealing-with-mechanical-hard-drive-in-2021/7.png" height="200em" alt="img7">
-</p>
+<div class="row">
+	<div class="col-sm-3"></div>
+	<div class="col-sm-6">
+		<div class="thumbnail">
+			<img class="img-responsive" src="./posts/2021-05-11-dealing-with-mechanical-hard-drive-in-2021/7.png" alt="img">
+		</div>
+	</div>
+	<div class="col-sm-3"></div>
+</div>
 
 <br>
 
-#### **Third, do a Check Disk (Advanced)**
+#### Third, do a Check Disk (Advanced)
 If second method still not fix the problem, you can try command line interface Chkdsk. 
 This method require you to manually type a command and probably restart your PC if needed.
 
@@ -94,11 +136,27 @@ This method require you to manually type a command and probably restart your PC 
 
 * First, open `Start Menu` and type `CMD`.
 * Then select `Run As Administrator`.
-<p align="center">
-    <img class="imgrespM" src="./posts/2021-05-11-dealing-with-mechanical-hard-drive-in-2021/8.png" height="400em" alt="img8">
-</p>
+<div class="row">
+	<div class="col-sm-3"></div>
+	<div class="col-sm-6">
+		<div class="thumbnail">
+			<img class="img-responsive" src="./posts/2021-05-11-dealing-with-mechanical-hard-drive-in-2021/8.png" alt="img">
+		</div>
+	</div>
+	<div class="col-sm-3"></div>
+</div>
 
 * Then type `chkdsk /F /R /X /I /B D:` notice `D:`, change that to your partition letter.
+<div class="row">
+	<div class="col-sm-2"></div>
+	<div class="col-sm-8">
+		<div class="thumbnail">
+			<img class="img-responsive" src="./posts/2021-05-11-dealing-with-mechanical-hard-drive-in-2021/9.png" alt="img">
+		</div>
+	</div>
+	<div class="col-sm-2"></div>
+</div>
+
 * If the drive you check is a system partition, it might ask you to restart your PC if it's not 
 then it will continue as is.
 

@@ -1,4 +1,4 @@
-### **Harddisk Sentinel Linux**
+#### Harddisk Sentinel Linux
 _Saturday, June 27, 2020_
 
 Let's say you have a old SSD that you bought for really cheap and want to check it's remaining 
@@ -16,9 +16,15 @@ version.
 To use it, first go to <https://www.hdsentinel.com/hard_disk_sentinel_linux.php> (for CLI version) and 
 <https://www.hdsentinel.com/hard_disk_sentinel_linux_gui.php> (for GUI version) and download the 64Bit 
 version. If you have 32Bit system then downlaod the 32Bit version.
-<p align="center">
-	<img src="./posts/2020-06-27-harddisk-sentinel-linux/1.png" height="400px" alt="img1">
-</p>
+<div class="row">
+	<div class="col-sm-3"></div>
+	<div class="col-sm-6">
+		<div class="thumbnail">
+			<img class="img-responsive" src="./posts/2020-06-27-harddisk-sentinel-linux/1.png" alt="img">
+		</div>
+	</div>
+	<div class="col-sm-3"></div>
+</div>
 
 Then go to your download folder and open terminal there
 
@@ -29,11 +35,24 @@ After sucessful extraction, you shoud see new directory. Go to new directory and
 
 Last, do installation using `sudo ./install.sh`, wait for installation process and you should see new 
 application appears.
-<p align="center">
-	<img src="./posts/2020-06-27-harddisk-sentinel-linux/2.jpg" height="400px" alt="img2">
-    <br><br>
-    <img src="./posts/2020-06-27-harddisk-sentinel-linux/3.png" height="400px" alt="img3">
-</p>
+<div class="row">
+	<div class="col-sm-3"></div>
+	<div class="col-sm-6">
+		<div class="thumbnail">
+			<img class="img-responsive" src="./posts/2020-06-27-harddisk-sentinel-linux/2.jpg" alt="img">
+		</div>
+	</div>
+	<div class="col-sm-3"></div>
+</div>
+<div class="row">
+	<div class="col-sm-3"></div>
+	<div class="col-sm-6">
+		<div class="thumbnail">
+			<img class="img-responsive" src="./posts/2020-06-27-harddisk-sentinel-linux/3.png" alt="img">
+		</div>
+	</div>
+	<div class="col-sm-3"></div>
+</div>
 
 And that's it. Thank you to `Raul del Cid Lopez` and `Gregory25` to create this awesome tools. Also 
 thanks to `Hard Disk Sentinel` for distributing this awesome tools for free.

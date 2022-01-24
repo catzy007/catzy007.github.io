@@ -15,9 +15,15 @@ gaming in this sound card should be interesting. Also, i found this is review fr
 doesn't work, maybe some day i can get Sound Blaster Live or something like that as a replacement.
 
 <br>
-<p align="center">
-    <img class="imgrespS" src="./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/2.jpg" height="400em" alt="img2">
-</p>
+<div class="row">
+	<div class="col-sm-4"></div>
+	<div class="col-sm-4">
+		<div class="thumbnail">
+			<img class="img-responsive" src="./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/2.jpg" alt="img">
+		</div>
+	</div>
+	<div class="col-sm-4"></div>
+</div>
 After few days i't arrive i just plug it to Windows 10 64Bit system and nothing. Then i actually 
 remember something really important "Windows device is using proprietary driver" so yeah here 
 i am looking for a way to check if this card is working. The problem is that driver made for this 
@@ -25,9 +31,15 @@ card is 32Bit WDM driver for Windows XP so in order to make this work in 64Bit w
 recompile the driver to 64Bit. 
 
 <br>
-<p align="center">
-    <img class="imgrespM" src="./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/3.jpg" height="300em" alt="img3">
-</p>
+<div class="row">
+	<div class="col-sm-3"></div>
+	<div class="col-sm-6">
+		<div class="thumbnail">
+			<img class="img-responsive" src="./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/3.jpg" alt="img">
+		</div>
+	</div>
+	<div class="col-sm-3"></div>
+</div>
 Other alternative is of course Linux which basically runs everything. I use Lubuntu 18.04 
 and Ubuntu 20.04 and it works just fine. And the chip itself is lsted in ALSA project 
 <https://www.alsa-project.org/wiki/Matrix:Vendor-Yamaha> the problem is that there is a some kind 
@@ -44,11 +56,16 @@ the audio output is routed to audio input and causing lot of ground loop noise t
 the problematic port, everything work just fine.
 
 <br>
-<p align="center">
-    <img class="imgrespXS" src="./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/meme.jpeg" height="200em" alt="meme">
-    <br>
-    <a href="https://makeameme.org/meme/virtualize-all-the">makeameme.org</a>
-</p>
+<div class="row">
+	<div class="col-sm-4"></div>
+	<div class="col-sm-4">
+		<div class="thumbnail">
+			<img class="img-responsive" src="./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/meme.jpeg" alt="img">
+            <a href="https://makeameme.org/meme/virtualize-all-the">makeameme.org</a>
+		</div>
+	</div>
+	<div class="col-sm-4"></div>
+</div>
 Next thing i want to try is to run this on Windows XP system. But i don't feel like installing XP 
 on my system just to listen some music, so i decided to run yes you probably guess it a KVM 
 Virtualization with PCI (yes not PCIE) passthrough. The way i did it basically follow my old Post and 
@@ -59,9 +76,15 @@ genirq: Flags mismatch irq 18. 00000000 (vfio-intx(0000:01:04.0)) vs. 00000080 (
 ```
 The way i solve it is disabling some USB controller in the motherboard from BIOS. Then after everything 
 is clear, it work just fine.
-<p align="center">
-    <img class="imgrespXL" src="./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/1.png" height="400em" alt="img1">
-</p>
+<div class="row">
+	<div class="col-sm-2"></div>
+	<div class="col-sm-8">
+		<div class="thumbnail">
+			<img class="img-responsive" src="./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/1.png" alt="img">
+		</div>
+	</div>
+	<div class="col-sm-2"></div>
+</div>
 
 <br>
 As for KVM passthrough configuration, well basically make sure you hardware supprot VT-D or AMD-VI, 
@@ -128,7 +151,7 @@ Shared to GPU, USB, Sound, PCI Bridge, then you're done! Or use ACS patch.
     ```
     options vfio-pci ids=1073:000d
     ```
-    d. **Make sure your PCI IDs is match.**
+    d. *Make sure your PCI IDs is match.*
 
 1. Then apply all that by doing `sudo update-initramfs -u` then reboot
 1. Check if everything is working by doing `sudo dmesg | grep -e DMAR -e IOMMU -e vfio` it should look similar
@@ -202,9 +225,15 @@ Similar process, but you have to manually change boot order instead of changing 
 * If everything works, you should see something like this
 * Here my libvirt [XML](./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/win95.xml)
 
-<p align="center">
-    <img class="imgrespXL" src="./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/4.png" height="400em" alt="img4">
-</p>
+<div class="row">
+	<div class="col-sm-2"></div>
+	<div class="col-sm-8">
+		<div class="thumbnail">
+			<img class="img-responsive" src="./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/4.png" alt="img">
+		</div>
+	</div>
+	<div class="col-sm-2"></div>
+</div>
 
 Then after that i just play DOS game in Win95 DOS window mode and no sound, I reboot to DOS mode still no sound, 
 Then i reboot to DOS mode and use DOS driver (SETUPDS/S and DSDMA) then enable EMS still no sound. The only 
@@ -220,30 +249,54 @@ even hardware passthrough like this.
 After having a some free time from mid-test, i decided to unplug my SB Audigy and use Yamaha once again to test if 
 running it in DOS 6.22 with KVM acceleration will make a difference.
 
-<p align="center">
-    <img class="imgrespM" src="./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/5.png" height="400em" alt="img5">
-</p>
+<div class="row">
+	<div class="col-sm-3"></div>
+	<div class="col-sm-6">
+		<div class="thumbnail">
+			<img class="img-responsive" src="./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/5.png" alt="img">
+		</div>
+	</div>
+	<div class="col-sm-3"></div>
+</div>
 
 The system spec is similar as win95 with single core CPU, 128 megs RAM, 500 megs HDD, but in KVM instead of TCG. 
 Then i use [Phils MS-DOS starter pack](https://www.philscomputerlab.com/ms-dos-starter-pack.html) to easily use 
 mouse and extended memory support.
 
-<p align="center">
-    <img class="imgrespM" src="./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/6.png" height="400em" alt="img6">
-</p>
+<div class="row">
+	<div class="col-sm-3"></div>
+	<div class="col-sm-6">
+		<div class="thumbnail">
+			<img class="img-responsive" src="./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/6.png" alt="img">
+		</div>
+	</div>
+	<div class="col-sm-3"></div>
+</div>
 
 Then i just use `setupds/s` then `dsdma` and still nothing, then i just run setupds and simply test the sound output, 
 the Native 16 bit output is working just fine. The SB mode is disabled or greyed out and the FM mode throw a error.
 
-<p align="center">
-    <img class="imgrespM" src="./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/7.png" height="400em" alt="img7">
-</p>
+<div class="row">
+	<div class="col-sm-3"></div>
+	<div class="col-sm-6">
+		<div class="thumbnail">
+			<img class="img-responsive" src="./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/7.png" alt="img">
+		</div>
+	</div>
+	<div class="col-sm-3"></div>
+</div>
 
 Then i try edit `FIRSTTRY=` in `ds.ini` file, then run `loadtrs.bat` and get this error instead.
 
-<p align="center">
-    <img class="imgrespM" src="./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/8.png" height="400em" alt="img8">
-</p>
+<div class="row">
+	<div class="col-sm-3"></div>
+	<div class="col-sm-6">
+		<div class="thumbnail">
+			<img class="img-responsive" src="./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/8.png" alt="img">
+		</div>
+	</div>
+	<div class="col-sm-3"></div>
+</div>
 
 So my take is there is probably a way to make this work, but the effort might not worth at least for me, i think 
 you can use virtio IRQ remapping mode or something like that but don't quote me on this. In the meantime, i just 

@@ -1,4 +1,4 @@
-### Repurpose Old Thin Client as DOS Gaming System
+#### Repurpose Old Thin Client as DOS Gaming System
 _Thursday, June 10, 2021_
 
 Few weeks ago i need to test my DOS program in bare-metal. So i started looking around 
@@ -20,9 +20,15 @@ Then i take it home and notice a `Asset code` from local bank, when i plug it up
 data still there. So what i do is format the disk and everything is mine now. Then what i found 
 interesting is that the two different sticker said different thing, so one of them said T5000 
 and the other one said T5700. If any of you need this, look for both keyword.
-<p align="center">
-    <img class="imgrespM" src="./posts/2021-06-10-repurpose-old-thin-client-as-dos-gaming-system/1.jpg" height="300em" alt="img">
-</p>
+<div class="row">
+	<div class="col-sm-3"></div>
+	<div class="col-sm-6">
+		<div class="thumbnail">
+			<img class="img-responsive" src="./posts/2021-06-10-repurpose-old-thin-client-as-dos-gaming-system/1.jpg" alt="img">
+		</div>
+	</div>
+	<div class="col-sm-3"></div>
+</div>
 
 The specification for this is Transmeta Crusoe TM5800 in my case the clock speed is 733MHz with 
 512MB of DDR memory, 512MB of storage (IDE DOM) and ATI Rage XL GPU. From the sticker it should come 
@@ -34,9 +40,15 @@ running x86 code using [Code Morphing](https://en.wikipedia.org/wiki/Transmeta#C
 As far as i can remember, only few companies own x86 license. Intel, AMD, VIA and other that i can't 
 remember. So the way Transmeta achieve this is to translate x86 code to native code then execute it 
 accordingly.
-<p align="center">
-    <img class="imgrespM" src="./posts/2021-06-10-repurpose-old-thin-client-as-dos-gaming-system/2.jpg" height="300em" alt="img">
-</p>
+<div class="row">
+	<div class="col-sm-3"></div>
+	<div class="col-sm-6">
+		<div class="thumbnail">
+			<img class="img-responsive" src="./posts/2021-06-10-repurpose-old-thin-client-as-dos-gaming-system/2.jpg" alt="img">
+		</div>
+	</div>
+	<div class="col-sm-3"></div>
+</div>
 Here some CPU-Z details <https://valid.x86.fr/ivd4ak>
 <p align="center">
     <a href="https://valid.x86.fr/ivd4ak"><img class="imgrespM" src="https://valid.x86.fr/cache/banner/ivd4ak-99.png" alt="img"></a>
@@ -91,9 +103,15 @@ Thanks to [JazeFox](https://www.vogons.org/viewtopic.php?t=73270) and [PhilsComp
     /VF FM Volume
     /VP PCSPK Volume
     ```
-<p align="center">
-    <img class="imgrespM" src="./posts/2021-06-10-repurpose-old-thin-client-as-dos-gaming-system/5.jpg" height="300em" alt="img">
-</p>
+<div class="row">
+	<div class="col-sm-3"></div>
+	<div class="col-sm-6">
+		<div class="thumbnail">
+			<img class="img-responsive" src="./posts/2021-06-10-repurpose-old-thin-client-as-dos-gaming-system/5.jpg" alt="img">
+		</div>
+	</div>
+	<div class="col-sm-3"></div>
+</div>
 
 #### Using this as Windows 98 machine
 
@@ -147,11 +165,24 @@ something similar.
 * Just follow the On-screen instruction.
 * And that's it.
 * Or if you confused, check this <https://www.youtube.com/watch?v=7_GEsE2_j4Y> (different approach)
-<p align="center">
-    <img class="imgrespM" src="./posts/2021-06-10-repurpose-old-thin-client-as-dos-gaming-system/3.jpg" height="300em" alt="img">
-    <br>
-    <img class="imgrespM" src="./posts/2021-06-10-repurpose-old-thin-client-as-dos-gaming-system/4.jpg" height="400em" alt="img">
-</p>
+<div class="row">
+	<div class="col-sm-3"></div>
+	<div class="col-sm-6">
+		<div class="thumbnail">
+			<img class="img-responsive" src="./posts/2021-06-10-repurpose-old-thin-client-as-dos-gaming-system/3.jpg" alt="img">
+		</div>
+	</div>
+	<div class="col-sm-3"></div>
+</div>
+<div class="row">
+	<div class="col-sm-3"></div>
+	<div class="col-sm-6">
+		<div class="thumbnail">
+			<img class="img-responsive" src="./posts/2021-06-10-repurpose-old-thin-client-as-dos-gaming-system/4.jpg" alt="img">
+		</div>
+	</div>
+	<div class="col-sm-3"></div>
+</div>
 
 #### Installing Windows 98 Driver
 

@@ -1,4 +1,4 @@
-### **Driver Forsa FS-1410 Series / Quanta SW1**
+#### Driver Forsa FS-1410 Series / Quanta SW1
 _Sunday, May 31, 2020_
 
 Let's say it's 2008, you had this shiny new core2duo with 1024 Megabyte Double Data Rate Two RAM laptop while other still running pentium or even celeron... Nyeh!!! But now it's 2020 more than decade old dual core laptop feels slower in the age current generation laptop with up to Six Core of 10th generation i7 and at least 8GB DDR4 RAM.

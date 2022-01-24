@@ -8,22 +8,22 @@ doesn't work, the button is not working at the price of 10 USD, i just take it.
 Few days later, it came and to my surprise it comes with Stylus, SD to Micro SD adapter 
 and R4 clone. Then i power it up and i get this message.
 <div class="row">
-	<div class=col-sm-3></div>
+	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="thumbnail">
 			<img class="img-responsive" src="./posts/2021-10-18-nintendo-dsi-in-2021/01.jpg" alt="img">
 		</div>
 	</div>
-	<div class=col-sm-3></div>
+	<div class="col-sm-3"></div>
 </div>
 <div class="row">
-	<div class=col-sm-3></div>
+	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="thumbnail">
 			<img class="img-responsive" src="./posts/2021-10-18-nintendo-dsi-in-2021/00.jpg" alt="img">
 		</div>
 	</div>
-	<div class=col-sm-3></div>
+	<div class="col-sm-3"></div>
 </div>
 
 After googling around, i found few posts about this topic 
@@ -37,13 +37,13 @@ after following the on-screen instructions, it should work again.
 OKをタッチしてください。
 ```
 <div class="row">
-	<div class=col-sm-3></div>
+	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="thumbnail">
 			<img class="img-responsive" src="./posts/2021-10-18-nintendo-dsi-in-2021/02.png" alt="img">
 		</div>
 	</div>
-	<div class=col-sm-3></div>
+	<div class="col-sm-3"></div>
 </div>
 
 I tried that, and it doesn't work at all. So i disassemble my unit then using multimeter 
@@ -52,40 +52,40 @@ which consist of ribbon cable, LR button, and SD assembly but could not find it 
 Then i look for the Button Switches and get a listing 10 pcs at 1 USD + Shipping. Check 
 [GBAtemp forum post](https://gbatemp.net/threads/need-advice-fixing-broken-dsi-shoulder-buttons.364401/)
 <div class="row">
-	<div class=col-sm-3></div>
+	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="thumbnail">
 			<img class="img-responsive" src="./posts/2021-10-18-nintendo-dsi-in-2021/03.jpg" alt="img">
 		</div>
 	</div>
-	<div class=col-sm-3></div>
+	<div class="col-sm-3"></div>
 </div>
 <div class="row">
-	<div class=col-sm-3></div>
+	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="thumbnail">
 			<img class="img-responsive" src="./posts/2021-10-18-nintendo-dsi-in-2021/04.jpg" alt="img">
 		</div>
 	</div>
-	<div class=col-sm-3></div>
+	<div class="col-sm-3"></div>
 </div>
 <div class="row">
-	<div class=col-sm-3></div>
+	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="thumbnail">
 			<img class="img-responsive" src="./posts/2021-10-18-nintendo-dsi-in-2021/05.jpg" alt="img">
 		</div>
 	</div>
-	<div class=col-sm-3></div>
+	<div class="col-sm-3"></div>
 </div>
 <div class="row">
-	<div class=col-sm-3></div>
+	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="thumbnail">
 			<img class="img-responsive" src="./posts/2021-10-18-nintendo-dsi-in-2021/06.jpg" alt="img">
 		</div>
 	</div>
-	<div class=col-sm-3></div>
+	<div class="col-sm-3"></div>
 </div>
 
 Few days later my switches arrive and i start my disassembly again, then using micro pencil 
@@ -93,47 +93,47 @@ solder tip i desolder the old switches, clean the pad, solder new switches and t
 it works. One thing to note here is that the new switches feel different from the original 
 but as long as it's working just fine then i'll take it.
 <div class="row">
-	<div class=col-sm-3></div>
+	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="thumbnail">
 			<img class="img-responsive" src="./posts/2021-10-18-nintendo-dsi-in-2021/07.jpg" alt="img">
 		</div>
 	</div>
-	<div class=col-sm-3></div>
+	<div class="col-sm-3"></div>
 </div>
 
 Next thing i did is to check if everything works. Also to my surprise, the system did not 
 really have any owner data. No names, games, disware, only few blurry photos. So i decided 
 to do a system wipe and try to update the firmware to the latest version.
 <div class="row">
-	<div class=col-sm-3></div>
+	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="thumbnail">
 			<img class="img-responsive" src="./posts/2021-10-18-nintendo-dsi-in-2021/08.jpg" alt="img">
 		</div>
 	</div>
-	<div class=col-sm-3></div>
+	<div class="col-sm-3"></div>
 </div>
 <div class="row">
-	<div class=col-sm-3></div>
+	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="thumbnail">
 			<img class="img-responsive" src="./posts/2021-10-18-nintendo-dsi-in-2021/09.jpg" alt="img">
 		</div>
 	</div>
-	<div class=col-sm-3></div>
+	<div class="col-sm-3"></div>
 </div>
 
 So i just connect it to Wi-Fi and update the system firmware from 1.0 to 1.45 then i go to 
 dsiware and download web browser just to make the system more useable.
 <div class="row">
-	<div class=col-sm-3></div>
+	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="thumbnail">
 			<img class="img-responsive" src="./posts/2021-10-18-nintendo-dsi-in-2021/10.jpg" alt="img">
 		</div>
 	</div>
-	<div class=col-sm-3></div>
+	<div class="col-sm-3"></div>
 </div>
 
 The next thing i tried is R4 card which result nothing so far. I can say that i do all sort 
@@ -169,26 +169,26 @@ and do `Hold R` then `Press L` to pause/play and `Hold L` then `Press R` to play
 The problem is that this app is not stable at all and the output sound is not that good. 
 If you want to try it out, follow [GBAtemp forum post](https://gbatemp.net/threads/moonshell-without-flashcard.547225/)
 <div class="row">
-	<div class=col-sm-2></div>
+	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
 		<div class="thumbnail">
 			<img class="img-responsive" src="./posts/2021-10-18-nintendo-dsi-in-2021/11.png" alt="img">
 		</div>
 	</div>
-	<div class=col-sm-2></div>
+	<div class="col-sm-2"></div>
 </div>
 
 The last thing i need is Charger (DSi, 3DS, 2DS uses the same charger), Case, and acrylic strap and 
 that's it. Also, here is my vacation picture taken using DSi rear camera, not bad for decade 
 plus camera.
 <div class="row">
-	<div class=col-sm-3></div>
+	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="thumbnail">
 			<img class="img-responsive" src="./posts/2021-10-18-nintendo-dsi-in-2021/12.jpg" alt="img">
 		</div>
 	</div>
-	<div class=col-sm-3></div>
+	<div class="col-sm-3"></div>
 </div>
 
 <br>
@@ -198,31 +198,31 @@ Few days ago i found a listing about Mario Party DS (JP Version) from local shop
 price of 5 USD incl. shipping hey, i'll take it. If it's original i save some money if it's not 
 then fine i'll take it anyways. Then the package arrive and good news.
 <div class="row">
-	<div class=col-sm-3></div>
+	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="thumbnail">
 			<img class="img-responsive" src="./posts/2021-10-18-nintendo-dsi-in-2021/13.jpg" alt="img">
 		</div>
 	</div>
-	<div class=col-sm-3></div>
+	<div class="col-sm-3"></div>
 </div>
 <div class="row">
-	<div class=col-sm-3></div>
+	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="thumbnail">
 			<img class="img-responsive" src="./posts/2021-10-18-nintendo-dsi-in-2021/14.jpg" alt="img">
 		</div>
 	</div>
-	<div class=col-sm-3></div>
+	<div class="col-sm-3"></div>
 </div>
 <div class="row">
-	<div class=col-sm-3></div>
+	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="thumbnail">
 			<img class="img-responsive" src="./posts/2021-10-18-nintendo-dsi-in-2021/15.jpg" alt="img">
 		</div>
 	</div>
-	<div class=col-sm-3></div>
+	<div class="col-sm-3"></div>
 </div>
 
 As far as i can tell, i think it is a original cartridge. It has nice vibrant artwork with right font, 
@@ -237,13 +237,13 @@ People who copy the cart usually left it smooth because it doesn't make economic
 for little details. Unless they want to make a `Supercopy` or something like that. More info 
 <https://rlaphoenix.github.io/IsMyNDSCartFake/> <https://www.youtube.com/watch?v=yNm6cHq3QWE>
 <div class="row">
-	<div class=col-sm-3></div>
+	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="thumbnail">
 			<img class="img-responsive" src="./posts/2021-10-18-nintendo-dsi-in-2021/16.jpg" alt="img">
 		</div>
 	</div>
-	<div class=col-sm-3></div>
+	<div class="col-sm-3"></div>
 </div>
 
 The last thing i tried is [DSLinux](https://www.dslinux.org/). It works really well but if you're 
@@ -252,11 +252,11 @@ and if you can manage to cross-compile your own binary, it will be amazing too. 
 practical system because i can't really type fast using touch keyboard. But still amazing nonetheless. 
 Oh yeah the default username is `root` and password `uClinux`.
 <div class="row">
-	<div class=col-sm-3></div>
+	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="thumbnail">
 			<img class="img-responsive" src="./posts/2021-10-18-nintendo-dsi-in-2021/17.jpg" alt="img">
 		</div>
 	</div>
-	<div class=col-sm-3></div>
+	<div class="col-sm-3"></div>
 </div>

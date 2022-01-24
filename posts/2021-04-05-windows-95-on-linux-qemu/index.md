@@ -1,4 +1,4 @@
-### **Windows 98 on Linux QEMU**
+#### Windows 98 on Linux QEMU
 _Sunday, April 5, 2021_
 
 Today i need to make a paperwork, but i cannot think about anything. So instead i just 
@@ -27,9 +27,15 @@ qemu-system-i386 -netdev user,id=mynet0 -device ne2k_isa,netdev=mynet0 \
  -hda win95.qcow2 \
  -boot a 
 ```
-<p align="center">
-    <img class="imgrespM" src="./posts/2021-04-05-windows-95-on-linux-qemu/1.png" height="400em" alt="img1">
-</p>
+<div class="row">
+	<div class="col-sm-3"></div>
+	<div class="col-sm-6">
+		<div class="thumbnail">
+			<img class="img-responsive" src="./posts/2021-04-05-windows-95-on-linux-qemu/1.png" alt="img">
+		</div>
+	</div>
+	<div class="col-sm-3"></div>
+</div>
 At this screen, just press enter to continue.
 
 <br>
@@ -61,9 +67,16 @@ d:setup
 ```
 then press `enter`. After that GUI installer should appear
 
-<p align="center">
-    <img class="imgrespM" src="./posts/2021-04-05-windows-95-on-linux-qemu/2.png" height="400em" alt="img2">
-</p>
+<div class="row">
+	<div class="col-sm-3"></div>
+	<div class="col-sm-6">
+		<div class="thumbnail">
+			<img class="img-responsive" src="./posts/2021-04-05-windows-95-on-linux-qemu/2.png" alt="img">
+		</div>
+	</div>
+	<div class="col-sm-3"></div>
+</div>
+
 Then follow the installer. After getting into Key or `COA screen`, enter
 ```
 Windows 95 OEM
@@ -73,26 +86,50 @@ Windows 95 RETAIL
 111-1111111
 ```
 
-<p align="center">
-    <img class="imgrespM" src="./posts/2021-04-05-windows-95-on-linux-qemu/3.png" height="400em" alt="img3">
-</p>
+<div class="row">
+	<div class="col-sm-3"></div>
+	<div class="col-sm-6">
+		<div class="thumbnail">
+			<img class="img-responsive" src="./posts/2021-04-05-windows-95-on-linux-qemu/3.png" alt="img">
+		</div>
+	</div>
+	<div class="col-sm-3"></div>
+</div>
 > This is reverse engineering key so don't worry too much about it. 
 
 Next enter your username and group
 
-<p align="center">
-    <img class="imgrespM" src="./posts/2021-04-05-windows-95-on-linux-qemu/4.png" height="400em" alt="img4">
-</p>
+<div class="row">
+	<div class="col-sm-3"></div>
+	<div class="col-sm-6">
+		<div class="thumbnail">
+			<img class="img-responsive" src="./posts/2021-04-05-windows-95-on-linux-qemu/4.png" alt="img">
+		</div>
+	</div>
+	<div class="col-sm-3"></div>
+</div>
 Then follow installer again. After getting into `Startup Disk`, choose `No`
 
-<p align="center">
-    <img class="imgrespM" src="./posts/2021-04-05-windows-95-on-linux-qemu/5.png" height="400em" alt="img5">
-</p>
+<div class="row">
+	<div class="col-sm-3"></div>
+	<div class="col-sm-6">
+		<div class="thumbnail">
+			<img class="img-responsive" src="./posts/2021-04-05-windows-95-on-linux-qemu/5.png" alt="img">
+		</div>
+	</div>
+	<div class="col-sm-3"></div>
+</div>
 At the end of installation, press `Finish` then `OK`. System will restart 
 and simply just close qemu and proceed to next step.
-<p align="center">
-    <img class="imgrespM" src="./posts/2021-04-05-windows-95-on-linux-qemu/6.png" height="400em" alt="img6">
-</p>
+<div class="row">
+	<div class="col-sm-3"></div>
+	<div class="col-sm-6">
+		<div class="thumbnail">
+			<img class="img-responsive" src="./posts/2021-04-05-windows-95-on-linux-qemu/6.png" alt="img">
+		</div>
+	</div>
+	<div class="col-sm-3"></div>
+</div>
 
 <br>
 #### Fix 2.1GHz CPU
@@ -110,13 +147,33 @@ qemu-system-i386 -netdev user,id=mynet0 -device ne2k_isa,netdev=mynet0 \
  -hda win95.qcow2 \
  -boot a 
 ```
-<p align="center">
-    <img class="imgrespM" src="./posts/2021-04-05-windows-95-on-linux-qemu/7.png" height="400em" alt="img7">
-    <br>
-    <img class="imgrespM" src="./posts/2021-04-05-windows-95-on-linux-qemu/8.png" height="400em" alt="img8">
-    <br>
-    <img class="imgrespM" src="./posts/2021-04-05-windows-95-on-linux-qemu/9.png" height="400em" alt="img9">
-</p>
+<div class="row">
+	<div class="col-sm-3"></div>
+	<div class="col-sm-6">
+		<div class="thumbnail">
+			<img class="img-responsive" src="./posts/2021-04-05-windows-95-on-linux-qemu/7.png" alt="img">
+		</div>
+	</div>
+	<div class="col-sm-3"></div>
+</div>
+<div class="row">
+	<div class="col-sm-3"></div>
+	<div class="col-sm-6">
+		<div class="thumbnail">
+			<img class="img-responsive" src="./posts/2021-04-05-windows-95-on-linux-qemu/8.png" alt="img">
+		</div>
+	</div>
+	<div class="col-sm-3"></div>
+</div>
+<div class="row">
+	<div class="col-sm-3"></div>
+	<div class="col-sm-6">
+		<div class="thumbnail">
+			<img class="img-responsive" src="./posts/2021-04-05-windows-95-on-linux-qemu/9.png" alt="img">
+		</div>
+	</div>
+	<div class="col-sm-3"></div>
+</div>
 Then Just pres any key, press `N`, press any key again, and after everything is done, 
 just close the QEMU.
 
@@ -132,16 +189,35 @@ qemu-system-i386 -netdev user,id=mynet0 -device ne2k_isa,netdev=mynet0 \
  -boot d
 ```
 At first time boot, it need to install some driver, configure location and printer.
-<p align="center">
-    <img class="imgrespM" src="./posts/2021-04-05-windows-95-on-linux-qemu/10.png" height="400em" alt="img10">
-    <br>
-    <img class="imgrespM" src="./posts/2021-04-05-windows-95-on-linux-qemu/11.png" height="400em" alt="img11">
-</p>
+<div class="row">
+	<div class="col-sm-3"></div>
+	<div class="col-sm-6">
+		<div class="thumbnail">
+			<img class="img-responsive" src="./posts/2021-04-05-windows-95-on-linux-qemu/10.png" alt="img">
+		</div>
+	</div>
+	<div class="col-sm-3"></div>
+</div>
+<div class="row">
+	<div class="col-sm-3"></div>
+	<div class="col-sm-6">
+		<div class="thumbnail">
+			<img class="img-responsive" src="./posts/2021-04-05-windows-95-on-linux-qemu/11.png" alt="img">
+		</div>
+	</div>
+	<div class="col-sm-3"></div>
+</div>
 I just cancel the printer part
 
-<p align="center">
-    <img class="imgrespM" src="./posts/2021-04-05-windows-95-on-linux-qemu/12.png" height="400em" alt="img12">
-</p>
+<div class="row">
+	<div class="col-sm-3"></div>
+	<div class="col-sm-6">
+		<div class="thumbnail">
+			<img class="img-responsive" src="./posts/2021-04-05-windows-95-on-linux-qemu/12.png" alt="img">
+		</div>
+	</div>
+	<div class="col-sm-3"></div>
+</div>
 
 Then go to `Control Panel` then `Add New Hardware` Then just follow the instruction and that's it.
 
@@ -157,9 +233,15 @@ qemu-system-i386 -netdev user,id=mynet0 -device pcnet,netdev=mynet0 \
  -hda win95.qcow2 \
  -boot d
 ```
-<p align="center">
-    <img class="imgrespM" src="./posts/2021-04-05-windows-95-on-linux-qemu/13.png" height="400em" alt="img13">
-</p>
+<div class="row">
+	<div class="col-sm-3"></div>
+	<div class="col-sm-6">
+		<div class="thumbnail">
+			<img class="img-responsive" src="./posts/2021-04-05-windows-95-on-linux-qemu/13.png" alt="img">
+		</div>
+	</div>
+	<div class="col-sm-3"></div>
+</div>
 And i finally able to browse some web, play games using ADLIB and some MIDI playback.
 
 <br>

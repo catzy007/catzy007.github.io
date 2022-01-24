@@ -1,4 +1,4 @@
-### **My Journey To UEFI Boot On Old System**
+#### My Journey To UEFI Boot On Old System
 _Sunday, March 28, 2021_
 
 First, what is UEFI boot. Well it basically replacement of BIOS. But don't quote me on that. 
@@ -64,20 +64,43 @@ system.
 <br>
 #### [UPDATE - Mar 29 2021]
 Suddenly i have some free time and just happen to found my HDMI USB Capture so here's some pictures
-<p align="center">
-    <img class="imgrespM" src="./posts/2021-03-28-my-journey-to-uefi-boot-on-old-system/1.jpg" height="300em" alt="img1">
-    <br>
-    <label>This is a old x58 based system with basic non-uefi firmware</label>
-    <br><br>
-    <img class="imgrespM" src="./posts/2021-03-28-my-journey-to-uefi-boot-on-old-system/2.jpg" height="300em" alt="img2">
-    <br>
-    <label>This is boot selection menu, the Kingston is Clover and Sandisk is Ubuntu 20.04</label>
-    <br><br>
-    <img class="imgrespM" src="./posts/2021-03-28-my-journey-to-uefi-boot-on-old-system/3.jpg" height="300em" alt="img3">
-    <br>
-    <label>This is Clover, if you want to see more option, press F1</label>
-    <br><br>
-    <img class="imgrespM" src="./posts/2021-03-28-my-journey-to-uefi-boot-on-old-system/4.jpg" height="300em" alt="img4">
-    <br>
-    <label>This is Ubuntu 20.04. And i check UEFI mode using "efibootmgr -v" if no error shown then it works</label>
-</p>
+<div class="row">
+	<div class="col-sm-3"></div>
+	<div class="col-sm-6">
+		<div class="thumbnail">
+			<img class="img-responsive" src="./posts/2021-03-28-my-journey-to-uefi-boot-on-old-system/1.jpg" alt="img">
+            <span>This is a old x58 based system with basic non-uefi firmware</span>
+		</div>
+	</div>
+	<div class="col-sm-3"></div>
+</div>
+<div class="row">
+	<div class="col-sm-3"></div>
+	<div class="col-sm-6">
+		<div class="thumbnail">
+			<img class="img-responsive" src="./posts/2021-03-28-my-journey-to-uefi-boot-on-old-system/2.jpg" alt="img">
+            <span>This is boot selection menu, the Kingston is Clover and Sandisk is Ubuntu 20.04</span>
+		</div>
+	</div>
+	<div class="col-sm-3"></div>
+</div>
+<div class="row">
+	<div class="col-sm-3"></div>
+	<div class="col-sm-6">
+		<div class="thumbnail">
+			<img class="img-responsive" src="./posts/2021-03-28-my-journey-to-uefi-boot-on-old-system/3.jpg" alt="img">
+            <span>This is Clover, if you want to see more option, press F1</span>
+		</div>
+	</div>
+	<div class="col-sm-3"></div>
+</div>
+<div class="row">
+	<div class="col-sm-3"></div>
+	<div class="col-sm-6">
+		<div class="thumbnail">
+			<img class="img-responsive" src="./posts/2021-03-28-my-journey-to-uefi-boot-on-old-system/4.jpg" alt="img">
+            <span>This is Ubuntu 20.04. And i check UEFI mode using "efibootmgr -v" if no error shown then it works</span>
+		</div>
+	</div>
+	<div class="col-sm-3"></div>
+</div>

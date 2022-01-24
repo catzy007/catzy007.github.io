@@ -1,4 +1,4 @@
-### **Turn SBC Into OpenWRT Router**
+#### Turn SBC Into OpenWRT Router
 _Sunday, September 6, 2020_
 
 Yeah let's face it. It's summertime and COVID has strike for almost a year now, i had no money 
@@ -37,31 +37,55 @@ hostapd
 Okay after some searching and make sure all part supported, which version to use, which driver to use it's 
 time to download they called `firmware` from <https://downloads.openwrt.org/releases/>. Openwrt sort 
 the system by it's Chip/Processor manufacturer so (your might be different). 
-<p align="center">
-	<img src="./posts/2020-09-06-turn-sbc-into-openwrt-router/1.png" height="400px" alt="img1">
-</p>
+<div class="row">
+	<div class="col-sm-3"></div>
+	<div class="col-sm-6">
+		<div class="thumbnail">
+			<img class="img-responsive" src="./posts/2020-09-06-turn-sbc-into-openwrt-router/1.png" alt="img">
+		</div>
+	</div>
+	<div class="col-sm-3"></div>
+</div>
 
 First, go to current supportted version, then go to `targets`, then go to chip manuf, then go to architecture, 
 then download the image
 
 Okay according to my SBC, `19.07.3/targets/sunxi/cortexa7/sun8i-h2-plus-orangepi-zero-ext4-sdcard.img.gz` 
 yours might be different
-<p align="center">
-	<img src="./posts/2020-09-06-turn-sbc-into-openwrt-router/2.png" height="400px" alt="img2">
-</p>
+<div class="row">
+	<div class="col-sm-3"></div>
+	<div class="col-sm-6">
+		<div class="thumbnail">
+			<img class="img-responsive" src="./posts/2020-09-06-turn-sbc-into-openwrt-router/2.png" alt="img">
+		</div>
+	</div>
+	<div class="col-sm-3"></div>
+</div>
 
 Then prepare your sdcard dont forget to back up your data and flash the firmware to your sdcard. Here i'm using 
 [Etcher](https://www.balena.io/etcher/) you can use dd, win32diskimager or any tools similar.
-<p align="center">
-	<img src="./posts/2020-09-06-turn-sbc-into-openwrt-router/3.png" height="300px" alt="img3">
-</p>
+<div class="row">
+	<div class="col-sm-3"></div>
+	<div class="col-sm-6">
+		<div class="thumbnail">
+			<img class="img-responsive" src="./posts/2020-09-06-turn-sbc-into-openwrt-router/3.png" alt="img">
+		</div>
+	</div>
+	<div class="col-sm-3"></div>
+</div>
 
 After done flashing, plug the sdcard to sbc, plug the power and connect to your computer using LAN cable.
 
 Then go to web browser and go to [192.168.1.1](http://192.168.1.1)
-<p align="center">
-	<img src="./posts/2020-09-06-turn-sbc-into-openwrt-router/4.png" height="300px" alt="img4">
-</p>
+<div class="row">
+	<div class="col-sm-3"></div>
+	<div class="col-sm-6">
+		<div class="thumbnail">
+			<img class="img-responsive" src="./posts/2020-09-06-turn-sbc-into-openwrt-router/4.png" alt="img">
+		</div>
+	</div>
+	<div class="col-sm-3"></div>
+</div>
 
 Because no password set, just click `Login`. 
 
@@ -69,9 +93,15 @@ The first thing to do is set a password. To do that, go to `System > Administrat
 
 Next thing to do is install all driver. Go to `System > Software > Update lists...` wait a second then find and 
 install all necessary package.
-<p align="center">
-	<img src="./posts/2020-09-06-turn-sbc-into-openwrt-router/5.png" height="300px" alt="img5">
-</p>
+<div class="row">
+	<div class="col-sm-3"></div>
+	<div class="col-sm-6">
+		<div class="thumbnail">
+			<img class="img-responsive" src="./posts/2020-09-06-turn-sbc-into-openwrt-router/5.png" alt="img">
+		</div>
+	</div>
+	<div class="col-sm-3"></div>
+</div>
 
 After all package has beed installed, do a reboot `System > Reboot > Perform reboot`
 

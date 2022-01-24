@@ -34,17 +34,17 @@ list chipset used is `RTL8812BU` and speaking about Linux driver, it had few dri
 but most of them had to be compiled manually.
 
 <div class="row">
-	<div class=col-sm-3></div>
+	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="thumbnail">
 			<img class="img-responsive" src="./posts/2021-09-03-my-attempt-to-5ghz-usb-wifi-access-point/01.jpg" alt="img">
 		</div>
 	</div>
-	<div class=col-sm-3></div>
+	<div class="col-sm-3"></div>
 </div>
 
 <br>
-#### **Initial Testing and Driver Installation**
+#### Initial Testing and Driver Installation
 
 After it arrives from China i just plug it in and do `lspci`, and it has shown something 
 like this.
@@ -75,7 +75,7 @@ Or check <https://github.com/morrownr/88x2bu/#installation-steps> if you use oth
 distros.
 
 <br>
-#### **AP Creation and Power Workaround**
+#### AP Creation and Power Workaround
 
 After installation complete i create AP for it, and it works. After few hours, no 
 device can connect to it anymore. According to <https://www.fastoe.com/blog/install-rtl8812bu-usb-wifi-dongle-on-linux> 
@@ -133,7 +133,7 @@ You probably need to change `GATEWAY, COUNTRY, SSID, PASSPHRASE, WIFI_IFACE, INT
 to fit your specific configuration.
 
 <br>
-#### **Things to Keep In Mind**
+#### Things to Keep In Mind
 
 In my case some smartphone won't detect 5GHz band. By disabling cellular 
 connection using airplane mode or unplugging SIM Card it will detect right 
@@ -160,14 +160,14 @@ My test uses 5GHZ band at channel 36.
 And i think that's it. If you did something similar, i hope the best for you.
 
 <br>
-#### **More Reading If You Need**
+#### More Reading If You Need
 
 <https://github.com/morrownr/88x2bu/blob/5.8.7.4/Bridged_Wireless_Access_Point.md>
 
 <https://linux-hardware.org/index.php?id=usb:0bda-b812>
 
 <br>
-#### **[UPDATE 2021/10/1] Go above and beyond**
+#### [UPDATE 2021/10/1] Go above and beyond
 
 Recently or what i mean is few hours ago, i get a breakthrough. I finally 
 able to use 802.11AC mode at 80MHz channel width and 867Mbps bit rate. 
@@ -184,13 +184,13 @@ Using `iwconfig` i managed to get 867Mbps bit rate and other nice info. Interest
 the mode still shown as `802.11bgn` which is not actually the case as you see later.
 
 <div class="row">
-	<div class=col-sm-2></div>
+	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
 		<div class="thumbnail">
 			<img class="img-responsive" src="./posts/2021-09-03-my-attempt-to-5ghz-usb-wifi-access-point/02.jpg" alt="img">
 		</div>
 	</div>
-	<div class=col-sm-2></div>
+	<div class="col-sm-2"></div>
 </div>
 
 Then using [WiFiman](https://play.google.com/store/apps/details?id=com.ubnt.usurvey&hl=in&gl=US) 
@@ -199,13 +199,13 @@ recommended. From the apps, it has shown that the mode is `802.11ac` and the cha
 Awesome.
 
 <div class="row">
-	<div class=col-sm-4></div>
+	<div class="col-sm-4"></div>
 	<div class="col-sm-4">
 		<div class="thumbnail">
 			<img class="img-responsive" src="./posts/2021-09-03-my-attempt-to-5ghz-usb-wifi-access-point/03.jpg" alt="img">
 		</div>
 	</div>
-	<div class=col-sm-4></div>
+	<div class="col-sm-4"></div>
 </div>
 
 So what we learn here is that a random 5Ghz Wi-Fi adapter can be used as Wi-Fi AP with all 
