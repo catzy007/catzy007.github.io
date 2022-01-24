@@ -30,4 +30,6 @@ function loadContentIndex(){
     }else{
         document.location.href = './';
     }
+
+    loadSiteCopyright();
 }

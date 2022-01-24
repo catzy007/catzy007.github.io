@@ -203,17 +203,15 @@
     <br><br>
     <div class="row">
         <div class="col-sm-12 text-center">
-            <p><script>document.write(new Date().getFullYear()); document.write(" " + getSiteCopyright());</script></p>
+            <p><span id="siteCopyright"></span></p>
             <p>Made with <a style="color:red">&#9829;</a> using Stevia Page</p>
         </div>
     </div>
 </div>
 
 <script>
-    // window.onload = function mainLoader(){
-        window.scrollTo(0, 0); 
-        executeXhr("./posts/index.md", loadHomepageIndex, "POST-INDEX", "latest-post");
-    // }
+    window.scrollTo(0, 0); 
+    executeXhr("./posts/index.md", loadHomepageIndex, "POST-INDEX", "latest-post");
 </script>
 <link rel="stylesheet" href="./css/font-awesome.min.css">
 <link rel="stylesheet" href="./css/bootstrap.min.css">

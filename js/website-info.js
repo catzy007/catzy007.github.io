@@ -28,3 +28,9 @@ function enableComments(){
 function getSiteCopyright(){
 	return copyrightOwner;
 }
+
+function loadSiteCopyright(){
+	var currentYear = new Date().getFullYear();
+	var copyrightOwner = getSiteCopyright();
+	document.getElementById('siteCopyright').innerHTML = currentYear + " " + copyrightOwner;
+}
