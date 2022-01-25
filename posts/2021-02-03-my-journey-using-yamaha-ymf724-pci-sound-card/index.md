@@ -1,4 +1,4 @@
-### **My Journey Using Yamaha YMF724 PCI Sound Card**
+#### My Journey Using Yamaha YMF724 PCI Sound Card
 _Wednesday, February 3, 2021_
 
 Few days ago, i'm looking for a sound card. Well why anyone looking for a sound card in 2021? 

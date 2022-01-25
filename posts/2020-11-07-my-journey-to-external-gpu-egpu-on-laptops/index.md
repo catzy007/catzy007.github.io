@@ -1,4 +1,4 @@
-### **My Journey to External GPU (EGPU) on Laptops**
+#### My Journey to External GPU (EGPU) on Laptops
 _Saturday, November 7, 2020_
 
 When i was a kid, i used to play a lot of video games with my friend. 
@@ -31,7 +31,7 @@ find it in amazon, ebay, aliexpress or something like that.
 Here i'm using AMD Radeon RX 560 from sapphire, EGPU adapter with 6PIN and 
 basically do some mod to it. The PSU i'm using is standard ATX PSU with 
 750W from Aerocool and random old PSU. What should you do is to jump a connection 
-between Green wire and Black wire or **PS_ON#** with **COM**. It basically forces a PSU to stay on. 
+between Green wire and Black wire or `PS_ON#` with `COM`. It basically forces a PSU to stay on. 
 
 <div class="row">
 	<div class="col-sm-4"></div>
@@ -122,8 +122,8 @@ Nvidia 950M, Windows 10 2004 + Ubuntu 20.04. As usual just dissasemble the lapto
 </div>
 Aaand it works, first try. But it doesnt have a driver so i download it then bluescreen dank. After reboot, it just stuck 
 in the bios, just blank screen. After few try and try suggestion from interweb to unplug the adapter at transition from 
-BIOS to Windows, still no luck. Either it doesn't boot, or it doesn't detected. Then i go to BIOS and Enable **Compatibility 
-Support Module (CSM)**
+BIOS to Windows, still no luck. Either it doesn't boot, or it doesn't detected. Then i go to BIOS and Enable `Compatibility 
+Support Module (CSM)`
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
