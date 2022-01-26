@@ -1,21 +1,33 @@
-### **Set Custom Resolution in Headless Server**
-#### Wednesday, September 25, 2019
+#### Set Custom Resolution in Headless Server
+##### *Wednesday, September 25, 2019*
 Here's the story, you have a server and you connect to it using VNC or something similar but you doesn't 
 have any monitor plugged in so you're stuck with the default resolution. You actually can bought dummy 
 HDMI or VGA plug and call it a day, but if you think that spending extra buck is not worth it. Then you 
 come to the right place here i'm going to set up sofware dummy display so you can set custom resolution.
-<p align="center">
-	<img src="./posts/2019-09-25-set-custom-resolution-in-headless-server/1.jpg" height="250px" alt="1">
-</p>
+<div class="row">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
+        <div class="thumbnail">
+            <img class="img-responsive" src="./posts/2019-09-25-set-custom-resolution-in-headless-server/1.jpg" alt="img">
+        </div>
+    </div>
+    <div class="col-sm-3"></div>
+</div>
 
 <br>
 First, install the dummy drivers
 ```
 sudo apt update && sudo apt install xserver-xorg-video-dummy -y
 ``` 
-<p align="center">
-	<img src="./posts/2019-09-25-set-custom-resolution-in-headless-server/2.jpg" height="250px" alt="2">
-</p>
+<div class="row">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
+        <div class="thumbnail">
+            <img class="img-responsive" src="./posts/2019-09-25-set-custom-resolution-in-headless-server/2.jpg" alt="img">
+        </div>
+    </div>
+    <div class="col-sm-3"></div>
+</div>
 
 <br>
 Then write config `sudo nano /etc/X11/xorg.conf` fill the config with
@@ -50,9 +62,15 @@ EndSection
 
 <br>
 Then reboot and that's it now you should be able to change resolution in display settings
-<p align="center">
-	<img src="./posts/2019-09-25-set-custom-resolution-in-headless-server/3.jpg" height="250px" alt="3">
-</p>
+<div class="row">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
+        <div class="thumbnail">
+            <img class="img-responsive" src="./posts/2019-09-25-set-custom-resolution-in-headless-server/3.jpg" alt="img">
+        </div>
+    </div>
+    <div class="col-sm-3"></div>
+</div>
 
 <br>
 #### Sauce

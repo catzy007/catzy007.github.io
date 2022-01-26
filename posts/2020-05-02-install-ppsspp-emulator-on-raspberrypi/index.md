@@ -1,4 +1,4 @@
-### **Install PPSSPP Emulator on Raspberrypi**
+#### Install PPSSPP Emulator on Raspberrypi
 _Saturday, May 2, 2020_
 
 Due to the current pandemic across the globe, many people staying at home. 
@@ -39,6 +39,12 @@ Now let's begin!
 All done! you can play psp game on rpi3 with some tweak ofc. Here i'm playing 
 `Basara Chronicle Heroes` using lowest settings (1x resolution, nearest, AA off) 
 and frameskip set to auto.
-<div align="center">
-    <img src="./posts/2020-05-02-install-ppsspp-emulator-on-raspberrypi/1.jpg" height="500px" alt="img1">
+<div class="row">
+	<div class="col-sm-3"></div>
+	<div class="col-sm-6">
+		<div class="thumbnail">
+			<img class="img-responsive" src="./posts/2020-05-02-install-ppsspp-emulator-on-raspberrypi/1.jpg" alt="img">
+		</div>
+	</div>
+	<div class="col-sm-3"></div>
 </div>

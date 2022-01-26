@@ -1,4 +1,4 @@
-### **Block Internet Advertisements Using PI Hole**
+#### Block Internet Advertisements Using PI Hole
 _Wednesday, February 26, 2020_
 
 Sometimes when you're watching simple youtube videos or surfing across random website 
@@ -16,33 +16,75 @@ Okay enough talking, let's do this. Here i'm using autoinstall to make my life e
 * For starter, in my case i'm using raspberrypi, and set the static ip to `192.168.1.2`. In this example i'll 
 install it in my laptop but the installation process is similar.
 * First, run autoinstall `curl -sSL https://install.pi-hole.net | bash`
-    <div align="center">
-        <img src="./posts/2020-02-06-block-internet-advertisements-using-pi-hole/1.png" height="500px" alt="img1">
+    <div class="row">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-6">
+            <div class="thumbnail">
+                <img class="img-responsive" src="./posts/2020-02-06-block-internet-advertisements-using-pi-hole/1.png" alt="img">
+            </div>
+        </div>
+        <div class="col-sm-3"></div>
     </div>
 * Then select DNS provider you want to use, press arrow key and tab to navigate and enter to confirm
-    <div align="center">
-        <img src="./posts/2020-02-06-block-internet-advertisements-using-pi-hole/2.png" height="500px" alt="img2">
+    <div class="row">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-6">
+            <div class="thumbnail">
+                <img class="img-responsive" src="./posts/2020-02-06-block-internet-advertisements-using-pi-hole/2.png" alt="img">
+            </div>
+        </div>
+        <div class="col-sm-3"></div>
     </div>
 * Next, it will ask to use existing blocklist. Just leave it as is
-    <div align="center">
-        <img src="./posts/2020-02-06-block-internet-advertisements-using-pi-hole/3.png" height="500px" alt="img3">
+    <div class="row">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-6">
+            <div class="thumbnail">
+                <img class="img-responsive" src="./posts/2020-02-06-block-internet-advertisements-using-pi-hole/3.png" alt="img">
+            </div>
+        </div>
+        <div class="col-sm-3"></div>
     </div>
 * Next
-    <div align="center">
-        <img src="./posts/2020-02-06-block-internet-advertisements-using-pi-hole/4.png" height="500px" alt="img4">
+    <div class="row">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-6">
+            <div class="thumbnail">
+                <img class="img-responsive" src="./posts/2020-02-06-block-internet-advertisements-using-pi-hole/4.png" alt="img">
+            </div>
+        </div>
+        <div class="col-sm-3"></div>
     </div>
 * Then it will ask to install web admin, for sake of convenient yes
-    <div align="center">
-        <img src="./posts/2020-02-06-block-internet-advertisements-using-pi-hole/5.png" height="500px" alt="img5">
+    <div class="row">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-6">
+            <div class="thumbnail">
+                <img class="img-responsive" src="./posts/2020-02-06-block-internet-advertisements-using-pi-hole/5.png" alt="img">
+            </div>
+        </div>
+        <div class="col-sm-3"></div>
     </div>
 * After pihole finishes it's thing, you'll told your web admin `password`. You can change it in web admin
 * Open your browser and type <http://pi.hole/admin>, login and pihole was set
-    <div align="center">
-        <img src="./posts/2020-02-06-block-internet-advertisements-using-pi-hole/6.png" height="300px" alt="img6">
+    <div class="row">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-6">
+            <div class="thumbnail">
+                <img class="img-responsive" src="./posts/2020-02-06-block-internet-advertisements-using-pi-hole/6.png" alt="img">
+            </div>
+        </div>
+        <div class="col-sm-3"></div>
     </div>
 * The last thing is to go to your router settings and put pihole ip address as DNS
-    <div align="center">
-        <img src="./posts/2020-02-06-block-internet-advertisements-using-pi-hole/7.png" height="300px" alt="img7">
+    <div class="row">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-6">
+            <div class="thumbnail">
+                <img class="img-responsive" src="./posts/2020-02-06-block-internet-advertisements-using-pi-hole/7.png" alt="img">
+            </div>
+        </div>
+        <div class="col-sm-3"></div>
     </div>
 
 And that's it, it might not be perfect but you can improve it by adding your own blacklist

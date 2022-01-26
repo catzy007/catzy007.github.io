@@ -1,5 +1,5 @@
-### **My Journey to PCIE or VGA Passtrough in KVM**
-#### Sunday, November 25, 2019
+#### My Journey to PCIE or VGA Passtrough in KVM
+##### *Sunday, November 25, 2019*
 For a long time, Linux users has to face a fact that Microsoft Windows have some strength in 
 lot of applications such as Games, CAD application, Many Adobe product and list goes on. Yes 
 i know there are some alternatives and [DXVK](https://github.com/doitsujin/dxvk)-[Proton](https://github.com/ValveSoftware/Proton) 
@@ -20,13 +20,25 @@ bit tricky. Do your best research and hope for the best.
 
 <br><br>
 First, go to the BIOS settings and enable VT-D or AMD-Vi
-<p align="center">
-	<img src="./posts/2019-11-25-my-journey-to-pcie-or-vga-passtrough-in-kvm/001.jpg" height="250px" alt="img01">
-</p>
+<div class="row">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
+        <div class="thumbnail">
+            <img class="img-responsive" src="./posts/2019-11-25-my-journey-to-pcie-or-vga-passtrough-in-kvm/001.jpg" alt="img">
+        </div>
+    </div>
+    <div class="col-sm-3"></div>
+</div>
 If your motherboard support SR-IOV, enable it too
-<p align="center">
-	<img src="./posts/2019-11-25-my-journey-to-pcie-or-vga-passtrough-in-kvm/002.jpg" height="250px" alt="img01">
-</p>
+<div class="row">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
+        <div class="thumbnail">
+            <img class="img-responsive" src="./posts/2019-11-25-my-journey-to-pcie-or-vga-passtrough-in-kvm/002.jpg" alt="img">
+        </div>
+    </div>
+    <div class="col-sm-3"></div>
+</div>
 Then, install virt-manager and ovmf. Here i'm using VMM to make our life easy.
 ```
 sudo apt install virt-manager ovmf -y
@@ -94,10 +106,10 @@ but DO THAT WITH YOUR OWN RISKS. Some device should not passed into KVM for exam
 
 <br><br>
 Try to take a note for PCI Numeric id's. mine is
-> 08:00.0 VGA compatible controller [0300]: Advanced Micro Devices, Inc. [AMD/ATI] Baffin [Radeon RX 550 640SP / RX 560/560X] [**1002:67ff**] (rev cf)
+> 08:00.0 VGA compatible controller [0300]: Advanced Micro Devices, Inc. [AMD/ATI] Baffin [Radeon RX 550 640SP / RX 560/560X] [1002:67ff] (rev cf)
 
 and
-> 08:00.1 Audio device [0403]: Advanced Micro Devices, Inc. [AMD/ATI] Baffin HDMI/DP Audio [Radeon RX 550 640SP / RX 560/560X] [**1002:aae0**]
+> 08:00.1 Audio device [0403]: Advanced Micro Devices, Inc. [AMD/ATI] Baffin HDMI/DP Audio [Radeon RX 550 640SP / RX 560/560X] [1002:aae0]
 
 <br><br>
 Then pass the PCI devices
@@ -187,46 +199,114 @@ the line may be different but it should look similar. Then do `reboot`
 
 <br><br>
 Then create simple and quick VM using `Virtual Machine Manager`
-<p align="center">
-	<img src="./posts/2019-11-25-my-journey-to-pcie-or-vga-passtrough-in-kvm/01.jpg" height="250px" alt="img01">
-</p>
-<p align="center">
-	<img src="./posts/2019-11-25-my-journey-to-pcie-or-vga-passtrough-in-kvm/02.jpg" height="250px" alt="img02">
-</p>
-<p align="center">
-	<img src="./posts/2019-11-25-my-journey-to-pcie-or-vga-passtrough-in-kvm/03.jpg" height="250px" alt="img03">
-</p>
-<p align="center">
-	<img src="./posts/2019-11-25-my-journey-to-pcie-or-vga-passtrough-in-kvm/04.jpg" height="250px" alt="img04">
-</p>
-<p align="center">
-	<img src="./posts/2019-11-25-my-journey-to-pcie-or-vga-passtrough-in-kvm/05.jpg" height="250px" alt="img05">
-</p>
+<div class="row">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
+        <div class="thumbnail">
+            <img class="img-responsive" src="./posts/2019-11-25-my-journey-to-pcie-or-vga-passtrough-in-kvm/01.jpg" alt="img">
+        </div>
+    </div>
+    <div class="col-sm-3"></div>
+</div>
+<div class="row">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
+        <div class="thumbnail">
+            <img class="img-responsive" src="./posts/2019-11-25-my-journey-to-pcie-or-vga-passtrough-in-kvm/02.jpg" alt="img">
+        </div>
+    </div>
+    <div class="col-sm-3"></div>
+</div>
+<div class="row">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
+        <div class="thumbnail">
+            <img class="img-responsive" src="./posts/2019-11-25-my-journey-to-pcie-or-vga-passtrough-in-kvm/03.jpg" alt="img">
+        </div>
+    </div>
+    <div class="col-sm-3"></div>
+</div>
+<div class="row">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
+        <div class="thumbnail">
+            <img class="img-responsive" src="./posts/2019-11-25-my-journey-to-pcie-or-vga-passtrough-in-kvm/04.jpg" alt="img">
+        </div>
+    </div>
+    <div class="col-sm-3"></div>
+</div>
+<div class="row">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
+        <div class="thumbnail">
+            <img class="img-responsive" src="./posts/2019-11-25-my-journey-to-pcie-or-vga-passtrough-in-kvm/05.jpg" alt="img">
+        </div>
+    </div>
+    <div class="col-sm-3"></div>
+</div>
 Don't forget to check `Customize configuration before install`
-<p align="center">
-	<img src="./posts/2019-11-25-my-journey-to-pcie-or-vga-passtrough-in-kvm/06.jpg" height="250px" alt="img06">
-	<img src="./posts/2019-11-25-my-journey-to-pcie-or-vga-passtrough-in-kvm/07.jpg" height="250px" alt="img07">
-</p>
+<div class="row">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
+        <div class="thumbnail">
+            <img class="img-responsive" src="./posts/2019-11-25-my-journey-to-pcie-or-vga-passtrough-in-kvm/06.jpg" alt="img">
+        </div>
+    </div>
+    <div class="col-sm-3"></div>
+</div>
+<div class="row">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
+        <div class="thumbnail">
+            <img class="img-responsive" src="./posts/2019-11-25-my-journey-to-pcie-or-vga-passtrough-in-kvm/07.jpg" alt="img">
+        </div>
+    </div>
+    <div class="col-sm-3"></div>
+</div>
 Here i'm using Q35 Chipset and regular BIOS as my setup. You can combination of i440FX, Q35 and UEFI, BIOS if you encounter some problem.
-<p align="center">
-	<img src="./posts/2019-11-25-my-journey-to-pcie-or-vga-passtrough-in-kvm/08.jpg" height="250px" alt="img08">
-</p>
+<div class="row">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
+        <div class="thumbnail">
+            <img class="img-responsive" src="./posts/2019-11-25-my-journey-to-pcie-or-vga-passtrough-in-kvm/08.jpg" alt="img">
+        </div>
+    </div>
+    <div class="col-sm-3"></div>
+</div>
 Then go to `CPUs tab` and configure as you need.
-<p align="center">
-	<img src="./posts/2019-11-25-my-journey-to-pcie-or-vga-passtrough-in-kvm/09.jpg" height="250px" alt="img09">
-</p>
+<div class="row">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
+        <div class="thumbnail">
+            <img class="img-responsive" src="./posts/2019-11-25-my-journey-to-pcie-or-vga-passtrough-in-kvm/09.jpg" alt="img">
+        </div>
+    </div>
+    <div class="col-sm-3"></div>
+</div>
 Next, `Add Hardware` select `Input Tab` and select `EvTouch USB Graphic Tablet`.
 Then install Windows as usual.
 
 <br><br>
 After Windows installation finished, then shutdown the VM and add a new hardware and pass both Video output and sound
-<p align="center">
-	<img src="./posts/2019-11-25-my-journey-to-pcie-or-vga-passtrough-in-kvm/10.jpg" height="250px" alt="img10">
-</p>
+<div class="row">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
+        <div class="thumbnail">
+            <img class="img-responsive" src="./posts/2019-11-25-my-journey-to-pcie-or-vga-passtrough-in-kvm/10.jpg" alt="img">
+        </div>
+    </div>
+    <div class="col-sm-3"></div>
+</div>
 Then boot your VM and install the necessary drivers and hope that your PCI device is working as intended
-<p align="center">
-	<img src="./posts/2019-11-25-my-journey-to-pcie-or-vga-passtrough-in-kvm/11.jpg" height="250px" alt="img11">
-</p>
+<div class="row">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
+        <div class="thumbnail">
+            <img class="img-responsive" src="./posts/2019-11-25-my-journey-to-pcie-or-vga-passtrough-in-kvm/11.jpg" alt="img">
+        </div>
+    </div>
+    <div class="col-sm-3"></div>
+</div>
 And That's it, You have full Windows system running in KVM and the best part is you can play games or other 
 heavy task as well
 
@@ -275,24 +355,27 @@ To hide vm status in windows
 * set cpu to `Copy host CPU configuration`
 * do `sudo virsh edit <vmname>`
 * change
-```
-  <cpu mode='host-model' check='partial'>
-     <model fallback='allow'/>
-  </cpu>
-```
+	```
+	<cpu mode='host-model' check='partial'>
+		<model fallback='allow'/>
+	</cpu>
+	```
+
 * to
-```
-  <cpu mode='host-model' check='partial'>
-    <model fallback='allow'/>
-    <feature policy='disable' name='hypervisor'/>
-  </cpu>
-```
+	```
+	<cpu mode='host-model' check='partial'>
+		<model fallback='allow'/>
+		<feature policy='disable' name='hypervisor'/>
+	</cpu>
+	```
+
 * then add
-```
-  <kvm>
-    <hidden state='on'/>
-  </kvm>
-```
+
+	```
+	<kvm>
+		<hidden state='on'/>
+	</kvm>
+	```
 
 <br><br>
 Some Sauce
