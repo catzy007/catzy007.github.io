@@ -1,124 +1,189 @@
-### **Dasar Pemrograman Bahasa C**
-#### Friday, September 14, 2018
+#### Dasar Pemrograman C Part1 : The Beginning
+##### *Friday, September 14, 2018*
 
-> First, i would like to apologize to some viewer in this blog because this post isn't in 
-english.. at least most of it. as you can see some of this post contain indonesian 
-languange so yeah. ~('-'~)
-
-Bahasa pemrograman C merupakan salah satu bahasa pemrograman komputer. Dibuat pada tahun 1972 
-oleh Dennis Ritchie untuk Sistem Operasi Unix di Bell Telephone Laboratories.
-
-Meskipun C dibuat untuk memprogram sistem dan jaringan komputer namun bahasa ini juga sering 
-digunakan dalam mengembangkan software aplikasi. C juga banyak dipakai oleh berbagai jenis 
-platform sistem operasi dan arsitektur komputer, bahkan terdapat beberepa compiler yang sangat 
-populer telah tersedia. C secara luar biasa memengaruhi bahasa populer lainnya, terutama C++ 
-yang merupakan extensi dari C.
+Bahasa pemrograman C merupakan salah satu bahasa pemrograman komputer. Dibuat pada tahun 1972 oleh Dennis Ritchie untuk Sistem Operasi Unix di Bell Telephone 
+Laboratories.Meskipun C dibuat untuk memprogram sistem dan jaringan komputer 
+namun bahasa ini juga sering digunakan dalam mengembangkan software aplikasi. 
+C juga banyak dipakai oleh berbagai jenis platform sistem operasi dan arsitektur 
+komputer, bahkan terdapat beberepa compiler yang sangat populer telah tersedia. 
+C secara luar biasa memengaruhi bahasa populer lainnya, terutama C++ yang 
+merupakan extensi dari C.
 
 <br>
-### **Dasar Pemrograman C Part1 : The Beginning**
-#### **Sekilas Tentang Dasar Pemrograman**
-Hemm pertama aku cukup yakin orang indo itu malas membaca.. jadi apabila anda tak tertarik 
-dengan pembukaan ini, langsung skip ke bagian selanjutnya (~'-')~ ok kenapa ada bahasa 
-pemrograman? alasannya adalah karena manusia menciptakan komputer. ya bahasa pemrograman adalah 
-bahasa yang digunakan untuk menerjemahkan perintah yang diinginkan oleh manusia agar dapat 
-diproses oleh komputer. karena komputer sebenarnya hanya mampu memproses data biner. yaitu 1 
-dan 0, on dan off, benar dan salah. ga percaya? jal bukakno kwi laptopmu delok isine prosesor, 
-opo iki woco. next bahasa c adalah salahsatu bahsa pemrograman yang cukup populer dan termasuk 
-bahasa middle level. hemm gampang'e ngene. komputer kan hanya memahami 1 dan 0. nah agar manusia 
-dapat memberi perintah ke komputer, manusia harus membuat bahasa yang dapat menerjemahkan 1 dan 
-0 tsb. salahsatu bahasa yang diciptakan adalah bahasa assembly. yang mana masih sangat rumit 
-untuk dipahami oleh manusia.. lucu ya gawe2 dewe binggung2 dewe.. nah karena itu diciptakanlah 
-bahasa yang lebih mudah dipahami manusia yaitu bahasa middle level. dan salahsatunya adalah 
-bahasa c. mau tau lebih banyak. cek wikipedia 
+#### *Sekilas Tentang Dasar Pemrograman*
+Program merupakan bagian dari komputer rangkaian perintah yang ditulis oleh 
+`Programmer` menggunakan `Bahasa Pemprograman` yang kemudian dapat diterjemahkan 
+oleh komputer untuk selanjutkan dijalankan oleh komputer untuk mencapai tujuan 
+tertentu. Program ditulis dalam bentuk `Kode Sumber` yang dapat dipahami oleh 
+manusia, kemduian diterjemahkan oleh `Compiler` menjadi `Bahasa Mesin` yang dapat 
+dipahami oleh CPU. Program komputer terdiri dari `sintaks` dan algoritma 
+matematis yang disusun dalam urutan tertentu.
 
 <br>
-#### **Apa Yang Saya Butuhkan Sebelum Menulis Program?**
-Wokeh.. pertama **"Jika Anda Pengguna Microsoft Windows Versi Apapun atau jika anda tak paham 
-apa yang saya katakan maka anda mungkin pengguna microsoft windows."** saya sangat rekomendasi 
-download program Code:Blocks di <http://www.codeblocks.org/downloads> terus pilih `"Download 
-the binary release"` terus download yang ada tulisan `"blablabla-12.34mingw-setup.exe"` lalu 
-install dan anda siap coding. apabila anda pengguna linux, buka terminal, ketikkan 
-`$ gcc --version` apabila outputnya kurang lebih `"gcc (Ubuntu 7.4.0-1ubuntu1~18.04) 7.4.0"` maka anda sudah siap coding (~'-')~ 
-atau anda juga dapat install codeblock dengan `$ sudo apt-get install codeblocks`
+#### *Apa Yang Saya Butuhkan Sebelum Menulis Program?*
+Persiapkan komputer dengan Prosesor dengan jumlah inti/core minimal 2 dengan 
+memori/ram sebesar 2 GB. Jika Anda Pengguna Microsoft Windows silahkan download 
+program [Code:Blocks](https://www.codeblocks.org/downloads), kemudian masuk ke 
+bagian `"Download the binary release"` dan pilih versi dengan tulisan 
+`"mingw-setup.exe"` semisal `codeblocks-20.03mingw-setup.exe`. kemudian install dan anda siap untuk menulis program. 
+
+Apabila anda pengguna linux, buka `terminal` lalu ketikkan 
+`gcc --version` apabila outputnya kurang lebih 
+`"gcc (Ubuntu 7.4.0-1ubuntu1~18.04) 7.4.0"` maka anda sudah siap untuk menulis 
+program. Atau lakukan installasi codeblocks dengan perintah 
+`sudo apt-get install codeblocks`
 
 <br>
-#### **Mulai Coding**
-pertama buka codeblocks. buat linux user buka text editor macam nano, leafpad dll. Klik kanan pada gambar > view untuk memperbesar!
+#### *Mulai Coding*
+pertama buka aplikasi Codeblocks melalui start menu atau icon desktop.
 
-* pertama buka codeblocks
-<p align="center">
-	<img src="./posts/2018-09-14-dasar-pemrograman-c-part1-the-beginning/1.jpg" height="250px" alt="codeblocks 1">
-</p>
+* Pertama buka codeblocks
+<div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8">
+        <div class="thumbnail">
+            <img class="img-responsive" src="./posts/2018-09-14-dasar-pemrograman-c-part1-the-beginning/1.jpg" alt="img">
+        </div>
+    </div>
+    <div class="col-sm-2"></div>
+</div>
 
 * lalu tekan `file > new > Project`
-<p align="center">
-	<img src="./posts/2018-09-14-dasar-pemrograman-c-part1-the-beginning/2.jpg" height="250px" alt="codeblocks 2">
-</p>
+<div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8">
+        <div class="thumbnail">
+            <img class="img-responsive" src="./posts/2018-09-14-dasar-pemrograman-c-part1-the-beginning/2.jpg" alt="img">
+        </div>
+    </div>
+    <div class="col-sm-2"></div>
+</div>
 
 * Lalu Pilih `"Console Application"`
-<p align="center">
-	<img src="./posts/2018-09-14-dasar-pemrograman-c-part1-the-beginning/3.jpg" height="250px" alt="codeblocks 3">
-</p>
+<div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8">
+        <div class="thumbnail">
+            <img class="img-responsive" src="./posts/2018-09-14-dasar-pemrograman-c-part1-the-beginning/3.jpg" alt="img">
+        </div>
+    </div>
+    <div class="col-sm-2"></div>
+</div>
 
 * Tekan Next
-<p align="center">
-	<img src="./posts/2018-09-14-dasar-pemrograman-c-part1-the-beginning/4.jpg" height="250px" alt="codeblocks 4">
-</p>
+<div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8">
+        <div class="thumbnail">
+            <img class="img-responsive" src="./posts/2018-09-14-dasar-pemrograman-c-part1-the-beginning/4.jpg" alt="img">
+        </div>
+    </div>
+    <div class="col-sm-2"></div>
+</div>
 
 * Pilih `"C"` paling atas lalu tekan next
-<p align="center">
-	<img src="./posts/2018-09-14-dasar-pemrograman-c-part1-the-beginning/5.jpg" height="250px" alt="codeblocks 5">
-</p>
+<div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8">
+        <div class="thumbnail">
+            <img class="img-responsive" src="./posts/2018-09-14-dasar-pemrograman-c-part1-the-beginning/5.jpg" alt="img">
+        </div>
+    </div>
+    <div class="col-sm-2"></div>
+</div>
 
 * Masukkan nama project yang anda inginkan.. disini saya mengisi coba1. lalu tekan next
-<p align="center">
-	<img src="./posts/2018-09-14-dasar-pemrograman-c-part1-the-beginning/6.jpg" height="250px" alt="codeblocks 6">
-</p>
+<div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8">
+        <div class="thumbnail">
+            <img class="img-responsive" src="./posts/2018-09-14-dasar-pemrograman-c-part1-the-beginning/6.jpg" alt="img">
+        </div>
+    </div>
+    <div class="col-sm-2"></div>
+</div>
 
 * lalu finish
-<p align="center">
-	<img src="./posts/2018-09-14-dasar-pemrograman-c-part1-the-beginning/7.jpg" height="250px" alt="codeblocks 7">
-</p>
+<div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8">
+        <div class="thumbnail">
+            <img class="img-responsive" src="./posts/2018-09-14-dasar-pemrograman-c-part1-the-beginning/7.jpg" alt="img">
+        </div>
+    </div>
+    <div class="col-sm-2"></div>
+</div>
 
 * next tekan segitiga yang saya tandai dalam kotak merah
-<p align="center">
-	<img src="./posts/2018-09-14-dasar-pemrograman-c-part1-the-beginning/8.jpg" height="250px" alt="codeblocks 8">
-</p>
+<div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8">
+        <div class="thumbnail">
+            <img class="img-responsive" src="./posts/2018-09-14-dasar-pemrograman-c-part1-the-beginning/8.jpg" alt="img">
+        </div>
+    </div>
+    <div class="col-sm-2"></div>
+</div>
 
 * tekan `"main.c"`
-<p align="center">
-	<img src="./posts/2018-09-14-dasar-pemrograman-c-part1-the-beginning/9.jpg" height="250px" alt="codeblocks 9">
-</p>
+<div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8">
+        <div class="thumbnail">
+            <img class="img-responsive" src="./posts/2018-09-14-dasar-pemrograman-c-part1-the-beginning/9.jpg" alt="img">
+        </div>
+    </div>
+    <div class="col-sm-2"></div>
+</div>
  
 * lalu tekan `icon build and run` atau tekan F9 pada keyboard. kemudian tunggu sebentar
-<p align="center">
-	<img src="./posts/2018-09-14-dasar-pemrograman-c-part1-the-beginning/10.jpg" height="250px" alt="codeblocks 10">
-</p>
+<div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8">
+        <div class="thumbnail">
+            <img class="img-responsive" src="./posts/2018-09-14-dasar-pemrograman-c-part1-the-beginning/10.jpg" alt="img">
+        </div>
+    </div>
+    <div class="col-sm-2"></div>
+</div>
 
-* lalu akan muncul program dengan text "Hello World". Selamat anda mulai menjadi programmer level 1 lol....
-<p align="center">
-	<img src="./posts/2018-09-14-dasar-pemrograman-c-part1-the-beginning/11.jpg" height="250px" alt="codeblocks 11">
-</p>
-
-<br>
-#### **Penjelasan**
-**Header #include <stdio.h>  dan  #include <iostream.h>**
-> "A header file is a file containing C declarations and macro definitions (see Macros) to be shared between 
-several source files. You request the use of a header file in your program by including it, with the C 
-preprocessing directive ‘#include’." gampang'e header iku kumpulan logika yang telah ditulis untuk mempermudah 
-pekerjaan.
-
-**int main()**
-> adalah dimana segala yang ada didalam main tsb akan dijalankan
-
-**printf("Hello World\n");**
-> adalah perintah untuk mencetak text yang berada didalam tanda kutip. dan \n adalah "1x enter" pada program
-> adalah perintah untuk mencetak text yang berada didalam tanda kutip. dan \n adalah "1x enter" pada program
+* lalu akan muncul program dengan text "Hello World". Selamat anda mulai menjadi programmer level 1.
+<div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8">
+        <div class="thumbnail">
+            <img class="img-responsive" src="./posts/2018-09-14-dasar-pemrograman-c-part1-the-beginning/11.jpg" alt="img">
+        </div>
+    </div>
+    <div class="col-sm-2"></div>
+</div>
 
 <br>
-#### **Tambahan**
-selain printf, adapula perintah lain untuk menampilkan teks yaitu `puts("");` untuk menggunakannya caranya mirip 
-dengan printf namun puts tak memerlukan `\n` untuk tambahan enter. sbg contoh.
+#### *Penjelasan*
+Header `#include <stdio.h>` dan `#include <stdlib.h>`
+
+Header merupakan `library` yang berisi kumpulan fungsi dan logika yang 
+dapat digunakan untuk mempermudah pembuatan program tanpa sepenuhnya 
+membuat dari nol. Terdapat beberapa macam library, salah satunya adalah 
+standard library yang tersedia langsung setelah melakukan installasi 
+compiler pemrograman C, dan library yang dapat didownload dan digunakan 
+secara manual.
+
+`int main()`
+
+Merupakan `fungsi` utama pada program, dimana fungsi ini akan dilakukan `call` 
+dan segala perintah didalamnya akan dijalankan.
+
+`printf("Hello World\n");`
+
+Merupakan perintah untuk mencetak teks yang berada didalam tanda kutip. dan 
+`\n` adalah karakter spesial yang berarti `1x enter` pada program.
+
+<br>
+#### *Tambahan*
+selain printf, adapula perintah lain untuk menampilkan teks yaitu `puts("");` 
+untuk menggunakannya caranya mirip dengan printf namun puts tak memerlukan `\n` 
+untuk tambahan enter. Sebagai contoh.
 
 ```
 printf("Ini adalah teks menggunakan printf");
@@ -126,38 +191,55 @@ printf("ini adalah teks menggunakan printf\n");
 puts("Ini adalah teks menggunakan puts");
 ```
 
-jangan lupa setelah melakukan perubahan, untuk recompile program.. dan apabila ada error, perhatikan penempatan 
-titik koma dan semicolon. 
+Setelah melakukan perubahan, untuk recompile program. Apabila terdapat error, 
+perhatikan penempatan titik, koma dan semicolon. 
 
 <br>
-#### **Silahkan coba mengeksplor program dengan mengganti teks Hello World dengan kata2 yang anda inginkan seperti nama ttl dsb**
+> `Silahkan coba mengeksplor program dengan mengganti teks Hello World dengan kata2 yang anda inginkan seperti nama ttl dsb`
 
 <br>
-#### **Tambahan buat anda yang sudah pro!**
+#### *Tambahan bagi anda pengguna Linux*
 Bagi anda yang sudah lumayan familiar dengan linux terminal dan tak mau menggunakan IDE seperti codeblocks dll, anda dapat mengikuti tutorial ini.
 
-* pertama buka terminal. yomesti '-')
+* Pertama buka `terminal`
 
-* kedua ketikkan nano
+* Kemudian ketikkan `nano program.c`
 
-* ketiga isikan program yang anda inginkan
+* selanjutnya isikan program yang anda inginkan
 
-* keempat save program yang anda buat (ctrl+x)(y)(isi nama file)(enter). misal program.c
-<p align="center">
-	<img src="./posts/2018-09-14-dasar-pemrograman-c-part1-the-beginning/12.jpg" height="250px" alt="codeblocks 12">
-</p>
+* lalu save program yang anda buat
+	```
+	Ctrl + X
+	Y
+	Enter
+	```
+<div class="row">
+	<div class="col-sm-2"></div>
+	<div class="col-sm-8">
+		<div class="thumbnail">
+			<img class="img-responsive" src="./posts/2018-09-14-dasar-pemrograman-c-part1-the-beginning/12.jpg" alt="img">
+		</div>
+	</div>
+	<div class="col-sm-2"></div>
+</div>
 
-* kelima compile program dengan cara `gcc -o program program.c` pastikan tak ada error
+* Lakukan compile program dengan cara `gcc -o program program.c` pastikan tak ada error
 
-* keenam jalankan program `./program`
+* terakhir jalankan program `./program`
 
 * selamat anda telah compile program tanpa menggunakan IDE
-<p align="center">
-	<img src="./posts/2018-09-14-dasar-pemrograman-c-part1-the-beginning/13.jpg" height="250px" alt="codeblocks 13">
-</p>
+<div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8">
+        <div class="thumbnail">
+            <img class="img-responsive" src="./posts/2018-09-14-dasar-pemrograman-c-part1-the-beginning/13.jpg" alt="img">
+        </div>
+    </div>
+    <div class="col-sm-2"></div>
+</div>
 
 <br>
-#### **Selanjutnya materi tentang Tipe Data.**
+#### *Selanjutnya materi tentang Tipe Data.*
 
 <https://learn.sparkfun.com/tutorials/digital-logic>
 

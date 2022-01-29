@@ -1,6 +1,7 @@
 #### Starting life as designer using linux (ubuntu based)
 ##### *Wednesday, February 6, 2019*
 ```Imagine you're fresh graduate that only do design 2d, 3d and or drawing. Here's my suggestions.```
+
 <br>
 #### First get a PC or laptop.
 
