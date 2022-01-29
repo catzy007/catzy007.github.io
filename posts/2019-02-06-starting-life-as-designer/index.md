@@ -1,8 +1,8 @@
-### **Starting life as designer using linux (ubuntu based)**
-#### Wednesday, February 6, 2019
+#### Starting life as designer using linux (ubuntu based)
+##### *Wednesday, February 6, 2019*
 ```Imagine you're fresh graduate that only do design 2d, 3d and or drawing. Here's my suggestions.```
 <br>
-#### **First get a PC or laptop.**
+#### First get a PC or laptop.
 
 > If you do 2d design like posters, brochure, some vector graphic something like that, get a pc or laptop with specification "at least" quad core processor with at least intel HD 5XX and 4GB of ram. if you really desperate, get second hand dual core processor with nvidia 600 series.
 
@@ -39,30 +39,54 @@ anything above that is great
 if you can get 2nd hand part with deals, that would be great.
 
 <br>
-#### **Then select a software.**
+#### Then select a software.
 
 If you're draw using pen tablet, i suggest you to install Krita
-<p align="center">
-	<img src="./posts/2019-02-06-starting-life-as-designer/1.jpg" height="250px" alt="Krita">
-</p>
+<div class="row">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
+        <div class="thumbnail">
+            <img class="img-responsive" src="./posts/2019-02-06-starting-life-as-designer/1.jpg" alt="img">
+        </div>
+    </div>
+    <div class="col-sm-3"></div>
+</div>
 
 if you're illustrator and do lot of vector graphic, use Inkscape
-<p align="center">
-	<img src="./posts/2019-02-06-starting-life-as-designer/2.jpg" height="250px" alt="Inkscape">
-</p>
+<div class="row">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
+        <div class="thumbnail">
+            <img class="img-responsive" src="./posts/2019-02-06-starting-life-as-designer/2.jpg" alt="img">
+        </div>
+    </div>
+    <div class="col-sm-3"></div>
+</div>
 
 if you're doing light photo editing, use GIMP
-<p align="center">
-	<img src="./posts/2019-02-06-starting-life-as-designer/3.jpg" height="250px" alt="GIMP">
-</p>
+<div class="row">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
+        <div class="thumbnail">
+            <img class="img-responsive" src="./posts/2019-02-06-starting-life-as-designer/3.jpg" alt="img">
+        </div>
+    </div>
+    <div class="col-sm-3"></div>
+</div>
 
 if you're 3d artist, 3d animator, almost anything using 3d graphic, use Blender
-<p align="center">
-	<img src="./posts/2019-02-06-starting-life-as-designer/4.jpg" height="250px" alt="Blender">
-</p>
+<div class="row">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
+        <div class="thumbnail">
+            <img class="img-responsive" src="./posts/2019-02-06-starting-life-as-designer/4.jpg" alt="img">
+        </div>
+    </div>
+    <div class="col-sm-3"></div>
+</div>
 
 <br>
-#### **Setting up few things**
+#### Setting up few things
 I Assuming that you're already assemble your PC and successfully install ubuntu.
 first, get a update
 
@@ -83,22 +107,34 @@ for blender users
 `$ sudo apt install blender -y`
 
 <br>
-#### **If you're using NVIDIA Graphic, do this**
+#### If you're using NVIDIA Graphic, do this
 go to start menu and search for `software & updates`
-<p align="center">
-	<img src="./posts/2019-02-06-starting-life-as-designer/5.jpg" height="250px" alt="Nvidia1">
-</p>
+<div class="row">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
+        <div class="thumbnail">
+            <img class="img-responsive" src="./posts/2019-02-06-starting-life-as-designer/5.jpg" alt="img">
+        </div>
+    </div>
+    <div class="col-sm-3"></div>
+</div>
 
 then select `additional drivers` and select `Using NVIDIA driver metapackage`
-<p align="center">
-	<img src="./posts/2019-02-06-starting-life-as-designer/6.jpg" height="250px" alt="Nvidia2">
-</p>
+<div class="row">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
+        <div class="thumbnail">
+            <img class="img-responsive" src="./posts/2019-02-06-starting-life-as-designer/6.jpg" alt="img">
+        </div>
+    </div>
+    <div class="col-sm-3"></div>
+</div>
 
 then click `Apply Changes`
 
 <br>
-#### **If you have Pen Tablet, try this**
+#### If you have Pen Tablet, try this
 Hopefully someone has made driver for your pen tablet on linux <a href="./#2018-07-08-xp-pen-star-g430s-in-ubuntu-1710">link</a>
 
 <br>
-#### **And you're done!**
+#### And you're done!

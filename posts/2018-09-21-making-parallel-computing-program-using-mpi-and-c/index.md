@@ -1,5 +1,5 @@
-### **Making Parallel Computing Program Using MPI and C**
-#### Friday, September 21, 2018
+#### Making Parallel Computing Program Using MPI and C
+##### Friday, September 21, 2018
 
 According to Wikipedia, Parallel computing is a type of computation in which many calculations or the 
 execution of processes are carried out simultaneously. Large problems can often be divided into smaller 
@@ -16,9 +16,15 @@ C (/siː/, as in the letter c) is a general-purpose, imperative computer program
 
 Okay now we're going to make Parallel Computing program using MPI and C
 
-<p align="center">
-	<img src="./posts/2018-09-21-making-parallel-computing-program-using-mpi-and-c/1.jpg" height="250px" alt="My MPI MD5 brute force">
-</p>
+<div class="row">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
+        <div class="thumbnail">
+            <img class="img-responsive" src="./posts/2018-09-21-making-parallel-computing-program-using-mpi-and-c/1.jpg" alt="img">
+        </div>
+    </div>
+    <div class="col-sm-3"></div>
+</div>
 
 > You would need at least basic knowledge about writing program in C before proceed!
 

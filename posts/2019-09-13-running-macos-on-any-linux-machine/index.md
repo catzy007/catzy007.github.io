@@ -1,5 +1,5 @@
-### **Running MacOS on Any Linux Machine**
-#### Saturday, September 14, 2019
+#### Running MacOS on Any Linux Machine
+##### *Saturday, September 14, 2019*
 While i'm enjoying watching youtube videos, i'm stumbleupon at [Linus Tech Tips videos](https://www.youtube.com/watch?v=ATnpEOo3GJA) where he run MacOS on Virtual Machine and then i be like what? 
 then some weeks later i decided to try that myself and here we go.
 
@@ -64,62 +64,142 @@ sudo ./make.sh --add
 ```
 
 Then open VMM and you'll see macOS-Simple-KVM on the list.
-<p align="center">
-	<img src="./posts/2019-09-13-running-macos-on-any-linux-machine/1.jpg" height="300px" alt="1">
-</p>
+<div class="row">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
+        <div class="thumbnail">
+            <img class="img-responsive" src="./posts/2019-09-13-running-macos-on-any-linux-machine/1.jpg" alt="img">
+        </div>
+    </div>
+    <div class="col-sm-3"></div>
+</div>
 Next click `macOS-Simple-KVM` and click `Open`. Then click `Add Hardware` on bottom left
-<p align="center">
-	<img src="./posts/2019-09-13-running-macos-on-any-linux-machine/7.jpg" height="300px" alt="7">
-</p>
+<div class="row">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
+        <div class="thumbnail">
+            <img class="img-responsive" src="./posts/2019-09-13-running-macos-on-any-linux-machine/2.jpg" alt="img">
+        </div>
+    </div>
+    <div class="col-sm-3"></div>
+</div>
 Select `Storage` and add the amount of disk you want to have
-<p align="center">
-	<img src="./posts/2019-09-13-running-macos-on-any-linux-machine/6.jpg" height="300px" alt="6">
-</p>
+<div class="row">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
+        <div class="thumbnail">
+            <img class="img-responsive" src="./posts/2019-09-13-running-macos-on-any-linux-machine/3.jpg" alt="img">
+        </div>
+    </div>
+    <div class="col-sm-3"></div>
+</div>
 To run it press the `Play Button` then press `Computer Icon` on the left. 
-<p align="center">
-	<img src="./posts/2019-09-13-running-macos-on-any-linux-machine/2.jpg" height="250px" alt="2">
-</p>
+<div class="row">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
+        <div class="thumbnail">
+            <img class="img-responsive" src="./posts/2019-09-13-running-macos-on-any-linux-machine/4.jpg" alt="img">
+        </div>
+    </div>
+    <div class="col-sm-3"></div>
+</div>
 In the clover boot menu, press enter and the system will boot into `MacOS Utilities`
-<p align="center">
-	<img src="./posts/2019-09-13-running-macos-on-any-linux-machine/3.jpg" height="250px" alt="3">
-</p>
+<div class="row">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
+        <div class="thumbnail">
+            <img class="img-responsive" src="./posts/2019-09-13-running-macos-on-any-linux-machine/5.jpg" alt="img">
+        </div>
+    </div>
+    <div class="col-sm-3"></div>
+</div>
 First select `Disk Utility` then erase partition you want to use
-<p align="center">
-	<img src="./posts/2019-09-13-running-macos-on-any-linux-machine/4.jpg" height="250px" alt="4">
-</p>
+<div class="row">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
+        <div class="thumbnail">
+            <img class="img-responsive" src="./posts/2019-09-13-running-macos-on-any-linux-machine/6.jpg" alt="img">
+        </div>
+    </div>
+    <div class="col-sm-3"></div>
+</div>
 Next go to `Reinstall macOS`, Continue, Select partition, Set username, Password, etc. 
 This will take some time because the installer is downloading some files too.
-<p align="center">
-	<img src="./posts/2019-09-13-running-macos-on-any-linux-machine/5.jpg" height="250px" alt="5">
-</p>
+<div class="row">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
+        <div class="thumbnail">
+            <img class="img-responsive" src="./posts/2019-09-13-running-macos-on-any-linux-machine/7.jpg" alt="img">
+        </div>
+    </div>
+    <div class="col-sm-3"></div>
+</div>
 After that you'll be  greeted with MacOS desktop
-<p align="center">
-	<img src="./posts/2019-09-13-running-macos-on-any-linux-machine/8.jpg" height="250px" alt="8">
-</p>
+<div class="row">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
+        <div class="thumbnail">
+            <img class="img-responsive" src="./posts/2019-09-13-running-macos-on-any-linux-machine/8.jpg" alt="img">
+        </div>
+    </div>
+    <div class="col-sm-3"></div>
+</div>
 Then power off the MacOS and add more CPU, RAM, add PCIe Passtrough, etc
-<p align="center">
-	<img src="./posts/2019-09-13-running-macos-on-any-linux-machine/9.jpg" height="250px" alt="9">
-    <img src="./posts/2019-09-13-running-macos-on-any-linux-machine/10.jpg" height="250px" alt="10">
-</p>
+<div class="row">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
+        <div class="thumbnail">
+            <img class="img-responsive" src="./posts/2019-09-13-running-macos-on-any-linux-machine/9.jpg" alt="img">
+        </div>
+    </div>
+    <div class="col-sm-3"></div>
+</div>
+<div class="row">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
+        <div class="thumbnail">
+            <img class="img-responsive" src="./posts/2019-09-13-running-macos-on-any-linux-machine/10.jpg" alt="img">
+        </div>
+    </div>
+    <div class="col-sm-3"></div>
+</div>
 
 <br>
 If you're getting random keypress in my case it's numlock so it's annoying, go to `System Preferences > Accessibility > Keyboard` 
 check `Enable Slow Keys` then go to `Options` and slide to low value
-<p align="center">
-	<img src="./posts/2019-09-13-running-macos-on-any-linux-machine/11.jpg" height="250px" alt="11">
-</p>
+<div class="row">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
+        <div class="thumbnail">
+            <img class="img-responsive" src="./posts/2019-09-13-running-macos-on-any-linux-machine/11.jpg" alt="img">
+        </div>
+    </div>
+    <div class="col-sm-3"></div>
+</div>
 Next get [Karabiner](https://pqrs.org/osx/karabiner/) and disable the faulty key
-<p align="center">
-	<img src="./posts/2019-09-13-running-macos-on-any-linux-machine/13.jpg" height="250px" alt="13">
-</p>
+<div class="row">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
+        <div class="thumbnail">
+            <img class="img-responsive" src="./posts/2019-09-13-running-macos-on-any-linux-machine/13.jpg" alt="img">
+        </div>
+    </div>
+    <div class="col-sm-3"></div>
+</div>
 Then uncheck The Slow key in `System Preferences > Accessibility > Keyboard > Enable Slow Keys`
 
 
 <br>
 Then if you want the system run automatically go to `Boot Options > Check on Start virtual machine on host boot up`
-<p align="center">
-	<img src="./posts/2019-09-13-running-macos-on-any-linux-machine/12.jpg" height="250px" alt="12">
-</p>
+<div class="row">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
+        <div class="thumbnail">
+            <img class="img-responsive" src="./posts/2019-09-13-running-macos-on-any-linux-machine/12.jpg" alt="img">
+        </div>
+    </div>
+    <div class="col-sm-3"></div>
+</div>
 Next create autostart. Here i'm using xubuntu so i can create `macos.desktop` in `/etc/xdg/autostart` 
 you may not have this so refer to your Linux distro
 

@@ -1,46 +1,71 @@
-### **Disabling Intel ME (Management Engine)**
-#### Sunday, November 4, 2018
+#### Disabling Intel ME (Management Engine)
+#### *Sunday, November 4, 2018*
 
-> This post originally dated at 29 September 2017 but delayed due to lack of knowledge and hardware to perform some operations. After a year of delay, i'm back to bring this again.
+> `This post originally dated at 29 September 2017 but delayed due to lack of knowledge and hardware to perform some operations. After a year of delay, i'm back to bring this again.`
 
-Okay First, What is Intel ME? Based on wikipedia, Intel ME or sometimes called **Intel Active Management Technology (AMT)** is hardware and firmware technology for remote out-of-band management of personal computers, in order to monitor, maintain, update, upgrade, and repair them. Out-of-band (OOB) or hardware-based management is different from software-based (or in-band) management and software management agents. 
+First, What is Intel ME? Based on Wikipedia, Intel ME or sometimes called `Intel Active Management Technology (AMT)` is hardware and firmware technology for remote out-of-band management of personal computers, in order to monitor, maintain, update, upgrade, and repair them. Out-of-band (OOB) or hardware-based management is different from software-based (or in-band) management and software management agents. 
 
-Why disable Intel ME if the function is very critical? Well because Intel ME has many vulnerabilities. One of the most critical vulnerabilities is Silent Bob is Silent. The vulnerability was described as giving remote attackers : "full control of affected machines, including the ability to read and modify everything. It can be used to install persistent malware (possibly in firmware), and read and modify any data." — Tatu Ylönen, ssh.com so it doesn't seem good. The problem is that Intel ME mostly sit in the firmware or BIOS, so the only way to update Intel ME is to update the BIOS and when the last time you get a BIOS update?, Also you basically rely on Intel magical black box and who knows what data Intel ME collects and how secure it is.
+Why disable Intel ME if the function is very critical? Well because Intel ME has many vulnerabilities. One of the most critical vulnerabilities is `Silent Bob is Silent`. The vulnerability was described as *giving remote attackers : `"full control of affected machines, including the ability to read and modify everything. It can be used to install persistent malware (possibly in firmware), and read and modify any data."` — Tatu Ylönen, ssh.com*. The problem is that Intel ME mostly sit in the firmware or BIOS and the only way to update Intel ME is to update the BIOS. Now, when the last time you get a BIOS update?, Also you basically rely on Intel magical black box and who knows what data Intel ME collects and how secure it is.
 
-But i have other reason too. I want to check if intel ME has responsibility to lock CPU upgrade in mobile sandy bridge device. I mean i have Lenovo G480 with Pentium B960 installed. When i look up the motherboard, it has G2 socket and i can remove the processor easily. Knowing that, i go find some info that i5-2520M support G2 socket. I bought it and install that fancy i5 processor. Then you know what it works! Kind of, after 30 mins it just shut down with no warning. When i check intel me status, something seems wrong. Then i come with this idea, what if partially disable Intel ME removes the 30 mins shutdown problem.
+But i have other reason too. I want to check if intel ME has responsibility to lock CPU upgrade in mobile sandy bridge device. I have Lenovo G480 with Pentium B960 installed, when i look up the motherboard it has `G2 socket` and i can remove the processor easily replace it with other "compatible" model (in my case i'm using Intel i5-2520M). The problem is after 30 mins it just shut down with no warning. When i check intel me status, something seems wrong, then i come with this idea, what if partially disable Intel ME removes the 30 mins shutdown problem.
 
-Thankfully there are existed tools to remove or partially disable Intel ME. But the process itself is still very difficult and risky for most people. The tools itself called [Me Cleaner](https://github.com/corna/me_cleaner). Based on this tutorial about [How to apply Me Cleaner](https://github.com/corna/me_cleaner/wiki/How-to-apply-me_cleaner), Me Cleaner can be applied using 2 method. The first method is using external flasher. Basically the procedure is to take your BIOS chip, put it on BIOS programmer, read and copy all of it's content, apply me cleaner, and then put the firmware back. It's sound simple right? But actually it's difficult. To take bios chip need special tools like Hot-air soldering gun, solder flux, tweezers, magnifier and super steady hands, Also BIOS chip can be varied from one computer to another. Using bios flasher is very recommended, but the risk is relatively high. The second method is internal flashing. Some computer very difficult or almost impossible to flash by internal flashing, so the first method is the choice.
+There are existed tools to remove or partially disable Intel ME. But the process itself is relatively difficult and risky for most people. The tools itself called [Me Cleaner](https://github.com/corna/me_cleaner). Based on this tutorial about [How to apply Me Cleaner](https://github.com/corna/me_cleaner/wiki/How-to-apply-me_cleaner), Me Cleaner can be applied using 2 method. The first method is using external flasher. Basically the procedure is to take your BIOS chip, put it on BIOS programmer, read and copy all of it's content, apply me cleaner, and then put the firmware back. Taking BIOS chip need specialized tools like Hot-air soldering gun, solder flux, tweezers, magnifier and super steady hands, Also BIOS chip can be varied from one computer to another. Using BIOS flasher is very recommended, but the risk is still relatively high. The second method is internal flashing. Some computer very difficult or almost impossible to flash by internal flashing, so the first method is the method that i'm using here.
 
-I'm already tried second method and got nothing to work. BIOS file provided by manufacturer in *.cap format, and me cleaner need bin file to work. Maybe some ASUS user had some luck, Because they can convert cap to bin using special software, but internal flashing is out for me.
+The way i'm performing this is instead of using Hot-air soldering gun to pull out the BIOS chip, i'm using Single-Board Computer and programmer clip as media to flash BIOS chip (SPI Flash Chip). The tools i use is Raspberry Pi 3, SOP-8 BIOS clipper, some jumper wire and that's it.
 
-Then i tried the first method but instead of using Hot-air soldering gun to pull out the BIOS chip, i'm using SBC as media to flash BIOS chip (SPI Flash Chip). The tools i use is Raspberry Pi 3, SOP-8 BIOS clipper, some jumper wire and that's it.
+<br>
+#### Finding BIOS ROM Chip and wire everything
 
-### Finding bios chip and wire everything
+First disassemble your laptop/pc unplug power, ram, BIOS battery, basically unplug everything... then find the BIOS chip by inspecting your motherboard. Mine is cFeon Q64-104HIP
 
-First disassemble your laptop/pc unplug power, ram, bios battery, basically unplug everything... then find the bios chip by inspecting your motherboard. Mine is cFeon Q64-104HIP
+<div class="row">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
+        <div class="thumbnail">
+            <img class="img-responsive" src="./posts/2018-11-04-disabling-intel-me/1.jpg" alt="img">
+        </div>
+    </div>
+    <div class="col-sm-3"></div>
+</div>
 
-<p align="center">
-	<img class="imgrespS" src="./posts/2018-11-04-disabling-intel-me/1.jpg" height="300em" alt="My BIOS chip">
-</p>
-
-Next you need to find datasheet for it (just google the chip name + datasheet) ex. "Q64-104HIP datasheet" then look at the pinout. This will be wiring guide for next step! you can read more info too. Some manufacture has different configurations.
-<p align="center">
-	<img class="imgrespL" src="./posts/2018-11-04-disabling-intel-me/2.jpg" height="300em" alt="datasheet">
-</p>
+Next you need to find datasheet for it (just google the chip name + datasheet) ex. "Q64-104HIP datasheet" then look at the pinout. This will be wiring guide for next step! You can read more info too. Different manufacture may have different configurations.
+<div class="row">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
+        <div class="thumbnail">
+            <img class="img-responsive" src="./posts/2018-11-04-disabling-intel-me/2.jpg" alt="img">
+        </div>
+    </div>
+    <div class="col-sm-3"></div>
+</div>
 
 Then wire everything according to the schematics provided by datasheet, followed by clipping SOP-8 clipper to bios chip.
-<p align="center">
-	<img class="imgrespS" src="./posts/2018-11-04-disabling-intel-me/3.jpg" height="200em" alt="Schematics">
-  <br>
-	<img class="imgrespM" src="./posts/2018-11-04-disabling-intel-me/4.jpg" height="300em" alt="My setup">
-</p> 
+<div class="row">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
+        <div class="thumbnail">
+            <img class="img-responsive" src="./posts/2018-11-04-disabling-intel-me/3.jpg" alt="img">
+        </div>
+    </div>
+    <div class="col-sm-3"></div>
+</div>
+<div class="row">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
+        <div class="thumbnail">
+            <img class="img-responsive" src="./posts/2018-11-04-disabling-intel-me/4.jpg" alt="img">
+        </div>
+    </div>
+    <div class="col-sm-3"></div>
+</div>
  
 My setup. All pin connected to RPI GPIO, WP NC VCC connected to breadboard into 3.3V RPI GPIO
 
-### Enable SPI pin and download some tools
+<br>
+#### Enable SPI pin and download some tools
 next enable SPI pin on Raspberry Pi https://learn.sparkfun.com/tutorials/raspberry-pi-spi-and-i2c-tutorial/all
 
-then download flashrom
+then download `flashrom`
 
 ```
 sudo apt-get install build-essential pciutils usbutils libpci-dev libusb-dev libftdi1 libftdi-dev zlib1g-dev subversion libusb-1.0-0-dev
@@ -56,8 +81,9 @@ wget https://github.com/corna/me_cleaner/archive/v1.2.zip
 unzip *.zip
 ```
 
-### Copy image to RPI
-then copy the image files to rpi using flashrom
+<br>
+#### Copy image to RPI
+then copy the image files to RPI using `flashrom`
 ```
 flashrom -p linux_spi:dev=/dev/spidev0.0,spispeed=10000 -c EN25Q64 -r bios1.bin
 flashrom -p linux_spi:dev=/dev/spidev0.0,spispeed=10000 -c EN25Q64 -r bios2.bin
@@ -77,8 +103,9 @@ Reading flash... done.
 
 *EN25Q64 found in datasheet of my bios chip
 
-### Check integrity of all image
-next check all images if they're match
+<br>
+#### Check integrity of all image
+Next check all images if they're match
 
 `md5sum *.bin`
 
@@ -88,10 +115,11 @@ the output should same across all readings
 4d6b41f26efafecb4f4ba829a899fae4  bios2.bin
 4d6b41f26efafecb4f4ba829a899fae4  bios3.bin
 ```
-*if md5sum didn't match, check your wiring and repeat all steps!
+*if md5sum didn't match, check your wiring and repeat all steps!*
 
-Check if image is valid
-next check if image is valid using *ifdtool*
+<br>
+#### Check if image is valid
+Next check if image is valid using `ifdtool`
 ```
 git clone --depth=1 https://review.coreboot.org/p/coreboot
 cd coreboot/util/ifdtool
@@ -99,7 +127,7 @@ make
 ./ifdtool -d ../../../bios1.bin
 ```
 
-the output should look similar to this
+The output should look similar to this
 ```
 File ../../../bios1.bin is 8388608 bytes
 ICH Revision: 6 series Cougar Point
@@ -290,7 +318,8 @@ Found Processor Strap Section
 ????:      0xffffffff
 ```
 
-### Check if image file can be analyze by me_cleaner
+<br>
+#### Check if image file can be analyzed by me_cleaner
 ```
 cd ../../../
 cd me_cleaner-1.2/
@@ -309,7 +338,8 @@ The AltMeDisable bit is NOT SET
 Checking the FTPR RSA signature... VALID
 ```
 
-### Apply Me Cleaner
+<br>
+#### Apply Me Cleaner
 ```
 ./me_cleaner.py -S -O ../cleanbios.bin ../bios1.bin
 ```
@@ -362,7 +392,8 @@ Checking the FTPR RSA signature... VALID
 Done! Good luck!
 ```
 
-### Put modified bios image back
+<br>
+#### Put modified bios image back
 ```
 cd ../ 
 flashrom -p linux_spi:dev=/dev/spidev0.0,spispeed=10000 -c EN25Q64 -w cleanbios.bin
@@ -425,7 +456,7 @@ Localized Language:                     Unknown
 Independent Firmware Recovery:          Enabled
 ```
 
-this after
+this is after cleaning
 ```
 Intel(R) MEInfo Version: 8.1.56.1541
 Copyright(C) 2005 - 2014, Intel Corporation. All rights reserved.
@@ -436,9 +467,9 @@ Error 9458: Communication error between application and Intel(R) ME module (FW U
 Error 9459: Internal error (Could not determine FW features information)
 ```
 
-### Conclusion.
-
-Cleaning intel me is relatively hard process but fun. I learn a lot from this experiment. Based on this project, even after cleaning intel me, i still can't remove 30 min barrier on replacing Pentium B960 with I5-2520M in HM70 motherboard. But i'm looking forward to other options and new finding in the future.
+<br>
+#### Conclusion.
+Cleaning intel me is relatively hard trivial but fun. I learn a lot from this experiment. Based on this project, even after cleaning intel me, i still can't remove 30 min barrier on replacing Pentium B960 with I5-2520M in HM70 motherboard. But i'm looking forward to other options and new finding in the future.
 
 > [UPDATE 9/29/17] actually this project is half going, because it takes many hour and i haven't done yet so yeah that's it for now.
 
@@ -446,7 +477,8 @@ Cleaning intel me is relatively hard process but fun. I learn a lot from this ex
 
 > [UPDATE 11/11/18] THIS PROJECT IS COMPLETED!
 
-### btw you can read some page below for more information
+<br>
+#### More reading
 
 [EN Wiki Intel AMT](https://en.wikipedia.org/wiki/Intel_Active_Management_Technology)
 

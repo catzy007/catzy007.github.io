@@ -1,5 +1,5 @@
-### **Fix Linux Network Adapter Not Detected**
-#### Sunday, June 2, 2019
+#### Fix Linux Network Adapter Not Detected
+##### *Sunday, June 2, 2019*
 Here's the story, you finally decide to install linux on your machine. 
 It installed and boot, but then you realize that your network adapter not detected. 
 What happend? the simple analogy is. Linux is operating system, and same as windows, 
@@ -24,33 +24,64 @@ this will list all your hardware on PCI bus. Or if your device is usb then
 sudo lsusb
 ```
 it will do the same thing but via usb
-<p align="center">
-	<img src="./posts/2019-06-12-fix-network-adapter-not-detected/1.jpg" height="250px" alt="1">
-</p>
+<div class="row">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
+        <div class="thumbnail">
+            <img class="img-responsive" src="./posts/2019-06-12-fix-network-adapter-not-detected/1.jpg" alt="img">
+        </div>
+    </div>
+    <div class="col-sm-3"></div>
+</div>
 as you can see in my `Network Controller` it is `BCM43142` try to remember that.
 
 <br>
 #### Next google how to install wifi driver
 just do simple googling.
-<p align="center">
-	<img src="./posts/2019-06-12-fix-network-adapter-not-detected/2.jpg" height="250px" alt="2">
-</p>
+<div class="row">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
+        <div class="thumbnail">
+            <img class="img-responsive" src="./posts/2019-06-12-fix-network-adapter-not-detected/2.jpg" alt="img">
+        </div>
+    </div>
+    <div class="col-sm-3"></div>
+</div>
 > You might need to plug LAN cable or use verified wifi dongle to proceed
 
 <br>
 #### Next install your wifi driver
 in my case it's `sudo apt install bcmwl-kernel-source`
-<p align="center">
-	<img src="./posts/2019-06-12-fix-network-adapter-not-detected/3.jpg" height="250px" alt="3">
-    <br>
-    <img src="./posts/2019-06-12-fix-network-adapter-not-detected/4.jpg" height="250px" alt="4">
-</p>
+<div class="row">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
+        <div class="thumbnail">
+            <img class="img-responsive" src="./posts/2019-06-12-fix-network-adapter-not-detected/3.jpg" alt="img">
+        </div>
+    </div>
+    <div class="col-sm-3"></div>
+</div>
+<div class="row">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
+        <div class="thumbnail">
+            <img class="img-responsive" src="./posts/2019-06-12-fix-network-adapter-not-detected/4.jpg" alt="img">
+        </div>
+    </div>
+    <div class="col-sm-3"></div>
+</div>
 > Your specific device might be different
 
 <br>
 #### Then reboot your machine and your wifi will work
-<p align="center">
-	<img src="./posts/2019-06-12-fix-network-adapter-not-detected/5.jpg" height="250px" alt="5">
-</p>
+<div class="row">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
+        <div class="thumbnail">
+            <img class="img-responsive" src="./posts/2019-06-12-fix-network-adapter-not-detected/5.jpg" alt="img">
+        </div>
+    </div>
+    <div class="col-sm-3"></div>
+</div>
 
 > This method can be use to install any device. Just find the model number and google it
