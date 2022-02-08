@@ -1,17 +1,17 @@
-### **Dasar Pemrograman C Part3 : Input dan Operator**
-#### Monday, April 23, 2018
-Dalam bahasa C ada yang namanya Operand dan Operator. Operand adalah 
+#### Dasar Pemrograman C Part3 : Input dan Operator
+##### *Monday, April 23, 2018*
+Dalam bahasa C terdapat Operand dan Operator. Operand merupakan 
 nilai yang akan diproses nilai dapat berupa angka ataupun variabel, 
 dan Operator adalah instruksi yang dilakukan terhadap operand agar 
 mendapat nilai.
 
 misal `2 + 3 = 5`
 
-`2` dan `3` adalah **operand**
+`2` dan `3` adalah `operand`
 
-`+` adalah **operator**
+`+` adalah `operator`
 
-`= 5` adalah.... seperti yang anda tebak.. hasil 
+`= 5` adalah seperti yang anda tebak. hasil 
 
 Dalam bahasa C terdapat beberapa jenis operator. beberapa diantaranya adalah
   1. Arithmetic Operators
@@ -22,7 +22,7 @@ Dalam bahasa C terdapat beberapa jenis operator. beberapa diantaranya adalah
   6. Misc Operators
 
 <br>
-#### **1.) Operator Aritmatika.**
+#### `1.) Operator Aritmatika.`
 
 sesuai namanya berguna untuk melakukan proses perhitungan matematika sederhana.
 
@@ -51,11 +51,11 @@ float mumet = (float)a/(b+jumlah)*kali/6;
 ```
 
 <br>
-#### **2.) Operator Relasional.** 
+#### `2.) Operator Relasional.` 
 operator ini digunakan untuk membandingkan nilai. 
 hasilnya dapat berupa benar atau salah
 
-disini kita menggunakan if. 
+disini kita menggunakan `if`. 
 
 contoh
 ```
@@ -110,8 +110,8 @@ return 0;
 ```
 
 <br>
-#### **3.) Operator Logika.** 
-sesuai namanya input dan outputnya adalah logika ~('-'~)
+#### `3.) Operator Logika.` 
+sesuai namanya input dan outputnya adalah logika.
 
 contoh
 ```
@@ -147,7 +147,7 @@ int main(){
 ```
 
 <br>
-#### **4.) Operator Assignment.** 
+#### `4.) Operator Assignment.` 
 atau Penugasan berfungsi untuk memberikan suatu nilai ke dalam 
 variable atau operand lain dari arah kanan ke kiri.
 
@@ -181,13 +181,13 @@ int main(){
 ```
 
 <br>
-> selain itu diperlukan pula input agar program dapat digunakan 
-dengan lebih mudah tanpa recompile setiap kali penggunaan.
+> `selain itu diperlukan pula input agar program dapat digunakan 
+dengan lebih mudah tanpa recompile setiap kali penggunaan.`
 
-Beberapa fungsi input yang cukup terkenal adalah `scanf()` dan `gets()`
+Beberapa fungsi input yang cukup sering digunakan adalah `scanf()` dan `gets()`
 
 <br>
-#### **1.) Scanf**
+#### `1.) Scanf`
 ```
 scanf("%d",&ipt);
 ```
@@ -196,7 +196,7 @@ scanf("%d",&ipt);
 
 `"%d"` tipe data yang di inginkan.. `%d=int`, `%f=float`, `%c=char` dsb...
 
-`&ipt` variable penyimpan... jangan lupakan `&`
+`&ipt` variable penyimpan. jangan lupakan `&`
 
 contoh
 ```
@@ -217,19 +217,24 @@ int main(){
   return 0;
 }
 ```
-<p align="center">
-	<img src="./posts/2018-04-24-dasar-pemrograman-c-part3-input-dan-operator/1.jpg" height="250px" alt="img1">
-</p> 
+<div class="row">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
+        <div class="thumbnail">
+            <img class="img-responsive" src="./posts/2018-04-24-dasar-pemrograman-c-part3-input-dan-operator/1.jpg" alt="img">
+        </div>
+    </div>
+    <div class="col-sm-3"></div>
+</div>
 
 <br>
-#### **2.) Gets**
+#### `2.) Gets`
 sebenarnya gets adalah cara termudah untuk menginputkan string yang 
-memerlukan karakter spasi. namun karena gets memiliki kelemahan 
-security, maka sebaiknya tidak digunakan. 
-<https://stackoverflow.com/questions/1694036/why-is-the-gets-function-so-dangerous-that-it-should-not-be-used>
+memerlukan karakter spasi. namun karena gets memiliki [Masalah Keamanan](https://stackoverflow.com/questions/1694036/why-is-the-gets-function-so-dangerous-that-it-should-not-be-used), maka sebaiknya tidak digunakan. 
 ```
 gets(ipt);
 ```
+
 `gets` memanggil fungsi gets
 
 `ipt` variabel penyimpan
@@ -248,14 +253,20 @@ int main(){
 }
 ```
 
-<p align="center">
-	<img src="./posts/2018-04-24-dasar-pemrograman-c-part3-input-dan-operator/2.jpg" height="250px" alt="img2">
-</p> 
-> seperti yang anda lihat, program dapat dicompile dan dijalankan, 
-namun mendapat banyak peringatan seperti diatas.
+<div class="row">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
+        <div class="thumbnail">
+            <img class="img-responsive" src="./posts/2018-04-24-dasar-pemrograman-c-part3-input-dan-operator/2.jpg" alt="img">
+        </div>
+    </div>
+    <div class="col-sm-3"></div>
+</div>
+> `seperti yang dapat dilihat, program dapat dicompile dan dijalankan, 
+namun mendapat banyak peringatan seperti diatas.`
 
 <br>
-#### **3.) fgets**
+#### `3.) fgets`
 seperti yang anda baca diatas, gets sebaiknya tidak digunakan, 
 maka harus ada pengganti untuk itu. perkenalkan fgets
 
@@ -284,17 +295,35 @@ int main(){
   return 0;
 }
 ```
-<p align="center">
-	<img src="./posts/2018-04-24-dasar-pemrograman-c-part3-input-dan-operator/3.jpg" height="250px" alt="img3">
-</p> 
+<div class="row">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
+        <div class="thumbnail">
+            <img class="img-responsive" src="./posts/2018-04-24-dasar-pemrograman-c-part3-input-dan-operator/3.jpg" alt="img">
+        </div>
+    </div>
+    <div class="col-sm-3"></div>
+</div>
 
 <br>
-#### materi selanjutnya if else switch
+#### `Latihan`
+Buat program dengan bahasa C untuk menampilkan Informasi Toko dan Struk Pembayaran dengan menggunakan input dan operator matematika.
+<div class="row">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
+        <div class="thumbnail">
+            <img class="img-responsive" src="./posts/2018-04-24-dasar-pemrograman-c-part3-input-dan-operator/4.jpg" alt="img">
+            <a href="https://simple.wikipedia.org/wiki/Receipt">simple.wikipedia.org</a>
+        </div>
+    </div>
+    <div class="col-sm-3"></div>
+</div>
+
+*Materi selanjutnya if else switch*
 
 <br>
-#### **Sumber**
+#### `Sumber Bacaan`
+
 <https://stackoverflow.com/questions/1694036/why-is-the-gets-function-so-dangerous-that-it-should-not-be-used>
 
 <https://www.tutorialspoint.com/cprogramming/c_operators.htm>
-
-powerpoint dari kampus ~('-'~)

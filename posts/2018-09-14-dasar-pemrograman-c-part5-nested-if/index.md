@@ -1,9 +1,9 @@
-### **Dasar Pemrograman C Part5 : Nested If**
-#### Friday, September 14, 2018
+#### Dasar Pemrograman C Part5 : Nested If
+##### *Friday, September 14, 2018*
 Terkadang dalam hidup terdapat beberapa syarat yang harus 
 dipenuhi. dalam program kita dapat menyelesaikannya dengan nested if.
 
-**misal**
+`misal`
 ```
  jika ada makanan, saya mau makan.
     jika makan mie, saya jadi makan.
@@ -11,7 +11,7 @@ dipenuhi. dalam program kita dapat menyelesaikannya dengan nested if.
 jika tak ada makanan, saya tidak makan.
 ```
 
-**misal dalam program**
+`Contoh dalam program`
 ```
 if(makanan==1){
     if(mie==1){
@@ -24,7 +24,7 @@ if(makanan==1){
 }
 ```
 
-**contoh**
+`Contoh lain`
 ```
 #include <stdio.h>
 #include <stdlib.h>
@@ -68,10 +68,9 @@ int main(int argc,char *argv[]){
 ```
 
 <br>
-#### materi selanjutnya Perulangan
+*Materi selanjutnya Perulangan*
 
 <br>
-#### **Sumber :**
-powerpoint kampus
+#### `Sumber bacaan`
 
 <https://www.tutorialspoint.com/cprogramming/nested_if_statements_in_c.htm>
