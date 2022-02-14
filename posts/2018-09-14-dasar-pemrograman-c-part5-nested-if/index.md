@@ -3,9 +3,9 @@
 Terkadang dalam hidup terdapat beberapa syarat yang harus 
 dipenuhi. dalam program kita dapat menyelesaikannya dengan nested if.
 
-`misal`
+#### `Misal`
 ```
- jika ada makanan, saya mau makan.
+jika ada makanan, saya mau makan.
     jika makan mie, saya jadi makan.
     jika tak makan mie, saya tak jadi makan.
 jika tak ada makanan, saya tidak makan.
@@ -24,7 +24,9 @@ if(makanan==1){
 }
 ```
 
-`Contoh lain`
+<br>
+#### `Contoh lain`
+
 ```
 #include <stdio.h>
 #include <stdlib.h>

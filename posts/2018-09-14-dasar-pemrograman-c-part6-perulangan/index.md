@@ -1,10 +1,10 @@
-### **Dasar Pemrograman C Part6 : Perulangan**
-#### Friday, September 14, 2018
+#### Dasar Pemrograman C Part6 : Perulangan
+##### *Friday, September 14, 2018*
 Adakalanya dalam pemrograman diperlukan beberapa proses yang sama. 
 daripada menuliskan program tersebut berulang ulang, loop atau 
 perulangan dapat digunakan.
 
-**misal**
+#### `Misal`
 ```
 printf("0");
 printf("1");
@@ -13,7 +13,7 @@ printf("3");
 printf("4");
 ```
 
-**sama dengan**
+`sama dengan`
 ```
 int i;
 for(i=0;i<5;i++){
@@ -21,78 +21,79 @@ for(i=0;i<5;i++){
 }
 ```
 
-**Terdapat 3 macam perulangan dasar dalam bahasa C. antara lain**
-1. for(){}
-2. while(){}
-3. do{}while()
+<br>
+####  `Terdapat 3 macam perulangan dasar dalam bahasa C. antara lain`
 
-**Contoh `for(){}`**
-```
-int i;
-for(i=0;i<100;i++){
-    task();
-}
-```
+1. `for(){}`
 
-`int i;` adalah variable yang akan diproses selama loop berlangsung.
+    ```
+    int i;
+    for(i=0;i<100;i++){
+        task();
+    }
+    ```
 
-`for` pemanggilan for
+    `int i;` adalah variable yang akan diproses selama loop berlangsung.
 
-`i=0` set variable i sebagai nilai awal
+    `for` pemanggilan for
 
-`i<100` selama i kurang dari 100, tetap jalankan loop
+    `i=0` set variable i sebagai nilai awal
 
-`i++` pembaruan nilai
+    `i<100` selama i kurang dari 100, tetap jalankan loop
 
-`task()` perintah yang akan diulang
+    `i++` pembaruan nilai
+
+    `task()` perintah yang akan diulang
 
 <br>
-**Contoh `while(){}`**
-```
-int i=0;
-while(i<100){
-    task();
-    i++;
-}
-```
+2. `while(){}`
 
-`int i;` deklarasi variable sekaligus set nilai awal
+    ```
+    int i=0;
+    while(i<100){
+        task();
+        i++;
+    }
+    ```
 
-`while` pemanggilan while
+    `int i;` deklarasi variable sekaligus set nilai awal
 
-`i<100` selama i kurang dari 100, tetap jalankan loop
+    `while` pemanggilan while
 
-`task()` perintah yang akan diulang
+    `i<100` selama i kurang dari 100, tetap jalankan loop
 
-`i++` pembaruan nilai
+    `task()` perintah yang akan diulang
 
-<br>
-**contoh `do{}while()`**
-```
-int i;
-i=0;
-do{
-    task();
-    i++;
-}while(i<100);
-```
-
-`int i;` deklarasi variable
-
-`i=0;` set nilai awal
-
-`do` lakukan pemanggilan do..while
-
-`task()` lakukan perintah selama loop berlangsung
-
-`i++` pembaruan nilai
-
-`while` penutup do..while
-
-`i<100` lakukan loop selama i kurang dari 100
+    `i++` pembaruan nilai
 
 <br>
-#### **Pembaruan nilai dapat berupa**
+3. `do{}while()`
+
+    ```
+    int i;
+    i=0;
+    do{
+        task();
+        i++;
+    }while(i<100);
+    ```
+
+    `int i;` deklarasi variable
+
+    `i=0;` set nilai awal
+
+    `do` lakukan pemanggilan do..while
+
+    `task()` lakukan perintah selama loop berlangsung
+
+    `i++` pembaruan nilai
+
+    `while` penutup do..while
+
+    `i<100` lakukan loop selama i kurang dari 100
+
+<br>
+#### `Pembaruan nilai dapat berupa`
 ```
 i++
 j--
@@ -105,7 +106,7 @@ b/=3
 %=2
 ```
 
-**Contoh**
+`Contoh`
 ```
 #include <stdio.h>
 #include <stdlib.h>
@@ -145,10 +146,11 @@ int main()
 ```
 
 <br>
-#### Materi selanjutnya nested loop
+*Materi selanjutnya nested loop*
 
 <br>
-#### **Sumber**
+#### `Sumber Bacaan`
+
 <https://www.tutorialspoint.com/cprogramming/c_loops.htm>
 
 <https://www.programiz.com/c-programming/c-for-loop>

@@ -191,6 +191,7 @@ int main(int argc,char *argv[]){
 #### `Latihan`
 Buat program dengan bahasa C untuk melakukan pendaftaran sekolah dengan melakukan cek usia minimal dan maksimal.
 
+<br>
 *Materi selanjutnya nested if*
 
 <br>
