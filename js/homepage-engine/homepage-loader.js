@@ -5,8 +5,8 @@ function loadHomepageIndex(){
     // console.log(arrIndex); console.log(arrLower);
 
     executeXhr("./posts/featured.md", loadHomepageFeatured, "FEATURED", "featured");
-    loadHomepageRecommended(arrIndex, arrLower);
-    loadHomepageLatest(arrIndex, arrLower);
     executeXhr("./pages/category/index.md", loadHomepageCategory, "CATEGORY", "category");
+    loadHomepageLatest(arrIndex, arrLower);
+    loadHomepageRecommended(arrIndex, arrLower);
     loadSiteCopyright();
 }
