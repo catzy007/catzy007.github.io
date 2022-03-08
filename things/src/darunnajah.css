@@ -170,7 +170,7 @@
 			box-shadow: 0px 3px 10px #cccccc;
 		}
 /* disable topnav */
-		#navbar-iframe-container {
+		#navbar-iframe {
 		    display:none!important;
 		    height:0;
 		    visibility:hidden;
