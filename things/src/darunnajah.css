@@ -1,0 +1,171 @@
+/* main content */
+		body {
+			background-color: #ffffff;
+		}
+/* TOPWINDOW CONTAINER */
+		.TWContainer {
+			position: relative;
+			background-color: #FFFFFF;
+			box-shadow: 0px 1px 5px 2px #015249;
+		}
+/* TOPWINDOW SLIDESHOW */
+		.TWImgSlide img {
+			width: 100%;
+			max-height: 200px;
+			min-height: 200px;
+			object-fit: cover; /* scale img accordingly */
+			object-position: center; /* center img */
+		}
+	@media (min-width: 768px) {
+		.TWImgSlide img {
+			max-height: 300px;
+			min-height: 200px;
+			height: 300px;
+		}
+	}
+/* TOPWINDOW HEADER */
+		.TWHeader {
+			position: relative;
+			padding-left:7%;
+			padding-right:7%;
+			width: 100%;
+			background-color: #FFFFFF;
+			font-family: 'Quicksand', sans-serif;
+		}
+		.TWHeader a {
+			height: 50px;
+			float: right;
+			font-size: 16px;
+			color: #015249;
+			text-shadow: 0px 1px #ddd;
+			text-align: center;
+			padding: 14px 5px;
+			text-decoration: none;
+		}
+		.TWHeader a:hover {
+			background-color: #77c9d4;
+			color: #FFFFFF;
+			text-shadow: 0px 1px #ddd;
+		}
+		.TWHeader a.TWSpacer:hover {
+			background-color: #FFFFFF;
+			color: #015249;
+		}
+/* TOPWINDOW DROPDOWN DROPBUTTON */
+		.dropdown {
+			position: relative;
+			display: inline-block;
+			float: right;
+		}
+		.dropbtn {
+			font-size: 16px;
+			height: 50px;
+			border: none;
+			outline: none;
+			color: #015249;
+			padding: 14px 5px;
+			background-color: #FFFFFF;
+		}
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: #FFFFFF;
+			box-shadow: 1px 1px 4px #DDDDDD;
+			min-width: 150px;
+			z-index: 1;
+		}
+		.dropdown-content li a {
+			padding-top: 14px;
+			display: block;
+			min-width: 150px;
+			color: black;
+			text-align: left;
+			font-size: 16px;
+			font-family: 'Quicksand', sans-serif;
+		}
+		.dropdown-content a:hover {
+			background-color: #DDDDDD;
+		}
+		.dropdown:hover .dropdown-content {
+			display: block;
+		}
+		.dropdown:hover .dropbtn {
+			background-color: #77c9d4;
+			color: #FFFFFF;
+		}
+
+/* container and contents */
+		.mycontainer {
+			/*background-color: #cccccc;*/
+			padding-left: 14%;
+			padding-right: 14%;
+			min-height: 768px;
+			padding-top: 2%;
+		}
+		.myindex {
+			/*background-color: #cccccc;*/
+			padding-left: 7%;
+			padding-right: 7%;
+		}
+		.mycontainer h1, h2, h3, h4, h5 {
+			font-family: 'Quicksand', sans-serif;
+		}
+		.mycontainer img {
+			box-shadow: 0px 3px 10px #cccccc;
+		}
+    @media (min-width: 768px) {
+		.indexcenter {
+			display: flex;
+			align-items: center;
+		}
+	}
+		.mygreen {
+			color: #015249;
+			text-shadow: 0px 1px #ddd;
+		}
+		#respond {
+			margin-top: 0px;
+		}
+		.pagination {
+			float: right;
+			margin: 0px 0px;
+		}
+		.nobullet {
+			list-style-type: none;
+		}
+		#submit {
+			margin-bottom: 20px
+		}
+/* footer and clock */
+		.clock {
+			display: block;
+			margin: auto;
+			width: 50%;
+			color: white;
+			font-size: 16px;
+			padding: 14px 5px;
+			font-family: 'Quicksand', sans-serif;
+		}
+		.footer {
+			padding-left:7%;
+			padding-right:7%;
+			min-height: 50px;
+			width: 100%;
+			overflow: hidden;
+			background-color: #5f5f5f;
+			font-family: 'Quicksand', sans-serif;
+			text-align: center;
+			padding: 14 0 0 0;
+		}
+		.footer p, .footer h3 {
+			color: #FFFFFF;
+		}
+/* myimgcss */
+		.myimgcss {
+			min-width: 50em; 
+			max-height: 24em;
+			width: auto; 
+			height: auto; 
+			object-fit: cover;
+			box-shadow: 0px 3px 10px #cccccc;
+		}
