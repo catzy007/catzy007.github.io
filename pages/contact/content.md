@@ -7,7 +7,7 @@ High Performance Computing and Artificial Intelligence.
 
 * Virtual location :
 
-  <mailto:catzy.rais@gmail.com>
+  <mailto:multiverse.bagussaputra@gmail.com>
 
   <https://www.linkedin.com/in/bagus-saputra-b3035915b>
 
