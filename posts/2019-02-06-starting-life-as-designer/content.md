@@ -1,141 +1,50 @@
-#### Starting life as designer using linux (ubuntu based)
+#### Starting life as designer
 ##### *Wednesday, February 6, 2019*
-```Imagine you're fresh graduate that only do design 2d, 3d and or drawing. Here's my suggestions.```
+##### *Rewritten on Sunday, April 3, 2022*
 
-<br>
-#### First get a PC or laptop.
+In case you're just graduate from school or uni, loves drawing or 
+digital design or simply just need extra cash here is some of my insight.
 
-> If you do 2d design like posters, brochure, some vector graphic something like that, get a pc or laptop with specification "at least" quad core processor with at least intel HD 5XX and 4GB of ram. if you really desperate, get second hand dual core processor with nvidia 600 series.
+First, what suit you better. There are multiple types of digital design. 
+Digital printing design, user interface and experience design for Website, 
+UI/UX design for mobile devices, and then there are more artistic design 
+like game art design, digital drawing, digital illustration, and 3D 
+rendering/modelling.
 
-core i3 2XXX 4GB ram with nvidia 6XX is minimum
+There are probably more than i listed above, but the basics is similar 
+by doing a brainstorming, creating sketch, and repeat. Then the question 
+becomes which one fit yours? The easiest way is to just try. Don't worry 
+too much about tools, use free software, use system you currently have 
+like fully working laptop, tablet, smartphones or even use paper and pencil. 
+What i mean is if you will, you can.
 
-core i5 6XXX 4GB ram with intelHD 5XX is enough
+Then improve your skill and learn from written media like blogs or websites, 
+learn from watching VOD and see others do it, then try it yourself. 
 
-core i7 7XXX 8GB ram with nvidia 9XX is great
+My experience with digital printing design and UI design for website. 
+The first thing i did is to listen to client request, bring paper and pencil, 
+draw sketch according to client request, then repeat until it is close 
+enough to client request. I also give client my advice like if i did this, 
+it will reduce the time to X amount, or do this to make color pop, things like 
+that. Don't forget to ask for time, budget and special request if any.
 
-> If your primary thing is 2d drawing like manga anime, dual core with intel graphic is good enough for stater. make sure you buy pen tab. some suggested brand is Xp-Pen, Huion, Wacom. if you can, go with quad core and nvidia one.
+If everything went smoothly, plan a working schedule and start working on it. 
+Then once in a while, contact your client and tell your progress or ask for 
+advice. Once it's done present your work, and hopefully you get good results 
+and gain more experiences.
 
-core i3 2XXX 4GB ram with nvidia 6XX is minimum
+As for software, for digital printing and UI design i use mostly 
+Inkscape and GIMP but sometimes client ask to make design using Corel Draw or even 
+Adobe Photoshop. For digital drawing i use Krita, Adobe Photoshop and Sketchbook 
+(Android) some may suggest Clip Studio Paint and PaintTool SAI. As for 3D i use 
+Blender and SketchUp with Vray as rendering engine. Some may suggest 3ds Max and 
+ZBrush.
 
-core i5 6XXX 4GB ram with intelHD 5XX is enough
+For tools, I have use XP-Pen USB Tablet and Samsung Tablet with S-Pen before for 
+drawing. Other than that, i use paper and pencil. For computers, i use system 
+ranging from Intel Pentium with 2 Cores and Nvidia 610M for 2D design to Intel 
+Xeon with 24 Threads and Radeon 560 for 3D rendering with lots of polygons and refection.
 
-core i7 7XXX 8GB ram with nvidia 9XX is great
-
-> If you're 3d artist that create 3d model, 3d object, 3d sculpting etc, you might go with at least quad core and nvidia 900 series with 8GB of ram. if you can the go with xeon 6 core and nvidia 10 series card. i'm assuming that you allready own pen tab at this stage.
-
-core i7 6XXX 8GB ram nvidia 9XX is good enough
-
-amd ryzen 5 8GB ram amd rx 5XX is good enough
-
-> If you're 3d rendering artist, some render engine like great amount of cpu core, and other like great gpu power. so it's depend. my suggestion is get 12 core xeon and 10 series nvidia card with 16GB ram. large ram for combat texture size. if you're professional then get 12 core xeon and maybe quadro or TITAN class card.
-
-dual xeon X5690 with 16GB ram nvidia 9XX is poor man's rendering machine
-
-12 core xeon with 16GB ram nvidia quadro is great
-
-threadripper with 16GB ram nvidia quadro is great
-
-anything above that is great
-
-if you can get 2nd hand part with deals, that would be great.
-
-<br>
-#### Then select a software.
-
-If you're draw using pen tablet, i suggest you to install Krita
-<div class="row">
-    <div class="col-sm-3"></div>
-    <div class="col-sm-6">
-        <div class="thumbnail">
-            <img class="img-responsive" src="./posts/2019-02-06-starting-life-as-designer/1.jpg" alt="img">
-        </div>
-    </div>
-    <div class="col-sm-3"></div>
-</div>
-
-if you're illustrator and do lot of vector graphic, use Inkscape
-<div class="row">
-    <div class="col-sm-3"></div>
-    <div class="col-sm-6">
-        <div class="thumbnail">
-            <img class="img-responsive" src="./posts/2019-02-06-starting-life-as-designer/2.jpg" alt="img">
-        </div>
-    </div>
-    <div class="col-sm-3"></div>
-</div>
-
-if you're doing light photo editing, use GIMP
-<div class="row">
-    <div class="col-sm-3"></div>
-    <div class="col-sm-6">
-        <div class="thumbnail">
-            <img class="img-responsive" src="./posts/2019-02-06-starting-life-as-designer/3.jpg" alt="img">
-        </div>
-    </div>
-    <div class="col-sm-3"></div>
-</div>
-
-if you're 3d artist, 3d animator, almost anything using 3d graphic, use Blender
-<div class="row">
-    <div class="col-sm-3"></div>
-    <div class="col-sm-6">
-        <div class="thumbnail">
-            <img class="img-responsive" src="./posts/2019-02-06-starting-life-as-designer/4.jpg" alt="img">
-        </div>
-    </div>
-    <div class="col-sm-3"></div>
-</div>
-
-<br>
-#### Setting up few things
-I Assuming that you're already assemble your PC and successfully install ubuntu.
-first, get a update
-
-`$ sudo apt update && sudo apt upgrade -y`
-
-next install your software of choices
-
-for krita users
-`$ sudo apt install krita -y`
-
-for inkscape users
-`$ sudo apt install inkscape -y`
-
-for gimp users
-`$ sudo apt install gimp -y`
-
-for blender users
-`$ sudo apt install blender -y`
-
-<br>
-#### If you're using NVIDIA Graphic, do this
-go to start menu and search for `software & updates`
-<div class="row">
-    <div class="col-sm-3"></div>
-    <div class="col-sm-6">
-        <div class="thumbnail">
-            <img class="img-responsive" src="./posts/2019-02-06-starting-life-as-designer/5.jpg" alt="img">
-        </div>
-    </div>
-    <div class="col-sm-3"></div>
-</div>
-
-then select `additional drivers` and select `Using NVIDIA driver metapackage`
-<div class="row">
-    <div class="col-sm-3"></div>
-    <div class="col-sm-6">
-        <div class="thumbnail">
-            <img class="img-responsive" src="./posts/2019-02-06-starting-life-as-designer/6.jpg" alt="img">
-        </div>
-    </div>
-    <div class="col-sm-3"></div>
-</div>
-
-then click `Apply Changes`
-
-<br>
-#### If you have Pen Tablet, try this
-Hopefully someone has made driver for your pen tablet on linux <a href="./#2018-07-08-xp-pen-star-g430s-in-ubuntu-1710">link</a>
-
-<br>
-#### And you're done!
+To recap, to be a digital designer, pick which suit you best. The easiest way to do 
+that is to learn and watch others do it, the practice yourself. Don't worry too much 
+about software and system to use as `A tool is only as good as its users`.
