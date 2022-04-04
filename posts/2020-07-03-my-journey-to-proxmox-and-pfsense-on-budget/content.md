@@ -36,7 +36,7 @@ The first is the `Athlon TK-55`, i ordered it and came tomorrow afternoon. I pop
 heat sink, replace the CPU with my new 2 core CPU, and it just works! Well kinda. I actually don't know if 
 the CPU is faulty, i upgrade the bios, and it doesn't support the CPU, or i do something stupid and basically 
 fried the CPU. I don't know it just works when it wants, and doesn't when it won't. The good thing is it just 
-6USD CPU so not a big deal. But i kinda hope it works in the first run (just hoping).
+6USD CPU so not a big deal.
 <div class="row">
 	<div class="col-sm-4"></div>
 	<div class="col-sm-4">
