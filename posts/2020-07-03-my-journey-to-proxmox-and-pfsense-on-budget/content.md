@@ -2,17 +2,16 @@
 _Friday, July 3, 2020_
 
 Few weeks ago, i come to an online listing. They sell a `HP Thin Client T5730` at around 20 USD, 
-i thought it was really good price. Yeah, you can comment `its not a good deal you dumb` yeah i know 
-i live in region where even 10-year-old computer still hold its price really strong. So i might try 
-to snatch it in. Then i watch video about this thin client from [PhilsComputerLab](https://www.youtube.com/watch?v=ekRQS-uyJ4Y) 
-and find out that this thin client has upgradeable processor and that would be interesting.
+i thought it was wonderful price. From information that i get, [PhilsComputerLab](https://www.youtube.com/watch?v=ekRQS-uyJ4Y) 
+find out that this thin client has upgradeable processor and that would be interesting. If i can 
+upgrade this single-core thin client to dual-core, add more RAM and increase storage capacity, 
+i get myself a good micro server.
 
 The feature i was looking from this thin client is 64Bit support. Many newer Ubuntu based distros 
 has dropped support for 32Bit based system. The other thin client `T5740` has intel Atom with 
-HyperThreading, but it only supports 32Bit so yeah drop that even tho T5740 has internal SATA connector. 
-I also stumble upon listing for `gt7725` which had dual-core 64Bit system and had two slots for RAM. 
-But the seller said it's sold out. So finally i pick `T5730` and do a little gamble. I'm going to put 
-Dual Core processor in that, give it 2 GB ram, and anything that can make SATA drive work on that system.
+HyperThreading, but it only supports 32Bit so drop that even though T5740 has internal SATA connector. 
+I also stumble upon listing for `GT7725` which shipped with dual-core 64Bit processor and had two 
+RAM slots. The seller said it's sold out. So in the end i pick `T5730` instead.
 
 <br>
 #### Chapter 1 - Upgrading the CPU
@@ -37,7 +36,7 @@ The first is the `Athlon TK-55`, i ordered it and came tomorrow afternoon. I pop
 heat sink, replace the CPU with my new 2 core CPU, and it just works! Well kinda. I actually don't know if 
 the CPU is faulty, i upgrade the bios, and it doesn't support the CPU, or i do something stupid and basically 
 fried the CPU. I don't know it just works when it wants, and doesn't when it won't. The good thing is it just 
-6USD CPU so yeah not a big deal. But i kinda hope it works in the first run (just hoping).
+6USD CPU so not a big deal. But i kinda hope it works in the first run (just hoping).
 <div class="row">
 	<div class="col-sm-4"></div>
 	<div class="col-sm-4">
@@ -49,7 +48,7 @@ fried the CPU. I don't know it just works when it wants, and doesn't when it won
 </div>
 
 The Final processor i use is `Turion 64 X2 TL-50` which i got for around 4USD, it works in the first time and 
-still working (at least when this post is written it still do). Yeah, it basically works just fine
+still working (at least when this post is written it still do). In the end, it did work just fine.
 <div class="row">
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
@@ -84,14 +83,14 @@ should consider upgrading you power supply.
 <br>
 #### Chapter 2 - Upgrading RAM and Storage
 
-The system i got has one slot of RAM populated with 1 GB of Hynix DDR2 667Mhz. Yeah, just simple swap that with 2 GB 
+The system i got has one slot of RAM populated with 1 GB of Hynix DDR2 667Mhz. A simple swap with 2 GB 
 of old stock RAM and done! Actually this machine had solder pad for second memory, but you must get correct socket 
 for that, solder that little SMD pad, and solder some resistor and capacitor to make it works. And yes someone has 
 successfully done this. Check [parkytowers.me.uk](https://www.parkytowers.me.uk/thin/hp/t5730/mods.shtml) and 
 [phoneservicesupport.com](https://www.phoneservicesupport.com/new-mods-t5730-a-dual-core-64-bit-cpu-pcie-g-card-t3517.html)
 
 
-For storage, my system got 2 GB 44 pin IDE Flash memory which is basically early generation of SLC SSD. But yeah 2 GB 
+For storage, my system got 2 GB 44 pin IDE Flash memory which is basically early generation of SLC SSD. But 2 GB 
 of raw storage in 2020 won't get you anywhere. My first idea is using `44 pin IDE to SATA converter` and uses random 
 SATA SSD, the adapter itself costs me around 10 USD shipped from China. Don't forget to get 44 pin cable.
 <div class="row">
@@ -173,10 +172,10 @@ Okay now let's see some speed test result.
 Okay you seen enough data right, well that told us we got some major bottleneck. My SATA SSD capable of reaching 
 around 400 MB/s but it being bottleneck by IDE controller and maybe USB controller in the system. Theoretically 
 i should get around 1 Gigabit from my IDE converter and 480 Megabits from USB2.0 controller and none of them can 
-even reach that "theoretical" speed. Instead, i only get around 256 Megabit (32MBps*8) so yeah if anyone will get 
-HP T5730, go with USB to SATA adapter it's cheaper, readily available and perfectly fine for the job. Oh, i forgot 
-to mention that other expansion may be possible such as CF-Card and some model had mini PCIE adapter on the bottom. 
-Yeah, that may be the way to go.
+even reach that "theoretical" speed. Instead, i only get around 256 Megabits (32MBps*8). If anyone gets HP T5730, 
+go with USB to SATA adapter it's cheaper, readily available and perfectly fine for the job. Oh, i forgot to mention 
+is that other expansion may be possible such as CF-Card and some model had mini PCIE adapter on the bottom and that 
+may be the way to go.
 
 <br>
 #### Chapter 3 - Proxmox Installation
@@ -189,9 +188,9 @@ I thought what the heck. Then i realize if i plugged my 32 GB `GPT` SSD into th
 the worse part is Proxmox only install in GPT mode. Then i found this [Reddit post](https://www.reddit.com/r/homelab/comments/7knwk7/proxmox_with_mbr/) 
 someone posted that i can install Debian in `MBR` then install Proxmox on top and i did just that.
 
-First i install Debian and unfortunately i forgot to uncheck the GUI mode so yeah i had to dealt with that later. 
-Next install Proxmox. Just follow this [wonderful tutorial](https://pve.proxmox.com/wiki/Install_Proxmox_VE_on_Debian_Buster) 
-hehe. Okay really their explanation is better than me, and mostly you just do `apt install` so yeah.
+First i install Debian and unfortunately i forgot to uncheck the GUI mode so i had to dealt with that later. 
+Next install Proxmox. Just follow this [wonderful tutorial](https://pve.proxmox.com/wiki/Install_Proxmox_VE_on_Debian_Buster). 
+Okay really their explanation is better than me, and mostly you just do `apt install`.
 
 <div class="row">
 	<div class="col-sm-2"></div>
