@@ -26,7 +26,7 @@ and `Turion 64 X2 TL-50`.
 	<div class="col-sm-4"></div>
 	<div class="col-sm-4">
 		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/2.jpg" alt="img">
+			<img class="img-responsive" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/1.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-4"></div>
