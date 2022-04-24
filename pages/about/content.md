@@ -1,5 +1,5 @@
 #### This blog is intended to be free non commercial non profit personal blog
-*Like my content? give me a coffee or 10*
+*Like my content? give me 0b01 coffee or 0b10*
 
 <br>
 <p align="center"><a href="https://ko-fi.com/catzy007">https://ko-fi.com/catzy007</a></p>
