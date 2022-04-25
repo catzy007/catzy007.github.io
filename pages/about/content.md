@@ -3,11 +3,7 @@
 
 <br>
 <p align="center"><a href="https://ko-fi.com/catzy007">https://ko-fi.com/catzy007</a></p>
-<p align="center"><a href="https://paypal.me/catzy007?country.x=ID&locale.x=en_US">https://paypal.me/catzy007?country.x=ID&locale.x=en_US</a></p>
-<p align="center">3MaeSaxxfj3r5rZkE53KgPXbqhz13rQC59<strong> BTC (Nicehash)</strong></p>
-<p align="center">
-	<img src="./pages/about/btc.jpg" height="250px" alt="btc address">
-</p> 
+<p align="center"><a href="https://paypal.me/catzy007">https://paypal.me/catzy007</a></p>
 
 <br>
 This blog is made possible using [ShowdownJS](https://github.com/showdownjs/showdown) and 
