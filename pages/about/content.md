@@ -2,8 +2,11 @@
 *Like my content? give me 0b01 coffee or 0b10*
 
 <br>
-<p align="center"><a href="https://ko-fi.com/catzy007">https://ko-fi.com/catzy007</a></p>
+<p align="center">
+	<img src="./pages/about/qr.png" height="250px" alt="paypal address">
+</p>
 <p align="center"><a href="https://paypal.me/catzy007">https://paypal.me/catzy007</a></p>
+<p align="center"><a href="https://ko-fi.com/catzy007">https://ko-fi.com/catzy007</a></p>
 
 <br>
 This blog is made possible using [ShowdownJS](https://github.com/showdownjs/showdown) and 
