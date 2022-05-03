@@ -1,4 +1,4 @@
-# Push notification ad list by Catzy
+# Push notification ad list for Pi-hole by Catzy
 # License: MIT
 
 adsbytranssion.com
