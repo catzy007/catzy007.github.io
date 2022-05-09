@@ -67,3 +67,51 @@ this is the image you just downloaded, and you can see the old image as `<none>`
 	</div>
 	<div class="col-sm-3"></div>
 </div>
+
+Then go to `Container list` tab, click on container you want to update, then 
+press on `Recreate` button.
+<div class="row">
+	<div class="col-sm-3"></div>
+	<div class="col-sm-6">
+		<div class="thumbnail">
+			<img class="img-responsive" src="./posts/2022-05-09-updating-docker-image-from-portainer/05.png" alt="img">
+		</div>
+	</div>
+	<div class="col-sm-3"></div>
+</div>
+
+A pop-up will appear and continue by pressing `Recreate` button.
+<div class="row">
+	<div class="col-sm-3"></div>
+	<div class="col-sm-6">
+		<div class="thumbnail">
+			<img class="img-responsive" src="./posts/2022-05-09-updating-docker-image-from-portainer/06.png" alt="img">
+		</div>
+	</div>
+	<div class="col-sm-3"></div>
+</div>
+
+If everything went smoothly, your container will be recreated and started 
+immediately with all the persistent data intact.
+<div class="row">
+	<div class="col-sm-3"></div>
+	<div class="col-sm-6">
+		<div class="thumbnail">
+			<img class="img-responsive" src="./posts/2022-05-09-updating-docker-image-from-portainer/07.png" alt="img">
+		</div>
+	</div>
+	<div class="col-sm-3"></div>
+</div>
+
+Next we need to remove the old image, go to `Image list` tab 
+and as you can see the old image is marked `Unused` now. Put a `Checkmark` 
+on the old image followed by pressing `Remove` button.
+<div class="row">
+	<div class="col-sm-3"></div>
+	<div class="col-sm-6">
+		<div class="thumbnail">
+			<img class="img-responsive" src="./posts/2022-05-09-updating-docker-image-from-portainer/08.png" alt="img">
+		</div>
+	</div>
+	<div class="col-sm-3"></div>
+</div>
