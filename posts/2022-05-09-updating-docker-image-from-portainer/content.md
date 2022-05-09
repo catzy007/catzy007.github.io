@@ -115,3 +115,18 @@ on the old image followed by pressing `Remove` button.
 	</div>
 	<div class="col-sm-3"></div>
 </div>
+
+The step above is my safest way of doing things. If you want the simple way, 
+go to `Container list` then click on your container, click `Recreate` button. 
+When the pop-up appear, click on `Pull latest image` and press `Recreate`. 
+This is the easiest way of doing things, but I have to warn you that I have 
+lost entire stack because of random error in the middle of update. 
+<div class="row">
+	<div class="col-sm-3"></div>
+	<div class="col-sm-6">
+		<div class="thumbnail">
+			<img class="img-responsive" src="./posts/2022-05-09-updating-docker-image-from-portainer/09.png" alt="img">
+		</div>
+	</div>
+	<div class="col-sm-3"></div>
+</div>
