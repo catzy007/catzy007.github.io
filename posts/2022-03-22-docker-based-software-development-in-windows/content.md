@@ -21,13 +21,13 @@ Don't forget to properly select the right version. For normal computers, you
 need `64 bit` or `x64` with `exe` file type. Get the right version and install 
 as usual.
 <div class="row">
-	<div class="col-sm-2"></div>
-	<div class="col-sm-8">
+	<div class="col-sm-3"></div>
+	<div class="col-sm-6">
 		<div class="thumbnail">
 			<img class="img-responsive" src="./posts/2022-03-22-docker-based-software-development-in-windows/code2.png" alt="img">
 		</div>
 	</div>
-	<div class="col-sm-2"></div>
+	<div class="col-sm-3"></div>
 </div>
 
 <br><br>
