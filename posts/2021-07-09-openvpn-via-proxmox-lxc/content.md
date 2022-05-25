@@ -32,6 +32,11 @@ and how to create LXC container.
 * After that, type `nano /etc/pve/lxc/100.conf` change `100` to your container id.
 * Add line below.
     ```
+    lxc.cgroup2.devices.allow: c 10:200 rwm
+    lxc.mount.entry: /dev/net/tun dev/net/tun none bind,create=file
+    ```
+    If you're running PVE 6.x then 
+    ```
     lxc.cgroup.devices.allow: c 10:200 rwm
     lxc.mount.entry: /dev/net/tun dev/net/tun none bind,create=file
     ```
