@@ -22,6 +22,8 @@ function loadContentIndex(){
         }else if(typeRequest[1] == "search"){
             //require search-engine/search.js
             loadContentSearch(arrIndex, arrLower, urlRequest, pageRequest[1]);
+        }else if(typeRequest[1] == "unindexed"){
+            loadPageUnindexed(urlRequest, pageRequest[1]);
         }else{
             document.location.href = './';
         }

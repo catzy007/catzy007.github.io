@@ -20,10 +20,11 @@ function loadHomepageCategory(){
         if(arrCategory[i].length == "1" && arrCategory[i] == "-"){
             arrCategory.splice(i,1);
         }
-        categoryList+= "<p class=\"clickable\"" +
-                    "onclick=\"location.href='./loader.html?category=" + 
-                    arrCategoryL[i] +"'\">" + 
-                    arrCategory[i] + "</p>\n";
+        categoryList = categoryList.concat("<p class='clickable' ");
+        categoryList = categoryList.concat("onclick='location.href=\"");
+        categoryList = categoryList.concat("./loader.html?category=");
+        categoryList = categoryList.concat(arrCategoryL[i] + "\"'>");
+        categoryList = categoryList.concat(arrCategory[i] + "</p>\n");
         // console.log(i + " " + arrCategory[i] + " " + arrCategoryL[i]);
     }
     document.getElementById("categoryList").innerHTML = categoryList;

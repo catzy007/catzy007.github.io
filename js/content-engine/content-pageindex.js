@@ -6,9 +6,11 @@ function loadPageIndex(arrIndex, arrLower, urlRequest, pageRequest){
     document.title = getSiteIdentifier()[2];
     for(var i=0; i<arrIndex.length; i++){
         if(arrIndex[i].length > 1){
+            pageHTML = pageHTML.concat("<p>");
             pageHTML = pageHTML.concat("<a href='./loader.html?post="+ arrLower[i] +"'>");
-            pageHTML = pageHTML.concat("<p>"+getTitleDate(arrIndex[i])+" - "+getTitleOnly(arrIndex[i])+"</p>");
+            pageHTML = pageHTML.concat(getTitleDate(arrIndex[i])+" - "+getTitleOnly(arrIndex[i]));
             pageHTML = pageHTML.concat("</a>");
+            pageHTML = pageHTML.concat("</p>");
         }
     }
     document.getElementById('main-content').innerHTML = pageHTML;
