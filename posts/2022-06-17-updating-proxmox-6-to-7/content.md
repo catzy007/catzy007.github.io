@@ -1,4 +1,4 @@
-#### Updating Proxmox 6.4 to 7.2
+#### Updating Proxmox 6 to 7
 _Friday, June 17, 2022_
 
 First do a simple update and upgrade to make sure you have latest package (at the time of writing, it is Proxmox 6.4).
@@ -10,7 +10,7 @@ apt dist-upgrade
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2022-06-17-updating-proxmox-64-to-72/00.png" alt="img">
+			<img class="img-responsive" src="./posts/2022-06-17-updating-proxmox-6-to-7/00.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -24,7 +24,7 @@ pve6to7
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
 		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2022-06-17-updating-proxmox-64-to-72/01.png" alt="img">
+			<img class="img-responsive" src="./posts/2022-06-17-updating-proxmox-6-to-7/01.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-2"></div>
@@ -36,7 +36,7 @@ debian security apt source list from `buster/updates` to `bullseye-security`.
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
 		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2022-06-17-updating-proxmox-64-to-72/02.png" alt="img">
+			<img class="img-responsive" src="./posts/2022-06-17-updating-proxmox-6-to-7/02.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-2"></div>
@@ -58,7 +58,7 @@ sed -i -e 's/buster/bullseye/g' /etc/apt/sources.list.d/pve-install-repo.list
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
 		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2022-06-17-updating-proxmox-64-to-72/03.png" alt="img">
+			<img class="img-responsive" src="./posts/2022-06-17-updating-proxmox-6-to-7/03.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-2"></div>
@@ -73,7 +73,7 @@ apt dist-upgrade
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
 		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2022-06-17-updating-proxmox-64-to-72/04.png" alt="img">
+			<img class="img-responsive" src="./posts/2022-06-17-updating-proxmox-6-to-7/04.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-2"></div>
@@ -84,7 +84,7 @@ Sometimes a promopt will shows up and ask you to accept a term or select a confi
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
 		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2022-06-17-updating-proxmox-64-to-72/05.png" alt="img">
+			<img class="img-responsive" src="./posts/2022-06-17-updating-proxmox-6-to-7/05.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-2"></div>
@@ -95,7 +95,7 @@ Assuming everything works properly, your system should boot into proxmox 7.2 and
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2022-06-17-updating-proxmox-64-to-72/06.png" alt="img">
+			<img class="img-responsive" src="./posts/2022-06-17-updating-proxmox-6-to-7/06.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -107,8 +107,10 @@ and edit the config file manually.
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
 		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2022-06-17-updating-proxmox-64-to-72/07.png" alt="img">
+			<img class="img-responsive" src="./posts/2022-06-17-updating-proxmox-6-to-7/07.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-2"></div>
 </div>
+
+[Source Proxmox Wiki Upgrade from 6.x to 7.0](https://pve.proxmox.com/wiki/Upgrade_from_6.x_to_7.0)
