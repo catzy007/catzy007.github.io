@@ -65,7 +65,7 @@ body {
     box-shadow: 5px 5px 10px #ddd;
 }
 .card {
-    min-height: 24em;
+    /* min-height: 24em; */
     background-color: #fff;
     color: black;
     border-radius: 10px 10px 0px 0px;
@@ -73,6 +73,24 @@ body {
     margin-bottom: 2em;
     box-shadow: 5px 5px 10px #ddd;
     cursor: pointer;
+}
+@media (min-width: 767px) {
+    .row-eq-height {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+    }
+    .card {
+        height: 90%;
+        background-color: #fff;
+        color: black;
+        border-radius: 10px 10px 0px 0px;
+        padding: 1em;
+        margin-bottom: 2em;
+        box-shadow: 5px 5px 10px #ddd;
+        cursor: pointer;
+    }
 }
 .card:hover {
     color: black;
