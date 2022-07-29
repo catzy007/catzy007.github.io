@@ -57,3 +57,4 @@
 2022-04-19-Windows-Subsystem-for-Android-With-Play-Store
 2022-05-09-Updating-Docker-Image-From-Portainer
 2022-06-17-Updating-Proxmox-6-to-7
+2022-07-29-Temperature-and-Humidity-Sensing-With-Telegram-Notification
