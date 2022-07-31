@@ -17,8 +17,8 @@ if you want to call someone, you search for a person name instead of their
 phone number. So instead of contact name and phone number, with DNS we got 
 Domain name which is `www.something.com` and IP Address which is something 
 like `127.0.0.1` if you open a web pages, you type www.something.com and 
-your computer ask the DNS for IP Address and your computer ask the destination 
-server a web page to load and that's it. If your DNS set to block certain 
+your computer ask the DNS for IP Address then your computer ask the destination 
+server for a web page to load and that's it. If your DNS set to block certain 
 services then it will tell you that the destination you're looking for is 
 not exist and you got an error. Or even worse, the DNS is lying to you 
 and forward you to a custom page `Sorry this site is blocked by blah blah`.
@@ -28,7 +28,7 @@ The fix for this is quite simple. You just need to change your DNS server to
 [Cloudflare 1.1.1.1](https://1.1.1.1/).
 
 But for some who already uses above method but still not working and do not 
-want a extra latency from a VPN, you can use [DNSCrypt](https://dnscrypt.info/). 
+want extra latency from a VPN, you can use [DNSCrypt](https://dnscrypt.info/). 
 The way this works is that instead of using plain DNS, it 
 [encrypt your DNS traffic](https://en.wikipedia.org/wiki/DNS_over_HTTPS) 
 and then sent them using HTTPS connection. It also has other features like 
@@ -110,3 +110,14 @@ configured DNS server and that's it.
 	</div>
 	<div class="col-sm-2"></div>
 </div>
+
+If you're running Ubuntu Server and having connection issues, try
+```
+systemctl disable systemd-resolved.service
+systemctl stop systemd-resolved
+```
+Then go to `/etc/resolv.conf` and fill it with
+```
+search 1.1.1.1
+nameserver 1.1.1.1
+```
