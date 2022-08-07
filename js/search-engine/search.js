@@ -18,9 +18,11 @@ function loadContentSearch(arrIndex, arrLower, urlRequest, pageRequest){
     for(var i=0; i<arrIndex.length; i++){
         if(getTitleOnly(arrIndex[i]).toLowerCase().includes(keyword)){
             searchHitCount++;
+            pageHTML = pageHTML.concat("<p>");
             pageHTML = pageHTML.concat("<a href='./loader.html?post="+ arrLower[i] +"'>");
-            pageHTML = pageHTML.concat("<p>"+getTitleDate(arrIndex[i])+" - "+getTitleOnly(arrIndex[i])+"</p>");
+            pageHTML = pageHTML.concat(getTitleDate(arrIndex[i])+" - "+getTitleOnly(arrIndex[i]));
             pageHTML = pageHTML.concat("</a>");
+            pageHTML = pageHTML.concat("</p>");
         }
     }
     if(searchHitCount <= 0){

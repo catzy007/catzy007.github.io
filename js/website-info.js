@@ -9,7 +9,7 @@ var enableDisqus = false;
 function setSiteIdentifier(pageIdentifier, pageUrl, pageTitle, pageLang){
 	disqusID = pageIdentifier;
 	disqusUrl = pageUrl;
-	disqusTitle = WebsiteName + " - " + pageTitle;
+	disqusTitle = pageTitle + " - " + WebsiteName;
 	disqusLang = pageLang;
 }
 
