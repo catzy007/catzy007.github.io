@@ -76,7 +76,7 @@ This allow small or even individual creators to make animations, music
 videos and even video games. Unfortunately at the mid of 2011, original 
 creator of MMD stopped it's development and left the fate of MMD to it's 
 community without any source code release. Fortunately alternative 
-software existed such as [MikuMikuCapture (MMM)](https://sites.google.com/site/mikumikucapturee/)
+software existed such as [MikuMikuCapture (MMM)](https://sites.google.com/site/mikumikucapturee/).
 <div class="row">
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
@@ -123,13 +123,19 @@ gyroscope, magnetometer, etc.
 	</div>
 	<div class="col-sm-3"></div>
 </div>
+The way this works is that you strap IMU to strategic part of your body like 
+legs, waist, etc. Then you sent the IMU data usually via wireless and recipient 
+computer translate the IMU data to your Avatar. Compared to camera based MoCap, 
+IMU based MoCap needs less computation power, but current consumer class IMU 
+drift from time to time so it needs regular calibration.
 
-For some doing 3D works like modelling and rigging is hard and takes a lot 
-of time. Fortunately Pixiv created [VRoid Studio](https://vroid.com/en/studio) 
-If you have created an ingame character it is pretty much the same. If you 
-want more, you can create your own 3D component in other software and load them 
-to your avatar you can also draw your own texture and add text and logo to 
-your avatar.
+Virtual YouTuber also needs an Avatar. If you want 3D avatar you can create your 
+own using Blender, Maya or ZBrush. But for most doing 3D works like modelling 
+and rigging is hard and takes a lot of time. Fortunately Pixiv created 
+[VRoid Studio](https://vroid.com/en/studio) If you have created an in game 
+character it is pretty much the same. If you want more, you can create your 
+own 3D component in other software and load them to your avatar you can also 
+draw your own texture and add text and logo to your avatar.
 <div class="row">
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
@@ -142,10 +148,8 @@ your avatar.
 Remember that you can always convert from one 3D format to another, sometimes 
 with a catch and sometimes not at all.
 
-The thing is that 3D requires great amount of computation power, for some 2D 
-avatar is the way to go and that's where [Live2D](https://www.live2d.com/en/) 
-comes in. The way this works is first you 
-[separate your 2D drawings by parts](https://docs.live2d.com/cubism-editor-manual/divide-the-material/) 
+If you want 2D avatar, [Live2D](https://www.live2d.com/en/) is the way to go. 
+Live2D works by first you [separate your 2D drawings by parts](https://docs.live2d.com/cubism-editor-manual/divide-the-material/) 
 for example a face, lips, eyes, ears, body, legs, etc. and then you 
 ["connect them together"](https://docs.live2d.com/cubism-editor-manual/template/#) 
 then the software mathematically deform and transform respected parts according 
@@ -159,3 +163,9 @@ to motion data.
 	</div>
 	<div class="col-sm-3"></div>
 </div>
+
+And that's the current technology behind Virtual YouTuber. There is also 
+technology such as [Virtual Reality (VR)](https://en.wikipedia.org/wiki/Virtual_reality) 
+and [Augmented Reality (AR)](https://en.wikipedia.org/wiki/Augmented_reality) 
+which allows you to interact with virtual character from the comfort of your 
+room. Who knows what future technology will bring us.
