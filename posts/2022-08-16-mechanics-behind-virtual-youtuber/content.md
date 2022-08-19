@@ -21,10 +21,11 @@ mean that combining animation, computer graphics and MoCap is possible.
 
 While early system paved a way, it was expensive and require a 
 [specialized equipment](https://en.wikipedia.org/wiki/Silicon_Graphics) 
-or even [specialized room](https://en.wikipedia.org/wiki/Motion_capture#Optical_systems) with body suit markers and cameras placed 
-at strategic locations which is unreachable for most people. Fortunately 
-further advancement in computer vision technology allow us to enjoy 
-such technology even in the palm of your hand!
+or even [specialized room](https://en.wikipedia.org/wiki/Motion_capture#Optical_systems) 
+with bodysuit markers and cameras placed at strategic locations which 
+is unreachable for most people. Fortunately further advancement in 
+computer vision technology allow us to enjoy such technology even at the 
+palm of your hand!
 
 This technology is called [Kinect](https://en.wikipedia.org/wiki/Kinect) 
 released in 2010 for Xbox 360. Kinect is motion sensing device capable 
@@ -112,8 +113,8 @@ the algorithm for example
 
 Motion capture above uses camera at least in one form or another. There is 
 also motion capture system that do not use any camera, instead they're using 
-[Inertial Measurement Unit (IMU)](https://en.wikipedia.org/wiki/Inertial_measurement_unit) which consist of few sensors like accelerometer, 
-gyroscope, magnetometer, etc.
+[Inertial Measurement Unit (IMU)](https://en.wikipedia.org/wiki/Inertial_measurement_unit) 
+which consist of few sensors like accelerometer, gyroscope, magnetometer, etc.
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
