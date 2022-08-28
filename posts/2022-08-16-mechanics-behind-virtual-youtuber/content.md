@@ -17,7 +17,7 @@ which is used by animation and gaming industry since 80s. The
 has existed since late 1800s or even beyond. Back then a frame is hand 
 traced from a projected film roll one by one, Then advancement in 
 [computer graphics](https://en.wikipedia.org/wiki/Computer_graphics) 
-mean that combining animation, computer graphics and MoCap is possible.
+meant that combining animation, computer graphics and MoCap is possible.
 
 <div class="row">
 	<div class="col-sm-2"></div>
