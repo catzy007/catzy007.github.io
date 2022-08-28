@@ -89,7 +89,7 @@ This allow small or even individual creators to make animations, music
 videos and even video games. Unfortunately at the mid of 2011, original 
 creator of MMD stopped it's development and left the fate of MMD to it's 
 community without any source code release. Fortunately alternative 
-software existed such as [MikuMikuCapture (MMM)](https://sites.google.com/site/mikumikucapturee/).
+software existed such as [MikuMikuCapture (MMC)](https://sites.google.com/site/mikumikucapturee/).
 <div class="row">
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
