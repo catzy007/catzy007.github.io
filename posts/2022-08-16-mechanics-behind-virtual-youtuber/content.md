@@ -19,7 +19,19 @@ traced from a projected film roll one by one, Then advancement in
 [computer graphics](https://en.wikipedia.org/wiki/Computer_graphics) 
 mean that combining animation, computer graphics and MoCap is possible.
 
-While early system paved a way, it was expensive and require a 
+<div class="row">
+	<div class="col-sm-2"></div>
+	<div class="col-sm-8">
+		<div class="thumbnail">
+			<img class="img-responsive" src="./posts/2022-08-16-mechanics-behind-virtual-youtuber/07.jpg" alt="img">
+			<a>http://reality.sgi.com/jam_sb/mocap/ms_utils.html</a>
+		</div>
+	</div>
+	<div class="col-sm-2"></div>
+</div>
+While early system paved a way, it was 
+[expensive](https://web.archive.org/web/20000830080826/http://reality.sgi.com/jam_sb/mocap/MoCapWP_v2.0.html) 
+and require a 
 [specialized equipment](https://en.wikipedia.org/wiki/Silicon_Graphics) 
 or even [specialized room](https://en.wikipedia.org/wiki/Motion_capture#Optical_systems) 
 with bodysuit markers and cameras placed at strategic locations which 
@@ -42,7 +54,7 @@ from your surrounding area.
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
 		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2022-08-16-mechanics-behind-virtual-youtuber/01.png" alt="img">
+			<img class="img-responsive" src="./posts/2022-08-16-mechanics-behind-virtual-youtuber/01.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-2"></div>
