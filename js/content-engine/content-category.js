@@ -26,10 +26,11 @@ function loadCategoryPage(urlRequest, pageRequest){
 
 function parseCategoryPage(urlRequest, pageRequest){
     var text = this.responseText;
-    var pageHTML = "<h4>"+capitalize(pageRequest)+"</h4>";
+    var pageHTML = "";
     var arrCategory = parseIndexArray(text);
     var arrCategoryL = parseIndexLower(text);
     if(pageRequest == "index"){
+        pageHTML = pageHTML.concat("<h4>Category</h4>");
         for(var i=0; i<arrCategory.length; i++){
             pageHTML = pageHTML.concat("<p>");
             pageHTML = pageHTML.concat("<a href='./loader.html?category=");
@@ -39,6 +40,7 @@ function parseCategoryPage(urlRequest, pageRequest){
             pageHTML = pageHTML.concat("</p>");
         }
     }else{
+        pageHTML = pageHTML.concat("<h4>"+capitalize(pageRequest)+"</h4>");
         for(var i=0; i<arrCategory.length; i++){
             pageHTML = pageHTML.concat("<p>");
             pageHTML = pageHTML.concat("<a href='./loader.html?post=");
