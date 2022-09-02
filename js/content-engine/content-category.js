@@ -29,7 +29,7 @@ function parseCategoryPage(urlRequest, pageRequest){
     var pageHTML = "<h4>"+capitalize(pageRequest)+"</h4>";
     var arrCategory = parseIndexArray(text);
     var arrCategoryL = parseIndexLower(text);
-    if(pageRequest == "Index"){
+    if(pageRequest == "index"){
             pageHTML = pageHTML.concat("<p>");
             pageHTML = pageHTML.concat("<a href='./loader.html?category=");
             pageHTML = pageHTML.concat(arrCategoryL[i] +"'>");
