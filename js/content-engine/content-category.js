@@ -29,12 +29,21 @@ function parseCategoryPage(urlRequest, pageRequest){
     var pageHTML = "<h4>"+capitalize(pageRequest)+"</h4>";
     var arrCategory = parseIndexArray(text);
     var arrCategoryL = parseIndexLower(text);
-    for(var i=0; i<arrCategory.length; i++){
-        pageHTML = pageHTML.concat("<p>");
-        pageHTML = pageHTML.concat("<a href='./loader.html?post="+ arrCategoryL[i] +"'>");
-        pageHTML = pageHTML.concat(getTitleDate(arrCategory[i])+" - "+getTitleOnly(arrCategory[i]));
-        pageHTML = pageHTML.concat("</a>");
-        pageHTML = pageHTML.concat("</p>");
+    if(pageRequest == "Index"){
+            pageHTML = pageHTML.concat("<p>");
+            pageHTML = pageHTML.concat("<a href='./loader.html?category=");
+            pageHTML = pageHTML.concat(arrCategoryL[i] +"'>");
+            pageHTML = pageHTML.concat(arrCategory[i]);
+            pageHTML = pageHTML.concat("</a>");
+            pageHTML = pageHTML.concat("</p>");
+    }else{
+        for(var i=0; i<arrCategory.length; i++){
+            pageHTML = pageHTML.concat("<p>");
+            pageHTML = pageHTML.concat("<a href='./loader.html?post="+ arrCategoryL[i] +"'>");
+            pageHTML = pageHTML.concat(getTitleDate(arrCategory[i])+" - "+getTitleOnly(arrCategory[i]));
+            pageHTML = pageHTML.concat("</a>");
+            pageHTML = pageHTML.concat("</p>");
+        }
     }
     document.getElementById("main-content").innerHTML = pageHTML;
 }
