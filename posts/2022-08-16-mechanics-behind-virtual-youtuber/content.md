@@ -24,7 +24,7 @@ meant that combining animation, computer graphics and MoCap is possible.
 	<div class="col-sm-8">
 		<div class="thumbnail">
 			<img class="img-responsive" src="./posts/2022-08-16-mechanics-behind-virtual-youtuber/07.jpg" alt="img">
-			<p>MotionSampler Utilities - reality.sgi.com</p>
+			<span>MotionSampler Utilities - reality.sgi.com</span>
 		</div>
 	</div>
 	<div class="col-sm-2"></div>
