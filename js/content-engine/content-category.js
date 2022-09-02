@@ -30,12 +30,14 @@ function parseCategoryPage(urlRequest, pageRequest){
     var arrCategory = parseIndexArray(text);
     var arrCategoryL = parseIndexLower(text);
     if(pageRequest == "index"){
+        for(var i=0; i<arrCategory.length; i++){
             pageHTML = pageHTML.concat("<p>");
             pageHTML = pageHTML.concat("<a href='./loader.html?category=");
             pageHTML = pageHTML.concat(arrCategoryL[i] +"'>");
             pageHTML = pageHTML.concat(arrCategory[i]);
             pageHTML = pageHTML.concat("</a>");
             pageHTML = pageHTML.concat("</p>");
+        }
     }else{
         for(var i=0; i<arrCategory.length; i++){
             pageHTML = pageHTML.concat("<p>");
