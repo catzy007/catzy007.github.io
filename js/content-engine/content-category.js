@@ -33,7 +33,7 @@ function parseCategoryPage(urlRequest, pageRequest){
         for(var i=0; i<arrCategory.length; i++){
             pageHTML = pageHTML.concat("<p>");
             pageHTML = pageHTML.concat("<a href='./loader.html?category=");
-            pageHTML = pageHTML.concat(arrCategoryL[i] +"'>");
+            pageHTML = pageHTML.concat(arrCategoryL[i] + "'>");
             pageHTML = pageHTML.concat(arrCategory[i]);
             pageHTML = pageHTML.concat("</a>");
             pageHTML = pageHTML.concat("</p>");
@@ -41,8 +41,10 @@ function parseCategoryPage(urlRequest, pageRequest){
     }else{
         for(var i=0; i<arrCategory.length; i++){
             pageHTML = pageHTML.concat("<p>");
-            pageHTML = pageHTML.concat("<a href='./loader.html?post="+ arrCategoryL[i] +"'>");
-            pageHTML = pageHTML.concat(getTitleDate(arrCategory[i])+" - "+getTitleOnly(arrCategory[i]));
+            pageHTML = pageHTML.concat("<a href='./loader.html?post=");
+            pageHTML = pageHTML.concat(arrCategoryL[i] + "'>")
+            pageHTML = pageHTML.concat(getTitleDate(arrCategory[i]) + " - ");
+            pageHTML = pageHTML.concat(getTitleOnly(arrCategory[i]))
             pageHTML = pageHTML.concat("</a>");
             pageHTML = pageHTML.concat("</p>");
         }

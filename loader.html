@@ -44,11 +44,25 @@
                     <li><a href="./loader.html?index=all">Index</a></li>
                     <li><a href="./things/">Things</a></li>
                     <li><a href="./loader.html?pages=contact">Contact</a></li>
-                    <li><a href="/loader.html?pages=about">About</a></li>
+                    <li><a href="./loader.html?pages=about">About</a></li>
+                    <li id="stevia-mobile-mode1"><a href="./loader.html?category=index">Category</a></li>
                 </ul>
             </div>
         </div>
     </nav>
+
+    <div id="stevia-mobile-mode1" class="row">
+        <div class="col-sm-12">
+            <div class="input-group search-container">
+                <input id="searchInput" type="text" class="form-control" placeholder="Search.."/>
+                <div class="input-group-btn">
+                    <button class="btn" type="submit" onclick="startSearch();">
+                        <span class="glyphicon glyphicon-search"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <br>
     <div class="row">
@@ -59,7 +73,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-4" id="stevia-mobile-mode2">
             <div class="input-group search-container">
                 <input id="searchInput" type="text" class="form-control" placeholder="Search.."/>
                 <div class="input-group-btn">
@@ -69,8 +83,10 @@
                 </div>
             </div>
             <br>
-            <h4 class="text-page-color">Category</h4>
-            <div id="categoryList" hidden></div>
+            <div>
+                <h4 class="text-page-color">Category</h4>
+                <div id="categoryList" hidden></div>
+            </div>
         </div>
     </div>
 

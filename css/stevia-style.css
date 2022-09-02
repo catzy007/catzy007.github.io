@@ -129,3 +129,18 @@ body {
 .text-page-color {
     color:#55688A;
 }
+/* Stevia Mobile */
+#stevia-mobile-mode1 {
+    display: none;
+}
+#stevia-mobile-mode2 {
+    display: block;
+}
+@media (max-width: 768px) {
+    #stevia-mobile-mode1 {
+        display: block;
+    }
+    #stevia-mobile-mode2 {
+        display: none;
+    }
+}
