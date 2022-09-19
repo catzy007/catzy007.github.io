@@ -33,6 +33,7 @@ function loadContentIndex(){
         document.location.href = './';
     }
 
+    loadSiteBranding();
     loadSiteCopyright();
 }
 
