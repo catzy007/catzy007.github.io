@@ -63,8 +63,9 @@ You can use the depth data to create a
 [Point Cloud](https://en.wikipedia.org/wiki/Point_cloud) then recreate it 
 as 3D model of surrounding area, or you can use the depth data to filter 
 the subject you're trying to capture and the background. In 2013 Apple 
-purchased PrimeSense and their technology used to develop Face ID and other 
-things.
+purchased PrimeSense and their technology used to develop 
+[Face ID](https://www.extremetech.com/mobile/255771-apple-iphone-x-truedepth-camera-works)
+and [other things](https://www.patentlyapple.com/patently-apple/2018/08/apple-won-52-patents-today-covering-face-id-for-future-macs-a-trio-of-apple-store-design-patents-more.html).
 
 But hardware just one part of the equation. You need a piece of software 
 to get and translate raw values from hardware to actual useable data. Seeing 
