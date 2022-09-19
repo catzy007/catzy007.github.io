@@ -150,7 +150,7 @@ and rigging is hard and takes a lot of time. Fortunately Pixiv created
 [VRoid Studio](https://vroid.com/en/studio) If you have created an in game 
 character it is pretty much the same. If you want more, you can create your 
 own 3D component in other software and load them to your avatar you can also 
-draw your own texture, add custom text or logo to your avatar.
+draw your own texture and add custom text or logo to your avatar.
 <div class="row">
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
