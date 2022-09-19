@@ -137,11 +137,12 @@ which consist of few sensors like accelerometer, gyroscope, magnetometer, etc.
 	</div>
 	<div class="col-sm-3"></div>
 </div>
-The way this works is that you strap IMU to strategic part of your body like 
-legs, waist, etc. Then you sent the IMU data usually via wireless and recipient 
-computer translate the IMU data to your Avatar. Compared to camera based MoCap, 
-IMU based MoCap needs less computation power, but current consumer class IMU 
-drift from time to time so it needs regular calibration.
+The way this works is first 
+[you strap IMU to strategic part of your body like legs, waist, etc](https://www.xsens.com/products/mvn-animate). 
+Then you sent the IMU data usually via wireless and recipient computer translate 
+the IMU data to your Avatar. Compared to camera based MoCap, IMU based MoCap 
+needs less computation power, but current consumer class IMU drift from time to 
+time so it needs regular calibration.
 
 Virtual YouTuber also needs an Avatar. If you want 3D avatar you can create your 
 own using Blender, Maya or ZBrush. But for most doing 3D works like modelling 
@@ -149,7 +150,7 @@ and rigging is hard and takes a lot of time. Fortunately Pixiv created
 [VRoid Studio](https://vroid.com/en/studio) If you have created an in game 
 character it is pretty much the same. If you want more, you can create your 
 own 3D component in other software and load them to your avatar you can also 
-draw your own texture and add text and logo to your avatar.
+draw your own texture, add custom text or logo to your avatar.
 <div class="row">
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
