@@ -1,0 +1,1 @@
+2022-09-20-Custom-Display-Scaling-in-Wayland-Ubuntu-22-04
