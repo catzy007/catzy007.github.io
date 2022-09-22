@@ -60,3 +60,4 @@
 2022-07-29-Temperature-and-Humidity-Sensing-With-Telegram-Notification
 2022-07-30-Better-Internet-With-DNSCrypt-Proxy-and-Pi-hole
 2022-08-16-Mechanics-Behind-Virtual-Youtuber
+2022-09-20-Custom-Display-Scaling-in-Wayland-Ubuntu-22-04
