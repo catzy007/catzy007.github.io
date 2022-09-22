@@ -13,6 +13,11 @@ to the client machine and maintaining such ancient system is hard at best, let a
 adding new features to keep up with modern computing needs and that's when Wayland 
 comes in.
 
+One of the issues i encounter after upgrade is my custom display scaling is not 
+working anymore, i previously using xrandr to set this which is not working after 
+using Wayland. So how to set this in Ubuntu 22.04, first go to `Settings > Displays > 
+Check Fractional Scaling`.
+
 <div class="row">
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
@@ -22,6 +27,12 @@ comes in.
 	</div>
 	<div class="col-sm-2"></div>
 </div>
+
+Before you proceed, divide your vertical resolution with resolution you want. 
+For example mine is 900p and i wanted 1080p, divide 900/1080 = 0.83 (use 2 decimal 
+places only).
+
+Next, open terminal and type `sudo nano ~/.config/monitors.xml`
 
 <div class="row">
 	<div class="col-sm-2"></div>
@@ -33,5 +44,6 @@ comes in.
 	<div class="col-sm-2"></div>
 </div>
 
-divide your vertical resolution with resolution you want. For example mine is 900p and i wanted 1080p, 
-divide 900/1080 = 0.83 (use 2 decimal places only)
+Find the `<scale>` and set the value according to your previous calculation, then 
+save and exit by pressing `Ctrl + X` then `Y` and `Enter` followed by a system reboot 
+to apply the changes and that's it.
