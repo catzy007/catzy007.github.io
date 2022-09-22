@@ -1,11 +1,8 @@
-### **Making Your Own PC HDMI Virtual Reality Headset**
-#### Saturday, November 25, 2017
+#### Making Your Own PC HDMI Virtual Reality Headset
+_Saturday, November 25, 2017_
 
-Yes you're right. this will be crude ways to make VR headset but we're here to 
+Yes you're right. This will be a crude ways to make VR headset but we're here to 
 explore the science.
- 
-After almost 6 months. finally i done this post.... YEAH! the main reason it 
-took so long to finish this post... read the bottom section.
 
 Based on [Wikipedia](https://en.wikipedia.org/wiki/Virtual_reality), Virtual 
 reality (VR) is a computer technology that uses virtual 
@@ -19,7 +16,7 @@ goggles with a screen in front of the eyes, but can also be created through spec
 designed spaces with multiple large screens.
 
 <br>
-#### **Ok First we need to get all parts.**
+##### **Ok First we need to get all parts.**
 *  Screen 5" to 7" with highest possible PPI
    <https://www.aliexpress.com/store/product/60HZ-5-5-inch-1440p-display-1440-2560-with-hdmi-to-mipi-board-for-oculus-rift/1764418_32366781090.html> 
    but i'm using 5" 480x800px screen for raspberrypi with around 235ppi or you can use 
@@ -43,7 +40,7 @@ designed spaces with multiple large screens.
 * Some usb cable, power supply or just use power from your laptop/pc.
 
 <br>
-#### **Tools**
+##### **Tools**
 * Soldering iron + solder tin
 * Some wire
 * Some glue. i'm using hot-glue
@@ -51,7 +48,7 @@ designed spaces with multiple large screens.
 * Basically any tools you think you'll need lol
 
 <br>
-#### **Next, software**
+##### **Next, software**
 1. Arduino IDE <https://www.arduino.cc/en/Main/Software>
 2. Some arduino code to read data from sensor i'm using code from thanks to mirkoBastianini <https://github.com/catzy007/HeadTracking-Arduino-FreePie/>
 3. FreePie <http://andersmalmgren.github.io/FreePIE/>
@@ -59,251 +56,423 @@ designed spaces with multiple large screens.
 5. VR Player to play your video or anything to VR <https://archive.codeplex.com/?p=vrplayer>
 
 <br>
-#### **Then we come to building parts yaay.**
-1. First we need to measure length and width of our screen
-<p align="center">
-	<img src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/1.jpg" height="250px" alt="measure">
-</p> 
-<p align="center">measurement on image not to be scaled!</p>
-> and make sure screen is working before doing anything stupid!
+##### **Then we come to building parts yaay.**
+1. First we need to measure length and width of our screen.
+<div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8">
+        <div class="thumbnail">
+            <img class="img-responsive" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/1.jpg" alt="img">
+			<span>measurement on image not to be scaled!</span>
+        </div>
+    </div>
+    <div class="col-sm-2"></div>
+</div>
+<p align="center"></p>
+Make sure screen is working before proceeding.
 
-2. Make some hole to mount your screen to vr case based on your measurements
-<p align="center">
-	<img src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/2.jpg" height="250px" alt="measure">
-</p> 
-<p align="center">image not to be scaled with your working vr headset</p>
-> pro tips1 : use dremel to make initial holes then use saw or anything you have to cut the rest.. if cut was ruff then just sand it using sand paper
+2. Make some hole to mount your screen to vr case based on your measurements.
+<div class="row">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
+        <div class="thumbnail">
+            <img class="img-responsive" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/2.jpg" alt="img">
+        </div>
+    </div>
+    <div class="col-sm-3"></div>
+</div>
 
-> pro tips2 : tear everything apart before proceeding this step!
+`pro tips1 : use dremel to make initial holes then use saw or anything you have to cut the rest. if cut was ruff then just sand it using sand paper`
 
-3. Mount screen to case and add some glue... i'm using hot-glue but you can use silicon glue or anything that doesn't destroy pcb
-<p align="center">
-	<img src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/3.jpg" height="250px" alt="measure">
-</p> 
-<p align="center">re test your screen to make sure everything is going daijobu ~('-'~)</p>
+`pro tips2 : tear everything apart before proceeding this step!`
 
-4. Solder your MPU6050 or any Gyro+Acceleration sensors you use to arduino nano or pro micro
-<p align="center">
-	<img src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/4.jpg" height="250px" alt="measure">
-</p> 
-<p align="center">make sure all sensors is working properly or you'll have bad time fixing all of them!</p>
-> pro tips3 : if you have conductive hand like me then use gloves when handling all of this
+3. Mount screen to case and add some glue. i'm using hot-glue but you can use silicon glue or anything that doesn't destroy PCB.
+<div class="row">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
+        <div class="thumbnail">
+            <img class="img-responsive" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/3.jpg" alt="img">
+			<span>re test your screen to make sure everything went well</span>
+        </div>
+    </div>
+    <div class="col-sm-3"></div>
+</div>
 
-> pro tips4 : don't do it in any reverse! or even powering it when reverse '-')
+4. Solder your MPU6050 or any Gyro+Acceleration sensors you use to arduino nano or pro micro.
+<div class="row">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
+        <div class="thumbnail">
+            <img class="img-responsive" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/4.jpg" alt="img">
+			<span>make sure all sensors is working properly</span>
+        </div>
+    </div>
+    <div class="col-sm-3"></div>
+</div>
 
-> pro tips5 : NEVER touch your sensors directly when it's powered on! especially if you're using GY-85
+`pro tips3 : if you have conductive hand, use gloves when handling electronic parts`
 
-5. Mount sensors to your case.. i'm using foam double sided tape.. if you have sugru or something similar then use it.
-<p align="center">
-	<img src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/5.jpg" height="250px" alt="measure">
-</p> 
-> pro tips6 : make sure your tape doesn't conductive! especially when you're using GY-85 '-') use multimeter to check that
+`pro tips4 : follow step by step instruction to avoid breaking stuff`
+
+`pro tips5 : NEVER touch your sensors directly when it's powered on! ESD could kill your device`
+
+5. Mount sensors to your case. I'm using foam double sided tape, if you have sugru or something similar then use it.
+<div class="row">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
+        <div class="thumbnail">
+            <img class="img-responsive" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/5.jpg" alt="img">
+			<span>measurement on image not to be scaled!</span>
+        </div>
+    </div>
+    <div class="col-sm-3"></div>
+</div>
+`pro tips6 : make sure your tape is not conductive! use multimeter to check that`
 
 <br>
-#### **Next comes to software part (~'-')~**
+##### **Next comes to software part**
 1. Install and open arduino IDE followed by load `Arduino script\YawPtichRoll.ino` you download 
 from [github](https://github.com/catzy007/HeadTracking-Arduino-FreePie/)
-<p align="center">
-	<img src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/6.jpg" height="250px" alt="software 1">
-</p>
+<div class="row">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
+        <div class="thumbnail">
+            <img class="img-responsive" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/6.jpg" alt="img">
+        </div>
+    </div>
+    <div class="col-sm-3"></div>
+</div>
 
 2. Next plug arduino to your pc and upload that code to your arduino.. don't forget to change 
 board, processor, and com port!
 
 3. Then change open serial monitor, change baud rate to 115200 and you'll see something like this
-<p align="center">
-	<img src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/7.jpg" height="250px" alt="software 3">
-</p> 
+<div class="row">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
+        <div class="thumbnail">
+            <img class="img-responsive" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/7.jpg" alt="img">
+        </div>
+    </div>
+    <div class="col-sm-3"></div>
+</div>
 
 4. Plug everything from HDMI, screen power, arduino then install followed by opening FreePIE. 
 then open `FreePIE Script\FreeIMU-MouseEMU.py`
-<p align="center">
-	<img src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/8.jpg" height="250px" alt="software 4">
-</p> 
+<div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8">
+        <div class="thumbnail">
+            <img class="img-responsive" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/8.jpg" alt="img">
+        </div>
+    </div>
+    <div class="col-sm-2"></div>
+</div>
+
 5. Then Click `Settings>Plugins>FreeIMU`... change com port to arduino port and baud rate to `115200`
-<p align="center">
-	<img src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/9.jpg" height="250px" alt="software 5">
-</p> 
->  pro tips7 : your com port might be different from picture above!
+<div class="row">
+    <div class="col-sm-4"></div>
+    <div class="col-sm-4">
+        <div class="thumbnail">
+            <img class="img-responsive" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/9.jpg" alt="img">
+        </div>
+    </div>
+    <div class="col-sm-4"></div>
+</div>
+`pro tips7 : your com port might be different from picture above!`
 
 6. Next run script and press `left shift + Z`. If you're moving headset around, it'll move your cursor 
 too. Now your VR headset is ready to do it's job ~('-'~)
-<p align="center">
-	<img src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/10.jpg" height="250px" alt="software 6">
-</p> 
->  pro tips8 : if emulation status show 0 then mouse emulation disabled, else if emulation status 
-show 1 then emulation enabled
+<div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8">
+        <div class="thumbnail">
+            <img class="img-responsive" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/10.jpg" alt="img">
+        </div>
+    </div>
+    <div class="col-sm-2"></div>
+</div>
+`pro tips8 : if emulation status show 0 then mouse emulation disabled, else if emulation status 
+show 1 then emulation enabled`
 
 7. To reset position, press `left shift + X`. To make cursor absolute center, press `left shift + C`
 
 <br>
-#### **Almost final. Next we'll try to play game and movie with our crude VR headset**
->  pro tips 9 : **NEVER** open VIREIRO and VRPLAYER at same time!... just never or if you do, and 
-get some error, restart your computer
+##### **Almost final. Next we'll try to play game and movie with our crude VR headset**
+
+`pro tips9 : **NEVER** open VIREIRO and VRPLAYER at same time!... just never or if you do, and 
+get some error, restart your computer`
 
 <br>
-**Here I'm going to play Portal2 with VR**
-1. Open `Steam > login > enter code > chat with your friend` etc.... lol
+* **Here I'm going to play Portal2 with VR**
 
-2. Open `FreePIE > load that script > run > press left shift + Z`
+	1. Open Open and log into Steam
 
-3. Next open `Perception.exe` change config to `DIY rift, No Tracking, Primary Monitor`
-<p align="center">
-	<img src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/11.jpg" height="250px" alt="game 3">
-</p> 
+	2. Open `FreePIE > load the script > run > press left shift + Z`
 
-4. Then Launch Portal2... That's it
+	3. Next open `Perception.exe` change config to `DIY rift, No Tracking, Primary Monitor`
+	<div class="row">
+		<div class="col-sm-3"></div>
+		<div class="col-sm-6">
+			<div class="thumbnail">
+				<img class="img-responsive" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/11.jpg" alt="img">
+			</div>
+		</div>
+		<div class="col-sm-3"></div>
+	</div>
 
-5. If you're done playing, close vireiro, and stop script manually and wait around 10 sec then unplug all cable
-<p align="center">
-	<img src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/12.jpg" height="250px" alt="game 5">
-</p> 
+	4. Then Launch Portal2. That's it
 
-<br>
-**Next let's play video with our crude VR**
-1. First, plug everything, run freepie+script, and make sure everything working as it should be
-
-2. Next, install and open VR Player
-
-3. Goto `tools > Load Preset > From File...` then open `vrplayer\vrplayer.json`
-<p align="center">
-	<img src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/13.jpg" height="250px" alt="video 3">
-</p> 
-
-4. Goto `Device > tracker > mouse`
-<p align="center">
-	<img src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/14.jpg" height="250px" alt="video 4">
-</p> 
-
-5. Next, open your favorite video player and play some video and play it in full screen if possible... 
-here i'm using MPC-HC
-<p align="center">
-	<img src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/15.jpg" height="250px" alt="video 5">
-</p> 
-
-6. just `alt+tab` and go to `VR Player` again, then `file > open process > with GDI > click process dropdown > select your video player`.
-<p align="center">
-	<img src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/16.jpg" height="250px" alt="video 6">
-</p> 
-
-7. aaand it's done... double click to fullscreen, click to make movement... to pause video just alt+tab 
-to original player then pause :v and enjoy your video
-
-8. if you're done with the movie, close VR player first, followed by your video player, then freepie, in 
-freepie, stop script manually, wait for 10sec, then close and unplug everything.
-
->  pro tips10 : Playing video using this method "GDI" is going to make video a little bit laggy so yeah
+	5. If you're done playing, close vireiro, and stop script manually and wait around 10 sec then unplug all cable
+	<div class="row">
+		<div class="col-sm-2"></div>
+		<div class="col-sm-8">
+			<div class="thumbnail">
+				<img class="img-responsive" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/12.jpg" alt="img">
+			</div>
+		</div>
+		<div class="col-sm-2"></div>
+	</div>
 
 <br>
-#### **The reason why this take so long**
-Is sensor i used "GY-85" burned 3 times, adruino i used "pro micro" broken 2 times... 
-that was freaking stupid '-') now i'm gonna explain why and how to avoid that.
+* **Next let's play video with our crude VR**
+
+	1. First, plug everything, run freepie+script, and make sure everything working as it should.
+
+	2. Next, install and open VR Player.
+
+	3. Goto `tools > Load Preset > From File...` then open `vrplayer\vrplayer.json`
+	<div class="row">
+		<div class="col-sm-2"></div>
+		<div class="col-sm-8">
+			<div class="thumbnail">
+				<img class="img-responsive" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/13.jpg" alt="img">
+			</div>
+		</div>
+		<div class="col-sm-2"></div>
+	</div>
+
+	4. Goto `Device > tracker > mouse`
+	<div class="row">
+		<div class="col-sm-2"></div>
+		<div class="col-sm-8">
+			<div class="thumbnail">
+				<img class="img-responsive" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/14.jpg" alt="img">
+			</div>
+		</div>
+		<div class="col-sm-2"></div>
+	</div>
+
+	5. Next, open your favorite video player and play some video and play it in full screen if possible.
+	here i'm using MPC-HC
+	<div class="row">
+		<div class="col-sm-3"></div>
+		<div class="col-sm-6">
+			<div class="thumbnail">
+				<img class="img-responsive" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/15.jpg" alt="img">
+			</div>
+		</div>
+		<div class="col-sm-3"></div>
+	</div>
+
+	6. just `alt+tab` and go to `VR Player` again, then `file > open process > with GDI > click process dropdown > select your video player`.
+	<div class="row">
+		<div class="col-sm-2"></div>
+		<div class="col-sm-8">
+			<div class="thumbnail">
+				<img class="img-responsive" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/16.jpg" alt="img">
+			</div>
+		</div>
+		<div class="col-sm-2"></div>
+	</div>
+
+	7. aaand it's done. double click to fullscreen, click to make movement. to pause video just alt+tab 
+	to original player then pause and enjoy your video.
+
+	8. if you're done with the movie, close VR player first, followed by your video player, then freepie, in 
+	freepie, stop script manually, wait for 10 seconds, then close and unplug everything.
+
+	`pro tips10 : Playing video using this method "GDI" is going to make video a little bit laggy`
+
+<br>
+##### **The reason why this delayed for a while**
+Sensor i used "GY-85" got toasted 3 times i think it is from ESD, I use "Pro Micro" board and the USB 
+port snapped 2 times. Wow i'm gonna explain why and how to avoid that.
 
 <br>
 **First, GY-85**
 
-It's a very great sensors because it very similar to RAZOR IMU 
-<https://www.sparkfun.com/products/retired/10736> but without ATmega328p. 
-so basically we need to add arduino nano then we can use almost same code 
-from razor imu... but yeah here comes to my main problem... My hand is very 
-conductive.. and the GY-85 can be shorted only with touch from my finger... 
-so sometimes i need to adjust my sensors and accidentally touch that sensors... 
-so yeah i'm shorted 3 board by touching it... that's 30USD and 6 week of 
-shipping from china '-')... how to avoid that... use gloves, don't touch or 
-hit when it's running, or just use other sensors like MPU6050 '-')
+It's a very great sensors because it very similar to 
+[RAZOR IMU](https://www.sparkfun.com/products/retired/10736) without ATmega328p. 
+so basically we need to add arduino nano then we can use almost the same code 
+from razor imu. but here comes to my main problem, my hand is very 
+conductive and the GY-85 can be shorted only with touch from my finger or ESD. 
+Sometimes i need to adjust my sensors and accidentally bump the sensors. 
+So yeah i short-circuit 3 board by touching it. that's 30 USD and 6 week of 
+shipping from china. How to avoid that, use gloves and don not touch or 
+hit the board when it's running or just use other sensors like MPU6050 '-')
 
-The reason why i choose MPU6050... first, price... it just 2USD each item... 
-so it's very good compare to GY-85 10USD. second, old oculus is using 
+The reason why i choose MPU6050, first is price. It cost 2 USD each. 
+so it's very good compare to GY-85 10 USD. Second, old oculus is using 
 MPU-6000 <http://developers-club.com/posts/181159/>
 
-<p align="center">
-	<img src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/17.jpg" height="250px" alt="story 1">
-</p>
-<p align="center">MPU-6000 is that orange highlight</p>
+<div class="row">
+	<div class="col-sm-3"></div>
+	<div class="col-sm-6">
+		<div class="thumbnail">
+			<img class="img-responsive" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/17.jpg" alt="img">
+			<span>MPU-6000 highlighted in orange</span>
+		</div>
+	</div>
+	<div class="col-sm-3"></div>
+</div>
 
-and based on this datasheet from ivensense <https://store.invensense.com/datasheets/invensense/MPU-6050_DataSheet_V3%204.pdf>
-<p align="center">
-	<img src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/18.jpg" height="250px" alt="story 2">
-</p>
-maybe MPU-6050 is same as MPU-6000 or at least almost. so yeah using oculus sensors... i'm feeling little bit happy lol.
+and based on this datasheet from [ivensense](https://store.invensense.com/datasheets/invensense/MPU-6050_DataSheet_V3%204.pdf)
+<div class="row">
+	<div class="col-sm-3"></div>
+	<div class="col-sm-6">
+		<div class="thumbnail">
+			<img class="img-responsive" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/18.jpg" alt="img">
+		</div>
+	</div>
+	<div class="col-sm-3"></div>
+</div>
+maybe MPU-6050 is same as MPU-6000 or at least almost.
 
 <br>
-**Next Pro micro**
+**Next, Pro micro**
 
 My first plan is to use mouse emulation from pro micro ATmega32u4 so i 
 don't have to use software like freepie to translate gyro+accel motion 
 into mouse XY motion. But you need to make sure that micro usb connector 
-is strong enough or it'll break like mine '-').. to avoid choose your 
-board wisely!... for comparison
+is strong enough or it'll break. To avoid this, choose your board wisely! 
+for comparison
 
 <br>
-<p align="center">
-	<img src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/19.jpg" height="100px" alt="story 3">
-</p>
-This is ProMicro as you can see it has no additional structural for that usb port.. but it has some black circle thing.. i dont know.. i hope it made for some structural support..
+<div class="row">
+	<div class="col-sm-4"></div>
+	<div class="col-sm-4">
+		<div class="thumbnail">
+			<img class="img-responsive" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/19.jpg" alt="img">
+		</div>
+	</div>
+	<div class="col-sm-4"></div>
+</div>
+This is ProMicro as you can see it has no additional structural for that usb port. but it has some black circle thing. i dont know. 
+i hope it is made for some structural support.
 
 <br>
-<p align="center">
-	<img src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/20.jpg" height="100px" alt="story 4">
-</p>
-the board i broke is same as this... has no support at all.. the port basically solder directly to trace of PCB.. so if your port broke, it's basically done!
+<div class="row">
+	<div class="col-sm-4"></div>
+	<div class="col-sm-4">
+		<div class="thumbnail">
+			<img class="img-responsive" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/20.jpg" alt="img">
+		</div>
+	</div>
+	<div class="col-sm-4"></div>
+</div>
+the board i broke is same as this. has no support at all. the port basically solder directly to trace of PCB. If your port broke, 
+it's basically done!
 
 <br>
-<p align="center">
-	<img src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/21.jpg" height="100px" alt="story 5">
-</p>
-This is pro micro from RobotDyn that red circle is structural support for usb port
+<div class="row">
+	<div class="col-sm-4"></div>
+	<div class="col-sm-4">
+		<div class="thumbnail">
+			<img class="img-responsive" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/21.jpg" alt="img">
+		</div>
+	</div>
+	<div class="col-sm-4"></div>
+</div>
+This is pro micro from RobotDyn that red circle is structural support for usb port.
 
 <br>
-<p align="center">
-	<img src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/22.jpg" height="100px" alt="story 6">
-</p>
-Same here Arduino Micro.. it has structural support
+<div class="row">
+	<div class="col-sm-4"></div>
+	<div class="col-sm-4">
+		<div class="thumbnail">
+			<img class="img-responsive" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/22.jpg" alt="img">
+		</div>
+	</div>
+	<div class="col-sm-4"></div>
+</div>
+Same here Arduino Micro. it has structural support.
 
 <br>
-<p align="center">
-	<img src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/23.jpg" height="100px" alt="story 7">
-</p>
-Same here with my nano 328p... i'm using this for my headset because robotdyn pro micro is too expensive
+<div class="row">
+	<div class="col-sm-4"></div>
+	<div class="col-sm-4">
+		<div class="thumbnail">
+			<img class="img-responsive" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/23.jpg" alt="img">
+		</div>
+	</div>
+	<div class="col-sm-4"></div>
+</div>
+Same here with my nano 328p. i'm using this for my headset because robotdyn pro micro is too expensive for my taste.
 
+Anyway i don't blame company to make board like that. It just for our purpose that you're 
+moving your head so it must has some stress at that tiny usb port. It is nice to have 
+some structural support so choose your board wisely! Look at the bottom of board to find 
+if the board have structural support.
 
-anyway i don't blame company to make board like that... it just for our purpose that you're 
-moving your head so it must has some stress at that tiny usb port... it just nice to have 
-some structural support so choose your board wisely! just look at the bottom of board and 
-you're done.
-
-if you're finally decide that to use 32u4 board to your VR headset, you can use follow this 
-<http://www.instructables.com/id/Head-Mouse-With-MPU6050-and-Arduino-Micro> and or 
-<https://github.com/pocketmoon/MPU-6050-Arduino-Micro-Head-Tracker>
+If you're finally decide that to use 32u4 board to your VR headset, you can follow this 
+<http://www.instructables.com/id/Head-Mouse-With-MPU6050-and-Arduino-Micro> 
+and <https://github.com/pocketmoon/MPU-6050-Arduino-Micro-Head-Tracker>
 
 <br>
-#### **UPDATE 4/22/18 Playing VRChat on our crude VR Heasdet**
-> THIS GUARANTEE WORKS ON WINDOWS10 CREATOR UPDATE OR LATER. VERSION 1703+
+##### **UPDATE 4/22/18 Playing VRChat on our crude VR Heasdet**
+`TESTED WORKING ON WINDOWS 10 CREATOR UPDATE OR LATER. VERSION 1703+`
 
 1. First, make sure you have steam and vrchat downloaded
 2. Download DesktopSBS <https://github.com/PaysPlat/DesktopSbS/releases>
 3. Install DesktopSBS but don't open it yet.
 4. Open FreePIE, load that mouse emulation script, run, press `Lshift+Z`
 5. Launch VRChat using `non steamvr mode`
-<p align="center">
-	<img src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/24.jpg" height="250px" alt="update 1">
-</p>
-6. Open `DesktopSBS`
-<p align="center">
-	<img src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/25.jpg" height="250px" alt="update 2">
-</p>
-7. aaaand enjoy SteamVR games using our crude VR Headset (~'-')~
-<p align="center">
-	<img src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/26.jpg" height="250px" alt="update 3">
-</p>
+<div class="row">
+	<div class="col-sm-2"></div>
+	<div class="col-sm-8">
+		<div class="thumbnail">
+			<img class="img-responsive" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/24.jpg" alt="img">
+		</div>
+	</div>
+	<div class="col-sm-2"></div>
+</div>
 
->  pro tips11 : to check windows 10 version in your machine, goto `windows settings > system > about > scroll a little bit` and done.
-<p align="center">
-	<img src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/27.jpg" height="250px" alt="check 1">
-</p>
+6. Open `DesktopSBS`
+<div class="row">
+	<div class="col-sm-2"></div>
+	<div class="col-sm-8">
+		<div class="thumbnail">
+			<img class="img-responsive" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/25.jpg" alt="img">
+		</div>
+	</div>
+	<div class="col-sm-2"></div>
+</div>
+
+7. aaaand enjoy SteamVR games using our crude VR Headset (~'-')~
+<div class="row">
+	<div class="col-sm-2"></div>
+	<div class="col-sm-8">
+		<div class="thumbnail">
+			<img class="img-responsive" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/26.jpg" alt="img">
+		</div>
+	</div>
+	<div class="col-sm-2"></div>
+</div>
+
+`pro tips11 : to check windows 10 version in your machine, go to "windows settings > system > about" and scroll a little bit.`
+<div class="row">
+	<div class="col-sm-2"></div>
+	<div class="col-sm-8">
+		<div class="thumbnail">
+			<img class="img-responsive" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/27.jpg" alt="img">
+		</div>
+	</div>
+	<div class="col-sm-2"></div>
+</div>
 
 <br>
-#### **Some Sauce**
+##### **Some Sauce**
 <https://github.com/ayildirim/OpenVR>
 
 <https://github.com/mirkoBastianini/HeadTracking-Arduino-FreePie>
