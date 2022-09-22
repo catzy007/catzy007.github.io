@@ -34,4 +34,4 @@ comes in.
 </div>
 
 divide your vertical resolution with resolution you want. For example mine is 900p and i wanted 1080p, 
-divide 900/1080 = 0.83 (use 2 decimal places)
+divide 900/1080 = 0.83 (use 2 decimal places only)
