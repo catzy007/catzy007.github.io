@@ -24,7 +24,7 @@ function loadContentRecommended(arrIndex, arrLower){
         arrIndexC.splice(dice, 1);
         arrLowerC.splice(dice, 1);
     }
-    console.log(arrIndex); console.log(arrIndexC);
+    // console.log(arrIndex); console.log(arrIndexC);
     
     for(var i=1; i<contLoadMax+1; i++){
         contPostCardId.push("recommendedContentCard" + i.toString());
