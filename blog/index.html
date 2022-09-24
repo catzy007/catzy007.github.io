@@ -7,7 +7,14 @@
 <h2>Redirecting to Blog</h2>
 <h3>If nothing happend in few second, <a href="../">Click Here</a></h3>
 <script>
-  var redirectUrl = window.location.hash.replace("#!","loader.html?post=");
-  document.location.href = '../' + redirectUrl;
+  var request = window.location.hash;
+  if(request.includes("#!")){
+    request = request.replace("#!","loader.html?post=");
+  }else{
+    request = request.replace("#", "loader.html?post=");
+  }
+  // var redirectUrl = window.location.hash.replace("#!","loader.html?post=");
+  // console.log(request);
+  document.location.href = '../' + request;
 </script>
 </body>
