@@ -63,12 +63,60 @@ correct.
 <br>
 Now that we know about the absolute maximum capability of this adapter, let's deploy this. 
 Here i'm going to use my old post about 
-[OpenWRT inisde Proxmox VM](https://catzy007.github.io/loader.html?post=2021-09-04-openwrt-inside-proxmox-vm) 
+[OpenWrt inisde Proxmox VM](https://catzy007.github.io/loader.html?post=2021-09-04-openwrt-inside-proxmox-vm) 
+the gist is first you set up a VM with 1GB of RAW disk image and 2 Intel E1000 Virtual NICs, 
+then download the OpenWrt image, extract it and replace the newly created VM disk image with 
+OpenWrt disk image.
 
+After VM creation, add the USB device to OpenWrt VM using USB Vendor/Device ID method then 
+Boot the VM. Then find a way to get into LuCI or use serial command line instead. Then using 
+LuCI go to `System > Software > Update lists...` and install following package one at a time.
+```
+hostapd
+kmod-mt76x0u
+```
+or using opkg, do
+```
+$ opkg update
+$ opkg install hostapd kmod-mt76x0u
+```
+Then reboot the VM. Assuming everything goes well, In `Network > Wireless` tab you shall see 
+new wireless device. Press `Add` to create new Access Point and set it according to your 
+preferences. In my case, i set my Channel to 36, 80MHz width, Max TX Power 50 mW and Country 
+Code `US`. For some reason if i set my country code to my actual one, it throws error and 
+the adapter won't work until i set the code correctly. Then enable your newly created AP 
+and you should get.
+<div class="row">
+	<div class="col-sm-2"></div>
+	<div class="col-sm-4">
+		<div class="thumbnail">
+			<img class="img-responsive" src="./posts/2022-09-26-my-attempt-to-5ghz-usb-wifi-access-point-part-2/04.png" alt="img">
+		</div>
+	</div>
+	<div class="col-sm-4">
+		<div class="thumbnail">
+			<img class="img-responsive" src="./posts/2022-09-26-my-attempt-to-5ghz-usb-wifi-access-point-part-2/05.png" alt="img">
+		</div>
+	</div>
+	<div class="col-sm-2"></div>
+</div>
+
+While most people will call it a day at this point, i decided to test the real world 
+throughput of this system. I set iperf in my server using 1 Gigabit LAN, then i use [iperf 
+android app](https://play.google.com/store/apps/details?id=iperf.project) and get.
+<div class="row">
+	<div class="col-sm-3"></div>
+	<div class="col-sm-6">
+		<div class="thumbnail">
+			<img class="img-responsive" src="./posts/2022-09-26-my-attempt-to-5ghz-usb-wifi-access-point-part-2/06.png" alt="img">
+		</div>
+	</div>
+	<div class="col-sm-3"></div>
+</div>
 
 <br>
 If you want to replicate this project and decided to bought anything please take a look 
 
 [USB WiFi chipset information for Linux](https://github.com/morrownr/USB-WiFi/blob/main/home/USB_WiFi_Chipsets.md)
 
-<https://www.duckware.com/tech/wifi-in-the-us.html>
+[Wi-Fi 4/5/6/6E (802.11 n/ac/ax)](https://www.duckware.com/tech/wifi-in-the-us.html)
