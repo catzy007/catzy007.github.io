@@ -30,23 +30,45 @@ stuff for 11 USD pretty good deal if you ask me.
 	<div class="col-sm-3"></div>
 </div>
 
+<br>
 Every project start with testing. First i plug the adapter to my laptop via USB 3.0 
 using Ubuntu 22.04 it just works no manual driver installation required. Then using 
 another machine, i set my RTL8812BU as Access Point in channel 36 at 80Mhz 867Mbps 
 PHY and just like that i get 433Mbps PHY out of my new adapter.
 <div class="row">
-	<div class="col-sm-2"></div>
-	<div class="col-sm-8">
+	<div class="col-sm-3"></div>
+	<div class="col-sm-6">
 		<div class="thumbnail">
 			<img class="img-responsive" src="./posts/2022-09-26-my-attempt-to-5ghz-usb-wifi-access-point-part-2/02.png" alt="img">
 		</div>
 	</div>
-	<div class="col-sm-2"></div>
+	<div class="col-sm-3"></div>
 </div>
 
+Then i set [iperf](https://github.com/esnet/iperf) to see the maximum real-world throughput 
+of the system and i get 248Mbps. Clearly 248 is less than 433 right, well this adapter is only 
+rated for USB 2.0 which should be fine because USB 2.0 is rated at 480Mbps right? No, [the 
+effective throughput of USB is 280Mbps](https://superuser.com/a/899993), so this speed is 
+correct.
+<div class="row">
+	<div class="col-sm-3"></div>
+	<div class="col-sm-6">
+		<div class="thumbnail">
+			<img class="img-responsive" src="./posts/2022-09-26-my-attempt-to-5ghz-usb-wifi-access-point-part-2/03.png" alt="img">
+		</div>
+	</div>
+	<div class="col-sm-3"></div>
+</div>
+
+<br>
+Now that we know about the absolute maximum capability of this adapter, let's deploy this. 
+Here i'm going to use my old post about 
+[OpenWRT inisde Proxmox VM](https://catzy007.github.io/loader.html?post=2021-09-04-openwrt-inside-proxmox-vm) 
 
 
-If you want to replicate this project, take a look 
+<br>
+If you want to replicate this project and decided to bought anything please take a look 
+
 [USB WiFi chipset information for Linux](https://github.com/morrownr/USB-WiFi/blob/main/home/USB_WiFi_Chipsets.md)
 
 <https://www.duckware.com/tech/wifi-in-the-us.html>
