@@ -59,3 +59,4 @@
 2022-07-30-Better-Internet-With-DNSCrypt-Proxy-and-Pi-hole
 2022-08-16-Mechanics-Behind-Virtual-Youtuber
 2022-09-20-Custom-Display-Scaling-in-Wayland-Ubuntu-22-04
+2022-09-26-My-Attempt-to-5GHz-USB-WIFI-Access-Point-Part-2
