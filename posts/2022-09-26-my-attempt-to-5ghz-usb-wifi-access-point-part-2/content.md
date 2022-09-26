@@ -131,7 +131,7 @@ Next i look for `SB600` and found document about
 From the document it shows that the USB controller support 10 USB port with a catch, 
 It only has 5 OHCI controller and 1 EHCI controller. Which mean that out of all 10 USB 
 port, it can only handle one USB 2.0 (EHCI) at a time and the rest is USB 1.1 (OHCI). 
-Finally, what's next? I need another adapter to handle WiFi 4 (2.4GHz) i also need 
+Finally, what's next? I need another adapter to handle Wi-Fi 4 (2.4GHz) i also need 
 to upgrade "replace" my system to system with USB 3.0 support. In the meantime I will 
 deploy this system to test its long-term stability.
 
