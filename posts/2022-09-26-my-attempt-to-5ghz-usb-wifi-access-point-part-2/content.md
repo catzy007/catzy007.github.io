@@ -29,3 +29,24 @@ stuff for 11 USD pretty good deal if you ask me.
 	</div>
 	<div class="col-sm-3"></div>
 </div>
+
+Every project start with testing. First i plug the adapter to my laptop via USB 3.0 
+using Ubuntu 22.04 it just works no manual driver installation required. Then using 
+another machine, i set my RTL8812BU as Access Point in channel 36 at 80Mhz 867Mbps 
+PHY and just like that i get 433Mbps PHY out of my new adapter.
+<div class="row">
+	<div class="col-sm-2"></div>
+	<div class="col-sm-8">
+		<div class="thumbnail">
+			<img class="img-responsive" src="./posts/2022-09-26-my-attempt-to-5ghz-usb-wifi-access-point-part-2/02.png" alt="img">
+		</div>
+	</div>
+	<div class="col-sm-2"></div>
+</div>
+
+
+
+If you want to replicate this project, take a look 
+[USB WiFi chipset information for Linux](https://github.com/morrownr/USB-WiFi/blob/main/home/USB_WiFi_Chipsets.md)
+
+<https://www.duckware.com/tech/wifi-in-the-us.html>

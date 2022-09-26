@@ -23,7 +23,7 @@
 2019-07-25-Use-USB-TV-or-USB-Capture-on-Linux
 2019-09-13-Running-MacOS-on-Any-Linux-Machine
 2019-09-25-Set-Custom-Resolution-In-Headless-Server
-2019-11-25-My-Journey-To-Pcie-or-VGA-Passtrough-in-KVM
+2019-11-25-My-Journey-To-PCIe-or-VGA-Passtrough-in-KVM
 2020-01-17-Ubuntu-Chroot-Container-in-Android
 2020-02-06-Block-Internet-Advertisements-Using-PI-Hole
 2020-05-02-Install-PPSSPP-Emulator-on-Raspberrypi
