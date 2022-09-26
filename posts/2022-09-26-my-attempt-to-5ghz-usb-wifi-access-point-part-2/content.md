@@ -103,7 +103,8 @@ and you should get.
 
 While most people will call it a day at this point, i decided to test the real world 
 throughput of this system. I set iperf in my server using 1 Gigabit LAN, then i use [iperf 
-android app](https://play.google.com/store/apps/details?id=iperf.project) and get.
+android app](https://play.google.com/store/apps/details?id=iperf.project) and this is the 
+result.
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
@@ -114,8 +115,28 @@ android app](https://play.google.com/store/apps/details?id=iperf.project) and ge
 	<div class="col-sm-3"></div>
 </div>
 
+Which is weird this time i get 23.4Mbps instead of getting 248Mbps i get before. Okay this 
+doesn't seem right then i turn my attention into USB Controller in my system, to do it 
+i open terminal and type `lspci | grep usb` which gave me.
+```
+00:13.0 USB controller: Advanced Micro Devices, Inc. [AMD/ATI] SB600 USB (OHCI0)
+00:13.1 USB controller: Advanced Micro Devices, Inc. [AMD/ATI] SB600 USB (OHCI1)
+00:13.2 USB controller: Advanced Micro Devices, Inc. [AMD/ATI] SB600 USB (OHCI2)
+00:13.3 USB controller: Advanced Micro Devices, Inc. [AMD/ATI] SB600 USB (OHCI3)
+00:13.4 USB controller: Advanced Micro Devices, Inc. [AMD/ATI] SB600 USB (OHCI4)
+00:13.5 USB controller: Advanced Micro Devices, Inc. [AMD/ATI] SB600 USB Controller (EHCI)
+```
+Next i look for `SB600` and found document about 
+[AMD SB600 Databook](https://www.amd.com/system/files/TechDocs/42119_sb600_ds_pub_3.07.pdf) 
+From the document it shows that the USB controller support 10 USB port with a catch, 
+It only has 5 OHCI controller and 1 EHCI controller. Which mean that out of all 10 USB 
+port, it can only handle one USB 2.0 (EHCI) at a time and the rest is USB 1.1 (OHCI). 
+Finally, what's next? I need another adapter to handle WiFi 4 (2.4GHz) i also need 
+to upgrade "replace" my system to system with USB 3.0 support. In the meantime I will 
+deploy this system to test its long-term stability.
+
 <br>
-If you want to replicate this project and decided to bought anything please take a look 
+If you want to replicate this project and decided to bought anything please take a look.
 
 [USB WiFi chipset information for Linux](https://github.com/morrownr/USB-WiFi/blob/main/home/USB_WiFi_Chipsets.md)
 
