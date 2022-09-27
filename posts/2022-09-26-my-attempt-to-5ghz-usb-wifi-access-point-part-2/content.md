@@ -139,7 +139,7 @@ to upgrade "replace" my system to one with USB 3.0 support. In the meantime I wi
 deploy this system to test its long-term stability.
 
 <br>
-If you want to replicate this project and decided to bought anything please take a look.
+If you want to replicate this project, please take a look.
 
 [USB WiFi chipset information for Linux](https://github.com/morrownr/USB-WiFi/blob/main/home/USB_WiFi_Chipsets.md)
 
