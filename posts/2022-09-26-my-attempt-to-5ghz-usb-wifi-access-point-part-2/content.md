@@ -153,7 +153,7 @@ controller? How about my other stuff? That's where USB Hub comes in.
 	<div class="col-sm-4"></div>
 </div>
 Using USB Hub, the controller technically only see one device connected so hopefully will use 
-USB 2.0 ECHI all the time. Only downside is that the bandwidth become shared to connected 
+USB 2.0 ECHI all the time. Only downside is that the bandwidth become shared between connected 
 devices. In my testing i have this 1$ USB Hub laying around, then i plug all of my USB devices 
 to it and this is what i got.
 <div class="row">
@@ -165,7 +165,7 @@ to it and this is what i got.
 	</div>
 	<div class="col-sm-2"></div>
 </div>
-While 50~60Mbps may not sound that much but my last result is around 23Mbps. Which mean that i 
+While 50~60Mbps may not sound that much my last result is around 23Mbps. Which mean that i 
 get 2~3X the performance just using USB Hub. My theory is that the AMD chipset in my system uses 
 early implementation of USB scheduling so it is a little flaky then using simple USB Hub which 
 is well known technology at this point with better packet queueing and scheduling i get a better 
