@@ -165,8 +165,8 @@ to it and this is what i got.
 	</div>
 	<div class="col-sm-2"></div>
 </div>
-While 50~60Mbps may not sound that much but my last result is around 23Mbps. Which mean that i get 
-2~3X the performance just using USB Hub. My theory is that the AMD chipset in my system uses 
+While 50~60Mbps may not sound that much but my last result is around 23Mbps. Which mean that i 
+get 2~3X the performance just using USB Hub. My theory is that the AMD chipset in my system uses 
 early implementation of USB scheduling so it is a little flaky then using simple USB Hub which 
 is well known technology at this day with better packet queueing and scheduling i get a better 
 result. I currently plug 3 devices to my USB Hub, in theory i should be able to pull around 
