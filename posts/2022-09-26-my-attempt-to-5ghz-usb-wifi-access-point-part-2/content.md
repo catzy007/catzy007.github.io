@@ -139,6 +139,47 @@ to upgrade "replace" my system to one with USB 3.0 support. In the meantime I wi
 deploy this system to test its long-term stability.
 
 <br>
+**[UPDATE 28/09/22]**
+I finally got it. The main issues about my current system is that it only has one USB 2.0 
+EHCI controller onboard, then what if i plug only one device to take advantage of full EHCI 
+controller? How about my other stuff? That's where USB Hub comes in.
+<div class="row">
+	<div class="col-sm-4"></div>
+	<div class="col-sm-4">
+		<div class="thumbnail">
+			<img class="img-responsive" src="./posts/2022-09-26-my-attempt-to-5ghz-usb-wifi-access-point-part-2/07.jpg" alt="img">
+		</div>
+	</div>
+	<div class="col-sm-4"></div>
+</div>
+Using USB Hub the controller technically only see one device connected. Only downside is that 
+the bandwidth become shared to remaining devices. In my testing i have this 1$ USB Hub laying 
+around, then i plug all of my USB devices to it and this is what i got.
+<div class="row">
+	<div class="col-sm-2"></div>
+	<div class="col-sm-8">
+		<div class="thumbnail">
+			<img class="img-responsive" src="./posts/2022-09-26-my-attempt-to-5ghz-usb-wifi-access-point-part-2/08.jpg" alt="img">
+		</div>
+	</div>
+	<div class="col-sm-2"></div>
+</div>
+50~60Mbps may not sound that much but my last result is around 23Mbps. Which mean that i get 
+2~3X the performance just using USB Hub. My theory is that the AMD chipset in my system uses 
+early implementation of USB scheduling so it is a little flaky then using simple USB Hub which 
+is well known technology at this day with better packet queueing and scheduling i get a better 
+result. I currently plug 3 devices to my USB Hub, in theory i should be able to pull around 
+(240Mbps / 3 = 80Mbps) But i only get around (240Mbps / 4 = 60Mbps) i think the packet 
+scheduling in my USB Hub doesn't care about how much device plugged in. I mean at 1$ that's 
+what you get.
+
+Other concern that i have is that the more devices you plugged in, the more power it draws. 
+In my case i'm using low power MT7610U but if i'm using RTL8812BU it may draw more power than 
+USB Hub can handle. The next task is to get a USB 3.0 Hub and i hope it can scale the bandwidth 
+according to how much device plugged (for note the bandwidth is still capped at USB 2.0 speed) 
+in also i need to get an external powered USB Hub in case i use high power devices in the future.
+
+<br>
 If you want to replicate this project, please take a look.
 
 [USB WiFi chipset information for Linux](https://github.com/morrownr/USB-WiFi/blob/main/home/USB_WiFi_Chipsets.md)
