@@ -177,8 +177,8 @@ mean that's what you get for 1$ USB Hub.
 Other concern that i have is that the more devices you plugged in, the more power it draws. 
 In my case i'm using low power MT7610U but if i'm using RTL8812BU it may draw more power than 
 USB Hub can handle. The next task is to get a USB 3.0 Hub and i hope it can scale the bandwidth 
-according to how much device plugged (for note the bandwidth is still capped at USB 2.0 speed) 
-in also i need to get an external powered USB Hub in case i use high power devices in the future.
+according to how much device plugged (for note the bandwidth is still capped at USB 2.0 speed). 
+Also, i need to get an external powered USB Hub in case i use high power devices in the future.
 
 <br>
 If you want to replicate this project, please take a look.
