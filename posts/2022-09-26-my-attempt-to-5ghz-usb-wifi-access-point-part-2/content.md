@@ -168,7 +168,7 @@ to it and this is what i got.
 While 50~60Mbps may not sound that much but my last result is around 23Mbps. Which mean that i 
 get 2~3X the performance just using USB Hub. My theory is that the AMD chipset in my system uses 
 early implementation of USB scheduling so it is a little flaky then using simple USB Hub which 
-is well known technology at this day with better packet queueing and scheduling i get a better 
+is well known technology at this point with better packet queueing and scheduling i get a better 
 result. I currently plug 3 devices to my USB Hub, in theory i should be able to pull around 
 (240Mbps / 3 = 80Mbps) But i only get around (240Mbps / 4 = 60Mbps) i think my USB Hub isn't 
 aware about how much device plugged in and it just divide the bandwidth by 4 all the time. I 
