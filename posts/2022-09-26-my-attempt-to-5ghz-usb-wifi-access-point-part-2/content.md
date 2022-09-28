@@ -170,8 +170,8 @@ early implementation of USB scheduling so it is a little flaky then using simple
 is well known technology at this day with better packet queueing and scheduling i get a better 
 result. I currently plug 3 devices to my USB Hub, in theory i should be able to pull around 
 (240Mbps / 3 = 80Mbps) But i only get around (240Mbps / 4 = 60Mbps) i think the packet 
-scheduling in my USB Hub doesn't care about how much device plugged in. I mean at 1$ that's 
-what you get.
+scheduling in my USB Hub doesn't care about how much device is plugged in. I mean that's what 
+you get for 1$ USB Hub.
 
 Other concern that i have is that the more devices you plugged in, the more power it draws. 
 In my case i'm using low power MT7610U but if i'm using RTL8812BU it may draw more power than 
