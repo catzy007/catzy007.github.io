@@ -5,7 +5,7 @@ Exactly a year ago i tried 5GHz AC Wi-Fi in my house. At the time, i was using U
 adapter based on RTL8812BU which is working but with few issues. First, no in-kernel 
 driver support which is quite important if you want to deploy this system long term 
 as one kernel upgrade might render the driver to non-working state. Next is flaky AP 
-compatibility, if you set the device as Access Point (AP) and eventually at some point 
+compatibility, if you set the device as Access Point (AP) eventually at some point 
 it will stop working. I do not know if it's hardware bug (power management related) 
 or it is driver related (community support driver). But it is enough to make me decide 
 not to push it beyond testing phase. Maybe, just maybe one day community driver is good 
@@ -83,7 +83,7 @@ $ opkg install hostapd kmod-mt76x0u
 Then reboot the VM. Assuming everything goes well, In `Network > Wireless` tab you shall see 
 new wireless device. Press `Add` to create new Access Point and set it according to your 
 preferences. In my case, i set my Channel to 36, 80MHz width, Max TX Power 50 mW and Country 
-Code `US`. For some reason if i set my country code to my actual one, it throws error and 
+Code `US`. For some reason if i set the country code to my actual one, it throws error and 
 the adapter won't work until i set the code correctly. Then enable your newly created AP 
 and you should get.
 <div class="row">
@@ -152,10 +152,10 @@ controller? How about my other stuff? That's where USB Hub comes in.
 	</div>
 	<div class="col-sm-4"></div>
 </div>
-Using USB Hub, the controller technically only see one device connected so hopefully will use 
-USB 2.0 ECHI all the time. Only downside is that the bandwidth become shared between connected 
-devices. In my testing i have this 1$ USB Hub laying around, then i plug all of my USB devices 
-to it and this is what i got.
+Using USB Hub, the controller technically only see one device connected so hopefully it 
+will use USB 2.0 ECHI all the time. Only downside is that the bandwidth become shared 
+between connected devices. In my testing i have this 1$ USB Hub laying around, then i 
+plug all of my USB devices to it and this is what i got.
 <div class="row">
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
@@ -166,19 +166,20 @@ to it and this is what i got.
 	<div class="col-sm-2"></div>
 </div>
 While 50~60Mbps may not sound that much my last result is around 23Mbps. Which mean that i 
-get 2~3X the performance just using USB Hub. My theory is that the AMD chipset in my system uses 
-early implementation of USB scheduling so it is a little flaky then using simple USB Hub which 
-is well known technology at this point with better packet queueing and scheduling i get a better 
-result. I currently plug 3 devices to my USB Hub, in theory i should be able to pull around 
-(240Mbps / 3 = 80Mbps) But i only get around (240Mbps / 4 = 60Mbps) i think my USB Hub isn't 
-aware about how much device plugged in and it just divide the bandwidth by 4 all the time. I 
-mean that's what you get for 1$ USB Hub.
+get 2~3X the performance just using USB Hub. My theory is that the AMD chipset in my system 
+uses early implementation of USB scheduling so it is a little flaky then using simple USB 
+Hub which is well known technology at this point with better packet queueing and scheduling 
+i get a better result. I currently plug 3 devices to my USB Hub, in theory i should be able 
+to pull around (280Mbps / 3 = 93Mbps) But i only get closer to (280Mbps / 4 = 70Mbps) i think 
+my USB Hub isn't aware about how much device plugged in and it just divide the bandwidth by 
+4 all the time. I mean that's what you get for 1$ USB Hub.
 
 Other concern that i have is that the more devices you plugged in, the more power it draws. 
-In my case i'm using low power MT7610U but if i'm using RTL8812BU it may draw more power than 
-USB Hub can handle. The next task is to get a USB 3.0 Hub and i hope it can scale the bandwidth 
-according to how much device plugged (for note the bandwidth is still capped at USB 2.0 speed). 
-Also, i need to get an external powered USB Hub in case i use high power devices in the future.
+In my case i'm using low power MT7610U but if i'm using RTL8812BU it may draw more power 
+than USB Hub can handle. The next task is to get a USB 3.0 Hub and i hope it can scale the 
+bandwidth according to how much device plugged (for note the bandwidth is still capped at 
+USB 2.0 speed). Also, i need to get an external powered USB Hub in case i use high power 
+devices in the future.
 
 <br>
 If you want to replicate this project, please take a look.
