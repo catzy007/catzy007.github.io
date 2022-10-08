@@ -7,7 +7,6 @@ function loadContentRecommended(arrIndex, arrLower){
     var recommendedContentI = []; var recommendedContentL = [];
     var contLoadMax; var dice;
 
-
     if(arrIndex.length > 0){
         if(arrIndex.length > 3){
             contLoadMax = 3;

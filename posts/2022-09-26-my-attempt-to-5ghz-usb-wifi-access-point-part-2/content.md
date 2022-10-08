@@ -182,8 +182,58 @@ USB 2.0 speed). Also, i need to get an external powered USB Hub in case i use hi
 devices in the future.
 
 <br>
+**[UPDATE 08/10/22]**
+I recently acquired another USB Wi-Fi. It is [TP-Link TL-WN727N V3](http://en.techinfodepot.shoutwiki.com/wiki/TP-LINK_TL-WN727N_v3) it uses Ralink RT5370 and 
+should be able to handle 150Mbps PHY definietly not the fastest i can get but at 2$ old stock shipped complete in box, that's pretty good deal. The reason why i specifically 
+looking for V3 revision is that it uses Ralink chipset which should get AP mode 
+support under OpenWrt [kmod-rt2x00-usb](https://openwrt.org/packages/pkgdata/kmod-rt2x00-usb) since Ralink bought by Mediatek, USB adapter with ralink chipset new in box from established vendor is quite rare. Other option might be RT3070/RT3072/RT5372.
+<div class="row">
+	<div class="col-sm-3"></div>
+	<div class="col-sm-6">
+		<div class="thumbnail">
+			<img class="img-responsive" src="./posts/2022-09-26-my-attempt-to-5ghz-usb-wifi-access-point-part-2/09.jpg" alt="img">
+		</div>
+	</div>
+	<div class="col-sm-3"></div>
+</div>
+As usual first is test the absolute limit of what this adapter can do. I plug it into my laptop USB 3.0 port, set it as AP then use iperf to test it's throughput and this is what i got.
+<div class="row">
+	<div class="col-sm-3"></div>
+	<div class="col-sm-6">
+		<div class="thumbnail">
+			<img class="img-responsive" src="./posts/2022-09-26-my-attempt-to-5ghz-usb-wifi-access-point-part-2/10.jpg" alt="img">
+		</div>
+	</div>
+	<div class="col-sm-3"></div>
+</div>
+Next, i plug it into my OpenWrt system, install `kmod-rt2x00-usb`, set it as AP mode and see what happens.
+<div class="row">
+	<div class="col-sm-3"></div>
+	<div class="col-sm-6">
+		<div class="thumbnail">
+			<img class="img-responsive" src="./posts/2022-09-26-my-attempt-to-5ghz-usb-wifi-access-point-part-2/11.jpg" alt="img">
+		</div>
+	</div>
+	<div class="col-sm-3"></div>
+</div>
+Then i do another iperf testing unfortunately this time i got very dissapointing result.
+<div class="row">
+	<div class="col-sm-3"></div>
+	<div class="col-sm-6">
+		<div class="thumbnail">
+			<img class="img-responsive" src="./posts/2022-09-26-my-attempt-to-5ghz-usb-wifi-access-point-part-2/12.jpg" alt="img">
+		</div>
+	</div>
+	<div class="col-sm-3"></div>
+</div>
+I only get around 20Mbps which mean that this is the absolute limit of what my current system can do. I also encounter issues about USB plug of the adapter is 
+getting warm which can indicate that the adapter tries to pull more amperage from the USB plug which also indicate that the adapter may not get enough power?
+
+<br>
 If you want to replicate this project, please take a look.
 
 [USB WiFi chipset information for Linux](https://github.com/morrownr/USB-WiFi/blob/main/home/USB_WiFi_Chipsets.md)
 
 [Wi-Fi 4/5/6/6E (802.11 n/ac/ax)](https://www.duckware.com/tech/wifi-in-the-us.html)
+
+[OpenWrt Forum Archive](https://forum.archive.openwrt.org/viewtopic.php?id=45166)
