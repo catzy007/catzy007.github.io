@@ -186,7 +186,7 @@ devices in the future.
 I recently acquired another USB Wi-Fi. It is [TP-Link TL-WN727N V3](http://en.techinfodepot.shoutwiki.com/wiki/TP-LINK_TL-WN727N_v3) it uses Ralink RT5370 and 
 should be able to handle 150Mbps PHY definietly not the fastest i can get but at 2$ old stock shipped complete in box, that's pretty good deal. The reason why i specifically 
 looking for V3 revision is that it uses Ralink chipset which should get AP mode 
-support under OpenWrt [kmod-rt2x00-usb](https://openwrt.org/packages/pkgdata/kmod-rt2x00-usb) since Ralink bought by Mediatek, USB adapter with ralink chipset new in box from established vendor is quite rare. Other option might be RT3070/RT3072/RT5372.
+support under OpenWrt [kmod-rt2x00-usb](https://openwrt.org/packages/pkgdata/kmod-rt2x00-usb). Since Ralink bought by Mediatek, USB adapter with ralink chipset new in box from established vendor is quite rare. Other option might be RT3070, RT3072, RT5372.
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
