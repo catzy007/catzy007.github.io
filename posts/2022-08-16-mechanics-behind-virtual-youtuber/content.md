@@ -44,8 +44,8 @@ released in 2010 for Xbox 360. Kinect is motion sensing device capable
 of real-time gesture recognition, body skeletal detection, 3D scanning 
 and other capabilities. Technology behind kinect is emerged from company 
 called PrimeSense. First generation kinect uses IR Projector, IR Camera, 
-and regular RGB camera. 
-[The way this works is Kinect IR Projector is emitting a pattern of dot into the surrounding area and then IR camera is used to capture image from projected pattern](https://www.youtube.com/watch?v=i4n2DRHdrO0). 
+and regular RGB camera. The way this works is Kinect IR Projector is 
+[emitting a pattern of dot into the surrounding area and then IR camera is used to capture image from projected pattern](https://www.youtube.com/watch?v=i4n2DRHdrO0). 
 Then a mathematic calculation is performed to determine how far an object 
 is according to how the light pattern has changed. This way you can get 
 depth data from your surrounding area. 
