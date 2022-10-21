@@ -4,9 +4,10 @@ _Friday, October 23, 2020_
 #### PC Troubleshooting 101 Series 
 
 Sebelumnya perlu diketahui apa itu thermal throttling dan apa manfaatnya bagi anda dan laptop/pc anda. 
-[Dynamic frequency scaling](https://en.wikipedia.org/wiki/Dynamic_frequency_scaling) adalah proses untuk 
-mengubah kecepatan (frekuensi) sebuah prosesor dapat berupa CPU / GPU. Thermal throttling dapat berupa 
-positif (Overcloking/Boost) yang meningkatkan performa maupun negatif (Undercloking/Thermal Throttling). 
+Thermal throttling merupakan bagian dari [Dynamic frequency scaling](https://en.wikipedia.org/wiki/Dynamic_frequency_scaling) 
+yang merupakan proses untuk mengubah kecepatan (frekuensi) sebuah prosesor dapat berupa CPU / GPU. 
+Thermal throttling dapat berupa positif (Overcloking/Boost) yang meningkatkan performa maupun negatif 
+(Undercloking/Thermal Throttling). 
 
 Pada [kondisi normal](https://en.wikipedia.org/wiki/Advanced_Configuration_and_Power_Interface#Power_states), 
 CPU/GPU modern akan meningkatkan atau mengurangi frekuensi sesuai penggunaan. Misalnya pada saat idle (nganggur), 
@@ -97,8 +98,8 @@ dan bantal dapat menghalangi ventilasi udara yang dibutuhkan laptop.
 mendinginkan CPU/GPU dan menyebabkan pendingin harus bekerja ekstra.
 1. Ganti Pasta Thermal secara berkala (biasanya setiap 6 bulan hingga 1 tahun sekali). Pasta thermal berfungsi untuk 
 menghantarkan panas dari CPU/GPU ke sistem pendingin. Pasta thermal dapat menjadi keras dan mengurangi daya hantar 
-panas. Ganti pasta thermal secara hati - hati karena CPU/GPU pada laptop berwujud [kristal silikon](https://en.wikipedia.org/wiki/Wafer_(electronics)). 
-Untuk mencegah kerusakan pada kristal.
+panas. Ganti pasta thermal secara hati - hati karena CPU/GPU pada laptop berwujud [kristal silikon](https://en.wikipedia.org/wiki/Wafer_(electronics)) 
+dan dapat retak pada keadaan tertentu.
 1. Beberapa laptop tidak memiliki sistem pendingin untuk beban berkelanjutan. Biasanya laptop berupa Ultrabook 
 yang tipis memiliki pendingin dengan kapasitas 12 Watt untuk CPU 25 Watt. Hal ini menyebabkan CPU/GPU akan selalu 
 underclock bila diberikan beban berkelanjutan.
