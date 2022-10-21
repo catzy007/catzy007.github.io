@@ -4,25 +4,25 @@ _Friday, October 23, 2020_
 #### PC Troubleshooting 101 Series 
 
 Sebelumnya perlu diketahui apa itu thermal throttling dan apa manfaatnya bagi anda dan laptop/pc anda. 
-Thermal throttling atau [Dynamic frequency scaling](https://en.wikipedia.org/wiki/Dynamic_frequency_scaling) 
-adalah proses untuk mengubah kecepatan (frekuensi) sebuah prosesor dapat berupa CPU / GPU. Thermal throttling 
-dapat berupa positif (Overcloking/Boost) yang meningkatkan performa maupun negatif (Undercloking). 
+[Dynamic frequency scaling](https://en.wikipedia.org/wiki/Dynamic_frequency_scaling) adalah proses untuk 
+mengubah kecepatan (frekuensi) sebuah prosesor dapat berupa CPU / GPU. Thermal throttling dapat berupa 
+positif (Overcloking/Boost) yang meningkatkan performa maupun negatif (Undercloking/Thermal Throttling). 
 
 Pada [kondisi normal](https://en.wikipedia.org/wiki/Advanced_Configuration_and_Power_Interface#Power_states), 
-CPU/GPU modern akan meningkatkan dan mengurangi frekuensi sesuai beban. Misalnya pada saat idle (nganggur), 
-prosesor akan berjalan (dibawah base clock) misal 1.2 Ghz. Namun saat pengguna membuka aplikasi berat, semisal 
-Adobe Premiere Pro atau Blender makan CPU/GPU akan berusaha menuju performa maksimal (diatas base clock) misal 
-3.5 Ghz hingga pendingin tak mampu lagi menjaga clock tersebut.
+CPU/GPU modern akan meningkatkan atau mengurangi frekuensi sesuai penggunaan. Misalnya pada saat idle (nganggur), 
+prosesor akan berjalan (dibawah base clock) misal 1.2 Ghz untuk menghemat daya. Namun saat pengguna membuka aplikasi 
+berat, semisal Adobe Premiere Pro atau Blender makan CPU/GPU akan berusaha menuju performa maksimal (diatas base 
+clock) misal 3.5 Ghz hingga pendingin tak mampu lagi menjaga clock tersebut.
 
 Pada [overclocking](https://en.wikipedia.org/wiki/Overclocking) biasanya voltase dan frekuensi lebih dari 
 standar diberikan pada CPU/GPU yang didinginkan secara lebih dengan watercooling atau nitrogen cair untuk 
 mendapat performa tambahan. Namun sebaliknya [underclocking](https://en.wikipedia.org/wiki/Underclocking#Graphics_cards) 
-biasanya terjadi pada CPU/GPU yang mengurangi frekuensi karena gagal menjaga base dan boost clock karena 
+biasanya terjadi pada CPU/GPU yang mengurangi frekuensi karena tidak mampu menjaga base dan boost clock karena 
 disebapkan oleh panas berlebih. Namun ada pula pengguna yang melakukan underclocking secara manual biasanya 
 untuk menghemat energi.
 
-Underclocking biasanya mempengaruhi kinerja beban berat berkelanjutan seperti editing video, rendering, gaming. 
-Juga namun tak selalu mempengaruhi kinerja ringan seperti browsing, office. Pada artikel ini akan dibahas apakah 
+Underclocking biasanya mempengaruhi kinerja beban berat berkelanjutan seperti editing video, rendering, gaming 
+dan biasanya tidak mempengaruhi kinerja ringan seperti browsing, office. Pada artikel ini akan dibahas apakah 
 CPU/GPU anda dapat menjaga minimal base clock pada saat melakukan kinerja berat berkelanjutan dan apa yang dapat 
 dilakukan untuk menjaga clock tersebut.
 
@@ -87,7 +87,7 @@ beberapa detik.
 
 Kemudian setelah sekitar 15 Menit, CPU stabil di 1.7 Ghz. Sangat jauh dari base clock 2.8 Ghz. Apa yang terjadi? 
 pada dasarnya CPU mengalami underclocking karena CPU dan GPU menerima beban kerja berat secara berkelanjutan dan 
-sistem pendingin laptop tak mampu menjaga kecepatan base clock. Sehingga kecepatan CPU diturunkan untuk mencegah 
+sistem pendingin laptop tidak dapat menjaga kecepatan base clock sehingga kecepatan CPU diturunkan untuk mencegah 
 kerusakan CPU.
 
 Apa yang dapat dilakukan agar CPU/GPU dapat menjaga base clock bakan boost?
@@ -98,7 +98,7 @@ mendinginkan CPU/GPU dan menyebabkan pendingin harus bekerja ekstra.
 1. Ganti Pasta Thermal secara berkala (biasanya setiap 6 bulan hingga 1 tahun sekali). Pasta thermal berfungsi untuk 
 menghantarkan panas dari CPU/GPU ke sistem pendingin. Pasta thermal dapat menjadi keras dan mengurangi daya hantar 
 panas. Ganti pasta thermal secara hati - hati karena CPU/GPU pada laptop berwujud [kristal silikon](https://en.wikipedia.org/wiki/Wafer_(electronics)). 
-Salah langkah maka CPU/GPU dapat retak dan tak dapat digunakan.
+Untuk mencegah kerusakan pada kristal.
 1. Beberapa laptop tidak memiliki sistem pendingin untuk beban berkelanjutan. Biasanya laptop berupa Ultrabook 
-yang tipis memiliki pendingin 12 Watt untuk CPU 25 Watt. Hal ini menyebabkan CPU/GPU akan selalu underclock bila 
-diberikan beban berkelanjutan.
+yang tipis memiliki pendingin dengan kapasitas 12 Watt untuk CPU 25 Watt. Hal ini menyebabkan CPU/GPU akan selalu 
+underclock bila diberikan beban berkelanjutan.
