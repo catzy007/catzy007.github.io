@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width, shrink-to-fit=no">
+    <title>Fireworks</title>
+    <style>
+        .background {
+            background-color: black;
+        }
+        .center-page {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+        }
+    </style>
+</head>
+<body class="background">
+    <div class="center-page">
+        <video width="1280" height="720" poster="./thumbnail.png" controls autoplay muted loop>
+            <source src="./fireworks.webm" type="video/webm">
+            <source src="./fireworks.mp4" type="video/mp4">
+        </video>
+    </div>
+</body>
+</html>
