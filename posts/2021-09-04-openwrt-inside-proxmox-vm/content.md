@@ -28,15 +28,18 @@ to create a VM inside Proxmox.
 * Then confirm, finish and `Do not boot` the VM yet.
 
 What you need next is OpenWrt disk image. To get it, go to <https://downloads.openwrt.org/releases/>. 
-Here i'm using version 21.02.0 with x86/x64, then get `generic-ext4-combined.img.gz` file 
-<https://downloads.openwrt.org/releases/21.02.0/targets/x86/64/>.
+Here i'm using version 21.02.0 with x86/x64, then copy the download link for `generic-ext4-combined.img.gz` 
+file <https://downloads.openwrt.org/releases/21.02.0/targets/x86/64/>. 
 
 Then open your Proxmox terminal and go to your VM images directory. Usually `/var/lib/vz/images/<VMID>` 
 for example, my VM ID is 103 so `/var/lib/vz/images/103`.
 
-Next, use `wget <downloadlink>` to download OpenWrt disk image and extract it using `gzip -d <filename>`
+Next, use `wget <downloadlink>` to download OpenWrt disk image and extract it using `gzip -d <filename>`. 
+Replace `<downloadlink>` with download link you obtain in previous step and replace `<filename>` with 
+`generic-ext4-combined.img.gz`.
 
-Then delete `VM-<VMID>-disk-0.raw` and replace it with OpenWrt disk image.
+Then delete `VM-<VMID>-disk-0.raw` and replace it with OpenWrt disk image. Replace `<VMID>` with yours, 
+mine is 103.
 
 Last, boot it up and if everything goes well, OpenWrt should work right away.
 <div class="row">
