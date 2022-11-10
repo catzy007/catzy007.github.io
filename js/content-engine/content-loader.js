@@ -1,13 +1,11 @@
 function loadContentIndex(){
     var text = this.responseText;
     //set both index as immutable object
-	const arrIndex = Object.freeze(parseIndexArray(text)); 
+    const arrIndex = Object.freeze(parseIndexArray(text)); 
     const arrLower = Object.freeze(parseIndexLower(text));
     var urlRequest = getUrlRequest();
     var pageRequest = urlRequest.split("=");
     var typeRequest = pageRequest[0].split("?");
-    // console.log(arrIndex); console.log(arrLower);
-    // console.log(pageRequest); console.log(urlRequest);
     // console.log(typeRequest[1]);
 
     if(pageRequest[1]){
@@ -21,7 +19,6 @@ function loadContentIndex(){
         }else if(typeRequest[1] == "category"){
             loadCategoryPage(urlRequest, pageRequest[1]);
         }else if(typeRequest[1] == "search"){
-            //require search-engine/search.js
             loadContentSearch(arrIndex, arrLower, urlRequest, pageRequest[1]);
         }else if(typeRequest[1] == "unindexed"){
             loadPageUnindexed(urlRequest, pageRequest[1]);
@@ -44,5 +41,7 @@ function fetchContentTitle(pageRequest1, arrIndex){
             return arrIndex[i];
         }
     }
-    return pageRequest1;
+    return pageRequest1.toLowerCase().replace(/\b[a-z](?=[a-z]{1})/g, function(letter){ 
+        return letter.toUpperCase();
+    });
 }
