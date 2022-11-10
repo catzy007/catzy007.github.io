@@ -15,7 +15,8 @@ production environment, it is strongly advised that you're using TLS certificate
 proper ACME provider.
 
 In this post, we're going to set up local Certificate Authority (CA) generate development 
-credentials and install the certificate in Android User Trust Store.
+credentials and install the certificate in Android User Trust Store. Android 7 onward is 
+required to access android trust store.
 
 <!-- <div class="row">
 	<div class="col-sm-3"></div>
