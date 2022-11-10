@@ -22,8 +22,10 @@ function loadContentSearch(arrIndex, arrLower, urlRequest, pageRequest){
         if(getTitleOnly(arrIndex[i]).toLowerCase().includes(keyword)){
             searchHitCount++;
             pageHTML = pageHTML.concat("<p>");
-            pageHTML = pageHTML.concat("<a href='./loader.html?post="+ arrLower[i] +"'>");
-            pageHTML = pageHTML.concat(getTitleDate(arrIndex[i])+" - "+getTitleOnly(arrIndex[i]));
+            pageHTML = pageHTML.concat("<a href='./loader.html?post=");
+            pageHTML = pageHTML.concat(arrLower[i] + "'>");
+            pageHTML = pageHTML.concat(getTitleDate(arrIndex[i]) + " - ");
+            pageHTML = pageHTML.concat(getTitleOnly(arrIndex[i]));
             pageHTML = pageHTML.concat("</a>");
             pageHTML = pageHTML.concat("</p>");
         }
