@@ -41,7 +41,9 @@ function fetchContentTitle(pageRequest1, arrIndex){
             return arrIndex[i];
         }
     }
-    return pageRequest1.toLowerCase().replace(/\b[a-z](?=[a-z]{1})/g, function(letter){ 
-        return letter.toUpperCase();
-    });
+    return pageRequest1.toLowerCase().replace(/\b[a-z](?=[a-z]{1})/g, 
+        function(letter){ 
+            return letter.toUpperCase();
+        }
+    );
 }
