@@ -5,8 +5,8 @@ Current software paradigm require data transfer between server and client and on
 the way to accomplish this is to use Representational State Transfer (REST). REST is 
 originally based on HTTP protocol which mean that you basically sent the data unencrypted 
 over the internet. This is obviously unsafe, which is why some form of encryption is 
-needed. You can create your own "encryption" method using basic base64 or AES, but 
-you can also use HTTPS (TLS). 
+needed. You can create your own "obfuscation/encryption" method using basic base64 or AES, 
+but you can also use HTTPS (TLS) or combine both. 
 
 <!-- <div class="row">
 	<div class="col-sm-3"></div>
