@@ -12,8 +12,10 @@ function parseUnlistedIndex(){
     if(arrUnlisted.length > 0){
         for(var i=0; i<arrUnlisted.length; i++){
             pageHTML = pageHTML.concat("<p>");
-            pageHTML = pageHTML.concat("<a href='./loader.html?post="+ arrUnlistedL[i] +"'>");
-            pageHTML = pageHTML.concat(getTitleDate(arrUnlisted[i])+" - "+getTitleOnly(arrUnlisted[i]));
+            pageHTML = pageHTML.concat("<a href='./loader.html?post=");
+            pageHTML = pageHTML.concat(arrUnlistedL[i] + "'>");
+            pageHTML = pageHTML.concat(getTitleDate(arrUnlisted[i]) + " - ");
+            pageHTML = pageHTML.concat(getTitleOnly(arrUnlisted[i]));
             pageHTML = pageHTML.concat("</a>");
             pageHTML = pageHTML.concat("</p>");
         }

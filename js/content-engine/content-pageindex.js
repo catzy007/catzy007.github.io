@@ -6,8 +6,10 @@ function loadPageIndex(arrIndex, arrLower, urlRequest, pageRequest){
     for(var i=0; i<arrIndex.length; i++){
         if(arrIndex[i].length > 1){
             pageHTML = pageHTML.concat("<p>");
-            pageHTML = pageHTML.concat("<a href='./loader.html?post="+ arrLower[i] +"'>");
-            pageHTML = pageHTML.concat(getTitleDate(arrIndex[i])+" - "+getTitleOnly(arrIndex[i]));
+            pageHTML = pageHTML.concat("<a href='./loader.html?post=");
+            pageHTML = pageHTML.concat(arrLower[i] + "'>");
+            pageHTML = pageHTML.concat(getTitleDate(arrIndex[i]) + " - ");
+            pageHTML = pageHTML.concat(getTitleOnly(arrIndex[i]));
             pageHTML = pageHTML.concat("</a>");
             pageHTML = pageHTML.concat("</p>");
         }
