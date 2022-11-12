@@ -60,3 +60,4 @@
 2022-08-16-Mechanics-Behind-Virtual-Youtuber
 2022-09-20-Custom-Display-Scaling-in-Wayland-Ubuntu-22-04
 2022-09-26-My-Attempt-to-5GHz-USB-WIFI-Access-Point-Part-2
+2022-11-10-Secure-Android-Development-With-Local-Certificate-Authority-CA
