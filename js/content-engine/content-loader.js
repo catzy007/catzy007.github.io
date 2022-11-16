@@ -9,7 +9,7 @@ function loadContentIndex(){
     // console.log(typeRequest[1]);
 
     if(pageRequest[1]){
-        executeXhr("./pages/category/index.md", loadContentCategory, "CATEGORY", "category");
+        executeXhr("./pages/category/index.md", loadCategoryList, "CATEGORY", "category");
         if(typeRequest[1] == "post"){
             loadContentPost(urlRequest, pageRequest[1], fetchContentTitle(pageRequest[1], arrIndex));
         }else if(typeRequest[1] == "pages"){

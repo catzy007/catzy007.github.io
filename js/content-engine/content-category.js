@@ -1,4 +1,5 @@
-function loadContentCategory(){
+//category list
+function loadCategoryList(){
     var categoryList = "";
     var text = this.responseText;
     var arrCategory = parseIndexArray(text);
@@ -18,39 +19,59 @@ function loadContentCategory(){
     document.getElementById("categoryList").style.display = 'block';
 }
 
+
+//category page
 function loadCategoryPage(urlRequest, pageRequest){
     setSiteIdentifier(pageRequest, urlRequest, capitalize(pageRequest), "en-us");
     document.title = getSiteIdentifier()[2];
     executeXhr("./pages/category/"+pageRequest+".md", parseCategoryPage, "CATEGORY", pageRequest);
 }
 
+function CategoryPageWrapper(targetUrl, targetUrlSection, targetDate, targetName){
+    var IndexElmtPara = document.createElement("p");
+    var IndexElmtAncr = document.createElement("a");
+    IndexElmtAncr.innerHTML = targetDate + targetName;
+    IndexElmtAncr.href = "./loader.html?"+ targetUrlSection + "=" + targetUrl;
+    IndexElmtPara.appendChild(IndexElmtAncr);
+    return IndexElmtPara;
+}
+
 function parseCategoryPage(urlRequest, pageRequest){
     var text = this.responseText;
-    var pageHTML = "";
     var arrCategory = parseIndexArray(text);
     var arrCategoryL = parseIndexLower(text);
+
+    var mainContent = document.getElementById("main-content");
+    mainContent.innerHTML = "";
+    var pageTitle = document.createElement("h4");
+
     if(pageRequest == "index"){
         setElmtThumbnail("featuredPostImg", "./posts/thumbnail.jpg");
-        pageHTML = pageHTML.concat("<h4>Category</h4>");
+        pageTitle.innerHTML = "Category";
+        mainContent.appendChild(pageTitle);
         for(var i=0; i<arrCategory.length; i++){
-            pageHTML = pageHTML.concat("<p>");
-            pageHTML = pageHTML.concat("<a href='./loader.html?category=");
-            pageHTML = pageHTML.concat(arrCategoryL[i] + "'>");
-            pageHTML = pageHTML.concat(arrCategory[i]);
-            pageHTML = pageHTML.concat("</a>");
-            pageHTML = pageHTML.concat("</p>");
+            mainContent.appendChild(
+                CategoryPageWrapper(
+                    arrCategoryL[i],
+                    "category",
+                    "",
+                    arrCategory[i]
+                )
+            );
         }
     }else{
-        setElmtThumbnail("featuredPostImg", "./pages/category/"+pageRequest+".jpg");
-        pageHTML = pageHTML.concat("<h4>"+capitalize(pageRequest)+"</h4>");
+        setElmtThumbnail("featuredPostImg", "./pages/category/" + pageRequest + ".jpg");
+        pageTitle.innerHTML = capitalize(pageRequest);
+        mainContent.appendChild(pageTitle);
         for(var i=0; i<arrCategory.length; i++){
-            pageHTML = pageHTML.concat("<p>");
-            pageHTML = pageHTML.concat("<a href='./loader.html?post=");
-            pageHTML = pageHTML.concat(arrCategoryL[i] + "'>")
-            pageHTML = pageHTML.concat(getTitleDate(arrCategory[i]) + " - ");
-            pageHTML = pageHTML.concat(getTitleOnly(arrCategory[i]))
-            pageHTML = pageHTML.concat("</a>");
-            pageHTML = pageHTML.concat("</p>");
+            mainContent.appendChild(
+                CategoryPageWrapper(
+                    arrCategoryL[i],
+                    "post",
+                    getTitleDate(arrCategory[i]) + " - ",
+                    getTitleOnly(arrCategory[i])
+                )
+            );
         }
     }
     document.getElementById("main-content").innerHTML = pageHTML;
