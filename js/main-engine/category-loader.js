@@ -64,8 +64,7 @@ function parseCategoryPage(urlRequest, pageRequest){
             mainContent.appendChild(
                 categoryPageWrapper(
                     arrCategoryL[i],
-                    "category",
-                    "",
+                    "category", "",
                     arrCategory[i]
                 )
             );
