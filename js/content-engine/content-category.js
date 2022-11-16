@@ -85,5 +85,4 @@ function parseCategoryPage(urlRequest, pageRequest){
             );
         }
     }
-    // document.getElementById("main-content").innerHTML = pageHTML;
 }
