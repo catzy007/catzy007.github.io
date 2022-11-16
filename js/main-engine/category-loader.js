@@ -3,7 +3,7 @@ function categoryListWrapper(targetUrl, targetName){
     var categoryElmtPara = document.createElement("p");
     var categoryElmtAncr = document.createElement("a");
     categoryElmtAncr.innerHTML = targetName;
-    categoryElmtAncr.href = targetUrl;
+    categoryElmtAncr.href = "./loader.html?category=" + targetUrl;
     categoryElmtAncr.classList.add("category-list")
     categoryElmtPara.appendChild(categoryElmtAncr);
     return categoryElmtPara;

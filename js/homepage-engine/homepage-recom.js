@@ -26,10 +26,10 @@ function loadHomepageRecommended(arrIndex, arrLower){
     // console.log(arrIndex); console.log(arrIndexC);
     
     for(var i=1; i<recLoadMax+1; i++){
-        recPostCardId.push("recommendedPostCard"+i.toString());
-        recPostImgId.push("recommendedPostImg"+i.toString());
-        recPostDateId.push("recommendedPostDate"+i.toString());
-        recPostTitleId.push("recommendedPostTitle"+i.toString());
+        recPostCardId.push("recommendedPostCard" + i.toString());
+        recPostImgId.push("recommendedPostImg" + i.toString());
+        recPostDateId.push("recommendedPostDate" + i.toString());
+        recPostTitleId.push("recommendedPostTitle" + i.toString());
     }
 
     for(var i=0; i<recLoadMax; i++){
