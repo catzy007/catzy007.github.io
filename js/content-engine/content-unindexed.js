@@ -4,23 +4,43 @@ function loadPageUnindexed(urlRequest, pageRequest){
     executeXhr("./posts/unindexed.md", parseUnlistedIndex, "INDEX", pageRequest);
 }
 
+function unlistedIndexWrapper(targetUrl, targetDate, targetName){
+    var IndexElmtPara = document.createElement("p");
+    var IndexElmtAncr = document.createElement("a");
+    IndexElmtAncr.innerHTML = targetDate + " - " + targetName;
+    IndexElmtAncr.href = "./loader.html?post=" + targetUrl;
+    IndexElmtPara.appendChild(IndexElmtAncr);
+    return IndexElmtPara;
+}
+
+function emptyUnlistedIndexWrapper(){
+    var IndexEmpty = document.createElement("p");
+    IndexEmpty.innerHTML = "Empty";
+    return IndexEmpty;
+}
+
 function parseUnlistedIndex(){
     var text = this.responseText;
-    var pageHTML = "<h4>Unlisted Index</h4>";
     var arrUnlisted = parseIndexArray(text);
     var arrUnlistedL = parseIndexLower(text);
+
+    var mainContent = document.getElementById("main-content");
+    mainContent.innerHTML = "";
+    var pageTitle = document.createElement("h4");
+    pageTitle.innerHTML = "Unlisted Index";
+    mainContent.appendChild(pageTitle);
+
     if(arrUnlisted.length > 0){
         for(var i=0; i<arrUnlisted.length; i++){
-            pageHTML = pageHTML.concat("<p>");
-            pageHTML = pageHTML.concat("<a href='./loader.html?post=");
-            pageHTML = pageHTML.concat(arrUnlistedL[i] + "'>");
-            pageHTML = pageHTML.concat(getTitleDate(arrUnlisted[i]) + " - ");
-            pageHTML = pageHTML.concat(getTitleOnly(arrUnlisted[i]));
-            pageHTML = pageHTML.concat("</a>");
-            pageHTML = pageHTML.concat("</p>");
+            mainContent.appendChild(
+                unlistedIndexWrapper(
+                    arrUnlistedL[i],
+                    getTitleDate(arrUnlisted[i]),
+                    getTitleOnly(arrUnlisted[i])
+                )
+            );
         }
     }else{
-        pageHTML = pageHTML.concat("<p>Empty</p>");
-    }
-    document.getElementById("main-content").innerHTML = pageHTML;
+        mainContent.appendChild(emptyUnlistedIndexWrapper());
+    }    
 }
