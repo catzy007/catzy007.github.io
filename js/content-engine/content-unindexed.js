@@ -4,21 +4,6 @@ function loadPageUnindexed(urlRequest, pageRequest){
     executeXhr("./posts/unindexed.md", parseUnlistedIndex, "INDEX", pageRequest);
 }
 
-function unlistedIndexWrapper(targetUrl, targetDate, targetName){
-    var IndexElmtPara = document.createElement("p");
-    var IndexElmtAncr = document.createElement("a");
-    IndexElmtAncr.innerHTML = targetDate + " - " + targetName;
-    IndexElmtAncr.href = "./loader.html?post=" + targetUrl;
-    IndexElmtPara.appendChild(IndexElmtAncr);
-    return IndexElmtPara;
-}
-
-function emptyUnlistedIndexWrapper(){
-    var IndexEmpty = document.createElement("p");
-    IndexEmpty.innerHTML = "Empty";
-    return IndexEmpty;
-}
-
 function parseUnlistedIndex(){
     var text = this.responseText;
     var arrUnlisted = parseIndexArray(text);
@@ -33,7 +18,7 @@ function parseUnlistedIndex(){
     if(arrUnlisted.length > 0){
         for(var i=0; i<arrUnlisted.length; i++){
             mainContent.appendChild(
-                unlistedIndexWrapper(
+                IndexWrapper(
                     arrUnlistedL[i],
                     getTitleDate(arrUnlisted[i]),
                     getTitleOnly(arrUnlisted[i])
@@ -41,6 +26,6 @@ function parseUnlistedIndex(){
             );
         }
     }else{
-        mainContent.appendChild(emptyUnlistedIndexWrapper());
+        mainContent.appendChild(emptyIndexWrapper());
     }    
 }
