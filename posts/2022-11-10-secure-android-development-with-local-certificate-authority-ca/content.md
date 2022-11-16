@@ -46,7 +46,7 @@ services:
       fi"
     volumes:
       - ./mkcert-root:/root/.local/share/mkcert/
-      - ./mkcert-cert:/ssl
+      - ./mkcert-cert:/ssl/
 ```
 
 Save it as `docker-compose.yml` and run it. If nothing goes wrong, you should see 
