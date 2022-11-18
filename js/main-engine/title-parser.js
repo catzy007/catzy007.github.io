@@ -19,3 +19,16 @@ function getTitleOnly(title){
 function capitalize(s){
     return s && s[0].toUpperCase() + s.slice(1);
 }
+
+function fetchContentTitle(pageRequest, arrIndex){
+    for(var i=0; i<arrIndex.length; i++){
+        if(arrIndex[i].toLowerCase().trim() == pageRequest){
+            return arrIndex[i];
+        }
+    }
+    return pageRequest.toLowerCase().replace(/\b[a-z](?=[a-z]{1})/g, 
+        function(letter){ 
+            return letter.toUpperCase();
+        }
+    );
+}
