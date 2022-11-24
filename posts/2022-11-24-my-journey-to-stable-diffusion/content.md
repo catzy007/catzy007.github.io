@@ -1,6 +1,30 @@
 #### My Journey To Stable Diffusion
 _Thursday, November 24, 2022_
 
+Stable Diffusion is open-source deep learning image synthesis based on 
+latent diffusion model. Stable diffusion developed by CompVis group at 
+LMU Munich. Unlike DALL-E which require web service, everyone can run 
+Stable Diffusion in their local machine using proper hardware. Stable 
+Diffusion is recommended to be run with 10GB or more VRAM, however 
+optimization and tweak is available to run Stable Diffusion with less
+VRAM. More info about how Stable Diffusion works.
+
+[CompVis/latent-diffusion](https://github.com/CompVis/latent-diffusion)
+
+[High-Resolution Image Synthesis with Latent Diffusion Models](https://openaccess.thecvf.com/content/CVPR2022/papers/Rombach_High-Resolution_Image_Synthesis_With_Latent_Diffusion_Models_CVPR_2022_paper.pdf)
+
+[How AI Image Generators Work (Stable Diffusion / Dall-E) - Computerphile](https://www.youtube.com/watch?v=1CIpzeNxIhU)
+
+[Stable Diffusion in Code (AI Image Generation) - Computerphile](https://www.youtube.com/watch?v=-lz30by8-sU)
+
+There is also issues about copyright infringing because anyone 
+can train Stable Diffusion using image dataset found on the internet 
+without respective artist consent.
+
+Which mean that You can also train Stable Diffusion to any image 
+including anime character. 
+[Oh wait, someone did](https://gigazine.net/gsc_news/en/20221012-automatic1111-stable-diffusion-webui-deep-danbooru/).
+
 **Decade old server, Polaris 11 GPU, and ROCm. What could go wrong?**
 
 **Installing ROCm**
