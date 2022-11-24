@@ -9,13 +9,13 @@ Diffusion is recommended to be run with 10GB or more VRAM, however
 optimization and tweak is available to run Stable Diffusion with less
 VRAM. More info about how Stable Diffusion works.
 
-[CompVis/latent-diffusion](https://github.com/CompVis/latent-diffusion)
-
-[High-Resolution Image Synthesis with Latent Diffusion Models](https://openaccess.thecvf.com/content/CVPR2022/papers/Rombach_High-Resolution_Image_Synthesis_With_Latent_Diffusion_Models_CVPR_2022_paper.pdf)
-
 [How AI Image Generators Work (Stable Diffusion / Dall-E) - Computerphile](https://www.youtube.com/watch?v=1CIpzeNxIhU)
 
 [Stable Diffusion in Code (AI Image Generation) - Computerphile](https://www.youtube.com/watch?v=-lz30by8-sU)
+
+[High-Resolution Image Synthesis with Latent Diffusion Models](https://openaccess.thecvf.com/content/CVPR2022/papers/Rombach_High-Resolution_Image_Synthesis_With_Latent_Diffusion_Models_CVPR_2022_paper.pdf)
+
+[CompVis/latent-diffusion Github](https://github.com/CompVis/latent-diffusion)
 
 There is also issues about Copyright infringement because anyone 
 can train Stable Diffusion using image dataset found on the internet 
@@ -25,6 +25,7 @@ Which mean that you can also train Stable Diffusion to any image dataset
 including anime character 
 [oh wait, someone did](https://gigazine.net/gsc_news/en/20221012-automatic1111-stable-diffusion-webui-deep-danbooru/).
 
+<br>
 **Decade old server, Polaris 11 GPU, and ROCm. What could go wrong?**
 
 Here i'm going to use system consist of two Xeon X5670 with 12 GB of ECC RAM 
@@ -35,6 +36,7 @@ The last time i'm using Radeon GPU for OpenCL compute i brick my linux install
 and immediately switched to my Nvidia laptop using CUDA. But this time everything 
 is better and easier which is an improvement.
 
+<br>
 **Installing ROCm**
 
 First, follow [ROCm Docker Quickstart](https://github.com/RadeonOpenCompute/ROCm-docker/blob/master/quick-start.md)
