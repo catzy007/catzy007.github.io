@@ -21,11 +21,19 @@ There is also issues about copyright infringing because anyone
 can train Stable Diffusion using image dataset found on the internet 
 without respective artist consent.
 
-Which mean that You can also train Stable Diffusion to any image 
-including anime character. 
-[Oh wait, someone did](https://gigazine.net/gsc_news/en/20221012-automatic1111-stable-diffusion-webui-deep-danbooru/).
+Which mean that you can also train Stable Diffusion to any image dataset 
+including anime character 
+[oh wait, someone did](https://gigazine.net/gsc_news/en/20221012-automatic1111-stable-diffusion-webui-deep-danbooru/).
 
 **Decade old server, Polaris 11 GPU, and ROCm. What could go wrong?**
+
+Here i'm going to use system consist of two Xeon X5670 with 12 GB of ECC RAM 
+and Radeon 460 4 GB (Polaris 11) GPU. For software i'm using Ubuntu 22.04 
+and (at the time of writing) latest version of ROCm which is version 5.3.
+
+The last time i'm using Radeon GPU for OpenCL compute i brick my linux install 
+and immediately switched to my Nvidia laptop using CUDA. But this time everything 
+is better and easier which is an improvement.
 
 **Installing ROCm**
 
