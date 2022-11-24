@@ -28,7 +28,7 @@ including anime character
 **Decade old server, Polaris 11 GPU, and ROCm. What could go wrong?**
 
 Here i'm going to use system consist of two Xeon X5670 with 12 GB of ECC RAM 
-and Radeon 460 4 GB (Polaris 11) GPU. For software i'm using Ubuntu 22.04 
+and Radeon RX 460 4 GB (Polaris 11) GPU. For software i'm using Ubuntu 22.04 
 and (at the time of writing) latest version of ROCm which is version 5.3.
 
 The last time i'm using Radeon GPU for OpenCL compute i brick my linux install 
