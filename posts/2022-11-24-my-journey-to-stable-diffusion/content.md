@@ -29,7 +29,7 @@ including anime character.
 
 **Installing ROCm**
 
-[ROCm Docker Quickstart](https://github.com/RadeonOpenCompute/ROCm-docker/blob/master/quick-start.md)
+First, follow [ROCm Docker Quickstart](https://github.com/RadeonOpenCompute/ROCm-docker/blob/master/quick-start.md)
 
 ```
 sudo apt-get update
@@ -46,7 +46,7 @@ echo 'EXTRA_GROUPS=video' | sudo tee -a /etc/adduser.conf
 echo 'EXTRA_GROUPS=render' | sudo tee -a /etc/adduser.conf 
 ```
 
-Then reboot system. To test if ROCm is installed, run `rocm-smi`
+Then reboot the system. To test if ROCm is installed, run `rocm-smi`
 
 ```
 ======================= ROCm System Management Interface =======================
