@@ -17,7 +17,7 @@ VRAM. More info about how Stable Diffusion works.
 
 [Stable Diffusion in Code (AI Image Generation) - Computerphile](https://www.youtube.com/watch?v=-lz30by8-sU)
 
-There is also issues about copyright infringing because anyone 
+There is also issues about Copyright infringement because anyone 
 can train Stable Diffusion using image dataset found on the internet 
 without respective artist consent.
 
