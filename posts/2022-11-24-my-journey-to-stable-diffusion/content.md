@@ -398,3 +398,7 @@ I also run `sudo lspci -s 08:00.0 -vvv` to see more info about my GPU.
 One thing that i found interesting is that this decade old system support 
 `Capabilities: [200 v1] Physical Resizable BAR` but i have no idea if i can use 
 it with modern GPU and get better performance.
+
+[Run ROCm without PCIe atomics?](https://github.com/RadeonOpenCompute/ROCm/issues/157)
+
+[More about how ROCm uses PCIe Atomics](https://rocmdocs.amd.com/en/latest/Installation_Guide/More-about-how-ROCm-uses-PCIe-Atomics.html)
