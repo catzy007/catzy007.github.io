@@ -1,11 +1,43 @@
 #### My Journey To Stable Diffusion
 _Thursday, November 24, 2022_
 
+Stable Diffusion is open-source deep learning image synthesis based on 
+latent diffusion model. Stable diffusion developed by CompVis group at 
+LMU Munich. Unlike DALL-E which require web service, everyone can run 
+Stable Diffusion in their local machine using proper hardware. Stable 
+Diffusion is recommended to be run with 10GB or more VRAM, however 
+optimization and tweak is available to run Stable Diffusion with less
+VRAM. More info about how Stable Diffusion works.
+
+[CompVis/latent-diffusion](https://github.com/CompVis/latent-diffusion)
+
+[High-Resolution Image Synthesis with Latent Diffusion Models](https://openaccess.thecvf.com/content/CVPR2022/papers/Rombach_High-Resolution_Image_Synthesis_With_Latent_Diffusion_Models_CVPR_2022_paper.pdf)
+
+[How AI Image Generators Work (Stable Diffusion / Dall-E) - Computerphile](https://www.youtube.com/watch?v=1CIpzeNxIhU)
+
+[Stable Diffusion in Code (AI Image Generation) - Computerphile](https://www.youtube.com/watch?v=-lz30by8-sU)
+
+There is also issues about copyright infringing because anyone 
+can train Stable Diffusion using image dataset found on the internet 
+without respective artist consent.
+
+Which mean that you can also train Stable Diffusion to any image dataset 
+including anime character 
+[oh wait, someone did](https://gigazine.net/gsc_news/en/20221012-automatic1111-stable-diffusion-webui-deep-danbooru/).
+
 **Decade old server, Polaris 11 GPU, and ROCm. What could go wrong?**
+
+Here i'm going to use system consist of two Xeon X5670 with 12 GB of ECC RAM 
+and Radeon 460 4 GB (Polaris 11) GPU. For software i'm using Ubuntu 22.04 
+and (at the time of writing) latest version of ROCm which is version 5.3.
+
+The last time i'm using Radeon GPU for OpenCL compute i brick my linux install 
+and immediately switched to my Nvidia laptop using CUDA. But this time everything 
+is better and easier which is an improvement.
 
 **Installing ROCm**
 
-[ROCm Docker Quickstart](https://github.com/RadeonOpenCompute/ROCm-docker/blob/master/quick-start.md)
+First, follow [ROCm Docker Quickstart](https://github.com/RadeonOpenCompute/ROCm-docker/blob/master/quick-start.md)
 
 ```
 sudo apt-get update
@@ -22,7 +54,7 @@ echo 'EXTRA_GROUPS=video' | sudo tee -a /etc/adduser.conf
 echo 'EXTRA_GROUPS=render' | sudo tee -a /etc/adduser.conf 
 ```
 
-Then reboot system. To test if ROCm is installed, run `rocm-smi`
+Then reboot the system. To test if ROCm is installed, run `rocm-smi`
 
 ```
 ======================= ROCm System Management Interface =======================
@@ -398,3 +430,7 @@ I also run `sudo lspci -s 08:00.0 -vvv` to see more info about my GPU.
 One thing that i found interesting is that this decade old system support 
 `Capabilities: [200 v1] Physical Resizable BAR` but i have no idea if i can use 
 it with modern GPU and get better performance.
+
+[Run ROCm without PCIe atomics?](https://github.com/RadeonOpenCompute/ROCm/issues/157)
+
+[More about how ROCm uses PCIe Atomics](https://rocmdocs.amd.com/en/latest/Installation_Guide/More-about-how-ROCm-uses-PCIe-Atomics.html)
