@@ -1,5 +1,5 @@
 #### My Journey To Stable Diffusion
-_Friday, December 2, 2022_
+_Thursday, November 24, 2022_
 
 **Decade old server, Polaris 11 GPU, and ROCm. What could go wrong?**
 
