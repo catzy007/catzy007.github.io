@@ -257,6 +257,7 @@ Last, run `docker-compose run stablediff-web`.
 `1.21.6` and `fairscale` to version `0.4.6`.
 * In case you get ROCm GPU compute working, remove `--skip-torch-cuda-test` 
 from `docker-compose.yml`.
+* In order to run ROCm with RX400/500 GPUs, add `ROC_ENABLE_PRE_VEGA=1` to `/etc/environment`
 </details>
 
 <br>
@@ -275,6 +276,12 @@ Launching Web UI with arguments: --precision full --no-half
 Illegal instruction (core dumped)
 ERROR: 132
 ```
+
+From the error message above, it seems like stable diffusion 
+try to run using CPU which is correct because i could not get 
+ROCm GPU compute working. My theory is that pytorch that been 
+used in this instance only support AVX/AVX2 instruction set. 
+Which is absent in my Westmere CPUs.
 
 <br>
 **What went wrong?**
