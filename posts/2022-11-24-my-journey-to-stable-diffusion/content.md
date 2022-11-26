@@ -480,3 +480,11 @@ which is mostly stated in [Limitations and Bias](https://huggingface.co/CompVis/
 	</div>
 	<div class="col-sm-2"></div>
 </div>
+
+Good thing about Stable Diffusion open approach is limitless 
+options. Instead of relying on web service to fine tune or fix an issues, 
+you can go online and 
+[find a fix](https://github.com/CompVis/stable-diffusion/pulls) 
+or fix it yourself. You don't like default 
+model or you want other more specific style instead, well 
+[grab one yourself](https://huggingface.co/models?other=stable-diffusion).
