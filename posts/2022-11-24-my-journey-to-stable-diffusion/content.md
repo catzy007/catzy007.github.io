@@ -23,7 +23,7 @@ without respective artist consent.
 
 Which mean that you can also train Stable Diffusion to any image dataset 
 including anime character 
-[oh wait, someone did](https://gigazine.net/gsc_news/en/20221012-automatic1111-stable-diffusion-webui-deep-danbooru/).
+[oh wait, someone did](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Textual-Inversion#using-pre-trained-embeddings).
 
 <br>
 **Decade old server, Polaris 11 GPU, and ROCm. What could go wrong?**
@@ -436,3 +436,47 @@ it with modern GPU and get better performance.
 [Run ROCm without PCIe atomics?](https://github.com/RadeonOpenCompute/ROCm/issues/157)
 
 [More about how ROCm uses PCIe Atomics](https://rocmdocs.amd.com/en/latest/Installation_Guide/More-about-how-ROCm-uses-PCIe-Atomics.html)
+
+<br>
+**CPU to the rescue**
+
+Apparently you can also run Stable Diffusion using CPU. But you trade 
+compatibility with lower performance. generating 512x512 image using 
+dual Xeon X5670 and around 8 to 9 GB RAM take around 5 to 6 Minutes 
+while current datacenter and high end GPU take around 
+[3 to 10 Seconds](https://lambdalabs.com/blog/inference-benchmark-stable-diffusion). 
+To be fair, my decade old CPUs does not support AVX/AVX2 instruction 
+and if your cpu does support AVX/AVX2 you probably get better performance. 
+Also for some reason, almost half of my CPUs thread is idle so force it 
+to use all threads may improve performance.
+
+<div class="row">
+	<div class="col-sm-2"></div>
+	<div class="col-sm-8">
+    <div class="thumbnail">
+			<img class="img-responsive" src="./posts/2022-11-24-my-journey-to-stable-diffusion/01.png" alt="img">
+		</div>
+		<div class="thumbnail">
+			<img class="img-responsive" src="./posts/2022-11-24-my-journey-to-stable-diffusion/02.png" alt="img">
+		</div>
+	</div>
+	<div class="col-sm-2"></div>
+</div>
+
+As for Stable Diffusion itself, it is certainly not perfect but it is 
+in my opinion very usable. For example sometimes face does not aligned 
+properly but a fix is an option to fix it. Then fingers may not be generated 
+properly sometimes it just a blob of random shapes and sometimes you can 
+get extra fingers or lost some. Also unlike DALL-E wich can understand 
+complex sentence or even paragraph, Stable Diffusion NLP is still behind. 
+which is mostly stated in [Limitations and Bias](https://huggingface.co/CompVis/stable-diffusion-v-1-4-original).
+
+<div class="row">
+	<div class="col-sm-2"></div>
+	<div class="col-sm-8">
+		<div class="thumbnail">
+			<img class="img-responsive" src="./posts/2022-11-24-my-journey-to-stable-diffusion/03.png" alt="img">
+		</div>
+	</div>
+	<div class="col-sm-2"></div>
+</div>
