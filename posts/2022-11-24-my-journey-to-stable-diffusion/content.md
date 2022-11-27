@@ -487,8 +487,9 @@ you can go online and
 [find a fix](https://github.com/CompVis/stable-diffusion/pulls) 
 or fix it yourself. You don't like default 
 model, or you want other more specific style instead, well 
-[grab one yourself](https://huggingface.co/models?other=stable-diffusion). 
-Or better yet, train your own model.
+[grab one yourself](https://huggingface.co/models?other=stable-diffusion) 
+or better yet, 
+[train your own model](https://github.com/AUTOMATIC1111/stable-diffusion-webui/discussions/2284).
 
 <br>
 **CUDA: I am speed**
