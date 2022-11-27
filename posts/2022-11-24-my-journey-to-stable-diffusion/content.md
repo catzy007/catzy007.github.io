@@ -5,7 +5,7 @@ Stable Diffusion is open-source deep learning image synthesis based on
 latent diffusion model. Stable diffusion developed by CompVis group at 
 LMU Munich. Unlike DALL-E which require web service, everyone can run 
 Stable Diffusion in their local machine using proper hardware. Stable 
-Diffusion is recommended to be run with 10GB or more VRAM, however 
+Diffusion is recommended to be run with 10 GB or more VRAM, however 
 optimization and tweak is available to run Stable Diffusion with less
 VRAM. More info about how Stable Diffusion works.
 
@@ -30,9 +30,9 @@ including anime character
 
 Here i'm going to use system consist of two Xeon X5670 with 12 GB of ECC RAM 
 and Radeon RX 460 4 GB (Polaris 11) GPU. For software i'm using Ubuntu 22.04 
-and (at the time of writing) latest version of ROCm which is version 5.3.
+and (at the time of writing) the latest version of ROCm which is version 5.3.
 
-The last time i'm using Radeon GPU for OpenCL compute i brick my linux install 
+The last time i'm using Radeon GPU for OpenCL compute i brick my Linux install 
 and immediately switched to my Nvidia laptop using CUDA. But this time everything 
 is better and easier which is an improvement.
 
@@ -197,7 +197,7 @@ Agent 2
 </details>
 
 While my GPU is missing, as you can see both of my CPUs is listed 
-instead so i decided to continue.
+instead. Later i decided to continue.
 
 <br>
 **Running under docker**
@@ -329,7 +329,7 @@ and i need to set `ROC_ENABLE_PRE_VEGA=1` workaround to get it working.
 
 I also found 
 [ROCm Hardware and Software Support Reference Guide](https://docs.amd.com/bundle/Hardware_and_Software_Reference_Guide/page/Hardware_and_Software_Support.html) 
-which stated that GFX8 GPUs require  PCIe atomics which available on PCI Express 
+which stated that GFX8 GPUs require PCIe atomics which available on PCI Express 
 3.0. Which mean that you need to run this on 
 [Intel Haswell 4th gen or above or AMD Zen 1st gen or above](https://github.com/ROCm/ROCm.github.io/blob/master/hardware.md#supported-cpus).
 
@@ -441,12 +441,12 @@ it with modern GPU and get better performance.
 **CPU to the rescue**
 
 Apparently you can also run Stable Diffusion using CPU. But you trade 
-compatibility with lower performance. generating 512x512 image using 
-dual Xeon X5670 and around 8 to 9 GB RAM take around 5 to 6 Minutes 
-while current datacenter and high end GPU take around 
+compatibility with lower performance. Generating 512x512 image using 
+dual Xeon X5670 take around 5 to 6 Minutes while current datacenter 
+and high-end GPU take around 
 [3 to 10 Seconds](https://lambdalabs.com/blog/inference-benchmark-stable-diffusion). 
 To be fair, my decade old CPUs does not support AVX/AVX2 instruction 
-and if your cpu does support AVX/AVX2 you probably get better performance. 
+and if your CPU does support AVX/AVX2 you probably get better performance. 
 Also for some reason, almost half of my CPUs thread is idle so force it 
 to use all threads may improve performance.
 
@@ -463,13 +463,13 @@ to use all threads may improve performance.
 	<div class="col-sm-2"></div>
 </div>
 
-As for Stable Diffusion itself, it is certainly not perfect but it is 
-in my opinion very usable. For example sometimes face does not aligned 
-properly but a fix is an option to fix it. Then fingers may not be generated 
-properly sometimes it just a blob of random shapes and sometimes you can 
-get extra fingers or lost some. Also unlike DALL-E wich can understand 
+As for Stable Diffusion itself, it is certainly not perfect, but it is 
+in my opinion very usable. For example sometimes face does not align 
+properly, but a fix is an option to fix it. Then fingers may not be generated 
+properly sometimes it just a blob of random shapes, and sometimes you can 
+get extra fingers or lost some. Also unlike DALL-E which can understand 
 complex sentence or even paragraph, Stable Diffusion NLP is still behind. 
-which is mostly stated in [Limitations and Bias](https://huggingface.co/CompVis/stable-diffusion-v-1-4-original).
+Which is mostly stated in [Limitations and Bias](https://huggingface.co/CompVis/stable-diffusion-v-1-4-original). 
 
 <div class="row">
 	<div class="col-sm-2"></div>
@@ -482,9 +482,50 @@ which is mostly stated in [Limitations and Bias](https://huggingface.co/CompVis/
 </div>
 
 Good thing about Stable Diffusion open approach is limitless 
-options. Instead of relying on web service to fine tune or fix an issues, 
+options. Instead of relying on web service to fine tune or fix an issue, 
 you can go online and 
 [find a fix](https://github.com/CompVis/stable-diffusion/pulls) 
 or fix it yourself. You don't like default 
-model or you want other more specific style instead, well 
-[grab one yourself](https://huggingface.co/models?other=stable-diffusion).
+model, or you want other more specific style instead, well 
+[grab one yourself](https://huggingface.co/models?other=stable-diffusion). 
+Or better yet, train your own model.
+
+<br>
+**CUDA: I am speed**
+
+Using CPUs give great amount of compatibility with performance penalty. 
+Unfortunately ROCm doesn't work in my system, but there is a third option. 
+Enter Compute Unified Device Architecture (CUDA).
+
+Here i'm using my laptop with I7 7700HQ, 8 GB RAM and GTX 950M 2 GB (Maxwell) 
+GPU (I strongly recommend 16 GB RAM instead of 8 GB). The result is incredible, 
+generating 512x512 image take around 1 to 2 Minutes (using --lowvram) 
+compared to 5 to 6 Minutes. Not only using GPU is more efficient 75W vs 190W 
+(95x2), it is also a lot faster.
+
+<div class="row">
+	<div class="col-sm-2"></div>
+	<div class="col-sm-8">
+		<div class="thumbnail">
+			<img class="img-responsive" src="./posts/2022-11-24-my-journey-to-stable-diffusion/04.png" alt="img">
+		</div>
+	</div>
+	<div class="col-sm-2"></div>
+</div>
+
+Using CUDA in my opinion gives the best result so far. Installation is seamless, 
+performance is great, it is more efficient. Unless in my case, my laptop only 
+have 2 GB of VRAM which require `--lowvram` parameter easy. But the issues is 8 
+GB of RAM because of this, i could not load standard stable diffusion 1.4 model. 
+Instead, i'm using [Openjourney](https://huggingface.co/prompthero/openjourney) 
+model even then i can only generate 3 to 4 images before entire the thing crash.
+
+<div class="row">
+	<div class="col-sm-2"></div>
+	<div class="col-sm-8">
+		<div class="thumbnail">
+			<img class="img-responsive" src="./posts/2022-11-24-my-journey-to-stable-diffusion/05.png" alt="img">
+		</div>
+	</div>
+	<div class="col-sm-2"></div>
+</div>
