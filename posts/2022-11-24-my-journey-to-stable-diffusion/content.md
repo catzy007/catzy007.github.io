@@ -516,10 +516,10 @@ compared to 5 to 6 Minutes. Not only using GPU is more efficient 75W vs 190W
 
 Using CUDA in my opinion gives the best result so far. Installation is seamless, 
 performance is great, it is more efficient. Unless in my case, my laptop only 
-have 2 GB of VRAM which require `--lowvram` parameter easy. But the issues is 8 
-GB of RAM because of this, i could not load standard stable diffusion 1.4 model. 
+have 2 GB of VRAM which require `--lowvram` parameter easy. But the issue is 8 
+GB of RAM because of this, i could not load standard Stable Diffusion 1.4 model. 
 Instead, i'm using [Openjourney](https://huggingface.co/prompthero/openjourney) 
-model even then i can only generate 3 to 4 images before entire the thing crash.
+model even then i can only generate 3 to 4 images before the entire thing crash.
 
 <div class="row">
 	<div class="col-sm-2"></div>
@@ -530,3 +530,6 @@ model even then i can only generate 3 to 4 images before entire the thing crash.
 	</div>
 	<div class="col-sm-2"></div>
 </div>
+
+<br>
+**Docker all the things**
