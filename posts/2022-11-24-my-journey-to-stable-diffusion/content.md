@@ -71,7 +71,7 @@ But as you can see, no GPU compute device shows up. Next i run `rocminfo` and th
 is what i got.
 
 <details>
-<summary>&#9432; Click to show rocminfo output</summary>
+<summary>&#9432; Click to reveal rocminfo output</summary>
 ```
 ROCk module is loaded
 =====================    
@@ -207,7 +207,7 @@ Here i'm using
 and create my own Docker Compose with corresponding Dockerfile.
 
 <details>
-<summary>&#9432; Click to show docker-compose.yml</summary>
+<summary>&#9432; Click to reveal docker-compose.yml</summary>
 ```
 version: '3'
 
@@ -253,7 +253,7 @@ services:
 ```
 </details>
 <details>
-<summary>&#9432; Click to show Dockerfile</summary>
+<summary>&#9432; Click to reveal Dockerfile</summary>
 ```
 FROM rocm/pytorch
 ENV DEBIAN_FRONTEND=noninteractive \
@@ -285,7 +285,7 @@ You may need sudo to do this.
 Last, run `docker-compose run stablediff-web`.
 
 <details>
-<summary>&#9432; Click to show additional notes</summary>
+<summary>&#9432; Click to reveal additional notes</summary>
 * Because rocm/pytorch uses python 3.7, you need to edit 
 `requirements_versions.txt` and change `numpy` to version 
 `1.21.6` and `fairscale` to version `0.4.6`.
@@ -341,7 +341,7 @@ To prove this, i can run `sudo dmesg | grep kfd` and i should get
 
 I also run `sudo lspci -s 08:00.0 -vvv` to see more info about my GPU.
 <details>
-<summary>&#9432; Click to show lspci output</summary>
+<summary>&#9432; Click to reveal lspci output</summary>
 ```
 08:00.0 VGA compatible controller: Advanced Micro Devices, Inc. [AMD/ATI] Baffin [Radeon RX 460/560D / Pro 450/455/460/555/555X/560/560X] (rev cf) (prog-if 00 [VGA controller])
 	Subsystem: PC Partner Limited / Sapphire Technology Baffin [Radeon RX 460/560D / Pro 450/455/460/555/555X/560/560X]
@@ -519,7 +519,8 @@ performance is great, it is more efficient. Unless in my case, my laptop only
 have 2 GB of VRAM which require `--lowvram` parameter easy. But the issue is 8 
 GB of RAM because of this, i could not load standard Stable Diffusion 1.4 model. 
 Instead, i'm using [Openjourney](https://huggingface.co/prompthero/openjourney) 
-model even then i can only generate 3 to 4 images before the entire thing crash.
+model even then i can only generate 3 to 4 images before the entire thing is out 
+of memory and crash.
 
 <div class="row">
 	<div class="col-sm-2"></div>
@@ -533,3 +534,279 @@ model even then i can only generate 3 to 4 images before the entire thing crash.
 
 <br>
 **Docker all the things**
+
+With all the results so far, here is how i did it.
+
+* First, install Docker and Docker-compose 
+[Ubuntu](https://docs.docker.com/engine/install/ubuntu/) 
+[Windows](https://docs.docker.com/desktop/install/windows-install/) 
+then run `docker-compose --version` and make sure you're running docker-compose 
+[version 1.27.0 or above](https://docs.docker.com/compose/gpu-support/).
+
+* If you want to use CUDA, follow guide below to set up CUDA with Docker 
+    - [Linux](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html) Install
+    - [Windows (WSL)](https://docs.nvidia.com/cuda/wsl-user-guide/index.html) then follow 
+  [this](https://docs.nvidia.com/ai-enterprise/deployment-guide/dg-docker.html#enabling-the-docker-repository-and-installing-the-nvidia-container-toolkit) 
+
+* If you want to use ROCm, follow guide below to set ROCm with Docker 
+    - [Linux](https://github.com/RadeonOpenCompute/ROCm-docker/blob/master/quick-start.md) Install
+
+* Get Stable Diffusion model. you can get original v1.4 from [Hugging Face](https://huggingface.co/CompVis/stable-diffusion-v-1-4-original/tree/main).
+
+* Next create a new directory called `stable diffusion`.
+
+* Then copy and save following files inside `stable-diffusion` directory.
+
+<details>
+<summary>&#9432; Click to reveal `docker-compose.yml`</summary>
+```
+version: '3'
+
+services:
+  stablediff-cpu:
+    build: 
+      context: .
+      dockerfile: Dockerfile.cpu
+    container_name: stablediff-cpu-runner
+    environment:
+      TZ: "Asia/Jakarta"
+      COMMANDLINE_ARGS: "--listen --no-half --skip-torch-cuda-test"
+    entrypoint: ["/bin/sh", "-c"]
+    command: >
+      ". /stablediff.env; echo launch.py $$COMMANDLINE_ARGS;
+      if [ ! -d /stablediff-web/.git ]; then
+        cp -a /sdtemp/. /stablediff-web/
+      fi;
+      if [ ! -f /stablediff-web/models/Stable-diffusion/*.ckpt ]; then
+        echo 'Please copy stable diffusion model to stablediff-models directory'
+        echo 'You may need sudo to perform this action'
+        exit 1
+      fi;
+      python launch.py"
+    ports:
+      - "7860:7860"
+    volumes:
+      - ./stablediff.env:/stablediff.env
+      - ./stablediff-web:/stablediff-web
+      - ./stablediff-models:/stablediff-web/models/Stable-diffusion
+  stablediff-rocm:
+    build: 
+      context: .
+      dockerfile: Dockerfile.rocm
+    container_name: stablediff-rocm-runner
+    environment:
+      TZ: "Asia/Jakarta"
+      ROC_ENABLE_PRE_VEGA: 1
+      COMMANDLINE_ARGS: "--listen --precision full --no-half"
+    entrypoint: ["/bin/sh", "-c"]
+    command: >
+      "rocm-smi; . /stablediff.env; echo launch.py $$COMMANDLINE_ARGS;
+      if [ ! -d /stablediff-web/.git ]; then
+        cp -a /sdtemp/. /stablediff-web/
+      fi;
+      if [ ! -f /stablediff-web/models/Stable-diffusion/*.ckpt ]; then
+        echo 'Please copy stable diffusion model to stablediff-models directory'
+        echo 'You may need sudo to perform this action'
+        exit 1
+      fi;
+      python launch.py"
+    ports:
+      - "7860:7860"
+    devices:
+      - "/dev/kfd:/dev/kfd"
+      - "/dev/dri:/dev/dri"
+    group_add:
+      - video
+    ipc: host
+    cap_add:
+      - SYS_PTRACE
+    security_opt:
+      - seccomp:unconfined
+    volumes:
+      - ./stablediff.env:/stablediff.env
+      - ./stablediff-web:/stablediff-web
+      - ./stablediff-models:/stablediff-web/models/Stable-diffusion
+  stablediff-cuda:
+    build: 
+      context: .
+      dockerfile: Dockerfile.cuda
+    container_name: stablediff-runner-cuda
+    runtime: nvidia
+    environment:
+      TZ: "Asia/Jakarta"
+      NVIDIA_VISIBLE_DEVICES: all
+      COMMANDLINE_ARGS: "--listen"
+    entrypoint: ["/bin/sh", "-c"]
+    command: >
+      "nvidia-smi; . /stablediff.env; echo launch.py $$COMMANDLINE_ARGS;
+      if [ ! -d /stablediff-web/.git ]; then
+        cp -a /sdtemp/. /stablediff-web/
+      fi;
+      if [ ! -f /stablediff-web/models/Stable-diffusion/*.ckpt ]; then
+        echo 'Please copy stable diffusion model to stablediff-models directory'
+        echo 'You may need sudo to perform this action'
+        exit 1
+      fi;
+      python launch.py"
+    ports:
+      - "7860:7860"
+    volumes:
+      - ./stablediff.env:/stablediff.env
+      - ./stablediff-web:/stablediff-web
+      - ./stablediff-models:/stablediff-web/models/Stable-diffusion
+```
+</details>
+
+<details>
+<summary>&#9432; Click to reveal `Dockerfile.cpu`</summary>
+```
+FROM python:3.10.6-bullseye
+ENV DEBIAN_FRONTEND=noninteractive \
+    PYTHONUNBUFFERED=1 \
+    PYTHONIOENCODING=UTF-8
+WORKDIR /sdtemp
+RUN python -m pip install --upgrade pip wheel
+RUN apt-get update &&\
+    apt-get install -y wget git
+RUN git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui /sdtemp
+
+#torch and torchvision version number refer to
+#https://github.com/AUTOMATIC1111/stable-diffusion-webui/blob/master/launch.py
+ENV TORCH_COMMAND="pip install torch==1.12.1+cpu torchvision==0.13.1+cpu --extra-index-url https://download.pytorch.org/whl/cpu"
+RUN python -m $TORCH_COMMAND
+
+RUN python launch.py --skip-torch-cuda-test --exit
+RUN python -m pip install opencv-python-headless
+WORKDIR /stablediff-web
+```
+</details>
+
+<details>
+<summary>&#9432; Click to reveal `Dockerfile.cuda`</summary>
+```
+FROM nvidia/cuda:11.3.1-base-ubuntu20.04
+ENV DEBIAN_FRONTEND=noninteractive \
+    PYTHONUNBUFFERED=1 \
+    PYTHONIOENCODING=UTF-8
+WORKDIR /sdtemp
+RUN apt-get update &&\
+    apt-get install -y \
+    wget \
+    git \
+    python3 \
+    python3-pip \
+    python-is-python3
+RUN python -m pip install --upgrade pip wheel
+RUN git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui /sdtemp
+
+#torch and torchvision version number refer to
+#https://github.com/AUTOMATIC1111/stable-diffusion-webui/blob/master/launch.py
+ENV TORCH_COMMAND="pip install torch==1.12.1+cu113 torchvision==0.13.1+cu113 --extra-index-url https://download.pytorch.org/whl/cu113"
+RUN python -m $TORCH_COMMAND
+
+RUN python launch.py --skip-torch-cuda-test --exit
+RUN python -m pip install opencv-python-headless
+WORKDIR /stablediff-web
+```
+</details>
+
+<details>
+<summary>&#9432; Click to reveal `Dockerfile.rocm`</summary>
+```
+FROM rocm/dev-ubuntu-20.04
+ENV DEBIAN_FRONTEND=noninteractive \
+    PYTHONUNBUFFERED=1 \
+    PYTHONIOENCODING=UTF-8
+WORKDIR /sdtemp
+RUN apt-get update &&\
+    apt-get install -y \
+    wget \
+    git \
+    python3 \
+    python3-pip \
+    python-is-python3
+RUN python -m pip install --upgrade pip wheel
+RUN git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui /sdtemp
+
+#torch and torchvision version number refer to
+#https://github.com/AUTOMATIC1111/stable-diffusion-webui/blob/master/launch.py
+ENV TORCH_COMMAND="pip install torch==1.12.1+rocm5.1.1 torchvision==0.13.1+rocm5.1.1 --extra-index-url https://download.pytorch.org/whl/rocm5.1.1"
+RUN python -m $TORCH_COMMAND
+
+RUN python launch.py --skip-torch-cuda-test --exit
+RUN python -m pip install opencv-python-headless
+WORKDIR /stablediff-web
+```
+</details>
+
+<details>
+<summary>&#9432; Click to reveal `stablediff.env`</summary>
+```
+export COMMANDLINE_ARGS="--listen"
+```
+</details>
+
+<details>
+<summary>&#9432; Click to reveal `.dockerignore`</summary>
+```
+stablediff-web/
+stablediff-models/
+*.ckpt
+```
+</details>
+
+* Edit launch parameter to match your system. Open `stablediff.env` and set it to the following.
+    - Using CPU 
+        <pre>export COMMANDLINE_ARGS="--listen --no-half --skip-torch-cuda-test"</pre>
+    - Using CUDA 
+        <pre>export COMMANDLINE_ARGS="--listen --precision full --no-half"</pre>
+    - Using ROCm 
+        <pre>export COMMANDLINE_ARGS="--listen"</pre>
+You can also add 
+[other parameter](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Command-Line-Arguments-and-Settings#all-command-line-arguments) 
+such as `--lowvram` for GPU with 2 GB of VRAM.
+
+* Next, open terminal and navigate to `stable-diffusion` directory.
+
+* Then build the Stable Diffusion Docker image, to do this enter .
+    - Using CPU 
+        <pre>docker-compose build stablediff-cpu</pre>
+    - Using CUDA 
+        <pre>docker-compose build stablediff-cuda</pre>
+    - Using ROCm 
+        <pre>docker-compose build stablediff-rocm</pre>
+this will take a while.
+
+* If everything goes smoothly, initialize the Diffusion Docker image 
+by entering.
+    - Using CPU <pre>docker-compose up stablediff-cpu</pre>
+    - Using CUDA <pre>docker-compose up stablediff-cuda</pre>
+    - Using ROCm <pre>docker-compose up stablediff-rocm</pre>
+
+* After that, you will get message `Please copy stable diffusion model`. 
+Copy your stable diffusion model to `stablediff-models` directory.
+
+* To start Stable Diffusion, enter. 
+    - Using CPU <pre>docker start -a stablediff-cpu-runner</pre>
+    - Using CUDA <pre>docker start -a stablediff-cuda-runner</pre>
+    - Using ROCm <pre>docker start -a stablediff-rocm-runner</pre>
+Do this everytime you want to run Stable Diffusion.
+
+* Next Open Web browser and go to <http://localhost:7860/>
+
+* To stop Stable Diffusion, press `Ctrl + C` then enter.
+    - Using CPU <pre>docker stop stablediff-cpu-runner</pre>
+    - Using CUDA <pre>docker stop stablediff-cuda-runner</pre>
+    - Using ROCm <pre>docker stop stablediff-rocm-runner</pre>
+
+And that's pretty much it.
+
+<div class="row">
+	<div class="col-sm-2"></div>
+	<div class="col-sm-8">
+		<div class="thumbnail">
+			<img class="img-responsive" src="./posts/2022-11-24-my-journey-to-stable-diffusion/06.png" alt="img">
+		</div>
+	</div>
+	<div class="col-sm-2"></div>
+</div>
