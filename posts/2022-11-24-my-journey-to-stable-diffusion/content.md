@@ -768,7 +768,7 @@ such as `--lowvram` for GPU with 2 GB of VRAM.
 
 * Next, open terminal and navigate to `stable-diffusion` directory.
 
-* Then build the Stable Diffusion Docker image, to do this enter .
+* Then build the Stable Diffusion Docker image, to do this enter.
     - Using CPU 
         <pre>docker-compose build stablediff-cpu</pre>
     - Using CUDA 
@@ -779,25 +779,34 @@ this will take a while.
 
 * If everything goes smoothly, initialize the Diffusion Docker image 
 by entering.
-    - Using CPU <pre>docker-compose up stablediff-cpu</pre>
-    - Using CUDA <pre>docker-compose up stablediff-cuda</pre>
-    - Using ROCm <pre>docker-compose up stablediff-rocm</pre>
+    - Using CPU 
+        <pre>docker-compose up stablediff-cpu</pre>
+    - Using CUDA 
+        <pre>docker-compose up stablediff-cuda</pre>
+    - Using ROCm 
+        <pre>docker-compose up stablediff-rocm</pre>
 
 * After that, you will get message `Please copy stable diffusion model`. 
 Copy your stable diffusion model to `stablediff-models` directory.
 
 * To start Stable Diffusion, enter. 
-    - Using CPU <pre>docker start -a stablediff-cpu-runner</pre>
-    - Using CUDA <pre>docker start -a stablediff-cuda-runner</pre>
-    - Using ROCm <pre>docker start -a stablediff-rocm-runner</pre>
+    - Using CPU 
+        <pre>docker start -a stablediff-cpu-runner</pre>
+    - Using CUDA 
+        <pre>docker start -a stablediff-cuda-runner</pre>
+    - Using ROCm 
+        <pre>docker start -a stablediff-rocm-runner</pre>
 Do this everytime you want to run Stable Diffusion.
 
 * Next Open Web browser and go to <http://localhost:7860/>
 
 * To stop Stable Diffusion, press `Ctrl + C` then enter.
-    - Using CPU <pre>docker stop stablediff-cpu-runner</pre>
-    - Using CUDA <pre>docker stop stablediff-cuda-runner</pre>
-    - Using ROCm <pre>docker stop stablediff-rocm-runner</pre>
+    - Using CPU 
+        <pre>docker stop stablediff-cpu-runner</pre>
+    - Using CUDA 
+        <pre>docker stop stablediff-cuda-runner</pre>
+    - Using ROCm 
+        <pre>docker stop stablediff-rocm-runner</pre>
 
 And that's pretty much it.
 
