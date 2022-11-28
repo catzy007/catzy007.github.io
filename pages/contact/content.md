@@ -1,5 +1,5 @@
 #### Hello my name is Maulana Bagus Saputra
-I'm a Computer Science Undergraduate who interested in 
+I'm an Computer Science Undergraduate who interested in 
 High Performance Computing and Artificial Intelligence.
 
 <br>
