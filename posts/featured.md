@@ -1,1 +1,1 @@
-2020-07-03-My-Journey-To-Proxmox-and-pfSense-On-Budget
+2022-11-24-My-Journey-To-Stable-Diffusion
