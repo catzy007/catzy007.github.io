@@ -551,7 +551,7 @@ then run `docker-compose --version` and make sure you're running docker-compose
 * If you want to use ROCm, follow guide below to set ROCm with Docker 
     - [Linux](https://github.com/RadeonOpenCompute/ROCm-docker/blob/master/quick-start.md) Install
 
-* Get Stable Diffusion model. you can get original v1.4 from [Hugging Face](https://huggingface.co/CompVis/stable-diffusion-v-1-4-original/tree/main).
+* Get Stable Diffusion model `.ckpt` file. you can get original v1.4 from [Hugging Face](https://huggingface.co/CompVis/stable-diffusion-v-1-4-original/tree/main).
 
 * Next create a new directory called `stable diffusion`.
 
