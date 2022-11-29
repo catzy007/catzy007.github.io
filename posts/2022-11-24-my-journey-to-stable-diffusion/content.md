@@ -762,9 +762,9 @@ stablediff-models/
         <pre>export COMMANDLINE_ARGS="--listen --precision full --no-half"</pre>
     - Using ROCm 
         <pre>export COMMANDLINE_ARGS="--listen"</pre>
-You can also add 
-[other parameter](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Command-Line-Arguments-and-Settings#all-command-line-arguments) 
-such as `--lowvram` for GPU with 2 GB of VRAM.
+    <p>You can also add 
+    <a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Command-Line-Arguments-and-Settings#all-command-line-arguments">other parameter</a> 
+    such as <code>--lowvram</code> for GPU with 2 GB of VRAM.</p>
 
 * Next, open terminal and navigate to `stable-diffusion` directory.
 
@@ -775,7 +775,7 @@ such as `--lowvram` for GPU with 2 GB of VRAM.
         <pre>docker-compose build stablediff-cuda</pre>
     - Using ROCm 
         <pre>docker-compose build stablediff-rocm</pre>
-this will take a while.
+    <p>This may take a while.</p>
 
 * If everything goes smoothly, initialize the Diffusion Docker image 
 by entering.
@@ -796,7 +796,7 @@ Copy your stable diffusion model to `stablediff-models` directory.
         <pre>docker start -a stablediff-cuda-runner</pre>
     - Using ROCm 
         <pre>docker start -a stablediff-rocm-runner</pre>
-Do this everytime you want to run Stable Diffusion.
+    <p>Do this every time you want to run Stable Diffusion.</p>
 
 * Next Open Web browser and go to <http://localhost:7860/>
 
