@@ -330,8 +330,8 @@ and i need to set `ROC_ENABLE_PRE_VEGA=1` workaround to get it working.
 I also found 
 [ROCm Hardware and Software Support Reference Guide](https://docs.amd.com/bundle/Hardware_and_Software_Reference_Guide/page/Hardware_and_Software_Support.html) 
 which stated that GFX8 GPUs require PCIe atomics which available on PCI Express 
-3.0. Which mean that you need to run this on 
-[Intel Haswell 4th gen or above or AMD Zen 1st gen or above](https://github.com/ROCm/ROCm.github.io/blob/master/hardware.md#supported-cpus).
+3.0. This mean that you need to run this on 
+[Intel Haswell 4th gen and above or AMD Zen 1st gen and above](https://github.com/ROCm/ROCm.github.io/blob/master/hardware.md#supported-cpus).
 
 To prove this, i can run `sudo dmesg | grep kfd` and i should get 
 `PCI rejects atomics` error message.
@@ -545,11 +545,11 @@ then run `docker-compose --version` and make sure you're running docker-compose
 
 * If you want to use CUDA, follow guide below to set up CUDA with Docker 
     - [Linux](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html) Install
-    - [Windows (WSL)](https://docs.nvidia.com/cuda/wsl-user-guide/index.html) then follow 
-  [this](https://docs.nvidia.com/ai-enterprise/deployment-guide/dg-docker.html#enabling-the-docker-repository-and-installing-the-nvidia-container-toolkit) 
+    - <p><a href="https://docs.nvidia.com/cuda/wsl-user-guide/index.html">Windows (WSL)</a> then follow 
+    <a href="https://docs.nvidia.com/ai-enterprise/deployment-guide/dg-docker.html#enabling-the-docker-repository-and-installing-the-nvidia-container-toolkit">this</a></p> 
 
 * If you want to use ROCm, follow guide below to set ROCm with Docker 
-    - [Linux](https://github.com/RadeonOpenCompute/ROCm-docker/blob/master/quick-start.md) Install
+    - <p><a href="https://github.com/RadeonOpenCompute/ROCm-docker/blob/master/quick-start.md">Linux</a> Install</p>
 
 * Get Stable Diffusion model `.ckpt` file. you can get original v1.4 from [Hugging Face](https://huggingface.co/CompVis/stable-diffusion-v-1-4-original/tree/main).
 
@@ -757,11 +757,17 @@ stablediff-models/
 
 * Edit launch parameter to match your system. Open `stablediff.env` and set it to the following.
     - Using CPU 
-        <pre>export COMMANDLINE_ARGS="--listen --no-half --skip-torch-cuda-test"</pre>
+        <pre>
+        export COMMANDLINE_ARGS="--listen --no-half --skip-torch-cuda-test"
+        </pre>
     - Using CUDA 
-        <pre>export COMMANDLINE_ARGS="--listen --precision full --no-half"</pre>
+        <pre>
+        export COMMANDLINE_ARGS="--listen --precision full --no-half"
+        </pre>
     - Using ROCm 
-        <pre>export COMMANDLINE_ARGS="--listen"</pre>
+        <pre>
+        export COMMANDLINE_ARGS="--listen"
+        </pre>
     <p>You can also add 
     <a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Command-Line-Arguments-and-Settings#all-command-line-arguments">other parameter</a> 
     such as <code>--lowvram</code> for GPU with 2 GB of VRAM.</p>
