@@ -465,7 +465,7 @@ to use all threads may improve performance.
 
 As for Stable Diffusion itself, it is certainly not perfect, but it is 
 in my opinion very usable. For example sometimes face does not align 
-properly, but a fix is an option to fix it. Then fingers may not be generated 
+properly, but there is an option to fix it. Then fingers may not be generated 
 properly sometimes it just a blob of random shapes, and sometimes you can 
 get extra fingers or lost some. Also unlike DALL-E which can understand 
 complex sentence or even paragraph, Stable Diffusion NLP is still behind. 
