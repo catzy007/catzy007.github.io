@@ -491,6 +491,22 @@ model, or you want other more specific style instead, well
 or better yet, 
 [train your own model](https://github.com/AUTOMATIC1111/stable-diffusion-webui/discussions/2284).
 
+Based on what i see from current technology of machine learning based image 
+generation, this is completely useable. And the thing about technology is that 
+this is going to get better over time. As for ethical and copyright issues, it 
+is not okay to take someone works without their consent and not cite them or 
+even worse profit from it. This exact same problem also happens in programming 
+space with the introduction of [GitHub Copilot](https://github.com/features/copilot). 
+They basically take someone repository (codebase) with clear LICENSE file stated 
+and use it to train their AI code generator without the programmer consent and 
+citation. Furthermore, (at the moment) copyright law does not cover 
+machine-generated works which is basically a copyright law loophole. So my 
+advice is that if you are an artist, learn this technology and maybe integrate 
+it to your workflow. [Clip Studio](https://www.youtube.com/watch?v=a797qMnfFwM) 
+recently added an experimental feature that uses this technology and at the 
+moment there is not much you can do to avoid it, and it's just going to get 
+better over time so why not use it to your advantage instead.
+
 <br>
 **CUDA: I am speed**
 
