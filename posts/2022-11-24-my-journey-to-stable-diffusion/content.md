@@ -816,6 +816,9 @@ Copy your stable diffusion model to `stablediff-models` directory.
 
 And that's pretty much it.
 
+<br>
+**Final Words**
+
 Based on what i see from current technology of machine learning based image 
 generation, this is completely useable. And the thing about technology is that 
 this is going to get better over time. As for ethical and copyright issues, it 
