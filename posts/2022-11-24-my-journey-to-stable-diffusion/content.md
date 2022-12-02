@@ -762,11 +762,11 @@ stablediff-models/
         </pre>
     - Using CUDA 
         <pre>
-        export COMMANDLINE_ARGS="--listen --precision full --no-half"
+        export COMMANDLINE_ARGS="--listen"
         </pre>
     - Using ROCm 
         <pre>
-        export COMMANDLINE_ARGS="--listen"
+        export COMMANDLINE_ARGS="--listen --precision full --no-half"
         </pre>
     <p>You can also add 
     <a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Command-Line-Arguments-and-Settings#all-command-line-arguments">other parameter</a> 
