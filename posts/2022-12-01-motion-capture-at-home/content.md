@@ -1,22 +1,22 @@
-#### How To Motion Capture at Home
+#### Motion Capture at Home
 _Thursday, December 1, 2022_
 
 If you're Game Developer, Virtual YouTuber, Animator, or someone who need Cheap motion capture for 
-some reason then you come to a right place. Here i'm going to use Kinect 360. At the time of writing, 
-this is tested and working on Windows 10 20H1. First you need Kinect hardware, there are at least 
-5 Kinect. Kinect for Xbox 360, Kinect for Windows, Kinect for Xbox One, Kinect 2 for Windows, and 
-Azure Kinect. Here i'm going to use Kinect for Xbox 360. Other version of Kinect may not work at all or 
-[require a workaround](https://www.engadget.com/2015-03-08-using-the-kinect-for-motion-capture.html) 
+some reason then you come to a right place. Here i'm going to use Kinect 360 with MMD. At the time 
+of writing, this is tested and working on Windows 10 20H1. First you need Kinect hardware, there are 
+at least 5 Kinect. Kinect for Xbox 360, Kinect for Windows, Kinect for Xbox One, Kinect 2 for Windows, 
+and Azure Kinect. Here i'm going to use Kinect for Xbox 360. Other version of Kinect may not work at 
+all or [require a workaround](https://www.engadget.com/2015-03-08-using-the-kinect-for-motion-capture.html) 
 which is not covered in this post.
 
 <div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
+	<div class="col-sm-2"></div>
+	<div class="col-sm-8">
 		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2022-12-01-how-to-motion-capture-at-home/00.jpg" alt="img">
+			<img class="img-responsive" src="./posts/2022-12-01-motion-capture-at-home/00.jpg" alt="img">
 		</div>
 	</div>
-	<div class="col-sm-3"></div>
+	<div class="col-sm-2"></div>
 </div>
 
 I get mine second hand complete in Box, Kinect unit itself, Power adapter, Flyer and Manual, and Sealed 
@@ -30,7 +30,7 @@ First, download and install `KinectSDK-v1.8-Setup.exe` and optionally `KinectDev
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2022-12-01-how-to-motion-capture-at-home/01.png" alt="img">
+			<img class="img-responsive" src="./posts/2022-12-01-motion-capture-at-home/01.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -42,7 +42,7 @@ Then download and install Microsoft Visual C++ 2008 Redistributable `vcredist_x8
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2022-12-01-how-to-motion-capture-at-home/02.png" alt="img">
+			<img class="img-responsive" src="./posts/2022-12-01-motion-capture-at-home/02.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -55,10 +55,10 @@ is `MikuMikuDanceE_v932.zip` and make sure it is working.
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
 		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2022-12-01-how-to-motion-capture-at-home/03.png" alt="img">
+			<img class="img-responsive" src="./posts/2022-12-01-motion-capture-at-home/03.png" alt="img">
 		</div>
 		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2022-12-01-how-to-motion-capture-at-home/04.png" alt="img">
+			<img class="img-responsive" src="./posts/2022-12-01-motion-capture-at-home/04.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-2"></div>
@@ -72,13 +72,13 @@ then `launch MMD > motion capture(K) > Kinect` and make sure it is working.
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
 		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2022-12-01-how-to-motion-capture-at-home/05.png" alt="img">
+			<img class="img-responsive" src="./posts/2022-12-01-motion-capture-at-home/05.png" alt="img">
 		</div>
 		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2022-12-01-how-to-motion-capture-at-home/06.png" alt="img">
+			<img class="img-responsive" src="./posts/2022-12-01-motion-capture-at-home/06.png" alt="img">
 		</div>
 		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2022-12-01-how-to-motion-capture-at-home/07.png" alt="img">
+			<img class="img-responsive" src="./posts/2022-12-01-motion-capture-at-home/07.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-2"></div>
@@ -91,10 +91,10 @@ the latest version is `MikuMikuCapture_v202_6_en.zip`.
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
 		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2022-12-01-how-to-motion-capture-at-home/08.png" alt="img">
+			<img class="img-responsive" src="./posts/2022-12-01-motion-capture-at-home/08.png" alt="img">
 		</div>
 		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2022-12-01-how-to-motion-capture-at-home/09.png" alt="img">
+			<img class="img-responsive" src="./posts/2022-12-01-motion-capture-at-home/09.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-2"></div>
@@ -106,7 +106,7 @@ Next, launch `MMCapture.exe` then go to `Settings > Capture Settings` and change
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2022-12-01-how-to-motion-capture-at-home/10.png" alt="img">
+			<img class="img-responsive" src="./posts/2022-12-01-motion-capture-at-home/10.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -117,10 +117,10 @@ Then load your model and go to `Capture > Press Kinect Icon` to start Motion Cap
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
 		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2022-12-01-how-to-motion-capture-at-home/11.png" alt="img">
+			<img class="img-responsive" src="./posts/2022-12-01-motion-capture-at-home/11.png" alt="img">
 		</div>
 		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2022-12-01-how-to-motion-capture-at-home/12.png" alt="img">
+			<img class="img-responsive" src="./posts/2022-12-01-motion-capture-at-home/12.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-2"></div>
