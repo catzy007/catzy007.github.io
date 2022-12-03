@@ -62,3 +62,4 @@
 2022-09-26-My-Attempt-to-5GHz-USB-WIFI-Access-Point-Part-2
 2022-11-10-Secure-Android-Development-With-Local-Certificate-Authority-CA
 2022-11-24-My-Journey-To-Stable-Diffusion
+2022-12-01-Motion-Capture-at-Home
