@@ -206,7 +206,7 @@ As usual first is test the absolute limit of what this adapter can do. I plug it
 	</div>
 	<div class="col-sm-3"></div>
 </div>
-Next, i plug it into my OpenWrt system, install `kmod-rt2x00-usb`, set it as AP mode and see what happens.
+Next, i plug it into my OpenWrt system, install `kmod-rt2800-usb kmod-rt2x00-usb`, set it as AP mode and see what happens.
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
