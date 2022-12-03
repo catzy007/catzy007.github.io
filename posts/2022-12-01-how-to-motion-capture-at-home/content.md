@@ -1,6 +1,16 @@
 #### How To Motion Capture at Home
 _Thursday, December 1, 2022_
 
+If you're Game Developer, Virtual YouTuber, Animator, or someone who need Cheap motion capture for 
+some reason then you come to a right place. Here i'm going to use Kinect 360. At the time of writing, 
+this is tested and working on Windows 10 20H1. First you need Kinect hardware, there are at least 
+5 Kinect. Kinect for Xbox 360, Kinect for Windows, Kinect for Xbox One, Kinect 2 for Windows, and 
+Azure Kinect. Here i'm going to use Kinect for Xbox 360. Other version of Kinect may not work at all or 
+[require a workaround](https://www.engadget.com/2015-03-08-using-the-kinect-for-motion-capture.html) 
+which is not covered in this post.
+
+
+
 First, download and install `KinectSDK-v1.8-Setup.exe` and optionally `KinectDeveloperToolkit-v1.8.0-Setup.exe`.
 * [Kinect for Windows SDK v1.8](https://www.microsoft.com/en-us/download/details.aspx?id=40278)
 * [Kinect for Windows Developer Toolkit v1.8 (Optional)](https://www.microsoft.com/en-us/download/details.aspx?id=40276)
