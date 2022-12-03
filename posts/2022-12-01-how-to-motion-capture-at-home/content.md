@@ -9,7 +9,19 @@ Azure Kinect. Here i'm going to use Kinect for Xbox 360. Other version of Kinect
 [require a workaround](https://www.engadget.com/2015-03-08-using-the-kinect-for-motion-capture.html) 
 which is not covered in this post.
 
+<div class="row">
+	<div class="col-sm-3"></div>
+	<div class="col-sm-6">
+		<div class="thumbnail">
+			<img class="img-responsive" src="./posts/2022-12-01-how-to-motion-capture-at-home/00.jpg" alt="img">
+		</div>
+	</div>
+	<div class="col-sm-3"></div>
+</div>
 
+I get mine second hand complete in Box, Kinect unit itself, Power adapter, Flyer and Manual, and Sealed 
+game disc for $20. One thing to watch out is power adapter. Different version of Kinect may require 
+different type of power adapter. 
 
 First, download and install `KinectSDK-v1.8-Setup.exe` and optionally `KinectDeveloperToolkit-v1.8.0-Setup.exe`.
 * [Kinect for Windows SDK v1.8](https://www.microsoft.com/en-us/download/details.aspx?id=40278)
