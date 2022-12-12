@@ -553,7 +553,7 @@ then run `docker-compose --version` and make sure you're running docker-compose
 
 * Get Stable Diffusion model `.ckpt` file. you can get original v1.4 from [Hugging Face](https://huggingface.co/CompVis/stable-diffusion-v-1-4-original/tree/main).
 
-* Next create a new directory called `stable diffusion`.
+* Next create a new directory called `stable-diffusion`.
 
 * Then copy and save following files inside `stable-diffusion` directory.
 
