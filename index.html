@@ -30,12 +30,12 @@
     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <button aria-label="menuBtn" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a id="siteBranding" class="navbar-brand"></a>
+                <a id="siteBranding" class="navbar-brand" href="./"></a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
@@ -55,7 +55,7 @@
             <div class="input-group search-container">
                 <input id="searchInputM" type="text" class="form-control" placeholder="Search.." onkeydown="searchKeypressHandler(event)"/>
                 <div class="input-group-btn">
-                    <button class="btn" type="submit" onclick="startSearch();">
+                    <button aria-label="searchBtn" class="btn" type="submit" onclick="startSearch();">
                         <span class="glyphicon glyphicon-search"></span>
                     </button>
                 </div>
@@ -79,7 +79,7 @@
             <div class="input-group search-container">
                 <input id="searchInput" type="text" class="form-control" placeholder="Search.." onkeydown="searchKeypressHandler(event)"/>
                 <div class="input-group-btn">
-                    <button class="btn" type="submit" onclick="startSearch();">
+                    <button aria-label="searchBtn" class="btn" type="submit" onclick="startSearch();">
                         <span class="glyphicon glyphicon-search"></span>
                     </button>
                 </div>
