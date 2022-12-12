@@ -30,12 +30,12 @@
     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <button aria-label="menuBtn" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a id="siteBranding" class="navbar-brand"></a>
+                <a id="siteBranding" class="navbar-brand" href="./"></a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
@@ -55,7 +55,7 @@
             <div class="input-group search-container">
                 <input id="searchInputM" type="text" class="form-control" placeholder="Search.." onkeydown="searchKeypressHandler(event)"/>
                 <div class="input-group-btn">
-                    <button class="btn" type="submit" onclick="startSearch();">
+                    <button aria-label="searchBtn" class="btn" type="submit" onclick="startSearch();">
                         <span class="glyphicon glyphicon-search"></span>
                     </button>
                 </div>
@@ -79,7 +79,7 @@
             <div class="input-group search-container">
                 <input id="searchInput" type="text" class="form-control" placeholder="Search.." onkeydown="searchKeypressHandler(event)"/>
                 <div class="input-group-btn">
-                    <button class="btn" type="submit" onclick="startSearch();">
+                    <button aria-label="searchBtn" class="btn" type="submit" onclick="startSearch();">
                         <span class="glyphicon glyphicon-search"></span>
                     </button>
                 </div>
@@ -97,7 +97,7 @@
         <div class="col-sm-4">
             <a id="latestPostCard1" hidden class="card" href="#">
                 <div class="img-thumbnail embed-responsive embed-responsive-4by3">
-                    <img loading="lazy" id="latestPostImg1" src="./assets/nothumb.jpg" class="embed-responsive-item" alt="Latest Post Image 1" width="400" height="300"> 
+                    <img loading="eager" id="latestPostImg1" src="./assets/nothumb.jpg" class="embed-responsive-item" alt="Latest Post Image 1" width="400" height="300"> 
                 </div>
                 <br>
                 <p id="latestPostDate1">Month DD, YYYY</p>
