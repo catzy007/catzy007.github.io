@@ -1,4 +1,9 @@
-/* Disale horizontal scroll */
+@font-face{
+    font-family:'Glyphicon Halflings';
+    font-display: swap;
+    src:url(./fonts/glyphicons-halflings-regular.woff2);
+}
+/* Disable horizontal scroll */
 html, body {
     overflow-x: hidden;
 }
