@@ -1,7 +1,3 @@
-2017-07-09-How-to-customize-your-steam-profile-with-MMD-Part-4
-2017-07-09-How-to-customize-your-steam-profile-with-MMD-Part-3
-2017-07-08-How-to-customize-your-steam-profile-with-MMD-Part-2
-2017-07-08-How-to-customize-your-steam-profile-with-MMD-Part-1
 2017-08-18-3-Axis-CNC-Machine
 2017-11-25-Making-Your-Own-PC-HDMI-Virtual-Reality-Headset
 2017-12-13-Make-Cluster-Computer-Supercomputer-for-Parallel-Computing
