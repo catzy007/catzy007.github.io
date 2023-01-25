@@ -23,8 +23,8 @@ as usual.
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
-		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2022-03-22-docker-based-software-development-in-windows/code2.png" alt="img">
+		<div class="img-thumbnail">
+			<img class="img-fluid" src="./posts/2022-03-22-docker-based-software-development-in-windows/code2.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -38,8 +38,8 @@ You might need to set up your git credential before doing any actual works.
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
-		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2022-03-22-docker-based-software-development-in-windows/git.png" alt="img">
+		<div class="img-thumbnail">
+			<img class="img-fluid" src="./posts/2022-03-22-docker-based-software-development-in-windows/git.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -58,8 +58,8 @@ Then wait to finish, and your computer will ask for reboot.
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
-		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2022-03-22-docker-based-software-development-in-windows/wsl1.png" alt="img">
+		<div class="img-thumbnail">
+			<img class="img-fluid" src="./posts/2022-03-22-docker-based-software-development-in-windows/wsl1.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -67,8 +67,8 @@ Then wait to finish, and your computer will ask for reboot.
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
-		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2022-03-22-docker-based-software-development-in-windows/wsl2.png" alt="img">
+		<div class="img-thumbnail">
+			<img class="img-fluid" src="./posts/2022-03-22-docker-based-software-development-in-windows/wsl2.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -79,8 +79,8 @@ as usual.
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
-		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2022-03-22-docker-based-software-development-in-windows/wsl3.png" alt="img">
+		<div class="img-thumbnail">
+			<img class="img-fluid" src="./posts/2022-03-22-docker-based-software-development-in-windows/wsl3.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -93,8 +93,8 @@ type a new `Username` and `Password`. Then do an update/upgrade if you need to.
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
-		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2022-03-22-docker-based-software-development-in-windows/wsl4.png" alt="img">
+		<div class="img-thumbnail">
+			<img class="img-fluid" src="./posts/2022-03-22-docker-based-software-development-in-windows/wsl4.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -107,8 +107,8 @@ Download and install as usual.
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
-		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2022-03-22-docker-based-software-development-in-windows/docker1.png" alt="img">
+		<div class="img-thumbnail">
+			<img class="img-fluid" src="./posts/2022-03-22-docker-based-software-development-in-windows/docker1.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -118,8 +118,8 @@ condition. Otherwise, the docker service will not run.
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
-		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2022-03-22-docker-based-software-development-in-windows/docker2.png" alt="img">
+		<div class="img-thumbnail">
+			<img class="img-fluid" src="./posts/2022-03-22-docker-based-software-development-in-windows/docker2.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -133,8 +133,8 @@ If everything works out, great.
 <div class="row">
 	<div class="col-sm-4"></div>
 	<div class="col-sm-4">
-		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2022-03-22-docker-based-software-development-in-windows/test1.png" alt="img">
+		<div class="img-thumbnail">
+			<img class="img-fluid" src="./posts/2022-03-22-docker-based-software-development-in-windows/test1.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-4"></div>
@@ -142,8 +142,8 @@ If everything works out, great.
 <div class="row">
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
-		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2022-03-22-docker-based-software-development-in-windows/test2.png" alt="img">
+		<div class="img-thumbnail">
+			<img class="img-fluid" src="./posts/2022-03-22-docker-based-software-development-in-windows/test2.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-2"></div>

@@ -23,8 +23,8 @@ stuff for 11 USD pretty good deal if you ask me.
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
-		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2022-09-26-my-attempt-to-5ghz-usb-wifi-access-point-part-2/01.jpg" alt="img">
+		<div class="img-thumbnail">
+			<img class="img-fluid" src="./posts/2022-09-26-my-attempt-to-5ghz-usb-wifi-access-point-part-2/01.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -38,8 +38,8 @@ PHY and just like that i get 433Mbps PHY out of my new adapter.
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
-		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2022-09-26-my-attempt-to-5ghz-usb-wifi-access-point-part-2/02.png" alt="img">
+		<div class="img-thumbnail">
+			<img class="img-fluid" src="./posts/2022-09-26-my-attempt-to-5ghz-usb-wifi-access-point-part-2/02.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -53,8 +53,8 @@ correct.
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
-		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2022-09-26-my-attempt-to-5ghz-usb-wifi-access-point-part-2/03.png" alt="img">
+		<div class="img-thumbnail">
+			<img class="img-fluid" src="./posts/2022-09-26-my-attempt-to-5ghz-usb-wifi-access-point-part-2/03.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -89,13 +89,13 @@ and you should get.
 <div class="row">
 	<div class="col-sm-2"></div>
 	<div class="col-sm-4">
-		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2022-09-26-my-attempt-to-5ghz-usb-wifi-access-point-part-2/04.png" alt="img">
+		<div class="img-thumbnail">
+			<img class="img-fluid" src="./posts/2022-09-26-my-attempt-to-5ghz-usb-wifi-access-point-part-2/04.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-4">
-		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2022-09-26-my-attempt-to-5ghz-usb-wifi-access-point-part-2/05.png" alt="img">
+		<div class="img-thumbnail">
+			<img class="img-fluid" src="./posts/2022-09-26-my-attempt-to-5ghz-usb-wifi-access-point-part-2/05.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-2"></div>
@@ -108,8 +108,8 @@ result.
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
-		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2022-09-26-my-attempt-to-5ghz-usb-wifi-access-point-part-2/06.png" alt="img">
+		<div class="img-thumbnail">
+			<img class="img-fluid" src="./posts/2022-09-26-my-attempt-to-5ghz-usb-wifi-access-point-part-2/06.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -146,8 +146,8 @@ controller? How about my other stuff? That's where USB Hub comes in.
 <div class="row">
 	<div class="col-sm-4"></div>
 	<div class="col-sm-4">
-		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2022-09-26-my-attempt-to-5ghz-usb-wifi-access-point-part-2/07.jpg" alt="img">
+		<div class="img-thumbnail">
+			<img class="img-fluid" src="./posts/2022-09-26-my-attempt-to-5ghz-usb-wifi-access-point-part-2/07.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-4"></div>
@@ -159,8 +159,8 @@ plug all of my USB devices to it and this is what i got.
 <div class="row">
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
-		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2022-09-26-my-attempt-to-5ghz-usb-wifi-access-point-part-2/08.jpg" alt="img">
+		<div class="img-thumbnail">
+			<img class="img-fluid" src="./posts/2022-09-26-my-attempt-to-5ghz-usb-wifi-access-point-part-2/08.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-2"></div>
@@ -190,8 +190,8 @@ support under OpenWrt [kmod-rt2x00-usb](https://openwrt.org/packages/pkgdata/kmo
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
-		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2022-09-26-my-attempt-to-5ghz-usb-wifi-access-point-part-2/09.jpg" alt="img">
+		<div class="img-thumbnail">
+			<img class="img-fluid" src="./posts/2022-09-26-my-attempt-to-5ghz-usb-wifi-access-point-part-2/09.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -200,8 +200,8 @@ As usual first is test the absolute limit of what this adapter can do. I plug it
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
-		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2022-09-26-my-attempt-to-5ghz-usb-wifi-access-point-part-2/10.jpg" alt="img">
+		<div class="img-thumbnail">
+			<img class="img-fluid" src="./posts/2022-09-26-my-attempt-to-5ghz-usb-wifi-access-point-part-2/10.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -210,8 +210,8 @@ Next, i plug it into my OpenWrt system, install `kmod-rt2800-usb kmod-rt2x00-usb
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
-		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2022-09-26-my-attempt-to-5ghz-usb-wifi-access-point-part-2/11.jpg" alt="img">
+		<div class="img-thumbnail">
+			<img class="img-fluid" src="./posts/2022-09-26-my-attempt-to-5ghz-usb-wifi-access-point-part-2/11.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -220,8 +220,8 @@ Then i do another iperf testing unfortunately this time i got very dissapointing
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
-		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2022-09-26-my-attempt-to-5ghz-usb-wifi-access-point-part-2/12.jpg" alt="img">
+		<div class="img-thumbnail">
+			<img class="img-fluid" src="./posts/2022-09-26-my-attempt-to-5ghz-usb-wifi-access-point-part-2/12.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>

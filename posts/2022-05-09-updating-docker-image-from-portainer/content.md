@@ -23,8 +23,8 @@ First, log in to your Portainer console and select your Environment.
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
-		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2022-05-09-updating-docker-image-from-portainer/01.png" alt="img">
+		<div class="img-thumbnail">
+			<img class="img-fluid" src="./posts/2022-05-09-updating-docker-image-from-portainer/01.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -35,8 +35,8 @@ you may get away with this, but this post does not cover such scenario.
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
-		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2022-05-09-updating-docker-image-from-portainer/02.png" alt="img">
+		<div class="img-thumbnail">
+			<img class="img-fluid" src="./posts/2022-05-09-updating-docker-image-from-portainer/02.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -49,8 +49,8 @@ your connection speed.
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
-		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2022-05-09-updating-docker-image-from-portainer/03.png" alt="img">
+		<div class="img-thumbnail">
+			<img class="img-fluid" src="./posts/2022-05-09-updating-docker-image-from-portainer/03.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -61,8 +61,8 @@ this is the image you just downloaded, and you can see the old image as `<none>`
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
-		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2022-05-09-updating-docker-image-from-portainer/04.png" alt="img">
+		<div class="img-thumbnail">
+			<img class="img-fluid" src="./posts/2022-05-09-updating-docker-image-from-portainer/04.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -73,8 +73,8 @@ press on `Recreate` button.
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
-		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2022-05-09-updating-docker-image-from-portainer/05.png" alt="img">
+		<div class="img-thumbnail">
+			<img class="img-fluid" src="./posts/2022-05-09-updating-docker-image-from-portainer/05.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -84,8 +84,8 @@ A pop-up will appear and continue by pressing `Recreate` button.
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
-		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2022-05-09-updating-docker-image-from-portainer/06.png" alt="img">
+		<div class="img-thumbnail">
+			<img class="img-fluid" src="./posts/2022-05-09-updating-docker-image-from-portainer/06.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -96,8 +96,8 @@ immediately with all the persistent data intact.
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
-		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2022-05-09-updating-docker-image-from-portainer/07.png" alt="img">
+		<div class="img-thumbnail">
+			<img class="img-fluid" src="./posts/2022-05-09-updating-docker-image-from-portainer/07.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -109,8 +109,8 @@ on the old image followed by pressing `Remove` button.
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
-		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2022-05-09-updating-docker-image-from-portainer/08.png" alt="img">
+		<div class="img-thumbnail">
+			<img class="img-fluid" src="./posts/2022-05-09-updating-docker-image-from-portainer/08.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -124,8 +124,8 @@ lost entire stack because of random error in the middle of update.
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
-		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2022-05-09-updating-docker-image-from-portainer/09.png" alt="img">
+		<div class="img-thumbnail">
+			<img class="img-fluid" src="./posts/2022-05-09-updating-docker-image-from-portainer/09.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>

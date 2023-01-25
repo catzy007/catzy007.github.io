@@ -43,8 +43,8 @@ That was the motherboard. It even come with IO Shield too
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
-        <div class="thumbnail">
-            <img class="img-responsive" src="./posts/2019-05-25-log-building-poor-man-workstation/1.jpg" alt="img">
+        <div class="img-thumbnail">
+            <img class="img-fluid" src="./posts/2019-05-25-log-building-poor-man-workstation/1.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-3"></div>
@@ -68,8 +68,8 @@ Yeah i know not the best PSU but i hope it get job done. After quick plug and te
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
-        <div class="thumbnail">
-            <img class="img-responsive" src="./posts/2019-05-25-log-building-poor-man-workstation/2.jpg" alt="img">
+        <div class="img-thumbnail">
+            <img class="img-fluid" src="./posts/2019-05-25-log-building-poor-man-workstation/2.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-3"></div>
@@ -83,8 +83,8 @@ After bought two stick of RAM and old AMD HSF from work, i'm ready to test this 
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
-        <div class="thumbnail">
-            <img class="img-responsive" src="./posts/2019-05-25-log-building-poor-man-workstation/3.jpg" alt="img">
+        <div class="img-thumbnail">
+            <img class="img-fluid" src="./posts/2019-05-25-log-building-poor-man-workstation/3.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-3"></div>
@@ -92,8 +92,8 @@ After bought two stick of RAM and old AMD HSF from work, i'm ready to test this 
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
-        <div class="thumbnail">
-            <img class="img-responsive" src="./posts/2019-05-25-log-building-poor-man-workstation/4.jpg" alt="img">
+        <div class="img-thumbnail">
+            <img class="img-fluid" src="./posts/2019-05-25-log-building-poor-man-workstation/4.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-3"></div>
@@ -108,8 +108,8 @@ After waiting a week and still didn't get my monthly wage on time, i decide to c
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
-        <div class="thumbnail">
-            <img class="img-responsive" src="./posts/2019-05-25-log-building-poor-man-workstation/5.jpg" alt="img">
+        <div class="img-thumbnail">
+            <img class="img-fluid" src="./posts/2019-05-25-log-building-poor-man-workstation/5.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-3"></div>
@@ -117,8 +117,8 @@ After waiting a week and still didn't get my monthly wage on time, i decide to c
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
-        <div class="thumbnail">
-            <img class="img-responsive" src="./posts/2019-05-25-log-building-poor-man-workstation/6.jpg" alt="img">
+        <div class="img-thumbnail">
+            <img class="img-fluid" src="./posts/2019-05-25-log-building-poor-man-workstation/6.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-3"></div>
@@ -126,8 +126,8 @@ After waiting a week and still didn't get my monthly wage on time, i decide to c
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
-        <div class="thumbnail">
-            <img class="img-responsive" src="./posts/2019-05-25-log-building-poor-man-workstation/7.jpg" alt="img">
+        <div class="img-thumbnail">
+            <img class="img-fluid" src="./posts/2019-05-25-log-building-poor-man-workstation/7.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-3"></div>
@@ -141,8 +141,8 @@ okay the problem is this
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
-        <div class="thumbnail">
-            <img class="img-responsive" src="./posts/2019-05-25-log-building-poor-man-workstation/add1.jpg" alt="img">
+        <div class="img-thumbnail">
+            <img class="img-fluid" src="./posts/2019-05-25-log-building-poor-man-workstation/add1.jpg" alt="img">
 			<a href="https://forums.servethehome.com/index.php?threads/guide-1356-1366-xeon-aftermarket-heatsink-selection-installation.5003/">image source</a>
         </div>
     </div>
@@ -152,8 +152,8 @@ Then i cut the four corner of backplate using handsaw and this what it look like
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
-        <div class="thumbnail">
-            <img class="img-responsive" src="./posts/2019-05-25-log-building-poor-man-workstation/8.jpg" alt="img">
+        <div class="img-thumbnail">
+            <img class="img-fluid" src="./posts/2019-05-25-log-building-poor-man-workstation/8.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-3"></div>
@@ -162,8 +162,8 @@ Finally i can mount the cooler using standar intel push-pin fastener
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
-        <div class="thumbnail">
-            <img class="img-responsive" src="./posts/2019-05-25-log-building-poor-man-workstation/9.jpg" alt="img">
+        <div class="img-thumbnail">
+            <img class="img-fluid" src="./posts/2019-05-25-log-building-poor-man-workstation/9.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-3"></div>
@@ -173,8 +173,8 @@ I think that because the exhaust of second CPU was directed to the first CPU. In
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
-        <div class="thumbnail">
-            <img class="img-responsive" src="./posts/2019-05-25-log-building-poor-man-workstation/10.jpg" alt="img">
+        <div class="img-thumbnail">
+            <img class="img-fluid" src="./posts/2019-05-25-log-building-poor-man-workstation/10.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-3"></div>
@@ -182,8 +182,8 @@ I think that because the exhaust of second CPU was directed to the first CPU. In
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
-        <div class="thumbnail">
-            <img class="img-responsive" src="./posts/2019-05-25-log-building-poor-man-workstation/11.jpg" alt="img">
+        <div class="img-thumbnail">
+            <img class="img-fluid" src="./posts/2019-05-25-log-building-poor-man-workstation/11.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-3"></div>
@@ -196,8 +196,8 @@ The ram itself is very cheap less than 1USD per stick yeah great deal. Maybe som
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
-        <div class="thumbnail">
-            <img class="img-responsive" src="./posts/2019-05-25-log-building-poor-man-workstation/12.jpg" alt="img">
+        <div class="img-thumbnail">
+            <img class="img-fluid" src="./posts/2019-05-25-log-building-poor-man-workstation/12.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-3"></div>
@@ -207,8 +207,8 @@ custom PCB and using arduino + ethernet module to make that but i only had a wee
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
-        <div class="thumbnail">
-            <img class="img-responsive" src="./posts/2019-05-25-log-building-poor-man-workstation/13.jpg" alt="img">
+        <div class="img-thumbnail">
+            <img class="img-fluid" src="./posts/2019-05-25-log-building-poor-man-workstation/13.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-3"></div>
@@ -221,8 +221,8 @@ After getting a random 20USD case from local store, this workstation is 80% fini
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
-        <div class="thumbnail">
-            <img class="img-responsive" src="./posts/2019-05-25-log-building-poor-man-workstation/14.jpg" alt="img">
+        <div class="img-thumbnail">
+            <img class="img-fluid" src="./posts/2019-05-25-log-building-poor-man-workstation/14.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-3"></div>
@@ -236,8 +236,8 @@ I bought three fan and set it in Push-Pull configuration
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
-        <div class="thumbnail">
-            <img class="img-responsive" src="./posts/2019-05-25-log-building-poor-man-workstation/15.jpg" alt="img">
+        <div class="img-thumbnail">
+            <img class="img-fluid" src="./posts/2019-05-25-log-building-poor-man-workstation/15.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-3"></div>
@@ -245,8 +245,8 @@ I bought three fan and set it in Push-Pull configuration
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
-        <div class="thumbnail">
-            <img class="img-responsive" src="./posts/2019-05-25-log-building-poor-man-workstation/16.jpg" alt="img">
+        <div class="img-thumbnail">
+            <img class="img-fluid" src="./posts/2019-05-25-log-building-poor-man-workstation/16.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-3"></div>
@@ -255,8 +255,8 @@ Also last week i'm bulding new remote management system using ESP8266 and relay,
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
-        <div class="thumbnail">
-            <img class="img-responsive" src="./posts/2019-05-25-log-building-poor-man-workstation/17.jpg" alt="img">
+        <div class="img-thumbnail">
+            <img class="img-fluid" src="./posts/2019-05-25-log-building-poor-man-workstation/17.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-3"></div>
@@ -269,8 +269,8 @@ It's not that pretty but it works really well, I just cut the front case with dr
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
-        <div class="thumbnail">
-            <img class="img-responsive" src="./posts/2019-05-25-log-building-poor-man-workstation/18.jpg" alt="img">
+        <div class="img-thumbnail">
+            <img class="img-fluid" src="./posts/2019-05-25-log-building-poor-man-workstation/18.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-3"></div>
@@ -279,8 +279,8 @@ And finally i got my graphic card. It's RX460 4GB from Sapphire. Yeah it wasn't 
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
-        <div class="thumbnail">
-            <img class="img-responsive" src="./posts/2019-05-25-log-building-poor-man-workstation/19.jpg" alt="img">
+        <div class="img-thumbnail">
+            <img class="img-fluid" src="./posts/2019-05-25-log-building-poor-man-workstation/19.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-3"></div>

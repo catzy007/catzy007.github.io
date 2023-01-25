@@ -36,8 +36,8 @@ Next, go to [webcamoid website](https://webcamoid.github.io/) and download the a
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
-		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2020-05-12-virtual-webcam-linux/1.png" alt="img">
+		<div class="img-thumbnail">
+			<img class="img-fluid" src="./posts/2020-05-12-virtual-webcam-linux/1.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -56,8 +56,8 @@ Then go to `Preferences` (thing with gear icon) and create new `Virtual Camera`
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
-		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2020-05-12-virtual-webcam-linux/2.png" alt="img">
+		<div class="img-thumbnail">
+			<img class="img-fluid" src="./posts/2020-05-12-virtual-webcam-linux/2.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -66,8 +66,8 @@ Next, go to `Configure Sources` and press the `Big + Green Button` and add your 
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
-		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2020-05-12-virtual-webcam-linux/3.png" alt="img">
+		<div class="img-thumbnail">
+			<img class="img-fluid" src="./posts/2020-05-12-virtual-webcam-linux/3.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -75,8 +75,8 @@ Next, go to `Configure Sources` and press the `Big + Green Button` and add your 
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
-		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2020-05-12-virtual-webcam-linux/4.png" alt="img">
+		<div class="img-thumbnail">
+			<img class="img-fluid" src="./posts/2020-05-12-virtual-webcam-linux/4.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -85,8 +85,8 @@ Then select your media in `Left Panel`
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
-		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2020-05-12-virtual-webcam-linux/5.png" alt="img">
+		<div class="img-thumbnail">
+			<img class="img-fluid" src="./posts/2020-05-12-virtual-webcam-linux/5.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -100,8 +100,8 @@ And go to config, and change camera source to virtual camera
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
-		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2020-05-12-virtual-webcam-linux/6.png" alt="img">
+		<div class="img-thumbnail">
+			<img class="img-fluid" src="./posts/2020-05-12-virtual-webcam-linux/6.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -109,8 +109,8 @@ And go to config, and change camera source to virtual camera
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
-		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2020-05-12-virtual-webcam-linux/7.png" alt="img">
+		<div class="img-thumbnail">
+			<img class="img-fluid" src="./posts/2020-05-12-virtual-webcam-linux/7.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>

@@ -34,8 +34,8 @@ How to do a disk defragmentation
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
-		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2021-05-11-dealing-with-mechanical-hard-drive-in-2021/1.png" alt="img">
+		<div class="img-thumbnail">
+			<img class="img-fluid" src="./posts/2021-05-11-dealing-with-mechanical-hard-drive-in-2021/1.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -45,8 +45,8 @@ How to do a disk defragmentation
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
-		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2021-05-11-dealing-with-mechanical-hard-drive-in-2021/2.png" alt="img">
+		<div class="img-thumbnail">
+			<img class="img-fluid" src="./posts/2021-05-11-dealing-with-mechanical-hard-drive-in-2021/2.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -61,8 +61,8 @@ your files might be corrupted.
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
-		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2021-05-11-dealing-with-mechanical-hard-drive-in-2021/3.png" alt="img">
+		<div class="img-thumbnail">
+			<img class="img-fluid" src="./posts/2021-05-11-dealing-with-mechanical-hard-drive-in-2021/3.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -73,8 +73,8 @@ leave it as is until the process is finished.
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
-		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2021-05-11-dealing-with-mechanical-hard-drive-in-2021/4.png" alt="img">
+		<div class="img-thumbnail">
+			<img class="img-fluid" src="./posts/2021-05-11-dealing-with-mechanical-hard-drive-in-2021/4.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -95,8 +95,8 @@ that, you can try to Check disk.
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
-		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2021-05-11-dealing-with-mechanical-hard-drive-in-2021/1.png" alt="img">
+		<div class="img-thumbnail">
+			<img class="img-fluid" src="./posts/2021-05-11-dealing-with-mechanical-hard-drive-in-2021/1.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -106,8 +106,8 @@ that, you can try to Check disk.
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
-		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2021-05-11-dealing-with-mechanical-hard-drive-in-2021/6.png" alt="img">
+		<div class="img-thumbnail">
+			<img class="img-fluid" src="./posts/2021-05-11-dealing-with-mechanical-hard-drive-in-2021/6.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -119,8 +119,8 @@ that, you can try to Check disk.
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
-		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2021-05-11-dealing-with-mechanical-hard-drive-in-2021/7.png" alt="img">
+		<div class="img-thumbnail">
+			<img class="img-fluid" src="./posts/2021-05-11-dealing-with-mechanical-hard-drive-in-2021/7.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -139,8 +139,8 @@ This method require you to manually type a command and probably restart your PC 
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
-		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2021-05-11-dealing-with-mechanical-hard-drive-in-2021/8.png" alt="img">
+		<div class="img-thumbnail">
+			<img class="img-fluid" src="./posts/2021-05-11-dealing-with-mechanical-hard-drive-in-2021/8.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -150,8 +150,8 @@ This method require you to manually type a command and probably restart your PC 
 <div class="row">
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
-		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2021-05-11-dealing-with-mechanical-hard-drive-in-2021/9.png" alt="img">
+		<div class="img-thumbnail">
+			<img class="img-fluid" src="./posts/2021-05-11-dealing-with-mechanical-hard-drive-in-2021/9.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-2"></div>

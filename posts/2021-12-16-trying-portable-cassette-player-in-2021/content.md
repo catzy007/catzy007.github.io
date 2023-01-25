@@ -6,8 +6,8 @@ you'll find something like this.
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
-		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2021-12-16-trying-portable-cassette-player-in-2021/01.jpg" alt="img">
+		<div class="img-thumbnail">
+			<img class="img-fluid" src="./posts/2021-12-16-trying-portable-cassette-player-in-2021/01.jpg" alt="img">
             <a href="https://commons.wikimedia.org/wiki/File:SONY_WMD-DT1_09.jpg">commons.wikimedia.org</a>
 		</div>
 	</div>
@@ -19,8 +19,8 @@ storage media called `Cassette Tape` it should look like this.
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
-		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2021-12-16-trying-portable-cassette-player-in-2021/02.jpg" alt="img">
+		<div class="img-thumbnail">
+			<img class="img-fluid" src="./posts/2021-12-16-trying-portable-cassette-player-in-2021/02.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -41,8 +41,8 @@ is not that bad unless it is.
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
-		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2021-12-16-trying-portable-cassette-player-in-2021/03.jpg" alt="img">
+		<div class="img-thumbnail">
+			<img class="img-fluid" src="./posts/2021-12-16-trying-portable-cassette-player-in-2021/03.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -66,8 +66,8 @@ But it looks amazing, manual works anywhere it seems so `Cyber-punk` for me.
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
-		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2021-12-16-trying-portable-cassette-player-in-2021/04.jpg" alt="img">
+		<div class="img-thumbnail">
+			<img class="img-fluid" src="./posts/2021-12-16-trying-portable-cassette-player-in-2021/04.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -77,8 +77,8 @@ similar to RQ-SX65F model. It advertised as not working but no battery leak this
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
-		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2021-12-16-trying-portable-cassette-player-in-2021/05.jpg" alt="img">
+		<div class="img-thumbnail">
+			<img class="img-fluid" src="./posts/2021-12-16-trying-portable-cassette-player-in-2021/05.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -93,8 +93,8 @@ board before cleaning.
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
-		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2021-12-16-trying-portable-cassette-player-in-2021/06.jpg" alt="img">
+		<div class="img-thumbnail">
+			<img class="img-fluid" src="./posts/2021-12-16-trying-portable-cassette-player-in-2021/06.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -102,8 +102,8 @@ board before cleaning.
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
-		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2021-12-16-trying-portable-cassette-player-in-2021/07.jpg" alt="img">
+		<div class="img-thumbnail">
+			<img class="img-fluid" src="./posts/2021-12-16-trying-portable-cassette-player-in-2021/07.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -114,8 +114,8 @@ sleek, a bit thick for my taste, but tape and radio works and sound good.
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
-		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2021-12-16-trying-portable-cassette-player-in-2021/08.jpg" alt="img">
+		<div class="img-thumbnail">
+			<img class="img-fluid" src="./posts/2021-12-16-trying-portable-cassette-player-in-2021/08.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -127,8 +127,8 @@ little. Can't seem to find it easily. At least not in my local area. Here is the
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
-		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2021-12-16-trying-portable-cassette-player-in-2021/09.jpg" alt="img">
+		<div class="img-thumbnail">
+			<img class="img-fluid" src="./posts/2021-12-16-trying-portable-cassette-player-in-2021/09.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>

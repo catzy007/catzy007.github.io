@@ -67,8 +67,8 @@ Then open VMM and you'll see macOS-Simple-KVM on the list.
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
-        <div class="thumbnail">
-            <img class="img-responsive" src="./posts/2019-09-13-running-macos-on-any-linux-machine/1.jpg" alt="img">
+        <div class="img-thumbnail">
+            <img class="img-fluid" src="./posts/2019-09-13-running-macos-on-any-linux-machine/1.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-3"></div>
@@ -77,8 +77,8 @@ Next click `macOS-Simple-KVM` and click `Open`. Then click `Add Hardware` on bot
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
-        <div class="thumbnail">
-            <img class="img-responsive" src="./posts/2019-09-13-running-macos-on-any-linux-machine/2.jpg" alt="img">
+        <div class="img-thumbnail">
+            <img class="img-fluid" src="./posts/2019-09-13-running-macos-on-any-linux-machine/2.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-3"></div>
@@ -87,8 +87,8 @@ Select `Storage` and add the amount of disk you want to have
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
-        <div class="thumbnail">
-            <img class="img-responsive" src="./posts/2019-09-13-running-macos-on-any-linux-machine/3.jpg" alt="img">
+        <div class="img-thumbnail">
+            <img class="img-fluid" src="./posts/2019-09-13-running-macos-on-any-linux-machine/3.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-3"></div>
@@ -97,8 +97,8 @@ To run it press the `Play Button` then press `Computer Icon` on the left.
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
-        <div class="thumbnail">
-            <img class="img-responsive" src="./posts/2019-09-13-running-macos-on-any-linux-machine/4.jpg" alt="img">
+        <div class="img-thumbnail">
+            <img class="img-fluid" src="./posts/2019-09-13-running-macos-on-any-linux-machine/4.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-3"></div>
@@ -107,8 +107,8 @@ In the clover boot menu, press enter and the system will boot into `MacOS Utilit
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
-        <div class="thumbnail">
-            <img class="img-responsive" src="./posts/2019-09-13-running-macos-on-any-linux-machine/5.jpg" alt="img">
+        <div class="img-thumbnail">
+            <img class="img-fluid" src="./posts/2019-09-13-running-macos-on-any-linux-machine/5.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-3"></div>
@@ -117,8 +117,8 @@ First select `Disk Utility` then erase partition you want to use
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
-        <div class="thumbnail">
-            <img class="img-responsive" src="./posts/2019-09-13-running-macos-on-any-linux-machine/6.jpg" alt="img">
+        <div class="img-thumbnail">
+            <img class="img-fluid" src="./posts/2019-09-13-running-macos-on-any-linux-machine/6.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-3"></div>
@@ -128,8 +128,8 @@ This will take some time because the installer is downloading some files too.
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
-        <div class="thumbnail">
-            <img class="img-responsive" src="./posts/2019-09-13-running-macos-on-any-linux-machine/7.jpg" alt="img">
+        <div class="img-thumbnail">
+            <img class="img-fluid" src="./posts/2019-09-13-running-macos-on-any-linux-machine/7.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-3"></div>
@@ -138,8 +138,8 @@ After that you'll be  greeted with MacOS desktop
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
-        <div class="thumbnail">
-            <img class="img-responsive" src="./posts/2019-09-13-running-macos-on-any-linux-machine/8.jpg" alt="img">
+        <div class="img-thumbnail">
+            <img class="img-fluid" src="./posts/2019-09-13-running-macos-on-any-linux-machine/8.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-3"></div>
@@ -148,8 +148,8 @@ Then power off the MacOS and add more CPU, RAM, add PCIe Passtrough, etc
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
-        <div class="thumbnail">
-            <img class="img-responsive" src="./posts/2019-09-13-running-macos-on-any-linux-machine/9.jpg" alt="img">
+        <div class="img-thumbnail">
+            <img class="img-fluid" src="./posts/2019-09-13-running-macos-on-any-linux-machine/9.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-3"></div>
@@ -157,8 +157,8 @@ Then power off the MacOS and add more CPU, RAM, add PCIe Passtrough, etc
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
-        <div class="thumbnail">
-            <img class="img-responsive" src="./posts/2019-09-13-running-macos-on-any-linux-machine/10.jpg" alt="img">
+        <div class="img-thumbnail">
+            <img class="img-fluid" src="./posts/2019-09-13-running-macos-on-any-linux-machine/10.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-3"></div>
@@ -170,8 +170,8 @@ check `Enable Slow Keys` then go to `Options` and slide to low value
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
-        <div class="thumbnail">
-            <img class="img-responsive" src="./posts/2019-09-13-running-macos-on-any-linux-machine/11.jpg" alt="img">
+        <div class="img-thumbnail">
+            <img class="img-fluid" src="./posts/2019-09-13-running-macos-on-any-linux-machine/11.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-3"></div>
@@ -180,8 +180,8 @@ Next get [Karabiner](https://pqrs.org/osx/karabiner/) and disable the faulty key
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
-        <div class="thumbnail">
-            <img class="img-responsive" src="./posts/2019-09-13-running-macos-on-any-linux-machine/13.jpg" alt="img">
+        <div class="img-thumbnail">
+            <img class="img-fluid" src="./posts/2019-09-13-running-macos-on-any-linux-machine/13.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-3"></div>
@@ -194,8 +194,8 @@ Then if you want the system run automatically go to `Boot Options > Check on Sta
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
-        <div class="thumbnail">
-            <img class="img-responsive" src="./posts/2019-09-13-running-macos-on-any-linux-machine/12.jpg" alt="img">
+        <div class="img-thumbnail">
+            <img class="img-fluid" src="./posts/2019-09-13-running-macos-on-any-linux-machine/12.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-3"></div>

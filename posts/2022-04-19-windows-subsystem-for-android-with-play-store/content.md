@@ -13,8 +13,8 @@ First, install and enable WSL. To do this, open start menu then type and open `T
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
-		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2022-04-19-windows-subsystem-for-android-with-play-store/01.png" alt="img">
+		<div class="img-thumbnail">
+			<img class="img-fluid" src="./posts/2022-04-19-windows-subsystem-for-android-with-play-store/01.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -25,8 +25,8 @@ Here I'm using Ubuntu 20.04. For detailed information about this process, check 
 <div class="row">
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
-		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2022-04-19-windows-subsystem-for-android-with-play-store/02.png" alt="img">
+		<div class="img-thumbnail">
+			<img class="img-fluid" src="./posts/2022-04-19-windows-subsystem-for-android-with-play-store/02.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-2"></div>
@@ -43,8 +43,8 @@ cd WSAGAScript
 <div class="row">
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
-		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2022-04-19-windows-subsystem-for-android-with-play-store/05.png" alt="img">
+		<div class="img-thumbnail">
+			<img class="img-fluid" src="./posts/2022-04-19-windows-subsystem-for-android-with-play-store/05.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-2"></div>
@@ -57,8 +57,8 @@ it. In my case, i also need a `Microsoft.UI.Xaml` file don't forget to choose x6
 <div class="row">
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
-		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2022-04-19-windows-subsystem-for-android-with-play-store/03.png" alt="img">
+		<div class="img-thumbnail">
+			<img class="img-fluid" src="./posts/2022-04-19-windows-subsystem-for-android-with-play-store/03.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-2"></div>
@@ -70,8 +70,8 @@ and extract file with x64 type. At the time of writing the file is `WsaPackage_2
 <div class="row">
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
-		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2022-04-19-windows-subsystem-for-android-with-play-store/04.png" alt="img">
+		<div class="img-thumbnail">
+			<img class="img-fluid" src="./posts/2022-04-19-windows-subsystem-for-android-with-play-store/04.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-2"></div>
@@ -109,8 +109,8 @@ if nothing goes wrong, you'll have WSA with Google Play installed.
 <div class="row">
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
-		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2022-04-19-windows-subsystem-for-android-with-play-store/06.png" alt="img">
+		<div class="img-thumbnail">
+			<img class="img-fluid" src="./posts/2022-04-19-windows-subsystem-for-android-with-play-store/06.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-2"></div>
@@ -121,8 +121,8 @@ use the same method to install other required files.
 <div class="row">
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
-		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2022-04-19-windows-subsystem-for-android-with-play-store/07.png" alt="img">
+		<div class="img-thumbnail">
+			<img class="img-fluid" src="./posts/2022-04-19-windows-subsystem-for-android-with-play-store/07.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-2"></div>

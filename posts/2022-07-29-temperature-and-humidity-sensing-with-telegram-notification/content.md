@@ -165,8 +165,8 @@ And you should get something like this
 <div class="row">
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
-		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2022-07-29-temperature-and-humidity-sensing-with-telegram-notification/01.png" alt="img">
+		<div class="img-thumbnail">
+			<img class="img-fluid" src="./posts/2022-07-29-temperature-and-humidity-sensing-with-telegram-notification/01.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-2"></div>

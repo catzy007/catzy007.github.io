@@ -23,8 +23,8 @@ First, go to the BIOS settings and enable VT-D or AMD-Vi
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
-        <div class="thumbnail">
-            <img class="img-responsive" src="./posts/2019-11-25-my-journey-to-pcie-or-vga-passtrough-in-kvm/001.jpg" alt="img">
+        <div class="img-thumbnail">
+            <img class="img-fluid" src="./posts/2019-11-25-my-journey-to-pcie-or-vga-passtrough-in-kvm/001.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-3"></div>
@@ -33,8 +33,8 @@ If your motherboard support SR-IOV, enable it too
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
-        <div class="thumbnail">
-            <img class="img-responsive" src="./posts/2019-11-25-my-journey-to-pcie-or-vga-passtrough-in-kvm/002.jpg" alt="img">
+        <div class="img-thumbnail">
+            <img class="img-fluid" src="./posts/2019-11-25-my-journey-to-pcie-or-vga-passtrough-in-kvm/002.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-3"></div>
@@ -202,8 +202,8 @@ Then create simple and quick VM using `Virtual Machine Manager`
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
-        <div class="thumbnail">
-            <img class="img-responsive" src="./posts/2019-11-25-my-journey-to-pcie-or-vga-passtrough-in-kvm/01.jpg" alt="img">
+        <div class="img-thumbnail">
+            <img class="img-fluid" src="./posts/2019-11-25-my-journey-to-pcie-or-vga-passtrough-in-kvm/01.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-3"></div>
@@ -211,8 +211,8 @@ Then create simple and quick VM using `Virtual Machine Manager`
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
-        <div class="thumbnail">
-            <img class="img-responsive" src="./posts/2019-11-25-my-journey-to-pcie-or-vga-passtrough-in-kvm/02.jpg" alt="img">
+        <div class="img-thumbnail">
+            <img class="img-fluid" src="./posts/2019-11-25-my-journey-to-pcie-or-vga-passtrough-in-kvm/02.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-3"></div>
@@ -220,8 +220,8 @@ Then create simple and quick VM using `Virtual Machine Manager`
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
-        <div class="thumbnail">
-            <img class="img-responsive" src="./posts/2019-11-25-my-journey-to-pcie-or-vga-passtrough-in-kvm/03.jpg" alt="img">
+        <div class="img-thumbnail">
+            <img class="img-fluid" src="./posts/2019-11-25-my-journey-to-pcie-or-vga-passtrough-in-kvm/03.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-3"></div>
@@ -229,8 +229,8 @@ Then create simple and quick VM using `Virtual Machine Manager`
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
-        <div class="thumbnail">
-            <img class="img-responsive" src="./posts/2019-11-25-my-journey-to-pcie-or-vga-passtrough-in-kvm/04.jpg" alt="img">
+        <div class="img-thumbnail">
+            <img class="img-fluid" src="./posts/2019-11-25-my-journey-to-pcie-or-vga-passtrough-in-kvm/04.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-3"></div>
@@ -238,8 +238,8 @@ Then create simple and quick VM using `Virtual Machine Manager`
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
-        <div class="thumbnail">
-            <img class="img-responsive" src="./posts/2019-11-25-my-journey-to-pcie-or-vga-passtrough-in-kvm/05.jpg" alt="img">
+        <div class="img-thumbnail">
+            <img class="img-fluid" src="./posts/2019-11-25-my-journey-to-pcie-or-vga-passtrough-in-kvm/05.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-3"></div>
@@ -248,8 +248,8 @@ Don't forget to check `Customize configuration before install`
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
-        <div class="thumbnail">
-            <img class="img-responsive" src="./posts/2019-11-25-my-journey-to-pcie-or-vga-passtrough-in-kvm/06.jpg" alt="img">
+        <div class="img-thumbnail">
+            <img class="img-fluid" src="./posts/2019-11-25-my-journey-to-pcie-or-vga-passtrough-in-kvm/06.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-3"></div>
@@ -257,8 +257,8 @@ Don't forget to check `Customize configuration before install`
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
-        <div class="thumbnail">
-            <img class="img-responsive" src="./posts/2019-11-25-my-journey-to-pcie-or-vga-passtrough-in-kvm/07.jpg" alt="img">
+        <div class="img-thumbnail">
+            <img class="img-fluid" src="./posts/2019-11-25-my-journey-to-pcie-or-vga-passtrough-in-kvm/07.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-3"></div>
@@ -267,8 +267,8 @@ Here i'm using Q35 Chipset and regular BIOS as my setup. You can combination of 
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
-        <div class="thumbnail">
-            <img class="img-responsive" src="./posts/2019-11-25-my-journey-to-pcie-or-vga-passtrough-in-kvm/08.jpg" alt="img">
+        <div class="img-thumbnail">
+            <img class="img-fluid" src="./posts/2019-11-25-my-journey-to-pcie-or-vga-passtrough-in-kvm/08.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-3"></div>
@@ -277,8 +277,8 @@ Then go to `CPUs tab` and configure as you need.
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
-        <div class="thumbnail">
-            <img class="img-responsive" src="./posts/2019-11-25-my-journey-to-pcie-or-vga-passtrough-in-kvm/09.jpg" alt="img">
+        <div class="img-thumbnail">
+            <img class="img-fluid" src="./posts/2019-11-25-my-journey-to-pcie-or-vga-passtrough-in-kvm/09.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-3"></div>
@@ -291,8 +291,8 @@ After Windows installation finished, then shutdown the VM and add a new hardware
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
-        <div class="thumbnail">
-            <img class="img-responsive" src="./posts/2019-11-25-my-journey-to-pcie-or-vga-passtrough-in-kvm/10.jpg" alt="img">
+        <div class="img-thumbnail">
+            <img class="img-fluid" src="./posts/2019-11-25-my-journey-to-pcie-or-vga-passtrough-in-kvm/10.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-3"></div>
@@ -301,8 +301,8 @@ Then boot your VM and install the necessary drivers and hope that your PCI devic
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
-        <div class="thumbnail">
-            <img class="img-responsive" src="./posts/2019-11-25-my-journey-to-pcie-or-vga-passtrough-in-kvm/11.jpg" alt="img">
+        <div class="img-thumbnail">
+            <img class="img-fluid" src="./posts/2019-11-25-my-journey-to-pcie-or-vga-passtrough-in-kvm/11.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-3"></div>

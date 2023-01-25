@@ -19,8 +19,8 @@ install it in my laptop but the installation process is similar.
     <div class="row">
         <div class="col-sm-3"></div>
         <div class="col-sm-6">
-            <div class="thumbnail">
-                <img class="img-responsive" src="./posts/2020-02-06-block-internet-advertisements-using-pi-hole/1.png" alt="img">
+            <div class="img-thumbnail">
+                <img class="img-fluid" src="./posts/2020-02-06-block-internet-advertisements-using-pi-hole/1.png" alt="img">
             </div>
         </div>
         <div class="col-sm-3"></div>
@@ -29,8 +29,8 @@ install it in my laptop but the installation process is similar.
     <div class="row">
         <div class="col-sm-3"></div>
         <div class="col-sm-6">
-            <div class="thumbnail">
-                <img class="img-responsive" src="./posts/2020-02-06-block-internet-advertisements-using-pi-hole/2.png" alt="img">
+            <div class="img-thumbnail">
+                <img class="img-fluid" src="./posts/2020-02-06-block-internet-advertisements-using-pi-hole/2.png" alt="img">
             </div>
         </div>
         <div class="col-sm-3"></div>
@@ -39,8 +39,8 @@ install it in my laptop but the installation process is similar.
     <div class="row">
         <div class="col-sm-3"></div>
         <div class="col-sm-6">
-            <div class="thumbnail">
-                <img class="img-responsive" src="./posts/2020-02-06-block-internet-advertisements-using-pi-hole/3.png" alt="img">
+            <div class="img-thumbnail">
+                <img class="img-fluid" src="./posts/2020-02-06-block-internet-advertisements-using-pi-hole/3.png" alt="img">
             </div>
         </div>
         <div class="col-sm-3"></div>
@@ -49,8 +49,8 @@ install it in my laptop but the installation process is similar.
     <div class="row">
         <div class="col-sm-3"></div>
         <div class="col-sm-6">
-            <div class="thumbnail">
-                <img class="img-responsive" src="./posts/2020-02-06-block-internet-advertisements-using-pi-hole/4.png" alt="img">
+            <div class="img-thumbnail">
+                <img class="img-fluid" src="./posts/2020-02-06-block-internet-advertisements-using-pi-hole/4.png" alt="img">
             </div>
         </div>
         <div class="col-sm-3"></div>
@@ -59,8 +59,8 @@ install it in my laptop but the installation process is similar.
     <div class="row">
         <div class="col-sm-3"></div>
         <div class="col-sm-6">
-            <div class="thumbnail">
-                <img class="img-responsive" src="./posts/2020-02-06-block-internet-advertisements-using-pi-hole/5.png" alt="img">
+            <div class="img-thumbnail">
+                <img class="img-fluid" src="./posts/2020-02-06-block-internet-advertisements-using-pi-hole/5.png" alt="img">
             </div>
         </div>
         <div class="col-sm-3"></div>
@@ -70,8 +70,8 @@ install it in my laptop but the installation process is similar.
     <div class="row">
         <div class="col-sm-3"></div>
         <div class="col-sm-6">
-            <div class="thumbnail">
-                <img class="img-responsive" src="./posts/2020-02-06-block-internet-advertisements-using-pi-hole/6.png" alt="img">
+            <div class="img-thumbnail">
+                <img class="img-fluid" src="./posts/2020-02-06-block-internet-advertisements-using-pi-hole/6.png" alt="img">
             </div>
         </div>
         <div class="col-sm-3"></div>
@@ -80,8 +80,8 @@ install it in my laptop but the installation process is similar.
     <div class="row">
         <div class="col-sm-3"></div>
         <div class="col-sm-6">
-            <div class="thumbnail">
-                <img class="img-responsive" src="./posts/2020-02-06-block-internet-advertisements-using-pi-hole/7.png" alt="img">
+            <div class="img-thumbnail">
+                <img class="img-fluid" src="./posts/2020-02-06-block-internet-advertisements-using-pi-hole/7.png" alt="img">
             </div>
         </div>
         <div class="col-sm-3"></div>
