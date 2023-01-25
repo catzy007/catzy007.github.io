@@ -13,25 +13,7 @@
     <loc>https://catzy007.github.io/loader.html?pages=about</loc>
   </url>
   <url>
-    <loc>https://catzy007.github.io/loader.html?post=2017-06-01-random-ping</loc>
-  </url>
-  <url>
-    <loc>https://catzy007.github.io/loader.html?post=2017-07-09-how-to-customize-your-steam-profile-with-mmd-part-4</loc>
-  </url>
-  <url>
-    <loc>https://catzy007.github.io/loader.html?post=2017-07-09-how-to-customize-your-steam-profile-with-mmd-part-3</loc>
-  </url>
-  <url>
-    <loc>https://catzy007.github.io/loader.html?post=2017-07-08-how-to-customize-your-steam-profile-with-mmd-part-2</loc>
-  </url>
-  <url>
-    <loc>https://catzy007.github.io/loader.html?post=2017-07-08-how-to-customize-your-steam-profile-with-mmd-part-1</loc>
-  </url>
-  <url>
     <loc>https://catzy007.github.io/loader.html?post=2017-08-18-3-axis-cnc-machine</loc>
-  </url>
-  <url>
-    <loc>https://catzy007.github.io/loader.html?post=2017-11-01-random-ping-linux</loc>
   </url>
   <url>
     <loc>https://catzy007.github.io/loader.html?post=2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset</loc>
@@ -47,27 +29,6 @@
   </url>
   <url>
     <loc>https://catzy007.github.io/loader.html?post=2018-07-13-repair-grub-after-installing-windows</loc>
-  </url>
-  <url>
-    <loc>https://catzy007.github.io/loader.html?post=2018-09-14-dasar-pemrograman-c-part7-array</loc>
-  </url>
-  <url>
-    <loc>https://catzy007.github.io/loader.html?post=2018-09-14-dasar-pemrograman-c-part6-perulangan</loc>
-  </url>
-  <url>
-    <loc>https://catzy007.github.io/loader.html?post=2018-09-14-dasar-pemrograman-c-part5-nested-if</loc>
-  </url>
-  <url>
-    <loc>https://catzy007.github.io/loader.html?post=2018-06-22-dasar-pemrograman-c-part4-if-else-switch</loc>
-  </url>
-  <url>
-    <loc>https://catzy007.github.io/loader.html?post=2018-04-24-dasar-pemrograman-c-part3-input-dan-operator</loc>
-  </url>
-  <url>
-    <loc>https://catzy007.github.io/loader.html?post=2018-03-10-dasar-pemrograman-c-part2-tipe-data</loc>
-  </url>
-  <url>
-    <loc>https://catzy007.github.io/loader.html?post=2018-09-14-dasar-pemrograman-c-part1-the-beginning</loc>
   </url>
   <url>
     <loc>https://catzy007.github.io/loader.html?post=2018-09-21-making-parallel-computing-program-using-mpi-and-c</loc>
@@ -197,5 +158,20 @@
   </url>
   <url>
     <loc>https://catzy007.github.io/loader.html?post=2022-08-16-mechanics-behind-virtual-youtuber</loc>
+  </url>
+  <url>
+    <loc>https://catzy007.github.io/loader.html?post=2022-09-20-Custom-Display-Scaling-in-Wayland-Ubuntu-22-04</loc>
+  </url>
+  <url>
+    <loc>https://catzy007.github.io/loader.html?post=2022-09-26-My-Attempt-to-5GHz-USB-WIFI-Access-Point-Part-2</loc>
+  </url>
+  <url>
+    <loc>https://catzy007.github.io/loader.html?post=2022-11-10-Secure-Android-Development-With-Local-Certificate-Authority-CA</loc>
+  </url>
+  <url>
+    <loc>https://catzy007.github.io/loader.html?post=2022-11-24-My-Journey-To-Stable-Diffusion</loc>
+  </url>
+  <url>
+    <loc>https://catzy007.github.io/loader.html?post=2022-12-01-Motion-Capture-at-Home</loc>
   </url>
 </urlset>
