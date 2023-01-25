@@ -59,19 +59,19 @@
     <div id="stevia-desktop" class="container stevia-container-searchfeat">
         <div class="row row-eq-height">
             <div class="col-md-8">
-                <div id="featuredPostCard" class="card stevia-featured-card stevia-hidden" onclick="location.href='#'">
+                <a id="featuredPostCard" class="card stevia-featured-card stevia-hidden" href="#">
                     <div class="ratio ratio-4x3">
-                        <img loading="eager" id="featuredPostImg" class="card-img-top" src="./assets/nothumb.jpg" alt="featuredPostImg"> 
+                        <img loading="eager" id="featuredPostImg" class="img-fluid card-img-top" src="./assets/nothumb.jpg" alt="featuredPostImg"> 
                     </div>
                     <div class="card-body">
                         <p id="featuredPostDate">Month DD, YYYY</p>
                         <h1 id="featuredPostTitle" class="display-5">Featured post title</h1>
                     </div>
-                </div>
+                </a>
             </div>
             <div class="col-md-4">
                 <div class="input-group mb-3 stevia-container-search">
-                    <input id="searchInput" type="text" class="form-control" placeholder="Search..." aria-label="Search.." aria-describedby="searchBtn1" onkeydown="searchKeypressHandler(event)">
+                    <input id="searchInput" type="text" class="form-control" placeholder="Search.." aria-label="Search.." aria-describedby="searchBtn1" onkeydown="searchKeypressHandler(event)">
                     <button class="btn" type="button" id="searchBtn1" aria-label="searchBtn1" onclick="startSearch();">
                         <span class="bi-search stevia-color"></span>
                     </button>
@@ -89,7 +89,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="input-group mb-3 stevia-container-search">
-                    <input id="searchInputM" type="text" class="form-control" placeholder="Search..." aria-label="Search.." aria-describedby="searchBtn2" onkeydown="searchKeypressHandler(event)">
+                    <input id="searchInputM" type="text" class="form-control" placeholder="Search.." aria-label="Search.." aria-describedby="searchBtn2" onkeydown="searchKeypressHandler(event)">
                     <button class="btn" type="button" id="searchBtn2" aria-label="searchBtn2" onclick="startSearch();">
                         <span class="bi-search stevia-color"></span>
                     </button>
@@ -98,7 +98,7 @@
         </div>
         <div class="row">
             <div class="col-md-12">
-                <div id="featuredPostCardM" class="card stevia-featured-card stevia-hidden" onclick="location.href='#'">
+                <a id="featuredPostCardM" class="card stevia-featured-card stevia-hidden" href="#">
                     <div class="ratio ratio-4x3">
                         <img loading="eager" id="featuredPostImgM" class="card-img-top" src="./assets/nothumb.jpg" alt="featuredPostImgM"> 
                     </div>
@@ -106,7 +106,7 @@
                         <p id="featuredPostDateM">Month DD, YYYY</p>
                         <h1 id="featuredPostTitleM" class="display-4">Featured post title</h1>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
     </div>
@@ -125,7 +125,7 @@
             </div>
             <div class="col-md-4 d-flex align-items-stretch">
                 <a id="latestPostCard2" class="card stevia-post-card stevia-hidden" href="#">
-                    <img loading="eager" id="latestPostImg2" class="card-img-top" src="./assets/nothumb.jpg" alt="LatestPostImage2"> 
+                    <img loading="eager" id="latestPostImg2" class="img-fluid card-img-top" src="./assets/nothumb.jpg" alt="LatestPostImage2" width="400" height="300"> 
                     <div class="card-body d-flex flex-column">
                         <p id="latestPostDate2">Month DD, YYYY</p>
                         <p id="latestPostTitle2">Featured post title</p>
