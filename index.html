@@ -10,11 +10,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <meta name="google-site-verification" content="8HE49KisV6Jh4apPCDYCYzaG__PI6fSCQyfmBW3aR-8"/>
     <link rel="icon" href='./assets/favicon.png' type="image/x-icon"/>
-
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./font/bootstrap-icons.css">
     <link rel="stylesheet" href="./css/stevia-style.css"/>
-
     <script src="./js/website-info.js"></script>
     <script src="./js/main-engine/xhr-fetcher.js"></script>
     <script src="./js/main-engine/index-parser.js"></script>
@@ -28,227 +26,227 @@
     <script src="./js/homepage-engine/homepage-latest.js"></script>
 </head>
 <body>
-<div class="container stevia-container-header">
-    <nav class="navbar navbar-expand-lg stevia-navbar">
-        <div class="container-fluid">
-            <a id="siteBranding" class="navbar-brand stevia-navbar-brand" href="./#"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="bi-list stevia-color"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto stevia-navbar-ul">
-                    <li class="nav-item">
-                        <a class="nav-link" href="./">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./loader.html?index=all">Index</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./loader.html?pages=contact">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./loader.html?pages=about">About</a>
-                    </li>
-                    <li id="stevia-mobile" class="nav-item">
-                        <a class="nav-link" href="./loader.html?category=index">Category</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-</div>
-
-<div id="stevia-desktop" class="container stevia-container-searchfeat">
-    <div class="row row-eq-height">
-        <div class="col-md-8">
-            <div id="featuredPostCard" class="card stevia-featured-card stevia-hidden" onclick="location.href='#'">
-                <div class="ratio ratio-4x3">
-                    <img loading="eager" id="featuredPostImg" class="card-img-top" src="./assets/nothumb.jpg" alt="featuredPostImg"> 
-                </div>
-                <div class="card-body">
-                    <p id="featuredPostDate">Month DD, YYYY</p>
-                    <h1 id="featuredPostTitle" class="display-5">Featured post title</h1>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="input-group mb-3 stevia-container-search">
-                <input id="searchInput" type="text" class="form-control" placeholder="Search..." aria-label="Search.." aria-describedby="button-addon2" onkeydown="searchKeypressHandler(event)">
-                <button class="btn" type="button" id="button-addon2" onclick="startSearch();">
-                    <span class="bi-search stevia-color"></span>
+    <div class="container stevia-container-header">
+        <nav class="navbar navbar-expand-lg stevia-navbar">
+            <div class="container-fluid">
+                <a id="siteBranding" class="navbar-brand stevia-navbar-brand" href="./#"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="bi-list stevia-color"></span>
                 </button>
-            </div>
-            <br>
-            <div>
-                <h1 class="stevia-color display-5">Category</h1>
-                <div id="categoryList" class="stevia-category stevia-hidden"></div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div id="stevia-mobile" class="container stevia-container-searchfeat">
-    <div class="row">
-        <div class="col-md-12">
-            <div class="input-group mb-3 stevia-container-search">
-                <input id="searchInputM" type="text" class="form-control" placeholder="Search..." aria-label="Search.." aria-describedby="button-addon2" onkeydown="searchKeypressHandler(event)">
-                <button class="btn" type="button" id="button-addon2" onclick="startSearch();">
-                    <span class="bi-search stevia-color"></span>
-                </button>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-12">
-            <div id="featuredPostCardM" class="card stevia-featured-card stevia-hidden" onclick="location.href='#'">
-                <div class="ratio ratio-4x3">
-                    <img loading="eager" id="featuredPostImgM" class="card-img-top" src="./assets/nothumb.jpg" alt="featuredPostImgM"> 
-                </div>
-                <div class="card-body">
-                    <p id="featuredPostDateM">Month DD, YYYY</p>
-                    <h1 id="featuredPostTitleM" class="display-4">Featured post title</h1>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto stevia-navbar-ul">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./loader.html?index=all">Index</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./loader.html?pages=contact">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./loader.html?pages=about">About</a>
+                        </li>
+                        <li id="stevia-mobile" class="nav-item">
+                            <a class="nav-link" href="./loader.html?category=index">Category</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </div>
+        </nav>
     </div>
-</div>
 
-<div class="container stevia-container-main">
-    <h1 id="latestPostH4" class="stevia-color display-4 stevia-hidden">Latest Posts</h1>
-    <div class="row">
-        <div class="col-md-4 d-flex align-items-stretch">
-            <a id="latestPostCard1" class="card stevia-post-card stevia-hidden" href="#">
-                <img loading="eager" id="latestPostImg1" class="card-img-top" src="./assets/nothumb.jpg" alt="LatestPostImage1"> 
-                <div class="card-body">
-                    <p id="latestPostDate1">Month DD, YYYY</p>
-                    <p id="latestPostTitle1">Featured post title</p>
+    <div id="stevia-desktop" class="container stevia-container-searchfeat">
+        <div class="row row-eq-height">
+            <div class="col-md-8">
+                <div id="featuredPostCard" class="card stevia-featured-card stevia-hidden" onclick="location.href='#'">
+                    <div class="ratio ratio-4x3">
+                        <img loading="eager" id="featuredPostImg" class="card-img-top" src="./assets/nothumb.jpg" alt="featuredPostImg"> 
+                    </div>
+                    <div class="card-body">
+                        <p id="featuredPostDate">Month DD, YYYY</p>
+                        <h1 id="featuredPostTitle" class="display-5">Featured post title</h1>
+                    </div>
                 </div>
-            </a>
-        </div>
-        <div class="col-md-4 d-flex align-items-stretch">
-            <a id="latestPostCard2" class="card stevia-post-card stevia-hidden" href="#">
-                <img loading="eager" id="latestPostImg2" class="card-img-top" src="./assets/nothumb.jpg" alt="LatestPostImage2"> 
-                <div class="card-body d-flex flex-column">
-                    <p id="latestPostDate2">Month DD, YYYY</p>
-                    <p id="latestPostTitle2">Featured post title</p>
+            </div>
+            <div class="col-md-4">
+                <div class="input-group mb-3 stevia-container-search">
+                    <input id="searchInput" type="text" class="form-control" placeholder="Search..." aria-label="Search.." aria-describedby="button-addon2" onkeydown="searchKeypressHandler(event)">
+                    <button class="btn" type="button" id="button-addon2" onclick="startSearch();">
+                        <span class="bi-search stevia-color"></span>
+                    </button>
                 </div>
-            </a>
-        </div>
-        <div class="col-md-4 d-flex align-items-stretch">
-            <a id="latestPostCard3" class="card stevia-post-card stevia-hidden" href="#">
-                <img loading="eager" id="latestPostImg3" class="card-img-top" src="./assets/nothumb.jpg" alt="LatestPostImage3"> 
-                <div class="card-body">
-                    <p id="latestPostDate3">Month DD, YYYY</p>
-                    <p id="latestPostTitle3">Featured post title</p>
+                <br>
+                <div>
+                    <h1 class="stevia-color display-5">Category</h1>
+                    <div id="categoryList" class="stevia-category stevia-hidden"></div>
                 </div>
-            </a>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-4 d-flex align-items-stretch">
-            <a id="latestPostCard4" class="card stevia-post-card stevia-hidden" href="#">
-                <img loading="eager" id="latestPostImg4" class="card-img-top" src="./assets/nothumb.jpg" alt="LatestPostImage4"> 
-                <div class="card-body">
-                    <p id="latestPostDate4">Month DD, YYYY</p>
-                    <p id="latestPostTitle4">Featured post title</p>
-                </div>
-            </a>
-        </div>
-        <div class="col-md-4 d-flex align-items-stretch">
-            <a id="latestPostCard5" class="card stevia-post-card stevia-hidden" href="#">
-                <img loading="eager" id="latestPostImg5" class="card-img-top" src="./assets/nothumb.jpg" alt="LatestPostImage5"> 
-                <div class="card-body">
-                    <p id="latestPostDate5">Month DD, YYYY</p>
-                    <p id="latestPostTitle5">Featured post title</p>
-                </div>
-            </a>
-        </div>
-        <div class="col-md-4 d-flex align-items-stretch">
-            <a id="latestPostCard6" class="card stevia-post-card stevia-hidden" href="#">
-                <img loading="eager" id="latestPostImg6" class="card-img-top" src="./assets/nothumb.jpg" alt="LatestPostImage6"> 
-                <div class="card-body">
-                    <p id="latestPostDate6">Month DD, YYYY</p>
-                    <p id="latestPostTitle6">Featured post title</p>
-                </div>
-            </a>
+            </div>
         </div>
     </div>
 
-    <h1 id="recommendedPostH4" class=" stevia-color display-4 stevia-hidden">Recommended Posts</h1>
-    <div class="row">
-        <div class="col-md-4 d-flex align-items-stretch">
-            <a id="recommendedPostCard1" class="card stevia-post-card stevia-hidden" href="#">
-                <img loading="eager" id="recommendedPostImg1" class="card-img-top" src="./assets/nothumb.jpg" alt="RecommendedPostImage1"> 
-                <div class="card-body">
-                    <p id="recommendedPostDate1">Month DD, YYYY</p>
-                    <p id="recommendedPostTitle1">Featured post title</p>
+    <div id="stevia-mobile" class="container stevia-container-searchfeat">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="input-group mb-3 stevia-container-search">
+                    <input id="searchInputM" type="text" class="form-control" placeholder="Search..." aria-label="Search.." aria-describedby="button-addon2" onkeydown="searchKeypressHandler(event)">
+                    <button class="btn" type="button" id="button-addon2" onclick="startSearch();">
+                        <span class="bi-search stevia-color"></span>
+                    </button>
                 </div>
-            </a>
+            </div>
         </div>
-        <div class="col-md-4 d-flex align-items-stretch">
-            <a id="recommendedPostCard2" class="card stevia-post-card stevia-hidden" href="#">
-                <img loading="eager" id="recommendedPostImg2" class="card-img-top" src="./assets/nothumb.jpg" alt="RecommendedPostImage2"> 
-                <div class="card-body">
-                    <p id="recommendedPostDate2">Month DD, YYYY</p>
-                    <p id="recommendedPostTitle2">Featured post title</p>
+        <div class="row">
+            <div class="col-md-12">
+                <div id="featuredPostCardM" class="card stevia-featured-card stevia-hidden" onclick="location.href='#'">
+                    <div class="ratio ratio-4x3">
+                        <img loading="eager" id="featuredPostImgM" class="card-img-top" src="./assets/nothumb.jpg" alt="featuredPostImgM"> 
+                    </div>
+                    <div class="card-body">
+                        <p id="featuredPostDateM">Month DD, YYYY</p>
+                        <h1 id="featuredPostTitleM" class="display-4">Featured post title</h1>
+                    </div>
                 </div>
-            </a>
-        </div>
-        <div class="col-md-4 d-flex align-items-stretch">
-            <a id="recommendedPostCard3" class="card stevia-post-card stevia-hidden" href="#">
-                <img loading="eager" id="recommendedPostImg3" class="card-img-top" src="./assets/nothumb.jpg" alt="RecommendedPostImage3"> 
-                <div class="card-body">
-                    <p id="recommendedPostDate3">Month DD, YYYY</p>
-                    <p id="recommendedPostTitle3">Featured post title</p>
-                </div>
-            </a>
+            </div>
         </div>
     </div>
-    <div class="row">
-        <div class="col-md-4 d-flex align-items-stretch">
-            <a id="recommendedPostCard4" class="card stevia-post-card stevia-hidden" href="#">
-                <img loading="eager" id="recommendedPostImg4" class="card-img-top" src="./assets/nothumb.jpg" alt="RecommendedPostImage4"> 
-                <div class="card-body">
-                    <p id="recommendedPostDate4">Month DD, YYYY</p>
-                    <p id="recommendedPostTitle4">Featured post title</p>
-                </div>
-            </a>
-        </div>
-        <div class="col-md-4 d-flex align-items-stretch">
-            <a id="recommendedPostCard5" class="card stevia-post-card stevia-hidden" href="#">
-                <img loading="eager" id="recommendedPostImg5" class="card-img-top" src="./assets/nothumb.jpg" alt="RecommendedPostImage5"> 
-                <div class="card-body">
-                    <p id="recommendedPostDate5">Month DD, YYYY</p>
-                    <p id="recommendedPostTitle5">Featured post title</p>
-                </div>
-            </a>
-        </div>
-        <div class="col-md-4 d-flex align-items-stretch">
-            <a id="recommendedPostCard6" class="card stevia-post-card stevia-hidden" href="#">
-                <img loading="eager" id="recommendedPostImg6" class="card-img-top" src="./assets/nothumb.jpg" alt="RecommendedPostImage6"> 
-                <div class="card-body">
-                    <p id="recommendedPostDate6">Month DD, YYYY</p>
-                    <p id="recommendedPostTitle6">Featured post title</p>
-                </div>
-            </a>
-        </div>
-    </div>
-</div>
 
-<div class="container stevia-container-footer">
-    <div class="row">
-        <div class="col text-center">
-            <p><span id="siteCopyright"></span></p>
-            <p>Made with <span style="color:red">&#9829;</span> using <a href="https://github.com/catzy007/stevia-page">Stevia Page</a>.</p>
+    <div class="container stevia-container-main">
+        <h1 id="latestPostH4" class="stevia-color display-4 stevia-hidden">Latest Posts</h1>
+        <div class="row">
+            <div class="col-md-4 d-flex align-items-stretch">
+                <a id="latestPostCard1" class="card stevia-post-card stevia-hidden" href="#">
+                    <img loading="eager" id="latestPostImg1" class="card-img-top" src="./assets/nothumb.jpg" alt="LatestPostImage1"> 
+                    <div class="card-body">
+                        <p id="latestPostDate1">Month DD, YYYY</p>
+                        <p id="latestPostTitle1">Featured post title</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4 d-flex align-items-stretch">
+                <a id="latestPostCard2" class="card stevia-post-card stevia-hidden" href="#">
+                    <img loading="eager" id="latestPostImg2" class="card-img-top" src="./assets/nothumb.jpg" alt="LatestPostImage2"> 
+                    <div class="card-body d-flex flex-column">
+                        <p id="latestPostDate2">Month DD, YYYY</p>
+                        <p id="latestPostTitle2">Featured post title</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4 d-flex align-items-stretch">
+                <a id="latestPostCard3" class="card stevia-post-card stevia-hidden" href="#">
+                    <img loading="eager" id="latestPostImg3" class="card-img-top" src="./assets/nothumb.jpg" alt="LatestPostImage3"> 
+                    <div class="card-body">
+                        <p id="latestPostDate3">Month DD, YYYY</p>
+                        <p id="latestPostTitle3">Featured post title</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 d-flex align-items-stretch">
+                <a id="latestPostCard4" class="card stevia-post-card stevia-hidden" href="#">
+                    <img loading="eager" id="latestPostImg4" class="card-img-top" src="./assets/nothumb.jpg" alt="LatestPostImage4"> 
+                    <div class="card-body">
+                        <p id="latestPostDate4">Month DD, YYYY</p>
+                        <p id="latestPostTitle4">Featured post title</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4 d-flex align-items-stretch">
+                <a id="latestPostCard5" class="card stevia-post-card stevia-hidden" href="#">
+                    <img loading="eager" id="latestPostImg5" class="card-img-top" src="./assets/nothumb.jpg" alt="LatestPostImage5"> 
+                    <div class="card-body">
+                        <p id="latestPostDate5">Month DD, YYYY</p>
+                        <p id="latestPostTitle5">Featured post title</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4 d-flex align-items-stretch">
+                <a id="latestPostCard6" class="card stevia-post-card stevia-hidden" href="#">
+                    <img loading="eager" id="latestPostImg6" class="card-img-top" src="./assets/nothumb.jpg" alt="LatestPostImage6"> 
+                    <div class="card-body">
+                        <p id="latestPostDate6">Month DD, YYYY</p>
+                        <p id="latestPostTitle6">Featured post title</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <h1 id="recommendedPostH4" class=" stevia-color display-4 stevia-hidden">Recommended Posts</h1>
+        <div class="row">
+            <div class="col-md-4 d-flex align-items-stretch">
+                <a id="recommendedPostCard1" class="card stevia-post-card stevia-hidden" href="#">
+                    <img loading="eager" id="recommendedPostImg1" class="card-img-top" src="./assets/nothumb.jpg" alt="RecommendedPostImage1"> 
+                    <div class="card-body">
+                        <p id="recommendedPostDate1">Month DD, YYYY</p>
+                        <p id="recommendedPostTitle1">Featured post title</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4 d-flex align-items-stretch">
+                <a id="recommendedPostCard2" class="card stevia-post-card stevia-hidden" href="#">
+                    <img loading="eager" id="recommendedPostImg2" class="card-img-top" src="./assets/nothumb.jpg" alt="RecommendedPostImage2"> 
+                    <div class="card-body">
+                        <p id="recommendedPostDate2">Month DD, YYYY</p>
+                        <p id="recommendedPostTitle2">Featured post title</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4 d-flex align-items-stretch">
+                <a id="recommendedPostCard3" class="card stevia-post-card stevia-hidden" href="#">
+                    <img loading="eager" id="recommendedPostImg3" class="card-img-top" src="./assets/nothumb.jpg" alt="RecommendedPostImage3"> 
+                    <div class="card-body">
+                        <p id="recommendedPostDate3">Month DD, YYYY</p>
+                        <p id="recommendedPostTitle3">Featured post title</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 d-flex align-items-stretch">
+                <a id="recommendedPostCard4" class="card stevia-post-card stevia-hidden" href="#">
+                    <img loading="eager" id="recommendedPostImg4" class="card-img-top" src="./assets/nothumb.jpg" alt="RecommendedPostImage4"> 
+                    <div class="card-body">
+                        <p id="recommendedPostDate4">Month DD, YYYY</p>
+                        <p id="recommendedPostTitle4">Featured post title</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4 d-flex align-items-stretch">
+                <a id="recommendedPostCard5" class="card stevia-post-card stevia-hidden" href="#">
+                    <img loading="eager" id="recommendedPostImg5" class="card-img-top" src="./assets/nothumb.jpg" alt="RecommendedPostImage5"> 
+                    <div class="card-body">
+                        <p id="recommendedPostDate5">Month DD, YYYY</p>
+                        <p id="recommendedPostTitle5">Featured post title</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4 d-flex align-items-stretch">
+                <a id="recommendedPostCard6" class="card stevia-post-card stevia-hidden" href="#">
+                    <img loading="eager" id="recommendedPostImg6" class="card-img-top" src="./assets/nothumb.jpg" alt="RecommendedPostImage6"> 
+                    <div class="card-body">
+                        <p id="recommendedPostDate6">Month DD, YYYY</p>
+                        <p id="recommendedPostTitle6">Featured post title</p>
+                    </div>
+                </a>
+            </div>
         </div>
     </div>
-</div>
 
-<script>
-    window.scrollTo(0, 0); 
-    executeXhr("./posts/index.md", loadHomepageIndex, "POST-INDEX", "latest-post");
-</script>
-<script src="./js/bootstrap.bundle.min.js"></script>
-<script src="./js/showdown.min.js"></script>
+    <div class="container stevia-container-footer">
+        <div class="row">
+            <div class="col text-center">
+                <p><span id="siteCopyright"></span></p>
+                <p>Made with <span style="color:red">&#9829;</span> using <a href="https://github.com/catzy007/stevia-page">Stevia Page</a>.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        window.scrollTo(0, 0); 
+        executeXhr("./posts/index.md", loadHomepageIndex, "POST-INDEX", "latest-post");
+    </script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/showdown.min.js"></script>
 </body>
 </html>
