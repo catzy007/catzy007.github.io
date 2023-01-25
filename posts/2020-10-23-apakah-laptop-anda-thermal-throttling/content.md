@@ -39,8 +39,8 @@ juga dapat dilakukan di PC dengan sedikit perbedaan.
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
-		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2020-10-23-apakah-laptop-anda-thermal-throttling/1.jpg" alt="img">
+		<div class="img-thumbnail">
+			<img class="img-fluid" src="./posts/2020-10-23-apakah-laptop-anda-thermal-throttling/1.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -50,8 +50,8 @@ juga dapat dilakukan di PC dengan sedikit perbedaan.
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
-		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2020-10-23-apakah-laptop-anda-thermal-throttling/2.jpg" alt="img">
+		<div class="img-thumbnail">
+			<img class="img-fluid" src="./posts/2020-10-23-apakah-laptop-anda-thermal-throttling/2.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -64,8 +64,8 @@ Jika anda menggunakan custom loop watercooling, waktu test dapat diperpanjang.
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
-		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2020-10-23-apakah-laptop-anda-thermal-throttling/3.jpg" alt="img">
+		<div class="img-thumbnail">
+			<img class="img-fluid" src="./posts/2020-10-23-apakah-laptop-anda-thermal-throttling/3.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -79,8 +79,8 @@ beberapa detik.
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
-		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2020-10-23-apakah-laptop-anda-thermal-throttling/4.jpg" alt="img">
+		<div class="img-thumbnail">
+			<img class="img-fluid" src="./posts/2020-10-23-apakah-laptop-anda-thermal-throttling/4.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>

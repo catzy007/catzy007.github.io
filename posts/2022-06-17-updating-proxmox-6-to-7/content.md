@@ -9,8 +9,8 @@ apt dist-upgrade
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
-		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2022-06-17-updating-proxmox-6-to-7/00.png" alt="img">
+		<div class="img-thumbnail">
+			<img class="img-fluid" src="./posts/2022-06-17-updating-proxmox-6-to-7/00.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -23,8 +23,8 @@ pve6to7
 <div class="row">
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
-		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2022-06-17-updating-proxmox-6-to-7/01.png" alt="img">
+		<div class="img-thumbnail">
+			<img class="img-fluid" src="./posts/2022-06-17-updating-proxmox-6-to-7/01.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-2"></div>
@@ -35,8 +35,8 @@ debian security apt source list from `buster/updates` to `bullseye-security`.
 <div class="row">
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
-		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2022-06-17-updating-proxmox-6-to-7/02.png" alt="img">
+		<div class="img-thumbnail">
+			<img class="img-fluid" src="./posts/2022-06-17-updating-proxmox-6-to-7/02.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-2"></div>
@@ -57,8 +57,8 @@ sed -i -e 's/buster/bullseye/g' /etc/apt/sources.list.d/pve-install-repo.list
 <div class="row">
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
-		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2022-06-17-updating-proxmox-6-to-7/03.png" alt="img">
+		<div class="img-thumbnail">
+			<img class="img-fluid" src="./posts/2022-06-17-updating-proxmox-6-to-7/03.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-2"></div>
@@ -72,8 +72,8 @@ apt dist-upgrade
 <div class="row">
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
-		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2022-06-17-updating-proxmox-6-to-7/04.png" alt="img">
+		<div class="img-thumbnail">
+			<img class="img-fluid" src="./posts/2022-06-17-updating-proxmox-6-to-7/04.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-2"></div>
@@ -83,8 +83,8 @@ Sometimes a promopt will shows up and ask you to accept a term or select a confi
 <div class="row">
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
-		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2022-06-17-updating-proxmox-6-to-7/05.png" alt="img">
+		<div class="img-thumbnail">
+			<img class="img-fluid" src="./posts/2022-06-17-updating-proxmox-6-to-7/05.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-2"></div>
@@ -94,8 +94,8 @@ Assuming everything works properly, your system should boot into proxmox 7.2 and
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
-		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2022-06-17-updating-proxmox-6-to-7/06.png" alt="img">
+		<div class="img-thumbnail">
+			<img class="img-fluid" src="./posts/2022-06-17-updating-proxmox-6-to-7/06.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -106,8 +106,8 @@ and edit the config file manually.
 <div class="row">
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
-		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2022-06-17-updating-proxmox-6-to-7/07.png" alt="img">
+		<div class="img-thumbnail">
+			<img class="img-fluid" src="./posts/2022-06-17-updating-proxmox-6-to-7/07.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-2"></div>

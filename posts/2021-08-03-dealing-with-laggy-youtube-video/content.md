@@ -23,8 +23,8 @@ just change the device entirely.
 <div class="row">
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
-		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2021-08-03-dealing-with-laggy-youtube-video/01.png" alt="img">
+		<div class="img-thumbnail">
+			<img class="img-fluid" src="./posts/2021-08-03-dealing-with-laggy-youtube-video/01.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-2"></div>

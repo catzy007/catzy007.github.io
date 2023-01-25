@@ -19,8 +19,8 @@ version. If you have 32Bit system then downlaod the 32Bit version.
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
-		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2020-06-27-harddisk-sentinel-linux/1.png" alt="img">
+		<div class="img-thumbnail">
+			<img class="img-fluid" src="./posts/2020-06-27-harddisk-sentinel-linux/1.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -38,8 +38,8 @@ application appears.
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
-		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2020-06-27-harddisk-sentinel-linux/2.jpg" alt="img">
+		<div class="img-thumbnail">
+			<img class="img-fluid" src="./posts/2020-06-27-harddisk-sentinel-linux/2.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -47,8 +47,8 @@ application appears.
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
-		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2020-06-27-harddisk-sentinel-linux/3.png" alt="img">
+		<div class="img-thumbnail">
+			<img class="img-fluid" src="./posts/2020-06-27-harddisk-sentinel-linux/3.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>

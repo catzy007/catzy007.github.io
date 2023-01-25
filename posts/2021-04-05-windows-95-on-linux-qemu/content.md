@@ -30,8 +30,8 @@ qemu-system-i386 -netdev user,id=mynet0 -device ne2k_isa,netdev=mynet0 \
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
-		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2021-04-05-windows-95-on-linux-qemu/1.png" alt="img">
+		<div class="img-thumbnail">
+			<img class="img-fluid" src="./posts/2021-04-05-windows-95-on-linux-qemu/1.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -70,8 +70,8 @@ then press `enter`. After that GUI installer should appear
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
-		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2021-04-05-windows-95-on-linux-qemu/2.png" alt="img">
+		<div class="img-thumbnail">
+			<img class="img-fluid" src="./posts/2021-04-05-windows-95-on-linux-qemu/2.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -89,8 +89,8 @@ Windows 95 RETAIL
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
-		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2021-04-05-windows-95-on-linux-qemu/3.png" alt="img">
+		<div class="img-thumbnail">
+			<img class="img-fluid" src="./posts/2021-04-05-windows-95-on-linux-qemu/3.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -102,8 +102,8 @@ Next enter your username and group
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
-		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2021-04-05-windows-95-on-linux-qemu/4.png" alt="img">
+		<div class="img-thumbnail">
+			<img class="img-fluid" src="./posts/2021-04-05-windows-95-on-linux-qemu/4.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -113,8 +113,8 @@ Then follow installer again. After getting into `Startup Disk`, choose `No`
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
-		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2021-04-05-windows-95-on-linux-qemu/5.png" alt="img">
+		<div class="img-thumbnail">
+			<img class="img-fluid" src="./posts/2021-04-05-windows-95-on-linux-qemu/5.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -124,8 +124,8 @@ and simply just close qemu and proceed to next step.
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
-		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2021-04-05-windows-95-on-linux-qemu/6.png" alt="img">
+		<div class="img-thumbnail">
+			<img class="img-fluid" src="./posts/2021-04-05-windows-95-on-linux-qemu/6.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -150,8 +150,8 @@ qemu-system-i386 -netdev user,id=mynet0 -device ne2k_isa,netdev=mynet0 \
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
-		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2021-04-05-windows-95-on-linux-qemu/7.png" alt="img">
+		<div class="img-thumbnail">
+			<img class="img-fluid" src="./posts/2021-04-05-windows-95-on-linux-qemu/7.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -159,8 +159,8 @@ qemu-system-i386 -netdev user,id=mynet0 -device ne2k_isa,netdev=mynet0 \
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
-		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2021-04-05-windows-95-on-linux-qemu/8.png" alt="img">
+		<div class="img-thumbnail">
+			<img class="img-fluid" src="./posts/2021-04-05-windows-95-on-linux-qemu/8.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -168,8 +168,8 @@ qemu-system-i386 -netdev user,id=mynet0 -device ne2k_isa,netdev=mynet0 \
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
-		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2021-04-05-windows-95-on-linux-qemu/9.png" alt="img">
+		<div class="img-thumbnail">
+			<img class="img-fluid" src="./posts/2021-04-05-windows-95-on-linux-qemu/9.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -192,8 +192,8 @@ At first time boot, it need to install some driver, configure location and print
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
-		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2021-04-05-windows-95-on-linux-qemu/10.png" alt="img">
+		<div class="img-thumbnail">
+			<img class="img-fluid" src="./posts/2021-04-05-windows-95-on-linux-qemu/10.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -201,8 +201,8 @@ At first time boot, it need to install some driver, configure location and print
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
-		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2021-04-05-windows-95-on-linux-qemu/11.png" alt="img">
+		<div class="img-thumbnail">
+			<img class="img-fluid" src="./posts/2021-04-05-windows-95-on-linux-qemu/11.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -212,8 +212,8 @@ I just cancel the printer part
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
-		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2021-04-05-windows-95-on-linux-qemu/12.png" alt="img">
+		<div class="img-thumbnail">
+			<img class="img-fluid" src="./posts/2021-04-05-windows-95-on-linux-qemu/12.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -236,8 +236,8 @@ qemu-system-i386 -netdev user,id=mynet0 -device pcnet,netdev=mynet0 \
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
-		<div class="thumbnail">
-			<img class="img-responsive" src="./posts/2021-04-05-windows-95-on-linux-qemu/13.png" alt="img">
+		<div class="img-thumbnail">
+			<img class="img-fluid" src="./posts/2021-04-05-windows-95-on-linux-qemu/13.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>

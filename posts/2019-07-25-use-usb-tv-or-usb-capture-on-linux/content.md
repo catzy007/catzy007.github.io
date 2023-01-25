@@ -7,8 +7,8 @@ and this is the output.
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
-        <div class="thumbnail">
-            <img class="img-responsive" src="./posts/2019-07-25-use-usb-tv-or-usb-capture-on-linux/1.jpg" alt="img">
+        <div class="img-thumbnail">
+            <img class="img-fluid" src="./posts/2019-07-25-use-usb-tv-or-usb-capture-on-linux/1.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-3"></div>
@@ -25,8 +25,8 @@ buster running 4.19.58 kernel.
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
-        <div class="thumbnail">
-            <img class="img-responsive" src="./posts/2019-07-25-use-usb-tv-or-usb-capture-on-linux/2.jpg" alt="img">
+        <div class="img-thumbnail">
+            <img class="img-fluid" src="./posts/2019-07-25-use-usb-tv-or-usb-capture-on-linux/2.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-3"></div>
@@ -36,8 +36,8 @@ So i just use VLC to get some picture and here is my config.
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
-        <div class="thumbnail">
-            <img class="img-responsive" src="./posts/2019-07-25-use-usb-tv-or-usb-capture-on-linux/3.jpg" alt="img">
+        <div class="img-thumbnail">
+            <img class="img-fluid" src="./posts/2019-07-25-use-usb-tv-or-usb-capture-on-linux/3.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-3"></div>

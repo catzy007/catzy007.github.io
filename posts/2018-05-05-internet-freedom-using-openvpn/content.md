@@ -33,8 +33,8 @@ up then use it.
 <div class="row">
     <div class="col-sm-2"></div>
     <div class="col-sm-8">
-        <div class="thumbnail">
-            <img class="img-responsive" src="./posts/2018-05-05-internet-freedom-using-openvpn/1.jpg" alt="img">
+        <div class="img-thumbnail">
+            <img class="img-fluid" src="./posts/2018-05-05-internet-freedom-using-openvpn/1.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-2"></div>
@@ -46,8 +46,8 @@ just that <https://github.com/catzy007/UMBRELLAVPNTEST> compile with
 <div class="row">
     <div class="col-sm-2"></div>
     <div class="col-sm-8">
-        <div class="thumbnail">
-            <img class="img-responsive" src="./posts/2018-05-05-internet-freedom-using-openvpn/2.jpg" alt="img">
+        <div class="img-thumbnail">
+            <img class="img-fluid" src="./posts/2018-05-05-internet-freedom-using-openvpn/2.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-2"></div>
@@ -58,8 +58,8 @@ then download the config files.
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
-        <div class="thumbnail">
-            <img class="img-responsive" src="./posts/2018-05-05-internet-freedom-using-openvpn/4.jpg" alt="img">
+        <div class="img-thumbnail">
+            <img class="img-fluid" src="./posts/2018-05-05-internet-freedom-using-openvpn/4.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-3"></div>
@@ -70,8 +70,8 @@ then run openvpn with this command `sudo openvpn CONFIG_FILE_NAME` change
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
-        <div class="thumbnail">
-            <img class="img-responsive" src="./posts/2018-05-05-internet-freedom-using-openvpn/4.jpg" alt="img">
+        <div class="img-thumbnail">
+            <img class="img-fluid" src="./posts/2018-05-05-internet-freedom-using-openvpn/4.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-3"></div>
@@ -87,8 +87,8 @@ First, Download and Install OpenVPN Client
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
-        <div class="thumbnail">
-            <img class="img-responsive" src="./posts/2018-05-05-internet-freedom-using-openvpn/5.png" alt="img">
+        <div class="img-thumbnail">
+            <img class="img-fluid" src="./posts/2018-05-05-internet-freedom-using-openvpn/5.png" alt="img">
         </div>
     </div>
     <div class="col-sm-3"></div>
@@ -99,8 +99,8 @@ download the file and double click to import the profile.
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
-        <div class="thumbnail">
-            <img class="img-responsive" src="./posts/2018-05-05-internet-freedom-using-openvpn/7.png" alt="img">
+        <div class="img-thumbnail">
+            <img class="img-fluid" src="./posts/2018-05-05-internet-freedom-using-openvpn/7.png" alt="img">
         </div>
     </div>
     <div class="col-sm-3"></div>
@@ -111,8 +111,8 @@ right click for other functions.
 <div class="row">
     <div class="col-sm-4"></div>
     <div class="col-sm-4">
-        <div class="thumbnail">
-            <img class="img-responsive" src="./posts/2018-05-05-internet-freedom-using-openvpn/6.png" alt="img">
+        <div class="img-thumbnail">
+            <img class="img-fluid" src="./posts/2018-05-05-internet-freedom-using-openvpn/6.png" alt="img">
         </div>
     </div>
     <div class="col-sm-4"></div>
@@ -123,8 +123,8 @@ automatically connect to the server.
 <div class="row">
     <div class="col-sm-2"></div>
     <div class="col-sm-8">
-        <div class="thumbnail">
-            <img class="img-responsive" src="./posts/2018-05-05-internet-freedom-using-openvpn/8.png" alt="img">
+        <div class="img-thumbnail">
+            <img class="img-fluid" src="./posts/2018-05-05-internet-freedom-using-openvpn/8.png" alt="img">
         </div>
     </div>
     <div class="col-sm-2"></div>
