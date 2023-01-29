@@ -134,6 +134,10 @@ a, a:hover {
 
 /* search box */
 .stevia-container-search {
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: rgba(0,0,0,.125);
     box-shadow: 5px 5px 10px #ddd;
 }
 .stevia-container-search input {
@@ -170,7 +174,9 @@ a, a:hover {
 /* item card */
 .stevia-featured-card, .stevia-featured-card:hover {
     background-color: #fff;
+    border-style: solid;
     border-radius: 10px 10px 0px 0px;
+    border-color: rgba(0,0,0,.125);
     padding: 1em;
     margin-bottom: 2em;
     box-shadow: 5px 5px 10px #ddd;
