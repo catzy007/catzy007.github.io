@@ -106,14 +106,16 @@
 
     <div class="container stevia-container-main">
         <div class="row">
-            <div id="main-content" class="col-sm-12 content">
-                <h4 class="text-center">
-                Loading Webpages. If nothing happen in 
-                few seconds, check your connection and 
-                make sure to use the latest Chrome 
-                or Firefox web browser.
-                </h4>
-            </div>
+            <article>
+                <div id="main-content" class="col-md-12 content">
+                    <h4 class="text-center">
+                    Loading Webpages. If nothing happen in 
+                    few seconds, check your connection and 
+                    make sure to use the latest Chrome 
+                    or Firefox web browser.
+                    </h4>
+                </div>
+            </article>
         </div>
         <br>
         <h1 id="recommendedContent" class="stevia-color display-4 stevia-hidden">Recommended Posts</h1>
@@ -158,10 +160,9 @@
     </div>
     
     <script>
-        window.onload = function mainLoader(){
-            window.scrollTo(0, 0); 
-            executeXhr("./posts/index.md", loadContentIndex, "POST-INDEX", "latest-post");
-        }
+        window.scrollTo(0, 0); 
+        loadSiteMainTitle();
+        executeXhr("./posts/index.md", loadContentIndex, "POST-INDEX", "latest-post");
     </script>
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/showdown.min.js"></script>
