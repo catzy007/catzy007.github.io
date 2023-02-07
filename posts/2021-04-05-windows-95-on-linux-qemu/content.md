@@ -135,7 +135,7 @@ and simply just close qemu and proceed to next step.
 #### Fix 2.1GHz CPU
 If you using modern-ish machine which you probably did, there is a bit of a catch. Win95 can't 
 deal with cpu faster than 2.1Ghz, so to fix that download a patch from
-<https://msfn.org/board/topic/141402-windows-95-21ghz-cpu-limit-broken/>
+[msfn.org](https://msfn.org/board/topic/141402-windows-95-21ghz-cpu-limit-broken/)
 then extract `FIX95CPU.IMA`, then run this
 ```
 qemu-system-i386 -netdev user,id=mynet0 -device ne2k_isa,netdev=mynet0 \
@@ -246,4 +246,4 @@ And i finally able to browse some web, play games using ADLIB and some MIDI play
 
 <br>
 #### Sauce
-<https://wiki.qemu.org/Documentation/GuestOperatingSystems/Windows95>
+[Documentation / GuestOperatingSystems / Windows95 - QEMU](https://wiki.qemu.org/Documentation/GuestOperatingSystems/Windows95)

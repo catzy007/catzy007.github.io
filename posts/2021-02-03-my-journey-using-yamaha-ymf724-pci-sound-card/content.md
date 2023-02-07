@@ -7,12 +7,13 @@ i'm using DP monitor and no it doesn't have onboard sound because who the hell w
 on a freakin server. So i began to search around my local online shop and found this Yamaha 
 YMF724F-V at less than 2 USD with another 2 for shipping and i could not resist so i bought it. 
 In the meantime, i read the [datasheet](./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/YMF724F_ETC.pdf) 
-thanks to <https://datasheetspdf.com/pdf/285420/ETC/YMF724F/1> 
+thanks to [datasheetspdf.com](https://datasheetspdf.com/pdf/285420/ETC/YMF724F/1) 
 from the datasheet, it said support for FM Synth which is basically OPL3, and it should support 
 Sound Blaster Pro Compatibility and many others all that in one single package so yeah DOS 
-gaming in this sound card should be interesting. Also, i found this is review from back in the day 
-<https://assets.hardwarezone.com/2009/reviews/sound/roundup/soundcards.htm> if this sound card 
-doesn't work, maybe some day i can get Sound Blaster Live or something like that as a replacement.
+gaming in this sound card should be interesting. Also, i found this 
+[review](https://assets.hardwarezone.com/2009/reviews/sound/roundup/soundcards.htm) from back in the day 
+if this sound card doesn't work, maybe some day i can get Sound Blaster Live or something like that as a 
+replacement.
 
 <br>
 <div class="row">
@@ -41,10 +42,10 @@ recompile the driver to 64Bit.
 	<div class="col-sm-3"></div>
 </div>
 Other alternative is of course Linux which basically runs everything. I use Lubuntu 18.04 
-and Ubuntu 20.04 and it works just fine. And the chip itself is lsted in ALSA project 
-<https://www.alsa-project.org/wiki/Matrix:Vendor-Yamaha> the problem is that there is a some kind 
-of Crackling noise coming out and i think there is something wrong in the card configuration and 
-in linux there is no easy way to configure lot of input and output for this card so yeah. At least 
+and Ubuntu 20.04 and it works just fine. And the chip itself is lsted in 
+[ALSA project](https://www.alsa-project.org/wiki/Matrix:Vendor-Yamaha) the problem is that there is 
+a some kind of Crackling noise coming out and i think there is something wrong in the card configuration 
+and in linux there is no easy way to configure lot of input and output for this card so yeah. At least 
 the card is working which is a good thing.
 
 <br>
@@ -89,7 +90,8 @@ is clear, it work just fine.
 <br>
 As for KVM passthrough configuration, well basically make sure you hardware supprot VT-D or AMD-VI, 
 enable that in BIOS, and make sure your motherboard support IOMMU group seperation or you have to use 
-[ACS Patch](https://wiki.archlinux.org/index.php/PCI_passthrough_via_OVMF#Bypassing_the_IOMMU_groups_(ACS_override_patch)) don't forget to install `virt-manager and ovmf`. after all that clear do.
+[ACS Patch](https://wiki.archlinux.org/index.php/PCI_passthrough_via_OVMF#Bypassing_the_IOMMU_groups_(ACS_override_patch)) 
+don't forget to install `virt-manager and ovmf`. after all that clear do the following.
 
 1. First you need to enable [IOMMU](https://wiki.archlinux.org/index.php/PCI_passthrough_via_OVMF#Setting_up_IOMMU) 
 in the Linux. To do that, go to GRUB config file, find `quiet splash` and add 
@@ -175,22 +177,24 @@ Shared to GPU, USB, Sound, PCI Bridge, then you're done! Or use ACS patch.
 1. After all that, create VM in Virt-Manager and pass the device to VM.
 
 <br>
-As for side note, some DOS games do run on Windows XP but most of the time without sound, so to make 
-sound working, i use [VDMSound](https://en.wikipedia.org/wiki/VDMSound). Yes i know it isn't pure hardware 
-based but for the time being, i'm going to use it while trying to make Windows 9x or DOS working on KVM. 
-At least VDMSound is GPLv2 so yeah nice <https://sourceforge.net/projects/vdmsound/>.
+As for side note, some DOS games do run on Windows XP but most of the time without sound, in a meantime, 
+to make sound working, i use [VDMSound](https://en.wikipedia.org/wiki/VDMSound). Yes i know it isn't pure 
+hardware based but for the time being, i'm going to use it while trying to make Windows 9x or DOS working on KVM. 
 
 <br>
 Driver and some information i use, in this post. Most of software provided is found on [Public 
-domain](https://en.wikipedia.org/wiki/Public_domain) or considered as [Abandonware](https://en.wikipedia.org/wiki/Abandonware) in this case the original creator is [Yamaha Corporation](https://device.yamaha.com/en/lsi/download/), [George Yohng](http://www.yohng.com/powerymf/), and [Vlad Romascanu](https://sourceforge.net/projects/vdmsound)
+domain](https://en.wikipedia.org/wiki/Public_domain) or considered as 
+[Abandonware](https://en.wikipedia.org/wiki/Abandonware) in this case the original creator is 
+[Yamaha Corporation](https://device.yamaha.com/en/lsi/download/), [George Yohng](http://www.yohng.com/powerymf/), 
+and [Vlad Romascanu](https://sourceforge.net/projects/vdmsound)
 
-<https://device.yamaha.com/en/lsi/download/>
+[Download - Electronic Devices - Yamaha Corporation](https://device.yamaha.com/en/lsi/download/)
 
-<https://www.philscomputerlab.com/yamaha-ymf744-pci-sound-card.html>
+[Yamaha YMF744 PCI Sound Card - philscomputerlab.com](https://www.philscomputerlab.com/yamaha-ymf744-pci-sound-card.html)
 
-<https://www.vogons.org/viewtopic.php?f=46&t=48133>
+[Yamaha YMF7x4 Guide \ VOGONS](https://www.vogons.org/viewtopic.php?f=46&t=48133)
 
-<https://sourceforge.net/projects/vdmsound/>
+[The VDMSound Project download | SourceForge.net](https://sourceforge.net/projects/vdmsound/)
 
 [Mirror WDM XP Driver](./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/dsxgxp.zip)
 
@@ -216,12 +220,12 @@ done it.
 
 * Then do XML edit and change `<domain type="kvm">` to `<domain type="qemu">` this will force libvirt 
 to use TCG accelerator instead of KVM which a bit forgiving to older system.
-* Next follow this for installation <https://catzy007.github.io/#!2021-04-05-windows-95-on-linux-qemu> 
+* Next follow my [Windows 95 QEMU installation guide](https://catzy007.github.io/loader.html?post=2021-04-05-windows-95-on-linux-qemu)
 Similar process, but you have to manually change boot order instead of changing qemu parameter.
-* After that, follow this to <https://catzy007.github.io/#!2021-01-09-windows-me-on-linux-kvm> 
-`Fix PCI Bus device driver` again similar process but with Windows 95 instead of ME.
+* After that, go to [Fix PCI Bus device driver section](https://catzy007.github.io/loader.html?post=2021-01-09-windows-me-on-linux-kvm).  
+again similar process but with Windows 95 instead of ME.
 * Then do a PCI passthrough. Similar to how i did it with XP.
-* Next, download and install a driver <https://www.philscomputerlab.com/yamaha-ymf744-pci-sound-card.html>
+* Next, download and install a [driver](https://www.philscomputerlab.com/yamaha-ymf744-pci-sound-card.html)
 * If everything works, you should see something like this
 * Here my libvirt [XML](./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/win95.xml)
 
@@ -312,10 +316,10 @@ deal with 12GB of RAM, or somehow it has problem with IMC. But at least FM/Adlib
 <br>
 > Further reading
 
-<https://www.vogons.org/viewtopic.php?t=24769>
+[PCI sound cards and Chipsets from various manufacturers... \ VOGONS](https://www.vogons.org/viewtopic.php?t=24769)
 
-<https://www.vogons.org/viewtopic.php?f=46&t=48983>
+[YMF744+DSDMA+DOS+P965(and other PCIe chipsets)=success \ VOGONS](https://www.vogons.org/viewtopic.php?f=46&t=48983)
 
-<https://www.youtube.com/watch?v=vNCg_zy1_d4>
+[YAMAHA YMF744 PCI Sound Card with great DOS compatibility - YouTube](https://www.youtube.com/watch?v=vNCg_zy1_d4)
 
-<https://www.vogons.org/viewtopic.php?f=61&t=61044>
+[Yamaha7x4/AurealV1/2 pure Dos7.1 \ VOGONS](https://www.vogons.org/viewtopic.php?f=61&t=61044)

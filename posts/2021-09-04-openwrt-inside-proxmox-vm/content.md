@@ -5,10 +5,11 @@ Recently i wanted to consolidate all my network stuff into single box. Which con
 few web services, router and access point. But how exactly you put a router inside 
 servers, well keep reading to find out how.
 
-First, i assume you already had known how to install and run Proxmox in your server. 
-<https://pve.proxmox.com/wiki/Installation>. Second, i assume you know how to set up 
-OpenWrt, dealt with firewall, routing and things like that. 
-<https://openwrt.org/docs/guide-user/start> you probably need to look around.
+First, i assume you already had known how to 
+[install and run Proxmox in your server](https://pve.proxmox.com/wiki/Installation). 
+Second, i assume you know how to set up OpenWrt, dealt with firewall, routing and 
+things like that. you probably need to look around 
+[OpenWrt User guide](https://openwrt.org/docs/guide-user/start).
 
 Alright, with that out of the way let's begin. The first thing you need to do is 
 to create a VM inside Proxmox.
@@ -27,9 +28,10 @@ to create a VM inside Proxmox.
 * At the `Network` tab, change `Model` to `Intel E1000`
 * Then confirm, finish and `Do not boot` the VM yet.
 
-What you need next is OpenWrt disk image. To get it, go to <https://downloads.openwrt.org/releases/>. 
+What you need next is OpenWrt disk image. To get it, go to 
+[OpenWrt Release](https://downloads.openwrt.org/releases/). 
 Here i'm using version 21.02.0 with x86/x64, then copy the download link for `generic-ext4-combined.img.gz` 
-file <https://downloads.openwrt.org/releases/21.02.0/targets/x86/64/>. 
+[file](https://downloads.openwrt.org/releases/21.02.0/targets/x86/64/). 
 
 Then open your Proxmox terminal and go to your VM images directory. Usually `/var/lib/vz/images/<VMID>` 
 for example, my VM ID is 103 so `/var/lib/vz/images/103`.
