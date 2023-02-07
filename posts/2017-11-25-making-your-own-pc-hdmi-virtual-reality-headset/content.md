@@ -62,7 +62,7 @@ designed spaces with multiple large screens.
     <div class="col-sm-2"></div>
     <div class="col-sm-8">
         <div class="img-thumbnail">
-            <img class="img-fluid" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/1.jpg" alt="img">
+            <img class="img-fluid" loading="lazy" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/1.jpg" alt="img">
 			<span>measurement on image not to be scaled!</span>
         </div>
     </div>
@@ -76,7 +76,7 @@ Make sure screen is working before proceeding.
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
         <div class="img-thumbnail">
-            <img class="img-fluid" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/2.jpg" alt="img">
+            <img class="img-fluid" loading="lazy" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/2.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-3"></div>
@@ -91,7 +91,7 @@ Make sure screen is working before proceeding.
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
         <div class="img-thumbnail">
-            <img class="img-fluid" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/3.jpg" alt="img">
+            <img class="img-fluid" loading="lazy" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/3.jpg" alt="img">
 			<span>re test your screen to make sure everything went well</span>
         </div>
     </div>
@@ -103,7 +103,7 @@ Make sure screen is working before proceeding.
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
         <div class="img-thumbnail">
-            <img class="img-fluid" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/4.jpg" alt="img">
+            <img class="img-fluid" loading="lazy" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/4.jpg" alt="img">
 			<span>make sure all sensors is working properly</span>
         </div>
     </div>
@@ -121,7 +121,7 @@ Make sure screen is working before proceeding.
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
         <div class="img-thumbnail">
-            <img class="img-fluid" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/5.jpg" alt="img">
+            <img class="img-fluid" loading="lazy" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/5.jpg" alt="img">
 			<span>measurement on image not to be scaled!</span>
         </div>
     </div>
@@ -137,7 +137,7 @@ from [github](https://github.com/catzy007/HeadTracking-Arduino-FreePie/)
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
         <div class="img-thumbnail">
-            <img class="img-fluid" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/6.jpg" alt="img">
+            <img class="img-fluid" loading="lazy" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/6.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-3"></div>
@@ -151,7 +151,7 @@ board, processor, and com port!
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
         <div class="img-thumbnail">
-            <img class="img-fluid" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/7.jpg" alt="img">
+            <img class="img-fluid" loading="lazy" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/7.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-3"></div>
@@ -163,7 +163,7 @@ then open `FreePIE Script\FreeIMU-MouseEMU.py`
     <div class="col-sm-2"></div>
     <div class="col-sm-8">
         <div class="img-thumbnail">
-            <img class="img-fluid" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/8.jpg" alt="img">
+            <img class="img-fluid" loading="lazy" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/8.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-2"></div>
@@ -174,7 +174,7 @@ then open `FreePIE Script\FreeIMU-MouseEMU.py`
     <div class="col-sm-4"></div>
     <div class="col-sm-4">
         <div class="img-thumbnail">
-            <img class="img-fluid" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/9.jpg" alt="img">
+            <img class="img-fluid" loading="lazy" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/9.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-4"></div>
@@ -187,7 +187,7 @@ too. Now your VR headset is ready to do it's job ~('-'~)
     <div class="col-sm-2"></div>
     <div class="col-sm-8">
         <div class="img-thumbnail">
-            <img class="img-fluid" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/10.jpg" alt="img">
+            <img class="img-fluid" loading="lazy" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/10.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-2"></div>
@@ -215,7 +215,7 @@ get some error, restart your computer`
 		<div class="col-sm-3"></div>
 		<div class="col-sm-6">
 			<div class="img-thumbnail">
-				<img class="img-fluid" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/11.jpg" alt="img">
+				<img class="img-fluid" loading="lazy" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/11.jpg" alt="img">
 			</div>
 		</div>
 		<div class="col-sm-3"></div>
@@ -228,7 +228,7 @@ get some error, restart your computer`
 		<div class="col-sm-2"></div>
 		<div class="col-sm-8">
 			<div class="img-thumbnail">
-				<img class="img-fluid" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/12.jpg" alt="img">
+				<img class="img-fluid" loading="lazy" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/12.jpg" alt="img">
 			</div>
 		</div>
 		<div class="col-sm-2"></div>
@@ -246,7 +246,7 @@ get some error, restart your computer`
 		<div class="col-sm-2"></div>
 		<div class="col-sm-8">
 			<div class="img-thumbnail">
-				<img class="img-fluid" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/13.jpg" alt="img">
+				<img class="img-fluid" loading="lazy" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/13.jpg" alt="img">
 			</div>
 		</div>
 		<div class="col-sm-2"></div>
@@ -257,7 +257,7 @@ get some error, restart your computer`
 		<div class="col-sm-2"></div>
 		<div class="col-sm-8">
 			<div class="img-thumbnail">
-				<img class="img-fluid" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/14.jpg" alt="img">
+				<img class="img-fluid" loading="lazy" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/14.jpg" alt="img">
 			</div>
 		</div>
 		<div class="col-sm-2"></div>
@@ -269,7 +269,7 @@ get some error, restart your computer`
 		<div class="col-sm-3"></div>
 		<div class="col-sm-6">
 			<div class="img-thumbnail">
-				<img class="img-fluid" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/15.jpg" alt="img">
+				<img class="img-fluid" loading="lazy" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/15.jpg" alt="img">
 			</div>
 		</div>
 		<div class="col-sm-3"></div>
@@ -280,7 +280,7 @@ get some error, restart your computer`
 		<div class="col-sm-2"></div>
 		<div class="col-sm-8">
 			<div class="img-thumbnail">
-				<img class="img-fluid" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/16.jpg" alt="img">
+				<img class="img-fluid" loading="lazy" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/16.jpg" alt="img">
 			</div>
 		</div>
 		<div class="col-sm-2"></div>
@@ -320,7 +320,7 @@ MPU-6000 <http://developers-club.com/posts/181159/>
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/17.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/17.jpg" alt="img">
 			<span>MPU-6000 highlighted in orange</span>
 		</div>
 	</div>
@@ -332,7 +332,7 @@ and based on this datasheet from [ivensense](https://store.invensense.com/datash
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/18.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/18.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -353,7 +353,7 @@ for comparison
 	<div class="col-sm-4"></div>
 	<div class="col-sm-4">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/19.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/19.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-4"></div>
@@ -366,7 +366,7 @@ i hope it is made for some structural support.
 	<div class="col-sm-4"></div>
 	<div class="col-sm-4">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/20.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/20.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-4"></div>
@@ -379,7 +379,7 @@ it's basically done!
 	<div class="col-sm-4"></div>
 	<div class="col-sm-4">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/21.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/21.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-4"></div>
@@ -391,7 +391,7 @@ This is pro micro from RobotDyn that red circle is structural support for usb po
 	<div class="col-sm-4"></div>
 	<div class="col-sm-4">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/22.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/22.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-4"></div>
@@ -403,7 +403,7 @@ Same here Arduino Micro. it has structural support.
 	<div class="col-sm-4"></div>
 	<div class="col-sm-4">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/23.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/23.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-4"></div>
@@ -432,7 +432,7 @@ and <https://github.com/pocketmoon/MPU-6050-Arduino-Micro-Head-Tracker>
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/24.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/24.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-2"></div>
@@ -443,7 +443,7 @@ and <https://github.com/pocketmoon/MPU-6050-Arduino-Micro-Head-Tracker>
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/25.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/25.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-2"></div>
@@ -454,7 +454,7 @@ and <https://github.com/pocketmoon/MPU-6050-Arduino-Micro-Head-Tracker>
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/26.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/26.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-2"></div>
@@ -465,7 +465,7 @@ and <https://github.com/pocketmoon/MPU-6050-Arduino-Micro-Head-Tracker>
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/27.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/27.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-2"></div>

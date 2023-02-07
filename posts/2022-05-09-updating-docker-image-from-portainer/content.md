@@ -24,7 +24,7 @@ First, log in to your Portainer console and select your Environment.
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2022-05-09-updating-docker-image-from-portainer/01.png" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2022-05-09-updating-docker-image-from-portainer/01.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -36,7 +36,7 @@ you may get away with this, but this post does not cover such scenario.
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2022-05-09-updating-docker-image-from-portainer/02.png" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2022-05-09-updating-docker-image-from-portainer/02.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -50,7 +50,7 @@ your connection speed.
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2022-05-09-updating-docker-image-from-portainer/03.png" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2022-05-09-updating-docker-image-from-portainer/03.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -62,7 +62,7 @@ this is the image you just downloaded, and you can see the old image as `<none>`
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2022-05-09-updating-docker-image-from-portainer/04.png" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2022-05-09-updating-docker-image-from-portainer/04.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -74,7 +74,7 @@ press on `Recreate` button.
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2022-05-09-updating-docker-image-from-portainer/05.png" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2022-05-09-updating-docker-image-from-portainer/05.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -85,7 +85,7 @@ A pop-up will appear and continue by pressing `Recreate` button.
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2022-05-09-updating-docker-image-from-portainer/06.png" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2022-05-09-updating-docker-image-from-portainer/06.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -97,7 +97,7 @@ immediately with all the persistent data intact.
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2022-05-09-updating-docker-image-from-portainer/07.png" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2022-05-09-updating-docker-image-from-portainer/07.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -110,7 +110,7 @@ on the old image followed by pressing `Remove` button.
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2022-05-09-updating-docker-image-from-portainer/08.png" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2022-05-09-updating-docker-image-from-portainer/08.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -125,7 +125,7 @@ lost entire stack because of random error in the middle of update.
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2022-05-09-updating-docker-image-from-portainer/09.png" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2022-05-09-updating-docker-image-from-portainer/09.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>

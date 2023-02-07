@@ -22,7 +22,7 @@ Check Fractional Scaling`.
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2022-09-20-custom-display-scaling-in-wayland-ubuntu-22-04/01.png" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2022-09-20-custom-display-scaling-in-wayland-ubuntu-22-04/01.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-2"></div>
@@ -38,7 +38,7 @@ Next, open terminal and type `sudo nano ~/.config/monitors.xml`
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2022-09-20-custom-display-scaling-in-wayland-ubuntu-22-04/02.png" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2022-09-20-custom-display-scaling-in-wayland-ubuntu-22-04/02.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-2"></div>

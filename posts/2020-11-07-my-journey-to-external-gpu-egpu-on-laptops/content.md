@@ -19,7 +19,7 @@ is it only cost 7-10 USD, yeah great deal.
 	<div class="col-sm-4"></div>
 	<div class="col-sm-4">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2020-11-07-my-journey-to-external-gpu-egpu-on-laptops/1.png" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2020-11-07-my-journey-to-external-gpu-egpu-on-laptops/1.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-4"></div>
@@ -37,7 +37,7 @@ between Green wire and Black wire or `PS_ON#` with `COM`. It basically forces a 
 	<div class="col-sm-4"></div>
 	<div class="col-sm-4">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2020-11-07-my-journey-to-external-gpu-egpu-on-laptops/3.png" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2020-11-07-my-journey-to-external-gpu-egpu-on-laptops/3.png" alt="img">
             <a href="https://en.wikipedia.org/wiki/Power_supply_unit_(computer)">Image from Wikipedia</a>
 		</div>
 	</div>
@@ -55,7 +55,7 @@ The power on Sequence is turn on the ATX PSU, wait for few seconds, then turn on
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2020-11-07-my-journey-to-external-gpu-egpu-on-laptops/4.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2020-11-07-my-journey-to-external-gpu-egpu-on-laptops/4.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -85,7 +85,7 @@ in GPU-Z. But still no gaming test.
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2020-11-07-my-journey-to-external-gpu-egpu-on-laptops/2.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2020-11-07-my-journey-to-external-gpu-egpu-on-laptops/2.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -101,7 +101,7 @@ to use EGPU in this laptop.
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2020-11-07-my-journey-to-external-gpu-egpu-on-laptops/6.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2020-11-07-my-journey-to-external-gpu-egpu-on-laptops/6.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -115,7 +115,7 @@ Nvidia 950M, Windows 10 2004 + Ubuntu 20.04. As usual just dissasemble the lapto
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2020-11-07-my-journey-to-external-gpu-egpu-on-laptops/7.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2020-11-07-my-journey-to-external-gpu-egpu-on-laptops/7.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -128,7 +128,7 @@ Support Module (CSM)`
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2020-11-07-my-journey-to-external-gpu-egpu-on-laptops/8.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2020-11-07-my-journey-to-external-gpu-egpu-on-laptops/8.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -139,7 +139,7 @@ Ubuntu 20.04 just fine.
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2020-11-07-my-journey-to-external-gpu-egpu-on-laptops/9.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2020-11-07-my-journey-to-external-gpu-egpu-on-laptops/9.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -148,7 +148,7 @@ Ubuntu 20.04 just fine.
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2020-11-07-my-journey-to-external-gpu-egpu-on-laptops/10.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2020-11-07-my-journey-to-external-gpu-egpu-on-laptops/10.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -158,7 +158,7 @@ After all that, i install AMD Radeon driver and it work just fine. Then let's te
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2020-11-07-my-journey-to-external-gpu-egpu-on-laptops/11.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2020-11-07-my-journey-to-external-gpu-egpu-on-laptops/11.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -168,7 +168,7 @@ Well it still updates, so current hot game? Genshin Impact with Max settings at 
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2020-11-07-my-journey-to-external-gpu-egpu-on-laptops/12.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2020-11-07-my-journey-to-external-gpu-egpu-on-laptops/12.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -189,7 +189,7 @@ smooth. Then DotA2 is finished updating and this is the results.
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2020-11-07-my-journey-to-external-gpu-egpu-on-laptops/13.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2020-11-07-my-journey-to-external-gpu-egpu-on-laptops/13.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -198,7 +198,7 @@ smooth. Then DotA2 is finished updating and this is the results.
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2020-11-07-my-journey-to-external-gpu-egpu-on-laptops/14.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2020-11-07-my-journey-to-external-gpu-egpu-on-laptops/14.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -207,7 +207,7 @@ smooth. Then DotA2 is finished updating and this is the results.
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2020-11-07-my-journey-to-external-gpu-egpu-on-laptops/15.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2020-11-07-my-journey-to-external-gpu-egpu-on-laptops/15.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -216,7 +216,7 @@ smooth. Then DotA2 is finished updating and this is the results.
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2020-11-07-my-journey-to-external-gpu-egpu-on-laptops/16.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2020-11-07-my-journey-to-external-gpu-egpu-on-laptops/16.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -229,7 +229,7 @@ What we can do is to use M.2 NVME adapter which is rated Up to PCIE-4X bandwith.
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2020-11-07-my-journey-to-external-gpu-egpu-on-laptops/17.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2020-11-07-my-journey-to-external-gpu-egpu-on-laptops/17.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -238,7 +238,7 @@ What we can do is to use M.2 NVME adapter which is rated Up to PCIE-4X bandwith.
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2020-11-07-my-journey-to-external-gpu-egpu-on-laptops/18.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2020-11-07-my-journey-to-external-gpu-egpu-on-laptops/18.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>

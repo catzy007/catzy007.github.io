@@ -44,7 +44,7 @@ That was the motherboard. It even come with IO Shield too
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
         <div class="img-thumbnail">
-            <img class="img-fluid" src="./posts/2019-05-25-log-building-poor-man-workstation/1.jpg" alt="img">
+            <img class="img-fluid" loading="lazy" src="./posts/2019-05-25-log-building-poor-man-workstation/1.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-3"></div>
@@ -69,7 +69,7 @@ Yeah i know not the best PSU but i hope it get job done. After quick plug and te
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
         <div class="img-thumbnail">
-            <img class="img-fluid" src="./posts/2019-05-25-log-building-poor-man-workstation/2.jpg" alt="img">
+            <img class="img-fluid" loading="lazy" src="./posts/2019-05-25-log-building-poor-man-workstation/2.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-3"></div>
@@ -84,7 +84,7 @@ After bought two stick of RAM and old AMD HSF from work, i'm ready to test this 
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
         <div class="img-thumbnail">
-            <img class="img-fluid" src="./posts/2019-05-25-log-building-poor-man-workstation/3.jpg" alt="img">
+            <img class="img-fluid" loading="lazy" src="./posts/2019-05-25-log-building-poor-man-workstation/3.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-3"></div>
@@ -93,7 +93,7 @@ After bought two stick of RAM and old AMD HSF from work, i'm ready to test this 
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
         <div class="img-thumbnail">
-            <img class="img-fluid" src="./posts/2019-05-25-log-building-poor-man-workstation/4.jpg" alt="img">
+            <img class="img-fluid" loading="lazy" src="./posts/2019-05-25-log-building-poor-man-workstation/4.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-3"></div>
@@ -109,7 +109,7 @@ After waiting a week and still didn't get my monthly wage on time, i decide to c
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
         <div class="img-thumbnail">
-            <img class="img-fluid" src="./posts/2019-05-25-log-building-poor-man-workstation/5.jpg" alt="img">
+            <img class="img-fluid" loading="lazy" src="./posts/2019-05-25-log-building-poor-man-workstation/5.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-3"></div>
@@ -118,7 +118,7 @@ After waiting a week and still didn't get my monthly wage on time, i decide to c
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
         <div class="img-thumbnail">
-            <img class="img-fluid" src="./posts/2019-05-25-log-building-poor-man-workstation/6.jpg" alt="img">
+            <img class="img-fluid" loading="lazy" src="./posts/2019-05-25-log-building-poor-man-workstation/6.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-3"></div>
@@ -127,7 +127,7 @@ After waiting a week and still didn't get my monthly wage on time, i decide to c
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
         <div class="img-thumbnail">
-            <img class="img-fluid" src="./posts/2019-05-25-log-building-poor-man-workstation/7.jpg" alt="img">
+            <img class="img-fluid" loading="lazy" src="./posts/2019-05-25-log-building-poor-man-workstation/7.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-3"></div>
@@ -136,13 +136,13 @@ Yeah some number are great but, the temperature was pretty high there. Hopefully
 
 <br>
 #### [UPDATE 07/22/19 22:00]
-Today my cooler arrive it's deepcool Ice Blade 200M. I quickly open and mount it on the motherboard aand yeah the LGA2011 screw was too big '-') sh*t.
+Today my cooler arrive it's deepcool Ice Blade 200M. I quickly open and mount it on the motherboard aand yeah the LGA2011 screw was too big.
 okay the problem is this
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
         <div class="img-thumbnail">
-            <img class="img-fluid" src="./posts/2019-05-25-log-building-poor-man-workstation/add1.jpg" alt="img">
+            <img class="img-fluid" loading="lazy" src="./posts/2019-05-25-log-building-poor-man-workstation/add1.jpg" alt="img">
 			<a href="https://forums.servethehome.com/index.php?threads/guide-1356-1366-xeon-aftermarket-heatsink-selection-installation.5003/">image source</a>
         </div>
     </div>
@@ -153,7 +153,7 @@ Then i cut the four corner of backplate using handsaw and this what it look like
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
         <div class="img-thumbnail">
-            <img class="img-fluid" src="./posts/2019-05-25-log-building-poor-man-workstation/8.jpg" alt="img">
+            <img class="img-fluid" loading="lazy" src="./posts/2019-05-25-log-building-poor-man-workstation/8.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-3"></div>
@@ -163,18 +163,18 @@ Finally i can mount the cooler using standar intel push-pin fastener
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
         <div class="img-thumbnail">
-            <img class="img-fluid" src="./posts/2019-05-25-log-building-poor-man-workstation/9.jpg" alt="img">
+            <img class="img-fluid" loading="lazy" src="./posts/2019-05-25-log-building-poor-man-workstation/9.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-3"></div>
 </div>
 Aand here is some benchmark. I get a minute less in blender than previous benchmark not that bad. The problem still the processor get up to 90+ centigrade.
-I think that because the exhaust of second CPU was directed to the first CPU. In other word feeding hot air into heatsink... i tried to change the heatsink direction but i have clearance issues. Maybe someday i will re route everything.
+I think that because the exhaust of second CPU was directed to the first CPU. In other word feeding hot air into heatsink. I can't change the heatsink direction because clearance issues. Hopefully one day i can re route everything.
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
         <div class="img-thumbnail">
-            <img class="img-fluid" src="./posts/2019-05-25-log-building-poor-man-workstation/10.jpg" alt="img">
+            <img class="img-fluid" loading="lazy" src="./posts/2019-05-25-log-building-poor-man-workstation/10.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-3"></div>
@@ -183,7 +183,7 @@ I think that because the exhaust of second CPU was directed to the first CPU. In
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
         <div class="img-thumbnail">
-            <img class="img-fluid" src="./posts/2019-05-25-log-building-poor-man-workstation/11.jpg" alt="img">
+            <img class="img-fluid" loading="lazy" src="./posts/2019-05-25-log-building-poor-man-workstation/11.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-3"></div>
@@ -192,28 +192,29 @@ I think that because the exhaust of second CPU was directed to the first CPU. In
 <br>
 #### [UPDATE 07/01/2019 13:23]
 Yesterday i bought some DDR3 Registered ram for my server. It's 1GB per stick so in total i have 6GB of RAM. 
-The ram itself is very cheap less than 1USD per stick yeah great deal. Maybe some day i will get 4GB stick from aliexpress
+The ram itself is very cheap less than 1USD per stick a great deal if you ask me. Maybe some day i can get 4GB stick from aliexpress.
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
         <div class="img-thumbnail">
-            <img class="img-fluid" src="./posts/2019-05-25-log-building-poor-man-workstation/12.jpg" alt="img">
+            <img class="img-fluid" loading="lazy" src="./posts/2019-05-25-log-building-poor-man-workstation/12.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-3"></div>
 </div>
 And i made some remote management too. It just simple relay and sbc glued together. Actually i plan to make 
-custom PCB and using arduino + ethernet module to make that but i only had a week to make this so yeah... maybe next time i will make that.
+custom PCB and using arduino + ethernet module to make that but i only had a week to make this. Maybe next time i will revisit that.
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
         <div class="img-thumbnail">
-            <img class="img-fluid" src="./posts/2019-05-25-log-building-poor-man-workstation/13.jpg" alt="img">
+            <img class="img-fluid" loading="lazy" src="./posts/2019-05-25-log-building-poor-man-workstation/13.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-3"></div>
 </div>
-Next thing to buy is case. At first, i plan to buy 2U rackmount case.. But here everything server related is expensive as hell so i will buy standard ATX case.
+Next thing to buy is case. At first, i plan to buy 2U rackmount case. But in my local area everything server related is expensive, i'm going to  
+use standard ATX case instead.
 
 <br>
 #### [UPDATE 08/17/2019 16:20]
@@ -222,12 +223,12 @@ After getting a random 20USD case from local store, this workstation is 80% fini
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
         <div class="img-thumbnail">
-            <img class="img-fluid" src="./posts/2019-05-25-log-building-poor-man-workstation/14.jpg" alt="img">
+            <img class="img-fluid" loading="lazy" src="./posts/2019-05-25-log-building-poor-man-workstation/14.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-3"></div>
 </div>
-The last thing i need is Graphic Card. Maybe some day i will get RX570 uder 100USD or something.
+The last thing i need is Graphic Card. Hopefully i can get RX570 uder 100USD or something.
 
 <br>
 #### [UPDATE 09/13/2019 19:57]
@@ -237,7 +238,7 @@ I bought three fan and set it in Push-Pull configuration
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
         <div class="img-thumbnail">
-            <img class="img-fluid" src="./posts/2019-05-25-log-building-poor-man-workstation/15.jpg" alt="img">
+            <img class="img-fluid" loading="lazy" src="./posts/2019-05-25-log-building-poor-man-workstation/15.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-3"></div>
@@ -246,17 +247,17 @@ I bought three fan and set it in Push-Pull configuration
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
         <div class="img-thumbnail">
-            <img class="img-fluid" src="./posts/2019-05-25-log-building-poor-man-workstation/16.jpg" alt="img">
+            <img class="img-fluid" loading="lazy" src="./posts/2019-05-25-log-building-poor-man-workstation/16.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-3"></div>
 </div>
-Also last week i'm bulding new remote management system using ESP8266 and relay, it still has some problem but i hope some day i can fix it.
+Also last week i'm bulding new remote management system using ESP8266 and relay, it still has some issues but at the moment it work just fine.
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
         <div class="img-thumbnail">
-            <img class="img-fluid" src="./posts/2019-05-25-log-building-poor-man-workstation/17.jpg" alt="img">
+            <img class="img-fluid" loading="lazy" src="./posts/2019-05-25-log-building-poor-man-workstation/17.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-3"></div>
@@ -264,28 +265,28 @@ Also last week i'm bulding new remote management system using ESP8266 and relay,
 
 <br>
 #### [UPDATE 12/01/2019 15:07]
-Few months pass and here i am. In the mean time, i'm modifying my case so i can get more air coming from that 120mm fans.
+Few months pass and here i am. In the meantime, i'm modifying my case so i can get more air coming from 120mm intake fans.
 It's not that pretty but it works really well, I just cut the front case with dremel and put mesh behind followed by some plastic plate.
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
         <div class="img-thumbnail">
-            <img class="img-fluid" src="./posts/2019-05-25-log-building-poor-man-workstation/18.jpg" alt="img">
+            <img class="img-fluid" loading="lazy" src="./posts/2019-05-25-log-building-poor-man-workstation/18.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-3"></div>
 </div>
-And finally i got my graphic card. It's RX460 4GB from Sapphire. Yeah it wasn't rx 570 i know, but it's cheap and it works well.
+And finally i got my graphic card. It is RX460 4GB from Sapphire. I know it is not an RX570, but i got it for a good price and it works well.
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
         <div class="img-thumbnail">
-            <img class="img-fluid" src="./posts/2019-05-25-log-building-poor-man-workstation/19.jpg" alt="img">
+            <img class="img-fluid" loading="lazy" src="./posts/2019-05-25-log-building-poor-man-workstation/19.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-3"></div>
 </div>
 
 <br>
-And that's wrap this journey to build my own workstation. Next upgrade in my plan is to get 24GB of DDR3 ECC ram from china. So yeah 
-thank you for reading this far. Hope you have a good day!
+And that's wrap this journey to build my own workstation. Next upgrade in my plan is to get 24GB of DDR3 ECC ram from china. 
+Thank you for reading this far. Hope you have a good day!

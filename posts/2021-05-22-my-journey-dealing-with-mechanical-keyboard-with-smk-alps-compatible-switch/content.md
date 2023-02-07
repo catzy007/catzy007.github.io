@@ -11,7 +11,7 @@ It's old keyboard, from PCB marking said 1990, with [SMK](https://deskthority.ne
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2021-05-22-my-journey-dealing-with-mechanical-keyboard-with-smk-alps-compatible-switch/1.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2021-05-22-my-journey-dealing-with-mechanical-keyboard-with-smk-alps-compatible-switch/1.jpg" alt="img">
             <span>It's the top left one</span>
 		</div>
 	</div>
@@ -24,7 +24,7 @@ Then i contact the seller and pick it up. At home i disassemble the keyboard and
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2021-05-22-my-journey-dealing-with-mechanical-keyboard-with-smk-alps-compatible-switch/2.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2021-05-22-my-journey-dealing-with-mechanical-keyboard-with-smk-alps-compatible-switch/2.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -33,7 +33,7 @@ Then i contact the seller and pick it up. At home i disassemble the keyboard and
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2021-05-22-my-journey-dealing-with-mechanical-keyboard-with-smk-alps-compatible-switch/3.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2021-05-22-my-journey-dealing-with-mechanical-keyboard-with-smk-alps-compatible-switch/3.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -46,7 +46,7 @@ for few hours and comeback later.
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2021-05-22-my-journey-dealing-with-mechanical-keyboard-with-smk-alps-compatible-switch/4.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2021-05-22-my-journey-dealing-with-mechanical-keyboard-with-smk-alps-compatible-switch/4.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -59,7 +59,7 @@ the PCB itself and try to clean it up.
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2021-05-22-my-journey-dealing-with-mechanical-keyboard-with-smk-alps-compatible-switch/5.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2021-05-22-my-journey-dealing-with-mechanical-keyboard-with-smk-alps-compatible-switch/5.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -72,7 +72,7 @@ brake cleaner, or maybe contact cleaner will be the best, last with alcohol wipe
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2021-05-22-my-journey-dealing-with-mechanical-keyboard-with-smk-alps-compatible-switch/6.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2021-05-22-my-journey-dealing-with-mechanical-keyboard-with-smk-alps-compatible-switch/6.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -109,7 +109,7 @@ sand it off and then put some primer on it.
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2021-05-22-my-journey-dealing-with-mechanical-keyboard-with-smk-alps-compatible-switch/7.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2021-05-22-my-journey-dealing-with-mechanical-keyboard-with-smk-alps-compatible-switch/7.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -121,7 +121,7 @@ Then i paint it black and put it back together again, so yeah.
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2021-05-22-my-journey-dealing-with-mechanical-keyboard-with-smk-alps-compatible-switch/8.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2021-05-22-my-journey-dealing-with-mechanical-keyboard-with-smk-alps-compatible-switch/8.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -135,7 +135,7 @@ something like that.
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2021-05-22-my-journey-dealing-with-mechanical-keyboard-with-smk-alps-compatible-switch/img/0.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2021-05-22-my-journey-dealing-with-mechanical-keyboard-with-smk-alps-compatible-switch/img/0.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -144,7 +144,7 @@ something like that.
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2021-05-22-my-journey-dealing-with-mechanical-keyboard-with-smk-alps-compatible-switch/img/1.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2021-05-22-my-journey-dealing-with-mechanical-keyboard-with-smk-alps-compatible-switch/img/1.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -153,7 +153,7 @@ something like that.
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2021-05-22-my-journey-dealing-with-mechanical-keyboard-with-smk-alps-compatible-switch/img/2.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2021-05-22-my-journey-dealing-with-mechanical-keyboard-with-smk-alps-compatible-switch/img/2.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -162,7 +162,7 @@ something like that.
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2021-05-22-my-journey-dealing-with-mechanical-keyboard-with-smk-alps-compatible-switch/img/3.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2021-05-22-my-journey-dealing-with-mechanical-keyboard-with-smk-alps-compatible-switch/img/3.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -171,7 +171,7 @@ something like that.
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2021-05-22-my-journey-dealing-with-mechanical-keyboard-with-smk-alps-compatible-switch/img/4.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2021-05-22-my-journey-dealing-with-mechanical-keyboard-with-smk-alps-compatible-switch/img/4.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -180,7 +180,7 @@ something like that.
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2021-05-22-my-journey-dealing-with-mechanical-keyboard-with-smk-alps-compatible-switch/img/5.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2021-05-22-my-journey-dealing-with-mechanical-keyboard-with-smk-alps-compatible-switch/img/5.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -189,7 +189,7 @@ something like that.
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2021-05-22-my-journey-dealing-with-mechanical-keyboard-with-smk-alps-compatible-switch/img/6.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2021-05-22-my-journey-dealing-with-mechanical-keyboard-with-smk-alps-compatible-switch/img/6.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -198,7 +198,7 @@ something like that.
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2021-05-22-my-journey-dealing-with-mechanical-keyboard-with-smk-alps-compatible-switch/img/7.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2021-05-22-my-journey-dealing-with-mechanical-keyboard-with-smk-alps-compatible-switch/img/7.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -207,7 +207,7 @@ something like that.
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2021-05-22-my-journey-dealing-with-mechanical-keyboard-with-smk-alps-compatible-switch/img/8.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2021-05-22-my-journey-dealing-with-mechanical-keyboard-with-smk-alps-compatible-switch/img/8.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -216,7 +216,7 @@ something like that.
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2021-05-22-my-journey-dealing-with-mechanical-keyboard-with-smk-alps-compatible-switch/img/9.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2021-05-22-my-journey-dealing-with-mechanical-keyboard-with-smk-alps-compatible-switch/img/9.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -225,7 +225,7 @@ something like that.
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2021-05-22-my-journey-dealing-with-mechanical-keyboard-with-smk-alps-compatible-switch/img/10.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2021-05-22-my-journey-dealing-with-mechanical-keyboard-with-smk-alps-compatible-switch/img/10.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -234,7 +234,7 @@ something like that.
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2021-05-22-my-journey-dealing-with-mechanical-keyboard-with-smk-alps-compatible-switch/img/11.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2021-05-22-my-journey-dealing-with-mechanical-keyboard-with-smk-alps-compatible-switch/img/11.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -243,7 +243,7 @@ something like that.
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2021-05-22-my-journey-dealing-with-mechanical-keyboard-with-smk-alps-compatible-switch/img/12.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2021-05-22-my-journey-dealing-with-mechanical-keyboard-with-smk-alps-compatible-switch/img/12.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -252,7 +252,7 @@ something like that.
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2021-05-22-my-journey-dealing-with-mechanical-keyboard-with-smk-alps-compatible-switch/img/13.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2021-05-22-my-journey-dealing-with-mechanical-keyboard-with-smk-alps-compatible-switch/img/13.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>

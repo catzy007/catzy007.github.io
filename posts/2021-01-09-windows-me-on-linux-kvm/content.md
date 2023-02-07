@@ -53,7 +53,7 @@ enter username, location, date time, and you are good to go.
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2021-01-09-windows-me-on-linux-kvm/0.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2021-01-09-windows-me-on-linux-kvm/0.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-2"></div>
@@ -62,7 +62,7 @@ enter username, location, date time, and you are good to go.
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2021-01-09-windows-me-on-linux-kvm/1.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2021-01-09-windows-me-on-linux-kvm/1.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-2"></div>
@@ -80,7 +80,7 @@ To fix all that, do.
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2021-01-09-windows-me-on-linux-kvm/driver-fix/1.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2021-01-09-windows-me-on-linux-kvm/driver-fix/1.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-2"></div>
@@ -91,7 +91,7 @@ To fix all that, do.
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2021-01-09-windows-me-on-linux-kvm/driver-fix/2.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2021-01-09-windows-me-on-linux-kvm/driver-fix/2.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-2"></div>
@@ -102,7 +102,7 @@ To fix all that, do.
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2021-01-09-windows-me-on-linux-kvm/driver-fix/3.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2021-01-09-windows-me-on-linux-kvm/driver-fix/3.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-2"></div>
@@ -113,7 +113,7 @@ To fix all that, do.
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2021-01-09-windows-me-on-linux-kvm/driver-fix/4.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2021-01-09-windows-me-on-linux-kvm/driver-fix/4.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-2"></div>
@@ -124,7 +124,7 @@ To fix all that, do.
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2021-01-09-windows-me-on-linux-kvm/driver-fix/5.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2021-01-09-windows-me-on-linux-kvm/driver-fix/5.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-2"></div>
@@ -135,7 +135,7 @@ To fix all that, do.
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2021-01-09-windows-me-on-linux-kvm/driver-fix/6.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2021-01-09-windows-me-on-linux-kvm/driver-fix/6.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-2"></div>
@@ -147,7 +147,7 @@ To fix all that, do.
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2021-01-09-windows-me-on-linux-kvm/driver-fix/7.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2021-01-09-windows-me-on-linux-kvm/driver-fix/7.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-2"></div>
@@ -156,7 +156,7 @@ To fix all that, do.
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2021-01-09-windows-me-on-linux-kvm/driver-fix/8.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2021-01-09-windows-me-on-linux-kvm/driver-fix/8.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-2"></div>
@@ -165,7 +165,7 @@ To fix all that, do.
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2021-01-09-windows-me-on-linux-kvm/driver-fix/9.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2021-01-09-windows-me-on-linux-kvm/driver-fix/9.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-2"></div>
@@ -176,7 +176,7 @@ To fix all that, do.
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2021-01-09-windows-me-on-linux-kvm/driver-fix/10.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2021-01-09-windows-me-on-linux-kvm/driver-fix/10.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-2"></div>
@@ -189,7 +189,7 @@ After PCI bus device detected and installed corrects, all other PCI device will 
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2021-01-09-windows-me-on-linux-kvm/2.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2021-01-09-windows-me-on-linux-kvm/2.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-2"></div>
@@ -198,7 +198,7 @@ After PCI bus device detected and installed corrects, all other PCI device will 
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2021-01-09-windows-me-on-linux-kvm/3.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2021-01-09-windows-me-on-linux-kvm/3.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-2"></div>
@@ -207,7 +207,7 @@ After PCI bus device detected and installed corrects, all other PCI device will 
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2021-01-09-windows-me-on-linux-kvm/4.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2021-01-09-windows-me-on-linux-kvm/4.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-2"></div>
@@ -221,7 +221,7 @@ To transfer files, install web server (Apache) on your Linux host, and use brows
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2021-01-09-windows-me-on-linux-kvm/5.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2021-01-09-windows-me-on-linux-kvm/5.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-2"></div>
@@ -232,7 +232,7 @@ To transfer files, install web server (Apache) on your Linux host, and use brows
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2021-01-09-windows-me-on-linux-kvm/6.png" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2021-01-09-windows-me-on-linux-kvm/6.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-2"></div>

@@ -20,7 +20,7 @@ to create a VM inside Proxmox.
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2021-09-04-openwrt-inside-proxmox-vm/01.png" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2021-09-04-openwrt-inside-proxmox-vm/01.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -48,7 +48,7 @@ Last, boot it up and if everything goes well, OpenWrt should work right away.
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2021-09-04-openwrt-inside-proxmox-vm/02.png" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2021-09-04-openwrt-inside-proxmox-vm/02.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-2"></div>
@@ -64,7 +64,7 @@ Container attached to new bridge, you can manage their network from OpenWrt.
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2021-09-04-openwrt-inside-proxmox-vm/03.png" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2021-09-04-openwrt-inside-proxmox-vm/03.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-2"></div>

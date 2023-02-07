@@ -41,7 +41,7 @@ might need to change that yo arm or arm64 based on your device processor.
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
         <div class="img-thumbnail">
-            <img class="img-fluid" src="./posts/2020-01-17-ubuntu-chroot-container-in-android/1.jpg" alt="img">
+            <img class="img-fluid" loading="lazy" src="./posts/2020-01-17-ubuntu-chroot-container-in-android/1.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-3"></div>
@@ -50,7 +50,7 @@ might need to change that yo arm or arm64 based on your device processor.
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
         <div class="img-thumbnail">
-            <img class="img-fluid" src="./posts/2020-01-17-ubuntu-chroot-container-in-android/2.jpg" alt="img">
+            <img class="img-fluid" loading="lazy" src="./posts/2020-01-17-ubuntu-chroot-container-in-android/2.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-3"></div>
@@ -63,7 +63,7 @@ First, press that control panel icon, then change the config based on your need.
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
         <div class="img-thumbnail">
-            <img class="img-fluid" src="./posts/2020-01-17-ubuntu-chroot-container-in-android/3.jpg" alt="img">
+            <img class="img-fluid" loading="lazy" src="./posts/2020-01-17-ubuntu-chroot-container-in-android/3.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-3"></div>
@@ -72,7 +72,7 @@ First, press that control panel icon, then change the config based on your need.
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
         <div class="img-thumbnail">
-            <img class="img-fluid" src="./posts/2020-01-17-ubuntu-chroot-container-in-android/4.jpg" alt="img">
+            <img class="img-fluid" loading="lazy" src="./posts/2020-01-17-ubuntu-chroot-container-in-android/4.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-3"></div>
@@ -87,7 +87,7 @@ in my case, i only had limited amount of RAM, so yeah i disable that.
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
         <div class="img-thumbnail">
-            <img class="img-fluid" src="./posts/2020-01-17-ubuntu-chroot-container-in-android/5.jpg" alt="img">
+            <img class="img-fluid" loading="lazy" src="./posts/2020-01-17-ubuntu-chroot-container-in-android/5.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-3"></div>
@@ -96,7 +96,7 @@ in my case, i only had limited amount of RAM, so yeah i disable that.
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
         <div class="img-thumbnail">
-            <img class="img-fluid" src="./posts/2020-01-17-ubuntu-chroot-container-in-android/6.jpg" alt="img">
+            <img class="img-fluid" loading="lazy" src="./posts/2020-01-17-ubuntu-chroot-container-in-android/6.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-3"></div>
@@ -114,7 +114,7 @@ use `ssh username@your_device_ip`
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
         <div class="img-thumbnail">
-            <img class="img-fluid" src="./posts/2020-01-17-ubuntu-chroot-container-in-android/7.jpg" alt="img">
+            <img class="img-fluid" loading="lazy" src="./posts/2020-01-17-ubuntu-chroot-container-in-android/7.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-3"></div>
@@ -123,7 +123,7 @@ use `ssh username@your_device_ip`
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
         <div class="img-thumbnail">
-            <img class="img-fluid" src="./posts/2020-01-17-ubuntu-chroot-container-in-android/8.jpg" alt="img">
+            <img class="img-fluid" loading="lazy" src="./posts/2020-01-17-ubuntu-chroot-container-in-android/8.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-3"></div>
@@ -137,7 +137,7 @@ you can connect vnc from other machine too.
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
         <div class="img-thumbnail">
-            <img class="img-fluid" src="./posts/2020-01-17-ubuntu-chroot-container-in-android/9.jpg" alt="img">
+            <img class="img-fluid" loading="lazy" src="./posts/2020-01-17-ubuntu-chroot-container-in-android/9.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-3"></div>
@@ -146,7 +146,7 @@ you can connect vnc from other machine too.
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
         <div class="img-thumbnail">
-            <img class="img-fluid" src="./posts/2020-01-17-ubuntu-chroot-container-in-android/10.jpg" alt="img">
+            <img class="img-fluid" loading="lazy" src="./posts/2020-01-17-ubuntu-chroot-container-in-android/10.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-3"></div>
@@ -171,7 +171,7 @@ is written in nano inside that chroot container.
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
         <div class="img-thumbnail">
-            <img class="img-fluid" src="./posts/2020-01-17-ubuntu-chroot-container-in-android/11.jpg" alt="img">
+            <img class="img-fluid" loading="lazy" src="./posts/2020-01-17-ubuntu-chroot-container-in-android/11.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-3"></div>
@@ -180,7 +180,7 @@ is written in nano inside that chroot container.
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
         <div class="img-thumbnail">
-            <img class="img-fluid" src="./posts/2020-01-17-ubuntu-chroot-container-in-android/12.jpg" alt="img">
+            <img class="img-fluid" loading="lazy" src="./posts/2020-01-17-ubuntu-chroot-container-in-android/12.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-3"></div>

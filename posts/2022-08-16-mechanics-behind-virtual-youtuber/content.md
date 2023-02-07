@@ -23,7 +23,7 @@ meant that combining animation, computer graphics and MoCap is possible.
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2022-08-16-mechanics-behind-virtual-youtuber/07.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2022-08-16-mechanics-behind-virtual-youtuber/07.jpg" alt="img">
 			<span>MotionSampler Utilities - reality.sgi.com</span>
 		</div>
 	</div>
@@ -53,7 +53,7 @@ depth data from your surrounding area.
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2022-08-16-mechanics-behind-virtual-youtuber/01.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2022-08-16-mechanics-behind-virtual-youtuber/01.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-2"></div>
@@ -80,7 +80,7 @@ get motion capture animation.
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2022-08-16-mechanics-behind-virtual-youtuber/02.png" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2022-08-16-mechanics-behind-virtual-youtuber/02.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-2"></div>
@@ -94,7 +94,7 @@ software existed such as [MikuMikuCapture (MMC)](https://sites.google.com/site/m
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2022-08-16-mechanics-behind-virtual-youtuber/03.png" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2022-08-16-mechanics-behind-virtual-youtuber/03.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-2"></div>
@@ -113,7 +113,7 @@ camera.
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2022-08-16-mechanics-behind-virtual-youtuber/00.png" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2022-08-16-mechanics-behind-virtual-youtuber/00.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -131,7 +131,7 @@ which consist of few sensors like accelerometer, gyroscope, magnetometer, etc.
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2022-08-16-mechanics-behind-virtual-youtuber/06.png" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2022-08-16-mechanics-behind-virtual-youtuber/06.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -154,7 +154,7 @@ draw your own texture and add custom text or logo to your avatar.
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2022-08-16-mechanics-behind-virtual-youtuber/04.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2022-08-16-mechanics-behind-virtual-youtuber/04.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-2"></div>
@@ -172,7 +172,7 @@ to motion data.
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2022-08-16-mechanics-behind-virtual-youtuber/05.png" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2022-08-16-mechanics-behind-virtual-youtuber/05.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>

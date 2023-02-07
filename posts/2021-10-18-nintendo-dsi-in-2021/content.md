@@ -11,7 +11,7 @@ and R4 clone. Then i power it up and i get this message.
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2021-10-18-nintendo-dsi-in-2021/01.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2021-10-18-nintendo-dsi-in-2021/01.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -20,7 +20,7 @@ and R4 clone. Then i power it up and i get this message.
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2021-10-18-nintendo-dsi-in-2021/00.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2021-10-18-nintendo-dsi-in-2021/00.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -40,7 +40,7 @@ OKをタッチしてください。
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2021-10-18-nintendo-dsi-in-2021/02.png" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2021-10-18-nintendo-dsi-in-2021/02.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -55,7 +55,7 @@ Then i look for the Button Switches and get a listing 10 pcs at 1 USD + Shipping
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2021-10-18-nintendo-dsi-in-2021/03.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2021-10-18-nintendo-dsi-in-2021/03.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -64,7 +64,7 @@ Then i look for the Button Switches and get a listing 10 pcs at 1 USD + Shipping
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2021-10-18-nintendo-dsi-in-2021/04.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2021-10-18-nintendo-dsi-in-2021/04.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -73,7 +73,7 @@ Then i look for the Button Switches and get a listing 10 pcs at 1 USD + Shipping
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2021-10-18-nintendo-dsi-in-2021/05.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2021-10-18-nintendo-dsi-in-2021/05.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -82,7 +82,7 @@ Then i look for the Button Switches and get a listing 10 pcs at 1 USD + Shipping
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2021-10-18-nintendo-dsi-in-2021/06.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2021-10-18-nintendo-dsi-in-2021/06.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -96,7 +96,7 @@ but as long as it's working just fine then i'll take it.
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2021-10-18-nintendo-dsi-in-2021/07.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2021-10-18-nintendo-dsi-in-2021/07.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -109,7 +109,7 @@ to do a system wipe and try to update the firmware to the latest version.
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2021-10-18-nintendo-dsi-in-2021/08.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2021-10-18-nintendo-dsi-in-2021/08.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -118,7 +118,7 @@ to do a system wipe and try to update the firmware to the latest version.
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2021-10-18-nintendo-dsi-in-2021/09.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2021-10-18-nintendo-dsi-in-2021/09.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -130,7 +130,7 @@ dsiware and download web browser just to make the system more useable.
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2021-10-18-nintendo-dsi-in-2021/10.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2021-10-18-nintendo-dsi-in-2021/10.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -172,7 +172,7 @@ If you want to try it out, follow [GBAtemp forum post](https://gbatemp.net/threa
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2021-10-18-nintendo-dsi-in-2021/11.png" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2021-10-18-nintendo-dsi-in-2021/11.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-2"></div>
@@ -185,7 +185,7 @@ plus camera.
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2021-10-18-nintendo-dsi-in-2021/12.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2021-10-18-nintendo-dsi-in-2021/12.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -201,7 +201,7 @@ then fine i'll take it anyways. Then the package arrive and good news.
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2021-10-18-nintendo-dsi-in-2021/13.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2021-10-18-nintendo-dsi-in-2021/13.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -210,7 +210,7 @@ then fine i'll take it anyways. Then the package arrive and good news.
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2021-10-18-nintendo-dsi-in-2021/14.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2021-10-18-nintendo-dsi-in-2021/14.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -219,7 +219,7 @@ then fine i'll take it anyways. Then the package arrive and good news.
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2021-10-18-nintendo-dsi-in-2021/15.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2021-10-18-nintendo-dsi-in-2021/15.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -240,7 +240,7 @@ for little details. Unless they want to make a `Supercopy` or something like tha
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2021-10-18-nintendo-dsi-in-2021/16.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2021-10-18-nintendo-dsi-in-2021/16.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -255,7 +255,7 @@ Oh yeah the default username is `root` and password `uClinux`.
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2021-10-18-nintendo-dsi-in-2021/17.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2021-10-18-nintendo-dsi-in-2021/17.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>

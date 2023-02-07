@@ -71,7 +71,7 @@ After proper set-up, you should get something similar.
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2022-11-10-secure-android-development-with-local-certificate-authority-ca/01.png" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2022-11-10-secure-android-development-with-local-certificate-authority-ca/01.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>

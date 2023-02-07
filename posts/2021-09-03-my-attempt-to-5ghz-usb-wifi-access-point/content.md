@@ -37,7 +37,7 @@ but most of them had to be compiled manually.
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2021-09-03-my-attempt-to-5ghz-usb-wifi-access-point/01.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2021-09-03-my-attempt-to-5ghz-usb-wifi-access-point/01.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -187,7 +187,7 @@ the mode still shown as `802.11bgn` which is not actually the case as you see la
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2021-09-03-my-attempt-to-5ghz-usb-wifi-access-point/02.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2021-09-03-my-attempt-to-5ghz-usb-wifi-access-point/02.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-2"></div>
@@ -202,7 +202,7 @@ Awesome.
 	<div class="col-sm-4"></div>
 	<div class="col-sm-4">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2021-09-03-my-attempt-to-5ghz-usb-wifi-access-point/03.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2021-09-03-my-attempt-to-5ghz-usb-wifi-access-point/03.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-4"></div>

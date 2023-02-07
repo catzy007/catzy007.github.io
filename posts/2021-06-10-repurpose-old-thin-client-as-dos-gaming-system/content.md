@@ -24,7 +24,7 @@ and the other one said T5700. If any of you need this, look for both keyword.
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2021-06-10-repurpose-old-thin-client-as-dos-gaming-system/1.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2021-06-10-repurpose-old-thin-client-as-dos-gaming-system/1.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -44,7 +44,7 @@ accordingly.
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2021-06-10-repurpose-old-thin-client-as-dos-gaming-system/2.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2021-06-10-repurpose-old-thin-client-as-dos-gaming-system/2.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -107,7 +107,7 @@ Thanks to [JazeFox](https://www.vogons.org/viewtopic.php?t=73270) and [PhilsComp
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2021-06-10-repurpose-old-thin-client-as-dos-gaming-system/5.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2021-06-10-repurpose-old-thin-client-as-dos-gaming-system/5.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -169,7 +169,7 @@ something similar.
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2021-06-10-repurpose-old-thin-client-as-dos-gaming-system/3.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2021-06-10-repurpose-old-thin-client-as-dos-gaming-system/3.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -178,7 +178,7 @@ something similar.
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2021-06-10-repurpose-old-thin-client-as-dos-gaming-system/4.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2021-06-10-repurpose-old-thin-client-as-dos-gaming-system/4.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>

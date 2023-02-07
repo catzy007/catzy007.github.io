@@ -454,10 +454,10 @@ to use all threads may improve performance.
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
     <div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2022-11-24-my-journey-to-stable-diffusion/01.png" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2022-11-24-my-journey-to-stable-diffusion/01.png" alt="img">
 		</div>
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2022-11-24-my-journey-to-stable-diffusion/02.png" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2022-11-24-my-journey-to-stable-diffusion/02.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-2"></div>
@@ -475,7 +475,7 @@ Which is mostly stated in [Limitations and Bias](https://huggingface.co/CompVis/
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2022-11-24-my-journey-to-stable-diffusion/03.png" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2022-11-24-my-journey-to-stable-diffusion/03.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-2"></div>
@@ -508,7 +508,7 @@ compared to 5 to 6 Minutes. Not only using GPU is more efficient 75W vs 190W
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2022-11-24-my-journey-to-stable-diffusion/04.png" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2022-11-24-my-journey-to-stable-diffusion/04.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-2"></div>
@@ -526,7 +526,7 @@ of memory and crash.
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2022-11-24-my-journey-to-stable-diffusion/05.png" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2022-11-24-my-journey-to-stable-diffusion/05.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-2"></div>
@@ -839,7 +839,7 @@ better over time so why not use it to your advantage instead.
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2022-11-24-my-journey-to-stable-diffusion/06.png" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2022-11-24-my-journey-to-stable-diffusion/06.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-2"></div>

@@ -40,7 +40,7 @@ having a connection issues, i have not affected at all.
 	<div class="col-sm-4"></div>
 	<div class="col-sm-4">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2022-07-30-better-internet-with-dnscrypt-proxy-and-pi-hole/01.png" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2022-07-30-better-internet-with-dnscrypt-proxy-and-pi-hole/01.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-4"></div>
@@ -105,7 +105,7 @@ configured DNS server and that's it.
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2022-07-30-better-internet-with-dnscrypt-proxy-and-pi-hole/02.png" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2022-07-30-better-internet-with-dnscrypt-proxy-and-pi-hole/02.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-2"></div>

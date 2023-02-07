@@ -109,7 +109,7 @@ INFLUXDB_ADMIN_PASSWORD=influxdb-passwd
 	<div class="col-sm-4"></div>
 	<div class="col-sm-4">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2023-01-19-setting-up-grafana-influxdb-for-system-monitoring/01.png" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2023-01-19-setting-up-grafana-influxdb-for-system-monitoring/01.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-4"></div>

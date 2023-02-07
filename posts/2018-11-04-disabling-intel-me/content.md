@@ -22,7 +22,7 @@ First disassemble your laptop/pc unplug power, ram, BIOS battery, basically unpl
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
         <div class="img-thumbnail">
-            <img class="img-fluid" src="./posts/2018-11-04-disabling-intel-me/1.jpg" alt="img">
+            <img class="img-fluid" loading="lazy" src="./posts/2018-11-04-disabling-intel-me/1.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-3"></div>
@@ -33,7 +33,7 @@ Next you need to find datasheet for it (just google the chip name + datasheet) e
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
         <div class="img-thumbnail">
-            <img class="img-fluid" src="./posts/2018-11-04-disabling-intel-me/2.jpg" alt="img">
+            <img class="img-fluid" loading="lazy" src="./posts/2018-11-04-disabling-intel-me/2.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-3"></div>
@@ -44,7 +44,7 @@ Then wire everything according to the schematics provided by datasheet, followed
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
         <div class="img-thumbnail">
-            <img class="img-fluid" src="./posts/2018-11-04-disabling-intel-me/3.jpg" alt="img">
+            <img class="img-fluid" loading="lazy" src="./posts/2018-11-04-disabling-intel-me/3.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-3"></div>
@@ -53,7 +53,7 @@ Then wire everything according to the schematics provided by datasheet, followed
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
         <div class="img-thumbnail">
-            <img class="img-fluid" src="./posts/2018-11-04-disabling-intel-me/4.jpg" alt="img">
+            <img class="img-fluid" loading="lazy" src="./posts/2018-11-04-disabling-intel-me/4.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-3"></div>
