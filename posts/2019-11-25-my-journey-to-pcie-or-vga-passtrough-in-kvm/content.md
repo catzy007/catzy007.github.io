@@ -4,7 +4,7 @@ For a long time, Linux users has to face a fact that Microsoft Windows have some
 lot of applications such as Games, CAD application, Many Adobe product and list goes on. Yes 
 i know there are some alternatives and [DXVK](https://github.com/doitsujin/dxvk)-[Proton](https://github.com/ValveSoftware/Proton) 
 is a thing. Even some steam games run natively on Linux, but that wasn't enough 
-for me. And that was the main reason why [i build my own server](/blog/#2019-05-25-log-building-poor-man-workstation) 
+for me. And that was the main reason why [i build my own server](https://catzy007.github.io/loader.html?post=2019-05-25-log-building-poor-man-workstation) 
 with lot of cores so that i can use KVM (Kernel-based Virtual Machine) so i can create Windows 
 VM and pass a Video Graphic Adapter and use it as normal Windows machine... Neat. So here's my journey.
 
