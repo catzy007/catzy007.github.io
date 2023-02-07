@@ -63,7 +63,7 @@ My setup. All pin connected to RPI GPIO, WP NC VCC connected to breadboard into 
 
 <br>
 #### Enable SPI pin and download some tools
-next enable SPI pin on Raspberry Pi https://learn.sparkfun.com/tutorials/raspberry-pi-spi-and-i2c-tutorial/all
+next enable SPI pin on [Raspberry Pi](https://learn.sparkfun.com/tutorials/raspberry-pi-spi-and-i2c-tutorial/all)
 
 then download `flashrom`
 
@@ -471,7 +471,7 @@ Error 9459: Internal error (Could not determine FW features information)
 #### Conclusion.
 Cleaning intel me is relatively hard trivial but fun. I learn a lot from this experiment. Based on this project, even after cleaning intel me, i still can't remove 30 min barrier on replacing Pentium B960 with I5-2520M in HM70 motherboard. But i'm looking forward to other options and new finding in the future.
 
-> [UPDATE 9/29/17] actually this project is half going, because it takes many hour and i haven't done yet so yeah that's it for now.
+> [UPDATE 9/29/17] actually this project is half going, because it takes many hour and i haven't done yet and that's it for now.
 
 > [UPDATE 11/4/18] THIS PROJECT IS ONGOING AGAIN!
 
