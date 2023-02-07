@@ -20,7 +20,7 @@ replacement.
 	<div class="col-sm-4"></div>
 	<div class="col-sm-4">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/2.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/2.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-4"></div>
@@ -36,7 +36,7 @@ recompile the driver to 64Bit.
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/3.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/3.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -61,7 +61,7 @@ the problematic port, everything work just fine.
 	<div class="col-sm-4"></div>
 	<div class="col-sm-4">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/meme.jpeg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/meme.jpeg" alt="img">
             <a href="https://makeameme.org/meme/virtualize-all-the">makeameme.org</a>
 		</div>
 	</div>
@@ -81,7 +81,7 @@ is clear, it work just fine.
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/1.png" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/1.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-2"></div>
@@ -233,7 +233,7 @@ again similar process but with Windows 95 instead of ME.
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/4.png" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/4.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-2"></div>
@@ -257,7 +257,7 @@ running it in DOS 6.22 with KVM acceleration will make a difference.
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/5.png" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/5.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -271,7 +271,7 @@ mouse and extended memory support.
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/6.png" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/6.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -284,7 +284,7 @@ the Native 16 bit output is working just fine. The SB mode is disabled or greyed
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/7.png" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/7.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -296,7 +296,7 @@ Then i try edit `FIRSTTRY=` in `ds.ini` file, then run `loadtrs.bat` and get thi
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/8.png" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/8.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>

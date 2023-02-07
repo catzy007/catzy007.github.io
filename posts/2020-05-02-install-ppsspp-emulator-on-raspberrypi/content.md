@@ -43,7 +43,7 @@ and frameskip set to auto.
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2020-05-02-install-ppsspp-emulator-on-raspberrypi/1.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2020-05-02-install-ppsspp-emulator-on-raspberrypi/1.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>

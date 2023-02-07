@@ -68,7 +68,7 @@ Suddenly i have some free time and just happen to found my HDMI USB Capture so h
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2021-03-28-my-journey-to-uefi-boot-on-old-system/1.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2021-03-28-my-journey-to-uefi-boot-on-old-system/1.jpg" alt="img">
             <span>This is a old x58 based system with basic non-uefi firmware</span>
 		</div>
 	</div>
@@ -78,7 +78,7 @@ Suddenly i have some free time and just happen to found my HDMI USB Capture so h
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2021-03-28-my-journey-to-uefi-boot-on-old-system/2.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2021-03-28-my-journey-to-uefi-boot-on-old-system/2.jpg" alt="img">
             <span>This is boot selection menu, the Kingston is Clover and Sandisk is Ubuntu 20.04</span>
 		</div>
 	</div>
@@ -88,7 +88,7 @@ Suddenly i have some free time and just happen to found my HDMI USB Capture so h
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2021-03-28-my-journey-to-uefi-boot-on-old-system/3.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2021-03-28-my-journey-to-uefi-boot-on-old-system/3.jpg" alt="img">
             <span>This is Clover, if you want to see more option, press F1</span>
 		</div>
 	</div>
@@ -98,7 +98,7 @@ Suddenly i have some free time and just happen to found my HDMI USB Capture so h
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2021-03-28-my-journey-to-uefi-boot-on-old-system/4.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2021-03-28-my-journey-to-uefi-boot-on-old-system/4.jpg" alt="img">
             <span>This is Ubuntu 20.04. And i check UEFI mode using "efibootmgr -v" if no error shown then it works</span>
 		</div>
 	</div>

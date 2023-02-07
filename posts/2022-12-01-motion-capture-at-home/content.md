@@ -13,7 +13,7 @@ which is not covered in this post.
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2022-12-01-motion-capture-at-home/00.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2022-12-01-motion-capture-at-home/00.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-2"></div>
@@ -30,7 +30,7 @@ First, download and install `KinectSDK-v1.8-Setup.exe` and optionally `KinectDev
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2022-12-01-motion-capture-at-home/01.png" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2022-12-01-motion-capture-at-home/01.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -42,7 +42,7 @@ Then download and install Microsoft Visual C++ 2008 Redistributable `vcredist_x8
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2022-12-01-motion-capture-at-home/02.png" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2022-12-01-motion-capture-at-home/02.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -55,10 +55,10 @@ is `MikuMikuDanceE_v932.zip` and make sure it is working.
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2022-12-01-motion-capture-at-home/03.png" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2022-12-01-motion-capture-at-home/03.png" alt="img">
 		</div>
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2022-12-01-motion-capture-at-home/04.png" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2022-12-01-motion-capture-at-home/04.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-2"></div>
@@ -72,13 +72,13 @@ then `launch MMD > motion capture(K) > Kinect` and make sure it is working.
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2022-12-01-motion-capture-at-home/05.png" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2022-12-01-motion-capture-at-home/05.png" alt="img">
 		</div>
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2022-12-01-motion-capture-at-home/06.png" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2022-12-01-motion-capture-at-home/06.png" alt="img">
 		</div>
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2022-12-01-motion-capture-at-home/07.png" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2022-12-01-motion-capture-at-home/07.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-2"></div>
@@ -91,10 +91,10 @@ the latest version is `MikuMikuCapture_v202_6_en.zip`.
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2022-12-01-motion-capture-at-home/08.png" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2022-12-01-motion-capture-at-home/08.png" alt="img">
 		</div>
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2022-12-01-motion-capture-at-home/09.png" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2022-12-01-motion-capture-at-home/09.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-2"></div>
@@ -106,7 +106,7 @@ Next, launch `MMCapture.exe` then go to `Settings > Capture Settings` and change
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2022-12-01-motion-capture-at-home/10.png" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2022-12-01-motion-capture-at-home/10.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -117,10 +117,10 @@ Then load your model and go to `Capture > Press Kinect Icon` to start Motion Cap
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2022-12-01-motion-capture-at-home/11.png" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2022-12-01-motion-capture-at-home/11.png" alt="img">
 		</div>
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2022-12-01-motion-capture-at-home/12.png" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2022-12-01-motion-capture-at-home/12.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-2"></div>

@@ -20,7 +20,7 @@ First, make ubuntu bootable cd or usb
     <div class="col-sm-2"></div>
     <div class="col-sm-8">
         <div class="img-thumbnail">
-            <img class="img-fluid" src="./posts/2018-07-13-repair-grub-after-installing-windows/1.jpg" alt="img">
+            <img class="img-fluid" loading="lazy" src="./posts/2018-07-13-repair-grub-after-installing-windows/1.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-2"></div>

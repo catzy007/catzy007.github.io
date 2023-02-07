@@ -118,7 +118,7 @@ printf("value dari pi adalah %lf",pi);
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
         <div class="img-thumbnail">
-            <img class="img-fluid" src="./posts/2018-03-10-dasar-pemrograman-c-part2-tipe-data/1.jpg" alt="img">
+            <img class="img-fluid" loading="lazy" src="./posts/2018-03-10-dasar-pemrograman-c-part2-tipe-data/1.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-3"></div>
@@ -210,7 +210,7 @@ Buat program dengan bahasa C untuk menampilkan Informasi Toko dan Struk Pembayar
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
         <div class="img-thumbnail">
-            <img class="img-fluid" src="./posts/2018-03-10-dasar-pemrograman-c-part2-tipe-data/2.jpg" alt="img">
+            <img class="img-fluid" loading="lazy" src="./posts/2018-03-10-dasar-pemrograman-c-part2-tipe-data/2.jpg" alt="img">
             <a href="https://simple.wikipedia.org/wiki/Receipt">simple.wikipedia.org</a>
         </div>
     </div>

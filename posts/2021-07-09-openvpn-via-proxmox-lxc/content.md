@@ -21,7 +21,7 @@ and how to create LXC container.
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2021-07-09-openvpn-via-proxmox-lxc/01.png" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2021-07-09-openvpn-via-proxmox-lxc/01.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>

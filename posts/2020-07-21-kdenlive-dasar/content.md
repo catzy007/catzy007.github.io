@@ -8,7 +8,7 @@ Kdenlive mendukung berbagai macam sistem operasi, download sesuai dengan sistem 
 	<div class="col-sm-1"></div>
 	<div class="col-sm-10">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2020-07-21-kdenlive-dasar/0.png" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2020-07-21-kdenlive-dasar/0.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-1"></div>
@@ -21,7 +21,7 @@ Kdenlive mendukung berbagai macam sistem operasi, download sesuai dengan sistem 
 	<div class="col-sm-1"></div>
 	<div class="col-sm-10">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2020-07-21-kdenlive-dasar/1.png" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2020-07-21-kdenlive-dasar/1.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-1"></div>
@@ -35,7 +35,7 @@ Ini adalah tampilan awal `Kdenlive` terdapat 4 bagian utama yaitu `Projek Bin`, 
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2020-07-21-kdenlive-dasar/2.png" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2020-07-21-kdenlive-dasar/2.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -51,7 +51,7 @@ langsung kedalam `projek bin` atau dengan `klik kanan pada projek bin` dan pilih
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2020-07-21-kdenlive-dasar/3.png" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2020-07-21-kdenlive-dasar/3.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-2"></div>
@@ -67,7 +67,7 @@ kurang jelas, maka dapat menggunakan `Denoiser` dan sebagainya.
 	<div class="col-sm-1"></div>
 	<div class="col-sm-10">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2020-07-21-kdenlive-dasar/4.png" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2020-07-21-kdenlive-dasar/4.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-1"></div>
@@ -82,7 +82,7 @@ melihat hasil editing secara langsung.
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2020-07-21-kdenlive-dasar/5.png" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2020-07-21-kdenlive-dasar/5.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-2"></div>
@@ -99,7 +99,7 @@ yang harus dipahami.
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2020-07-21-kdenlive-dasar/5-1.png" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2020-07-21-kdenlive-dasar/5-1.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -118,7 +118,7 @@ Pada bagian yang berwarna <span style="color:blue">biru</span> adalah `timeline 
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2020-07-21-kdenlive-dasar/6.png" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2020-07-21-kdenlive-dasar/6.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -131,7 +131,7 @@ Pertama buat folder baru, copykan semua clip,video,gambar kedalam folder tersebu
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2020-07-21-kdenlive-dasar/7.png" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2020-07-21-kdenlive-dasar/7.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -143,7 +143,7 @@ atau dengan `klik kanan pada projek bin > add clip or folder`
 	<div class="col-sm-1"></div>
 	<div class="col-sm-10">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2020-07-21-kdenlive-dasar/8.png" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2020-07-21-kdenlive-dasar/8.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-1"></div>
@@ -152,7 +152,7 @@ atau dengan `klik kanan pada projek bin > add clip or folder`
 	<div class="col-sm-1"></div>
 	<div class="col-sm-10">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2020-07-21-kdenlive-dasar/9.png" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2020-07-21-kdenlive-dasar/9.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-1"></div>
@@ -163,7 +163,7 @@ Selanjutnya masukkan clip kedalam timeline dengan cara `drag and drop`
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2020-07-21-kdenlive-dasar/10.png" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2020-07-21-kdenlive-dasar/10.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -174,7 +174,7 @@ Sebelum melakukan apapun, pastikan lakukan save dan simpan file dalam folder yan
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2020-07-21-kdenlive-dasar/11.png" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2020-07-21-kdenlive-dasar/11.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -186,7 +186,7 @@ Semisal ingin memotong clip pada detik ke 13, maka click cut atau razor tools
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2020-07-21-kdenlive-dasar/12.png" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2020-07-21-kdenlive-dasar/12.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-2"></div>
@@ -198,7 +198,7 @@ lalu saat cursor berwarna merah, arahkan pada detik ke 13 di timeline
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2020-07-21-kdenlive-dasar/13.png" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2020-07-21-kdenlive-dasar/13.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-2"></div>
@@ -210,7 +210,7 @@ kemudian clip akan terpisah menjadi 2 bagian
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2020-07-21-kdenlive-dasar/14.png" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2020-07-21-kdenlive-dasar/14.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-2"></div>
@@ -222,7 +222,7 @@ selanjutnya disini saya akan membuang clip dengan cara click select tool, lalu c
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2020-07-21-kdenlive-dasar/15.png" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2020-07-21-kdenlive-dasar/15.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-2"></div>
@@ -234,7 +234,7 @@ lalu clip akan hilang
 	<div class="col-sm-1"></div>
 	<div class="col-sm-10">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2020-07-21-kdenlive-dasar/16.png" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2020-07-21-kdenlive-dasar/16.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-1"></div>
@@ -246,7 +246,7 @@ kemudian saya akan tambahkan clip baru pada projek bin, lalu drag and drop clip 
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2020-07-21-kdenlive-dasar/17.png" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2020-07-21-kdenlive-dasar/17.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -258,7 +258,7 @@ untuk mendapatkan hasil video yang telah diedit, lakukan proses render dengan ca
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2020-07-21-kdenlive-dasar/18.png" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2020-07-21-kdenlive-dasar/18.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>

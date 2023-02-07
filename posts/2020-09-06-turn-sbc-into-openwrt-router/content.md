@@ -41,7 +41,7 @@ the system by it's Chip/Processor manufacturer so (your might be different).
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2020-09-06-turn-sbc-into-openwrt-router/1.png" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2020-09-06-turn-sbc-into-openwrt-router/1.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -56,7 +56,7 @@ yours might be different
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2020-09-06-turn-sbc-into-openwrt-router/2.png" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2020-09-06-turn-sbc-into-openwrt-router/2.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -68,7 +68,7 @@ Then prepare your SD Card don't forget to back up your data and flash the firmwa
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2020-09-06-turn-sbc-into-openwrt-router/3.png" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2020-09-06-turn-sbc-into-openwrt-router/3.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -81,7 +81,7 @@ Then go to web browser and go to [192.168.1.1](http://192.168.1.1)
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2020-09-06-turn-sbc-into-openwrt-router/4.png" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2020-09-06-turn-sbc-into-openwrt-router/4.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -97,7 +97,7 @@ install all necessary package.
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" src="./posts/2020-09-06-turn-sbc-into-openwrt-router/5.png" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2020-09-06-turn-sbc-into-openwrt-router/5.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>

@@ -46,7 +46,7 @@ try it out and it's works. okay enough talks let's get into it.
     <div class="col-sm-2"></div>
     <div class="col-sm-8">
         <div class="img-thumbnail">
-            <img class="img-fluid" src="./posts/2018-07-08-xp-pen-star-g430s-in-ubuntu-1710/1.jpg" alt="img">
+            <img class="img-fluid" loading="lazy" src="./posts/2018-07-08-xp-pen-star-g430s-in-ubuntu-1710/1.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-2"></div>

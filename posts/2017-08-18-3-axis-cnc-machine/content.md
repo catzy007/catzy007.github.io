@@ -29,7 +29,7 @@ to take a picture.
     <div class="col-sm-2"></div>
     <div class="col-sm-8">
         <div class="img-thumbnail">
-            <img class="img-fluid" src="./posts/2017-08-18-3-axis-cnc-machine/1.jpg" alt="img">
+            <img class="img-fluid" loading="lazy" src="./posts/2017-08-18-3-axis-cnc-machine/1.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-2"></div>
@@ -43,7 +43,7 @@ can you see below. BTW "ALL OF MY AXIS ARE ACTUALLY INVERTED" so yeah
     <div class="col-sm-2"></div>
     <div class="col-sm-8">
         <div class="img-thumbnail">
-            <img class="img-fluid" src="./posts/2017-08-18-3-axis-cnc-machine/2.jpg" alt="img">
+            <img class="img-fluid" loading="lazy" src="./posts/2017-08-18-3-axis-cnc-machine/2.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-2"></div>
@@ -56,7 +56,7 @@ some heat and bend it into shape.
     <div class="col-sm-2"></div>
     <div class="col-sm-8">
         <div class="img-thumbnail">
-            <img class="img-fluid" src="./posts/2017-08-18-3-axis-cnc-machine/3.jpg" alt="img">
+            <img class="img-fluid" loading="lazy" src="./posts/2017-08-18-3-axis-cnc-machine/3.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-2"></div>
@@ -68,7 +68,7 @@ prevent Z axis collide with X axis.
     <div class="col-sm-2"></div>
     <div class="col-sm-8">
         <div class="img-thumbnail">
-            <img class="img-fluid" src="./posts/2017-08-18-3-axis-cnc-machine/4.jpg" alt="img">
+            <img class="img-fluid" loading="lazy" src="./posts/2017-08-18-3-axis-cnc-machine/4.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-2"></div>
@@ -81,7 +81,7 @@ can move more freely
     <div class="col-sm-2"></div>
     <div class="col-sm-8">
         <div class="img-thumbnail">
-            <img class="img-fluid" src="./posts/2017-08-18-3-axis-cnc-machine/5.jpg" alt="img">
+            <img class="img-fluid" loading="lazy" src="./posts/2017-08-18-3-axis-cnc-machine/5.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-2"></div>
@@ -103,7 +103,7 @@ can download it here <http://russemotto.com/xloader/>
     <div class="col-sm-4"></div>
     <div class="col-sm-4">
         <div class="img-thumbnail">
-            <img class="img-fluid" src="./posts/2017-08-18-3-axis-cnc-machine/6.jpg" alt="img">
+            <img class="img-fluid" loading="lazy" src="./posts/2017-08-18-3-axis-cnc-machine/6.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-4"></div>
@@ -115,7 +115,7 @@ Controller" which you can download it here <https://github.com/zapmaker/GrblHomi
     <div class="col-sm-2"></div>
     <div class="col-sm-8">
         <div class="img-thumbnail">
-            <img class="img-fluid" src="./posts/2017-08-18-3-axis-cnc-machine/7.jpg" alt="img">
+            <img class="img-fluid" loading="lazy" src="./posts/2017-08-18-3-axis-cnc-machine/7.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-2"></div>
@@ -138,7 +138,7 @@ BELONG TO IT'S CREATOR) <https://www.mediafire.com/file/nmask9skn7j341u/CNC.zip>
     <div class="col-sm-2"></div>
     <div class="col-sm-8">
         <div class="img-thumbnail">
-            <img class="img-fluid" src="./posts/2017-08-18-3-axis-cnc-machine/9.jpg" alt="img">
+            <img class="img-fluid" loading="lazy" src="./posts/2017-08-18-3-axis-cnc-machine/9.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-2"></div>
@@ -147,7 +147,7 @@ BELONG TO IT'S CREATOR) <https://www.mediafire.com/file/nmask9skn7j341u/CNC.zip>
     <div class="col-sm-2"></div>
     <div class="col-sm-8">
         <div class="img-thumbnail">
-            <img class="img-fluid" src="./posts/2017-08-18-3-axis-cnc-machine/10.jpg" alt="img">
+            <img class="img-fluid" loading="lazy" src="./posts/2017-08-18-3-axis-cnc-machine/10.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-2"></div>
@@ -156,7 +156,7 @@ BELONG TO IT'S CREATOR) <https://www.mediafire.com/file/nmask9skn7j341u/CNC.zip>
     <div class="col-sm-2"></div>
     <div class="col-sm-8">
         <div class="img-thumbnail">
-            <img class="img-fluid" src="./posts/2017-08-18-3-axis-cnc-machine/11.jpg" alt="img">
+            <img class="img-fluid" loading="lazy" src="./posts/2017-08-18-3-axis-cnc-machine/11.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-2"></div>
@@ -165,7 +165,7 @@ BELONG TO IT'S CREATOR) <https://www.mediafire.com/file/nmask9skn7j341u/CNC.zip>
     <div class="col-sm-2"></div>
     <div class="col-sm-8">
         <div class="img-thumbnail">
-            <img class="img-fluid" src="./posts/2017-08-18-3-axis-cnc-machine/12.jpg" alt="img">
+            <img class="img-fluid" loading="lazy" src="./posts/2017-08-18-3-axis-cnc-machine/12.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-2"></div>
@@ -173,12 +173,12 @@ BELONG TO IT'S CREATOR) <https://www.mediafire.com/file/nmask9skn7j341u/CNC.zip>
 <div class="row">
     <div class="col-sm-6">
         <div class="img-thumbnail">
-            <img class="img-fluid" src="./posts/2017-08-18-3-axis-cnc-machine/8.jpg" alt="img">
+            <img class="img-fluid" loading="lazy" src="./posts/2017-08-18-3-axis-cnc-machine/8.jpg" alt="img">
         </div>
     </div>
     <div class="col-sm-6">
         <div class="img-thumbnail">
-            <img class="img-fluid" src="./posts/2017-08-18-3-axis-cnc-machine/13.jpg" alt="img">
+            <img class="img-fluid" loading="lazy" src="./posts/2017-08-18-3-axis-cnc-machine/13.jpg" alt="img">
         </div>
     </div>
 </div>
