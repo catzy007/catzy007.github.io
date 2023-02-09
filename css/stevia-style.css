@@ -5,6 +5,7 @@ html, body {
 body {
     position: relative
 }
+
 /* site style */
 body {
     background-color: #55688A;
@@ -44,43 +45,43 @@ a, a:hover {
 
 /* stevia-container */
 .stevia-container-header {
-    background-color: rgba(253, 253, 253, 0.95);
     margin-top: 2%;
     padding: 2% 10% 0% 10%;
 }
 .stevia-container-searchfeat {
-    background-color: rgba(253, 253, 253, 0.95);
     padding: 2% 10% 0% 10%;
 }
 .stevia-container-main {
-    background-color: rgba(253, 253, 253, 0.95);
     padding: 0% 10% 0% 10%;
     min-height: 100vh;
 }
 .stevia-container-footer {
-    background-color: rgba(253, 253, 253, 0.95);
     margin-bottom: 2%;
-    padding: 2% 0% 3% 0%;
+    padding: 2% 10% 3% 10%;
+}
+.stevia-container-header, .stevia-container-searchfeat, 
+.stevia-container-main, .stevia-container-footer {
+    background-color: rgba(253, 253, 253, 0.95);
 }
 @media (max-width: 768px) {
     .stevia-container-header {
-        background-color: rgba(253, 253, 253, 0.95);
         margin-top: 2%;
         padding: 2% 3% 0% 3%;
     }
     .stevia-container-searchfeat {
-        background-color: rgba(253, 253, 253, 0.95);
         padding: 2% 3% 0% 3%;
     }
     .stevia-container-main {
-        background-color: rgba(253, 253, 253, 0.95);
         padding: 0% 3% 0% 3%;
-        min-height: 100vh;
+        min-height: 0vh;
     }
     .stevia-container-footer {
-        background-color: rgba(253, 253, 253, 0.95);
         margin-bottom: 2%;
-        padding: 2% 0% 3% 0%;
+        padding: 2% 3% 3% 3%;
+    }
+    .stevia-container-header, .stevia-container-searchfeat, 
+    .stevia-container-main, .stevia-container-footer {
+        background-color: rgba(253, 253, 253, 0.95);
     }
 }
 
