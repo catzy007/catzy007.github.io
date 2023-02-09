@@ -24,13 +24,13 @@ h4, .display-4 {
     font-size: 1.2rem;
 }
 h5, .display-5 {
-    font-size: 1rem;
+    font-size: 1.0rem;
 }
 h6, .display-6 {
     font-size: 0.8rem;
 }
 p, a, code { 
-    font-size: 1rem;
+    font-size: 1.0rem;
 }
 a, a:hover {
     text-decoration: none;
