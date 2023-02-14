@@ -43,4 +43,8 @@ four billion possible combinations which is quite similar to
 [brute-force](https://en.wikipedia.org/wiki/Brute-force_attack) therefore a 
 highly parallelized system such as GPGPU can be beneficial.
 
+What make me interested in used mining GPU is that the ability to use GPGPU 
+for AI research, scientific computing and 3D rendering at lower cost. Recently 
+I found one on my local area in non-working condition and try to revive it.
+
 https://repair.wiki/w/Nvidia_Pascal_GPU_Diagnosing_Guide
