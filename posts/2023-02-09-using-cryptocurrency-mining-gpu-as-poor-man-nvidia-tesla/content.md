@@ -5,10 +5,19 @@ If you follow tech for quite some time, you probably know recent news
 about Cryptocurrency crash and yes this is definitely ~~not~~ a first 
 time Cryptocurrency crash and yet people still to this day fall for it. 
 I guess history existed for no reason, huh? Anyway minor sidenote aside.
-With the recent crash of cryptocurrency, more and more cryptocurrency 
-algorithm shift from Proof of Work (POW) to Proof of Stake (POS), lead to 
-an e-waste problem in form of used crypto mining hardware like GPU, FPGA 
-and ASIC. 
+With [POW](https://en.wikipedia.org/wiki/Proof_of_work) 
+based [Cryptocurrency mining](https://en.wikipedia.org/wiki/Bitcoin#Mining), 
+multiple `workers` are given a task to find a value called `nonce`. If the 
+`hash` of nonce and block content is less than or equal to the value set by 
+mining difficulty then the miner who found a nonce is given a privilege to 
+create a new block, write its transaction content and a reward in form of a 
+coin then the process is repeated. With 32-bit nonce, there are around 
+four billion possible combinations which require process similar to 
+[brute-force](https://en.wikipedia.org/wiki/Brute-force_attack) therefore 
+a highly parallelized system can be beneficial. With the recent crash of 
+cryptocurrency and transition from Proof of Work (POW) to Proof of Stake 
+(POS), lead to an e-waste problem in form of used crypto mining hardware 
+like GPU, FPGA and ASIC. 
 
 While yes, you can reuse GPU for playing video games parallel compute 
 and rendering reprogram FPGA for electronic projects. Unfortunately, the 
@@ -31,17 +40,6 @@ fabrication, you always end up with a reject. Sometimes part of the GPU
 like [GPGPU](https://en.wikipedia.org/wiki/General-purpose_computing_on_graphics_processing_units) module is working 
 fine, but the display output module is defective and instead of throwing 
 it away, you put it in a board and sell it as mining GPU.
-
-With [POW](https://en.wikipedia.org/wiki/Proof_of_work) 
-based [Cryptocurrency mining](https://en.wikipedia.org/wiki/Bitcoin#Mining), 
-multiple `workers` are given a task to find a value called `nonce`. If the 
-`hash` of nonce and block content is less than or equal to the value set by 
-mining difficulty then the miner who found a nonce is given a privilege to 
-create a new block, write its transaction content and a reward in form of a 
-coin then the process is repeated. With 32-bit size nonce, there are around 
-four billion possible combinations which is quite similar to  
-[brute-force](https://en.wikipedia.org/wiki/Brute-force_attack) therefore a 
-highly parallelized system such as GPGPU can be beneficial.
 
 What make me interested in used mining GPU is that the ability to use GPGPU 
 for AI research, scientific computing and 3D rendering at lower cost. Recently 
