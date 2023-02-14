@@ -43,6 +43,10 @@ it away, you put it in a board and sell it as mining GPU.
 
 What make me interested in used mining GPU is that the ability to use GPGPU 
 for AI research, scientific computing and 3D rendering at lower cost. Recently 
-I found one on my local area in non-working condition and try to revive it.
+I found one on my local area in non-working condition and try to revive it. 
+The GPU itself is NVIDIA P104-100 which based of NVIDIA GTX 1070. My specific 
+Unit is triple fan model by Colorful with 8 GB of GDDR5X instead of GDDR5 
+found in regular GTX 1070. Another notable difference is PCIE 1.0 X4 instead 
+of PCIE 3.0 X16 which drastically cut the PCIE bandwidth.
 
 https://repair.wiki/w/Nvidia_Pascal_GPU_Diagnosing_Guide
