@@ -29,9 +29,18 @@ its life as regular GPU from the same fabrication plant, then they test the
 GPU to check its functionality. Because the nature of semiconductor 
 fabrication, you always end up with a reject. Sometimes part of the GPU 
 like [GPGPU](https://en.wikipedia.org/wiki/General-purpose_computing_on_graphics_processing_units) module is working 
-fine, but the video output module is defective and instead of throwing 
+fine, but the display output module is defective and instead of throwing 
 it away, you put it in a board and sell it as mining GPU.
 
-
+With [POW](https://en.wikipedia.org/wiki/Proof_of_work) 
+based [Cryptocurrency mining](https://en.wikipedia.org/wiki/Bitcoin#Mining), 
+multiple `workers` are given a task to find a value called `nonce`. If the 
+`hash` of nonce and block content is less than or equal to the value set by 
+mining difficulty then the miner who found a nonce is given a privilege to 
+create a new block, write its transaction content and a reward in form of a 
+coin then the process is repeated. With 32-bit size nonce, there are around 
+four billion possible combinations which is quite similar to  
+[brute-force](https://en.wikipedia.org/wiki/Brute-force_attack) therefore a 
+highly parallelized system such as GPGPU can be beneficial.
 
 https://repair.wiki/w/Nvidia_Pascal_GPU_Diagnosing_Guide
