@@ -163,4 +163,4 @@ memory controller inside the GPU itself is broken. The fact that this is
 mining GPU doesn't help either. In the mining process, the GPU need to 
 load part of the network transaction in the VRAM. This could be a Blockchain 
 Block or Directed Acyclic Graph (DAG) which require multiple gigabyte to store 
-and still growing.
+[and still growing](https://minerstat.com/dag-size-calculator).
