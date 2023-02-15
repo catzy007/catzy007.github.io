@@ -53,3 +53,4 @@
 2022-11-24-My-Journey-To-Stable-Diffusion
 2022-12-01-Motion-Capture-at-Home
 2023-01-19-Setting-up-Grafana-InfluxDB-for-System-Monitoring
+2023-02-09-Using-Cryptocurrency-Mining-GPU-as-Poor-Man-Nvidia-Tesla
