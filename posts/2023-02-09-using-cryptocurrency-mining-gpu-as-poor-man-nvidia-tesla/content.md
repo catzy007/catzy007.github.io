@@ -155,12 +155,12 @@ Here is the problematic VRAM.
 </div>
 
 My specific model uses Micron D9VRL GDDR5X I need to find local seller, or 
-I need to get it overseas. I also need a BGA repair tool such as hot air 
+I need to source it overseas. I also need a BGA repair tool such as hot air 
 soldering station, BGA precision tweezer, BGA stencils, antistatic mat and 
 a lot more. In my case I was a little lucky because I only have one VRAM 
 fail. If I Have two VRAM failure in the same channel, there is a risk that 
 memory controller inside the GPU itself is broken. The fact that this is 
 mining GPU doesn't help either. In the mining process, the GPU need to 
 load part of the network transaction in the VRAM. This could be a Blockchain 
-Block or Directed Acyclic Graph (DAG) which require multiple gigabyte to store 
-[and still growing](https://minerstat.com/dag-size-calculator).
+Block or Directed Acyclic Graph (DAG) which require multiple gigabytes to 
+store [and still growing](https://minerstat.com/dag-size-calculator).
