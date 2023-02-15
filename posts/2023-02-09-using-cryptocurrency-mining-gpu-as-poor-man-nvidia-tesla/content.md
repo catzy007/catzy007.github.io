@@ -49,4 +49,40 @@ Unit is triple fan model by Colorful with 8 GB of GDDR5X instead of GDDR5
 found in regular GTX 1070. Another notable difference is PCIE 1.0 X4 instead 
 of PCIE 3.0 X16 which drastically cut the PCIE bandwidth.
 
+<div class="row">
+	<div class="col-sm-3"></div>
+	<div class="col-sm-6">
+		<div class="img-thumbnail">
+			<img class="img-fluid" loading="lazy" src="./posts/2023-02-09-using-cryptocurrency-mining-gpu-as-poor-man-nvidia-tesla/01.jpg" alt="img">
+		</div>
+	</div>
+	<div class="col-sm-3"></div>
+</div>
+
+The seller advertises this card as detected could not install driver. The first 
+thing that I did is physical inspection. Check if any SMD component such as 
+resistor or capacitor fall off, then check for any burn marks and burning smell. 
+I did not find any, so I decided to plug it in and hope for the best. And sure 
+enough the card is detected and has an error code on device manager.
+
+<div class="row">
+	<div class="col-sm-3"></div>
+	<div class="col-sm-6">
+		<div class="img-thumbnail">
+			<img class="img-fluid" loading="lazy" src="./posts/2023-02-09-using-cryptocurrency-mining-gpu-as-poor-man-nvidia-tesla/02.png" alt="img">
+		</div>
+	</div>
+	<div class="col-sm-3"></div>
+</div>
+<div class="row">
+	<div class="col-sm-4"></div>
+	<div class="col-sm-4">
+		<div class="img-thumbnail">
+			<img class="img-fluid" loading="lazy" src="./posts/2023-02-09-using-cryptocurrency-mining-gpu-as-poor-man-nvidia-tesla/03.png" alt="img">
+		</div>
+	</div>
+	<div class="col-sm-4"></div>
+</div>
+
+
 https://repair.wiki/w/Nvidia_Pascal_GPU_Diagnosing_Guide
