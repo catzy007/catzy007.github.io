@@ -113,3 +113,48 @@ respective rating.
 	</div>
 	<div class="col-sm-3"></div>
 </div>
+
+After ensuring that none of the voltage rails shorts out, I decided to 
+continue and 
+[test the VRAM](https://repair.wiki/w/Nvidia_Memory_Testing_Guide). 
+To do this, a proprietary software called NVIDIA MODS/MATS is required. 
+In my case, I'm using version 400.184 and sure enough my card didn't 
+pass the test.
+
+<div class="row">
+	<div class="col-sm-3"></div>
+	<div class="col-sm-6">
+		<div class="img-thumbnail">
+			<img class="img-fluid" loading="lazy" src="./posts/2023-02-09-using-cryptocurrency-mining-gpu-as-poor-man-nvidia-tesla/06.png" alt="img">
+		</div>
+	</div>
+	<div class="col-sm-3"></div>
+</div>
+<div class="row">
+	<div class="col-sm-3"></div>
+	<div class="col-sm-6">
+		<div class="img-thumbnail">
+			<img class="img-fluid" loading="lazy" src="./posts/2023-02-09-using-cryptocurrency-mining-gpu-as-poor-man-nvidia-tesla/07.png" alt="img">
+		</div>
+	</div>
+	<div class="col-sm-3"></div>
+</div>
+
+Looking around the log, I found that `FBIOB1` is the culprit. According to 
+[Pascal Memory Labelling](https://repair.wiki/w/Nvidia_Memory_Testing_Guide#/media/File:Nvidia_memory_labeling_pascal.jpg) 
+Here is the problematic VRAM.
+
+<div class="row">
+	<div class="col-sm-3"></div>
+	<div class="col-sm-6">
+		<div class="img-thumbnail">
+			<img class="img-fluid" loading="lazy" src="./posts/2023-02-09-using-cryptocurrency-mining-gpu-as-poor-man-nvidia-tesla/08.jpg" alt="img">
+		</div>
+	</div>
+	<div class="col-sm-3"></div>
+</div>
+
+My specific model uses Micron D9VRL GDDR5X I need to find local seller, or 
+I need to get it overseas. I also need a BGA repair tool such as hot air 
+soldering station, BGA precision tweezer, BGA stencils, antistatic mat and 
+a lot more.
