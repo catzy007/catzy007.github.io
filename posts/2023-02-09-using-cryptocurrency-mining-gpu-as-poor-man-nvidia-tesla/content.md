@@ -84,5 +84,32 @@ enough the card is detected and has an error code on device manager.
 	<div class="col-sm-4"></div>
 </div>
 
+Next I decided to disassemble everything spray the board with electronic contact cleaner and brush it with unused toothbrush and let it dry. For the heatsink, I 
+use automotive brake cleaner. As for the plastic shroud, I just wipe it off using 
+a damp cloth then wipe the fan using dry cloth.
 
-https://repair.wiki/w/Nvidia_Pascal_GPU_Diagnosing_Guide
+<div class="row">
+	<div class="col-sm-3"></div>
+	<div class="col-sm-6">
+		<div class="img-thumbnail">
+			<img class="img-fluid" loading="lazy" src="./posts/2023-02-09-using-cryptocurrency-mining-gpu-as-poor-man-nvidia-tesla/04.jpg" alt="img">
+		</div>
+	</div>
+	<div class="col-sm-3"></div>
+</div>
+
+Next, I grab my multimeter and follow 
+[repair.wiki pascal guide](https://repair.wiki/w/Nvidia_Pascal_GPU_Diagnosing_Guide) 
+to check for any short on base voltage rails and minor voltage rails. 
+Then I power the card and make sure every voltage rails shows up their 
+respective rating.
+
+<div class="row">
+	<div class="col-sm-3"></div>
+	<div class="col-sm-6">
+		<div class="img-thumbnail">
+			<img class="img-fluid" loading="lazy" src="./posts/2023-02-09-using-cryptocurrency-mining-gpu-as-poor-man-nvidia-tesla/05.jpg" alt="img">
+		</div>
+	</div>
+	<div class="col-sm-3"></div>
+</div>
