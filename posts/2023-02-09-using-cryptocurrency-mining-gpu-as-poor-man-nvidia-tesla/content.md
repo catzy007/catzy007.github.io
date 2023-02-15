@@ -5,8 +5,12 @@ If you follow tech for quite some time, you probably know recent news
 about Cryptocurrency crash and yes this is definitely ~~not~~ a first 
 time Cryptocurrency crash and yet people still to this day fall for it. 
 I guess history existed for no reason, huh? Anyway minor sidenote aside.
-With [POW](https://en.wikipedia.org/wiki/Proof_of_work) 
-based [Cryptocurrency mining](https://en.wikipedia.org/wiki/Bitcoin#Mining), 
+Now how even Cryptocurrency mining works? The basic idea of crypto mining 
+is [Proof of Work (POW)](https://en.wikipedia.org/wiki/Proof_of_work) 
+meaning that you need to proof that you have done some form of computational 
+work in this case solving a mathematical function and get it verified.
+
+In [Cryptocurrency mining](https://en.wikipedia.org/wiki/Bitcoin#Mining), 
 multiple `workers` are given a task to find a value called `nonce`. If the 
 `hash` of nonce and block content is less than or equal to the value set by 
 mining difficulty then the miner who found a nonce is given a privilege to 
@@ -16,8 +20,8 @@ four billion possible combinations which require process similar to
 [brute-force](https://en.wikipedia.org/wiki/Brute-force_attack) therefore 
 a highly parallelized system can be beneficial. With the recent crash of 
 cryptocurrency and transition from Proof of Work (POW) to Proof of Stake 
-(POS), lead to an e-waste problem in form of used crypto mining hardware 
-like GPU, FPGA and ASIC. 
+(POS), this specialized device lead to an e-waste problem in form of used 
+crypto mining hardware like GPU, FPGA and ASIC. 
 
 While yes, you can reuse GPU for playing video games parallel compute 
 and rendering reprogram FPGA for electronic projects. Unfortunately, the 
