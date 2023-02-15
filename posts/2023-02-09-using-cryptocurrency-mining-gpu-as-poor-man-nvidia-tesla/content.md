@@ -5,8 +5,8 @@ If you follow tech for quite some time, you probably know recent news
 about Cryptocurrency crash and yes this is definitely ~~not~~ a first 
 time Cryptocurrency crash and yet people still to this day fall for it. 
 I guess history existed for no reason, huh? Anyway minor sidenote aside.
-Now how even Cryptocurrency mining works? The basic idea of crypto mining 
-is [Proof of Work (POW)](https://en.wikipedia.org/wiki/Proof_of_work) 
+First of all how Cryptocurrency mining even works? The basic idea of crypto 
+mining is [Proof of Work (POW)](https://en.wikipedia.org/wiki/Proof_of_work) 
 meaning that you need to proof that you have done some form of computational 
 work in this case solving a mathematical function and get it verified.
 
