@@ -23,9 +23,9 @@ cryptocurrency and transition from Proof of Work (POW) to Proof of Stake
 (POS), this specialized device lead to an e-waste problem in form of used 
 crypto mining hardware like GPU, FPGA and ASIC. 
 
-While yes, you can reuse GPU for playing video games parallel compute 
-and rendering reprogram FPGA for electronic projects. Unfortunately, the 
-same can't be said for ASIC they are specialized chip that designed to 
+While yes, you can reuse GPU for playing video games, parallel compute 
+and rendering. You can reprogram FPGA for electronic projects. Unfortunately, 
+the same can't be said for ASIC they are specialized chip that designed to 
 do one specific workload. What happens if you can't reuse a piece of highly 
 technological product? You 
 [grind it down](https://www.youtube.com/watch?v=toijA2e1sLw) and process it to 
