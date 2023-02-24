@@ -25,8 +25,8 @@
 			loadComments();
 		}
 
-		// Prism.highlightAll(); //https://prismjs.com/docs/Prism.html
-		hljs.highlightAll();
+		Prism.highlightAll(); //https://prismjs.com/docs/Prism.html
+		// hljs.highlightAll();
 		console.timeEnd("Parser");
 	}
 
