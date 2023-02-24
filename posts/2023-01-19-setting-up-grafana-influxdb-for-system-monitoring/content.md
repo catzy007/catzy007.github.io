@@ -1,4 +1,4 @@
-##### Setting up Grafana InfluxDB for System Monitoring
+#### Setting up Grafana InfluxDB for System Monitoring
 _Thursday, January 19, 2023_
 
 System monitoring is an essential tool for managing your infrastructure. 

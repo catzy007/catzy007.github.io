@@ -1,4 +1,4 @@
-##### Using Cryptocurrency Mining GPU as Poor Man Nvidia Tesla
+#### Using Cryptocurrency Mining GPU as Poor Man Nvidia Tesla
 _Thursday, February 9, 2023_
 
 If you follow tech for quite some time, you probably know recent news 
