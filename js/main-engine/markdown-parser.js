@@ -1,15 +1,18 @@
 //request parse markdown
 	function reqParseMarkdown(type, contentPath){
-		executeXhr(contentPath, showMarkdown, type);
+		executeXhr(contentPath, showMarkdown, type)
 	}
 
 //markdown parser
 	function showMarkdown(type){
+		console.time("Parser");
+
 		var markdown = (this.responseText);
 		var converter = new showdown.Converter();
 		converter.setOption('tables', true);
 		converter.setOption('strikethrough', true);
 		var html = converter.makeHtml(markdown);
+		html = html.replace(/<pre><code>/g, '<pre class="line-numbers language-bash"><code>');
 		document.getElementById('main-content').innerHTML = html;
 
 		// console.log(getSiteIdentifier()[2]);
@@ -21,6 +24,10 @@
 		if(type == "POST" && enableComments()){
 			loadComments();
 		}
+
+		// Prism.highlightAll(); //https://prismjs.com/docs/Prism.html
+		hljs.highlightAll();
+		console.timeEnd("Parser");
 	}
 
 //load disqus comments
