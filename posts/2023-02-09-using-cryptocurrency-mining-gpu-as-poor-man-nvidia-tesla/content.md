@@ -1,4 +1,4 @@
-##### Using Cryptocurrency Mining GPU as Poor Man Nvidia Tesla
+#### Using Cryptocurrency Mining GPU as Poor Man Nvidia Tesla
 _Thursday, February 9, 2023_
 
 If you follow tech for quite some time, you probably know recent news 
@@ -29,7 +29,7 @@ the same can't be said for ASIC they are specialized chip that designed to
 do one specific workload. What happens if you can't reuse a piece of highly 
 technological product? You 
 [grind it down](https://www.youtube.com/watch?v=toijA2e1sLw) and process it to 
-extract the precious material, you
+extract the precious material, you 
 [grind it and burn it down](https://www.youtube.com/watch?v=ee_lmZIAwek) then 
 process the leftover ash, or you simply dig a hole and bury it to pollute land 
 and water supply.
@@ -49,7 +49,7 @@ What make me interested in used mining GPU is that the ability to use GPGPU
 for AI research, scientific computing and 3D rendering at lower cost. Recently 
 I found one on my local area in non-working condition and try to revive it. 
 The GPU itself is NVIDIA P104-100 which based of NVIDIA GTX 1070. My specific 
-Unit is triple fan model by Colorful with 8 GB of GDDR5X instead of GDDR5 
+unit is triple fan model by Colorful with 8 GB of GDDR5X instead of GDDR5 
 found in regular GTX 1070. Another notable difference is PCIE 1.0 X4 instead 
 of PCIE 3.0 X16 which drastically cut the PCIE bandwidth.
 
