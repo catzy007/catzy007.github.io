@@ -78,7 +78,7 @@ _Friday, March 10, 2023_
     ```
 
 -----------------------------------
-#### **Worker Node (Ubuntu 22.04)**
+##### **Worker Node (Ubuntu 22.04)**
 
 * Install MicroK8s [canonical/microk8s](https://github.com/canonical/microk8s)
 
