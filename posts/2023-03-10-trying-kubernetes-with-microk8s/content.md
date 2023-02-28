@@ -9,6 +9,8 @@ _Friday, March 10, 2023_
     ```
     sudo apt update
     sudo apt install docker.io docker-compose
+    sudo usermod -a -G docker $(whoami)
+    newgrp docker
     ```
 
 * [Build and Push Image](https://docs.docker.com/engine/reference/commandline/push/)
@@ -27,7 +29,7 @@ _Friday, March 10, 2023_
 
     ```
     snap install microk8s --classic
-    sudo usermod -a -G microk8s <username>
+    sudo usermod -a -G microk8s $(whoami)
     newgrp microk8s
     sudo microk8s kubectl config view --raw > $HOME/.kube/config
     ```
@@ -69,7 +71,7 @@ _Friday, March 10, 2023_
     microk8s join 172.10.10.1:25000/abcdefghijklmnopqrstuvwxyz123456/abcdefghijkl
     ```
 
-* Check if newly added node is working properly
+* Check if newly added node is listed and working properly
 
     ```
     kubectl get node
@@ -82,7 +84,7 @@ _Friday, March 10, 2023_
 
     ```
     snap install microk8s --classic
-    sudo usermod -a -G microk8s <username>
+    sudo usermod -a -G microk8s $(whoami)
     newgrp microk8s
     sudo microk8s kubectl config view --raw > $HOME/.kube/config
     ```
