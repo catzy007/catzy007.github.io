@@ -1,6 +1,13 @@
 #### Trying Kubernetes With MicroK8s
 _Friday, March 10, 2023_
 
+Kubernetes is an open-source container orchestration for deploying, 
+managing and scaling cloud software. Kubernetes originally developed 
+by Google and now maintained by CNCF. In this post I'm going to 
+use [MicroK8s](https://microk8s.io/) which is single package Kubernetes 
+developed by [Canonical](https://canonical.com/). My test system consists 
+of two nodes one as a master node and other as worker node.
+
 -----------------------------
 ##### **Development Machine**
 
