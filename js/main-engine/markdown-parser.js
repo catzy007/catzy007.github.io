@@ -1,6 +1,6 @@
 //request parse markdown
 	function reqParseMarkdown(type, contentPath){
-		executeXhr(contentPath, showMarkdown, type)
+		executeXhr(contentPath, showMarkdown, type);
 	}
 
 //markdown parser
