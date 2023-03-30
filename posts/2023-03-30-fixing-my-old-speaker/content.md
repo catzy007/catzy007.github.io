@@ -25,7 +25,7 @@ impedance rating should be around 10 ohms.
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2023-04-11-draft1/01.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2023-03-30-fixing-my-old-speaker/01.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -43,7 +43,7 @@ ohms I guess I just max the subwoofer volume and adjust everything else in EQ.
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2023-04-11-draft1/02.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2023-03-30-fixing-my-old-speaker/02.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -58,7 +58,7 @@ ever but at 10 USD shipped, it is good enough for me.
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2023-04-11-draft1/03.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2023-03-30-fixing-my-old-speaker/03.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -79,7 +79,7 @@ new power supply next time.
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2023-04-11-draft1/04.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2023-03-30-fixing-my-old-speaker/04.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
