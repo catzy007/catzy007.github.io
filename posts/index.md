@@ -55,3 +55,4 @@
 2023-01-19-Setting-up-Grafana-InfluxDB-for-System-Monitoring
 2023-02-09-Using-Cryptocurrency-Mining-GPU-as-Poor-Man-Nvidia-Tesla
 2023-03-10-Trying-Kubernetes-With-MicroK8s
+2023-03-30-Fixing-My-Old-Speaker
