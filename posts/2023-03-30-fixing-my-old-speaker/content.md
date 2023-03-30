@@ -67,13 +67,13 @@ ever but at 10 USD shipped, it is good enough for me.
 The last thing I did is to dismantle the original internals, wire everything up, 
 do a final test before closing the panel then do a test and adjust the EQ. As for 
 test track, I use a variety of songs like Crab Rave, God Knows, Bury the Light, 
-11:11, Black Parade, Golden Time and many others. Each track meant as a way to 
-measure if the system overall perform well for example if God Knows played in 
-improperly configured stereo set-up, the electric guitar part is going to be 
-missing altogether. As for my set-up, everything is passed with flying colours 
-except Golden Time. It has a short burst bass and apparently my power supply 
-I pull from random internet router somewhere could not handle it, well I guess 
-new power supply next time.
+11:11, When the wind blows, River flows in you nightcore, Black Parade, Golden 
+Time and many others. Each track meant as a way to measure if the system overall 
+perform well for example if God Knows played in improperly configured stereo 
+set-up, the electric guitar part is going to be missing altogether. As for my 
+set-up, everything is passed with flying colours except Golden Time. It has a 
+short burst bass and apparently my power supply I pull from random internet 
+router somewhere could not handle it, well I guess new power supply next time.
 
 <div class="row">
 	<div class="col-sm-3"></div>
