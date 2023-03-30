@@ -1,5 +1,5 @@
-#### Draft1
-_Tuesday, April 11, 2023_
+#### Fixing my old speaker
+_Thursday, March 30, 2023_
 
 For quite some time I wanted something fun, I need something musical, I need to 
 fix my old speaker. Which I get from my family member a long time ago, I don't 
