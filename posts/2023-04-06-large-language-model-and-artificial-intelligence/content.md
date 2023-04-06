@@ -22,14 +22,14 @@ based on previous natural language texts [4][5][6]. More about how LLM works.
 In the recent times there has been an exceptional development in LLM. From 
 millions of parameter to hundreds of billions parameter [7] this resulted to 
 an interesting outcome such as Sparks of Artificial General Intelligence (AGI) 
-found in GPT-4 [8]. AGI is a hypothetical form of intelligent "being" that can learn, 
+found in GPT-4 [8]. AGI is a hypothetical form of intelligent agent that can learn, 
 understand and perform an intellectual task that human can [9]. In other word, and this 
 is a direct quote from LLM called Alpaca-7B "An AI system should be able to make 
 decisions based on all the information that it has access to. It should be able to 
 interpret data from the environment and to act accordingly. It should have the capacity 
 to learn from its mistakes, to evaluate and reevaluate decisions, and to communicate 
-and collaborate with other systems". Fortunately it is a 21st century, and you can find 
-someone talks about the paper and the paper PDF below.
+and collaborate with other systems". Below is a video which summarize the paper and 
+a link to the paper PDF.
 
 ['Sparks of AGI' - Bombshell GPT-4 Paper: Fully Read w/ 15 Revelations](https://www.youtube.com/watch?v=Mqg3aTGNxZ0)
 
