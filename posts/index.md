@@ -56,3 +56,4 @@
 2023-02-09-Using-Cryptocurrency-Mining-GPU-as-Poor-Man-Nvidia-Tesla
 2023-03-10-Trying-Kubernetes-With-MicroK8s
 2023-03-30-Fixing-My-Old-Speaker
+2023-04-06-Large-Language-Model-and-Artificial-Intelligence

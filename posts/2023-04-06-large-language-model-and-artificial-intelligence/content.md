@@ -1,5 +1,5 @@
 #### Large Language Model and Artificial Intelligence
-_Tuesday, April 11, 2023_
+_Thursday, April 6, 2023_
 
 Large Language Model (LLM) is a probabilistic distribution of token 
 (human-readable words) consisting of neural-network with typically billions 
