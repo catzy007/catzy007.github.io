@@ -35,8 +35,8 @@ someone talks about the paper and the paper PDF below.
 
 [Sparks of Artificial General Intelligence: Early experiments with GPT-4](https://arxiv.org/pdf/2303.12712.pdf)
 
-With great power comes great responsibility. This is what AI scientist face right now 
-on one side, it is great to see progress in AI on the other side, what if one day this 
+With great power comes great responsibility, this is what AI scientist face right now. 
+On one side, it is great to see progress in AI. On the other side, what if one day this 
 fully-fledged AI system existed. The problem is that currently no one knows how this 
 Large Language Model capable of doing what they can right now nor even predict and 
 control their behavior. This become an interesting topic and Open Letter is created 
@@ -67,7 +67,7 @@ GPT-4 thinks about the future AI and their implications.
 
 [[6] Autoregressive model - Wikipedia](https://en.wikipedia.org/wiki/Autoregressive_model)
 
-[[7] Beyond Words: Large Language Models Expand AI’s Horizon](https://blogs.nvidia.com/blog/2022/10/10/llms-ai-horizon/)
+[[7] Beyond Words: Large Language Models Expand AI’s Horizon | NVIDIA Blogs](https://blogs.nvidia.com/blog/2022/10/10/llms-ai-horizon/)
 
 [[8] Sparks of Artificial General Intelligence: Early experiments with GPT-4](https://arxiv.org/abs/2303.12712)
 
