@@ -40,7 +40,8 @@ On one side, it is great to see progress in AI. On the other side, what if one d
 fully-fledged AI system existed. The problem is that currently no one knows how this 
 Large Language Model capable of doing what they can right now nor even predict and 
 control their behavior. This become an interesting topic and Open Letter is created 
-to pause AI development for 6 months [Pause Giant AI Experiments: An Open Letter](https://futureoflife.org/open-letter/pause-giant-ai-experiments).
+to pause AI development more powerful than GPT-4 for 6 months 
+[Pause Giant AI Experiments: An Open Letter](https://futureoflife.org/open-letter/pause-giant-ai-experiments).
 
 As for interesting side note, here is what Bing Chat which apparently based on 
 GPT-4 thinks about the future AI and their implications.
