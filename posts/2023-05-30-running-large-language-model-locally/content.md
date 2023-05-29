@@ -36,8 +36,8 @@ to be re-quantized.
 -----------------------
 First, clone the llama.cpp repository, and compile 
 the binary. Then install the required python dependency. 
-Python is used for initial conversion and quantization 
-of weight.
+Python is used for initial weight conversion and 
+quantization.
 ```
 git clone https://github.com/ggerganov/llama.cpp
 cd llama.cpp
