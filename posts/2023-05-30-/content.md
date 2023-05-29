@@ -1,14 +1,44 @@
 #### Running Large language Model Locally
 _Tuesday, May 30, 2023_
 
----------
+The main goal of this post is to set up and run a 
+Large Language Model (LLM) called 
+[LLAMA](https://ai.facebook.com/blog/large-language-model-llama-meta-ai/) 
+which developed by Meta (Facebook) 
+and released to the public in late February 2023. 
+Other LLAMA-based LLM is also available such as 
+[Alpaca](https://arxiv.org/pdf/2303.16199.pdf), 
+[GPT4ALL](https://static.nomic.ai/gpt4all/2023_GPT4All-J_Technical_Report_2.pdf), 
+[Vicuna](https://lmsys.org/blog/2023-03-30-vicuna/) 
+and many others. As for system requirements, Modern 
+multi-core CPU and at least 16GB of system memory 
+with 32GB of disk space is required to run 7B model. 
+While you can substitute 16GB of ram with disk swap, 
+it is not covered in this post.
+```
+$ swapon
+NAME      TYPE SIZE USED PRIO
+/swapfile file  24G   0B   -2
+```
+
+In this post we're going to use 
+[llama.cpp](https://github.com/ggerganov/llama.cpp) 
+which allow us to run LLAMA-based LLM locally using CPU. 
+llama.cpp is made using C++ instead of usual python. 
+It also uses tensor library called 
+[GGML](https://github.com/ggerganov/ggml). 
+As a word of warning, llama.cpp is have change their 
+quantization format multiple times and sometimes 
+previous quantization format no longer work and need 
+to be re-quantized.
+
+<br>
+First, clone the llama.cpp repository, and compile 
+the binary. Then install the required python dependency.
 ```
 git clone https://github.com/ggerganov/llama.cpp
 cd llama.cpp
 make
-```
-
-```
 python3 -m pip install torch numpy sentencepiece
 ```
 
@@ -17,7 +47,7 @@ then put it in `llama.cpp/models/`. In my case,
 i only grab 7B weight, tokenizer_checklist.chk 
 and tokenizer.model.
 ```
-ls ./models
+$ ls ./models
 7B tokenizer_checklist.chk tokenizer.model
 ```
 
