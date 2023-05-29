@@ -11,10 +11,10 @@ Other LLAMA-based LLM is also available such as
 [GPT4ALL](https://static.nomic.ai/gpt4all/2023_GPT4All-J_Technical_Report_2.pdf), 
 [Vicuna](https://lmsys.org/blog/2023-03-30-vicuna/) 
 and many others. As for system requirements, Modern 
-multi-core CPU and at least 16GB of system memory 
-with 32GB of disk space is required to run 7B model. 
-While you can substitute 16GB of ram with disk swap, 
-it is not covered in this post.
+multi-core CPU with at least 16GB of system memory 
+and 32GB of free disk space is required to run 7B model. 
+You can also substitute 16GB of ram with disk swap, 
+which is not covered in this post.
 ```
 $ free -h
                total        used        free      shared  buff/cache   available
@@ -64,7 +64,7 @@ python3 convert-pth-to-ggml.py models/7B/ 1
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
 		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2023-05-30-/01.png" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2023-05-30-running-large-language-model-locally/01.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-2"></div>
@@ -72,12 +72,12 @@ python3 convert-pth-to-ggml.py models/7B/ 1
 
 The original LLAMA weight uses 16-bit precision 
 this require 
-[immense amount of computational and memory](https://brainchip.com/4-bits-are-enough/). 
+[more computational and memory requirements compared to 4-bit precision](https://brainchip.com/4-bits-are-enough/). 
 For our use case, we're going to convert 
 it down (quantize) to 4-bit precision. While in 
 theory we lost some precision it is not gonna matter 
 for our use cases also the computation and memory 
-requirement is significantly reduced.
+requirements is significantly reduced.
 ```
 python3 quantize.py 7B
 ```
@@ -85,7 +85,7 @@ python3 quantize.py 7B
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
 		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2023-05-30-/02.png" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2023-05-30-running-large-language-model-locally/02.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-2"></div>

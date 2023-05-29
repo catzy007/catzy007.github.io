@@ -11,4 +11,4 @@
 2018-04-24-Dasar-Pemrograman-C-Part3-Input-dan-Operator
 2018-03-10-Dasar-Pemrograman-C-Part2-Tipe-Data
 2018-09-14-Dasar-Pemrograman-C-Part1-The-Beginning
-2023-05-30-
+2023-05-30-Running-Large-Language-Model-Locally
