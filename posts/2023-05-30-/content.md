@@ -16,15 +16,16 @@ with 32GB of disk space is required to run 7B model.
 While you can substitute 16GB of ram with disk swap, 
 it is not covered in this post.
 ```
-$ swapon
-NAME      TYPE SIZE USED PRIO
-/swapfile file  24G   0B   -2
+$ free -h
+               total        used        free      shared  buff/cache   available
+Mem:            11Gi       3,5Gi       3,4Gi       1,3Gi       4,8Gi       6,6Gi
+Swap:           23Gi          0B        23Gi
 ```
 
 In this post we're going to use 
 [llama.cpp](https://github.com/ggerganov/llama.cpp) 
 which allow us to run LLAMA-based LLM locally using CPU. 
-llama.cpp is made using C++ instead of usual python. 
+llama.cpp is written in C++ instead of usual python. 
 It also uses tensor library called 
 [GGML](https://github.com/ggerganov/ggml). 
 As a word of warning, llama.cpp is have change their 
@@ -32,14 +33,16 @@ quantization format multiple times and sometimes
 previous quantization format no longer work and need 
 to be re-quantized.
 
-<br>
+-----------------------
 First, clone the llama.cpp repository, and compile 
-the binary. Then install the required python dependency.
+the binary. Then install the required python dependency. 
+Python is used for initial conversion and quantization 
+of weight.
 ```
 git clone https://github.com/ggerganov/llama.cpp
 cd llama.cpp
-make
 python3 -m pip install torch numpy sentencepiece
+make
 ```
 
 Grab yourself a copy of original LLAMA weight 
@@ -88,13 +91,20 @@ python3 quantize.py 7B
 	<div class="col-sm-2"></div>
 </div>
 
------------------------
+Then you can run the following example.
+```
+./main -m ./models/7B/ggml-model-q4_0.bin -p "Building a website can be done in 10 simple steps:" -n 512
+```
 
+-----------------------
+Above is an older method to run llama.cpp below is the 
+latest one at least at the time of writing.
+```
 git clone https://github.com/ggerganov/llama.cpp
 cd llama.cpp
-
 python3 -m pip install -r requirements.txt
-
+make
 python3 convert.py models/7B/
-
 ./quantize ./models/7B/ggml-model-f16.bin ./models/7B/ggml-model-q4_0.bin q4_0
+./main -m ./models/7B/ggml-model-q4_0.bin -p "Building a website can be done in 10 simple steps:" -n 512
+```
