@@ -110,7 +110,7 @@ default-sample-format = float32le
 default-sample-rate = 48000
 ```
 
-Then exit and save by `Ctrl + X, Ctrl + Y, Enter` and 
+Then exit and save by `Ctrl + X, Y, Enter` and 
 apply your configuration and restart if necessary.
 ```
 $ pulseaudio -k
@@ -134,7 +134,7 @@ fine for playback purpose. You can get more info in this
 Next if you want to improve your playback quality 
 using Bluetooth, you can change the audio codec to 
 SBC-XQ. There are few Bluetooth audio codec available 
-such as LDAC which is proprietary Sony audio codec which 
+such as LDAC which is proprietary Sony audio codec that 
 can handle bit rates up to 990 kbps as for contexts, 
 CD Audio bit rates is about 1411 kbps, AAC which is 
 usually used for Apple devices and can handle bit rates 
