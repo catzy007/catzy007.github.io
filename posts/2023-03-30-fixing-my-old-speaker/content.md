@@ -125,7 +125,7 @@ fine for playback purpose. You can get more info in this
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
 		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2023-03-30-fixing-my-old-speaker/06.png" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2023-03-30-fixing-my-old-speaker/05.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-2"></div>
@@ -149,6 +149,11 @@ wich according to
 [soundexpert.org](http://soundexpert.org/articles/-/blogs/audio-quality-of-sbc-xq-bluetooth-audio-codec)
 SBC-XQ at 551 kbps is comparable to aptX HD at 529 kbps.
 
+The drawback for this approach is interference from other 
+device that operate in same frequency as Bluetooth which 
+is ranging from Wi-Fi devices, Microwave oven and other 
+home electronic device such as baby monitor.
+
 If you're using PulseAudio in Linux, you can enable SBC-XQ 
 simply by installing PulseAudio Volume Control 
 `pavucontrol`, go to `Configuration` tab and simply 
@@ -158,7 +163,7 @@ change the codec.
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
 		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2023-03-30-fixing-my-old-speaker/05.png" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2023-03-30-fixing-my-old-speaker/06.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-2"></div>
@@ -169,3 +174,20 @@ specification, you need a find a "Hacky" ways to get
 it. In android, you need to root your devices and manually 
 install the module. As for Windows and Apple devices it 
 is yet to be seen.
+
+Using Bluetooth is great for portability, for everything 
+else I recommend using cable. USB cable to be exact 
+apparently amplifier that I have can act as a sound card 
+by simply plugging one end of the USB cable to amplifier 
+and the other end to my PC. This way I can use it to play 
+music at 16-Bit at 48 kHz with no interference at all.
+
+<div class="row">
+	<div class="col-sm-3"></div>
+	<div class="col-sm-6">
+		<div class="img-thumbnail">
+			<img class="img-fluid" loading="lazy" src="./posts/2023-03-30-fixing-my-old-speaker/07.png" alt="img">
+		</div>
+	</div>
+	<div class="col-sm-3"></div>
+</div>
