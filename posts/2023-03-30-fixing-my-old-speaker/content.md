@@ -86,3 +86,86 @@ guitar part is going to be missing altogether.
 As for my set-up, everything is passed with flying colours except Golden Time. It 
 has a short burst bass and apparently my power supply I pull from random internet 
 router somewhere could not handle it, well I guess new power supply next time.
+
+
+#### [Update 6/6/23]
+
+After using this speaker for a while, there is a few 
+things that could improve your listening experience.
+
+First is changing your resample method to `soxr-vhq` 
+while yes it may cost you more CPU usage, in my Skylake 
+I7 it costs me whopping 1% of CPU usage. Other than 
+that, I set sample format to 32-Bit float at 48 kHz. 
+If you're using PulseAudio in Linux, you can set it by 
+doing.
+```
+$ nano /etc/pulse/daemon.conf
+```
+
+Then at the bottom of the file, add the following
+```
+resample-method = soxr-vhq
+default-sample-format = float32le
+default-sample-rate = 48000
+```
+
+Then exit and save by `Ctrl + X, Ctrl + Y, Enter` and 
+apply your configuration and restart if necessary.
+```
+$ pulseaudio -k
+```
+
+Also don't worry too much about bit-depth and sample 
+rate, unless you're recording or editing a track it is 
+fine for playback purpose. You can get more info in this 
+[YouTube video](https://www.youtube.com/watch?v=cD7YFUYLpDc&feature=youtu.be).
+
+<div class="row">
+	<div class="col-sm-2"></div>
+	<div class="col-sm-8">
+		<div class="img-thumbnail">
+			<img class="img-fluid" loading="lazy" src="./posts/2023-03-30-fixing-my-old-speaker/06.png" alt="img">
+		</div>
+	</div>
+	<div class="col-sm-2"></div>
+</div>
+
+Next if you want to improve your playback quality 
+using Bluetooth, you can change the audio codec to 
+SBC-XQ. There are few Bluetooth audio codec available 
+such as LDAC which is proprietary Sony audio codec which 
+can handle bit rates up to 990 kbps as for contexts, 
+CD Audio bit rates is about 1411 kbps, AAC which is 
+usually used for Apple devices and can handle bit rates 
+up to 320 kbps, aptX HD which is CSR/Qualcomm proprietary 
+audio codec offering improved version of regular aptX 
+with bit rates up to 576 kbps, and there is SBC which 
+officially can handle bit rates up to 345 kbps, but 
+modern Bluetooth audio receiver can handle up to 730 
+kbps this is refered by the community as 
+[SBC-XQ](https://lineageos.org/engineering/Bluetooth-SBC-XQ/) 
+wich according to 
+[soundexpert.org](http://soundexpert.org/articles/-/blogs/audio-quality-of-sbc-xq-bluetooth-audio-codec)
+SBC-XQ at 551 kbps is comparable to aptX HD at 529 kbps.
+
+If you're using PulseAudio in Linux, you can enable SBC-XQ 
+simply by installing PulseAudio Volume Control 
+`pavucontrol`, go to `Configuration` tab and simply 
+change the codec.
+
+<div class="row">
+	<div class="col-sm-2"></div>
+	<div class="col-sm-8">
+		<div class="img-thumbnail">
+			<img class="img-fluid" loading="lazy" src="./posts/2023-03-30-fixing-my-old-speaker/05.png" alt="img">
+		</div>
+	</div>
+	<div class="col-sm-2"></div>
+</div>
+
+As for other device because this is not an official 
+specification, you need a find a "Hacky" ways to get 
+it. In android, you need to root your devices and manually 
+install the module. As for Windows and Apple devices it 
+is yet to be seen.
