@@ -116,7 +116,7 @@ apply your configuration and restart if necessary.
 $ pulseaudio -k
 ```
 
-Also don't worry too much about bit-depth and sample 
+Also don't worry too much about bit depth and sample 
 rate, unless you're recording or editing a track it is 
 fine for playback purpose. You can get more info in this 
 [YouTube video](https://www.youtube.com/watch?v=cD7YFUYLpDc&feature=youtu.be).
