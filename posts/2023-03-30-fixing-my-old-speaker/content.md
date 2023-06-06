@@ -110,7 +110,7 @@ default-sample-format = float32le
 default-sample-rate = 48000
 ```
 
-Then exit and save by `Ctrl + X, Ctrl + Y, Enter` and 
+Then exit and save by `Ctrl + X, Y, Enter` and 
 apply your configuration and restart if necessary.
 ```
 $ pulseaudio -k
