@@ -149,10 +149,11 @@ wich according to
 [soundexpert.org](http://soundexpert.org/articles/-/blogs/audio-quality-of-sbc-xq-bluetooth-audio-codec)
 SBC-XQ at 551 kbps is comparable to aptX HD at 529 kbps.
 
-The drawback for this approach is interference from other 
-device that operate in same frequency as Bluetooth which 
-is ranging from Wi-Fi devices, Microwave oven and other 
-home electronic device such as baby monitor.
+The drawback for this approach is SBC-XQ may be more 
+susceptible to an interference from other device that 
+operate in same frequency as Bluetooth which is ranging 
+from Wi-Fi devices, Microwave oven and other home 
+electronic device such as baby monitor.
 
 If you're using PulseAudio in Linux, you can enable SBC-XQ 
 simply by installing PulseAudio Volume Control 
