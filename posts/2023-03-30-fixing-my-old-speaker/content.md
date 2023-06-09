@@ -140,7 +140,7 @@ CD Audio bit rates is about 1411 kbps, AAC which is
 usually used for Apple devices and can handle bit rates 
 up to 320 kbps, aptX HD which is CSR/Qualcomm proprietary 
 audio codec offering improved version of regular aptX 
-with bit rates up to 576 kbps and regular aptX bit rates 
+with bit rates up to 576 kbps while regular aptX bit rates 
 up to 384 kbps, and there is SBC which officially can handle 
 bit rates up to 345 kbps, but modern Bluetooth audio receiver 
 can handle up to 730 kbps this is refered by the community as 
