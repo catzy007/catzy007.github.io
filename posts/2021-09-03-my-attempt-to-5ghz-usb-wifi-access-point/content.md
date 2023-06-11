@@ -46,7 +46,7 @@ but most of them had to be compiled manually.
 <br>
 #### Initial Testing and Driver Installation
 
-After it arrives from China i just plug it in and do `lspci`, and it has shown something 
+After it arrives from China i just plug it in and do `lsusb`, and it has shown something 
 like this.
 ```
 0bda:b812 Realtek Semiconductor Corp. USB3.0 802.11ac 1200M Adapter
@@ -157,17 +157,17 @@ IEEE80211AC=0
 My test uses 5GHZ band at channel 36.
 
 <br>
-And i think that's it. If you did something similar, i hope the best for you.
+And i think that's it.
 
 <br>
-#### More Reading If You Need
+#### More Reading
 
 <https://github.com/morrownr/88x2bu/blob/5.8.7.4/Bridged_Wireless_Access_Point.md>
 
 <https://linux-hardware.org/index.php?id=usb:0bda-b812>
 
 <br>
-#### [UPDATE 2021/10/1] Go above and beyond
+#### [UPDATE 2021/10/01] Go above and beyond
 
 Recently or what i mean is few hours ago, i get a breakthrough. I finally 
 able to use 802.11AC mode at 80MHz channel width and 867Mbps bit rate. 
@@ -213,3 +213,77 @@ the tricks and quirks that needed to make it works. In my case, i finally manage
 bit rate and learn few things along the way. My set-up still has issues like DHCP is detached from 
 AP after few days or system reset and the AP is missing altogether after certain amount of time. 
 Maybe this is caused by using USB 2.0 port instead of USB 3.0.
+
+<br>
+#### [UPDATE 2023/06/11] Finally, In-Kernel Driver
+
+Finally, after few years of waiting. Starting from 
+[kernel 6.2 rtl8822bu, rtl8812bu, rtl8821cu and rtl8811cu](https://github.com/torvalds/linux/blob/master/drivers/net/wireless/realtek/rtw88/rtw8822bu.c) 
+gets an in-kernel driver support. Which obviously I have to try and here we are.
+The first thing I did is to install (at the time of writing) the latest stable kernel which is version 
+6.3.7 using 
+[bkw777/mainline](https://github.com/bkw777/mainline)
+
+<div class="row">
+	<div class="col-sm-3"></div>
+	<div class="col-sm-6">
+		<div class="img-thumbnail">
+			<img class="img-fluid" loading="lazy" src="./posts/2021-09-03-my-attempt-to-5ghz-usb-wifi-access-point/04.jpg" alt="img">
+		</div>
+	</div>
+	<div class="col-sm-3"></div>
+</div>
+
+Then I created AP using [lakinduakash/linux-wifi-hotspot](https://github.com/lakinduakash/linux-wifi-hotspot) 
+with the following config which is adapted from 
+[morrownr/USB-WiFi/AP Mode](https://github.com/morrownr/USB-WiFi/blob/main/home/AP_Mode/Bridged_Wireless_Access_Point.md).
+
+```
+GATEWAY=192.168.20.1
+WPA_VERSION=2
+ETC_HOSTS=0
+DHCP_DNS=1.1.1.1
+NO_DNS=0
+NO_DNSMASQ=0
+HIDDEN=0
+MAC_FILTER=0
+MAC_FILTER_ACCEPT=/etc/hostapd/hostapd.accept
+ISOLATE_CLIENTS=0
+SHARE_METHOD=nat
+IEEE80211N=1
+IEEE80211AC=1
+HT_CAPAB=[LDPC][HT40+][HT40-][SHORT-GI-20][SHORT-GI-40][MAX-AMSDU-7935]
+VHT_CAPAB=[MAX-MPDU-11454][SHORT-GI-80][TX-STBC-2BY1][RX-STBC-1][HTC-VHT][MAX-A-MPDU-LEN-EXP7]
+DRIVER=nl80211
+NO_VIRT=0
+COUNTRY=US
+FREQ_BAND=5
+CHANNEL=36
+NEW_MACADDR=
+DAEMONIZE=0
+DAEMON_PIDFILE=
+DAEMON_LOGFILE=/dev/null
+NO_HAVEGED=0
+WIFI_IFACE=wlan0
+INTERNET_IFACE=eth0
+SSID=TEST-5GHZ-WIFI
+PASSPHRASE=password5
+USE_PSK=
+```
+
+This way I can get about 400 Mbps PHY at 40 MHz MIMO 2x2 not bad at all. 
+I also do an iperf test using my phone which can do 200 Mbps PHY I can 
+get about 120~147 Mbps. 
+
+<div class="row">
+	<div class="col-sm-3"></div>
+	<div class="col-sm-6">
+		<div class="img-thumbnail">
+			<img class="img-fluid" loading="lazy" src="./posts/2021-09-03-my-attempt-to-5ghz-usb-wifi-access-point/05.jpg" alt="img">
+		</div>
+	</div>
+	<div class="col-sm-3"></div>
+</div>
+
+While I currently could not get it to maximum 867 Mbps PHY at 80 MHz, 
+I think it is a great first step, and it could get better over time.
