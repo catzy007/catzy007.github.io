@@ -28,7 +28,7 @@ which allow us to run LLAMA-based LLM locally using CPU.
 llama.cpp is written in C++ instead of usual python. 
 It also uses tensor library called 
 [GGML](https://github.com/ggerganov/ggml). 
-As a word of warning, llama.cpp is have change their 
+As a word of warning, llama.cpp have change their 
 quantization format multiple times and sometimes 
 previous quantization format no longer work and need 
 to be re-quantized.
