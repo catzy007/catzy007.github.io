@@ -25,7 +25,8 @@ to use UART to gain shell and tftp to quickly transfer files between
 host device and target. As for UART adapter, I'm using CP2102. I have 
 tried other adapter, and it just output a random unreadable character.
 * First open your device and solder pin header to your board. Then wire 
-it to the UART adapter.
+it to the UART adapter and don't forget to plug LAN1 (the rightmost 
+connector) to the network.
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
@@ -88,4 +89,4 @@ DRAM:  128 MB
 NAND:  1bit HM ECC, Size: 128 MiB
 *** Warning - bad CRC or NAND, using default environment
 ```
-* Congratulations, the easy part is over. Now For the hard part (to be continued).
+* Congratulations, the easy part is over. Now for the hard part (to be continued).
