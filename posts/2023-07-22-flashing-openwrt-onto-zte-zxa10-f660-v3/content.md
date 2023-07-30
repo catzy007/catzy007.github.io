@@ -121,10 +121,10 @@ Network > WirelessAPD > wpa-supplicant <*>
 Kernel Modules > Wireless Drivers > kmod-rtl8192ce <*>
 Firmware > rtl8192ce-firmware <*>
 ```
-* Use tab to move the cursor to save and press enter. 
-Then save file name and exit.
-* Next, pray and run `make` to build your custom image. 
-Or you want you can use `make -j$(nproc)`.
+* Use tab and move the cursor to save and press enter, then 
+save as default file name and exit.
+* Next, pray and run `make` to build your custom image, or you 
+can use `make -j$(nproc)`.
 * If nothing goes wrong you should get `initramfs` and `squashfs` 
 image in `openwrt-avanta/bin/targets/avanta/generic/`.
 * Then copy `initramfs` image to `/srv/tftp`
