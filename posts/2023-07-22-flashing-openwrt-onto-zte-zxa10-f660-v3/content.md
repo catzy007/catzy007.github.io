@@ -26,7 +26,8 @@ host device and target. As for UART adapter, I'm using CP2102. I have
 tried other adapter, and it just output a random unreadable character.
 * First open your device and solder pin header to your board. Then wire 
 it to the UART adapter and don't forget to plug LAN1 (the rightmost 
-connector) to the network.
+connector) to the network. Set your host IP address to `192.168.1.100` 
+and router IP address to `192.168.1.1`.
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
@@ -39,27 +40,27 @@ connector) to the network.
 * Then grab a custom uboot image from [msdos03/avanta-uboot-f660](https://github.com/msdos03/avanta-uboot-f660/releases) or if you have 128MB NAND version, you can grab one from [here](https://github.com/msdos03/avanta-uboot-f660/files/11854368/u-boot-f660_f660_128m_ddr3_nand.zip).
 * Next, install U-Boot tools and tftp server.
 ```
-sudo apt install u-boot-tools atftpd
+sudo apt install screen u-boot-tools atftpd
 sudo mkdir /srv/tftp
 ```
-* Then copy custom uboot image to tftp directory and start tftp
+* Then copy custom uboot image to tftp directory and start tftp.
 ```
 sudo cp ./uboot.bin /srv/tftp
 sudo chown nobody:nogroup -R /srv/tftp
 sudo atftpd --daemon --no-fork --logfile - /srv/tftp
 ```
-* Next, start kwboot and repeatedly press enter to gain shell
+* Next, start kwboot and repeatedly press enter to gain shell.
 ```
 sudo kwboot -t -p -B115200 /dev/ttyUSB0 -b uboot.bin
 ```
-* Then pull and flash the custom uboot image
+* Then pull and flash the custom uboot image.
 ```
 tftp uboot.bin
 nand erase
 nand write 0x2000000 0x0 0x100000
 ```
 * Next, power cycle your device. If nothing goes wrong, it should output 
-something like
+something like.
 ```
  __   __                      _ _
 |  \/  | __ _ _ ____   _____| | |
@@ -89,4 +90,58 @@ DRAM:  128 MB
 NAND:  1bit HM ECC, Size: 128 MiB
 *** Warning - bad CRC or NAND, using default environment
 ```
-* Congratulations, the easy part is over. Now for the hard part (to be continued).
+
+<br>
+Congratulations, the easy part is over. Now for the hard part (to be continued).
+* First, clone [msdos03/openwrt-avanta](https://github.com/msdos03/openwrt-avanta).
+* Next, install the required library and packages [requirements](https://openwrt.org/docs/guide-developer/toolchain/install-buildsystem#debianubuntu).
+* Then update package definitions and install package symlinks.
+```
+./scripts/feeds update -a
+./scripts/feeds install -a
+```
+* Next run `make menuconfig` and set the following (Use arrow 
+key to navigate, enter to enter, press space or twice to select 
+or deselect and press esc twice to back).
+```
+Target System > Marvell Avanta
+Subtarget > Generic
+Target Profile > ZTE F460-F660
+Target Images > ramdisk and squashfs
+```
+* Then set the following as built-in module.
+```    
+LuCI > Collections > luci <*>
+Base System > dnsmasq <*>
+Network > iw-full <*>
+Network > WirelessAPD > hostapd <*>
+Network > WirelessAPD > hostapd-common <*>
+Network > WirelessAPD > hostapd-utils <*>
+Network > WirelessAPD > wpa-supplicant <*>
+Kernel Modules > Wireless Drivers > kmod-rtl8192ce <*>
+Firmware > rtl8192ce-firmware <*>
+```
+* Use tab to move the cursor to save and press enter. 
+Then save file name and exit.
+* Next, pray and run `make` to build your custom image. 
+Or you want you can use `make -j$(nproc)`.
+* If nothing goes wrong you should get `initramfs` and `squashfs` 
+image in `openwrt-avanta/bin/targets/avanta/generic/`.
+* Then copy `initramfs` image to `/srv/tftp`
+```
+sudo cp ./openwrt-avanta-generic-zte_f460-f660-initramfs-uImage /srv/tftp/initiramfs.bin
+```
+* Next, connet to device using UART, boot the device, and repeatedly 
+press enter to gain shell.
+```
+screen /dev/ttyUSB0 115200
+```
+* Then pull the initiramfs image and boot it.
+```
+tftp initiramfs.bin
+tftpboot
+```
+* If nothing goes wrong, you should be able to open `http://192.168.1.1`.
+* Then perform a [sysupgrade from luci](https://openwrt.org/docs/guide-quick-start/sysupgrade.luci#verify_firmware_file_and_flash_the_firmware) using sysupgrade 
+image file `openwrt-avanta-generic-zte_f460-f660-squashfs-sysupgrade.bin`
+* And that's it.
