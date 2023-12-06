@@ -20,7 +20,7 @@ more system memory.
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./2023-11-19-my-journey-managing-my-own-homelab/01.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2023-11-19-my-journey-managing-my-own-homelab/01.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
