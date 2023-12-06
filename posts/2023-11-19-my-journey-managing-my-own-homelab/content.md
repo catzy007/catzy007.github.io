@@ -30,7 +30,7 @@ The next upgrade is to add a GPU. But because my system is SFF form
 factor, I can't just use any GPU and expect it to fit. Instead, I 
 have to use specific GPU called "Low-Profile" not the standard 
 "Full-Height" one. There are few consumer-class GPU that are available 
-in this form factor like GTX 1050 or GTX 1650, but the majority of 
+in this form factor such as GTX 1050 or GTX 1650, but the majority of 
 the GPU is either professional or server-class one such as Quadro 
 or Tesla lineup. In my case, I'm using NVIDIA Quadro K620 2 GB which 
 I acquire for about 25 USD. Other than that, I only add DVI to HDMI 
@@ -51,11 +51,11 @@ and restore all services from my old server and plug it straight
 into the interweb with a proper protection. But how does it run? 
 For the past month it has been fine actually with only minor thing such 
 as high IO delay because of mechanical hard drive instead of a solid 
-state one which I'm going to do next.
+state one which I'm planning do.
 
 
 The next thing I did is to try GPU Passthrough. The last time I did this 
-is 2019 with a Radeon GPU Now a lot has changed, and I use NVIDIA GPU 
+is 2019 with a Radeon GPU. Now a lot has changed, and I use NVIDIA GPU 
 instead. Here are the resources that I use as a reference.
 
 [PCI Passthrough - Proxmox VE](https://pve.proxmox.com/wiki/PCI_Passthrough)
