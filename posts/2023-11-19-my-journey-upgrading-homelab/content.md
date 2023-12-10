@@ -13,7 +13,7 @@ use case and upgrade that I'm planning to do.
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2023-11-19-my-journey-managing-my-own-homelab/01.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2023-11-19-my-journey-upgrading-homelab/01.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -40,7 +40,7 @@ adapter and HDMI Dummy Adapter because I plan to run this Headless.
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2023-11-19-my-journey-managing-my-own-homelab/02.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2023-11-19-my-journey-upgrading-homelab/02.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -90,7 +90,7 @@ If nothing goes wrong, you should get `DMAR: Intel(R) Virtualization Technology 
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2023-11-19-my-journey-managing-my-own-homelab/03.png" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2023-11-19-my-journey-upgrading-homelab/03.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -110,7 +110,7 @@ If nothing goes wrong, you should get `Kernel driver in use: vfio-pci`
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2023-11-19-my-journey-managing-my-own-homelab/04.png" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2023-11-19-my-journey-upgrading-homelab/04.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -126,7 +126,7 @@ make sure `Primary GPU` is left uncheck.
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2023-11-19-my-journey-managing-my-own-homelab/05.png" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2023-11-19-my-journey-upgrading-homelab/05.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -146,7 +146,7 @@ Last, boot and remote to your VM, and hopefully it is working.
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2023-11-19-my-journey-managing-my-own-homelab/06.png" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2023-11-19-my-journey-upgrading-homelab/06.png" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
@@ -189,7 +189,7 @@ development of future Optane product is ceased.
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
 		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2023-11-19-my-journey-managing-my-own-homelab/07.jpg" alt="img">
+			<img class="img-fluid" loading="lazy" src="./posts/2023-11-19-my-journey-upgrading-homelab/07.jpg" alt="img">
 		</div>
 	</div>
 	<div class="col-sm-3"></div>
