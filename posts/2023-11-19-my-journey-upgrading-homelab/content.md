@@ -1,11 +1,11 @@
-#### My Journey Managing My Own Homelab
+#### My Journey Upgrading Homelab
 _Sunday, November 19, 2023_
 
 Recently or more specifically few months ago, I acquire a new machine 
 which is going to replace my dying Proxmox server from 2020. The machine 
 in question is a Lenovo ThinkCentre M900 SFF with a sticker price of 
 roughly 45 USD and include a Pentium G4400 2 Core 2 Thread CPU, 4 GB 
-RAM and 500 GB Mechanical spinning drive. While this specs may not seem 
+RAM and 500 GB mechanical spinning drive. While this specs may not seem 
 "impressive", In my local area it is a decent deal considering my 
 use case and upgrade that I'm planning to do.
 
@@ -19,8 +19,8 @@ use case and upgrade that I'm planning to do.
 	<div class="col-sm-3"></div>
 </div>
 
-The first thing that I did is to upgrade the RAM. Fortunately Lenovo 
-M900 has 4 slots of DDR4 RAM which is already populated with a single 
+The first thing that I did is to upgrade the RAM. Lenovo M900 has 4 
+slots of DDR4 RAM which is already populated with a single 
 stick of DDR4 4 GB RAM, and fortunately for me, I have 3 sticks of 
 DDR4 4 GB lying around making the total system memory to 16 GB which 
 is enough for my use cases, unless I play around with AI and require 
@@ -31,7 +31,7 @@ factor, I can't just use any GPU and expect it to fit. Instead, I
 have to use specific GPU called "Low-Profile" not the standard 
 "Full-Height" one. There are few consumer-class GPU that are available 
 in this form factor such as GTX 1050 or GTX 1650, but the majority of 
-the GPU is either professional or server-class one such as Quadro 
+the GPU is either workstation or server-class one such as Quadro 
 or Tesla lineup. In my case, I'm using NVIDIA Quadro K620 2 GB which 
 I acquire for about 25 USD. Other than that, I only add DVI to HDMI 
 adapter and HDMI Dummy Adapter because I plan to run this Headless.
@@ -51,12 +51,11 @@ and restore all services from my old server and plug it straight
 into the interweb with a proper protection. But how does it run? 
 For the past month it has been fine actually with only minor thing such 
 as high IO delay because of mechanical hard drive instead of a solid 
-state one which I'm planning do.
-
+state one which I'm planning upgrade later.
 
 The next thing I did is to try GPU Passthrough. The last time I did this 
-is 2019 with a Radeon GPU. Now a lot has changed, and I use NVIDIA GPU 
-instead. Here are the resources that I use as a reference.
+back in 2019 with a Radeon GPU. Now a lot has changed, and I use NVIDIA 
+GPU instead. Here are the resources that I use as a reference.
 
 [PCI Passthrough - Proxmox VE](https://pve.proxmox.com/wiki/PCI_Passthrough)
 
@@ -67,13 +66,12 @@ the machine and do the following.
 ```
 nano /etc/default/grub
 	GRUB_CMDLINE_LINUX_DEFAULT="quiet intel_iommu=on iommu=pt nofb video=efifb:off"
-
 update-grub
 nano /etc/modules
 	vfio
 	vfio_iommu_type1
-	vfio_pci
 	vfio_virqfd
+	vfio_pci
 nano /etc/initramfs-tools/modules
 	vfio
 	vfio_iommu_type1
@@ -180,3 +178,19 @@ vmgenid: 1e606f3e-6cfc-42af-844b-cf61f4ebcb05
 ```
 </details>
 
+The next upgrade that I did is to add a Solid State Drive or more like 
+two of them. The first SSD is just a regular Samsung 256 GB M.2 SATA. 
+The other one is 16 GB of Intel Optane that I use as a boot drive. 
+Compared to a traditional NAND based SSD, Optane is faster (IOPS) and 
+has higher endurance rating (TBW) but since Q2 2022 Intel announce that 
+development of future Optane product is ceased.
+
+<div class="row">
+	<div class="col-sm-3"></div>
+	<div class="col-sm-6">
+		<div class="img-thumbnail">
+			<img class="img-fluid" loading="lazy" src="./posts/2023-11-19-my-journey-managing-my-own-homelab/07.png" alt="img">
+		</div>
+	</div>
+	<div class="col-sm-3"></div>
+</div>
