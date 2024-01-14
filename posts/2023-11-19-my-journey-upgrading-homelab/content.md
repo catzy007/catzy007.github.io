@@ -194,3 +194,56 @@ development of future Optane product is ceased.
 	</div>
 	<div class="col-sm-3"></div>
 </div>
+
+Now for the overlooked one. The battery backup or most people call it 
+Uninterruptible Power Supply (UPS) mine is APC BX650 (the one with USB 
+data connector on the back) that I got second hand in dead condition 
+I also grab myself a replacement sealed lead acid battery with 7.5Ah 
+capacity. Then I disassemble the unit replace the battery, and it 
+works kinda. For some reason it just keep beeping non-stop after 
+further disassembly I found that one of the connector got loose, 
+so I just plug it back, and it works.
+
+<div class="row">
+	<div class="col-sm-3"></div>
+	<div class="col-sm-6">
+		<div class="img-thumbnail">
+			<img class="img-fluid" loading="lazy" src="./posts/2023-11-19-my-journey-upgrading-homelab/08.jpg" alt="img">
+		</div>
+	</div>
+	<div class="col-sm-3"></div>
+</div>
+
+Then I plug the USB to my system and set it up. In Windows, you can use 
+something called APC PowerChute in Linux, you can use 
+[apcupsd](https://help.ubuntu.com/community/apcupsd)
+
+```
+apt install apcupsd -y
+cp /etc/apcupsd/apcupsd.conf /etc/apcupsd/apcupsd.conf.bak
+nano /etc/apcupsd/apcupsd.conf
+```
+```
+UPSNAME bx650
+UPSCABLE usb
+UPSTYPE usb
+DEVICE 
+POLLTIME 60
+TIMEOUT 180
+BEEPSTATE N
+```
+```
+cp /etc/default/apcupsd /etc/default/apcupsd.bak
+nano /etc/default/apcupsd
+```
+```
+ISCONFIGURED=yes
+```
+```
+systemctl restart apcupsd
+apcaccess status
+```
+If everything set properly you should get a UPS status log. With my 
+config the system will safely shut down after 3 minutes in battery 
+mode, also I disable beep so that it won't disturb anyone if there 
+is a power outage at the middle of the night.
