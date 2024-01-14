@@ -59,3 +59,4 @@
 2023-04-06-Large-Language-Model-and-Artificial-Intelligence
 2023-05-30-Running-Large-Language-Model-Locally
 2023-07-22-Flashing-OpenWrt-Onto-ZTE-ZXA10-F660-V3
+2023-11-19-My-Journey-Upgrading-Homelab
