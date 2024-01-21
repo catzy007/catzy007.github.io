@@ -33,7 +33,7 @@ have to use specific GPU called "Low-Profile" not the standard
 in this form factor such as GTX 1050 or GTX 1650, but the majority of 
 the GPU is either workstation or server-class one such as Quadro 
 or Tesla lineup. In my case, I'm using NVIDIA Quadro K620 2 GB which 
-I acquire for about 25 USD. Other than that, I only add DVI to HDMI 
+I acquire for about 25 USD. Other than that, I also need DVI to HDMI 
 adapter and HDMI Dummy Adapter because I plan to run this Headless.
 
 <div class="row">
