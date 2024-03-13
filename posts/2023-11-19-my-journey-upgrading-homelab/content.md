@@ -247,3 +247,45 @@ If everything set properly you should get a UPS status log. With my
 config the system will safely shut down after 3 minutes in battery 
 mode, also I disable beep so that it won't disturb anyone if there 
 is a power outage at the middle of the night.
+
+For a while, I'm actually confused about how to properly disable alarm 
+in my UPS. Apparently using apcupsd config to disable alarm only works 
+for smart-ups class not the regular back-ups one. Well the following 
+is a guide to disable APC UPS alarm for good. Here I'm using 
+programmed interaction tool called `expect` and `autoexpect` to 
+disable alarm via apctest. First install the required modules 
+and create a new config.
+```
+apt update
+apt install expect
+nano /root/disableApcAlarm.exp
+```
+```
+#!/usr/bin/expect
+
+spawn apctest
+expect "Select function number: "
+send -- "6\r"
+expect "Your choice: Select function: "
+send -- "d\r"
+expect "Select function number: "
+send -- "q\r"
+expect eof
+```
+Test the config and make sure the alarm is disabled.
+```
+expect /root/disableApcAlarm.exp
+```
+Then edit apcupsd service to disable alarm every time it starts.
+```
+systemctl stop apcupsd
+nano /lib/systemd/system/apcupsd.service
+```
+```
+ExecStartPre=/usr/bin/expect /root/disableApcAlarm.exp && /lib/apcupsd/prestart
+```
+Reload the config and start apcupsd back.
+```
+systemctl daemon-reload
+systemctl start apcupsd
+```
