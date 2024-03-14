@@ -264,10 +264,22 @@ nano /root/disableApcAlarm.exp
 #!/usr/bin/expect
 
 spawn apctest
-expect "Select function number: "
-send -- "6\r"
-expect "Your choice: Select function: "
-send -- "d\r"
+expect {
+    "6)  View/Change alarm behavior\r" {
+        expect "Select function number: "
+        send -- "6\r"
+        expect {
+            "Current alarm setting: ENABLED\r" {
+                expect "Your choice: Select function: "
+                send -- "d\r"
+            }
+            "Current alarm setting: DISABLED\r" {
+                expect "Your choice: Select function: "
+                send -- "q\r"
+            }
+        }
+    }
+}
 expect "Select function number: "
 send -- "q\r"
 expect eof
