@@ -200,7 +200,7 @@ Uninterruptible Power Supply (UPS) mine is APC BX650 (the one with USB
 data connector on the back) that I got second hand in dead condition 
 I also grab myself a replacement sealed lead acid battery with 7.5Ah 
 capacity. Then I disassemble the unit replace the battery, and it 
-works kinda. For some reason it just keep beeping non-stop after 
+works kinda, for some reason it just keep beeping non-stop. After 
 further disassembly I found that one of the connector got loose, 
 so I just plug it back, and it works.
 
