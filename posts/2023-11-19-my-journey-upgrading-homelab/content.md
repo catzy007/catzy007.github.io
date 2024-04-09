@@ -215,7 +215,7 @@ so I just plug it back, and it works.
 </div>
 
 Then I plug the USB to my system and set it up. In Windows, you can use 
-something called APC PowerChute in Linux, you can use 
+something called APC PowerChute while in Linux, you can use 
 [apcupsd](https://help.ubuntu.com/community/apcupsd)
 
 ```
@@ -301,3 +301,22 @@ Reload the config and start apcupsd back.
 systemctl daemon-reload
 systemctl start apcupsd
 ```
+
+The next thing that I did is basically upgrade the entire platform. 
+I found Lenovo Thinkstation P310 motherboard + Xeon E3-1245 v5 CPU 
+for about 62 USD. Apparently M900 and P310 uses near identical 
+motherboard with some difference such as extra PCIe 1x port, 
+additional SATA connector and uses of Intel C236 instead of Q170 
+Chipset.
+
+<div class="row">
+	<div class="col-sm-2"></div>
+	<div class="col-sm-8">
+		<div class="img-thumbnail">
+			<img class="img-fluid" loading="lazy" src="./posts/2023-11-19-my-journey-upgrading-homelab/09.jpg" alt="img">
+			<span>Can you guess which is which?</span>
+		</div>
+	</div>
+	<div class="col-sm-2"></div>
+</div>
+
