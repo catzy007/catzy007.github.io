@@ -124,7 +124,7 @@ Firmware > rtl8192ce-firmware <*>
 * Use tab and move the cursor to save and press enter, then 
 save as default file name and exit.
 * Next, pray and run `make` to build your custom image, or you 
-can use `make -j$(nproc)`.
+can use `make -j$(nproc)`. Use `make clean` to clear build errors.
 * If nothing goes wrong you should get `initramfs` and `squashfs` 
 image in `openwrt-avanta/bin/targets/avanta/generic/`.
 * Then copy `initramfs` image to `/srv/tftp`
@@ -140,6 +140,7 @@ screen /dev/ttyUSB0 115200
 ```
 tftp initiramfs.bin
 tftpboot
+boot
 ```
 * If nothing goes wrong, you should be able to open `http://192.168.1.1`.
 * Then perform a [sysupgrade from luci](https://openwrt.org/docs/guide-quick-start/sysupgrade.luci#verify_firmware_file_and_flash_the_firmware) using sysupgrade 
