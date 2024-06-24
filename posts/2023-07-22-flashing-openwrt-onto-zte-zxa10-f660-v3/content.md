@@ -127,9 +127,9 @@ save as default file name and exit.
 can use `make -j$(nproc)`. Use `make clean` to clear build errors.
 * If nothing goes wrong you should get `initramfs` and `squashfs` 
 image in `openwrt-avanta/bin/targets/avanta/generic/`.
-* Then copy `initramfs` image to `/srv/tftp`
+* Then copy `squashfs-factory` image to `/srv/tftp`
 ```
-sudo cp ./openwrt-avanta-generic-zte_f460-f660-initramfs-uImage /srv/tftp/initiramfs.bin
+sudo cp ./openwrt-avanta-generic-zte_f460-f660-squashfs-factory.bin /srv/tftp/factory.bin
 ```
 * Next, connet to device using UART, boot the device, and repeatedly 
 press enter to gain shell.
@@ -138,9 +138,12 @@ screen /dev/ttyUSB0 115200
 ```
 * Then pull the initiramfs image and boot it.
 ```
-tftp initiramfs.bin
+setenv bootcmd 'nand read 2000000 100000 400000;bootm'
+saveenv
+
+tftp factory.bin
 tftpboot
-boot
+bootm
 ```
 * If nothing goes wrong, you should be able to open `http://192.168.1.1`.
 * Then perform a [sysupgrade from luci](https://openwrt.org/docs/guide-quick-start/sysupgrade.luci#verify_firmware_file_and_flash_the_firmware) using sysupgrade 
