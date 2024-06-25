@@ -51,11 +51,11 @@ sudo atftpd --daemon --no-fork --logfile - /srv/tftp
 ```
 * Next, start kwboot and repeatedly press enter to gain shell.
 ```
-sudo kwboot -t -p -B115200 /dev/ttyUSB0 -b uboot.bin
+sudo kwboot -t -p -B115200 /dev/ttyUSB0 -b uboot-uart.bin
 ```
 * Then pull and flash the custom uboot image.
 ```
-tftp uboot.bin
+tftp uboot-nand.bin
 nand erase
 nand write 0x2000000 0x0 0x100000
 ```
@@ -142,7 +142,6 @@ setenv bootcmd 'nand read 2000000 100000 400000;bootm'
 saveenv
 
 tftp boot.img
-tftpboot
 bootm
 ```
 * If nothing goes wrong, you should be able to open `http://192.168.1.1`.
