@@ -129,7 +129,7 @@ can use `make -j$(nproc)`. Use `make clean` to clear build errors.
 image in `openwrt-avanta/bin/targets/avanta/generic/`.
 * Then copy `squashfs-factory` image to `/srv/tftp`
 ```
-sudo cp ./openwrt-avanta-generic-zte_f460-f660-squashfs-factory.bin /srv/tftp/factory.bin
+sudo cp ./openwrt-avanta-generic-zte_f460-f660-squashfs-factory.bin /srv/tftp/boot.img
 ```
 * Next, connet to device using UART, boot the device, and repeatedly 
 press enter to gain shell.
@@ -141,7 +141,7 @@ screen /dev/ttyUSB0 115200
 setenv bootcmd 'nand read 2000000 100000 400000;bootm'
 saveenv
 
-tftp factory.bin
+tftp boot.img
 tftpboot
 bootm
 ```
