@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 <head>
     <title>Catzy's Blog</title>
     <meta charset="UTF-8">
@@ -11,8 +11,8 @@
     <link rel="icon" href='./assets/favicon.png' type="image/x-icon"/>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./font/bootstrap-icons.css">
-    <link rel="stylesheet" href="./css/stevia-style.css">
-    <link rel="stylesheet" href="./css/highlight-github.min.css">
+    <link rel="stylesheet" href="./css/stevia-style-dark.css">
+    <link rel="stylesheet" href="./css/highlight/github-dark-dimmed.min.css">
     <script src="./js/website-info.js"></script>
     <script src="./js/main-engine/xhr-fetcher.js"></script>
     <script src="./js/main-engine/index-parser.js"></script>
@@ -31,7 +31,7 @@
     <div class="container stevia-container-header">
         <nav class="navbar navbar-expand-lg stevia-navbar">
             <div class="container-fluid">
-                <a id="siteBranding" class="navbar-brand stevia-navbar-brand" href="./"></a>
+                <a id="siteBranding" class="navbar-brand stevia-color" href="./"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="bi-list stevia-color"></span>
                 </button>
@@ -166,6 +166,8 @@
     </div>
     
     <script type="module">
+        document.documentElement.setAttribute("data-bs-theme","dark");
+
         import { marked } from './js/marked.esm.js';
         import { createDirectives } from './js/marked-directive.esm.js';
         import DOMPurify from './js/purify.esm.js';
