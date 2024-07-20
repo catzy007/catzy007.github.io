@@ -16,22 +16,16 @@ Hacking, Web development (apache, httpd, node, php), C development, Python devel
 I know some people might not feel comfortable rooting their device. But if you have old android device 
 laying around and has decent enough spec then go ahead. To start, follow
 
-<br>
-
 #### 1. [Rooting your android device](https://www.xda-developers.com/root/).
 because  difference in rooting method of each android device, I suggest to google how to root your 
 spesific android device and follow carefully. Or ask someone with higher experties to perform this step.
 > WARNING : this step has some risk of corrupting your device, destroying your data and might cancel 
 your device warranty. Proceed with your own risks and make sure you know what you're doing!
 
-<br>
-
 #### 2. Install Linux Deploy
 You can download the APK file directly from [Github](https://github.com/meefik/linuxdeploy/releases) 
 or go to [Play Store](https://play.google.com/store/apps/details?id=ru.meefik.linuxdeploy&hl=en) and 
 download and install as usual.
-
-<br>
 
 #### 3. First time setup
 Here I'm going to set Up i386 Ubuntu 18.04 Container. Why i386 because i have intel processor. You 
@@ -55,10 +49,10 @@ might need to change that yo arm or arm64 based on your device processor.
     </div>
     <div class="col-sm-3"></div>
 </div>
+
 First, press that control panel icon, then change the config based on your need. Here i set 
 [Disk Image](https://en.wikipedia.org/wiki/Disk_image) in sdcard because i had limited internal storage.
 
-<br>
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
@@ -77,12 +71,12 @@ First, press that control panel icon, then change the config based on your need.
     </div>
     <div class="col-sm-3"></div>
 </div>
+
 The next thing i enabled is init system. Because i would run [Apache](https://httpd.apache.org/) server 
 inside my container. The last thing i enabled is [SSH](https://www.ssh.com/ssh) yeah basically i need to 
 access the container so i need to have ssh access. You can actually enable GUI mode which i had tried but 
 in my case, i only had limited amount of RAM, so yeah i disable that.
 
-<br>
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
@@ -101,15 +95,15 @@ in my case, i only had limited amount of RAM, so yeah i disable that.
     </div>
     <div class="col-sm-3"></div>
 </div>
+
 Then back to the front page, Click that 3 dot on the top right corner and click `Install`, after the 
 installation finished, click start to run the container.
-
-<br>
 
 #### 4. Connecting the container
 For ssh connection, i use [ConnectBot](https://play.google.com/store/apps/details?id=org.connectbot&hl=en) 
 first, click that `+` button then fill this by `username@127.0.0.1`. if you want to connect from other machine, 
 use `ssh username@your_device_ip`
+
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
@@ -133,6 +127,7 @@ For GUI, i use VNC, to do that you need to config it in the step 3 first. Then u
 [VNC Viewer](https://play.google.com/store/apps/details?id=com.realvnc.viewer.android&hl=en) 
 Same process as ssh, press that `+` button, fill `ipaddress:port`. here i'm using `127.0.0.1:5901` same as ssh, 
 you can connect vnc from other machine too.
+
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
@@ -152,8 +147,6 @@ you can connect vnc from other machine too.
     <div class="col-sm-3"></div>
 </div>
 
-<br>
-
 #### 5. Some Fix
 In my case, the user that i use cannot connect to the internet. So i need to do some fix
 ```
@@ -162,11 +155,10 @@ sudo echo "net_raw:x:3004:$(whoami)" >> /etc/group
 ```
 After that, stop and start the container and you good to go.
 
-<br>
-
 #### 6. Finishing
 The idea of running (almost full) linux machine inside your pocket size device is great. In fact, 1/3 of this post 
 is written in nano inside that chroot container.
+
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">

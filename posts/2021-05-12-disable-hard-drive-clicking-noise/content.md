@@ -22,7 +22,10 @@ computer and hard drive to avoid any damage from [Head Crash](https://en.wikiped
 and [Bad Sector](https://en.wikipedia.org/wiki/Bad_sector).
 
 * First, [Download hdparm](./posts/2021-05-12-disable-hard-drive-clicking-noise/hdparm-6.9-20070516.win32-setup.zip). 
-    * [Here is the original source](http://hdparm-win32.dyndns.org/hdparm/) which is dead long time ago.
+
+    [Here is the original source](http://hdparm-win32.dyndns.org/hdparm/) which is dead long time ago.
+    :br
+
 * Then install it as usual. Just next, next, finish.
 * Next, add a startup system to make sure `hdparm` run immediately after Windows boot.
     1. Open `Start` type `Computer Management` enter.

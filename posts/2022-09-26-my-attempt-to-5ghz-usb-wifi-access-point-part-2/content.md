@@ -20,6 +20,7 @@ should work under OpenWRT with [kmod-mt76x0u](https://openwrt.org/packages/pkgda
 module. The reason i was finally able to get this adapter is clearance sale, this adapter 
 is discontinued so i was able to get it pristine in box with driver CD and all the good 
 stuff for 11 USD pretty good deal if you ask me.
+
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
@@ -30,11 +31,13 @@ stuff for 11 USD pretty good deal if you ask me.
 	<div class="col-sm-3"></div>
 </div>
 
-<br>
+::br
+
 Every project start with testing. First i plug the adapter to my laptop via USB 3.0 
 using Ubuntu 22.04 it just works no manual driver installation required. Then using 
 another machine, i set my RTL8812BU as Access Point in channel 36 at 80Mhz 867Mbps 
 PHY and just like that i get 433Mbps PHY out of my new adapter.
+
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
@@ -45,11 +48,14 @@ PHY and just like that i get 433Mbps PHY out of my new adapter.
 	<div class="col-sm-3"></div>
 </div>
 
+::br
+
 Then i set [iperf](https://github.com/esnet/iperf) to see the maximum real-world throughput 
 of the system and i get 248Mbps. Clearly 248 is less than 433 right, well this adapter is only 
 rated for USB 2.0 which should be fine because USB 2.0 is rated at 480Mbps right? No, [the 
 effective throughput of USB is 280Mbps](https://superuser.com/a/899993), so this speed is 
 correct.
+
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
@@ -60,7 +66,8 @@ correct.
 	<div class="col-sm-3"></div>
 </div>
 
-<br>
+::br
+
 Now that we know about the absolute maximum capability of this adapter, let's deploy this. 
 Here i'm going to use my old post about 
 [OpenWrt inisde Proxmox VM](https://catzy007.github.io/loader.html?post=2021-09-04-openwrt-inside-proxmox-vm) 
@@ -86,6 +93,7 @@ preferences. In my case, i set my Channel to 36, 80MHz width, Max TX Power 50 mW
 Code `US`. For some reason if i set the country code to my actual one, it throws error and 
 the adapter won't work until i set the code correctly. Then enable your newly created AP 
 and you should get.
+
 <div class="row">
 	<div class="col-sm-2"></div>
 	<div class="col-sm-4">
@@ -101,10 +109,13 @@ and you should get.
 	<div class="col-sm-2"></div>
 </div>
 
+::br
+
 While most people will call it a day at this point, i decided to test the real world 
-throughput of this system. I set iperf in my server using 1 Gigabit LAN, then i use [iperf 
+throughput of this system. I set iperf in my server using 1 Gigabit LAN, then i use [iperf 	
 android app](https://play.google.com/store/apps/details?id=iperf.project) and this is the 
 result.
+
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
@@ -114,6 +125,8 @@ result.
 	</div>
 	<div class="col-sm-3"></div>
 </div>
+
+::br
 
 Which is weird this time i get 23.4Mbps instead of getting 248Mbps i get before. Okay this 
 doesn't seem right then i turn my attention into USB Controller in my system, to do it 
@@ -133,16 +146,15 @@ catch, It only has 5 OHCI controller and 1 EHCI controller. Which mean that out 
 USB port, it can only handle one USB 2.0 (EHCI) at a time and the rest is USB 1.1 (OHCI). 
 While regular board configured as 2 EHCI and the rest is OHCI/UHCI.
 
-<br>
 Finally, what's next? I need another USB adapter to handle Wi-Fi 4 (2.4GHz) i also need 
 to upgrade "replace" my system to one with USB 3.0 support. In the meantime I will 
 deploy this system to test its long-term stability.
 
-<br>
 **[UPDATE 28/09/22]**
 I finally got it. The main issues about my current system is that it only has one USB 2.0 
 EHCI controller onboard, then what if i plug only one device to take advantage of full EHCI 
 controller? How about my other stuff? That's where USB Hub comes in.
+
 <div class="row">
 	<div class="col-sm-4"></div>
 	<div class="col-sm-4">
@@ -152,10 +164,14 @@ controller? How about my other stuff? That's where USB Hub comes in.
 	</div>
 	<div class="col-sm-4"></div>
 </div>
+
+::br
+
 Using USB Hub, the controller technically only see one device connected so hopefully it 
 will use USB 2.0 ECHI all the time. Only downside is that the bandwidth become shared 
 between connected devices. In my testing i have this 1$ USB Hub laying around, then i 
 plug all of my USB devices to it and this is what i got.
+
 <div class="row">
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
@@ -165,8 +181,11 @@ plug all of my USB devices to it and this is what i got.
 	</div>
 	<div class="col-sm-2"></div>
 </div>
-While 50~60Mbps may not sound that much my last result is around 23Mbps. Which mean that i 
-get 2~3X the performance just using USB Hub. My theory is that the AMD chipset in my system 
+
+::br
+
+While 50 ~ 60Mbps may not sound that much my last result is around 23Mbps. Which mean that i 
+get 2 ~ 3X the performance just using USB Hub. My theory is that the AMD chipset in my system 
 uses early implementation of USB scheduling so it is a little flaky then using simple USB 
 Hub which is well known technology at this point with better packet queueing and scheduling 
 i get a better result. I currently plug 3 devices to my USB Hub, in theory i should be able 
@@ -181,12 +200,12 @@ bandwidth according to how much device plugged (for note the bandwidth is still 
 USB 2.0 speed). Also, i need to get an external powered USB Hub in case i use high power 
 devices in the future.
 
-<br>
 **[UPDATE 08/10/22]**
 I recently acquired another USB Wi-Fi. It is [TP-Link TL-WN727N V3](http://en.techinfodepot.shoutwiki.com/wiki/TP-LINK_TL-WN727N_v3) it uses Ralink RT5370 and 
 should be able to handle 150Mbps PHY definietly not the fastest i can get but at 2$ old stock shipped complete in box, that's pretty good deal. The reason why i specifically 
 looking for V3 revision is that it uses Ralink chipset which should get AP mode 
 support under OpenWrt [kmod-rt2x00-usb](https://openwrt.org/packages/pkgdata/kmod-rt2x00-usb). Since Ralink bought by Mediatek, USB adapter with ralink chipset new in box from established vendor is quite rare. Other option might be RT3070, RT3072, RT5372.
+
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
@@ -196,7 +215,11 @@ support under OpenWrt [kmod-rt2x00-usb](https://openwrt.org/packages/pkgdata/kmo
 	</div>
 	<div class="col-sm-3"></div>
 </div>
+
+::br
+
 As usual first is test the absolute limit of what this adapter can do. I plug it into my laptop USB 3.0 port, set it as AP then use iperf to test it's throughput and this is what i got.
+
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
@@ -206,7 +229,11 @@ As usual first is test the absolute limit of what this adapter can do. I plug it
 	</div>
 	<div class="col-sm-3"></div>
 </div>
+
+::br
+
 Next, i plug it into my OpenWrt system, install `kmod-rt2800-usb kmod-rt2x00-usb`, set it as AP mode and see what happens.
+
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
@@ -216,7 +243,11 @@ Next, i plug it into my OpenWrt system, install `kmod-rt2800-usb kmod-rt2x00-usb
 	</div>
 	<div class="col-sm-3"></div>
 </div>
+
+::br
+
 Then i do another iperf testing unfortunately this time i got very dissapointing result.
+
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
@@ -226,10 +257,12 @@ Then i do another iperf testing unfortunately this time i got very dissapointing
 	</div>
 	<div class="col-sm-3"></div>
 </div>
+
+::br
+
 I only get around 20Mbps which mean that this is the absolute limit of what my current system can do. I also encounter issues about USB plug of the adapter is 
 getting warm which can indicate that the adapter tries to pull more amperage from the USB plug which also indicate that the adapter may not get enough power?
 
-<br>
 If you want to replicate this project, please take a look.
 
 [USB WiFi chipset information for Linux](https://github.com/morrownr/USB-WiFi/blob/main/home/USB_WiFi_Chipsets.md)

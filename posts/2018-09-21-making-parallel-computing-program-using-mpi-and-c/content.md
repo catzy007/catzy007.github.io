@@ -10,7 +10,7 @@ frequency scaling. As power consumption (and consequently heat generation) by co
 concern in recent years, parallel computing has become the dominant paradigm in computer architecture, 
 mainly in the form of multi-core processors.
 
-Message Passing Interface (MPI) is a standardized and portable message-passing standard designed by a group of researchers from academia and industry to function on a wide variety of parallel computing architectures. The standard defines the syntax and semantics of a core of library routines useful to a wide range of users writing portable message-passing programs in C, C++, and Fortran. There are several well-tested and efficient implementations of MPI, many of which are open-source or in the public domain. These fostered the development of a parallel software industry, and encouraged development of portable and scalable large-scale parallel applications.  
+Message Passing Interface (MPI) is a standardized and portable message-passing standard designed by a group of researchers from academia and industry to function on a wide variety of parallel computing architectures. The standard defines the syntax and semantics of a core of library routines useful to a wide range of users writing portable message-passing programs in C, C++, and FORTRAN. There are several well-tested and efficient implementations of MPI, many of which are open-source or in the public domain. These fostered the development of a parallel software industry, and encouraged development of portable and scalable large-scale parallel applications.  
 
 C (/siː/, as in the letter c) is a general-purpose, imperative computer programming language, supporting structured programming, lexical variable scope and recursion, while a static type system prevents many unintended operations. By design, C provides constructs that map efficiently to typical machine instructions, and therefore it has found lasting use in applications that had formerly been coded in assembly language, including operating systems, as well as various application software for computers ranging from supercomputers to embedded systems. 
 
@@ -25,6 +25,8 @@ Okay now we're going to make Parallel Computing program using MPI and C
     </div>
     <div class="col-sm-3"></div>
 </div>
+
+::br
 
 > You would need at least basic knowledge about writing program in C before proceed!
 
@@ -77,7 +79,7 @@ MPI_LONG_DOUBLE
 ```
 
 line below is mpi hello world. thanks to mpitutorial
-```c
+```
 // Author: Wes Kendall
 // Copyright 2011 www.mpitutorial.com
 // This code is provided freely with the tutorials on mpitutorial.com. Feel

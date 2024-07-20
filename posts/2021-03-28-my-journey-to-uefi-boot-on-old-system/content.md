@@ -61,9 +61,9 @@ with Enable Fixed Disks mode. Then just save the image and that's it.
 Next i will do another testing with some picture and hopefully in the end, i can boot NVMe SSD in x58 based 
 system.
 
-<br>
 #### [UPDATE - Mar 29 2021]
 Suddenly i have some free time and just happen to found my HDMI USB Capture so here's some pictures
+
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">

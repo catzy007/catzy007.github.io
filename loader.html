@@ -165,7 +165,14 @@
         </div>
     </div>
     
-    <script>
+    <script type="module">
+        // import * as marked from https://cdn.jsdelivr.net/npm/marked@13.0.2/+esm;
+        // import * as markedDirective from 'https://cdn.jsdelivr.net/npm/marked-directive@1.0.5/+esm';
+        import * as marked from './js/marked.esm.js';
+        import * as markedDirective from './js/marked-directive.esm.js';
+        window.marked = marked;
+        window.markedDirective = markedDirective;
+
         window.scrollTo(0, 0); 
         loadSiteMainTitle();
         executeXhr("./posts/index.md", loadContentIndex, "POST-INDEX", "latest-post");
