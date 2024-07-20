@@ -91,7 +91,6 @@ NAND:  1bit HM ECC, Size: 128 MiB
 *** Warning - bad CRC or NAND, using default environment
 ```
 
-<br>
 Congratulations, the easy part is over. Now for the hard part (to be continued).
 * First, clone [msdos03/openwrt-avanta](https://github.com/msdos03/openwrt-avanta).
 * Next, install the required library and packages [requirements](https://openwrt.org/docs/guide-developer/toolchain/install-buildsystem#debianubuntu).

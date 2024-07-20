@@ -18,7 +18,6 @@ In this post, we're going to set up local Certificate Authority (CA) generate de
 credentials and install the certificate in Android User Trust Store. Android 7 onward is 
 required to access android trust store.
 
-<br>
 Here I'm using mkcert inside Ubuntu docker container, you can modify and adapt this to your 
 specific needs. Change `IPADDR` and `HOSTNAME` to match yours.
 
@@ -53,7 +52,6 @@ Save it as `docker-compose.yml` and run it. If nothing goes wrong, you should se
 `rootCA.pem` and `rootCA-key.pem` inside `mkcert-root` directory. You should also see 
 `certs.pem` and `key.pem` inside `mkcert-cert` directory.
 
-<br>
 Next, we need to install `rootCA.pem` in android trust store. 
 * To do this, first copy `rootCA.pem` to your android device. 
 * Then go to `Settings > Security > Encryption & credentials > Install from SD card`. 
@@ -61,7 +59,6 @@ Next, we need to install `rootCA.pem` in android trust store.
 * If nothing goes wrong, go to `Trusted credentials > User` you will 
 see `mkcert development CA`.
 
-<br>
 As for `certs.pem` and `key.pem`, you need to include both file in your API/Frontend config. 
 For example [HTTPS | Node.js v19.0.1 Documentation](https://nodejs.org/api/https.html#https_https_createserver_options_requestlistener) 
 

@@ -22,8 +22,9 @@ Here i'm using docker and docker-compose to deploy and build Grafana stack.
 I'm also using the latest version of Grafana and specifically version 1.8 for 
 InfluxDB wrapped in caddy reverse-proxy with internal TLS. You need to change 
 `www.example.com` and `config.env` to match yours.
-<details>
-<summary>&#9432; Click to reveal `docker-compose.yml`</summary>
+
+:::details
+::summary[&#9432; Click to reveal `docker-compose.yml`]
 ```
 version: '3.6'
 services:
@@ -87,10 +88,10 @@ networks:
         config:
           - subnet: 172.101.72.0/24
 ```
-</details>
+:::
 
-<details>
-<summary>&#9432; Click to reveal `config.env`</summary>
+:::details
+::summary[&#9432; Click to reveal `config.env`]
 ```
 # Grafana options
 GF_SECURITY_ADMIN_USER=admin
@@ -103,7 +104,8 @@ INFLUXDB_DB=influx-tank
 INFLUXDB_ADMIN_USER=influxdb-admin
 INFLUXDB_ADMIN_PASSWORD=influxdb-passwd
 ```
-</details>
+:::
+::br
 
 <div class="row">
 	<div class="col-sm-4"></div>
