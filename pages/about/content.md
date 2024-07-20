@@ -9,7 +9,7 @@
 <p align="center"><a href="https://ko-fi.com/catzy007">https://ko-fi.com/catzy007</a></p>
 
 <br>
-This blog is made possible using [ShowdownJS](https://github.com/showdownjs/showdown) and 
+This blog is made possible using [MarkedJS](https://github.com/markedjs/marked) and 
 [Bootstrap 3](https://getbootstrap.com/) Thank you. This blog designed to utilize minimum amount of 
 server side processing as possible. I hope you're understand if page slowdown or any other problem happen.
 
