@@ -13,7 +13,6 @@ There are existed tools to remove or partially disable Intel ME. But the process
 
 The way i'm performing this is instead of using Hot-air soldering gun to pull out the BIOS chip, i'm using Single-Board Computer and programmer clip as media to flash BIOS chip (SPI Flash Chip). The tools i use is Raspberry Pi 3, SOP-8 BIOS clipper, some jumper wire and that's it.
 
-<br>
 #### Finding BIOS ROM Chip and wire everything
 
 First disassemble your laptop/pc unplug power, ram, BIOS battery, basically unplug everything... then find the BIOS chip by inspecting your motherboard. Mine is cFeon Q64-104HIP
@@ -28,7 +27,10 @@ First disassemble your laptop/pc unplug power, ram, BIOS battery, basically unpl
     <div class="col-sm-3"></div>
 </div>
 
+::br
+
 Next you need to find datasheet for it (just google the chip name + datasheet) ex. "Q64-104HIP datasheet" then look at the pinout. This will be wiring guide for next step! You can read more info too. Different manufacture may have different configurations.
+
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
@@ -40,14 +42,15 @@ Next you need to find datasheet for it (just google the chip name + datasheet) e
 </div>
 
 Then wire everything according to the schematics provided by datasheet, followed by clipping SOP-8 clipper to bios chip.
+
 <div class="row">
-    <div class="col-sm-3"></div>
-    <div class="col-sm-6">
+    <div class="col-sm-4"></div>
+    <div class="col-sm-4">
         <div class="img-thumbnail">
             <img class="img-fluid" loading="lazy" src="./posts/2018-11-04-disabling-intel-me/3.jpg" alt="img">
         </div>
     </div>
-    <div class="col-sm-3"></div>
+    <div class="col-sm-4"></div>
 </div>
 <div class="row">
     <div class="col-sm-3"></div>
@@ -59,9 +62,10 @@ Then wire everything according to the schematics provided by datasheet, followed
     <div class="col-sm-3"></div>
 </div>
  
+::br
+
 My setup. All pin connected to RPI GPIO, WP NC VCC connected to breadboard into 3.3V RPI GPIO
 
-<br>
 #### Enable SPI pin and download some tools
 next enable SPI pin on [Raspberry Pi](https://learn.sparkfun.com/tutorials/raspberry-pi-spi-and-i2c-tutorial/all)
 
@@ -81,7 +85,6 @@ wget https://github.com/corna/me_cleaner/archive/v1.2.zip
 unzip *.zip
 ```
 
-<br>
 #### Copy image to RPI
 then copy the image files to RPI using `flashrom`
 ```
@@ -103,7 +106,6 @@ Reading flash... done.
 
 *EN25Q64 found in datasheet of my bios chip
 
-<br>
 #### Check integrity of all image
 Next check all images if they're match
 
@@ -117,7 +119,6 @@ the output should same across all readings
 ```
 *if md5sum didn't match, check your wiring and repeat all steps!*
 
-<br>
 #### Check if image is valid
 Next check if image is valid using `ifdtool`
 ```
@@ -128,6 +129,8 @@ make
 ```
 
 The output should look similar to this
+:::details
+::summary[Click to expand]
 ```
 File ../../../bios1.bin is 8388608 bytes
 ICH Revision: 6 series Cougar Point
@@ -317,8 +320,9 @@ Found Processor Strap Section
 ????:      0xffffffff
 ????:      0xffffffff
 ```
+:::
+::br
 
-<br>
 #### Check if image file can be analyzed by me_cleaner
 ```
 cd ../../../
@@ -338,7 +342,6 @@ The AltMeDisable bit is NOT SET
 Checking the FTPR RSA signature... VALID
 ```
 
-<br>
 #### Apply Me Cleaner
 ```
 ./me_cleaner.py -S -O ../cleanbios.bin ../bios1.bin
@@ -392,7 +395,6 @@ Checking the FTPR RSA signature... VALID
 Done! Good luck!
 ```
 
-<br>
 #### Put modified bios image back
 ```
 cd ../ 
@@ -467,7 +469,6 @@ Error 9458: Communication error between application and Intel(R) ME module (FW U
 Error 9459: Internal error (Could not determine FW features information)
 ```
 
-<br>
 #### Conclusion.
 Cleaning intel me is relatively hard trivial but fun. I learn a lot from this experiment. Based on this project, even after cleaning intel me, i still can't remove 30 min barrier on replacing Pentium B960 with I5-2520M in HM70 motherboard. But i'm looking forward to other options and new finding in the future.
 
@@ -477,7 +478,6 @@ Cleaning intel me is relatively hard trivial but fun. I learn a lot from this ex
 
 > [UPDATE 11/11/18] THIS PROJECT IS COMPLETED!
 
-<br>
 #### More reading
 
 [EN Wiki Intel AMT](https://en.wikipedia.org/wiki/Intel_Active_Management_Technology)

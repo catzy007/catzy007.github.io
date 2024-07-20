@@ -22,8 +22,8 @@ performance at a relatively low cost.
 Cluster Computer i'm gonna build here has 4 nodes, each has 4 Core 
 Cortex-A7@1.2Ghz, 512MB RAM, 8GB Memory, and running armbian with MPICH.
 
-<br>
 ##### **2. Part List And Price**
+
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
@@ -33,6 +33,9 @@ Cortex-A7@1.2Ghz, 512MB RAM, 8GB Memory, and running armbian with MPICH.
 	</div>
 	<div class="col-sm-3"></div>
 </div>
+
+::br
+
 That's almost all part i used to make this cluster computer around 
 114.96USD at December 17. The reason i choose Orangepi zero is very 
 cheap price and has powerful enough for the price. i can go with 
@@ -45,8 +48,8 @@ so yeah. next power supply, i'm using 4 port USB Charger that can
 deliver around 2A for each port. Next i forget to put in the list is 
 cooling. any fan and heatsink will work so yeah.
 
-<br>
 ##### **3. Network Map**
+
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
@@ -56,12 +59,15 @@ cooling. any fan and heatsink will work so yeah.
 	</div>
 	<div class="col-sm-3"></div>
 </div>
+
+::br
+
 Here i have two connected via WDS. router0 connected to world wide web 
 and control PC and. router1 connected to switch which is connected to 
 all four nodes
 
-<br>
 ##### **4. First Testing Phase**
+
 `You can skip this part if you sure your board works` First thing i do is 
 download armbian at <https://www.armbian.com/download/> then download etcher. 
 next plug sdcard, and etch it. "If you're planning to use normal x86 intel amd 
@@ -69,7 +75,6 @@ computer then just download debian based OS'es and install it up". plug the
 sdcard to your board, plug a networking cable power it up and ssh to your board. 
 test as many function as possible then do it to other untouched board.
 
-<br>
 ##### **5. Creating Master Image**
 If you haven't download armbian go download it at <https://www.armbian.com/download/>. 
 next download etcher, etch it into your sdcard plug in into your board, 
@@ -137,7 +142,6 @@ to install mpi4py too but my test show that i'm getting hardware level
 error yo yeah i think next time will be better. You can also install 
 MPICH using apt `sudo apt install mpich` instead of manually compile one.
 
-<br>
 ##### **Next step is Installing [ATLAS](http://www.vesperix.com/arm/atlas-arm/)**
 `Installing ATLAS is highly optional, i'm using it solely to benchmark my system.`
 
@@ -151,6 +155,8 @@ MPICH using apt `sudo apt install mpich` instead of manually compile one.
 	</div>
 	<div class="col-sm-2"></div>
 </div>
+
+::br
 
 first we need to disable CPU throttling. if you don't know what i'm 
 talking about, check <https://en.wikipedia.org/wiki/Dynamic_frequency_scaling>. 
@@ -199,7 +205,6 @@ $ make check
 `if you get "unable to resolve host address" try sudo dhclient eth0 
 change eth0 with interface you're using.`
 
-<br>
 ##### **6. Copying master image and flash it into another card**
 In this part, We're going to copy disk you created in `part 5` so you 
 don't have to repeat all step and wasting your resources. ok first we 
@@ -210,6 +215,7 @@ your system has no disk manager, use `sudo apt-get install gnome-disk-utility`
 
 First plug your sdcard into sdcard reader and plug it into your computer. 
 next open `Disks`
+
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
@@ -220,7 +226,10 @@ next open `Disks`
 	<div class="col-sm-3"></div>
 </div>
 
+::br
+
 Then click on dropdown menu and clik `"Create Disk Image"`
+
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
@@ -231,8 +240,11 @@ Then click on dropdown menu and clik `"Create Disk Image"`
 	<div class="col-sm-3"></div>
 </div>
 
+::br
+
 Next change file name and directory "if you want", and start creating. 
 type your password if system ask it. and take a coffee or 10.
+
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
@@ -243,11 +255,12 @@ type your password if system ask it. and take a coffee or 10.
 	<div class="col-sm-3"></div>
 </div>
 
+::br
+
 And it's done simple right. next flashing image to your another card. 
 just use `etcher` or `win32diskimager` and your'e done. oh yeah don't 
 forget to put label on your disk so you won't forget which goes where.
 
-<br>
 ##### **7. Setting up each node**
 First, Change your node hostname by following the command below.
 
@@ -267,6 +280,7 @@ $ sudo nano /etc/network/interfaces
 change `iface eth0 inet dynamic` to `iface eth0 inet static` next 
 change or add address according to your network configuration. 
 for example mine 
+
 <div class="row">
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
@@ -277,6 +291,8 @@ for example mine
 	<div class="col-sm-2"></div>
 </div>
 
+::br
+
 change address according to count of your node 
 
 example. 192.168.1.250 then 192.168.1.251 192.168.1.252 192.168.1.253 and so on. 
@@ -285,7 +301,6 @@ by McGraw-Hill. oh yeah one more thing. if you don't want to use google
 dns "8.8.8.8 - 8.8.4.4" then use your router gateway address. usually 
 admin ip address.
 
-<br>
 ##### **8. Setting up master node**
 here i choose my node0 as my master node. next we need to set ssh so 
 master node can communicate with another node without problem.
@@ -330,7 +345,6 @@ for example i have 4 node and 4 core `IPADDR:CORE`
 
 and master node is ready to rock
 
-<br>
 ##### **9. Setting-UP NFS Server**
 `ON MASTER NODE` 
 
@@ -357,7 +371,6 @@ $ sudo exportfs -a
 $ sudo service nfs-kernel-server restart
 ```
 
-<br>
 `ON WORKER NODE`
 
 first, install nfs client
@@ -379,7 +392,6 @@ fill with
 
 do it to all remaining node
 
-<br>
 ##### **10. More Testing Phase**
 
 first, make sure you're home 
@@ -407,6 +419,7 @@ next run it, and it's done
 ```
 $ mpiexec -f hosfile -n 16 ~/mpitutorial/tutorials/mpi-hello-world/code/mpi_hello_world
 ```
+
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
@@ -416,9 +429,11 @@ $ mpiexec -f hosfile -n 16 ~/mpitutorial/tutorials/mpi-hello-world/code/mpi_hell
 	</div>
 	<div class="col-sm-3"></div>
 </div>
+
+::br
+
 `it should look something like that`
 
-<br>
 ##### **11. Some Sauce**
 Lin, Y., Hwang, R., & Baker, F. (2012). Computer networks: an open source approach. New York: McGraw-Hill.
 
@@ -444,8 +459,8 @@ Lin, Y., Hwang, R., & Baker, F. (2012). Computer networks: an open source approa
 
 <http://mpitutorial.com/tutorials/running-an-mpi-cluster-within-a-lan/>
 
-<br>
 ##### **12. Other Stuff**
+
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
@@ -455,10 +470,13 @@ Lin, Y., Hwang, R., & Baker, F. (2012). Computer networks: an open source approa
 	</div>
 	<div class="col-sm-3"></div>
 </div>
+
+::br
+
 `It's my cluster, as you can see it's cooled by huge 220VAC fan`
 
-<br>
 ##### **13. UPDATE 30.03.18**
+
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
@@ -468,6 +486,9 @@ Lin, Y., Hwang, R., & Baker, F. (2012). Computer networks: an open source approa
 	</div>
 	<div class="col-sm-3"></div>
 </div>
+
+::br
+
 Today after months not touching this project, finally i'm getting 
 around 3.7GigaFLOPS of computational power that's good enough. but 
 yeah current rank 1 on TOP500 "sunway" has 120+PetaFLOPS... 
@@ -477,6 +498,5 @@ tune `HPL.dat` file
 
 <http://www.advancedclustering.com/act_kb/tune-hpl-dat-file/>
 
-<br>
 #### **Some other sauce**
 <https://www.howtoforge.com/tutorial/hpl-high-performance-linpack-benchmark-raspberry-pi/>

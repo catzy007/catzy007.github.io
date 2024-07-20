@@ -15,7 +15,6 @@ or items. The effect is commonly created by VR headsets consisting of head-mount
 goggles with a screen in front of the eyes, but can also be created through specially 
 designed spaces with multiple large screens.
 
-<br>
 ##### **Ok First we need to get all parts.**
 *  Screen 5" to 7" with highest possible PPI
    <https://www.aliexpress.com/store/product/60HZ-5-5-inch-1440p-display-1440-2560-with-hdmi-to-mipi-board-for-oculus-rift/1764418_32366781090.html> 
@@ -39,7 +38,6 @@ designed spaces with multiple large screens.
 
 * Some usb cable, power supply or just use power from your laptop/pc.
 
-<br>
 ##### **Tools**
 * Soldering iron + solder tin
 * Some wire
@@ -47,7 +45,6 @@ designed spaces with multiple large screens.
 * Dremel or very hot nails and hacksaw
 * Basically any tools you think you'll need lol
 
-<br>
 ##### **Next, software**
 1. Arduino IDE <https://www.arduino.cc/en/Main/Software>
 2. Some arduino code to read data from sensor i'm using code from thanks to mirkoBastianini <https://github.com/catzy007/HeadTracking-Arduino-FreePie/>
@@ -55,9 +52,9 @@ designed spaces with multiple large screens.
 4. Vireiro Perception to play normal game in VR.. here i'm using version 3.0.1 at this time 4.0 still alpha <https://www.mtbs3d.com/download>
 5. VR Player to play your video or anything to VR <https://archive.codeplex.com/?p=vrplayer>
 
-<br>
 ##### **Then we come to building parts yaay.**
 1. First we need to measure length and width of our screen.
+
 <div class="row">
     <div class="col-sm-2"></div>
     <div class="col-sm-8">
@@ -68,10 +65,13 @@ designed spaces with multiple large screens.
     </div>
     <div class="col-sm-2"></div>
 </div>
-<p align="center"></p>
+
+::br
+
 Make sure screen is working before proceeding.
 
 2. Make some hole to mount your screen to vr case based on your measurements.
+
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
@@ -82,11 +82,14 @@ Make sure screen is working before proceeding.
     <div class="col-sm-3"></div>
 </div>
 
+::br
+
 `pro tips1 : use dremel to make initial holes then use saw or anything you have to cut the rest. if cut was ruff then just sand it using sand paper`
 
 `pro tips2 : tear everything apart before proceeding this step!`
 
 3. Mount screen to case and add some glue. i'm using hot-glue but you can use silicon glue or anything that doesn't destroy PCB.
+
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
@@ -98,7 +101,10 @@ Make sure screen is working before proceeding.
     <div class="col-sm-3"></div>
 </div>
 
+::br
+
 4. Solder your MPU6050 or any Gyro+Acceleration sensors you use to arduino nano or pro micro.
+
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
@@ -110,6 +116,8 @@ Make sure screen is working before proceeding.
     <div class="col-sm-3"></div>
 </div>
 
+::br
+
 `pro tips3 : if you have conductive hand, use gloves when handling electronic parts`
 
 `pro tips4 : follow step by step instruction to avoid breaking stuff`
@@ -117,6 +125,7 @@ Make sure screen is working before proceeding.
 `pro tips5 : NEVER touch your sensors directly when it's powered on! ESD could kill your device`
 
 5. Mount sensors to your case. I'm using foam double sided tape, if you have sugru or something similar then use it.
+
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
@@ -127,12 +136,15 @@ Make sure screen is working before proceeding.
     </div>
     <div class="col-sm-3"></div>
 </div>
+
+::br
+
 `pro tips6 : make sure your tape is not conductive! use multimeter to check that`
 
-<br>
 ##### **Next comes to software part**
 1. Install and open arduino IDE followed by load `Arduino script\YawPtichRoll.ino` you download 
 from [github](https://github.com/catzy007/HeadTracking-Arduino-FreePie/)
+
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
@@ -143,10 +155,13 @@ from [github](https://github.com/catzy007/HeadTracking-Arduino-FreePie/)
     <div class="col-sm-3"></div>
 </div>
 
+::br
+
 2. Next plug arduino to your pc and upload that code to your arduino.. don't forget to change 
 board, processor, and com port!
 
 3. Then change open serial monitor, change baud rate to 115200 and you'll see something like this
+
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
@@ -157,8 +172,11 @@ board, processor, and com port!
     <div class="col-sm-3"></div>
 </div>
 
+::br
+
 4. Plug everything from HDMI, screen power, arduino then install followed by opening FreePIE. 
 then open `FreePIE Script\FreeIMU-MouseEMU.py`
+
 <div class="row">
     <div class="col-sm-2"></div>
     <div class="col-sm-8">
@@ -169,7 +187,10 @@ then open `FreePIE Script\FreeIMU-MouseEMU.py`
     <div class="col-sm-2"></div>
 </div>
 
+::br
+
 5. Then Click `Settings>Plugins>FreeIMU`... change com port to arduino port and baud rate to `115200`
+
 <div class="row">
     <div class="col-sm-4"></div>
     <div class="col-sm-4">
@@ -179,10 +200,16 @@ then open `FreePIE Script\FreeIMU-MouseEMU.py`
     </div>
     <div class="col-sm-4"></div>
 </div>
+
+::br
+
 `pro tips7 : your com port might be different from picture above!`
 
 6. Next run script and press `left shift + Z`. If you're moving headset around, it'll move your cursor 
 too. Now your VR headset is ready to do it's job ~('-'~)
+
+::br
+
 <div class="row">
     <div class="col-sm-2"></div>
     <div class="col-sm-8">
@@ -192,18 +219,19 @@ too. Now your VR headset is ready to do it's job ~('-'~)
     </div>
     <div class="col-sm-2"></div>
 </div>
+
+::br
+
 `pro tips8 : if emulation status show 0 then mouse emulation disabled, else if emulation status 
 show 1 then emulation enabled`
 
 7. To reset position, press `left shift + X`. To make cursor absolute center, press `left shift + C`
 
-<br>
 ##### **Almost final. Next we'll try to play game and movie with our crude VR headset**
 
 `pro tips9 : **NEVER** open VIREIRO and VRPLAYER at same time!... just never or if you do, and 
 get some error, restart your computer`
 
-<br>
 * **Here I'm going to play Portal2 with VR**
 
 	1. Open Open and log into Steam
@@ -211,6 +239,7 @@ get some error, restart your computer`
 	2. Open `FreePIE > load the script > run > press left shift + Z`
 
 	3. Next open `Perception.exe` change config to `DIY rift, No Tracking, Primary Monitor`
+
 	<div class="row">
 		<div class="col-sm-3"></div>
 		<div class="col-sm-6">
@@ -221,9 +250,12 @@ get some error, restart your computer`
 		<div class="col-sm-3"></div>
 	</div>
 
+	::br
+
 	4. Then Launch Portal2. That's it
 
 	5. If you're done playing, close vireiro, and stop script manually and wait around 10 sec then unplug all cable
+
 	<div class="row">
 		<div class="col-sm-2"></div>
 		<div class="col-sm-8">
@@ -234,7 +266,8 @@ get some error, restart your computer`
 		<div class="col-sm-2"></div>
 	</div>
 
-<br>
+	::br
+
 * **Next let's play video with our crude VR**
 
 	1. First, plug everything, run freepie+script, and make sure everything working as it should.
@@ -242,6 +275,7 @@ get some error, restart your computer`
 	2. Next, install and open VR Player.
 
 	3. Goto `tools > Load Preset > From File...` then open `vrplayer\vrplayer.json`
+
 	<div class="row">
 		<div class="col-sm-2"></div>
 		<div class="col-sm-8">
@@ -252,7 +286,10 @@ get some error, restart your computer`
 		<div class="col-sm-2"></div>
 	</div>
 
+	::br
+
 	4. Goto `Device > tracker > mouse`
+
 	<div class="row">
 		<div class="col-sm-2"></div>
 		<div class="col-sm-8">
@@ -263,8 +300,11 @@ get some error, restart your computer`
 		<div class="col-sm-2"></div>
 	</div>
 
+	::br
+
 	5. Next, open your favorite video player and play some video and play it in full screen if possible.
 	here i'm using MPC-HC
+
 	<div class="row">
 		<div class="col-sm-3"></div>
 		<div class="col-sm-6">
@@ -275,7 +315,10 @@ get some error, restart your computer`
 		<div class="col-sm-3"></div>
 	</div>
 
+	::br
+
 	6. just `alt+tab` and go to `VR Player` again, then `file > open process > with GDI > click process dropdown > select your video player`.
+
 	<div class="row">
 		<div class="col-sm-2"></div>
 		<div class="col-sm-8">
@@ -286,6 +329,8 @@ get some error, restart your computer`
 		<div class="col-sm-2"></div>
 	</div>
 
+	::br
+
 	7. aaand it's done. double click to fullscreen, click to make movement. to pause video just alt+tab 
 	to original player then pause and enjoy your video.
 
@@ -294,12 +339,10 @@ get some error, restart your computer`
 
 	`pro tips10 : Playing video using this method "GDI" is going to make video a little bit laggy`
 
-<br>
 ##### **The reason why this delayed for a while**
 Sensor i used "GY-85" got toasted 3 times i think it is from ESD, I use "Pro Micro" board and the USB 
 port snapped 2 times. Wow i'm gonna explain why and how to avoid that.
 
-<br>
 **First, GY-85**
 
 It's a very great sensors because it very similar to 
@@ -327,7 +370,10 @@ MPU-6000 <http://developers-club.com/posts/181159/>
 	<div class="col-sm-3"></div>
 </div>
 
+::br
+
 and based on this datasheet from [ivensense](https://store.invensense.com/datasheets/invensense/MPU-6050_DataSheet_V3%204.pdf)
+
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
@@ -337,9 +383,11 @@ and based on this datasheet from [ivensense](https://store.invensense.com/datash
 	</div>
 	<div class="col-sm-3"></div>
 </div>
+
+::br
+
 maybe MPU-6050 is same as MPU-6000 or at least almost.
 
-<br>
 **Next, Pro micro**
 
 My first plan is to use mouse emulation from pro micro ATmega32u4 so i 
@@ -348,7 +396,6 @@ into mouse XY motion. But you need to make sure that micro usb connector
 is strong enough or it'll break. To avoid this, choose your board wisely! 
 for comparison
 
-<br>
 <div class="row">
 	<div class="col-sm-4"></div>
 	<div class="col-sm-4">
@@ -358,10 +405,12 @@ for comparison
 	</div>
 	<div class="col-sm-4"></div>
 </div>
+
+::br
+
 This is ProMicro as you can see it has no additional structural for that usb port. but it has some black circle thing. i dont know. 
 i hope it is made for some structural support.
 
-<br>
 <div class="row">
 	<div class="col-sm-4"></div>
 	<div class="col-sm-4">
@@ -371,10 +420,12 @@ i hope it is made for some structural support.
 	</div>
 	<div class="col-sm-4"></div>
 </div>
+
+::br
+
 the board i broke is same as this. has no support at all. the port basically solder directly to trace of PCB. If your port broke, 
 it's basically done!
 
-<br>
 <div class="row">
 	<div class="col-sm-4"></div>
 	<div class="col-sm-4">
@@ -384,9 +435,11 @@ it's basically done!
 	</div>
 	<div class="col-sm-4"></div>
 </div>
+
+::br
+
 This is pro micro from RobotDyn that red circle is structural support for usb port.
 
-<br>
 <div class="row">
 	<div class="col-sm-4"></div>
 	<div class="col-sm-4">
@@ -396,9 +449,11 @@ This is pro micro from RobotDyn that red circle is structural support for usb po
 	</div>
 	<div class="col-sm-4"></div>
 </div>
+
+::br
+
 Same here Arduino Micro. it has structural support.
 
-<br>
 <div class="row">
 	<div class="col-sm-4"></div>
 	<div class="col-sm-4">
@@ -408,6 +463,9 @@ Same here Arduino Micro. it has structural support.
 	</div>
 	<div class="col-sm-4"></div>
 </div>
+
+::br
+
 Same here with my nano 328p. i'm using this for my headset because robotdyn pro micro is too expensive for my taste.
 
 Anyway i don't blame company to make board like that. It just for our purpose that you're 
@@ -419,7 +477,6 @@ If you're finally decide that to use 32u4 board to your VR headset, you can foll
 <http://www.instructables.com/id/Head-Mouse-With-MPU6050-and-Arduino-Micro> 
 and <https://github.com/pocketmoon/MPU-6050-Arduino-Micro-Head-Tracker>
 
-<br>
 ##### **UPDATE 4/22/18 Playing VRChat on our crude VR Heasdet**
 `TESTED WORKING ON WINDOWS 10 CREATOR UPDATE OR LATER. VERSION 1703+`
 
@@ -428,6 +485,7 @@ and <https://github.com/pocketmoon/MPU-6050-Arduino-Micro-Head-Tracker>
 3. Install DesktopSBS but don't open it yet.
 4. Open FreePIE, load that mouse emulation script, run, press `Lshift+Z`
 5. Launch VRChat using `non steamvr mode`
+
 <div class="row">
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
@@ -438,7 +496,10 @@ and <https://github.com/pocketmoon/MPU-6050-Arduino-Micro-Head-Tracker>
 	<div class="col-sm-2"></div>
 </div>
 
+::br
+
 6. Open `DesktopSBS`
+
 <div class="row">
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
@@ -449,7 +510,10 @@ and <https://github.com/pocketmoon/MPU-6050-Arduino-Micro-Head-Tracker>
 	<div class="col-sm-2"></div>
 </div>
 
-7. aaaand enjoy SteamVR games using our crude VR Headset (~'-')~
+::br
+
+7. aaaand enjoy SteamVR games using our crude VR Headset
+
 <div class="row">
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
@@ -460,7 +524,10 @@ and <https://github.com/pocketmoon/MPU-6050-Arduino-Micro-Head-Tracker>
 	<div class="col-sm-2"></div>
 </div>
 
+::br
+
 `pro tips11 : to check windows 10 version in your machine, go to "windows settings > system > about" and scroll a little bit.`
+
 <div class="row">
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
@@ -471,7 +538,8 @@ and <https://github.com/pocketmoon/MPU-6050-Arduino-Micro-Head-Tracker>
 	<div class="col-sm-2"></div>
 </div>
 
-<br>
+::br
+
 ##### **Some Sauce**
 <https://github.com/ayildirim/OpenVR>
 

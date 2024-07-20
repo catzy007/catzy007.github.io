@@ -42,6 +42,7 @@ try it out and it's works. okay enough talks let's get into it.
 * Then unplug and plug your pen tab
 * If your pen tab still won't work, try rebooting
 * Aand that's it!
+
 <div class="row">
     <div class="col-sm-2"></div>
     <div class="col-sm-8">
@@ -55,11 +56,9 @@ try it out and it's works. okay enough talks let's get into it.
 even the pressure works just fine.
 
 > for other brand like huion, just skip the optional step!
-<br>
 
 > actually i have XP-Pen star 03 too but it just plug and play without additional driver install.
 
-<br>
 #### Some external links
 <https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Delectronics&field-keywords=xp-pen+star+G430S>
 

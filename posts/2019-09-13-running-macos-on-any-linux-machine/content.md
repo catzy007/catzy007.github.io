@@ -40,7 +40,6 @@ Info:      Processes: 241 Uptime: 1:00 Memory: 1903.3/7857.7MB Client: Shell (su
 ```
 My recommendation is to use at minimum Intel Core i5 and 8GB of system memory.
 
-<br>
 First clone [macOS-Simple-KVM](https://github.com/foxlet/macOS-Simple-KVM) repository
 ```
 git clone https://github.com/foxlet/macOS-Simple-KVM
@@ -64,6 +63,7 @@ sudo ./make.sh --add
 ```
 
 Then open VMM and you'll see macOS-Simple-KVM on the list.
+
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
@@ -73,7 +73,11 @@ Then open VMM and you'll see macOS-Simple-KVM on the list.
     </div>
     <div class="col-sm-3"></div>
 </div>
+
+::br
+
 Next click `macOS-Simple-KVM` and click `Open`. Then click `Add Hardware` on bottom left
+
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
@@ -83,7 +87,11 @@ Next click `macOS-Simple-KVM` and click `Open`. Then click `Add Hardware` on bot
     </div>
     <div class="col-sm-3"></div>
 </div>
+
+::br
+
 Select `Storage` and add the amount of disk you want to have
+
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
@@ -93,7 +101,11 @@ Select `Storage` and add the amount of disk you want to have
     </div>
     <div class="col-sm-3"></div>
 </div>
+
+::br
+
 To run it press the `Play Button` then press `Computer Icon` on the left. 
+
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
@@ -103,7 +115,11 @@ To run it press the `Play Button` then press `Computer Icon` on the left.
     </div>
     <div class="col-sm-3"></div>
 </div>
+
+::br
+
 In the clover boot menu, press enter and the system will boot into `MacOS Utilities`
+
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
@@ -113,7 +129,11 @@ In the clover boot menu, press enter and the system will boot into `MacOS Utilit
     </div>
     <div class="col-sm-3"></div>
 </div>
+
+::br
+
 First select `Disk Utility` then erase partition you want to use
+
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
@@ -123,8 +143,12 @@ First select `Disk Utility` then erase partition you want to use
     </div>
     <div class="col-sm-3"></div>
 </div>
+
+::br
+
 Next go to `Reinstall macOS`, Continue, Select partition, Set username, Password, etc. 
 This will take some time because the installer is downloading some files too.
+
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
@@ -134,7 +158,11 @@ This will take some time because the installer is downloading some files too.
     </div>
     <div class="col-sm-3"></div>
 </div>
+
+::br
+
 After that you'll be  greeted with MacOS desktop
+
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
@@ -144,7 +172,11 @@ After that you'll be  greeted with MacOS desktop
     </div>
     <div class="col-sm-3"></div>
 </div>
+
+::br
+
 Then power off the MacOS and add more CPU, RAM, add PCIe Passtrough, etc
+
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
@@ -164,9 +196,11 @@ Then power off the MacOS and add more CPU, RAM, add PCIe Passtrough, etc
     <div class="col-sm-3"></div>
 </div>
 
-<br>
+::br
+
 If you're getting random keypress in my case it's numlock so it's annoying, go to `System Preferences > Accessibility > Keyboard` 
 check `Enable Slow Keys` then go to `Options` and slide to low value
+
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
@@ -176,7 +210,11 @@ check `Enable Slow Keys` then go to `Options` and slide to low value
     </div>
     <div class="col-sm-3"></div>
 </div>
+
+::br
+
 Next get [Karabiner](https://pqrs.org/osx/karabiner/) and disable the faulty key
+
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
@@ -186,11 +224,13 @@ Next get [Karabiner](https://pqrs.org/osx/karabiner/) and disable the faulty key
     </div>
     <div class="col-sm-3"></div>
 </div>
+
+::br
+
 Then uncheck The Slow key in `System Preferences > Accessibility > Keyboard > Enable Slow Keys`
 
-
-<br>
 Then if you want the system run automatically go to `Boot Options > Check on Start virtual machine on host boot up`
+
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
@@ -200,6 +240,9 @@ Then if you want the system run automatically go to `Boot Options > Check on Sta
     </div>
     <div class="col-sm-3"></div>
 </div>
+
+::br
+
 Next create autostart. Here i'm using xubuntu so i can create `macos.desktop` in `/etc/xdg/autostart` 
 you may not have this so refer to your Linux distro
 
@@ -221,5 +264,4 @@ Categories=
 NotShowIn=LXDE
 ```
 
-<br>
 Aand that's it now you can run MacOS on your linux machine!
