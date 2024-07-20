@@ -7,11 +7,20 @@
 	function showMarkdown(type){
 		// console.time("Parser");
 
+		// var markdown = (this.responseText);
+		// var converter = new showdown.Converter();
+		// converter.setOption('tables', true);
+		// converter.setOption('strikethrough', true);
+		// var html = converter.makeHtml(markdown);
+		// html = html.replace(/<pre><code>/g, '<pre class="language-bash"><code>');
+		// document.getElementById('main-content').innerHTML = html;
+
 		var markdown = (this.responseText);
-		var converter = new showdown.Converter();
-		converter.setOption('tables', true);
-		converter.setOption('strikethrough', true);
-		var html = converter.makeHtml(markdown);
+		marked.use(markedDirective.createDirectives(), 
+			{async: false, pedantic: false,
+			breaks: false, gfm: true,});
+		var html = marked.parse(markdown);
+
 		html = html.replace(/<pre><code>/g, '<pre class="language-bash"><code>');
 		document.getElementById('main-content').innerHTML = html;
 
