@@ -22,7 +22,8 @@
 		var html = marked.parse(markdown);
 
 		html = html.replace(/<pre><code>/g, '<pre class="language-bash"><code>');
-		document.getElementById('main-content').innerHTML = html;
+		html = html.replace(/<blockquote>/g, '<blockquote class="blockquote">');
+		document.getElementById('main-content').innerHTML = DOMPurify.sanitize(html);
 
 		// console.log(getSiteIdentifier()[2]);
 		if(getSiteIdentifier()[2]){
