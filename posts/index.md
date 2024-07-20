@@ -61,3 +61,4 @@
 2023-07-22-Flashing-OpenWrt-Onto-ZTE-ZXA10-F660-V3
 2023-11-19-My-Journey-Upgrading-Homelab
 2024-04-08-Low-Latency-Self-hosted-Cloud-Gaming
+2024-07-20-Easy-Internet-Voucher-Using-OpenNDS
