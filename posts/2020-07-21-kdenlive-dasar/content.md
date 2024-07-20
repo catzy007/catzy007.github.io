@@ -1,7 +1,6 @@
 #### Kdenlive Dasar
 _Tuesday, July 21, 2020_
 
-<br>
 #### Download dan Install
 Kdenlive mendukung berbagai macam sistem operasi, download sesuai dengan sistem operasi anda <https://kdenlive.org/en/download/>
 <div class="row">
@@ -14,7 +13,8 @@ Kdenlive mendukung berbagai macam sistem operasi, download sesuai dengan sistem 
 	<div class="col-sm-1"></div>
 </div>
 
-<br>
+::br
+
 #### Pengenalan Tampilan
 
 <div class="row">
@@ -26,11 +26,13 @@ Kdenlive mendukung berbagai macam sistem operasi, download sesuai dengan sistem 
 	</div>
 	<div class="col-sm-1"></div>
 </div>
+
+::br
+
 Ini adalah tampilan awal `Kdenlive` terdapat 4 bagian utama yaitu `Projek Bin`, `Effect`, `Preview`, dan `Timeline`
 
 <https://userbase.kde.org/Kdenlive/Manual>
 
-<br>
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
@@ -40,13 +42,15 @@ Ini adalah tampilan awal `Kdenlive` terdapat 4 bagian utama yaitu `Projek Bin`, 
 	</div>
 	<div class="col-sm-3"></div>
 </div>
+
+::br
+
 Projek Bin adalah tempat `Clip` atau file yang akan diedit. File yang didukung dapat berupa video (mp4, mkv, wmv), 
 audio (mp3, m4a), bahkan gambar (jpeg, png). Untuk menambahkan Clip, dapat dilakukan dengan `Drag and Drop` file 
 langsung kedalam `projek bin` atau dengan `klik kanan pada projek bin` dan pilih `Add clip or folder`
 
 <https://userbase.kde.org/Kdenlive/Manual/Projects_and_Files/Project_Tree>
 
-<br>
 <div class="row">
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
@@ -56,13 +60,15 @@ langsung kedalam `projek bin` atau dengan `klik kanan pada projek bin` dan pilih
 	</div>
 	<div class="col-sm-2"></div>
 </div>
+
+::br
+
 Effect adalah bagian dimana pengguna dapat melakukan koreksi dan modifikasi pada sumber audio atau video. Misal 
 audio suaranya kecil, maka dapat menggunakan effect `Gain` untuk memperbesar suara. Lalu semisal video gambarnya 
 kurang jelas, maka dapat menggunakan `Denoiser` dan sebagainya.
 
 <https://userbase.kde.org/Kdenlive/Manual/Effects>
 
-<br>
 <div class="row">
 	<div class="col-sm-1"></div>
 	<div class="col-sm-10">
@@ -72,12 +78,14 @@ kurang jelas, maka dapat menggunakan `Denoiser` dan sebagainya.
 	</div>
 	<div class="col-sm-1"></div>
 </div>
+
+::br
+
 Preview atau secara official bernama `Monitor` adalah bagian seperti video player mini dimana pengguna dapat 
 melihat hasil editing secara langsung.
 
 <https://userbase.kde.org/Kdenlive/Manual/Monitors>
 
-<br>
 <div class="row">
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
@@ -87,6 +95,9 @@ melihat hasil editing secara langsung.
 	</div>
 	<div class="col-sm-2"></div>
 </div>
+
+::br
+
 Timeline adalah bagian dimana pengguna dapat memilih waktu video untuk diubah. Dalam timeline juga terdapat 
 `V2, V1, A1, A2` V1,2 Adalah video, sedangkan A1,2 adalah audio. Ini ditujukan untuk prioritas video atau 
 audio mana yang akan muncul pada hasil akhir. 
@@ -95,6 +106,7 @@ audio mana yang akan muncul pada hasil akhir.
 
 Pada timeline juga terdapat beberapa tools, ada tiga tools utama 
 yang harus dipahami.
+
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
@@ -104,6 +116,9 @@ yang harus dipahami.
 	</div>
 	<div class="col-sm-3"></div>
 </div>
+
+::br
+
 Pada bagian yang berwarna <span style="color:red">merah</span> adalah `select tool` gunanya untuk memilih bagian clip mana yang akan diproses pada timeline. Dapat pula digunakan untuk menggeser clip dengan cara klik select tool, tekan dan tarik clip yang ingin digeser.
 
 Pada bagian yang berwarna <span style="color:green">hijau</span> adalah cut atau secara official bernama `razor tool`, berfungsi untuk memotong clip yang terdapat pada timeline. Untuk menggunakan, click tombol cut, arahkan ke bagian clip pada timeline lalu click lagi untuk memotong.
@@ -112,8 +127,8 @@ Pada bagian yang berwarna <span style="color:blue">biru</span> adalah `timeline 
 
 <https://userbase.kde.org/Kdenlive/Manual/Timeline/Editing>
 
-<br>
 #### Basic Workflow
+
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
@@ -123,6 +138,9 @@ Pada bagian yang berwarna <span style="color:blue">biru</span> adalah `timeline 
 	</div>
 	<div class="col-sm-3"></div>
 </div>
+
+::br
+
 Pertama buat folder baru, copykan semua clip,video,gambar kedalam folder tersebut
 
 `Sebisa mungkin untuk tidak memindah dan merubah nama file dalam folder! untuk mencegah data corrupt`
@@ -136,6 +154,7 @@ Pertama buat folder baru, copykan semua clip,video,gambar kedalam folder tersebu
 	</div>
 	<div class="col-sm-3"></div>
 </div>
+
 Kemudian buka kdenlive dan masukkan clip kedalam projek bin dengan cara `drag and drop` 
 atau dengan `klik kanan pada projek bin > add clip or folder`
 
@@ -157,6 +176,9 @@ atau dengan `klik kanan pada projek bin > add clip or folder`
 	</div>
 	<div class="col-sm-1"></div>
 </div>
+
+::br
+
 Selanjutnya masukkan clip kedalam timeline dengan cara `drag and drop`
 
 <div class="row">
@@ -168,6 +190,9 @@ Selanjutnya masukkan clip kedalam timeline dengan cara `drag and drop`
 	</div>
 	<div class="col-sm-3"></div>
 </div>
+
+::br
+
 Sebelum melakukan apapun, pastikan lakukan save dan simpan file dalam folder yang sama dengan clip
 
 <div class="row">
@@ -179,6 +204,9 @@ Sebelum melakukan apapun, pastikan lakukan save dan simpan file dalam folder yan
 	</div>
 	<div class="col-sm-3"></div>
 </div>
+
+::br
+
 Semisal ingin memotong clip pada detik ke 13, maka click cut atau razor tools
 
 
@@ -191,8 +219,10 @@ Semisal ingin memotong clip pada detik ke 13, maka click cut atau razor tools
 	</div>
 	<div class="col-sm-2"></div>
 </div>
-lalu saat cursor berwarna merah, arahkan pada detik ke 13 di timeline
 
+::br
+
+lalu saat cursor berwarna merah, arahkan pada detik ke 13 di timeline
 
 <div class="row">
 	<div class="col-sm-2"></div>
@@ -203,8 +233,10 @@ lalu saat cursor berwarna merah, arahkan pada detik ke 13 di timeline
 	</div>
 	<div class="col-sm-2"></div>
 </div>
-kemudian clip akan terpisah menjadi 2 bagian
 
+::br
+
+kemudian clip akan terpisah menjadi 2 bagian
 
 <div class="row">
 	<div class="col-sm-2"></div>
@@ -215,8 +247,10 @@ kemudian clip akan terpisah menjadi 2 bagian
 	</div>
 	<div class="col-sm-2"></div>
 </div>
-selanjutnya disini saya akan membuang clip dengan cara click select tool, lalu click pada clip yang ingin dibuang, klik kanan, delete selected item.
 
+::br
+
+selanjutnya disini saya akan membuang clip dengan cara click select tool, lalu click pada clip yang ingin dibuang, klik kanan, delete selected item.
 
 <div class="row">
 	<div class="col-sm-2"></div>
@@ -227,8 +261,10 @@ selanjutnya disini saya akan membuang clip dengan cara click select tool, lalu c
 	</div>
 	<div class="col-sm-2"></div>
 </div>
-lalu clip akan hilang
 
+::br
+
+lalu clip akan hilang
 
 <div class="row">
 	<div class="col-sm-1"></div>
@@ -239,8 +275,10 @@ lalu clip akan hilang
 	</div>
 	<div class="col-sm-1"></div>
 </div>
-kemudian saya akan tambahkan clip baru pada projek bin, lalu drag and drop clip baru ke timeline
 
+::br
+
+kemudian saya akan tambahkan clip baru pada projek bin, lalu drag and drop clip baru ke timeline
 
 <div class="row">
 	<div class="col-sm-3"></div>
@@ -251,8 +289,10 @@ kemudian saya akan tambahkan clip baru pada projek bin, lalu drag and drop clip 
 	</div>
 	<div class="col-sm-3"></div>
 </div>
-untuk mendapatkan hasil video yang telah diedit, lakukan proses render dengan cara click project menu > render
 
+::br
+
+untuk mendapatkan hasil video yang telah diedit, lakukan proses render dengan cara click project menu > render
 
 <div class="row">
 	<div class="col-sm-3"></div>
@@ -263,11 +303,13 @@ untuk mendapatkan hasil video yang telah diedit, lakukan proses render dengan ca
 	</div>
 	<div class="col-sm-3"></div>
 </div>
+
+::br
+
 lalu arahkan output file ke tempat yang diinginkan, pilih MP4 (atau format lain sesuaikan), lalu render to file.
 
 kemudian tunggu proses render, proses ini membutuhkan waktu sesuai dengan kapasitas CPU/GPU juga panjang video dan kualitas video.
 
 > Pastikan untuk melakukan save setiap melakukan editing untuk mencegah data corrupt
-
 
 Untuk informasi lebih lanjut dan akurat dapat menuju ke <https://userbase.kde.org/Kdenlive/Manual>

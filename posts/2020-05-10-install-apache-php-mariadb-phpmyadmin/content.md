@@ -9,12 +9,10 @@ Fresh install of `Ubuntu 20.04` and latest LAMP package at the time
 `php 7.4`. If you already had old installation of LAMP stack, then remove 
 or purge it first!
 
-<br>
 `WARNING : Because of some security risks, this article should not be used 
 in `*Production Environment*` and only meant to be used in `
 *Development and Learning Environment*` keep that in mind!`
 
-<br>
 First update and upgrade your system
 ```
 sudo apt update
@@ -25,7 +23,6 @@ Then install necessary package
 ```
 sudo apt install apache2 mariadb-server php php-mysqli
 ```
-<br>
 
 Next, download phpmyadmin from <https://www.phpmyadmin.net/>. Here i'm using 
 `phpMyAdmin-5.0.2-all-languages` the current version might be different. Then 
@@ -35,7 +32,6 @@ unzip phpMyAdmin-5.0.2-all-languages.zip
 mv phpMyAdmin-5.0.2-all-languages pma
 sudo mv pma /var/www/html
 ```
-<br>
 
 Then enable mysqli extension. Here the current version of php is `7.4` you 
 might need to adjust it to your version. To check php version, do `php --version`
@@ -48,7 +44,6 @@ To apply the extension, do
 ```
 sudo apt install --reinstall php apache2
 ```
-<br>
 
 Then add user to mysql. Change `newuser` and `password` as you need. 
 ```
@@ -60,13 +55,11 @@ CREATE USER 'newuser'@'localhost' IDENTIFIED BY 'password';
 GRANT ALL PRIVILEGES ON * . * TO 'newuser'@'localhost';
 \q
 ```
-<br>
 
 Last, open web browser and fill with `localhost/pma` and type username password you create last time.
 
 And that's it. Now you should able to use LAMP stack and phpmyadmin.
 
-<br>
 #### Some Sauce
 <https://www.digitalocean.com/community/tutorials/how-to-create-a-new-user-and-grant-permissions-in-mysql>
 

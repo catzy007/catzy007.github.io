@@ -15,7 +15,6 @@ gaming in this sound card should be interesting. Also, i found this
 if this sound card doesn't work, maybe some day i can get Sound Blaster Live or something like that as a 
 replacement.
 
-<br>
 <div class="row">
 	<div class="col-sm-4"></div>
 	<div class="col-sm-4">
@@ -25,13 +24,15 @@ replacement.
 	</div>
 	<div class="col-sm-4"></div>
 </div>
+
+::br
+
 After few days i't arrive i just plug it to Windows 10 64Bit system and nothing. Then i actually 
 remember something really important "Windows device is using proprietary driver" so yeah here 
 i am looking for a way to check if this card is working. The problem is that driver made for this 
 card is 32Bit WDM driver for Windows XP so in order to make this work in 64Bit windows, i had to 
 recompile the driver to 64Bit. 
 
-<br>
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
@@ -41,6 +42,9 @@ recompile the driver to 64Bit.
 	</div>
 	<div class="col-sm-3"></div>
 </div>
+
+::br
+
 Other alternative is of course Linux which basically runs everything. I use Lubuntu 18.04 
 and Ubuntu 20.04 and it works just fine. And the chip itself is lsted in 
 [ALSA project](https://www.alsa-project.org/wiki/Matrix:Vendor-Yamaha) the problem is that there is 
@@ -48,7 +52,6 @@ a some kind of Crackling noise coming out and i think there is something wrong i
 and in linux there is no easy way to configure lot of input and output for this card so yeah. At least 
 the card is working which is a good thing.
 
-<br>
 The next thing i try is 32Bit Windows 7 and force WDM driver to install and you know what, it 
 actually works just fine. There is a crackling noise and to solve that, i disable lot of unused 
 input and output port like CD in, phone in, line in, all that thing. Then it work just fine. And 
@@ -56,7 +59,6 @@ after trying it on linux again, the noise is gone. I think what happen is that s
 the audio output is routed to audio input and causing lot of ground loop noise then by disabling 
 the problematic port, everything work just fine.
 
-<br>
 <div class="row">
 	<div class="col-sm-4"></div>
 	<div class="col-sm-4">
@@ -67,6 +69,9 @@ the problematic port, everything work just fine.
 	</div>
 	<div class="col-sm-4"></div>
 </div>
+
+::br
+
 Next thing i want to try is to run this on Windows XP system. But i don't feel like installing XP 
 on my system just to listen some music, so i decided to run yes you probably guess it a KVM 
 Virtualization with PCI (yes not PCIE) passthrough. The way i did it basically follow my old Post and 
@@ -77,6 +82,7 @@ genirq: Flags mismatch irq 18. 00000000 (vfio-intx(0000:01:04.0)) vs. 00000080 (
 ```
 The way i solve it is disabling some USB controller in the motherboard from BIOS. Then after everything 
 is clear, it work just fine.
+
 <div class="row">
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
@@ -87,7 +93,8 @@ is clear, it work just fine.
 	<div class="col-sm-2"></div>
 </div>
 
-<br>
+::br
+
 As for KVM passthrough configuration, well basically make sure you hardware supprot VT-D or AMD-VI, 
 enable that in BIOS, and make sure your motherboard support IOMMU group seperation or you have to use 
 [ACS Patch](https://wiki.archlinux.org/index.php/PCI_passthrough_via_OVMF#Bypassing_the_IOMMU_groups_(ACS_override_patch)) 
@@ -176,12 +183,10 @@ Shared to GPU, USB, Sound, PCI Bridge, then you're done! Or use ACS patch.
 
 1. After all that, create VM in Virt-Manager and pass the device to VM.
 
-<br>
 As for side note, some DOS games do run on Windows XP but most of the time without sound, in a meantime, 
 to make sound working, i use [VDMSound](https://en.wikipedia.org/wiki/VDMSound). Yes i know it isn't pure 
 hardware based but for the time being, i'm going to use it while trying to make Windows 9x or DOS working on KVM. 
 
-<br>
 Driver and some information i use, in this post. Most of software provided is found on [Public 
 domain](https://en.wikipedia.org/wiki/Public_domain) or considered as 
 [Abandonware](https://en.wikipedia.org/wiki/Abandonware) in this case the original creator is 
@@ -202,7 +207,6 @@ and [Vlad Romascanu](https://sourceforge.net/projects/vdmsound)
 
 [Mirror VDMSound](./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/VDMSound2.1.0.zip)
 
-<br>
 > [UPDATE April 7 2021]
 
 After failing to install Windows 95 in KVM, then going to QEMU TCG, then do PCI passthrough using libvirt, 
@@ -239,6 +243,8 @@ again similar process but with Windows 95 instead of ME.
 	<div class="col-sm-2"></div>
 </div>
 
+::br
+
 Then after that i just play DOS game in Win95 DOS window mode and no sound, I reboot to DOS mode still no sound, 
 Then i reboot to DOS mode and use DOS driver (SETUPDS/S and DSDMA) then enable EMS still no sound. The only 
 thing that i still not tried is using regular DOS (6.22 etc) but here i end this journey. So after reading old 
@@ -247,7 +253,6 @@ connector or i think similar to `SB-LINK` which connect your card to special hea
 need a special motherboard with special chipset on it. So there is no way i can get it in modern-ish system or 
 even hardware passthrough like this.
 
-<br>
 > [UPDATE April 22 2021]
 
 After having a some free time from mid-test, i decided to unplug my SB Audigy and use Yamaha once again to test if 
@@ -263,6 +268,8 @@ running it in DOS 6.22 with KVM acceleration will make a difference.
 	<div class="col-sm-3"></div>
 </div>
 
+::br
+
 The system spec is similar as win95 with single core CPU, 128 megs RAM, 500 megs HDD, but in KVM instead of TCG. 
 Then i use [Phils MS-DOS starter pack](https://www.philscomputerlab.com/ms-dos-starter-pack.html) to easily use 
 mouse and extended memory support.
@@ -277,6 +284,8 @@ mouse and extended memory support.
 	<div class="col-sm-3"></div>
 </div>
 
+::br
+
 Then i just use `setupds/s` then `dsdma` and still nothing, then i just run setupds and simply test the sound output, 
 the Native 16 bit output is working just fine. The SB mode is disabled or greyed out and the FM mode throw a error.
 
@@ -290,6 +299,8 @@ the Native 16 bit output is working just fine. The SB mode is disabled or greyed
 	<div class="col-sm-3"></div>
 </div>
 
+::br
+
 Then i try edit `FIRSTTRY=` in `ds.ini` file, then run `loadtrs.bat` and get this error instead.
 
 <div class="row">
@@ -302,18 +313,18 @@ Then i try edit `FIRSTTRY=` in `ds.ini` file, then run `loadtrs.bat` and get thi
 	<div class="col-sm-3"></div>
 </div>
 
+::br
+
 So my take is there is probably a way to make this work, but the effort might not worth at least for me, i think 
 you can use virtio IRQ remapping mode or something like that but don't quote me on this. In the meantime, i just 
 gonna stick to my SB Audigy and maybe revisit dos gaming in dedicated box.
 
-<br>
 > [UPDATE May 11 2021]
 
 After somehow i manage to install MS-DOS 6.22 in a USB flash drive, then i plug the card in my 12 core Xeon, boot it 
 up and the FM Synth works. The SB mode won't work because it needs EMS, but somehow EMS won't initialize. Maybe EMS can't 
 deal with 12GB of RAM, or somehow it has problem with IMC. But at least FM/Adlib mode works.
 
-<br>
 > Further reading
 
 [PCI sound cards and Chipsets from various manufacturers... \ VOGONS](https://www.vogons.org/viewtopic.php?t=24769)
