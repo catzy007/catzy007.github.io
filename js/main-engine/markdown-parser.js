@@ -15,7 +15,9 @@
 
 		html = html.replace(/<pre><code>/g, '<pre class="language-bash"><code>');
 		html = html.replace(/<blockquote>/g, '<blockquote class="blockquote">');
-		document.getElementById('main-content').innerHTML = DOMPurify.sanitize(html);
+		html = DOMPurify.sanitize(html, 
+			{ ADD_TAGS: ["iframe"], ADD_ATTR: ['allow', 'allowfullscreen', 'frameborder', 'scrolling'] });
+		document.getElementById('main-content').innerHTML = html;
 
 		// console.log(getSiteIdentifier()[2]);
 		if(getSiteIdentifier()[2]){

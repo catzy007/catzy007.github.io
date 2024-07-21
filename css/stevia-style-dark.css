@@ -3,6 +3,7 @@
         --bs-body-bg: #1a1e29;
         --bs-secondary-bg: #1b1f22;
         --bs-tertiary-bg: #22272d;
+        --bs-text-emphasis: #fff;
     }
     
     /* Disable horizontal scroll */
@@ -40,7 +41,7 @@
         font-size: 1.0rem;
     }
     a, a:hover {
-        text-decoration: none;
+        color: var(--bs-link-hover-color);
     }
     .stevia-color, #siteBranding {
         color: var(--bs-link-hover-color);
