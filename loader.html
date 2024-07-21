@@ -167,7 +167,11 @@
     </div>
     
     <script type="module">
-        document.documentElement.setAttribute("data-bs-theme","dark");
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.documentElement.setAttribute("data-bs-theme","dark");
+        }else{
+            document.documentElement.setAttribute("data-bs-theme","light");
+        }
 
         import { marked } from './js/marked.esm.js';
         import { createDirectives } from './js/marked-directive.esm.js';
@@ -178,12 +182,6 @@
         window.createDirectives = createDirectives;
         window.DOMPurify = DOMPurify;
         window.hljs = hljs;
-
-        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-            document.documentElement.setAttribute("data-bs-theme","dark");
-        }else{
-            document.documentElement.setAttribute("data-bs-theme","light");
-        }
 
         window.scrollTo(0, 0); 
         loadSiteMainTitle();
