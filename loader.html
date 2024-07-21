@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="dark">
+<html lang="en" data-bs-theme="light">
 <head>
     <title>Catzy's Blog</title>
     <meta charset="UTF-8">
@@ -11,6 +11,7 @@
     <link rel="icon" href='./assets/favicon.png' type="image/x-icon"/>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/stevia-style.css">
     <link rel="stylesheet" href="./css/stevia-style-dark.css">
     <link rel="stylesheet" href="./css/highlight/github-dark-dimmed.min.css">
     <script src="./js/website-info.js"></script>
@@ -177,6 +178,12 @@
         window.createDirectives = createDirectives;
         window.DOMPurify = DOMPurify;
         window.hljs = hljs;
+
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.documentElement.setAttribute("data-bs-theme","dark");
+        }else{
+            document.documentElement.setAttribute("data-bs-theme","light");
+        }
 
         window.scrollTo(0, 0); 
         loadSiteMainTitle();
