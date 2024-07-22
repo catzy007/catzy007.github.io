@@ -165,14 +165,16 @@
             </div>
         </div>
     </div>
-    
-    <script type="module">
+ 
+    <script>
         if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
             document.documentElement.setAttribute("data-bs-theme","dark");
         }else{
             document.documentElement.setAttribute("data-bs-theme","light");
         }
+     </script>
 
+    <script type="module">
         import { marked } from './js/marked.esm.js';
         import { createDirectives } from './js/marked-directive.esm.js';
         import DOMPurify from './js/purify.esm.js';
