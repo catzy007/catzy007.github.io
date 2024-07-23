@@ -152,8 +152,10 @@ Last, boot and remote to your VM, and hopefully it is working.
 	<div class="col-sm-3"></div>
 </div>
 
-<details>
-<summary>Click to reveal vm.conf</summary>
+<!-- <details>
+<summary>Click to reveal vm.conf</summary> -->
+:::details
+::summary[&#9432; Click to reveal vm.conf]
 ```
 bios: ovmf
 boot: order=sata0;ide2;net0
@@ -176,7 +178,9 @@ sockets: 1
 vga: virtio
 vmgenid: 1e606f3e-6cfc-42af-844b-cf61f4ebcb05
 ```
-</details>
+:::
+::br
+<!-- </details> -->
 
 The next upgrade that I did is to add a Solid State Drive or more like 
 two of them. The first SSD is just a regular Samsung 256 GB M.2 SATA. 

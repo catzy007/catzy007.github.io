@@ -8,11 +8,15 @@
 		// console.time("Parser");
 
 		var markdown = (this.responseText);
-		var converter = new showdown.Converter();
-		converter.setOption('tables', true);
-		converter.setOption('strikethrough', true);
-		var html = converter.makeHtml(markdown);
+		marked.use(createDirectives(), 
+			{async: false, pedantic: false,
+			breaks: false, gfm: true,});
+		var html = marked.parse(markdown);
+
 		html = html.replace(/<pre><code>/g, '<pre class="language-bash"><code>');
+		html = html.replace(/<blockquote>/g, '<blockquote class="blockquote">');
+		html = DOMPurify.sanitize(html, 
+			{ ADD_TAGS: ["iframe"], ADD_ATTR: ['allow', 'allowfullscreen', 'frameborder', 'scrolling'] });
 		document.getElementById('main-content').innerHTML = html;
 
 		// console.log(getSiteIdentifier()[2]);

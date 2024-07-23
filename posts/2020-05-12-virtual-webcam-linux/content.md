@@ -16,7 +16,6 @@ Second, install some dependency (gcc cmake)
 sudo apt install build-essential
 ```
 
-<br>
 Then, install akvcam virtual camera driver
 ```
 git clone https://github.com/webcamoid/akvcam
@@ -31,8 +30,8 @@ ls /lib/modules/$(uname -r)/extra/akvcam.ko*
 ```
 if you got `No such file or directory`, try again
 
-<br>
 Next, go to [webcamoid website](https://webcamoid.github.io/) and download the appimage
+
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
@@ -42,6 +41,7 @@ Next, go to [webcamoid website](https://webcamoid.github.io/) and download the a
 	</div>
 	<div class="col-sm-3"></div>
 </div>
+
 Then go to download folder and do
 ```
 chmod +x webcamoid*.AppImage
@@ -51,8 +51,8 @@ and run it by doing
 ./webcamoid*.AppImage
 ```
 
-<br>
 Then go to `Preferences` (thing with gear icon) and create new `Virtual Camera`
+
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
@@ -62,7 +62,9 @@ Then go to `Preferences` (thing with gear icon) and create new `Virtual Camera`
 	</div>
 	<div class="col-sm-3"></div>
 </div>
+
 Next, go to `Configure Sources` and press the `Big + Green Button` and add your `Pre Recorded Video File`
+
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
@@ -81,7 +83,9 @@ Next, go to `Configure Sources` and press the `Big + Green Button` and add your 
 	</div>
 	<div class="col-sm-3"></div>
 </div>
+
 Then select your media in `Left Panel`
+
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
@@ -91,12 +95,13 @@ Then select your media in `Left Panel`
 	</div>
 	<div class="col-sm-3"></div>
 </div>
-<br>
+
 After all that, open video conference service (in my case, i'm using google meet)
 
 Then allow all permission from `Audio` and `Webcam`
 
 And go to config, and change camera source to virtual camera
+
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">

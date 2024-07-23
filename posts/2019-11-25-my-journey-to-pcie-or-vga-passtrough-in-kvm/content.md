@@ -18,8 +18,8 @@ you have two video adapter. Here i have onboard Aspeed as primary display and RX
 passtrough into KVM. Server grade processor and board is your best bet but sometimes it can be little 
 bit tricky. Do your best research and hope for the best.
 
-<br><br>
 First, go to the BIOS settings and enable VT-D or AMD-Vi
+
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
@@ -29,7 +29,11 @@ First, go to the BIOS settings and enable VT-D or AMD-Vi
     </div>
     <div class="col-sm-3"></div>
 </div>
+
+::br
+
 If your motherboard support SR-IOV, enable it too
+
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
@@ -39,12 +43,14 @@ If your motherboard support SR-IOV, enable it too
     </div>
     <div class="col-sm-3"></div>
 </div>
+
+::br
+
 Then, install virt-manager and ovmf. Here i'm using VMM to make our life easy.
 ```
 sudo apt install virt-manager ovmf -y
 ```
 
-<br><br>
 Next enable IOMMU in linux
 ```
 sudo nano /etc/default/grub 
@@ -60,7 +66,6 @@ sudo update-grub
 ```
 and `reboot` your system.
 
-<br><br>
 Then check if IOMMU is enabled
 ```
 sudo dmesg | grep IOMMU
@@ -73,7 +78,6 @@ in my case it will output.
 ```
 You may get similar output.
 
-<br><br>
 Next step is to make sure that your motherboard has good IOMMU Group.
 Copy, save as `check.sh` do `chmod +x check.sh` and run the script as root
 ```
@@ -104,19 +108,16 @@ used in KVM, you MUST pass everything into KVM. If that device is critical to yo
 you can stop there. Or Arch linux users has made custom patch to bypass IOMMU Group `ACS override patch` 
 but DO THAT WITH YOUR OWN RISKS. Some device should not passed into KVM for example `PCI Bridge`.
 
-<br><br>
 Try to take a note for PCI Numeric id's. mine is
-> 08:00.0 VGA compatible controller [0300]: Advanced Micro Devices, Inc. [AMD/ATI] Baffin [Radeon RX 550 640SP / RX 560/560X] [1002:67ff] (rev cf)
+```
+08:00.0 VGA compatible controller [0300]: Advanced Micro Devices, Inc. [AMD/ATI] Baffin [Radeon RX 550 640SP / RX 560/560X] [1002:67ff] (rev cf)
+08:00.1 Audio device [0403]: Advanced Micro Devices, Inc. [AMD/ATI] Baffin HDMI/DP Audio [Radeon RX 550 640SP / RX 560/560X] [1002:aae0]
+```
 
-and
-> 08:00.1 Audio device [0403]: Advanced Micro Devices, Inc. [AMD/ATI] Baffin HDMI/DP Audio [Radeon RX 550 640SP / RX 560/560X] [1002:aae0]
-
-<br><br>
 Then pass the PCI devices
 ```
 sudo nano /etc/initramfs-tools/modules
 ```
-add the line
 ```
 softdep amdgpu pre: vfio vfio_pci
 
@@ -128,29 +129,23 @@ vfio_pci ids=1002:67ff,1002:aae0
 vfio_pci
 amdgpu
 ```
-then
 ```
 sudo nano /etc/modules
 ```
-add the line
 ```
 vfio
 vfio_iommu_type1
 # vfio_pci ids=1002:67ff,1002:aae0
 ```
-Then
 ```
 sudo nano /etc/modprobe.d/amdgpu.conf
 ```
-add the line
 ```
 softdep amdgpu pre: vfio vfio_pci
 ```
-Next
 ```
 sudo nano /etc/modprobe.d/vfio.conf 
 ```
-add the line 
 ```
 options vfio-pci ids=1002:67ff,1002:aae0
 ```
@@ -159,7 +154,6 @@ using AMD GPU. for Nvidia GPU, the process is similar. Read this
 [forum post](https://linustechtips.com/main/topic/978579-guide-linux-pci-gpu-vfio-passthrough/) 
 for more information
 
-<br><br>
 Then update the initramfs
 ```
 sudo update-initramfs -u 
@@ -180,7 +174,6 @@ If not re-check your configurations. More informations
 sudo dmesg | grep -e DMAR -e IOMMU -e vfio
 ```
 
-<br><br><br>
 The next part is to configure the VM itself.
 first enable UEFI support in QEMU
 ```
@@ -197,8 +190,8 @@ nvram = [
 ```
 the line may be different but it should look similar. Then do `reboot`
 
-<br><br>
 Then create simple and quick VM using `Virtual Machine Manager`
+
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
@@ -244,7 +237,11 @@ Then create simple and quick VM using `Virtual Machine Manager`
     </div>
     <div class="col-sm-3"></div>
 </div>
+
+::br
+
 Don't forget to check `Customize configuration before install`
+
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
@@ -263,7 +260,9 @@ Don't forget to check `Customize configuration before install`
     </div>
     <div class="col-sm-3"></div>
 </div>
+
 Here i'm using Q35 Chipset and regular BIOS as my setup. You can combination of i440FX, Q35 and UEFI, BIOS if you encounter some problem.
+
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
@@ -273,7 +272,9 @@ Here i'm using Q35 Chipset and regular BIOS as my setup. You can combination of 
     </div>
     <div class="col-sm-3"></div>
 </div>
+
 Then go to `CPUs tab` and configure as you need.
+
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
@@ -283,11 +284,12 @@ Then go to `CPUs tab` and configure as you need.
     </div>
     <div class="col-sm-3"></div>
 </div>
+
 Next, `Add Hardware` select `Input Tab` and select `EvTouch USB Graphic Tablet`.
 Then install Windows as usual.
 
-<br><br>
 After Windows installation finished, then shutdown the VM and add a new hardware and pass both Video output and sound
+
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
@@ -297,7 +299,9 @@ After Windows installation finished, then shutdown the VM and add a new hardware
     </div>
     <div class="col-sm-3"></div>
 </div>
+
 Then boot your VM and install the necessary drivers and hope that your PCI device is working as intended
+
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
@@ -307,10 +311,10 @@ Then boot your VM and install the necessary drivers and hope that your PCI devic
     </div>
     <div class="col-sm-3"></div>
 </div>
+
 And That's it, You have full Windows system running in KVM and the best part is you can play games or other 
 heavy task as well
 
-<br><br>
 In my case, because i'm using my server primarily as GUI remote machine, the vesa frame buffer is using the VGA 
 memory so i cannot pass that into KVM. So i need to disable vesafb by editing grub config.
 ```
@@ -345,11 +349,9 @@ If that still won't work, you might need to copy your VBIOS and put that inside 
 
 Keep trying and good luck!
 
-<br><br>
 > Update 13/01/2020
 > Recently i boot into my windows 10 vm and after few second it just freeze, then i find out that kernel `4.15.0-74-generic` was the culprit. after going back to `4.15.0-72-generic`, everything back to normal.
 
-<br><br>
 To hide vm status in windows
 
 * set cpu to `Copy host CPU configuration`
@@ -377,7 +379,6 @@ To hide vm status in windows
 	</kvm>
 	```
 
-<br><br>
 Some Sauce
 
 <https://dominicm.com/gpu-passthrough-qemu-arch-linux/>

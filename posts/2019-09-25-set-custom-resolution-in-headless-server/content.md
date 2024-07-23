@@ -4,6 +4,7 @@ Here's the story, you have a server and you connect to it using VNC or something
 have any monitor plugged in so you're stuck with the default resolution. You actually can bought dummy 
 HDMI or VGA plug and call it a day, but if you think that spending extra buck is not worth it. Then you 
 come to the right place here i'm going to set up sofware dummy display so you can set custom resolution.
+
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
@@ -14,11 +15,13 @@ come to the right place here i'm going to set up sofware dummy display so you ca
     <div class="col-sm-3"></div>
 </div>
 
-<br>
+::br
+
 First, install the dummy drivers
 ```
 sudo apt update && sudo apt install xserver-xorg-video-dummy -y
 ``` 
+
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
@@ -29,7 +32,8 @@ sudo apt update && sudo apt install xserver-xorg-video-dummy -y
     <div class="col-sm-3"></div>
 </div>
 
-<br>
+::br
+
 Then write config `sudo nano /etc/X11/xorg.conf` fill the config with
 ```
 Section "Device"    Identifier  "Configured Video Device"
@@ -60,8 +64,8 @@ Section "Screen"
 EndSection
 ```
 
-<br>
 Then reboot and that's it now you should be able to change resolution in display settings
+
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
@@ -72,7 +76,8 @@ Then reboot and that's it now you should be able to change resolution in display
     <div class="col-sm-3"></div>
 </div>
 
-<br>
+::br
+
 #### Sauce
 <https://ubuntuforums.org/showthread.php?t=2296872>
 

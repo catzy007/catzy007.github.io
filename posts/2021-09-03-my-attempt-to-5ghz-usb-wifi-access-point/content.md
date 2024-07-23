@@ -43,7 +43,8 @@ but most of them had to be compiled manually.
 	<div class="col-sm-3"></div>
 </div>
 
-<br>
+::br
+
 #### Initial Testing and Driver Installation
 
 After it arrives from China i just plug it in and do `lsusb`, and it has shown something 
@@ -74,7 +75,6 @@ sudo ./install-driver.sh
 Or check <https://github.com/morrownr/88x2bu/#installation-steps> if you use other 
 distros.
 
-<br>
 #### AP Creation and Power Workaround
 
 After installation complete i create AP for it, and it works. After few hours, no 
@@ -132,7 +132,6 @@ USE_PSK=
 You probably need to change `GATEWAY, COUNTRY, SSID, PASSPHRASE, WIFI_IFACE, INTERNET_IFACE` 
 to fit your specific configuration.
 
-<br>
 #### Things to Keep In Mind
 
 In my case some smartphone won't detect 5GHz band. By disabling cellular 
@@ -156,17 +155,14 @@ IEEE80211AC=0
 
 My test uses 5GHZ band at channel 36.
 
-<br>
 And i think that's it.
 
-<br>
 #### More Reading
 
 <https://github.com/morrownr/88x2bu/blob/5.8.7.4/Bridged_Wireless_Access_Point.md>
 
 <https://linux-hardware.org/index.php?id=usb:0bda-b812>
 
-<br>
 #### [UPDATE 2021/10/01] Go above and beyond
 
 Recently or what i mean is few hours ago, i get a breakthrough. I finally 
@@ -193,6 +189,8 @@ the mode still shown as `802.11bgn` which is not actually the case as you see la
 	<div class="col-sm-2"></div>
 </div>
 
+::br
+
 Then using [WiFiman](https://play.google.com/store/apps/details?id=com.ubnt.usurvey&hl=in&gl=US) 
 a great mobile apps developed by `Ubiquiti Inc`, so clearly they know what they're doing and highly 
 recommended. From the apps, it has shown that the mode is `802.11ac` and the channel width is `80MHz`
@@ -208,13 +206,14 @@ Awesome.
 	<div class="col-sm-4"></div>
 </div>
 
+::br
+
 So what we learn here is that a random 5Ghz Wi-Fi adapter can be used as Wi-Fi AP with all 
 the tricks and quirks that needed to make it works. In my case, i finally managed to get 867Mbps 
 bit rate and learn few things along the way. My set-up still has issues like DHCP is detached from 
 AP after few days or system reset and the AP is missing altogether after certain amount of time. 
 Maybe this is caused by using USB 2.0 port instead of USB 3.0.
 
-<br>
 #### [UPDATE 2023/06/11] Finally, In-Kernel Driver
 
 Finally, after few years of waiting. Starting from 
@@ -233,6 +232,8 @@ The first thing I did is to install (at the time of writing) the latest stable k
 	</div>
 	<div class="col-sm-3"></div>
 </div>
+
+::br
 
 Then I created AP using [lakinduakash/linux-wifi-hotspot](https://github.com/lakinduakash/linux-wifi-hotspot) 
 with the following config which is adapted from 
@@ -284,6 +285,8 @@ get about 120~147 Mbps.
 	</div>
 	<div class="col-sm-3"></div>
 </div>
+
+::br
 
 While I currently could not get it to maximum 867 Mbps PHY at 80 MHz, 
 I think it is a great first step, and it could get better over time.

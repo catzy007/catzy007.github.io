@@ -13,7 +13,6 @@ HyperThreading, but it only supports 32Bit so drop that even though T5740 has in
 I also stumble upon listing for `GT7725` which shipped with dual-core 64Bit processor and had two 
 RAM slots. The seller said it's sold out. So in the end i pick `T5730` instead.
 
-<br>
 #### Chapter 1 - Upgrading the CPU
 
 The CPU come with the system is `AMD Sempron 2100+` which is 64Bit single core processor based on AMD 
@@ -22,6 +21,7 @@ so the processor choice is little limited. You can look at the
 [Compatibility lists](http://www.cpu-world.com/Related_CPUs/Socket%20S1%20_S1g1__K8.html). 
 However, in my local area, i can only find two processors that are reasonably priced which is `Athlon 64 X2 TK-55` 
 and `Turion 64 X2 TL-50`.
+
 <div class="row">
 	<div class="col-sm-4"></div>
 	<div class="col-sm-4">
@@ -37,6 +37,7 @@ heat sink, replace the CPU with my new 2 core CPU, and it just works! Well kinda
 the CPU is faulty, i upgrade the bios, and it doesn't support the CPU, or i do something stupid and basically 
 fried the CPU. I don't know it just works when it wants, and doesn't when it won't. The good thing is it just 
 6USD CPU so not a big deal.
+
 <div class="row">
 	<div class="col-sm-4"></div>
 	<div class="col-sm-4">
@@ -49,6 +50,7 @@ fried the CPU. I don't know it just works when it wants, and doesn't when it won
 
 The Final processor i use is `Turion 64 X2 TL-50` which i got for around 4USD, it works in the first time and 
 still working (at least when this post is written it still do). In the end, it did work just fine.
+
 <div class="row">
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
@@ -70,6 +72,7 @@ pretty low, now look at the TL-50 it had 31W of TDP. More than 3x the TDP just g
 Okay it isn't as simple, but you got the idea. Which means that we MUST use active cooling instead of passive one. 
 The next one is power supply. The included supply only comes with around 50W of power. If you plug a lot of things, you 
 should consider upgrading you power supply.
+
 <div class="row">
 	<div class="col-sm-4"></div>
 	<div class="col-sm-4">
@@ -80,7 +83,6 @@ should consider upgrading you power supply.
 	<div class="col-sm-4"></div>
 </div>
 
-<br>
 #### Chapter 2 - Upgrading RAM and Storage
 
 The system i got has one slot of RAM populated with 1 GB of Hynix DDR2 667Mhz. A simple swap with 2 GB 
@@ -89,10 +91,10 @@ for that, solder that little SMD pad, and solder some resistor and capacitor to 
 successfully done this. Check [parkytowers.me.uk](https://www.parkytowers.me.uk/thin/hp/t5730/mods.shtml) and 
 [phoneservicesupport.com](https://www.phoneservicesupport.com/new-mods-t5730-a-dual-core-64-bit-cpu-pcie-g-card-t3517.html)
 
-
 For storage, my system got 2 GB 44 pin IDE Flash memory which is basically early generation of SLC SSD. But 2 GB 
 of raw storage in 2020 won't get you anywhere. My first idea is using `44 pin IDE to SATA converter` and uses random 
 SATA SSD, the adapter itself costs me around 10 USD shipped from China. Don't forget to get 44 pin cable.
+
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
@@ -111,11 +113,13 @@ SATA SSD, the adapter itself costs me around 10 USD shipped from China. Don't fo
 	</div>
 	<div class="col-sm-3"></div>
 </div>
+
 As you can see in the red marked image, it should be jumper. For my purpose, i just unplug the jumper to make it work. 
 I think if you put the jumper on, it work in SATA to IDE mode and other way around.
 
 My second idea is to use generic USB to SATA adapter. It is really cheap around 5 USD and i got it from my local 
 computer store.
+
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
@@ -127,6 +131,7 @@ computer store.
 </div>
 
 Okay now let's see some speed test result.
+
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
@@ -177,7 +182,6 @@ go with USB to SATA adapter it's cheaper, readily available and perfectly fine f
 is that other expansion may be possible such as CF-Card and some model had mini PCIE adapter on the bottom and that 
 may be the way to go.
 
-<br>
 #### Chapter 3 - Proxmox Installation
 
 Okay now comes the fun part. At first, my intention was to install pfSense on bare-metal but everything i've tried, 
@@ -204,7 +208,6 @@ Okay really their explanation is better than me, and mostly you just do `apt ins
 
 To access the Proxmox, open `https://your-server-ip-address:8006` and login using `root` and `your-root-password`.
 
-<br>
 #### Chapter 4 - pfSense Installation
 
 Okay now it's come the pfSense part. The installation itself is 
@@ -213,6 +216,7 @@ not as hard because installing pfSense in Proxmox VM is
 
 Okay first, download [pfSense ISO image](https://www.pfsense.org/download/) and make sure to download the `CD Image (ISO) Installer` 
 file not the other one.
+
 <div class="row">
 	<div class="col-sm-4"></div>
 	<div class="col-sm-4">
@@ -222,6 +226,7 @@ file not the other one.
 	</div>
 	<div class="col-sm-4"></div>
 </div>
+
 And copy the ISO to `/var/lib/vz/template/iso`
 
 Then create (at least) two `Network Bridge` in Proxmox for WAN and 
@@ -232,6 +237,7 @@ your pfSense ISO, set CPU as `Default (kvm64)`, add `at least  1024MB` as memory
 
 Then add second `Network Bridge` and start the VM to install 
 pfSense.
+
 <div class="row">
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
@@ -244,7 +250,6 @@ pfSense.
 
 Last, configure pfSense as you need and that's it!
 
-<br>
 #### [UPDATE 2021/02/22] - My Insight Using This System for More Than 6 Months
 
 Alright for starter, this system is working great. I'm actually running this for more than 6 months 
@@ -252,6 +257,7 @@ straight with minor downtime consisting of maintenance and power outage. For som
 if the hardware still the same, yes still the same CPU TL-50, 2 GB RAM, 32 GB SSD connected via USB to 
 SATA adapter, same cooler. For the software side of thing, it basically still the same Proxmox sit on 
 top of the Debian installation. 
+
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
@@ -293,12 +299,12 @@ but hopefully with less headache, so you can sleep well and not dealing with sys
 or heavy disk load. And check other [Thin Client](https://www.parkytowers.me.uk/thin/hware/hardware.shtml) 
 if you want specific device for your need.
 
-<br>
 #### [UPDATE 2021/06/25] - Investigation on high I/O delay when performing write operation
 
 For quite some time i wondering about this system Achilles Heel, which is poor performance or even system 
 halt when data intensive write happen. This includes creating a new disk image, uploading new image file, 
 or simply doing system and kernel update. 
+
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
@@ -317,6 +323,7 @@ end this once and for all what is wrong with this system.
 What i'm going to do is to test most storage combination to get the best possible speed from the available 
 port the system have, which is USB 2.0 and 44 Pins IDE. The way i'm going to test this is to use Gnome Disks 
 Utility built in benchmark to test average read, write, and access time of each combination with parameter below.
+
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
@@ -334,6 +341,7 @@ The combination is
 For ease, i'm going to call C1 as Triangle, C2 as Orico and C3 as DOM.
 
 First, let's get a baseline, Here i'm testing C1 and C2 plug it in to my Asus laptop with USB 3.0 and test it.
+
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
@@ -359,6 +367,7 @@ First, let's get a baseline, Here i'm testing C1 and C2 plug it in to my Asus la
 As you can see there is a lot of difference between Orico adapter and Triangle adapter, not only Random adapter 
 can't deliver the speed it advertises which is only 36 MBPS instead of 300MBPS, it also fluctuates more. Next test 
 is USB 2.0 in the thin client system.
+
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">

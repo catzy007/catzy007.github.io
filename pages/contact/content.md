@@ -2,7 +2,6 @@
 I'm an Computer Science Undergraduate who interested in 
 High Performance Computing and Artificial Intelligence.
 
-<br>
 ##### You can find me at
 
 * Virtual location :

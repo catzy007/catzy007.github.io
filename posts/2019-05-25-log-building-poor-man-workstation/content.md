@@ -2,15 +2,15 @@
 ##### *Saturday, 25 May 2019*
 
 Hello, this is my first post after migrating to <https://catzy007.github.io>. Okay this 
-is the story, I need a multi core machine with as high 
+is the story, I need a multicore machine with as high 
 performance/price as possible. But building machine from new part that 
 equivalent with my need is pricey enough for me. Then i watch 
 this video <https://www.youtube.com/watch?v=7IK0Yer4XTc> and surprise 
-that 10 years old processor can hold up even in 2019. So i looking around a 
+that 10 years old processor can hold up even in 2019. So i looking around an 
 overclockable motherboard like Rampage 3 and found that still surprisingly 
 expensive. So i'm doing more research and found this motherboard that 
 i think is enough for my need [Asus Z8NA-D6](https://www.asus.com/Commercial-Servers-Workstations/Z8NAD6/) 
-It is dual socket LGA1366 with 6 bank of ram and support for ECC 
+It is a dual socket LGA1366 with 6 banks of ram and support for ECC 
 Registered ram. Perfect.
 
 And day after that i quickly made this build plan.
@@ -36,10 +36,10 @@ ANY BOARD < 130$ !
  Z8NR-D12 ~120$
 ```
 
-<br>
 #### [UPDATE 05/22/19 13:39]
-Fast forward and some time with customs and the first item has arrive. 
-That was the motherboard. It even come with IO Shield too
+Fast forward and some time with customs and the first item has arrived. 
+That was the motherboard. It even comes with IO Shield too
+
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
@@ -50,8 +50,10 @@ That was the motherboard. It even come with IO Shield too
     <div class="col-sm-3"></div>
 </div>
 
+::br
+
 Next thing i want to buy is processor. And i made tables about 
-performance/dollar. The price is double because i need 2 processor
+performance/dollar. The price is double because i need 2 processors
 ```
 Model. | CLK  | CB.  | $  | cb/$  | DLT | $DLT
  X5650 @ 2.66   1279 / 22 = 58.     0     0
@@ -61,10 +63,10 @@ Model. | CLK  | CB.  | $  | cb/$  | DLT | $DLT
 ```
 Hopefully i can get X5670 without much problem.
 
-<br>
 #### [UPDATE 06/30/19 22:42]
-After around 2 weeks, the processor was arrive. I quickly search for old DDR3 ram and bought 700W PSU from AeroCool for 30USD.
-Yeah i know not the best PSU but i hope it get job done. After quick plug and test, the system wont boot. . . yeah f*ck. 
+After around 2 weeks, the processor was arrived. I quickly search for old DDR3 ram and bought 700W PSU from AeroCool for 30USD.
+Not the best PSU but i hope it gets job done. After quick plug and test, the system won't boot. 
+
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
@@ -74,12 +76,15 @@ Yeah i know not the best PSU but i hope it get job done. After quick plug and te
     </div>
     <div class="col-sm-3"></div>
 </div>
-My quick diagnose was my old RAM was bad or BIOS in my motherboard was too old, so yeah trying to find working 
-RAM and buying 2009 CPU and update the bios that way. Hopefully i can get E5506 without any problem (once for ever)
 
-<br>
+::br
+
+My quick diagnose was my old RAM was bad or BIOS in my motherboard was too old, so yeah trying to find working 
+RAM and buying 2009 CPU and update the bios that way. Hopefully i can get E5506 without any problem.
+
 #### [UPDATE 07/03/19 09:54]
-After bought two stick of RAM and old AMD HSF from work, i'm ready to test this machine again.. aand it turned on. Great.
+After bought two stick of RAM and old AMD HSF from work, i'm ready to test this machine again, and it turned on. Great.
+
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
@@ -98,13 +103,16 @@ After bought two stick of RAM and old AMD HSF from work, i'm ready to test this 
     </div>
     <div class="col-sm-3"></div>
 </div>
-The actual problem was my ram is dead.. so yeah it mean that i can update BIOS later. Next in my list was getting true on spec HSF.
+
+::br
+
+The actual problem was the ram is dead. Which meant that i can update BIOS later. Next in my list was getting true on spec HSF.
 Hopefully i can get [Deepcool Gammaxx 400](https://www.blibli.com/p/deepcool-gammaxx-400-cpu-cooler/ps--FRC-24438-00061?ds=FRC-24438-00061-00001&source=BRAND_PAGE) or [Deepcool Ice Blade 200M](https://www.blibli.com/p/deepcool-ice-blade-200m-cpu-cooler/ps--FRC-24438-00060?ds=FRC-24438-00060-00001&source=SEARCH_OR_CATEGORY_PAGE). And for cooler, i can only go with LGA2011/1366 screw 
 based cooler because 1366 server board include onboard backplate for CPU mounting.
 
-<br>
 #### [UPDATE 07/16/19 22:31]
-After waiting a week and still didn't get my monthly wage on time, i decide to continue and test my system anyway. The results was
+After waiting a week and still didn't get my monthly wage on time, i decide to continue and test my system anyway. The results were
+
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
@@ -132,23 +140,32 @@ After waiting a week and still didn't get my monthly wage on time, i decide to c
     </div>
     <div class="col-sm-3"></div>
 </div>
-Yeah some number are great but, the temperature was pretty high there. Hopefully i can get the cooler and retest everything.
 
-<br>
+::br
+
+Some number are great but, the temperature was pretty high there. Hopefully i can get the cooler and retest everything.
+
 #### [UPDATE 07/22/19 22:00]
-Today my cooler arrive it's deepcool Ice Blade 200M. I quickly open and mount it on the motherboard aand yeah the LGA2011 screw was too big.
-okay the problem is this
+Today my cooler arrive it's deepcool Ice Blade 200M. I quickly open and mount it on the motherboard and the LGA2011 screw was too big.
+Okay the problem is this.
+
 <div class="row">
-    <div class="col-sm-3"></div>
-    <div class="col-sm-6">
+    <div class="col-sm-4"></div>
+    <div class="col-sm-4">
         <div class="img-thumbnail">
             <img class="img-fluid" loading="lazy" src="./posts/2019-05-25-log-building-poor-man-workstation/add1.jpg" alt="img">
-			<a href="https://forums.servethehome.com/index.php?threads/guide-1356-1366-xeon-aftermarket-heatsink-selection-installation.5003/">image source</a>
+			<p><a href="https://forums.servethehome.com/index.php?threads/guide-1356-1366-xeon-aftermarket-heatsink-selection-installation.5003/">
+            image source
+            </a></p>
         </div>
     </div>
-    <div class="col-sm-3"></div>
+    <div class="col-sm-4"></div>
 </div>
-Then i cut the four corner of backplate using handsaw and this what it look like. The pink thing is nail polish to prevent short circuit from my rough cut
+
+::br
+
+Then i cut the four corner of backplate using handsaw and this what it looks like. The pink thing is nail polish to prevent short circuit from my rough cut
+
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
@@ -158,7 +175,11 @@ Then i cut the four corner of backplate using handsaw and this what it look like
     </div>
     <div class="col-sm-3"></div>
 </div>
-Finally i can mount the cooler using standar intel push-pin fastener
+
+::br
+
+Finally, i can mount the cooler using standard intel push-pin fastener
+
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
@@ -168,8 +189,12 @@ Finally i can mount the cooler using standar intel push-pin fastener
     </div>
     <div class="col-sm-3"></div>
 </div>
+
+::br
+
 Aand here is some benchmark. I get a minute less in blender than previous benchmark not that bad. The problem still the processor get up to 90+ centigrade.
-I think that because the exhaust of second CPU was directed to the first CPU. In other word feeding hot air into heatsink. I can't change the heatsink direction because clearance issues. Hopefully one day i can re route everything.
+I think that because the exhaust of second CPU was directed to the first CPU. In other word feeding hot air into heatsink. I can't change the heatsink direction because clearance issues. Hopefully one day i can re-route everything.
+
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
@@ -189,10 +214,12 @@ I think that because the exhaust of second CPU was directed to the first CPU. In
     <div class="col-sm-3"></div>
 </div>
 
-<br>
+::br
+
 #### [UPDATE 07/01/2019 13:23]
 Yesterday i bought some DDR3 Registered ram for my server. It's 1GB per stick so in total i have 6GB of RAM. 
 The ram itself is very cheap less than 1USD per stick a great deal if you ask me. Maybe some day i can get 4GB stick from aliexpress.
+
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
@@ -202,8 +229,12 @@ The ram itself is very cheap less than 1USD per stick a great deal if you ask me
     </div>
     <div class="col-sm-3"></div>
 </div>
+
+::br
+
 And i made some remote management too. It just simple relay and sbc glued together. Actually i plan to make 
 custom PCB and using arduino + ethernet module to make that but i only had a week to make this. Maybe next time i will revisit that.
+
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
@@ -213,12 +244,15 @@ custom PCB and using arduino + ethernet module to make that but i only had a wee
     </div>
     <div class="col-sm-3"></div>
 </div>
+
+::br
+
 Next thing to buy is case. At first, i plan to buy 2U rackmount case. But in my local area everything server related is expensive, i'm going to  
 use standard ATX case instead.
 
-<br>
 #### [UPDATE 08/17/2019 16:20]
 After getting a random 20USD case from local store, this workstation is 80% finished. 
+
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
@@ -228,12 +262,15 @@ After getting a random 20USD case from local store, this workstation is 80% fini
     </div>
     <div class="col-sm-3"></div>
 </div>
-The last thing i need is Graphic Card. Hopefully i can get RX570 uder 100USD or something.
 
-<br>
+::br
+
+The last thing i need is Graphic Card. Hopefully i can get RX570 under 100USD or something.
+
 #### [UPDATE 09/13/2019 19:57]
 Today the case fan is arrive it's Xfan 120 from deepcool. I hope this will tame that beast ultra hot power hungry CPUs. 
 I bought three fan and set it in Push-Pull configuration
+
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
@@ -252,7 +289,11 @@ I bought three fan and set it in Push-Pull configuration
     </div>
     <div class="col-sm-3"></div>
 </div>
-Also last week i'm bulding new remote management system using ESP8266 and relay, it still has some issues but at the moment it work just fine.
+
+::br
+
+Also last week i'm building new remote management system using ESP8266 and relay, it still has some issues but at the moment it works just fine.
+
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
@@ -263,10 +304,12 @@ Also last week i'm bulding new remote management system using ESP8266 and relay,
     <div class="col-sm-3"></div>
 </div>
 
-<br>
+::br
+
 #### [UPDATE 12/01/2019 15:07]
 Few months pass and here i am. In the meantime, i'm modifying my case so i can get more air coming from 120mm intake fans.
-It's not that pretty but it works really well, I just cut the front case with dremel and put mesh behind followed by some plastic plate.
+It's not that pretty, but it works really well, I just cut the front case with dremel and put mesh behind followed by some plastic plate.
+
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
@@ -276,7 +319,9 @@ It's not that pretty but it works really well, I just cut the front case with dr
     </div>
     <div class="col-sm-3"></div>
 </div>
+
 And finally i got my graphic card. It is RX460 4GB from Sapphire. I know it is not an RX570, but i got it for a good price and it works well.
+
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
@@ -287,6 +332,7 @@ And finally i got my graphic card. It is RX460 4GB from Sapphire. I know it is n
     <div class="col-sm-3"></div>
 </div>
 
-<br>
-And that's wrap this journey to build my own workstation. Next upgrade in my plan is to get 24GB of DDR3 ECC ram from china. 
+::br
+
+And that's wrap this journey to build my own workstation. Next upgrade in my plan is to get 24GB of DDR3 ECC ram from China. 
 Thank you for reading this far. Hope you have a good day!

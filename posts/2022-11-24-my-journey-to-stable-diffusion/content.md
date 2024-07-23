@@ -25,7 +25,6 @@ Which mean that you can also train Stable Diffusion to any image dataset
 including anime character 
 [oh wait, someone did](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Textual-Inversion#using-pre-trained-embeddings).
 
-<br>
 **Decade old server, Polaris 11 GPU, and ROCm. What could go wrong?**
 
 Here i'm going to use system consist of two Xeon X5670 with 12 GB of ECC RAM 
@@ -36,7 +35,6 @@ The last time i'm using Radeon GPU for OpenCL compute i brick my Linux install
 and immediately switched to my Nvidia laptop using CUDA. But this time everything 
 is better and easier which is an improvement.
 
-<br>
 **Installing ROCm**
 
 First, follow [ROCm Docker Quickstart](https://github.com/RadeonOpenCompute/ROCm-docker/blob/master/quick-start.md)
@@ -70,8 +68,8 @@ GPU  Temp  AvgPwr  SCLK  MCLK  Fan  Perf  PwrCap  VRAM%  GPU%
 But as you can see, no GPU compute device shows up. Next i run `rocminfo` and this 
 is what i got.
 
-<details>
-<summary>&#9432; Click to reveal rocminfo output</summary>
+:::details
+::summary[&#9432; Click to reveal rocminfo output]
 ```
 ROCk module is loaded
 =====================    
@@ -194,20 +192,20 @@ Agent 2
   ISA Info:                
 *** Done ***
 ```
-</details>
+:::
+::br
 
 While my GPU is missing, as you can see both of my CPUs is listed 
 instead. Later i decided to continue.
 
-<br>
 **Running under docker**
 
 Here i'm using 
 [AUTOMATIC1111/stable-diffusion-webui](https://github.com/AUTOMATIC1111/stable-diffusion-webui) 
 and create my own Docker Compose with corresponding Dockerfile.
 
-<details>
-<summary>&#9432; Click to reveal docker-compose.yml</summary>
+:::details
+::summary[&#9432; Click to reveal docker-compose.yml]
 ```
 version: '3'
 
@@ -251,9 +249,10 @@ services:
     volumes:
       - ./stablediff-web:/stablediff-web
 ```
-</details>
-<details>
-<summary>&#9432; Click to reveal Dockerfile</summary>
+:::
+
+:::details
+::summary[&#9432; Click to reveal Dockerfile]
 ```
 FROM rocm/pytorch
 ENV DEBIAN_FRONTEND=noninteractive \
@@ -263,7 +262,8 @@ WORKDIR /stablediff-web
 RUN python -m pip install --upgrade pip wheel
 RUN python -m pip install torch torchvision --extra-index-url https://download.pytorch.org/whl/rocm5.1.1
 ```
-</details>
+:::
+::br
 
 To run this, first do `docker-compose pull` this is going 
 to take a while because 
@@ -284,17 +284,17 @@ You may need sudo to do this.
 
 Last, run `docker-compose run stablediff-web`.
 
-<details>
-<summary>&#9432; Click to reveal additional notes</summary>
+:::details
+::summary[&#9432; Click to additional notes]
 * Because rocm/pytorch uses python 3.7, you need to edit 
 `requirements_versions.txt` and change `numpy` to version 
 `1.21.6` and `fairscale` to version `0.4.6`.
 * In case you get ROCm GPU compute working, remove `--skip-torch-cuda-test` 
 from `docker-compose.yml`.
 * In order to run ROCm with RX400/500 GPUs, add `ROC_ENABLE_PRE_VEGA=1` to `/etc/environment`
-</details>
+:::
+::br
 
-<br>
 **Is it working?**
 
 Unfortunately after all of that, this is what i got.
@@ -317,7 +317,6 @@ ROCm GPU compute working. My theory is that pytorch that been
 used in this instance only support AVX/AVX2 instruction set. 
 Which is absent in my Westmere CPUs.
 
-<br>
 **What went wrong?**
 
 First, i want to know why ROCm GPU compute doesn't work in my 
@@ -340,8 +339,9 @@ To prove this, i can run `sudo dmesg | grep kfd` and i should get
 ```
 
 I also run `sudo lspci -s 08:00.0 -vvv` to see more info about my GPU.
-<details>
-<summary>&#9432; Click to reveal lspci output</summary>
+
+:::details
+::summary[&#9432; Click to reveal lspci output]
 ```
 08:00.0 VGA compatible controller: Advanced Micro Devices, Inc. [AMD/ATI] Baffin [Radeon RX 460/560D / Pro 450/455/460/555/555X/560/560X] (rev cf) (prog-if 00 [VGA controller])
 	Subsystem: PC Partner Limited / Sapphire Technology Baffin [Radeon RX 460/560D / Pro 450/455/460/555/555X/560/560X]
@@ -427,7 +427,8 @@ I also run `sudo lspci -s 08:00.0 -vvv` to see more info about my GPU.
 	Kernel driver in use: amdgpu
 	Kernel modules: amdgpu
 ```
-</details>
+:::
+::br
 
 One thing that i found interesting is that this decade old system support 
 `Capabilities: [200 v1] Physical Resizable BAR` but i have no idea if i can use 
@@ -437,7 +438,6 @@ it with modern GPU and get better performance.
 
 [More about how ROCm uses PCIe Atomics](https://rocmdocs.amd.com/en/latest/Installation_Guide/More-about-how-ROCm-uses-PCIe-Atomics.html)
 
-<br>
 **CPU to the rescue**
 
 Apparently you can also run Stable Diffusion using CPU. But you trade 
@@ -463,6 +463,8 @@ to use all threads may improve performance.
 	<div class="col-sm-2"></div>
 </div>
 
+::br
+
 As for Stable Diffusion itself, it is certainly not perfect, but it is 
 in my opinion very usable. For example sometimes face does not align 
 properly, but there is an option to fix it. Then fingers may not be generated 
@@ -481,6 +483,8 @@ Which is mostly stated in [Limitations and Bias](https://huggingface.co/CompVis/
 	<div class="col-sm-2"></div>
 </div>
 
+::br
+
 Good thing about Stable Diffusion open approach is limitless 
 options. Instead of relying on web service to fine tune or fix an issue, 
 you can go online and 
@@ -491,7 +495,6 @@ model, or you want other more specific style instead, well
 or better yet, 
 [train your own model](https://github.com/AUTOMATIC1111/stable-diffusion-webui/discussions/2284).
 
-<br>
 **CUDA: I am speed**
 
 Using CPUs give great amount of compatibility with performance penalty. 
@@ -514,6 +517,8 @@ compared to 5 to 6 Minutes. Not only using GPU is more efficient 75W vs 190W
 	<div class="col-sm-2"></div>
 </div>
 
+::br
+
 Using CUDA in my opinion gives the best result so far. Installation is seamless, 
 performance is great, it is more efficient. Unless in my case, my laptop only 
 have 2 GB of VRAM which require `--lowvram` parameter easy. But the issue is 8 
@@ -532,7 +537,8 @@ of memory and crash.
 	<div class="col-sm-2"></div>
 </div>
 
-<br>
+::br
+
 **Docker all the things**
 
 With all the results so far, here is how i did it.
@@ -557,8 +563,8 @@ then run `docker-compose --version` and make sure you're running docker-compose
 
 * Then copy and save following files inside `stable-diffusion` directory.
 
-<details>
-<summary>&#9432; Click to reveal `docker-compose.yml`</summary>
+:::details
+::summary[&#9432; Click to reveal `docker-compose.yml`]
 ```
 version: '3'
 
@@ -655,10 +661,10 @@ services:
       - ./stablediff-web:/stablediff-web
       - ./stablediff-models:/stablediff-web/models/Stable-diffusion
 ```
-</details>
+:::
 
-<details>
-<summary>&#9432; Click to reveal `Dockerfile.cpu`</summary>
+:::details
+::summary[&#9432; Click to reveal `Dockerfile.cpu`]
 ```
 FROM python:3.10.6-bullseye
 ENV DEBIAN_FRONTEND=noninteractive \
@@ -679,10 +685,10 @@ RUN python launch.py --skip-torch-cuda-test --exit
 RUN python -m pip install opencv-python-headless
 WORKDIR /stablediff-web
 ```
-</details>
+:::
 
-<details>
-<summary>&#9432; Click to reveal `Dockerfile.cuda`</summary>
+:::details
+::summary[&#9432; Click to reveal `Dockerfile.cuda`]
 ```
 FROM nvidia/cuda:11.3.1-base-ubuntu20.04
 ENV DEBIAN_FRONTEND=noninteractive \
@@ -708,10 +714,10 @@ RUN python launch.py --skip-torch-cuda-test --exit
 RUN python -m pip install opencv-python-headless
 WORKDIR /stablediff-web
 ```
-</details>
+:::
 
-<details>
-<summary>&#9432; Click to reveal `Dockerfile.rocm`</summary>
+:::details
+::summary[&#9432; Click to reveal `Dockerfile.rocm`]
 ```
 FROM rocm/dev-ubuntu-20.04
 ENV DEBIAN_FRONTEND=noninteractive \
@@ -737,37 +743,38 @@ RUN python launch.py --skip-torch-cuda-test --exit
 RUN python -m pip install opencv-python-headless
 WORKDIR /stablediff-web
 ```
-</details>
+:::
 
-<details>
-<summary>&#9432; Click to reveal `stablediff.env`</summary>
+:::details
+::summary[&#9432; Click to reveal `stablediff.env`]
 ```
 export COMMANDLINE_ARGS="--listen"
 ```
-</details>
+:::
 
-<details>
-<summary>&#9432; Click to reveal `.dockerignore`</summary>
+:::details
+::summary[&#9432; Click to reveal `.dockerignore`]
 ```
 stablediff-web/
 stablediff-models/
 *.ckpt
 ```
-</details>
+:::
+::br
 
 * Edit launch parameter to match your system. Open `stablediff.env` and set it to the following.
     - Using CPU 
-        <pre>
+        ```
         export COMMANDLINE_ARGS="--listen --no-half --skip-torch-cuda-test"
-        </pre>
+        ```
     - Using CUDA 
-        <pre>
+        ```
         export COMMANDLINE_ARGS="--listen"
-        </pre>
+        ```
     - Using ROCm 
-        <pre>
+        ```
         export COMMANDLINE_ARGS="--listen --precision full --no-half"
-        </pre>
+        ```
     <p>You can also add 
     <a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Command-Line-Arguments-and-Settings#all-command-line-arguments">other parameter</a> 
     such as <code>--lowvram</code> for GPU with 2 GB of VRAM.</p>
@@ -776,47 +783,71 @@ stablediff-models/
 
 * Then build the Stable Diffusion Docker image, to do this enter.
     - Using CPU 
-        <pre>docker-compose build stablediff-cpu</pre>
+        ```
+        docker-compose build stablediff-cpu
+        ```
     - Using CUDA 
-        <pre>docker-compose build stablediff-cuda</pre>
+        ```
+        docker-compose build stablediff-cuda
+        ```
     - Using ROCm 
-        <pre>docker-compose build stablediff-rocm</pre>
+        ```
+        docker-compose build stablediff-rocm
+        ```
     <p>This may take a while.</p>
 
 * If everything goes smoothly, initialize the Diffusion Docker image 
 by entering.
     - Using CPU 
-        <pre>docker-compose up stablediff-cpu</pre>
+        ```
+        docker-compose up stablediff-cpu
+        ```
     - Using CUDA 
-        <pre>docker-compose up stablediff-cuda</pre>
+        ```
+        docker-compose up stablediff-cuda
+        ```
     - Using ROCm 
-        <pre>docker-compose up stablediff-rocm</pre>
+        ```
+        docker-compose up stablediff-rocm
+        ```
 
 * After that, you will get message `Please copy stable diffusion model`. 
 Copy your stable diffusion model to `stablediff-models` directory.
 
 * To start Stable Diffusion, enter. 
     - Using CPU 
-        <pre>docker start -a stablediff-cpu-runner</pre>
+        ```
+        docker start -a stablediff-cpu-runner
+        ```
     - Using CUDA 
-        <pre>docker start -a stablediff-cuda-runner</pre>
+        ```
+        docker start -a stablediff-cuda-runner
+        ```
     - Using ROCm 
-        <pre>docker start -a stablediff-rocm-runner</pre>
+        ```
+        docker start -a stablediff-rocm-runner
+        ```
     <p>Do this every time you want to run Stable Diffusion.</p>
 
 * Next Open Web browser and go to <http://localhost:7860/>
 
 * To stop Stable Diffusion, press `Ctrl + C` then enter.
     - Using CPU 
-        <pre>docker stop stablediff-cpu-runner</pre>
+        ```
+        docker stop stablediff-cpu-runner
+        ```
     - Using CUDA 
-        <pre>docker stop stablediff-cuda-runner</pre>
+        ```
+        docker stop stablediff-cuda-runner
+        ```
     - Using ROCm 
-        <pre>docker stop stablediff-rocm-runner</pre>
+        ```
+        docker stop stablediff-rocm-runner
+        ```
 
 And that's pretty much it.
 
-<br>
+<!-- <br> -->
 **Final Words**
 
 Based on what i see from current technology of machine learning based image 

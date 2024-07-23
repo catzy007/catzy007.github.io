@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="light">
 <head>
     <title>Catzy's Blog</title>
     <meta charset="UTF-8">
@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./font/bootstrap-icons.css">
     <link rel="stylesheet" href="./css/stevia-style.css"/>
+    <link rel="stylesheet" href="./css/stevia-style-dark.css"/>
     <script src="./js/website-info.js"></script>
     <script src="./js/main-engine/xhr-fetcher.js"></script>
     <script src="./js/main-engine/index-parser.js"></script>
@@ -26,10 +27,16 @@
     <script src="./js/homepage-engine/homepage-latest.js"></script>
 </head>
 <body>
+    <script>
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.documentElement.setAttribute("data-bs-theme","dark");
+        }
+    </script>
+
     <div class="container stevia-container-header">
         <nav class="navbar navbar-expand-lg stevia-navbar">
             <div class="container-fluid">
-                <a id="siteBranding" class="navbar-brand stevia-navbar-brand" href="./"></a>
+                <a id="siteBranding" class="navbar-brand stevia-color" href="./"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="bi-list stevia-color"></span>
                 </button>
@@ -248,7 +255,6 @@
         loadSiteMainTitle();
         executeXhr("./posts/index.md", loadHomepageIndex, "POST-INDEX", "latest-post");
     </script>
-    <script src="./js/bootstrap.bundle.min.js"></script>
-    <script src="./js/showdown.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
 </body>
 </html>

@@ -13,7 +13,6 @@ for most of the time, the driver just propriatery so the linux cant include it i
 the iso's. So to install the driver, you need to download and install it manually. 
 That's what we're doing here.
 
-<br>
 #### First, getting information about your wifi model number
 what you need to do is
 ```
@@ -24,6 +23,7 @@ this will list all your hardware on PCI bus. Or if your device is usb then
 sudo lsusb
 ```
 it will do the same thing but via usb
+
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
@@ -33,11 +33,14 @@ it will do the same thing but via usb
     </div>
     <div class="col-sm-3"></div>
 </div>
+
+::br
+
 as you can see in my `Network Controller` it is `BCM43142` try to remember that.
 
-<br>
 #### Next google how to install wifi driver
 just do simple googling.
+
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
@@ -47,11 +50,14 @@ just do simple googling.
     </div>
     <div class="col-sm-3"></div>
 </div>
+
+::br
+
 > You might need to plug LAN cable or use verified wifi dongle to proceed
 
-<br>
 #### Next install your wifi driver
 in my case it's `sudo apt install bcmwl-kernel-source`
+
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
@@ -70,9 +76,11 @@ in my case it's `sudo apt install bcmwl-kernel-source`
     </div>
     <div class="col-sm-3"></div>
 </div>
+
+::br
+
 > Your specific device might be different
 
-<br>
 #### Then reboot your machine and your wifi will work
 <div class="row">
     <div class="col-sm-3"></div>
@@ -83,5 +91,7 @@ in my case it's `sudo apt install bcmwl-kernel-source`
     </div>
     <div class="col-sm-3"></div>
 </div>
+
+::br
 
 > This method can be use to install any device. Just find the model number and google it

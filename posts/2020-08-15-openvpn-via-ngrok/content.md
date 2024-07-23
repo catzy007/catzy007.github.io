@@ -10,7 +10,6 @@ internet.
 
 Before proceed, make sure you have a [ngrok account](https://dashboard.ngrok.com/signup)
 
-<br>
 #### Installing dependencies
 * Install curl and openvpn
 
@@ -19,7 +18,6 @@ Before proceed, make sure you have a [ngrok account](https://dashboard.ngrok.com
     sudo apt install curl openvpn
     ```
 
-<br>
 #### Setting up OpenVPN
 * Get and install openvpn using [openvpn-install script](https://github.com/angristan/openvpn-install)
 
@@ -45,7 +43,6 @@ Before proceed, make sure you have a [ngrok account](https://dashboard.ngrok.com
 * Then you should receive file with `.ovpn` extension. Copy this file and keep it private
 * In this case my file is `nana.ovpn` your filename might be different
 
-<br>
 #### Setting up Ngrok
 * Download Ngrok binary from [ngrok.com](https://ngrok.com/download)
 * Unzip downloaded file to `/home/nana`
@@ -62,7 +59,6 @@ Before proceed, make sure you have a [ngrok account](https://dashboard.ngrok.com
 * Change `<YOUR AUTHTOKEN>` to your [ngrok authtoken](https://dashboard.ngrok.com/auth/your-authtoken)
 > `KEEP YOUR AUTHTOKEN PRIVATE!`
 
-<br>
 #### Setting up Ngrok-Service
 * Create service file called `ngrok.service` and place it in `/etc/systemd/system/`
 
@@ -104,7 +100,6 @@ Before proceed, make sure you have a [ngrok account](https://dashboard.ngrok.com
                 └─682 /home/nana/ngrok start --all --config /home/nana/.ngrok2/ngrok.yml
     ```
 
-<br>
 #### Connecting to your VPN
 * Install openvpn in your device (it could be your laptop or anything)
 * Copy `nana.ovpn` file to device (obtained from step Setting up OpenVPN)

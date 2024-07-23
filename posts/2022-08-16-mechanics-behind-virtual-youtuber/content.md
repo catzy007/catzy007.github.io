@@ -29,6 +29,9 @@ meant that combining animation, computer graphics and MoCap is possible.
 	</div>
 	<div class="col-sm-2"></div>
 </div>
+
+::br
+
 While early system paved a way, it was 
 [expensive](https://web.archive.org/web/20000830080826/http://reality.sgi.com/jam_sb/mocap/MoCapWP_v2.0.html) 
 and require a 
@@ -49,6 +52,7 @@ and regular RGB camera. The way this works is Kinect IR Projector is
 Then a mathematic calculation is performed to determine how far an object 
 is according to how the light pattern has changed. This way you can get 
 depth data from your surrounding area. 
+
 <div class="row">
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
@@ -58,6 +62,9 @@ depth data from your surrounding area.
 	</div>
 	<div class="col-sm-2"></div>
 </div>
+
+::br
+
 You can use the depth data to create a 
 [Point Cloud](https://en.wikipedia.org/wiki/Point_cloud) then recreate it 
 as 3D model of surrounding area, or you can use the depth data to filter 
@@ -76,6 +83,7 @@ MMD is freeware that allows its users to create 3D animation by meticulously
 move avatar skeletal bones and joints. Instead of manually move skeletal bone 
 one by one you can use kinect motion data to move avatar skeletal bone, and you 
 get motion capture animation.
+
 <div class="row">
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
@@ -85,11 +93,15 @@ get motion capture animation.
 	</div>
 	<div class="col-sm-2"></div>
 </div>
+
+::br
+
 This allow small or even individual creators to make animations, music 
 videos and even video games. Unfortunately at the mid of 2011, original 
 creator of MMD stopped it's development and left the fate of MMD to it's 
 community without any source code release. Fortunately alternative 
 software existed such as [MikuMikuCapture (MMC)](https://sites.google.com/site/mikumikucapturee/).
+
 <div class="row">
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
@@ -99,6 +111,9 @@ software existed such as [MikuMikuCapture (MMC)](https://sites.google.com/site/m
 	</div>
 	<div class="col-sm-2"></div>
 </div>
+
+::br
+
 You can use it as is live or capture and load the motion data to 
 [blender](https://www.blender.org/) and do animation works there.
 
@@ -109,6 +124,7 @@ motion capture. Improvement in
 [Head Pose Estimation](https://learnopencv.com/head-pose-estimation-using-opencv-and-dlib/) 
 among other computer vision algorithm allows motion capture using regular 
 camera. 
+
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
@@ -118,6 +134,9 @@ camera.
 	</div>
 	<div class="col-sm-3"></div>
 </div>
+
+::br
+
 While it is working, the computational cost of such system is quite high. 
 To combat this, pre-trained datasets can be used instead of manually training 
 the algorithm for example 
@@ -127,6 +146,7 @@ Motion capture above uses camera at least in one form or another. There is
 also motion capture system that do not use any camera, instead they're using 
 [Inertial Measurement Unit (IMU)](https://en.wikipedia.org/wiki/Inertial_measurement_unit) 
 which consist of few sensors like accelerometer, gyroscope, magnetometer, etc.
+
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
@@ -136,6 +156,9 @@ which consist of few sensors like accelerometer, gyroscope, magnetometer, etc.
 	</div>
 	<div class="col-sm-3"></div>
 </div>
+
+::br
+
 The way this works is first 
 [you strap IMU to strategic part of your body like legs, waist, etc](https://www.xsens.com/products/mvn-animate). 
 Then you sent the IMU data usually via wireless and recipient computer translate 
@@ -150,6 +173,7 @@ and rigging is hard and takes a lot of time. Fortunately Pixiv created
 character it is pretty much the same. If you want more, you can create your 
 own 3D component in other software and load them to your avatar you can also 
 draw your own texture and add custom text or logo to your avatar.
+
 <div class="row">
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
@@ -159,6 +183,9 @@ draw your own texture and add custom text or logo to your avatar.
 	</div>
 	<div class="col-sm-2"></div>
 </div>
+
+::br
+
 Remember that you can always convert from one 3D format to another, sometimes 
 with a catch and sometimes not at all.
 
@@ -168,6 +195,7 @@ for example a face, lips, eyes, ears, body, legs, etc. and then you
 ["connect them together"](https://docs.live2d.com/cubism-editor-manual/template/#) 
 then the software mathematically deform and transform respected parts according 
 to motion data.
+
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
@@ -177,6 +205,8 @@ to motion data.
 	</div>
 	<div class="col-sm-3"></div>
 </div>
+
+::br
 
 And that's the current technology behind Virtual YouTuber. There is also 
 technology such as [Virtual Reality (VR)](https://en.wikipedia.org/wiki/Virtual_reality) 
