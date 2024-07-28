@@ -10,7 +10,8 @@
 		var markdown = (this.responseText);
 		marked.use(createDirectives(), 
 			{async: false, pedantic: false,
-			breaks: false, gfm: true,});
+			breaks: false, gfm: true,
+			renderer});
 		var html = marked.parse(markdown);
 
 		html = html.replace(/<pre><code>/g, '<pre class="language-bash"><code>');
