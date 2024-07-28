@@ -13,15 +13,7 @@ began to dismantle the unit, grab myself corresponding
 [OpenWRT factory image](https://openwrt.org/toh/tp-link/cpe210), 
 use SPI flash programmer to flash the new firmware, and it works!
 
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2024-07-20-easy-internet-voucher-using-opennds/01.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img](./posts/2024-07-20-easy-internet-voucher-using-opennds/01.jpg)
 
 Next, I plug the WAN to my home router LAN, plug LAN to my PC and go to 
 OpenWRT admin page and set proper password. Next I ssh into the unit and install 
@@ -57,15 +49,7 @@ cat /tmp/ndslog/vouchers.txt
 Next, open any website, and you will be prompted to enter a voucher, and 
 that's pretty much it.
 
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2024-07-20-easy-internet-voucher-using-opennds/02.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img](./posts/2024-07-20-easy-internet-voucher-using-opennds/02.jpg)
 
 But wait, there are few caveats. First because OpenNDS uses port 80, https is 
 required to open OpenWRT admin page for example <https://192.168.1.1>. Next 
