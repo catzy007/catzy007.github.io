@@ -14,8 +14,6 @@
 			renderer});
 		var html = marked.parse(markdown);
 
-		html = html.replace(/<pre><code>/g, '<pre class="language-bash"><code>');
-		html = html.replace(/<blockquote>/g, '<blockquote class="blockquote">');
 		html = DOMPurify.sanitize(html, 
 			{ ADD_TAGS: ["iframe"], ADD_ATTR: ['allow', 'allowfullscreen', 'frameborder', 'scrolling'] });
 		document.getElementById('main-content').innerHTML = html;
@@ -31,6 +29,8 @@
 		}
 
 	//code highlighter
+		hljs.registerAliases("undefined", "bash");
+		hljs.configure({languages: ["bash"]});
 		hljs.highlightAll();
 		// console.timeEnd("Parser");
 	}
