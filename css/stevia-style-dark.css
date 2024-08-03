@@ -39,7 +39,6 @@
     }
     p, a, code { 
         font-size: 1.0rem;
-        color: #787878;
     }
     a, a:hover {
         color: var(--bs-link-hover-color);
