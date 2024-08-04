@@ -221,3 +221,9 @@
         color: var(--bs-text-emphasis);
     }
 }
+
+@media (prefers-color-scheme: dark) {
+    iframe[src*="disqus.com"] {
+      color-scheme: light;
+    }
+}
