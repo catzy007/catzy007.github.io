@@ -71,7 +71,7 @@
     }
     .stevia-container-main {
         padding: 0% 10% 0% 10%;
-        min-height: 100vh;
+        min-height: 75vh;
         border-left: thin solid var(--bs-border-color);
         border-right: thin solid var(--bs-border-color);
     }
@@ -86,6 +86,9 @@
     .stevia-container-header, .stevia-container-searchfeat, 
     .stevia-container-main, .stevia-container-footer {
         background-color: var(--bs-secondary-bg);
+    }
+    .stevia-error-page {
+        height: 50vh;
     }
     
     @media (max-width: 768px) {
@@ -102,15 +105,18 @@
         }
         .stevia-container-footer {
             margin-bottom: 2%;
-            padding: 2% 3% 3% 3%;
+            padding: 10% 3% 3% 3%;
         }
         .stevia-container-header, .stevia-container-searchfeat, 
         .stevia-container-main, .stevia-container-footer {
             background-color: var(--bs-secondary-bg);
         }
+        .stevia-error-page {
+            height: 0vh;
+        }
     }
     
-     /* toggle desktop and mobile */
+    /* toggle desktop and mobile */
     #stevia-desktop {
         display: block;
     }
