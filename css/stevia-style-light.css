@@ -4,7 +4,7 @@
     --bs-tertiary-bg: #55688A;
     --bs-text-emphasis: #55688A;
     --stevia-shadow-color: #ddd;
-    --stevia-navbar-hover: #E7E7E7;
+    --stevia-shadow-hover: #E7E7E7;
     --bs-link-color: #283040;
     --bs-link-hover-color: #55688A;
     --stevia-search-border-color: #86b7fe;
@@ -149,7 +149,7 @@ a, a:hover {
 .stevia-navbar-ul > li > a:hover,
 .stevia-navbar-ul > li > a:focus {
     color: var(--bs-link-color);
-    background: var(--stevia-navbar-hover);
+    background: var(--stevia-shadow-hover);
 }
 .navbar-toggler, .navbar-toggler:focus { 
     box-shadow: none;
@@ -179,7 +179,7 @@ a, a:hover {
     border: none;
 }
 .stevia-container-search button:hover {
-    background: var(--bs-secondary-bg);
+    background: var(--stevia-shadow-hover);
 }
 .stevia-container-search button span {
     color: var(--bs-link-hover-color);
