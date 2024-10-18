@@ -4,6 +4,7 @@
         --bs-secondary-bg: #1b1f22;
         --bs-tertiary-bg: #22272d;
         --bs-text-emphasis: #fff;
+        --bs-link-hover-color: #8bb9fe;
     }
     
     /* Disable horizontal scroll */
@@ -44,6 +45,9 @@
         color: var(--bs-link-hover-color);
     }
     .stevia-color, #siteBranding {
+        color: var(--bs-link-hover-color);
+    }
+    #siteBranding:hover {
         color: var(--bs-link-hover-color);
     }
     .stevia-hidden {
@@ -156,6 +160,7 @@
     }
     .stevia-container-search:has(input:focus),
     .stevia-container-search:has(button:active) {
+        box-shadow: none;
         border: thin solid var(--bs-link-hover-color);
     }
     .stevia-container-search button {
