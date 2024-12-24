@@ -11,7 +11,11 @@ function executeXhr(url, callback) {
     xhr.onreadystatechange = () => {
         if (xhr.readyState === xhr.HEADERS_RECEIVED) {
             const contentType = xhr.getResponseHeader("Content-Type");
-            if (contentType !== null && !contentType.includes("text/markdown")) {
+            if (contentType !== null &&
+                !contentType.includes("text/markdown") &&
+                !contentType.includes("text/plain") &&
+                !contentType.includes("text/xml")
+            ) {
                 xhr.status = 404;
                 xhr.abort();
             }
