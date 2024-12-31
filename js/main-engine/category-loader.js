@@ -3,7 +3,7 @@ function categoryListWrapper(targetUrl, targetName){
     var categoryElmtPara = document.createElement("p");
     var categoryElmtAncr = document.createElement("a");
     categoryElmtAncr.innerHTML = targetName;
-    categoryElmtAncr.href = "./loader?category=" + targetUrl;
+    categoryElmtAncr.href = "./loader.html?category=" + targetUrl;
     categoryElmtAncr.classList.add("category-list")
     categoryElmtPara.appendChild(categoryElmtAncr);
     return categoryElmtPara;
@@ -42,7 +42,7 @@ function categoryPageWrapper(targetUrl, targetUrlSection, targetDate, targetName
     var categoryElmtPara = document.createElement("p");
     var categoryElmtAncr = document.createElement("a");
     categoryElmtAncr.innerHTML = targetDate + targetName;
-    categoryElmtAncr.href = "./loader?" + targetUrlSection + "=" + targetUrl;
+    categoryElmtAncr.href = "./loader.html?" + targetUrlSection + "=" + targetUrl;
     categoryElmtPara.appendChild(categoryElmtAncr);
     return categoryElmtPara;
 }

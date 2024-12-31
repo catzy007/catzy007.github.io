@@ -31,7 +31,7 @@ function loadHomepageRecommended(arrIndex, arrLower){
     }
 
     for(var i=0; i<recLoadMax; i++){
-        document.getElementById(recPostCardId[i]).href = "./loader?post=" + recommendedPostL[i];
+        document.getElementById(recPostCardId[i]).href = "./loader.html?post=" + recommendedPostL[i];
         setElmtThumbnail(recPostImgId[i], "./posts/" + recommendedPostL[i] + "/thumbnail.jpg");
         document.getElementById(recPostDateId[i]).innerHTML = getTitleDate(recommendedPostI[i]);
         document.getElementById(recPostTitleId[i]).innerHTML = getTitleOnly(recommendedPostI[i]);
