@@ -2,7 +2,7 @@ function IndexWrapper(targetUrl, targetDate, targetName){
     var IndexElmtPara = document.createElement("p");
     var IndexElmtAncr = document.createElement("a");
     IndexElmtAncr.innerHTML = targetDate + " - " + targetName;
-    IndexElmtAncr.href = "./loader.html?post=" + targetUrl;
+    IndexElmtAncr.href = "./loader?post=" + targetUrl;
     IndexElmtPara.appendChild(IndexElmtAncr);
     return IndexElmtPara;
 }

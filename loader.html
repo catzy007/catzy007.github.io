@@ -48,16 +48,16 @@
                             <a class="nav-link" href="./">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./loader.html?index=all">Index</a>
+                            <a class="nav-link" href="./loader?index=all">Index</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./loader.html?pages=contact">Contact</a>
+                            <a class="nav-link" href="./loader?pages=contact">Contact</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./loader.html?pages=about">About</a>
+                            <a class="nav-link" href="./loader?pages=about">About</a>
                         </li>
                         <li id="stevia-mobile" class="nav-item">
-                            <a class="nav-link" href="./loader.html?category=index">Category</a>
+                            <a class="nav-link" href="./loader?category=index">Category</a>
                         </li>
                     </ul>
                 </div>
@@ -175,13 +175,15 @@
     <script type="module">
         import { marked } from './js/marked.esm.js';
         import { createDirectives } from './js/marked-directive.esm.js';
+        import { markedHighlight } from './js/marked-highlight.esm.js';
         import DOMPurify from './js/purify.esm.js';
-        import hljs from './js/highlight.min.js';
+        import highlightJs from './js/highlight.esm.js';
 
         window.marked = marked;
         window.createDirectives = createDirectives;
+        window.markedHighlight = markedHighlight;
         window.DOMPurify = DOMPurify;
-        window.hljs = hljs;
+        window.hljs = highlightJs;
 
         window.scrollTo(0, 0); 
         loadSiteMainTitle();

@@ -1,7 +1,9 @@
 function executeXhr(url, callback) {
+    var logTime = true;
     var xhr = new XMLHttpRequest();
     xhr.callback = callback;
     xhr.arguments = Array.prototype.slice.call(arguments, 2);
+    if (logTime) console.time("#![" + xhr.arguments[0] + "] XMLHttpRequest");
     xhr.onload = xhrSuccess;
     xhr.onerror = xhrError;
     xhr.onabort = xhrError;
@@ -20,6 +22,9 @@ function executeXhr(url, callback) {
                 xhr.abort();
             }
         }
+        if (logTime && xhr.readyState === xhr.DONE) {
+            console.timeEnd("#![" + xhr.arguments[0] + "] XMLHttpRequest");
+        }
     };
 }
 
@@ -34,7 +39,7 @@ function xhrSuccess() {
 
 function xhrError(type, status) { 
     console.log("#![" + (this.arguments || type) + "] XMLHttpRequest Error! " + (this.statusText || status || 'Not Found'));
- 
+
     var errorPage = "";
     errorPage = errorPage.concat("<table align='center' class='stevia-error-page'>");
     errorPage = errorPage.concat("<tbody>")
