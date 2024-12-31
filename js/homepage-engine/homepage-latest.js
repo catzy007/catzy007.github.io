@@ -25,7 +25,7 @@ function loadHomepageLatest(arrIndex, arrLower){
     }
 
     for(var i=0; i<latLoadMax; i++){
-        document.getElementById(latPostCardId[i]).href = "./loader.html?post=" + arrLowLatest[i];
+        document.getElementById(latPostCardId[i]).href = "./loader?post=" + arrLowLatest[i];
         setElmtThumbnail(latPostImgId[i], "./posts/" + arrLowLatest[i] + "/thumbnail.jpg");
         document.getElementById(latPostDateId[i]).innerHTML = getTitleDate(arrIdxLatest[i]);
         document.getElementById(latPostTitleId[i]).innerHTML = getTitleOnly(arrIdxLatest[i]);
