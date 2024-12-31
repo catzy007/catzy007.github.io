@@ -1,27 +1,27 @@
 const renderer = {
-    blockquote(properties) {
-        console.log(properties);
-        const body = marked.parse(properties.text);
+    blockquote(token) {
+        console.log(token);
+        const body = marked.parse(token.text);
         return `<blockquote class="blockquote">\n${body}</blockquote>\n`;
     },
-    image(properties){
-        console.log(properties);
-        const cleanHref = encodeURI(properties.href).replace(/%25/g, '%');
+    image(token){
+        console.log(token);
+        const cleanHref = encodeURI(token.href).replace(/%25/g, '%');
         if (cleanHref === null) {
             return text;
         }
-        properties.href = cleanHref;
+        token.href = cleanHref;
 
         return '<div class="row">'
             + '<div class="col-sm-3"></div>'
             + '<div class="col-sm-6">'
             + '<div class="img-thumbnail">'
             + '<img class="img-fluid" alt="'
-            + properties.text
+            + token.text
             + '" loading="lazy" src="'
-            + properties.href
+            + token.href
             + '" '
-            + (properties.title ? 'title="' + properties.title + '">' : '>')
+            + (token.title ? 'title="' + token.title + '">' : '>')
             + '</div>'
             + '</div>'
             + '<div class="col-sm-3"></div>'
