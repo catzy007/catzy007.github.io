@@ -8,7 +8,7 @@ function startSearch(){
         keyword = fiterSearchKeyword(document.getElementById("searchInputM").value);
     }
     if(keyword){
-        location.href = "./loader?search=" + keyword;
+        location.href = "./loader.html?search=" + keyword;
     }
 }
 
@@ -22,7 +22,7 @@ function searchContentWrapper(targetUrl, targetDate, targetName){
     var searchElmtPara = document.createElement("p");
     var searchElmtAncr = document.createElement("a");
     searchElmtAncr.innerHTML = targetDate + " - " + targetName;
-    searchElmtAncr.href = "./loader?post=" + targetUrl;
+    searchElmtAncr.href = "./loader.html?post=" + targetUrl;
     searchElmtPara.appendChild(searchElmtAncr);
     return searchElmtPara;
 }
