@@ -55,16 +55,7 @@ designed spaces with multiple large screens.
 ##### **Then we come to building parts yaay.**
 1. First we need to measure length and width of our screen.
 
-<div class="row">
-    <div class="col-sm-2"></div>
-    <div class="col-sm-8">
-        <div class="img-thumbnail">
-            <img class="img-fluid" loading="lazy" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/1.jpg" alt="img">
-			<span>measurement on image not to be scaled!</span>
-        </div>
-    </div>
-    <div class="col-sm-2"></div>
-</div>
+![img](./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/1.jpg)
 
 ::br
 
@@ -72,15 +63,7 @@ Make sure screen is working before proceeding.
 
 2. Make some hole to mount your screen to vr case based on your measurements.
 
-<div class="row">
-    <div class="col-sm-3"></div>
-    <div class="col-sm-6">
-        <div class="img-thumbnail">
-            <img class="img-fluid" loading="lazy" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/2.jpg" alt="img">
-        </div>
-    </div>
-    <div class="col-sm-3"></div>
-</div>
+![img](./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/2.jpg)
 
 ::br
 
@@ -90,31 +73,13 @@ Make sure screen is working before proceeding.
 
 3. Mount screen to case and add some glue. i'm using hot-glue but you can use silicon glue or anything that doesn't destroy PCB.
 
-<div class="row">
-    <div class="col-sm-3"></div>
-    <div class="col-sm-6">
-        <div class="img-thumbnail">
-            <img class="img-fluid" loading="lazy" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/3.jpg" alt="img">
-			<span>re test your screen to make sure everything went well</span>
-        </div>
-    </div>
-    <div class="col-sm-3"></div>
-</div>
+![img](./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/3.jpg)
 
 ::br
 
 4. Solder your MPU6050 or any Gyro+Acceleration sensors you use to arduino nano or pro micro.
 
-<div class="row">
-    <div class="col-sm-3"></div>
-    <div class="col-sm-6">
-        <div class="img-thumbnail">
-            <img class="img-fluid" loading="lazy" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/4.jpg" alt="img">
-			<span>make sure all sensors is working properly</span>
-        </div>
-    </div>
-    <div class="col-sm-3"></div>
-</div>
+![img](./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/4.jpg)
 
 ::br
 
@@ -126,16 +91,7 @@ Make sure screen is working before proceeding.
 
 5. Mount sensors to your case. I'm using foam double sided tape, if you have sugru or something similar then use it.
 
-<div class="row">
-    <div class="col-sm-3"></div>
-    <div class="col-sm-6">
-        <div class="img-thumbnail">
-            <img class="img-fluid" loading="lazy" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/5.jpg" alt="img">
-			<span>measurement on image not to be scaled!</span>
-        </div>
-    </div>
-    <div class="col-sm-3"></div>
-</div>
+![img](./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/5.jpg)
 
 ::br
 
@@ -145,15 +101,7 @@ Make sure screen is working before proceeding.
 1. Install and open arduino IDE followed by load `Arduino script\YawPtichRoll.ino` you download 
 from [github](https://github.com/catzy007/HeadTracking-Arduino-FreePie/)
 
-<div class="row">
-    <div class="col-sm-3"></div>
-    <div class="col-sm-6">
-        <div class="img-thumbnail">
-            <img class="img-fluid" loading="lazy" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/6.jpg" alt="img">
-        </div>
-    </div>
-    <div class="col-sm-3"></div>
-</div>
+![img](./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/6.jpg)
 
 ::br
 
@@ -162,15 +110,7 @@ board, processor, and com port!
 
 3. Then change open serial monitor, change baud rate to 115200 and you'll see something like this
 
-<div class="row">
-    <div class="col-sm-3"></div>
-    <div class="col-sm-6">
-        <div class="img-thumbnail">
-            <img class="img-fluid" loading="lazy" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/7.jpg" alt="img">
-        </div>
-    </div>
-    <div class="col-sm-3"></div>
-</div>
+![img](./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/7.jpg)
 
 ::br
 
@@ -359,30 +299,13 @@ The reason why i choose MPU6050, first is price. It cost 2 USD each.
 so it's very good compare to GY-85 10 USD. Second, old oculus is using 
 MPU-6000 <http://developers-club.com/posts/181159/>
 
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/17.jpg" alt="img">
-			<span>MPU-6000 highlighted in orange</span>
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img](./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/17.jpg)
 
 ::br
 
 and based on this datasheet from [ivensense](https://store.invensense.com/datasheets/invensense/MPU-6050_DataSheet_V3%204.pdf)
 
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/18.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img](./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/18.jpg)
 
 ::br
 

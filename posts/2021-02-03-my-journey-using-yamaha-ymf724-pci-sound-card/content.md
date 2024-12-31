@@ -33,15 +33,7 @@ i am looking for a way to check if this card is working. The problem is that dri
 card is 32Bit WDM driver for Windows XP so in order to make this work in 64Bit windows, i had to 
 recompile the driver to 64Bit. 
 
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/3.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img](./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/3.jpg)
 
 ::br
 
@@ -258,15 +250,7 @@ even hardware passthrough like this.
 After having a some free time from mid-test, i decided to unplug my SB Audigy and use Yamaha once again to test if 
 running it in DOS 6.22 with KVM acceleration will make a difference.
 
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/5.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img](./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/5.png)
 
 ::br
 
@@ -274,44 +258,20 @@ The system spec is similar as win95 with single core CPU, 128 megs RAM, 500 megs
 Then i use [Phils MS-DOS starter pack](https://www.philscomputerlab.com/ms-dos-starter-pack.html) to easily use 
 mouse and extended memory support.
 
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/6.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img](./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/6.png)
 
 ::br
 
 Then i just use `setupds/s` then `dsdma` and still nothing, then i just run setupds and simply test the sound output, 
 the Native 16 bit output is working just fine. The SB mode is disabled or greyed out and the FM mode throw a error.
 
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/7.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img](./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/7.png)
 
 ::br
 
 Then i try edit `FIRSTTRY=` in `ds.ini` file, then run `loadtrs.bat` and get this error instead.
 
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/8.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img](./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/8.png)
 
 ::br
 

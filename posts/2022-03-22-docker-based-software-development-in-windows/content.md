@@ -20,34 +20,14 @@ Don't forget to properly select the right version. For normal computers, you
 need `64 bit` or `x64` with `exe` file type. Get the right version and install 
 as usual.
 
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2022-03-22-docker-based-software-development-in-windows/code2.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
-
-::br
+![img](./posts/2022-03-22-docker-based-software-development-in-windows/code2.png)
 
 Next thing you need is Git version control. If you do substantial amount of 
 software development, you'll know the importance of git. Download from 
 [https://git-scm.com](https://git-scm.com/downloads) then install as usual. 
 You might need to set up your git credential before doing any actual works.
 
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2022-03-22-docker-based-software-development-in-windows/git.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
-
-::br
+![img](./posts/2022-03-22-docker-based-software-development-in-windows/git.png)
 
 The next step is installing Windows Subsystem for Linux (WSL) you may not need 
 one, so this step is `OPTIONAL`. The reason i put this here is that it is easier 
@@ -59,42 +39,14 @@ To install WSL, first you need to open a `Start Menu`, then search for
 `Windows Subsystem for Linux`. Put a `Checkmark` and `OK` to install. 
 Then wait to finish, and your computer will ask for reboot.
 
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2022-03-22-docker-based-software-development-in-windows/wsl1.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2022-03-22-docker-based-software-development-in-windows/wsl2.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
-
-::br
+![img](./posts/2022-03-22-docker-based-software-development-in-windows/wsl1.png)
+![img](./posts/2022-03-22-docker-based-software-development-in-windows/wsl2.png)
 
 After successful WSL installation, you'll need to grab a Linux Kernel package 
 for WSL you can get it from [https://aka.ms](https://aka.ms/wsl2kernel). Download and install 
 as usual.
 
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2022-03-22-docker-based-software-development-in-windows/wsl3.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
-
-::br
+![img](./posts/2022-03-22-docker-based-software-development-in-windows/wsl3.png)
 
 Next, you need to install Linux Distro you want to use. Here i'm using Ubuntu 20.04, 
 but you can use whatever suit your needs. To do this, Open `Microsoft Store` 
@@ -102,48 +54,18 @@ then type Linux Distro you want to use, open it up and press `Get`. If everythin
 goes well, you will get your chosen Linux Distro as a Start Menu Icon. Open it up, 
 type a new `Username` and `Password`. Then do an update/upgrade if you need to.
 
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2022-03-22-docker-based-software-development-in-windows/wsl4.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
-
-::br
+![img](./posts/2022-03-22-docker-based-software-development-in-windows/wsl4.png)
 
 The last step is to install Docker. You can get it from 
 [https://hub.docker.com](https://hub.docker.com/editions/community/docker-ce-desktop-windows). 
 Download and install as usual.
 
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2022-03-22-docker-based-software-development-in-windows/docker1.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
-
-::br
+![img](./posts/2022-03-22-docker-based-software-development-in-windows/docker1.png)
 
 After successful installation, Open the docker application, and accept the terms 
 condition. Otherwise, the docker service will not run.
 
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2022-03-22-docker-based-software-development-in-windows/docker2.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
-
-::br
+![img](./posts/2022-03-22-docker-based-software-development-in-windows/docker2.png)
 
 Then verify if everything is working. Open or create project inside Vscode, 
 Open terminal <code>Ctrl+Shift+`</code> then try `git status`, 

@@ -21,7 +21,6 @@ for(i=0;i<5;i++){
 }
 ```
 
-<br>
 ####  `Terdapat 3 macam perulangan dasar dalam bahasa C. antara lain`
 
 1. `for(){}`
@@ -45,7 +44,6 @@ for(i=0;i<5;i++){
 
     `task()` perintah yang akan diulang
 
-<br>
 2. `while(){}`
 
     ```
@@ -66,7 +64,6 @@ for(i=0;i<5;i++){
 
     `i++` pembaruan nilai
 
-<br>
 3. `do{}while()`
 
     ```
@@ -92,7 +89,6 @@ for(i=0;i<5;i++){
 
     `i<100` lakukan loop selama i kurang dari 100
 
-<br>
 #### `Pembaruan nilai dapat berupa`
 ```
 i++
@@ -145,10 +141,8 @@ int main()
 }
 ```
 
-<br>
 *Materi selanjutnya nested loop*
 
-<br>
 #### `Sumber Bacaan`
 
 <https://www.tutorialspoint.com/cprogramming/c_loops.htm>

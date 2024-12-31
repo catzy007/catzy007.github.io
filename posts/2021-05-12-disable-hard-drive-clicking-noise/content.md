@@ -114,28 +114,12 @@ and [Bad Sector](https://en.wikipedia.org/wiki/Bad_sector).
 * And that's it, restart your computer to see if anything changed.
 * If you really want to make sure, Install [Crystal Disk Info.](https://crystalmark.info/en/software/crystaldiskinfo/)
 * Then go to `Function > Advanced Feature > AAM/APM Control`
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2021-05-12-disable-hard-drive-clicking-noise/9.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img](./posts/2021-05-12-disable-hard-drive-clicking-noise/9.png)
 
 * If everything works fine, you should see `APM OFF`
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2021-05-12-disable-hard-drive-clicking-noise/10.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img](./posts/2021-05-12-disable-hard-drive-clicking-noise/10.png)
 
-<br>
+::br
 
 #### More readings
 <https://www.techpowerup.com/forums/threads/beware-of-aggressive-apm-on-windows-10-build-1809.254023/>

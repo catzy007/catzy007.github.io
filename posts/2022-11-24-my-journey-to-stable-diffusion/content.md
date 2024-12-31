@@ -551,8 +551,7 @@ then run `docker-compose --version` and make sure you're running docker-compose
 
 * If you want to use CUDA, follow guide below to set up CUDA with Docker 
     - [Linux](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html) Install
-    - <p><a href="https://docs.nvidia.com/cuda/wsl-user-guide/index.html">Windows (WSL)</a> then follow 
-    <a href="https://docs.nvidia.com/ai-enterprise/deployment-guide/dg-docker.html#enabling-the-docker-repository-and-installing-the-nvidia-container-toolkit">this</a></p> 
+    - <p><a href="https://docs.nvidia.com/cuda/wsl-user-guide/index.html">Windows (WSL)</a> then follow <a href="https://docs.nvidia.com/ai-enterprise/deployment-guide/dg-docker.html#enabling-the-docker-repository-and-installing-the-nvidia-container-toolkit">this</a></p> 
 
 * If you want to use ROCm, follow guide below to set ROCm with Docker 
     - <p><a href="https://github.com/RadeonOpenCompute/ROCm-docker/blob/master/quick-start.md">Linux</a> Install</p>
@@ -847,7 +846,6 @@ Copy your stable diffusion model to `stablediff-models` directory.
 
 And that's pretty much it.
 
-<!-- <br> -->
 **Final Words**
 
 Based on what i see from current technology of machine learning based image 

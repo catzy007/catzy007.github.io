@@ -16,7 +16,7 @@ games to improve load time and reduce system delay.
 
 But how to deal with hard drive? Here's how.
 
-<br>
+::br
 
 #### First, do a defragmentation
 In windows based PC with NTFS file system, you need to regularly do a defragmentation. 
@@ -31,26 +31,10 @@ has internal algorithm to dealt with that as well.
 How to do a disk defragmentation
 * First, right-click on your hard drive and select `Properties`.
 * Then go to `Tools` and select `Optimize`.
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2021-05-11-dealing-with-mechanical-hard-drive-in-2021/1.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img](./posts/2021-05-11-dealing-with-mechanical-hard-drive-in-2021/1.png)
 
 * Next, select `Analyze` to see how much your disk fragmentation is.
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2021-05-11-dealing-with-mechanical-hard-drive-in-2021/2.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img](./posts/2021-05-11-dealing-with-mechanical-hard-drive-in-2021/2.png)
 
 * If your disk fragmentation is more than 3%, select `Optimize`.
 > Before proceeding, you need to make sure your PC are plugged in into a steady power source. 
@@ -58,31 +42,15 @@ If somehow you lost power during a defragmentation process, your drive might get
 your files might be corrupted.
 
 * After that, wait for the process to finished.
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2021-05-11-dealing-with-mechanical-hard-drive-in-2021/3.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img](./posts/2021-05-11-dealing-with-mechanical-hard-drive-in-2021/3.png)
 
 * During defragmentation process, your drive will be used of it's maximum capabilities, please 
 leave it as is until the process is finished.
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2021-05-11-dealing-with-mechanical-hard-drive-in-2021/4.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img](./posts/2021-05-11-dealing-with-mechanical-hard-drive-in-2021/4.png)
 
 * I suggest you do defragmentation every 3 months. 
 
-<br>
+::br
 
 #### Second, do a Check Disk
 If your PC recently lost power during a file copy, document writing, Windows update or 
@@ -92,41 +60,17 @@ that, you can try to Check disk.
 
 * First, right-click on your hard drive and select `Properties`.
 * Next, Then go to `Tools` and select `Check`.
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2021-05-11-dealing-with-mechanical-hard-drive-in-2021/1.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img](./posts/2021-05-11-dealing-with-mechanical-hard-drive-in-2021/1.png)
 
 * Then select `Scan drive`.
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2021-05-11-dealing-with-mechanical-hard-drive-in-2021/6.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img](./posts/2021-05-11-dealing-with-mechanical-hard-drive-in-2021/6.png)
 
 > Before proceeding, you need to make sure your PC are plugged in into a steady power source. 
 
 * If no errors found, the process will be fast and if error found, the program will try to fix it.
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2021-05-11-dealing-with-mechanical-hard-drive-in-2021/7.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img](./posts/2021-05-11-dealing-with-mechanical-hard-drive-in-2021/7.png)
 
-<br>
+::br
 
 #### Third, do a Check Disk (Advanced)
 If second method still not fix the problem, you can try command line interface Chkdsk. 
@@ -136,15 +80,7 @@ This method require you to manually type a command and probably restart your PC 
 
 * First, open `Start Menu` and type `CMD`.
 * Then select `Run As Administrator`.
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2021-05-11-dealing-with-mechanical-hard-drive-in-2021/8.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img](./posts/2021-05-11-dealing-with-mechanical-hard-drive-in-2021/8.png)
 
 * Then type `chkdsk /F /R /X /I /B D:` notice `D:`, change that to your partition letter.
 <div class="row">

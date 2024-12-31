@@ -16,7 +16,6 @@ if "konter pulsa buka"
 then "beli pulsa 50.000"
 ```
 
-<br>
 `contoh lain`
 > ##### nak, kalau mie ayam buka, beli 2 porsi. kalau tidak, beli nasi goreng
 
@@ -32,7 +31,6 @@ kira kira seperti itu
 
 nah if dalam bahasa C kira-kira sebagai berikut
 
-<br>
 #### `1.) CONTOH IF SAJA`
 ```
 if (TERJADI)
@@ -44,7 +42,6 @@ if (TERJADI)
 jika if terpenuhi, maka lakukan 1 dan lakukan 2 akan dijalankan. 
 jika tidak terpenuhi maka tak lakukan apapun.
 
-<br>
 #### `2.) CONTOH IF DAN ELSE`
 ```
 if (TERJADI LAGI)
@@ -60,7 +57,6 @@ jadi apabila if terpenuhi, program akan menjalankan perintah 1,
 apabila tak terpenuhi maka akan menjalankan perintah 2 
 (APAPUN YANG TERJADI).
 
-<br>
 #### `3.) CONTOH IF ELSE IF`
 ```
 if (TERJADI LAGI)
@@ -77,7 +73,6 @@ apabila else if terpenuhi, maka akan menjalankan perintah 2.
 apabila if dan elseif tak ada yang terpenuhi, maka tak ada 
 yang dilakukan.
 
-<br>
 #### `4.) CONTOH IF ELSE IF ELSE`
 ```
 if (TERJADI LAGI)
@@ -100,7 +95,6 @@ jalankan perintah 3 dan lupakan yang lain.
 
 > ##### note : anda dapat membuat if else if else sebanyak yang anda inginkan, namun kurang efisien. Cara yang lebih baik adalah menggunakan Switch Case.
 
-<br>
 #### `5.) CONTOH SWITCH CASE`
 ```
 switch(pilihan){
@@ -118,7 +112,6 @@ jika pilihan bernilai 1 maka LAKUKAN1, JIKA pilihan bernilai selain
 1 dan 2 maka LAKUKAN SELAIN 1 DAN 2. gunanya break adalah mencegah 
 menu selanjutnya dijalankan
 
-<br>
 #### `Contoh if else`
 ```
 #include <stdio.h>
@@ -160,7 +153,6 @@ if(temp<17){
 
 }
 ```
-<br>
 #### `Contoh swith case`
 ```
 #include <stdio.h>
@@ -187,14 +179,11 @@ int main(int argc,char *argv[]){
 }
 ```
 
-<br>
 #### `Latihan`
 Buat program dengan bahasa C untuk melakukan pendaftaran sekolah dengan melakukan cek usia minimal dan maksimal.
 
-<br>
 *Materi selanjutnya nested if*
 
-<br>
 #### `Sumber Bacaan`
 <https://www.tutorialspoint.com/cprogramming/if_else_statement_in_c.htm>
 

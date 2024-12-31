@@ -33,15 +33,7 @@ with no box just bubble wrap and no cardboard, at 10 USD what you expect. The se
 list chipset used is `RTL8812BU` and speaking about Linux driver, it had few drivers 
 but most of them had to be compiled manually.
 
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2021-09-03-my-attempt-to-5ghz-usb-wifi-access-point/01.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img](./posts/2021-09-03-my-attempt-to-5ghz-usb-wifi-access-point/01.jpg)
 
 ::br
 
@@ -223,15 +215,7 @@ The first thing I did is to install (at the time of writing) the latest stable k
 6.3.7 using 
 [bkw777/mainline](https://github.com/bkw777/mainline)
 
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2021-09-03-my-attempt-to-5ghz-usb-wifi-access-point/04.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img](./posts/2021-09-03-my-attempt-to-5ghz-usb-wifi-access-point/04.jpg)
 
 ::br
 
@@ -276,15 +260,7 @@ This way I can get about 400 Mbps PHY at 40 MHz MIMO 2x2 not bad at all.
 I also do an iperf test using my phone which can do 200 Mbps PHY I can 
 get about 120~147 Mbps. 
 
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2021-09-03-my-attempt-to-5ghz-usb-wifi-access-point/05.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img](./posts/2021-09-03-my-attempt-to-5ghz-usb-wifi-access-point/05.jpg)
 
 ::br
 

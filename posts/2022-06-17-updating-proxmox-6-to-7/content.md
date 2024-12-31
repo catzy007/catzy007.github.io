@@ -6,15 +6,7 @@ First do a simple update and upgrade to make sure you have latest package (at th
 apt update
 apt dist-upgrade
 ```
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2022-06-17-updating-proxmox-6-to-7/00.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img](./posts/2022-06-17-updating-proxmox-6-to-7/00.png)
 
 Next, check using built-in tools. Open terminal and type
 ```
@@ -91,15 +83,7 @@ Sometimes a promopt will shows up and ask you to accept a term or select a confi
 </div>
 
 Assuming everything works properly, your system should boot into proxmox 7.2 and that's it.
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2022-06-17-updating-proxmox-6-to-7/06.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img](./posts/2022-06-17-updating-proxmox-6-to-7/06.png)
 
 In my case, i need to change `lxc.cgroup` in one of my container to `lxc.cgroup2`. Power off the container 
 and edit the config file manually.

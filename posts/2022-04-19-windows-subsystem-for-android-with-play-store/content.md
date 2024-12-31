@@ -10,15 +10,7 @@ assuming that everything is working then please continue to next step.
 
 First, install and enable WSL. To do this, open start menu then type and open `Turn Windows features on or off`. Check on 
 `Windows Subsystem for Linux` and `Virtual Machine Platform` if you have not done so.
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2022-04-19-windows-subsystem-for-android-with-play-store/01.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img](./posts/2022-04-19-windows-subsystem-for-android-with-play-store/01.png)
 
 Then download and install WSL2 Kernel from [aka.ms](https://aka.ms/wsl2kernel) followed by installing WSL distro from MS Store. 
 Here I'm using Ubuntu 20.04. For detailed information about this process, check my [Previous Post](./loader.html?post=2022-03-22-docker-based-software-development-in-windows)

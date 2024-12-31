@@ -17,29 +17,13 @@ The way i'm performing this is instead of using Hot-air soldering gun to pull ou
 
 First disassemble your laptop/pc unplug power, ram, BIOS battery, basically unplug everything... then find the BIOS chip by inspecting your motherboard. Mine is cFeon Q64-104HIP
 
-<div class="row">
-    <div class="col-sm-3"></div>
-    <div class="col-sm-6">
-        <div class="img-thumbnail">
-            <img class="img-fluid" loading="lazy" src="./posts/2018-11-04-disabling-intel-me/1.jpg" alt="img">
-        </div>
-    </div>
-    <div class="col-sm-3"></div>
-</div>
+![img](./posts/2018-11-04-disabling-intel-me/1.jpg)
 
 ::br
 
 Next you need to find datasheet for it (just google the chip name + datasheet) ex. "Q64-104HIP datasheet" then look at the pinout. This will be wiring guide for next step! You can read more info too. Different manufacture may have different configurations.
 
-<div class="row">
-    <div class="col-sm-3"></div>
-    <div class="col-sm-6">
-        <div class="img-thumbnail">
-            <img class="img-fluid" loading="lazy" src="./posts/2018-11-04-disabling-intel-me/2.jpg" alt="img">
-        </div>
-    </div>
-    <div class="col-sm-3"></div>
-</div>
+![img](./posts/2018-11-04-disabling-intel-me/2.jpg)
 
 Then wire everything according to the schematics provided by datasheet, followed by clipping SOP-8 clipper to bios chip.
 
@@ -52,15 +36,8 @@ Then wire everything according to the schematics provided by datasheet, followed
     </div>
     <div class="col-sm-4"></div>
 </div>
-<div class="row">
-    <div class="col-sm-3"></div>
-    <div class="col-sm-6">
-        <div class="img-thumbnail">
-            <img class="img-fluid" loading="lazy" src="./posts/2018-11-04-disabling-intel-me/4.jpg" alt="img">
-        </div>
-    </div>
-    <div class="col-sm-3"></div>
-</div>
+
+![img](./posts/2018-11-04-disabling-intel-me/4.jpg)
  
 ::br
 

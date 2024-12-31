@@ -53,15 +53,7 @@ unit is triple fan model by Colorful with 8 GB of GDDR5X instead of GDDR5
 found in regular GTX 1070. Another notable difference is PCIE 1.0 X4 instead 
 of PCIE 3.0 X16 which drastically cut the PCIE bandwidth.
 
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2023-02-09-using-cryptocurrency-mining-gpu-as-poor-man-nvidia-tesla/01.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img](./posts/2023-02-09-using-cryptocurrency-mining-gpu-as-poor-man-nvidia-tesla/01.jpg)
 
 The seller advertises this card as detected could not install driver. The first 
 thing that I did is physical inspection. Check if any SMD component such as 
@@ -69,15 +61,7 @@ resistor or capacitor fall off, then check for any burn marks and burning smell.
 I did not find any, so I decided to plug it in and hope for the best. And sure 
 enough the card is detected and has an error code on device manager.
 
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2023-02-09-using-cryptocurrency-mining-gpu-as-poor-man-nvidia-tesla/02.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img](./posts/2023-02-09-using-cryptocurrency-mining-gpu-as-poor-man-nvidia-tesla/02.png)
 <div class="row">
 	<div class="col-sm-4"></div>
 	<div class="col-sm-4">
@@ -92,15 +76,7 @@ Next I decided to disassemble everything spray the board with electronic contact
 use automotive brake cleaner. As for the plastic shroud, I just wipe it off using 
 a damp cloth then wipe the fan using dry cloth.
 
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2023-02-09-using-cryptocurrency-mining-gpu-as-poor-man-nvidia-tesla/04.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img](./posts/2023-02-09-using-cryptocurrency-mining-gpu-as-poor-man-nvidia-tesla/04.jpg)
 
 Next, I grab my multimeter and follow 
 [repair.wiki pascal guide](https://repair.wiki/w/Nvidia_Pascal_GPU_Diagnosing_Guide) 
@@ -108,15 +84,7 @@ to check for any short on base voltage rails and minor voltage rails.
 Then I power the card and make sure every voltage rails shows up their 
 respective rating.
 
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2023-02-09-using-cryptocurrency-mining-gpu-as-poor-man-nvidia-tesla/05.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img](./posts/2023-02-09-using-cryptocurrency-mining-gpu-as-poor-man-nvidia-tesla/05.jpg)
 
 After ensuring that none of the voltage rails shorts out, I decided to 
 continue and 
@@ -125,38 +93,14 @@ To do this, a proprietary software called NVIDIA MODS/MATS is required.
 In my case, I'm using version 400.184 and sure enough my card didn't 
 pass the test.
 
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2023-02-09-using-cryptocurrency-mining-gpu-as-poor-man-nvidia-tesla/06.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2023-02-09-using-cryptocurrency-mining-gpu-as-poor-man-nvidia-tesla/07.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img](./posts/2023-02-09-using-cryptocurrency-mining-gpu-as-poor-man-nvidia-tesla/06.png)
+![img](./posts/2023-02-09-using-cryptocurrency-mining-gpu-as-poor-man-nvidia-tesla/07.png)
 
 Looking around the log, I found that `FBIOB1` is the culprit. According to 
 [Pascal Memory Labelling](https://repair.wiki/w/Nvidia_Memory_Testing_Guide#/media/File:Nvidia_memory_labeling_pascal.jpg) 
 Here is the problematic VRAM.
 
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2023-02-09-using-cryptocurrency-mining-gpu-as-poor-man-nvidia-tesla/08.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img](./posts/2023-02-09-using-cryptocurrency-mining-gpu-as-poor-man-nvidia-tesla/08.jpg)
 
 My specific model uses Micron D9VRL GDDR5X I need to find local seller, or 
 I need to source it overseas. I also need a BGA repair tool such as hot air 

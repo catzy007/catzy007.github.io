@@ -26,27 +26,11 @@ different type of power adapter.
 First, download and install `KinectSDK-v1.8-Setup.exe` and optionally `KinectDeveloperToolkit-v1.8.0-Setup.exe`.
 * [Kinect for Windows SDK v1.8](https://www.microsoft.com/en-us/download/details.aspx?id=40278)
 * [Kinect for Windows Developer Toolkit v1.8 (Optional)](https://www.microsoft.com/en-us/download/details.aspx?id=40276)
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2022-12-01-motion-capture-at-home/01.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img](./posts/2022-12-01-motion-capture-at-home/01.png)
 
 Then download and install Microsoft Visual C++ 2008 Redistributable `vcredist_x86.exe` and `vcredist_x64.exe`.
 * [Microsoft Visual C++ 2008 Service Pack 1 Redistributable Package](https://www.microsoft.com/en-us/download/details.aspx?id=26368)
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2022-12-01-motion-capture-at-home/02.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img](./posts/2022-12-01-motion-capture-at-home/02.png)
 
 Next, download and extract `32 bit` version of MikuMikuDance (MMD). At the time of writing, the latest version 
 is `MikuMikuDanceE_v932.zip` and make sure it is working.
@@ -102,15 +86,7 @@ the latest version is `MikuMikuCapture_v202_6_en.zip`.
 
 Next, launch `MMCapture.exe` then go to `Settings > Capture Settings` and change Kinect Device Library to 
 `MMCResource\Plugins\DxMsNui4Win.dll`
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2022-12-01-motion-capture-at-home/10.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img](./posts/2022-12-01-motion-capture-at-home/10.png)
 
 Then load your model and go to `Capture > Press Kinect Icon` to start Motion Capture and press `X` to Stop.
 <div class="row">

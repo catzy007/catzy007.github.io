@@ -5,15 +5,7 @@ I have a usb tv that i bought long time ago back in 2016. It's 1USD usb tv form 
 Okay the first thing we need to know is device id. That can be achieved by running `lsusb` 
 and this is the output.
 
-<div class="row">
-    <div class="col-sm-3"></div>
-    <div class="col-sm-6">
-        <div class="img-thumbnail">
-            <img class="img-fluid" loading="lazy" src="./posts/2019-07-25-use-usb-tv-or-usb-capture-on-linux/1.jpg" alt="img">
-        </div>
-    </div>
-    <div class="col-sm-3"></div>
-</div>
+![img](./posts/2019-07-25-use-usb-tv-or-usb-capture-on-linux/1.jpg)
 
 As you can see it only had hardware id not the name, so little bit of googling and found this 
 <https://www.linuxtv.org/wiki/index.php/Gadmei_USB_TVBox_UTV382_(id_0x1f71:0x3301)> 
@@ -26,27 +18,11 @@ Dang so close.. but that's enough for me because for now i just need the AV capt
 Then i found out that new-ish kernel include support for this device. Here is my raspbian 
 buster running 4.19.58 kernel.
 
-<div class="row">
-    <div class="col-sm-3"></div>
-    <div class="col-sm-6">
-        <div class="img-thumbnail">
-            <img class="img-fluid" loading="lazy" src="./posts/2019-07-25-use-usb-tv-or-usb-capture-on-linux/2.jpg" alt="img">
-        </div>
-    </div>
-    <div class="col-sm-3"></div>
-</div>
+![img](./posts/2019-07-25-use-usb-tv-or-usb-capture-on-linux/2.jpg)
 
 So i just use VLC to get some picture and here is my config.
 
-<div class="row">
-    <div class="col-sm-3"></div>
-    <div class="col-sm-6">
-        <div class="img-thumbnail">
-            <img class="img-fluid" loading="lazy" src="./posts/2019-07-25-use-usb-tv-or-usb-capture-on-linux/3.jpg" alt="img">
-        </div>
-    </div>
-    <div class="col-sm-3"></div>
-</div>
+![img](./posts/2019-07-25-use-usb-tv-or-usb-capture-on-linux/3.jpg)
 
 > the config for your device might be different. Try to change some parameter
 

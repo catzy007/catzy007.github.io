@@ -16,6 +16,7 @@ Okay enough talking, let's do this. Here i'm using autoinstall to make my life e
 * For starter, in my case i'm using raspberrypi, and set the static ip to `192.168.1.2`. In this example i'll 
 install it in my laptop but the installation process is similar.
 * First, run autoinstall `curl -sSL https://install.pi-hole.net | bash`
+
     <div class="row">
         <div class="col-sm-3"></div>
         <div class="col-sm-6">
@@ -25,7 +26,9 @@ install it in my laptop but the installation process is similar.
         </div>
         <div class="col-sm-3"></div>
     </div>
+
 * Then select DNS provider you want to use, press arrow key and tab to navigate and enter to confirm
+
     <div class="row">
         <div class="col-sm-3"></div>
         <div class="col-sm-6">
@@ -35,7 +38,9 @@ install it in my laptop but the installation process is similar.
         </div>
         <div class="col-sm-3"></div>
     </div>
+
 * Next, it will ask to use existing blocklist. Just leave it as is
+
     <div class="row">
         <div class="col-sm-3"></div>
         <div class="col-sm-6">
@@ -45,7 +50,9 @@ install it in my laptop but the installation process is similar.
         </div>
         <div class="col-sm-3"></div>
     </div>
+
 * Next
+
     <div class="row">
         <div class="col-sm-3"></div>
         <div class="col-sm-6">
@@ -55,7 +62,9 @@ install it in my laptop but the installation process is similar.
         </div>
         <div class="col-sm-3"></div>
     </div>
+
 * Then it will ask to install web admin, for sake of convenient yes
+
     <div class="row">
         <div class="col-sm-3"></div>
         <div class="col-sm-6">
@@ -65,8 +74,10 @@ install it in my laptop but the installation process is similar.
         </div>
         <div class="col-sm-3"></div>
     </div>
+
 * After pihole finishes it's thing, you'll told your web admin `password`. You can change it in web admin
 * Open your browser and type <http://pi.hole/admin>, login and pihole was set
+
     <div class="row">
         <div class="col-sm-3"></div>
         <div class="col-sm-6">
@@ -76,7 +87,9 @@ install it in my laptop but the installation process is similar.
         </div>
         <div class="col-sm-3"></div>
     </div>
+
 * The last thing is to go to your router settings and put pihole ip address as DNS
+
     <div class="row">
         <div class="col-sm-3"></div>
         <div class="col-sm-6">

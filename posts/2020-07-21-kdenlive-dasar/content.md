@@ -33,15 +33,7 @@ Ini adalah tampilan awal `Kdenlive` terdapat 4 bagian utama yaitu `Projek Bin`, 
 
 <https://userbase.kde.org/Kdenlive/Manual>
 
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2020-07-21-kdenlive-dasar/2.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img](./posts/2020-07-21-kdenlive-dasar/2.png)
 
 ::br
 
@@ -107,15 +99,7 @@ audio mana yang akan muncul pada hasil akhir.
 Pada timeline juga terdapat beberapa tools, ada tiga tools utama 
 yang harus dipahami.
 
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2020-07-21-kdenlive-dasar/5-1.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img](./posts/2020-07-21-kdenlive-dasar/5-1.png)
 
 ::br
 
@@ -129,15 +113,7 @@ Pada bagian yang berwarna <span style="color:blue">biru</span> adalah `timeline 
 
 #### Basic Workflow
 
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2020-07-21-kdenlive-dasar/6.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img](./posts/2020-07-21-kdenlive-dasar/6.png)
 
 ::br
 
@@ -145,15 +121,7 @@ Pertama buat folder baru, copykan semua clip,video,gambar kedalam folder tersebu
 
 `Sebisa mungkin untuk tidak memindah dan merubah nama file dalam folder! untuk mencegah data corrupt`
 
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2020-07-21-kdenlive-dasar/7.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img](./posts/2020-07-21-kdenlive-dasar/7.png)
 
 Kemudian buka kdenlive dan masukkan clip kedalam projek bin dengan cara `drag and drop` 
 atau dengan `klik kanan pada projek bin > add clip or folder`
@@ -181,29 +149,13 @@ atau dengan `klik kanan pada projek bin > add clip or folder`
 
 Selanjutnya masukkan clip kedalam timeline dengan cara `drag and drop`
 
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2020-07-21-kdenlive-dasar/10.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img](./posts/2020-07-21-kdenlive-dasar/10.png)
 
 ::br
 
 Sebelum melakukan apapun, pastikan lakukan save dan simpan file dalam folder yang sama dengan clip
 
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2020-07-21-kdenlive-dasar/11.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img](./posts/2020-07-21-kdenlive-dasar/11.png)
 
 ::br
 
@@ -280,29 +232,13 @@ lalu clip akan hilang
 
 kemudian saya akan tambahkan clip baru pada projek bin, lalu drag and drop clip baru ke timeline
 
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2020-07-21-kdenlive-dasar/17.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img](./posts/2020-07-21-kdenlive-dasar/17.png)
 
 ::br
 
 untuk mendapatkan hasil video yang telah diedit, lakukan proses render dengan cara click project menu > render
 
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2020-07-21-kdenlive-dasar/18.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img](./posts/2020-07-21-kdenlive-dasar/18.png)
 
 ::br
 

@@ -60,30 +60,14 @@ just that <https://github.com/catzy007/UMBRELLAVPNTEST> compile with
 next click `"OpenVPN Config file"`, select tcp or udp it's up to you, 
 then download the config files.
 
-<div class="row">
-    <div class="col-sm-3"></div>
-    <div class="col-sm-6">
-        <div class="img-thumbnail">
-            <img class="img-fluid" loading="lazy" src="./posts/2018-05-05-internet-freedom-using-openvpn/4.jpg" alt="img">
-        </div>
-    </div>
-    <div class="col-sm-3"></div>
-</div>
+![img](./posts/2018-05-05-internet-freedom-using-openvpn/4.jpg)
 
 ::br
 
 then run openvpn with this command `sudo openvpn CONFIG_FILE_NAME` change 
 `CONFIG_FILE_NAME` with your actual config file name.
 
-<div class="row">
-    <div class="col-sm-3"></div>
-    <div class="col-sm-6">
-        <div class="img-thumbnail">
-            <img class="img-fluid" loading="lazy" src="./posts/2018-05-05-internet-freedom-using-openvpn/4.jpg" alt="img">
-        </div>
-    </div>
-    <div class="col-sm-3"></div>
-</div>
+![img](./posts/2018-05-05-internet-freedom-using-openvpn/4.jpg)
 
 ::br
 
@@ -94,30 +78,14 @@ and make sure you get `initialization sequence completed!`
 First, Download and Install OpenVPN Client
 [https://openvpn.net](https://openvpn.net/index.php/open-source/downloads.html)
 
-<div class="row">
-    <div class="col-sm-3"></div>
-    <div class="col-sm-6">
-        <div class="img-thumbnail">
-            <img class="img-fluid" loading="lazy" src="./posts/2018-05-05-internet-freedom-using-openvpn/5.png" alt="img">
-        </div>
-    </div>
-    <div class="col-sm-3"></div>
-</div>
+![img](./posts/2018-05-05-internet-freedom-using-openvpn/5.png)
 
 ::br
 
 Next, Get OpenVPN config look for `Next, you need openvpn config.` step above. 
 download the file and double click to import the profile.
 
-<div class="row">
-    <div class="col-sm-3"></div>
-    <div class="col-sm-6">
-        <div class="img-thumbnail">
-            <img class="img-fluid" loading="lazy" src="./posts/2018-05-05-internet-freedom-using-openvpn/7.png" alt="img">
-        </div>
-    </div>
-    <div class="col-sm-3"></div>
-</div>
+![img](./posts/2018-05-05-internet-freedom-using-openvpn/7.png)
 
 ::br
 

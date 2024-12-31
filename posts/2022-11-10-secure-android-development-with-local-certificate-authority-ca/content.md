@@ -64,15 +64,7 @@ For example [HTTPS | Node.js v19.0.1 Documentation](https://nodejs.org/api/https
 
 After proper set-up, you should get something similar.
 
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2022-11-10-secure-android-development-with-local-certificate-authority-ca/01.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img](./posts/2022-11-10-secure-android-development-with-local-certificate-authority-ca/01.png)
 
 Other options are using Caddy internal TLS, but it requires you to set up local DNS (pi-hole or similar) 
 and point the local domain to your development machine IP address. 

@@ -6,7 +6,7 @@ old windows and play some old games and apps. Here i'm using i7, but you can go 
 is supported and enabled. To get Win ME installer, check <https://archive.org> and this what i use 
 <https://archive.org/details/windows-me-101-retail-full>. 
 
-<br>
+::br
 
 #### Linux Host System
 * i7-7700hq
@@ -21,7 +21,7 @@ is supported and enabled. To get Win ME installer, check <https://archive.org> a
     sudo apt install virt-manager -y
     ```
 
-<br>
+::br
 
 #### Create New VM
 * Open `Virtual Machine Manager`
@@ -34,7 +34,7 @@ is supported and enabled. To get Win ME installer, check <https://archive.org> a
 * Check `Customize configuration before install`
 * Finish
 
-<br>
+::br
 
 #### VM Hardware Configuration
 * In `Overview` tab, make sure Chipset is `i440FX` and firmware `BIOS`
@@ -68,7 +68,7 @@ enter username, location, date time, and you are good to go.
 	<div class="col-sm-2"></div>
 </div>
 
-<br>
+::br
 
 #### Fix PCI Bus device driver
 After successful installation, there are few things that wrong, graphic is broken, sound not working, CD/DVD controller not working, etc. 

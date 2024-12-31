@@ -24,15 +24,7 @@ Cortex-A7@1.2Ghz, 512MB RAM, 8GB Memory, and running armbian with MPICH.
 
 ##### **2. Part List And Price**
 
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2017-12-13-make-cluster-computer-supercomputer-for-parallel-computing/1.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img](./posts/2017-12-13-make-cluster-computer-supercomputer-for-parallel-computing/1.jpg)
 
 ::br
 
@@ -50,15 +42,7 @@ cooling. any fan and heatsink will work so yeah.
 
 ##### **3. Network Map**
 
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2017-12-13-make-cluster-computer-supercomputer-for-parallel-computing/2.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img](./posts/2017-12-13-make-cluster-computer-supercomputer-for-parallel-computing/2.jpg)
 
 ::br
 
@@ -216,44 +200,20 @@ your system has no disk manager, use `sudo apt-get install gnome-disk-utility`
 First plug your sdcard into sdcard reader and plug it into your computer. 
 next open `Disks`
 
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2017-12-13-make-cluster-computer-supercomputer-for-parallel-computing/4.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img](./posts/2017-12-13-make-cluster-computer-supercomputer-for-parallel-computing/4.jpg)
 
 ::br
 
 Then click on dropdown menu and clik `"Create Disk Image"`
 
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2017-12-13-make-cluster-computer-supercomputer-for-parallel-computing/5.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img](./posts/2017-12-13-make-cluster-computer-supercomputer-for-parallel-computing/5.jpg)
 
 ::br
 
 Next change file name and directory "if you want", and start creating. 
 type your password if system ask it. and take a coffee or 10.
 
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2017-12-13-make-cluster-computer-supercomputer-for-parallel-computing/6.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img](./posts/2017-12-13-make-cluster-computer-supercomputer-for-parallel-computing/6.jpg)
 
 ::br
 
@@ -420,15 +380,7 @@ next run it, and it's done
 $ mpiexec -f hosfile -n 16 ~/mpitutorial/tutorials/mpi-hello-world/code/mpi_hello_world
 ```
 
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2017-12-13-make-cluster-computer-supercomputer-for-parallel-computing/8.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img](./posts/2017-12-13-make-cluster-computer-supercomputer-for-parallel-computing/8.jpg)
 
 ::br
 
@@ -461,15 +413,7 @@ Lin, Y., Hwang, R., & Baker, F. (2012). Computer networks: an open source approa
 
 ##### **12. Other Stuff**
 
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2017-12-13-make-cluster-computer-supercomputer-for-parallel-computing/9.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img](./posts/2017-12-13-make-cluster-computer-supercomputer-for-parallel-computing/9.jpg)
 
 ::br
 
@@ -477,15 +421,7 @@ Lin, Y., Hwang, R., & Baker, F. (2012). Computer networks: an open source approa
 
 ##### **13. UPDATE 30.03.18**
 
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2017-12-13-make-cluster-computer-supercomputer-for-parallel-computing/10.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img](./posts/2017-12-13-make-cluster-computer-supercomputer-for-parallel-computing/10.jpg)
 
 ::br
 

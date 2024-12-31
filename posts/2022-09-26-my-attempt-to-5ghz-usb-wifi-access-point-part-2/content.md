@@ -21,34 +21,14 @@ module. The reason i was finally able to get this adapter is clearance sale, thi
 is discontinued so i was able to get it pristine in box with driver CD and all the good 
 stuff for 11 USD pretty good deal if you ask me.
 
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2022-09-26-my-attempt-to-5ghz-usb-wifi-access-point-part-2/01.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
-
-::br
+![img](./posts/2022-09-26-my-attempt-to-5ghz-usb-wifi-access-point-part-2/01.jpg)
 
 Every project start with testing. First i plug the adapter to my laptop via USB 3.0 
 using Ubuntu 22.04 it just works no manual driver installation required. Then using 
 another machine, i set my RTL8812BU as Access Point in channel 36 at 80Mhz 867Mbps 
 PHY and just like that i get 433Mbps PHY out of my new adapter.
 
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2022-09-26-my-attempt-to-5ghz-usb-wifi-access-point-part-2/02.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
-
-::br
+![img](./posts/2022-09-26-my-attempt-to-5ghz-usb-wifi-access-point-part-2/02.png)
 
 Then i set [iperf](https://github.com/esnet/iperf) to see the maximum real-world throughput 
 of the system and i get 248Mbps. Clearly 248 is less than 433 right, well this adapter is only 
@@ -56,17 +36,7 @@ rated for USB 2.0 which should be fine because USB 2.0 is rated at 480Mbps right
 effective throughput of USB is 280Mbps](https://superuser.com/a/899993), so this speed is 
 correct.
 
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2022-09-26-my-attempt-to-5ghz-usb-wifi-access-point-part-2/03.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
-
-::br
+![img](./posts/2022-09-26-my-attempt-to-5ghz-usb-wifi-access-point-part-2/03.png)
 
 Now that we know about the absolute maximum capability of this adapter, let's deploy this. 
 Here i'm going to use my old post about 
@@ -109,24 +79,12 @@ and you should get.
 	<div class="col-sm-2"></div>
 </div>
 
-::br
-
 While most people will call it a day at this point, i decided to test the real world 
 throughput of this system. I set iperf in my server using 1 Gigabit LAN, then i use [iperf 	
 android app](https://play.google.com/store/apps/details?id=iperf.project) and this is the 
 result.
 
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2022-09-26-my-attempt-to-5ghz-usb-wifi-access-point-part-2/06.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
-
-::br
+![img](./posts/2022-09-26-my-attempt-to-5ghz-usb-wifi-access-point-part-2/06.png)
 
 Which is weird this time i get 23.4Mbps instead of getting 248Mbps i get before. Okay this 
 doesn't seem right then i turn my attention into USB Controller in my system, to do it 
@@ -165,8 +123,6 @@ controller? How about my other stuff? That's where USB Hub comes in.
 	<div class="col-sm-4"></div>
 </div>
 
-::br
-
 Using USB Hub, the controller technically only see one device connected so hopefully it 
 will use USB 2.0 ECHI all the time. Only downside is that the bandwidth become shared 
 between connected devices. In my testing i have this 1$ USB Hub laying around, then i 
@@ -181,8 +137,6 @@ plug all of my USB devices to it and this is what i got.
 	</div>
 	<div class="col-sm-2"></div>
 </div>
-
-::br
 
 While 50 ~ 60Mbps may not sound that much my last result is around 23Mbps. Which mean that i 
 get 2 ~ 3X the performance just using USB Hub. My theory is that the AMD chipset in my system 
@@ -206,59 +160,19 @@ should be able to handle 150Mbps PHY definietly not the fastest i can get but at
 looking for V3 revision is that it uses Ralink chipset which should get AP mode 
 support under OpenWrt [kmod-rt2x00-usb](https://openwrt.org/packages/pkgdata/kmod-rt2x00-usb). Since Ralink bought by Mediatek, USB adapter with ralink chipset new in box from established vendor is quite rare. Other option might be RT3070, RT3072, RT5372.
 
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2022-09-26-my-attempt-to-5ghz-usb-wifi-access-point-part-2/09.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
-
-::br
+![img](./posts/2022-09-26-my-attempt-to-5ghz-usb-wifi-access-point-part-2/09.jpg)
 
 As usual first is test the absolute limit of what this adapter can do. I plug it into my laptop USB 3.0 port, set it as AP then use iperf to test it's throughput and this is what i got.
 
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2022-09-26-my-attempt-to-5ghz-usb-wifi-access-point-part-2/10.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
-
-::br
+![img](./posts/2022-09-26-my-attempt-to-5ghz-usb-wifi-access-point-part-2/10.jpg)
 
 Next, i plug it into my OpenWrt system, install `kmod-rt2800-usb kmod-rt2x00-usb`, set it as AP mode and see what happens.
 
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2022-09-26-my-attempt-to-5ghz-usb-wifi-access-point-part-2/11.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
-
-::br
+![img](./posts/2022-09-26-my-attempt-to-5ghz-usb-wifi-access-point-part-2/11.jpg)
 
 Then i do another iperf testing unfortunately this time i got very dissapointing result.
 
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2022-09-26-my-attempt-to-5ghz-usb-wifi-access-point-part-2/12.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
-
-::br
+![img](./posts/2022-09-26-my-attempt-to-5ghz-usb-wifi-access-point-part-2/12.jpg)
 
 I only get around 20Mbps which mean that this is the absolute limit of what my current system can do. I also encounter issues about USB plug of the adapter is 
 getting warm which can indicate that the adapter tries to pull more amperage from the USB plug which also indicate that the adapter may not get enough power?

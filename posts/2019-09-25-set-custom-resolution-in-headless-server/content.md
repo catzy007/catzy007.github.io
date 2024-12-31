@@ -5,15 +5,7 @@ have any monitor plugged in so you're stuck with the default resolution. You act
 HDMI or VGA plug and call it a day, but if you think that spending extra buck is not worth it. Then you 
 come to the right place here i'm going to set up sofware dummy display so you can set custom resolution.
 
-<div class="row">
-    <div class="col-sm-3"></div>
-    <div class="col-sm-6">
-        <div class="img-thumbnail">
-            <img class="img-fluid" loading="lazy" src="./posts/2019-09-25-set-custom-resolution-in-headless-server/1.jpg" alt="img">
-        </div>
-    </div>
-    <div class="col-sm-3"></div>
-</div>
+![img](./posts/2019-09-25-set-custom-resolution-in-headless-server/1.jpg)
 
 ::br
 
@@ -22,15 +14,7 @@ First, install the dummy drivers
 sudo apt update && sudo apt install xserver-xorg-video-dummy -y
 ``` 
 
-<div class="row">
-    <div class="col-sm-3"></div>
-    <div class="col-sm-6">
-        <div class="img-thumbnail">
-            <img class="img-fluid" loading="lazy" src="./posts/2019-09-25-set-custom-resolution-in-headless-server/2.jpg" alt="img">
-        </div>
-    </div>
-    <div class="col-sm-3"></div>
-</div>
+![img](./posts/2019-09-25-set-custom-resolution-in-headless-server/2.jpg)
 
 ::br
 
@@ -66,15 +50,7 @@ EndSection
 
 Then reboot and that's it now you should be able to change resolution in display settings
 
-<div class="row">
-    <div class="col-sm-3"></div>
-    <div class="col-sm-6">
-        <div class="img-thumbnail">
-            <img class="img-fluid" loading="lazy" src="./posts/2019-09-25-set-custom-resolution-in-headless-server/3.jpg" alt="img">
-        </div>
-    </div>
-    <div class="col-sm-3"></div>
-</div>
+![img](./posts/2019-09-25-set-custom-resolution-in-headless-server/3.jpg)
 
 ::br
 

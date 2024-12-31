@@ -9,7 +9,6 @@ komputer, bahkan terdapat beberepa compiler yang sangat populer telah tersedia.
 C secara luar biasa memengaruhi bahasa populer lainnya, terutama C++ yang 
 merupakan extensi dari C.
 
-<br>
 #### *Sekilas Tentang Dasar Pemrograman*
 Program merupakan bagian dari komputer rangkaian perintah yang ditulis oleh 
 `Programmer` menggunakan `Bahasa Pemprograman` yang kemudian dapat diterjemahkan 
@@ -19,7 +18,6 @@ manusia, kemduian diterjemahkan oleh `Compiler` menjadi `Bahasa Mesin` yang dapa
 dipahami oleh CPU. Program komputer terdiri dari `sintaks` dan algoritma 
 matematis yang disusun dalam urutan tertentu.
 
-<br>
 #### *Apa Yang Saya Butuhkan Sebelum Menulis Program?*
 Persiapkan komputer dengan Prosesor dengan jumlah inti/core minimal 2 dengan 
 memori/ram sebesar 2 GB. Jika Anda Pengguna Microsoft Windows silahkan download 
@@ -33,7 +31,6 @@ Apabila anda pengguna linux, buka `terminal` lalu ketikkan
 program. Atau lakukan installasi codeblocks dengan perintah 
 `sudo apt-get install codeblocks`
 
-<br>
 #### *Mulai Coding*
 pertama buka aplikasi Codeblocks melalui start menu atau icon desktop.
 
@@ -158,7 +155,6 @@ pertama buka aplikasi Codeblocks melalui start menu atau icon desktop.
     <div class="col-sm-2"></div>
 </div>
 
-<br>
 #### *Penjelasan*
 Header `#include <stdio.h>` dan `#include <stdlib.h>`
 
@@ -179,7 +175,6 @@ dan segala perintah didalamnya akan dijalankan.
 Merupakan perintah untuk mencetak teks yang berada didalam tanda kutip. dan 
 `\n` adalah karakter spesial yang berarti `1x enter` pada program.
 
-<br>
 #### *Tambahan*
 selain printf, adapula perintah lain untuk menampilkan teks yaitu `puts("");` 
 untuk menggunakannya caranya mirip dengan printf namun puts tak memerlukan `\n` 
@@ -194,10 +189,8 @@ puts("Ini adalah teks menggunakan puts");
 Setelah melakukan perubahan, untuk recompile program. Apabila terdapat error, 
 perhatikan penempatan titik, koma dan semicolon. 
 
-<br>
 > `Silahkan coba mengeksplor program dengan mengganti teks Hello World dengan kata2 yang anda inginkan seperti nama ttl dsb`
 
-<br>
 #### *Tambahan bagi anda pengguna Linux*
 Bagi anda yang sudah lumayan familiar dengan linux terminal dan tak mau menggunakan IDE seperti codeblocks dll, anda dapat mengikuti tutorial ini.
 
@@ -238,7 +231,6 @@ Bagi anda yang sudah lumayan familiar dengan linux terminal dan tak mau mengguna
     <div class="col-sm-2"></div>
 </div>
 
-<br>
 #### *Selanjutnya materi tentang Tipe Data.*
 
 <https://learn.sparkfun.com/tutorials/digital-logic>
