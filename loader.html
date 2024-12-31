@@ -177,13 +177,13 @@
         import { createDirectives } from './js/marked-directive.esm.js';
         import { markedHighlight } from './js/marked-highlight.esm.js';
         import DOMPurify from './js/purify.esm.js';
-        import hljs from './js/highlight.min.js';
+        import highlightJs from './js/highlight.esm.js';
 
         window.marked = marked;
         window.createDirectives = createDirectives;
         window.markedHighlight = markedHighlight;
         window.DOMPurify = DOMPurify;
-        window.hljs = hljs;
+        window.hljs = highlightJs;
 
         window.scrollTo(0, 0); 
         loadSiteMainTitle();
