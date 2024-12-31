@@ -21,7 +21,7 @@ First, install and enable WSL. To do this, open start menu then type and open `T
 </div>
 
 Then download and install WSL2 Kernel from [aka.ms](https://aka.ms/wsl2kernel) followed by installing WSL distro from MS Store. 
-Here I'm using Ubuntu 20.04. For detailed information about this process, check my [Previous Post](./loader?post=2022-03-22-docker-based-software-development-in-windows)
+Here I'm using Ubuntu 20.04. For detailed information about this process, check my [Previous Post](./loader.html?post=2022-03-22-docker-based-software-development-in-windows)
 <div class="row">
 	<div class="col-sm-2"></div>
 	<div class="col-sm-8">
