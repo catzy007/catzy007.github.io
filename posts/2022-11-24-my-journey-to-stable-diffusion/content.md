@@ -450,18 +450,8 @@ and if your CPU does support AVX/AVX2 you probably get better performance.
 Also for some reason, almost half of my CPUs thread is idle so force it 
 to use all threads may improve performance.
 
-<div class="row">
-	<div class="col-sm-2"></div>
-	<div class="col-sm-8">
-    <div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2022-11-24-my-journey-to-stable-diffusion/01.png" alt="img">
-		</div>
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2022-11-24-my-journey-to-stable-diffusion/02.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-2"></div>
-</div>
+![img_lg](./posts/2022-11-24-my-journey-to-stable-diffusion/01.png)
+![img_lg](./posts/2022-11-24-my-journey-to-stable-diffusion/02.png)
 
 ::br
 
@@ -473,15 +463,7 @@ get extra fingers or lost some. Also unlike DALL-E which can understand
 complex sentence or even paragraph, Stable Diffusion NLP is still behind. 
 Which is mostly stated in [Limitations and Bias](https://huggingface.co/CompVis/stable-diffusion-v-1-4-original). 
 
-<div class="row">
-	<div class="col-sm-2"></div>
-	<div class="col-sm-8">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2022-11-24-my-journey-to-stable-diffusion/03.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-2"></div>
-</div>
+![img_lg](./posts/2022-11-24-my-journey-to-stable-diffusion/03.png)
 
 ::br
 
@@ -507,15 +489,7 @@ generating 512x512 image take around 1 to 2 Minutes (using --lowvram)
 compared to 5 to 6 Minutes. Not only using GPU is more efficient 75W vs 190W 
 (95x2), it is also a lot faster.
 
-<div class="row">
-	<div class="col-sm-2"></div>
-	<div class="col-sm-8">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2022-11-24-my-journey-to-stable-diffusion/04.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-2"></div>
-</div>
+![img_lg](./posts/2022-11-24-my-journey-to-stable-diffusion/04.png)
 
 ::br
 
@@ -527,15 +501,7 @@ Instead, i'm using [Openjourney](https://huggingface.co/prompthero/openjourney)
 model even then i can only generate 3 to 4 images before the entire thing is out 
 of memory and crash.
 
-<div class="row">
-	<div class="col-sm-2"></div>
-	<div class="col-sm-8">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2022-11-24-my-journey-to-stable-diffusion/05.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-2"></div>
-</div>
+![img_lg](./posts/2022-11-24-my-journey-to-stable-diffusion/05.png)
 
 ::br
 
@@ -864,12 +830,4 @@ recently added an experimental feature that uses this technology and at the
 moment there is not much you can do to avoid it, and it's just going to get 
 better over time so why not use it to your advantage instead.
 
-<div class="row">
-	<div class="col-sm-2"></div>
-	<div class="col-sm-8">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2022-11-24-my-journey-to-stable-diffusion/06.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-2"></div>
-</div>
+![img_lg](./posts/2022-11-24-my-journey-to-stable-diffusion/06.png)

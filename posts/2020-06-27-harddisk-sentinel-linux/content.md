@@ -16,6 +16,7 @@ version.
 To use it, first go to <https://www.hdsentinel.com/hard_disk_sentinel_linux.php> (for CLI version) and 
 <https://www.hdsentinel.com/hard_disk_sentinel_linux_gui.php> (for GUI version) and download the 64Bit 
 version. If you have 32Bit system then downlaod the 32Bit version.
+
 ![img](./posts/2020-06-27-harddisk-sentinel-linux/1.png)
 
 Then go to your download folder and open terminal there
@@ -27,6 +28,7 @@ After sucessful extraction, you shoud see new directory. Go to new directory and
 
 Last, do installation using `sudo ./install.sh`, wait for installation process and you should see new 
 application appears.
+
 ![img](./posts/2020-06-27-harddisk-sentinel-linux/2.jpg)
 ![img](./posts/2020-06-27-harddisk-sentinel-linux/3.png)
 

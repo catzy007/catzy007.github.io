@@ -73,6 +73,7 @@ After installation complete i create AP for it, and it works. After few hours, n
 device can connect to it anymore. According to <https://www.fastoe.com/blog/install-rtl8812bu-usb-wifi-dongle-on-linux> 
 There is a bug about power management, If the adapter going into power saving 
 mode something not good happen. To fix it simply follow
+
 * `sudo nano /etc/modprobe.d/88x2bu.conf`
 * Change `rtw_power_mgnt=1`
 * To `rtw_power_mgnt=0 rtw_ips_mode=0 rtw_enusbss=0`
@@ -171,15 +172,7 @@ but it should be fine for my purpose. So what we got?
 Using `iwconfig` i managed to get 867Mbps bit rate and other nice info. Interestingly enough, 
 the mode still shown as `802.11bgn` which is not actually the case as you see later.
 
-<div class="row">
-	<div class="col-sm-2"></div>
-	<div class="col-sm-8">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2021-09-03-my-attempt-to-5ghz-usb-wifi-access-point/02.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-2"></div>
-</div>
+![img_lg](./posts/2021-09-03-my-attempt-to-5ghz-usb-wifi-access-point/02.jpg)
 
 ::br
 
@@ -188,15 +181,7 @@ a great mobile apps developed by `Ubiquiti Inc`, so clearly they know what they'
 recommended. From the apps, it has shown that the mode is `802.11ac` and the channel width is `80MHz`
 Awesome.
 
-<div class="row">
-	<div class="col-sm-4"></div>
-	<div class="col-sm-4">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2021-09-03-my-attempt-to-5ghz-usb-wifi-access-point/03.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-4"></div>
-</div>
+![img_sm](./posts/2021-09-03-my-attempt-to-5ghz-usb-wifi-access-point/03.jpg)
 
 ::br
 

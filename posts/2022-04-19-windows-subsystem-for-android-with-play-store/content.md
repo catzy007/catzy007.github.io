@@ -14,15 +14,8 @@ First, install and enable WSL. To do this, open start menu then type and open `T
 
 Then download and install WSL2 Kernel from [aka.ms](https://aka.ms/wsl2kernel) followed by installing WSL distro from MS Store. 
 Here I'm using Ubuntu 20.04. For detailed information about this process, check my [Previous Post](./loader.html?post=2022-03-22-docker-based-software-development-in-windows)
-<div class="row">
-	<div class="col-sm-2"></div>
-	<div class="col-sm-8">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2022-04-19-windows-subsystem-for-android-with-play-store/02.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-2"></div>
-</div>
+
+![img_lg](./posts/2022-04-19-windows-subsystem-for-android-with-play-store/02.png)
 
 Next open start menu, launch Ubuntu and do. In my case, i'm using drive D to store my files.
 ```
@@ -32,42 +25,21 @@ cd /mnt/d
 git clone https://github.com/WSA-Community/WSAGAScript
 cd WSAGAScript
 ```
-<div class="row">
-	<div class="col-sm-2"></div>
-	<div class="col-sm-8">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2022-04-19-windows-subsystem-for-android-with-play-store/05.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-2"></div>
-</div>
+
+![img_lg](./posts/2022-04-19-windows-subsystem-for-android-with-play-store/05.png)
 
 Then go to <https://store.rg-adguard.net/> change `URL (Link)` to `ProductId` then fill 
 with `9P3395VX91NR` and change `RP` to `Slow`. Look for the largest file which at the 
 time of writing is `MicrosoftCorporationII.WindowsSubsystemForAndroid` at 1.21 GB Download 
 it. In my case, i also need a `Microsoft.UI.Xaml` file don't forget to choose x64 version.
-<div class="row">
-	<div class="col-sm-2"></div>
-	<div class="col-sm-8">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2022-04-19-windows-subsystem-for-android-with-play-store/03.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-2"></div>
-</div>
+
+![img_lg](./posts/2022-04-19-windows-subsystem-for-android-with-play-store/03.png)
 
 Then download and install [7zip](https://www.7-zip.org/download.html), and open 
 `MicrosoftCorporationII.WindowsSubsystemForAndroid` using 7zip. Find the 2 largest file 
 and extract file with x64 type. At the time of writing the file is `WsaPackage_2203.40000.1.0_x64_Release-Nightly.msix`
-<div class="row">
-	<div class="col-sm-2"></div>
-	<div class="col-sm-8">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2022-04-19-windows-subsystem-for-android-with-play-store/04.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-2"></div>
-</div>
+
+![img_lg](./posts/2022-04-19-windows-subsystem-for-android-with-play-store/04.png)
 
 Next open `WsaPackage_2203.40000.1.0_x64_Release-Nightly.msix` using 7zip and extract the 
 content. In my case, i'm extracting the files to `D:\modified_wsa_package`.
@@ -98,27 +70,13 @@ Then go to `PC Settings` and enable `Developer Mode` in `Developer Settings` sec
 Uninstall previously installed WSA. Then open `PowerShell` as administrator and run 
 `Add-AppxPackage -Register D:\modified_wsa_package\AppxManifest.xml` Wait for few moments 
 if nothing goes wrong, you'll have WSA with Google Play installed.
-<div class="row">
-	<div class="col-sm-2"></div>
-	<div class="col-sm-8">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2022-04-19-windows-subsystem-for-android-with-play-store/06.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-2"></div>
-</div>
+
+![img_lg](./posts/2022-04-19-windows-subsystem-for-android-with-play-store/06.png)
 
 In my case, i need to manually install `Microsoft.UI.Xaml` and here is how. You can also 
 use the same method to install other required files.
-<div class="row">
-	<div class="col-sm-2"></div>
-	<div class="col-sm-8">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2022-04-19-windows-subsystem-for-android-with-play-store/07.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-2"></div>
-</div>
+
+![img_lg](./posts/2022-04-19-windows-subsystem-for-android-with-play-store/07.png)
 
 <https://github.com/WSA-Community/WSAGAScript>
 

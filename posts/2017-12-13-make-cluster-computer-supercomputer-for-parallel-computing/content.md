@@ -129,16 +129,7 @@ MPICH using apt `sudo apt install mpich` instead of manually compile one.
 ##### **Next step is Installing [ATLAS](http://www.vesperix.com/arm/atlas-arm/)**
 `Installing ATLAS is highly optional, i'm using it solely to benchmark my system.`
 
-<div class="row">
-	<div class="col-sm-2"></div>
-	<div class="col-sm-8">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2017-12-13-make-cluster-computer-supercomputer-for-parallel-computing/3.jpg" alt="img">
-			<span>Here I'm Using 4 nodes with total of 16 cores i'm getting around 4.3 Gflops.</span>
-		</div>
-	</div>
-	<div class="col-sm-2"></div>
-</div>
+![img_lg](./posts/2017-12-13-make-cluster-computer-supercomputer-for-parallel-computing/3.jpg)
 
 ::br
 
@@ -241,15 +232,7 @@ change `iface eth0 inet dynamic` to `iface eth0 inet static` next
 change or add address according to your network configuration. 
 for example mine 
 
-<div class="row">
-	<div class="col-sm-2"></div>
-	<div class="col-sm-8">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2017-12-13-make-cluster-computer-supercomputer-for-parallel-computing/7.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-2"></div>
-</div>
+![img_lg](./posts/2017-12-13-make-cluster-computer-supercomputer-for-parallel-computing/7.jpg)
 
 ::br
 

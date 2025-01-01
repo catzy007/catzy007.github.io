@@ -19,16 +19,8 @@ traced from a projected film roll one by one, Then advancement in
 [computer graphics](https://en.wikipedia.org/wiki/Computer_graphics) 
 meant that combining animation, computer graphics and MoCap is possible.
 
-<div class="row">
-	<div class="col-sm-2"></div>
-	<div class="col-sm-8">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2022-08-16-mechanics-behind-virtual-youtuber/07.jpg" alt="img">
-			<span>MotionSampler Utilities - reality.sgi.com</span>
-		</div>
-	</div>
-	<div class="col-sm-2"></div>
-</div>
+
+![img_lg](./posts/2022-08-16-mechanics-behind-virtual-youtuber/07.jpg "MotionSampler Utilities - reality.sgi.com")
 
 While early system paved a way, it was 
 [expensive](https://web.archive.org/web/20000830080826/http://reality.sgi.com/jam_sb/mocap/MoCapWP_v2.0.html) 
@@ -51,15 +43,8 @@ Then a mathematic calculation is performed to determine how far an object
 is according to how the light pattern has changed. This way you can get 
 depth data from your surrounding area. 
 
-<div class="row">
-	<div class="col-sm-2"></div>
-	<div class="col-sm-8">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2022-08-16-mechanics-behind-virtual-youtuber/01.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-2"></div>
-</div>
+
+![img_lg](./posts/2022-08-16-mechanics-behind-virtual-youtuber/01.jpg)
 
 You can use the depth data to create a 
 [Point Cloud](https://en.wikipedia.org/wiki/Point_cloud) then recreate it 
@@ -80,15 +65,8 @@ move avatar skeletal bones and joints. Instead of manually move skeletal bone
 one by one you can use kinect motion data to move avatar skeletal bone, and you 
 get motion capture animation.
 
-<div class="row">
-	<div class="col-sm-2"></div>
-	<div class="col-sm-8">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2022-08-16-mechanics-behind-virtual-youtuber/02.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-2"></div>
-</div>
+
+![img_lg](./posts/2022-08-16-mechanics-behind-virtual-youtuber/02.png)
 
 This allow small or even individual creators to make animations, music 
 videos and even video games. Unfortunately at the mid of 2011, original 
@@ -96,15 +74,8 @@ creator of MMD stopped it's development and left the fate of MMD to it's
 community without any source code release. Fortunately alternative 
 software existed such as [MikuMikuCapture (MMC)](https://sites.google.com/site/mikumikucapturee/).
 
-<div class="row">
-	<div class="col-sm-2"></div>
-	<div class="col-sm-8">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2022-08-16-mechanics-behind-virtual-youtuber/03.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-2"></div>
-</div>
+
+![img_lg](./posts/2022-08-16-mechanics-behind-virtual-youtuber/03.png)
 
 You can use it as is live or capture and load the motion data to 
 [blender](https://www.blender.org/) and do animation works there.
@@ -146,15 +117,8 @@ character it is pretty much the same. If you want more, you can create your
 own 3D component in other software and load them to your avatar you can also 
 draw your own texture and add custom text or logo to your avatar.
 
-<div class="row">
-	<div class="col-sm-2"></div>
-	<div class="col-sm-8">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2022-08-16-mechanics-behind-virtual-youtuber/04.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-2"></div>
-</div>
+
+![img_lg](./posts/2022-08-16-mechanics-behind-virtual-youtuber/04.jpg)
 
 Remember that you can always convert from one 3D format to another, sometimes 
 with a catch and sometimes not at all.

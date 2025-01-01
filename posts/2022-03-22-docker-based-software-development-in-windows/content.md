@@ -72,21 +72,5 @@ Open terminal <code>Ctrl+Shift+`</code> then try `git status`,
 try `docker run hello-world`, then try `bash` if you decided to install WSL. 
 If everything works out, great.
 
-<div class="row">
-	<div class="col-sm-4"></div>
-	<div class="col-sm-4">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2022-03-22-docker-based-software-development-in-windows/test1.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-4"></div>
-</div>
-<div class="row">
-	<div class="col-sm-2"></div>
-	<div class="col-sm-8">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2022-03-22-docker-based-software-development-in-windows/test2.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-2"></div>
-</div>
+![img_sm](./posts/2022-03-22-docker-based-software-development-in-windows/test1.png)
+![img_lg](./posts/2022-03-22-docker-based-software-development-in-windows/test2.png)

@@ -15,15 +15,7 @@ gaming in this sound card should be interesting. Also, i found this
 if this sound card doesn't work, maybe some day i can get Sound Blaster Live or something like that as a 
 replacement.
 
-<div class="row">
-	<div class="col-sm-4"></div>
-	<div class="col-sm-4">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/2.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-4"></div>
-</div>
+![img_md](./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/2.jpg)
 
 ::br
 
@@ -51,16 +43,7 @@ after trying it on linux again, the noise is gone. I think what happen is that s
 the audio output is routed to audio input and causing lot of ground loop noise then by disabling 
 the problematic port, everything work just fine.
 
-<div class="row">
-	<div class="col-sm-4"></div>
-	<div class="col-sm-4">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/meme.jpeg" alt="img">
-            <a href="https://makeameme.org/meme/virtualize-all-the">makeameme.org</a>
-		</div>
-	</div>
-	<div class="col-sm-4"></div>
-</div>
+![img_md](./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/meme.jpeg "makeameme.org")
 
 ::br
 
@@ -75,15 +58,7 @@ genirq: Flags mismatch irq 18. 00000000 (vfio-intx(0000:01:04.0)) vs. 00000080 (
 The way i solve it is disabling some USB controller in the motherboard from BIOS. Then after everything 
 is clear, it work just fine.
 
-<div class="row">
-	<div class="col-sm-2"></div>
-	<div class="col-sm-8">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/1.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-2"></div>
-</div>
+![img_lg](./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/1.png)
 
 ::br
 
@@ -225,15 +200,7 @@ again similar process but with Windows 95 instead of ME.
 * If everything works, you should see something like this
 * Here my libvirt [XML](./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/win95.xml)
 
-<div class="row">
-	<div class="col-sm-2"></div>
-	<div class="col-sm-8">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/4.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-2"></div>
-</div>
+![img_lg](./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/4.png)
 
 ::br
 

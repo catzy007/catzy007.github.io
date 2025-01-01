@@ -189,12 +189,7 @@ printf("%s\n",string);
 
 #### `Latihan`
 Buat program dengan bahasa C untuk menampilkan Informasi Toko dan Struk Pembayaran.
-![img](./posts/2018-03-10-dasar-pemrograman-c-part2-tipe-data/2.jpg" alt="img">
-            <a href="https://simple.wikipedia.org/wiki/Receipt">simple.wikipedia.org</a>
-        </div>
-    </div>
-    <div class="col-sm-3"></div>
-</div>
+![img](./posts/2018-03-10-dasar-pemrograman-c-part2-tipe-data/2.jpg "simple.wikipedia.org")
 
 *Materi selanjutnya mengenai Input dan Operator*
 

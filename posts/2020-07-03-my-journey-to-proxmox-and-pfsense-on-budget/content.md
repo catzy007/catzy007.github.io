@@ -22,15 +22,7 @@ so the processor choice is little limited. You can look at the
 However, in my local area, i can only find two processors that are reasonably priced which is `Athlon 64 X2 TK-55` 
 and `Turion 64 X2 TL-50`.
 
-<div class="row">
-	<div class="col-sm-4"></div>
-	<div class="col-sm-4">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/1.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-4"></div>
-</div>
+![img_sm](./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/1.jpg)
 
 The first is the `Athlon TK-55`, i ordered it and came tomorrow afternoon. I pop the cover off, undo the 
 heat sink, replace the CPU with my new 2 core CPU, and it just works! Well kinda. I actually don't know if 
@@ -38,28 +30,12 @@ the CPU is faulty, i upgrade the bios, and it doesn't support the CPU, or i do s
 fried the CPU. I don't know it just works when it wants, and doesn't when it won't. The good thing is it just 
 6USD CPU so not a big deal.
 
-<div class="row">
-	<div class="col-sm-4"></div>
-	<div class="col-sm-4">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/2.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-4"></div>
-</div>
+![img_sm](./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/2.jpg)
 
 The Final processor i use is `Turion 64 X2 TL-50` which i got for around 4USD, it works in the first time and 
 still working (at least when this post is written it still do). In the end, it did work just fine.
 
-<div class="row">
-	<div class="col-sm-2"></div>
-	<div class="col-sm-8">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/3.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-2"></div>
-</div>
+![img_lg](./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/3.png)
 
 The problem about this processor for me is actually found one. They aren't that expensive (yet) but finding one 
 that reasonable and work is really hard. My tips are just look at random listing using generic keyword 
@@ -73,15 +49,7 @@ Okay it isn't as simple, but you got the idea. Which means that we MUST use acti
 The next one is power supply. The included supply only comes with around 50W of power. If you plug a lot of things, you 
 should consider upgrading you power supply.
 
-<div class="row">
-	<div class="col-sm-4"></div>
-	<div class="col-sm-4">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/4.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-4"></div>
-</div>
+![img_sm](./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/4.jpg)
 
 #### Chapter 2 - Upgrading RAM and Storage
 
@@ -95,24 +63,8 @@ For storage, my system got 2 GB 44 pin IDE Flash memory which is basically earl
 of raw storage in 2020 won't get you anywhere. My first idea is using `44 pin IDE to SATA converter` and uses random 
 SATA SSD, the adapter itself costs me around 10 USD shipped from China. Don't forget to get 44 pin cable.
 
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/5.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/6.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img_md](./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/5.jpg)
+![img_md](./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/6.jpg)
 
 As you can see in the red marked image, it should be jumper. For my purpose, i just unplug the jumper to make it work. 
 I think if you put the jumper on, it work in SATA to IDE mode and other way around.
@@ -120,59 +72,14 @@ I think if you put the jumper on, it work in SATA to IDE mode and other way arou
 My second idea is to use generic USB to SATA adapter. It is really cheap around 5 USD and i got it from my local 
 computer store.
 
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/7.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img_md](./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/7.jpg)
 
 Okay now let's see some speed test result.
 
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/8.png" alt="img">
-		<span>This is my random chinese SSD i plugged into my laptop via USB 3.0</span> 
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/9.png" alt="img">
-		<span>Okay this is the built-in 2GB SSD that i got from the system</span> 
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/10.png" alt="img">
-		<span>Now this is my SATA ssd connected to 44 pin IDE converter</span> 
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/11.png" alt="img">
-		<span>Then this is my SATA ssd connected to random USB 3.0 to SATA</span> 
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
-<br>
+![img_md](./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/8.png "This is my random chinese SSD i plugged into my laptop via USB 3.0")
+![img_md](./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/9.png "Okay this is the built-in 2GB SSD that i got from the system")
+![img_md](./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/10.png "Now this is my SATA ssd connected to 44 pin IDE converter")
+![img_md](./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/11.png "Then this is my SATA ssd connected to random USB 3.0 to SATA")
 
 Okay you seen enough data right, well that told us we got some major bottleneck. My SATA SSD capable of reaching 
 around 400 MB/s but it being bottleneck by IDE controller and maybe USB controller in the system. Theoretically 
@@ -196,15 +103,7 @@ First i install Debian and unfortunately i forgot to uncheck the GUI mode so i h
 Next install Proxmox. Just follow this [wonderful tutorial](https://pve.proxmox.com/wiki/Install_Proxmox_VE_on_Debian_Buster). 
 Okay really their explanation is better than me, and mostly you just do `apt install`.
 
-<div class="row">
-	<div class="col-sm-2"></div>
-	<div class="col-sm-8">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/12.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-2"></div>
-</div>
+![img_lg](./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/12.png)
 
 To access the Proxmox, open `https://your-server-ip-address:8006` and login using `root` and `your-root-password`.
 
@@ -217,15 +116,7 @@ not as hard because installing pfSense in Proxmox VM is
 Okay first, download [pfSense ISO image](https://www.pfsense.org/download/) and make sure to download the `CD Image (ISO) Installer` 
 file not the other one.
 
-<div class="row">
-	<div class="col-sm-4"></div>
-	<div class="col-sm-4">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/13.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-4"></div>
-</div>
+![img_sm](./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/13.png)
 
 And copy the ISO to `/var/lib/vz/template/iso`
 
@@ -238,15 +129,7 @@ your pfSense ISO, set CPU as `Default (kvm64)`, add `at least  1024MB` as memory
 Then add second `Network Bridge` and start the VM to install 
 pfSense.
 
-<div class="row">
-	<div class="col-sm-2"></div>
-	<div class="col-sm-8">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/14.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-2"></div>
-</div>
+![img_lg](./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/14.png)
 
 Last, configure pfSense as you need and that's it!
 
@@ -258,15 +141,7 @@ if the hardware still the same, yes still the same CPU TL-50, 2 GB RAM, 32 GB 
 SATA adapter, same cooler. For the software side of thing, it basically still the same Proxmox sit on 
 top of the Debian installation. 
 
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/15.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img_md](./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/15.png)
 
 As you can see i actually using more resources than before because i'm trying to run few service in 
 form of container (LXC) to fit more service in one system rather than using VM which is more resource 
@@ -305,15 +180,7 @@ For quite some time i wondering about this system Achilles Heel, which is poor p
 halt when data intensive write happen. This includes creating a new disk image, uploading new image file, 
 or simply doing system and kernel update. 
 
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/16.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img_md](./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/16.jpg)
 
 My current solution which is adding extra memory or by the extent is to add secondary disk as swap disk 
 because DDR2 4 GB SODIMM Memory is not cheap, doesn't seem to do much. Even recently i bought a 2 GB DOM 
@@ -324,15 +191,7 @@ What i'm going to do is to test most storage combination to get the best possibl
 port the system have, which is USB 2.0 and 44 Pins IDE. The way i'm going to test this is to use Gnome Disks 
 Utility built in benchmark to test average read, write, and access time of each combination with parameter below.
 
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/17.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img_md](./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/17.png)
 
 The combination is
 * C1: KEBIDU Cable Converter SATA to USB 3.0 HDD / SSD (Triangle shaped one i use all this time) + Kingfast 32 GB MLC SSD
@@ -342,64 +201,19 @@ For ease, i'm going to call C1 as Triangle, C2 as Orico and C3 as DOM.
 
 First, let's get a baseline, Here i'm testing C1 and C2 plug it in to my Asus laptop with USB 3.0 and test it.
 
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/18.png" alt="img">
-		<span>Here is C2</span>
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img_md](./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/18.png "Here is C2")
 
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/19.png" alt="img">
-		<span>Here is C1</span>
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img_md](./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/19.png "Here is C1")
 
 As you can see there is a lot of difference between Orico adapter and Triangle adapter, not only Random adapter 
 can't deliver the speed it advertises which is only 36 MBPS instead of 300MBPS, it also fluctuates more. Next test 
 is USB 2.0 in the thin client system.
 
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/20.png" alt="img">
-		<span>Here is C2</span>
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img_md](./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/20.png "Here is C2")
 
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/21.png" alt="img">
-		<span>Here is C1</span>
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img_md](./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/21.png "Here is C1")
 
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/22.png" alt="img">
-			<span>Here is C3</span>
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img_md](./posts/2020-07-03-my-journey-to-proxmox-and-pfsense-on-budget/22.png "Here is C3")
 
 Now let's talk about the final results, as you can see the C2 (Orico) deliver fine enough performance, while yes there 
 are some dips it still relatively good performance overall, and C2 (Triangle) at first, it's fine then it just drops to 

@@ -29,15 +29,7 @@ you can use any vpn provider you want.
 to get that, go to <vpngate.net> choose address you want and ping that ip. if it's 
 up then use it. 
 
-<div class="row">
-    <div class="col-sm-2"></div>
-    <div class="col-sm-8">
-        <div class="img-thumbnail">
-            <img class="img-fluid" loading="lazy" src="./posts/2018-05-05-internet-freedom-using-openvpn/1.jpg" alt="img">
-        </div>
-    </div>
-    <div class="col-sm-2"></div>
-</div>
+![img_lg](./posts/2018-05-05-internet-freedom-using-openvpn/1.jpg)
 
 ::br
 
@@ -45,15 +37,7 @@ It is frustrating to ping all address one by one, so i made a tools to do
 just that <https://github.com/catzy007/UMBRELLAVPNTEST> compile with 
 `gcc -o vpntest vpntest.c` just use ip with lowest time.
 
-<div class="row">
-    <div class="col-sm-2"></div>
-    <div class="col-sm-8">
-        <div class="img-thumbnail">
-            <img class="img-fluid" loading="lazy" src="./posts/2018-05-05-internet-freedom-using-openvpn/2.jpg" alt="img">
-        </div>
-    </div>
-    <div class="col-sm-2"></div>
-</div>
+![img_lg](./posts/2018-05-05-internet-freedom-using-openvpn/2.jpg)
 
 ::br
 
@@ -85,37 +69,21 @@ First, Download and Install OpenVPN Client
 Next, Get OpenVPN config look for `Next, you need openvpn config.` step above. 
 download the file and double click to import the profile.
 
-![img](./posts/2018-05-05-internet-freedom-using-openvpn/7.png)
+![img_sm](./posts/2018-05-05-internet-freedom-using-openvpn/7.png)
 
 ::br
 
 In your system tray you should see new icon, double click to activate and 
 right click for other functions.
 
-<div class="row">
-    <div class="col-sm-4"></div>
-    <div class="col-sm-4">
-        <div class="img-thumbnail">
-            <img class="img-fluid" loading="lazy" src="./posts/2018-05-05-internet-freedom-using-openvpn/6.png" alt="img">
-        </div>
-    </div>
-    <div class="col-sm-4"></div>
-</div>
+![img_sm](./posts/2018-05-05-internet-freedom-using-openvpn/6.png)
 
 ::br
 
 If your vpn config need password, a prompt will shows up otherwise it will 
 automatically connect to the server.
 
-<div class="row">
-    <div class="col-sm-2"></div>
-    <div class="col-sm-8">
-        <div class="img-thumbnail">
-            <img class="img-fluid" loading="lazy" src="./posts/2018-05-05-internet-freedom-using-openvpn/8.png" alt="img">
-        </div>
-    </div>
-    <div class="col-sm-2"></div>
-</div>
+![img_lg](./posts/2018-05-05-internet-freedom-using-openvpn/8.png)
 
 ::br
 

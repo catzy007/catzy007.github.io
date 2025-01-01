@@ -93,18 +93,7 @@ Some number are great but, the temperature was pretty high there. Hopefully i ca
 Today my cooler arrive it's deepcool Ice Blade 200M. I quickly open and mount it on the motherboard and the LGA2011 screw was too big.
 Okay the problem is this.
 
-<div class="row">
-    <div class="col-sm-4"></div>
-    <div class="col-sm-4">
-        <div class="img-thumbnail">
-            <img class="img-fluid" loading="lazy" src="./posts/2019-05-25-log-building-poor-man-workstation/add1.jpg" alt="img">
-			<p><a href="https://forums.servethehome.com/index.php?threads/guide-1356-1366-xeon-aftermarket-heatsink-selection-installation.5003/">
-            image source
-            </a></p>
-        </div>
-    </div>
-    <div class="col-sm-4"></div>
-</div>
+![img_sm](./posts/2019-05-25-log-building-poor-man-workstation/add1.jpg "forums.servethehome.com")
 
 ::br
 

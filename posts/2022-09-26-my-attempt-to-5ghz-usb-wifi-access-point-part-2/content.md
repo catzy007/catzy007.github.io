@@ -64,20 +64,8 @@ Code `US`. For some reason if i set the country code to my actual one, it throws
 the adapter won't work until i set the code correctly. Then enable your newly created AP 
 and you should get.
 
-<div class="row">
-	<div class="col-sm-2"></div>
-	<div class="col-sm-4">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2022-09-26-my-attempt-to-5ghz-usb-wifi-access-point-part-2/04.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-4">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2022-09-26-my-attempt-to-5ghz-usb-wifi-access-point-part-2/05.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-2"></div>
-</div>
+![img_sm](./posts/2022-09-26-my-attempt-to-5ghz-usb-wifi-access-point-part-2/04.png)
+![img_sm](./posts/2022-09-26-my-attempt-to-5ghz-usb-wifi-access-point-part-2/05.png)
 
 While most people will call it a day at this point, i decided to test the real world 
 throughput of this system. I set iperf in my server using 1 Gigabit LAN, then i use [iperf 	
@@ -113,30 +101,14 @@ I finally got it. The main issues about my current system is that it only has on
 EHCI controller onboard, then what if i plug only one device to take advantage of full EHCI 
 controller? How about my other stuff? That's where USB Hub comes in.
 
-<div class="row">
-	<div class="col-sm-4"></div>
-	<div class="col-sm-4">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2022-09-26-my-attempt-to-5ghz-usb-wifi-access-point-part-2/07.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-4"></div>
-</div>
+![img_sm](./posts/2022-09-26-my-attempt-to-5ghz-usb-wifi-access-point-part-2/07.jpg)
 
 Using USB Hub, the controller technically only see one device connected so hopefully it 
 will use USB 2.0 ECHI all the time. Only downside is that the bandwidth become shared 
 between connected devices. In my testing i have this 1$ USB Hub laying around, then i 
 plug all of my USB devices to it and this is what i got.
 
-<div class="row">
-	<div class="col-sm-2"></div>
-	<div class="col-sm-8">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2022-09-26-my-attempt-to-5ghz-usb-wifi-access-point-part-2/08.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-2"></div>
-</div>
+![img_lg](./posts/2022-09-26-my-attempt-to-5ghz-usb-wifi-access-point-part-2/08.jpg)
 
 While 50 ~ 60Mbps may not sound that much my last result is around 23Mbps. Which mean that i 
 get 2 ~ 3X the performance just using USB Hub. My theory is that the AMD chipset in my system 

@@ -83,15 +83,7 @@ This method require you to manually type a command and probably restart your PC 
 ![img](./posts/2021-05-11-dealing-with-mechanical-hard-drive-in-2021/8.png)
 
 * Then type `chkdsk /F /R /X /I /B D:` notice `D:`, change that to your partition letter.
-<div class="row">
-	<div class="col-sm-2"></div>
-	<div class="col-sm-8">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2021-05-11-dealing-with-mechanical-hard-drive-in-2021/9.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-2"></div>
-</div>
+![img_lg](./posts/2021-05-11-dealing-with-mechanical-hard-drive-in-2021/9.png)
 
 * If the drive you check is a system partition, it might ask you to restart your PC if it's not 
 then it will continue as is.

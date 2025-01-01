@@ -27,15 +27,7 @@ Next you need to find datasheet for it (just google the chip name + datasheet) e
 
 Then wire everything according to the schematics provided by datasheet, followed by clipping SOP-8 clipper to bios chip.
 
-<div class="row">
-    <div class="col-sm-4"></div>
-    <div class="col-sm-4">
-        <div class="img-thumbnail">
-            <img class="img-fluid" loading="lazy" src="./posts/2018-11-04-disabling-intel-me/3.jpg" alt="img">
-        </div>
-    </div>
-    <div class="col-sm-4"></div>
-</div>
+![img_sm](./posts/2018-11-04-disabling-intel-me/3.jpg)
 
 ![img](./posts/2018-11-04-disabling-intel-me/4.jpg)
  

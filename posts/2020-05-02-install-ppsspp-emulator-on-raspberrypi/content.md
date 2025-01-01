@@ -39,4 +39,5 @@ Now let's begin!
 All done! you can play psp game on rpi3 with some tweak ofc. Here i'm playing 
 `Basara Chronicle Heroes` using lowest settings (1x resolution, nearest, AA off) 
 and frameskip set to auto.
+
 ![img](./posts/2020-05-02-install-ppsspp-emulator-on-raspberrypi/1.jpg)

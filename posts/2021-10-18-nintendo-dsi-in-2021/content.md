@@ -92,15 +92,7 @@ and do `Hold R` then `Press L` to pause/play and `Hold L` then `Press R` to play
 The problem is that this app is not stable at all and the output sound is not that good. 
 If you want to try it out, follow [GBAtemp forum post](https://gbatemp.net/threads/moonshell-without-flashcard.547225/)
 
-<div class="row">
-	<div class="col-sm-2"></div>
-	<div class="col-sm-8">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2021-10-18-nintendo-dsi-in-2021/11.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-2"></div>
-</div>
+![img_lg](./posts/2021-10-18-nintendo-dsi-in-2021/11.png)
 
 The last thing i need is Charger (DSi, 3DS, 2DS uses the same charger), Case, and acrylic strap and 
 that's it. Also, here is my vacation picture taken using DSi rear camera, not bad for decade 

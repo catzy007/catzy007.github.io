@@ -211,6 +211,7 @@ int main(){
   return 0;
 }
 ```
+
 ![img](./posts/2018-04-24-dasar-pemrograman-c-part3-input-dan-operator/1.jpg)
 
 #### `2.) Gets`
@@ -239,6 +240,7 @@ int main(){
 ```
 
 ![img](./posts/2018-04-24-dasar-pemrograman-c-part3-input-dan-operator/2.jpg)
+
 > `seperti yang dapat dilihat, program dapat dicompile dan dijalankan, 
 namun mendapat banyak peringatan seperti diatas.`
 
@@ -271,16 +273,13 @@ int main(){
   return 0;
 }
 ```
+
 ![img](./posts/2018-04-24-dasar-pemrograman-c-part3-input-dan-operator/3.jpg)
 
 #### `Latihan`
 Buat program dengan bahasa C untuk menampilkan Informasi Toko dan Struk Pembayaran dengan menggunakan input dan operator matematika.
-![img](./posts/2018-04-24-dasar-pemrograman-c-part3-input-dan-operator/4.jpg" alt="img">
-            <a href="https://simple.wikipedia.org/wiki/Receipt">simple.wikipedia.org</a>
-        </div>
-    </div>
-    <div class="col-sm-3"></div>
-</div>
+
+![img](./posts/2018-04-24-dasar-pemrograman-c-part3-input-dan-operator/4.jpg "simple.wikipedia.org")
 
 *Materi selanjutnya if else switch*
 

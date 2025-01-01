@@ -37,15 +37,7 @@ mine is 103.
 
 Last, boot it up and if everything goes well, OpenWrt should work right away.
 
-<div class="row">
-	<div class="col-sm-2"></div>
-	<div class="col-sm-8">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2021-09-04-openwrt-inside-proxmox-vm/02.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-2"></div>
-</div>
+![img_lg](./posts/2021-09-04-openwrt-inside-proxmox-vm/02.png)
 
 If you need, you can attach USB Wi-Fi Adapter, set it as USB Passthrough, Install some `kmod` package, 
 and you should get Wi-Fi.
@@ -54,14 +46,6 @@ Or you can create another network bridge with no physical adapter attached to it
 network to your OpenWrt and attach it to new network bridge. This way, if you create other VM or 
 Container attached to new bridge, you can manage their network from OpenWrt.
 
-<div class="row">
-	<div class="col-sm-2"></div>
-	<div class="col-sm-8">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2021-09-04-openwrt-inside-proxmox-vm/03.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-2"></div>
-</div>
+![img_lg](./posts/2021-09-04-openwrt-inside-proxmox-vm/03.png)
 
 And i think that's it, Good luck and Have Fun.

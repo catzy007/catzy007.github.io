@@ -36,15 +36,8 @@ anonymizing your data and other stuff.
 
 Fortunately i have use this system for more than 6 Months now. When everyone 
 having a connection issues, i have not affected at all.
-<div class="row">
-	<div class="col-sm-4"></div>
-	<div class="col-sm-4">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2022-07-30-better-internet-with-dnscrypt-proxy-and-pi-hole/01.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-4"></div>
-</div>
+
+![img_sm](./posts/2022-07-30-better-internet-with-dnscrypt-proxy-and-pi-hole/01.png)
 
 To get started you need a local server, a simple and humble RaspberryPI 3B 
 is more than enough. You also need to have Docker and Docker-Compose installed 
@@ -101,15 +94,8 @@ Then build and run it using `docker-compose up`
 
 Last but not least, change your router DNS config to your newly 
 configured DNS server and that's it.
-<div class="row">
-	<div class="col-sm-2"></div>
-	<div class="col-sm-8">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2022-07-30-better-internet-with-dnscrypt-proxy-and-pi-hole/02.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-2"></div>
-</div>
+
+![img_lg](./posts/2022-07-30-better-internet-with-dnscrypt-proxy-and-pi-hole/02.png)
 
 If you're running Ubuntu Server and having connection issues, try
 ```

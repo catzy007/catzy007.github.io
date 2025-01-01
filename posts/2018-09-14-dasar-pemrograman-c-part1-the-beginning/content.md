@@ -35,125 +35,37 @@ program. Atau lakukan installasi codeblocks dengan perintah
 pertama buka aplikasi Codeblocks melalui start menu atau icon desktop.
 
 * Pertama buka codeblocks
-<div class="row">
-    <div class="col-sm-2"></div>
-    <div class="col-sm-8">
-        <div class="img-thumbnail">
-            <img class="img-fluid" loading="lazy" src="./posts/2018-09-14-dasar-pemrograman-c-part1-the-beginning/1.jpg" alt="img">
-        </div>
-    </div>
-    <div class="col-sm-2"></div>
-</div>
+![img_lg](./posts/2018-09-14-dasar-pemrograman-c-part1-the-beginning/1.jpg)
 
 * lalu tekan `file > new > Project`
-<div class="row">
-    <div class="col-sm-2"></div>
-    <div class="col-sm-8">
-        <div class="img-thumbnail">
-            <img class="img-fluid" loading="lazy" src="./posts/2018-09-14-dasar-pemrograman-c-part1-the-beginning/2.jpg" alt="img">
-        </div>
-    </div>
-    <div class="col-sm-2"></div>
-</div>
+![img_lg](./posts/2018-09-14-dasar-pemrograman-c-part1-the-beginning/2.jpg)
 
 * Lalu Pilih `"Console Application"`
-<div class="row">
-    <div class="col-sm-2"></div>
-    <div class="col-sm-8">
-        <div class="img-thumbnail">
-            <img class="img-fluid" loading="lazy" src="./posts/2018-09-14-dasar-pemrograman-c-part1-the-beginning/3.jpg" alt="img">
-        </div>
-    </div>
-    <div class="col-sm-2"></div>
-</div>
+![img_lg](./posts/2018-09-14-dasar-pemrograman-c-part1-the-beginning/3.jpg)
 
 * Tekan Next
-<div class="row">
-    <div class="col-sm-2"></div>
-    <div class="col-sm-8">
-        <div class="img-thumbnail">
-            <img class="img-fluid" loading="lazy" src="./posts/2018-09-14-dasar-pemrograman-c-part1-the-beginning/4.jpg" alt="img">
-        </div>
-    </div>
-    <div class="col-sm-2"></div>
-</div>
+![img_lg](./posts/2018-09-14-dasar-pemrograman-c-part1-the-beginning/4.jpg)
 
 * Pilih `"C"` paling atas lalu tekan next
-<div class="row">
-    <div class="col-sm-2"></div>
-    <div class="col-sm-8">
-        <div class="img-thumbnail">
-            <img class="img-fluid" loading="lazy" src="./posts/2018-09-14-dasar-pemrograman-c-part1-the-beginning/5.jpg" alt="img">
-        </div>
-    </div>
-    <div class="col-sm-2"></div>
-</div>
+![img_lg](./posts/2018-09-14-dasar-pemrograman-c-part1-the-beginning/5.jpg)
 
 * Masukkan nama project yang anda inginkan.. disini saya mengisi coba1. lalu tekan next
-<div class="row">
-    <div class="col-sm-2"></div>
-    <div class="col-sm-8">
-        <div class="img-thumbnail">
-            <img class="img-fluid" loading="lazy" src="./posts/2018-09-14-dasar-pemrograman-c-part1-the-beginning/6.jpg" alt="img">
-        </div>
-    </div>
-    <div class="col-sm-2"></div>
-</div>
+![img_lg](./posts/2018-09-14-dasar-pemrograman-c-part1-the-beginning/6.jpg)
 
 * lalu finish
-<div class="row">
-    <div class="col-sm-2"></div>
-    <div class="col-sm-8">
-        <div class="img-thumbnail">
-            <img class="img-fluid" loading="lazy" src="./posts/2018-09-14-dasar-pemrograman-c-part1-the-beginning/7.jpg" alt="img">
-        </div>
-    </div>
-    <div class="col-sm-2"></div>
-</div>
+![img_lg](./posts/2018-09-14-dasar-pemrograman-c-part1-the-beginning/7.jpg)
 
 * next tekan segitiga yang saya tandai dalam kotak merah
-<div class="row">
-    <div class="col-sm-2"></div>
-    <div class="col-sm-8">
-        <div class="img-thumbnail">
-            <img class="img-fluid" loading="lazy" src="./posts/2018-09-14-dasar-pemrograman-c-part1-the-beginning/8.jpg" alt="img">
-        </div>
-    </div>
-    <div class="col-sm-2"></div>
-</div>
+![img_lg](./posts/2018-09-14-dasar-pemrograman-c-part1-the-beginning/8.jpg)
 
 * tekan `"main.c"`
-<div class="row">
-    <div class="col-sm-2"></div>
-    <div class="col-sm-8">
-        <div class="img-thumbnail">
-            <img class="img-fluid" loading="lazy" src="./posts/2018-09-14-dasar-pemrograman-c-part1-the-beginning/9.jpg" alt="img">
-        </div>
-    </div>
-    <div class="col-sm-2"></div>
-</div>
+![img_lg](./posts/2018-09-14-dasar-pemrograman-c-part1-the-beginning/9.jpg)
  
 * lalu tekan `icon build and run` atau tekan F9 pada keyboard. kemudian tunggu sebentar
-<div class="row">
-    <div class="col-sm-2"></div>
-    <div class="col-sm-8">
-        <div class="img-thumbnail">
-            <img class="img-fluid" loading="lazy" src="./posts/2018-09-14-dasar-pemrograman-c-part1-the-beginning/10.jpg" alt="img">
-        </div>
-    </div>
-    <div class="col-sm-2"></div>
-</div>
+![img_lg](./posts/2018-09-14-dasar-pemrograman-c-part1-the-beginning/10.jpg)
 
 * lalu akan muncul program dengan text "Hello World". Selamat anda mulai menjadi programmer level 1.
-<div class="row">
-    <div class="col-sm-2"></div>
-    <div class="col-sm-8">
-        <div class="img-thumbnail">
-            <img class="img-fluid" loading="lazy" src="./posts/2018-09-14-dasar-pemrograman-c-part1-the-beginning/11.jpg" alt="img">
-        </div>
-    </div>
-    <div class="col-sm-2"></div>
-</div>
+![img_lg](./posts/2018-09-14-dasar-pemrograman-c-part1-the-beginning/11.jpg)
 
 #### *Penjelasan*
 Header `#include <stdio.h>` dan `#include <stdlib.h>`
@@ -206,30 +118,16 @@ Bagi anda yang sudah lumayan familiar dengan linux terminal dan tak mau mengguna
 	Y
 	Enter
 	```
-<div class="row">
-	<div class="col-sm-2"></div>
-	<div class="col-sm-8">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2018-09-14-dasar-pemrograman-c-part1-the-beginning/12.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-2"></div>
-</div>
+
+![img_lg](./posts/2018-09-14-dasar-pemrograman-c-part1-the-beginning/12.jpg)
 
 * Lakukan compile program dengan cara `gcc -o program program.c` pastikan tak ada error
 
 * terakhir jalankan program `./program`
 
 * selamat anda telah compile program tanpa menggunakan IDE
-<div class="row">
-    <div class="col-sm-2"></div>
-    <div class="col-sm-8">
-        <div class="img-thumbnail">
-            <img class="img-fluid" loading="lazy" src="./posts/2018-09-14-dasar-pemrograman-c-part1-the-beginning/13.jpg" alt="img">
-        </div>
-    </div>
-    <div class="col-sm-2"></div>
-</div>
+
+![img_lg](./posts/2018-09-14-dasar-pemrograman-c-part1-the-beginning/13.jpg)
 
 #### *Selanjutnya materi tentang Tipe Data.*
 

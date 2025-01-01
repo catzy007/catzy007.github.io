@@ -62,15 +62,7 @@ I did not find any, so I decided to plug it in and hope for the best. And sure
 enough the card is detected and has an error code on device manager.
 
 ![img](./posts/2023-02-09-using-cryptocurrency-mining-gpu-as-poor-man-nvidia-tesla/02.png)
-<div class="row">
-	<div class="col-sm-4"></div>
-	<div class="col-sm-4">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2023-02-09-using-cryptocurrency-mining-gpu-as-poor-man-nvidia-tesla/03.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-4"></div>
-</div>
+![img_sm](./posts/2023-02-09-using-cryptocurrency-mining-gpu-as-poor-man-nvidia-tesla/03.png)
 
 Next I decided to disassemble everything spray the board with electronic contact cleaner and brush it with unused toothbrush and let it dry. For the heatsink, I 
 use automotive brake cleaner. As for the plastic shroud, I just wipe it off using 

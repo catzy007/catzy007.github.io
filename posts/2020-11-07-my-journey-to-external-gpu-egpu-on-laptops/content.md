@@ -16,15 +16,7 @@ few years back. The original plug is actually PCIE 1x and changed to
 Mini PCIE, so it can be repurposed as external GPU adapter. And the best 
 is it only cost 7-10 USD, yeah great deal.
 
-<div class="row">
-	<div class="col-sm-4"></div>
-	<div class="col-sm-4">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2020-11-07-my-journey-to-external-gpu-egpu-on-laptops/1.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-4"></div>
-</div>
+![img_sm](./posts/2020-11-07-my-journey-to-external-gpu-egpu-on-laptops/1.png)
 
 ::br
 
@@ -37,16 +29,7 @@ basically do some mod to it. The PSU i'm using is standard ATX PSU with
 750W from Aerocool and random old PSU. What should you do is to jump a connection 
 between Green wire and Black wire or `PS_ON#` with `COM`. It basically forces a PSU to stay on. 
 
-<div class="row">
-	<div class="col-sm-4"></div>
-	<div class="col-sm-4">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2020-11-07-my-journey-to-external-gpu-egpu-on-laptops/3.png" alt="img">
-            <a href="https://en.wikipedia.org/wiki/Power_supply_unit_(computer)">Image from Wikipedia</a>
-		</div>
-	</div>
-	<div class="col-sm-4"></div>
-</div>
+![img_sm](./posts/2020-11-07-my-journey-to-external-gpu-egpu-on-laptops/3.png "Image from Wikipedia")
 
 ::br
 
