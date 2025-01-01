@@ -36,55 +36,23 @@ juga dapat dilakukan di PC dengan sedikit perbedaan.
 * Kemudian download dan jalankan GPU-Z <https://www.techpowerup.com/gpuz/>.
 * Selanjutnya buka Task Manager dan arahkan ke tab `Performance > CPU`
 * Lalu sebisa mungkin tutup semua aplikasi lain karena dapat mempengaruhi hasil test.
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2020-10-23-apakah-laptop-anda-thermal-throttling/1.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img](./posts/2020-10-23-apakah-laptop-anda-thermal-throttling/1.jpg)
 * Kemudian buka tab `Bench` pada CPU-Z
 * Lalu tekan tanda tanya `?` pada GPU-Z lalu akan muncul window `Render Test`
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2020-10-23-apakah-laptop-anda-thermal-throttling/2.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img](./posts/2020-10-23-apakah-laptop-anda-thermal-throttling/2.jpg)
 * Terakhir, tekan `Stress CPU` pada CPU-Z dan `Start Render Test` pada GPU-Z kemudian tunggu 10 hingga 20 menit.
 
 > Jika anda melakukan test pada PC dengan sistem watercooling all in one (AIO), dapat melakukan test selama 30-40 menit. 
 Jika anda menggunakan custom loop watercooling, waktu test dapat diperpanjang.
 
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2020-10-23-apakah-laptop-anda-thermal-throttling/3.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img](./posts/2020-10-23-apakah-laptop-anda-thermal-throttling/3.jpg)
 
 Pada bagian yang ditandai warna <span style="color:red;">merah</span> adalah base clock CPU, sedangkan bagian 
 berwarna <span style="color:green;">hijau</span> adalah clock CPU anda saat ini. Seperti yang dapat dilihat 
 pada test diatas bahwa CPU mengalami penurunan yang cukup signifikan dari 2.8 Ghz menjadi 2.6 Ghz hanya dalam 
 beberapa detik.
 
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2020-10-23-apakah-laptop-anda-thermal-throttling/4.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img](./posts/2020-10-23-apakah-laptop-anda-thermal-throttling/4.jpg)
 
 Kemudian setelah sekitar 15 Menit, CPU stabil di 1.7 Ghz. Sangat jauh dari base clock 2.8 Ghz. Apa yang terjadi? 
 pada dasarnya CPU mengalami underclocking karena CPU dan GPU menerima beban kerja berat secara berkelanjutan dan 

@@ -6,7 +6,7 @@ old windows and play some old games and apps. Here i'm using i7, but you can go 
 is supported and enabled. To get Win ME installer, check <https://archive.org> and this what i use 
 <https://archive.org/details/windows-me-101-retail-full>. 
 
-<br>
+::br
 
 #### Linux Host System
 * i7-7700hq
@@ -21,7 +21,7 @@ is supported and enabled. To get Win ME installer, check <https://archive.org> a
     sudo apt install virt-manager -y
     ```
 
-<br>
+::br
 
 #### Create New VM
 * Open `Virtual Machine Manager`
@@ -34,7 +34,7 @@ is supported and enabled. To get Win ME installer, check <https://archive.org> a
 * Check `Customize configuration before install`
 * Finish
 
-<br>
+::br
 
 #### VM Hardware Configuration
 * In `Overview` tab, make sure Chipset is `i440FX` and firmware `BIOS`
@@ -49,26 +49,10 @@ is supported and enabled. To get Win ME installer, check <https://archive.org> a
 Installation process should be easy, just follow the on screen guide, basically just enter or next, enter serial number, 
 enter username, location, date time, and you are good to go.
 
-<div class="row">
-	<div class="col-sm-2"></div>
-	<div class="col-sm-8">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2021-01-09-windows-me-on-linux-kvm/0.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-2"></div>
-</div>
-<div class="row">
-	<div class="col-sm-2"></div>
-	<div class="col-sm-8">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2021-01-09-windows-me-on-linux-kvm/1.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-2"></div>
-</div>
+![img_lg](./posts/2021-01-09-windows-me-on-linux-kvm/0.jpg)
+![img_lg](./posts/2021-01-09-windows-me-on-linux-kvm/1.jpg)
 
-<br>
+::br
 
 #### Fix PCI Bus device driver
 After successful installation, there are few things that wrong, graphic is broken, sound not working, CD/DVD controller not working, etc. 
@@ -76,167 +60,46 @@ To fix all that, do.
 
 * Open `My Computer` and right click > properties
 * Go to `Device Manager` tab, then select `Plug and Play BIOS` and `Properties`
-<div class="row">
-	<div class="col-sm-2"></div>
-	<div class="col-sm-8">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2021-01-09-windows-me-on-linux-kvm/driver-fix/1.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-2"></div>
-</div>
+![img_lg](./posts/2021-01-09-windows-me-on-linux-kvm/driver-fix/1.jpg)
 
 * Then go to `Driver` tab and `Update Driver`
-<div class="row">
-	<div class="col-sm-2"></div>
-	<div class="col-sm-8">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2021-01-09-windows-me-on-linux-kvm/driver-fix/2.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-2"></div>
-</div>
+![img_lg](./posts/2021-01-09-windows-me-on-linux-kvm/driver-fix/2.jpg)
 
 * Next, select `Specify the location of the driver (Advanced)` and `next`
-<div class="row">
-	<div class="col-sm-2"></div>
-	<div class="col-sm-8">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2021-01-09-windows-me-on-linux-kvm/driver-fix/3.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-2"></div>
-</div>
+![img_lg](./posts/2021-01-09-windows-me-on-linux-kvm/driver-fix/3.jpg)
 
 * Select the `second option` and `next`
-<div class="row">
-	<div class="col-sm-2"></div>
-	<div class="col-sm-8">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2021-01-09-windows-me-on-linux-kvm/driver-fix/4.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-2"></div>
-</div>
+![img_lg](./posts/2021-01-09-windows-me-on-linux-kvm/driver-fix/4.jpg)
 
 * Choose `Show all hardware` and change models to `PCI Bus` and next
-<div class="row">
-	<div class="col-sm-2"></div>
-	<div class="col-sm-8">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2021-01-09-windows-me-on-linux-kvm/driver-fix/5.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-2"></div>
-</div>
+![img_lg](./posts/2021-01-09-windows-me-on-linux-kvm/driver-fix/5.jpg)
 
 * There will be a warning, just choose Yes
-<div class="row">
-	<div class="col-sm-2"></div>
-	<div class="col-sm-8">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2021-01-09-windows-me-on-linux-kvm/driver-fix/6.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-2"></div>
-</div>
+![img_lg](./posts/2021-01-09-windows-me-on-linux-kvm/driver-fix/6.jpg)
 
 * Next, Finish and Restart
-<p align="center">
-<div class="row">
-	<div class="col-sm-2"></div>
-	<div class="col-sm-8">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2021-01-09-windows-me-on-linux-kvm/driver-fix/7.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-2"></div>
-</div>
-<div class="row">
-	<div class="col-sm-2"></div>
-	<div class="col-sm-8">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2021-01-09-windows-me-on-linux-kvm/driver-fix/8.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-2"></div>
-</div>
-<div class="row">
-	<div class="col-sm-2"></div>
-	<div class="col-sm-8">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2021-01-09-windows-me-on-linux-kvm/driver-fix/9.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-2"></div>
-</div>
+![img_lg](./posts/2021-01-09-windows-me-on-linux-kvm/driver-fix/7.jpg)
+![img_lg](./posts/2021-01-09-windows-me-on-linux-kvm/driver-fix/8.jpg)
+![img_lg](./posts/2021-01-09-windows-me-on-linux-kvm/driver-fix/9.jpg)
 
 * After restart, there will be a lot of new hardware found, just install all of them and you good to go.
-<div class="row">
-	<div class="col-sm-2"></div>
-	<div class="col-sm-8">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2021-01-09-windows-me-on-linux-kvm/driver-fix/10.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-2"></div>
-</div>
+![img_lg](./posts/2021-01-09-windows-me-on-linux-kvm/driver-fix/10.jpg)
 
 Basically all that does is force the device to become PCI Bus, instead of Win ME false detection as Plug and Play BIOS. 
 After PCI bus device detected and installed corrects, all other PCI device will start working to. Including graphic Ethernet and sound.
 
-<div class="row">
-	<div class="col-sm-2"></div>
-	<div class="col-sm-8">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2021-01-09-windows-me-on-linux-kvm/2.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-2"></div>
-</div>
-<div class="row">
-	<div class="col-sm-2"></div>
-	<div class="col-sm-8">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2021-01-09-windows-me-on-linux-kvm/3.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-2"></div>
-</div>
-<div class="row">
-	<div class="col-sm-2"></div>
-	<div class="col-sm-8">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2021-01-09-windows-me-on-linux-kvm/4.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-2"></div>
-</div>
+![img_lg](./posts/2021-01-09-windows-me-on-linux-kvm/2.jpg)
+![img_lg](./posts/2021-01-09-windows-me-on-linux-kvm/3.jpg)
+![img_lg](./posts/2021-01-09-windows-me-on-linux-kvm/4.jpg)
 
 After all that, the system work well enough, for basic usage like old office app, old medical app, light gaming, it works just fine.
 Even Duke works. Because Ethernet is working, you can even browse the internet. 
 
 To transfer files, install web server (Apache) on your Linux host, and use browser to transfer files
-<div class="row">
-	<div class="col-sm-2"></div>
-	<div class="col-sm-8">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2021-01-09-windows-me-on-linux-kvm/5.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-2"></div>
-</div>
+![img_lg](./posts/2021-01-09-windows-me-on-linux-kvm/5.jpg)
 
 > As side note, this system isn't perfect, crash is common, and some program or device might not work properly.
-<div class="row">
-	<div class="col-sm-2"></div>
-	<div class="col-sm-8">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2021-01-09-windows-me-on-linux-kvm/6.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-2"></div>
-</div>
+![img_lg](./posts/2021-01-09-windows-me-on-linux-kvm/6.png)
 
 Here [XML](./posts/2021-01-09-windows-me-on-linux-kvm/winme.xml) config for references
 

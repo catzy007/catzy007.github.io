@@ -28,15 +28,7 @@ tried other adapter, and it just output a random unreadable character.
 it to the UART adapter and don't forget to plug LAN1 (the rightmost 
 connector) to the network. Set your host IP address to `192.168.1.100` 
 and router IP address to `192.168.1.1`.
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="https://catzy007.github.io/things/f660v3/serial.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img](https://catzy007.github.io/things/f660v3/serial.jpg)
 * Then grab a custom uboot image from [msdos03/avanta-uboot-f660](https://github.com/msdos03/avanta-uboot-f660/releases) or if you have 128MB NAND version, you can grab one from [here](https://github.com/msdos03/avanta-uboot-f660/files/11854368/u-boot-f660_f660_128m_ddr3_nand.zip).
 * Next, install U-Boot tools and tftp server.
 ```

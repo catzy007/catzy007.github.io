@@ -162,15 +162,8 @@ sudo docker run -d --restart unless-stopped --name dht-telebot --device /dev/gpi
 ```
 
 And you should get something like this
-<div class="row">
-	<div class="col-sm-2"></div>
-	<div class="col-sm-8">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2022-07-29-temperature-and-humidity-sensing-with-telegram-notification/01.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-2"></div>
-</div>
+
+![img_lg](./posts/2022-07-29-temperature-and-humidity-sensing-with-telegram-notification/01.png)
 
 If you're using other DHT based sensors, open `dht.py` and edit `line 7` to 
 match your sensor.

@@ -16,75 +16,32 @@ Okay enough talking, let's do this. Here i'm using autoinstall to make my life e
 * For starter, in my case i'm using raspberrypi, and set the static ip to `192.168.1.2`. In this example i'll 
 install it in my laptop but the installation process is similar.
 * First, run autoinstall `curl -sSL https://install.pi-hole.net | bash`
-    <div class="row">
-        <div class="col-sm-3"></div>
-        <div class="col-sm-6">
-            <div class="img-thumbnail">
-                <img class="img-fluid" loading="lazy" src="./posts/2020-02-06-block-internet-advertisements-using-pi-hole/1.png" alt="img">
-            </div>
-        </div>
-        <div class="col-sm-3"></div>
-    </div>
+
+![img](./posts/2020-02-06-block-internet-advertisements-using-pi-hole/1.png)
+
 * Then select DNS provider you want to use, press arrow key and tab to navigate and enter to confirm
-    <div class="row">
-        <div class="col-sm-3"></div>
-        <div class="col-sm-6">
-            <div class="img-thumbnail">
-                <img class="img-fluid" loading="lazy" src="./posts/2020-02-06-block-internet-advertisements-using-pi-hole/2.png" alt="img">
-            </div>
-        </div>
-        <div class="col-sm-3"></div>
-    </div>
+
+![img](./posts/2020-02-06-block-internet-advertisements-using-pi-hole/2.png)
+
 * Next, it will ask to use existing blocklist. Just leave it as is
-    <div class="row">
-        <div class="col-sm-3"></div>
-        <div class="col-sm-6">
-            <div class="img-thumbnail">
-                <img class="img-fluid" loading="lazy" src="./posts/2020-02-06-block-internet-advertisements-using-pi-hole/3.png" alt="img">
-            </div>
-        </div>
-        <div class="col-sm-3"></div>
-    </div>
+
+![img](./posts/2020-02-06-block-internet-advertisements-using-pi-hole/3.png)
+
 * Next
-    <div class="row">
-        <div class="col-sm-3"></div>
-        <div class="col-sm-6">
-            <div class="img-thumbnail">
-                <img class="img-fluid" loading="lazy" src="./posts/2020-02-06-block-internet-advertisements-using-pi-hole/4.png" alt="img">
-            </div>
-        </div>
-        <div class="col-sm-3"></div>
-    </div>
+
+![img](./posts/2020-02-06-block-internet-advertisements-using-pi-hole/4.png)
+
 * Then it will ask to install web admin, for sake of convenient yes
-    <div class="row">
-        <div class="col-sm-3"></div>
-        <div class="col-sm-6">
-            <div class="img-thumbnail">
-                <img class="img-fluid" loading="lazy" src="./posts/2020-02-06-block-internet-advertisements-using-pi-hole/5.png" alt="img">
-            </div>
-        </div>
-        <div class="col-sm-3"></div>
-    </div>
+
+![img](./posts/2020-02-06-block-internet-advertisements-using-pi-hole/5.png)
+
 * After pihole finishes it's thing, you'll told your web admin `password`. You can change it in web admin
 * Open your browser and type <http://pi.hole/admin>, login and pihole was set
-    <div class="row">
-        <div class="col-sm-3"></div>
-        <div class="col-sm-6">
-            <div class="img-thumbnail">
-                <img class="img-fluid" loading="lazy" src="./posts/2020-02-06-block-internet-advertisements-using-pi-hole/6.png" alt="img">
-            </div>
-        </div>
-        <div class="col-sm-3"></div>
-    </div>
+
+![img](./posts/2020-02-06-block-internet-advertisements-using-pi-hole/6.png)
+
 * The last thing is to go to your router settings and put pihole ip address as DNS
-    <div class="row">
-        <div class="col-sm-3"></div>
-        <div class="col-sm-6">
-            <div class="img-thumbnail">
-                <img class="img-fluid" loading="lazy" src="./posts/2020-02-06-block-internet-advertisements-using-pi-hole/7.png" alt="img">
-            </div>
-        </div>
-        <div class="col-sm-3"></div>
-    </div>
+
+![img](./posts/2020-02-06-block-internet-advertisements-using-pi-hole/7.png)
 
 And that's it, it might not be perfect but you can improve it by adding your own blacklist

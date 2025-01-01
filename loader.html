@@ -174,13 +174,14 @@
 
     <script type="module">
         import { marked } from './js/marked.esm.js';
-        import { createDirectives } from './js/marked-directive.esm.js';
+        import { createDirectives, presetDirectiveConfigs } from './js/marked-directive.esm.js';
         import { markedHighlight } from './js/marked-highlight.esm.js';
         import DOMPurify from './js/purify.esm.js';
         import highlightJs from './js/highlight.esm.js';
 
         window.marked = marked;
         window.createDirectives = createDirectives;
+        window.presetDirectiveConfigs = presetDirectiveConfigs;
         window.markedHighlight = markedHighlight;
         window.DOMPurify = DOMPurify;
         window.hljs = highlightJs;

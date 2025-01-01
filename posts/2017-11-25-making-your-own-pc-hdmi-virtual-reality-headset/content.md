@@ -55,16 +55,7 @@ designed spaces with multiple large screens.
 ##### **Then we come to building parts yaay.**
 1. First we need to measure length and width of our screen.
 
-<div class="row">
-    <div class="col-sm-2"></div>
-    <div class="col-sm-8">
-        <div class="img-thumbnail">
-            <img class="img-fluid" loading="lazy" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/1.jpg" alt="img">
-			<span>measurement on image not to be scaled!</span>
-        </div>
-    </div>
-    <div class="col-sm-2"></div>
-</div>
+![img](./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/1.jpg)
 
 ::br
 
@@ -72,15 +63,7 @@ Make sure screen is working before proceeding.
 
 2. Make some hole to mount your screen to vr case based on your measurements.
 
-<div class="row">
-    <div class="col-sm-3"></div>
-    <div class="col-sm-6">
-        <div class="img-thumbnail">
-            <img class="img-fluid" loading="lazy" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/2.jpg" alt="img">
-        </div>
-    </div>
-    <div class="col-sm-3"></div>
-</div>
+![img](./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/2.jpg)
 
 ::br
 
@@ -90,31 +73,13 @@ Make sure screen is working before proceeding.
 
 3. Mount screen to case and add some glue. i'm using hot-glue but you can use silicon glue or anything that doesn't destroy PCB.
 
-<div class="row">
-    <div class="col-sm-3"></div>
-    <div class="col-sm-6">
-        <div class="img-thumbnail">
-            <img class="img-fluid" loading="lazy" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/3.jpg" alt="img">
-			<span>re test your screen to make sure everything went well</span>
-        </div>
-    </div>
-    <div class="col-sm-3"></div>
-</div>
+![img](./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/3.jpg)
 
 ::br
 
 4. Solder your MPU6050 or any Gyro+Acceleration sensors you use to arduino nano or pro micro.
 
-<div class="row">
-    <div class="col-sm-3"></div>
-    <div class="col-sm-6">
-        <div class="img-thumbnail">
-            <img class="img-fluid" loading="lazy" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/4.jpg" alt="img">
-			<span>make sure all sensors is working properly</span>
-        </div>
-    </div>
-    <div class="col-sm-3"></div>
-</div>
+![img](./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/4.jpg)
 
 ::br
 
@@ -126,16 +91,7 @@ Make sure screen is working before proceeding.
 
 5. Mount sensors to your case. I'm using foam double sided tape, if you have sugru or something similar then use it.
 
-<div class="row">
-    <div class="col-sm-3"></div>
-    <div class="col-sm-6">
-        <div class="img-thumbnail">
-            <img class="img-fluid" loading="lazy" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/5.jpg" alt="img">
-			<span>measurement on image not to be scaled!</span>
-        </div>
-    </div>
-    <div class="col-sm-3"></div>
-</div>
+![img](./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/5.jpg)
 
 ::br
 
@@ -145,15 +101,7 @@ Make sure screen is working before proceeding.
 1. Install and open arduino IDE followed by load `Arduino script\YawPtichRoll.ino` you download 
 from [github](https://github.com/catzy007/HeadTracking-Arduino-FreePie/)
 
-<div class="row">
-    <div class="col-sm-3"></div>
-    <div class="col-sm-6">
-        <div class="img-thumbnail">
-            <img class="img-fluid" loading="lazy" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/6.jpg" alt="img">
-        </div>
-    </div>
-    <div class="col-sm-3"></div>
-</div>
+![img](./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/6.jpg)
 
 ::br
 
@@ -162,44 +110,20 @@ board, processor, and com port!
 
 3. Then change open serial monitor, change baud rate to 115200 and you'll see something like this
 
-<div class="row">
-    <div class="col-sm-3"></div>
-    <div class="col-sm-6">
-        <div class="img-thumbnail">
-            <img class="img-fluid" loading="lazy" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/7.jpg" alt="img">
-        </div>
-    </div>
-    <div class="col-sm-3"></div>
-</div>
+![img](./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/7.jpg)
 
 ::br
 
 4. Plug everything from HDMI, screen power, arduino then install followed by opening FreePIE. 
 then open `FreePIE Script\FreeIMU-MouseEMU.py`
 
-<div class="row">
-    <div class="col-sm-2"></div>
-    <div class="col-sm-8">
-        <div class="img-thumbnail">
-            <img class="img-fluid" loading="lazy" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/8.jpg" alt="img">
-        </div>
-    </div>
-    <div class="col-sm-2"></div>
-</div>
+![img_lg](./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/8.jpg)
 
 ::br
 
 5. Then Click `Settings>Plugins>FreeIMU`... change com port to arduino port and baud rate to `115200`
 
-<div class="row">
-    <div class="col-sm-4"></div>
-    <div class="col-sm-4">
-        <div class="img-thumbnail">
-            <img class="img-fluid" loading="lazy" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/9.jpg" alt="img">
-        </div>
-    </div>
-    <div class="col-sm-4"></div>
-</div>
+![img_xs](./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/9.jpg)
 
 ::br
 
@@ -210,15 +134,7 @@ too. Now your VR headset is ready to do it's job ~('-'~)
 
 ::br
 
-<div class="row">
-    <div class="col-sm-2"></div>
-    <div class="col-sm-8">
-        <div class="img-thumbnail">
-            <img class="img-fluid" loading="lazy" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/10.jpg" alt="img">
-        </div>
-    </div>
-    <div class="col-sm-2"></div>
-</div>
+![img_lg](./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/10.jpg)
 
 ::br
 
@@ -240,15 +156,7 @@ get some error, restart your computer`
 
 	3. Next open `Perception.exe` change config to `DIY rift, No Tracking, Primary Monitor`
 
-	<div class="row">
-		<div class="col-sm-3"></div>
-		<div class="col-sm-6">
-			<div class="img-thumbnail">
-				<img class="img-fluid" loading="lazy" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/11.jpg" alt="img">
-			</div>
-		</div>
-		<div class="col-sm-3"></div>
-	</div>
+	![img](./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/11.jpg)
 
 	::br
 
@@ -256,15 +164,7 @@ get some error, restart your computer`
 
 	5. If you're done playing, close vireiro, and stop script manually and wait around 10 sec then unplug all cable
 
-	<div class="row">
-		<div class="col-sm-2"></div>
-		<div class="col-sm-8">
-			<div class="img-thumbnail">
-				<img class="img-fluid" loading="lazy" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/12.jpg" alt="img">
-			</div>
-		</div>
-		<div class="col-sm-2"></div>
-	</div>
+	![img_lg](./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/12.jpg)
 
 	::br
 
@@ -276,58 +176,26 @@ get some error, restart your computer`
 
 	3. Goto `tools > Load Preset > From File...` then open `vrplayer\vrplayer.json`
 
-	<div class="row">
-		<div class="col-sm-2"></div>
-		<div class="col-sm-8">
-			<div class="img-thumbnail">
-				<img class="img-fluid" loading="lazy" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/13.jpg" alt="img">
-			</div>
-		</div>
-		<div class="col-sm-2"></div>
-	</div>
+	![img_lg](./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/13.jpg)
 
 	::br
 
 	4. Goto `Device > tracker > mouse`
 
-	<div class="row">
-		<div class="col-sm-2"></div>
-		<div class="col-sm-8">
-			<div class="img-thumbnail">
-				<img class="img-fluid" loading="lazy" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/14.jpg" alt="img">
-			</div>
-		</div>
-		<div class="col-sm-2"></div>
-	</div>
+	![img_lg](./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/14.jpg)
 
 	::br
 
 	5. Next, open your favorite video player and play some video and play it in full screen if possible.
 	here i'm using MPC-HC
 
-	<div class="row">
-		<div class="col-sm-3"></div>
-		<div class="col-sm-6">
-			<div class="img-thumbnail">
-				<img class="img-fluid" loading="lazy" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/15.jpg" alt="img">
-			</div>
-		</div>
-		<div class="col-sm-3"></div>
-	</div>
+	![img](./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/15.jpg)
 
 	::br
 
 	6. just `alt+tab` and go to `VR Player` again, then `file > open process > with GDI > click process dropdown > select your video player`.
 
-	<div class="row">
-		<div class="col-sm-2"></div>
-		<div class="col-sm-8">
-			<div class="img-thumbnail">
-				<img class="img-fluid" loading="lazy" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/16.jpg" alt="img">
-			</div>
-		</div>
-		<div class="col-sm-2"></div>
-	</div>
+	![img_lg](./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/16.jpg)
 
 	::br
 
@@ -359,30 +227,13 @@ The reason why i choose MPU6050, first is price. It cost 2 USD each.
 so it's very good compare to GY-85 10 USD. Second, old oculus is using 
 MPU-6000 <http://developers-club.com/posts/181159/>
 
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/17.jpg" alt="img">
-			<span>MPU-6000 highlighted in orange</span>
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img](./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/17.jpg)
 
 ::br
 
 and based on this datasheet from [ivensense](https://store.invensense.com/datasheets/invensense/MPU-6050_DataSheet_V3%204.pdf)
 
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/18.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img](./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/18.jpg)
 
 ::br
 
@@ -396,73 +247,33 @@ into mouse XY motion. But you need to make sure that micro usb connector
 is strong enough or it'll break. To avoid this, choose your board wisely! 
 for comparison
 
-<div class="row">
-	<div class="col-sm-4"></div>
-	<div class="col-sm-4">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/19.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-4"></div>
-</div>
+![img_sm](./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/19.jpg)
 
 ::br
 
 This is ProMicro as you can see it has no additional structural for that usb port. but it has some black circle thing. i dont know. 
 i hope it is made for some structural support.
 
-<div class="row">
-	<div class="col-sm-4"></div>
-	<div class="col-sm-4">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/20.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-4"></div>
-</div>
+![img_sm](./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/20.jpg)
 
 ::br
 
 the board i broke is same as this. has no support at all. the port basically solder directly to trace of PCB. If your port broke, 
 it's basically done!
 
-<div class="row">
-	<div class="col-sm-4"></div>
-	<div class="col-sm-4">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/21.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-4"></div>
-</div>
+![img_sm](./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/21.jpg)
 
 ::br
 
 This is pro micro from RobotDyn that red circle is structural support for usb port.
 
-<div class="row">
-	<div class="col-sm-4"></div>
-	<div class="col-sm-4">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/22.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-4"></div>
-</div>
+![img_sm](./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/22.jpg)
 
 ::br
 
 Same here Arduino Micro. it has structural support.
 
-<div class="row">
-	<div class="col-sm-4"></div>
-	<div class="col-sm-4">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/23.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-4"></div>
-</div>
+![img_sm](./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/23.jpg)
 
 ::br
 
@@ -486,57 +297,25 @@ and <https://github.com/pocketmoon/MPU-6050-Arduino-Micro-Head-Tracker>
 4. Open FreePIE, load that mouse emulation script, run, press `Lshift+Z`
 5. Launch VRChat using `non steamvr mode`
 
-<div class="row">
-	<div class="col-sm-2"></div>
-	<div class="col-sm-8">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/24.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-2"></div>
-</div>
+![img_lg](./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/24.jpg)
 
 ::br
 
 6. Open `DesktopSBS`
 
-<div class="row">
-	<div class="col-sm-2"></div>
-	<div class="col-sm-8">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/25.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-2"></div>
-</div>
+![img_lg](./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/25.jpg)
 
 ::br
 
 7. aaaand enjoy SteamVR games using our crude VR Headset
 
-<div class="row">
-	<div class="col-sm-2"></div>
-	<div class="col-sm-8">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/26.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-2"></div>
-</div>
+![img_lg](./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/26.jpg)
 
 ::br
 
 `pro tips11 : to check windows 10 version in your machine, go to "windows settings > system > about" and scroll a little bit.`
 
-<div class="row">
-	<div class="col-sm-2"></div>
-	<div class="col-sm-8">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/27.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-2"></div>
-</div>
+![img_lg](./posts/2017-11-25-making-your-own-pc-hdmi-virtual-reality-headset/27.jpg)
 
 ::br
 

@@ -9,15 +9,7 @@ RAM and 500 GB mechanical spinning drive. While this specs may not seem
 "impressive", In my local area it is a decent deal considering my 
 use case and upgrade that I'm planning to do.
 
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2023-11-19-my-journey-upgrading-homelab/01.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img](./posts/2023-11-19-my-journey-upgrading-homelab/01.jpg)
 
 The first thing that I did is to upgrade the RAM. Lenovo M900 has 4 
 slots of DDR4 RAM which is already populated with a single 
@@ -36,15 +28,7 @@ or Tesla lineup. In my case, I'm using NVIDIA Quadro K620 2 GB which
 I acquire for about 25 USD. Other than that, I also need DVI to HDMI 
 adapter and HDMI Dummy Adapter because I plan to run this Headless.
 
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2023-11-19-my-journey-upgrading-homelab/02.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img](./posts/2023-11-19-my-journey-upgrading-homelab/02.jpg)
 
 Then I power it up, download and install latest Proxmox VE, backup 
 and restore all services from my old server and plug it straight 
@@ -86,15 +70,7 @@ reboot
 dmesg | grep -E DMAR
 ```
 If nothing goes wrong, you should get `DMAR: Intel(R) Virtualization Technology for Directed I/O`.
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2023-11-19-my-journey-upgrading-homelab/03.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img](./posts/2023-11-19-my-journey-upgrading-homelab/03.png)
 
 Then add GPU and GPU Audio PCIe device ID in vfio-pci options.
 ```
@@ -106,15 +82,7 @@ reboot
 lspci -vnn | grep -iP "vga|amdgpu|nvidia|nouveau|vfio-pci"
 ```
 If nothing goes wrong, you should get `Kernel driver in use: vfio-pci`
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2023-11-19-my-journey-upgrading-homelab/04.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img](./posts/2023-11-19-my-journey-upgrading-homelab/04.png)
 
 Next, create a new VM with `OVMF (UEFI)` BIOS and machine type as 
 `Q35 8.0` for CPU type I set it as `Host`.
@@ -122,15 +90,7 @@ Next, create a new VM with `OVMF (UEFI)` BIOS and machine type as
 Then Add GPU as PCI Device, Check `All functions` and `PCI Express`, 
 make sure `Primary GPU` is left uncheck.
 
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2023-11-19-my-journey-upgrading-homelab/05.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img](./posts/2023-11-19-my-journey-upgrading-homelab/05.png)
 
 After that, boot the OS then download and install the NVIDIA Driver 
 followed by your favorite remote desktop software.
@@ -142,15 +102,7 @@ Check `Primary GPU` in `PCI Device`.
 
 Last, boot and remote to your VM, and hopefully it is working.
 
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2023-11-19-my-journey-upgrading-homelab/06.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img](./posts/2023-11-19-my-journey-upgrading-homelab/06.png)
 
 <!-- <details>
 <summary>Click to reveal vm.conf</summary> -->
@@ -189,15 +141,7 @@ Compared to a traditional NAND based SSD, Optane is faster (IOPS) and
 has higher endurance rating (TBW) but since Q2 2022 Intel announce that 
 development of future Optane product is ceased.
 
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2023-11-19-my-journey-upgrading-homelab/07.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img](./posts/2023-11-19-my-journey-upgrading-homelab/07.jpg)
 
 Now for the overlooked one. The battery backup or most people call it 
 Uninterruptible Power Supply (UPS) mine is APC BX650 (the one with USB 
@@ -208,15 +152,7 @@ works kinda, for some reason it just keep beeping non-stop. After
 further disassembly I found that one of the connector got loose, 
 so I just plug it back, and it works.
 
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2023-11-19-my-journey-upgrading-homelab/08.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img](./posts/2023-11-19-my-journey-upgrading-homelab/08.jpg)
 
 Then I plug the USB to my system and set it up. In Windows, you can use 
 something called APC PowerChute while in Linux, you can use 
@@ -313,14 +249,5 @@ motherboard with some difference such as extra PCIe 1x port,
 additional SATA connector and uses of Intel C236 instead of Q170 
 Chipset.
 
-<div class="row">
-	<div class="col-sm-2"></div>
-	<div class="col-sm-8">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2023-11-19-my-journey-upgrading-homelab/09.jpg" alt="img">
-			<span>Can you guess which is which?</span>
-		</div>
-	</div>
-	<div class="col-sm-2"></div>
-</div>
+![img_lg](./posts/2023-11-19-my-journey-upgrading-homelab/09.jpg "Can you guess which is which?")
 

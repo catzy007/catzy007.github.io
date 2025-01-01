@@ -24,15 +24,7 @@ part i used.
 In this part, i'm gonna using Computer Graphics (CG) because i'm too lazy 
 to take a picture.
 
-<div class="row">
-    <div class="col-sm-2"></div>
-    <div class="col-sm-8">
-        <div class="img-thumbnail">
-            <img class="img-fluid" loading="lazy" src="./posts/2017-08-18-3-axis-cnc-machine/1.jpg" alt="img">
-        </div>
-    </div>
-    <div class="col-sm-2"></div>
-</div>
+![img_lg](./posts/2017-08-18-3-axis-cnc-machine/1.jpg)
 
 ::br
 
@@ -41,15 +33,7 @@ has it's own function the X axis is left and right, the Y axis is
 forward and backward, and the Z axis is up and down. Axis configuration 
 can you see below. BTW "ALL OF MY AXIS ARE ACTUALLY INVERTED" so yeah 
 
-<div class="row">
-    <div class="col-sm-2"></div>
-    <div class="col-sm-8">
-        <div class="img-thumbnail">
-            <img class="img-fluid" loading="lazy" src="./posts/2017-08-18-3-axis-cnc-machine/2.jpg" alt="img">
-        </div>
-    </div>
-    <div class="col-sm-2"></div>
-</div>
+![img_lg](./posts/2017-08-18-3-axis-cnc-machine/2.jpg)
 
 ::br
 
@@ -57,30 +41,14 @@ can you see below. BTW "ALL OF MY AXIS ARE ACTUALLY INVERTED" so yeah
 looking shape. To make it, first cut PLA sheet to ± 20 cm. Then Apply 
 some heat and bend it into shape.
 
-<div class="row">
-    <div class="col-sm-2"></div>
-    <div class="col-sm-8">
-        <div class="img-thumbnail">
-            <img class="img-fluid" loading="lazy" src="./posts/2017-08-18-3-axis-cnc-machine/3.jpg" alt="img">
-        </div>
-    </div>
-    <div class="col-sm-2"></div>
-</div>
+![img_lg](./posts/2017-08-18-3-axis-cnc-machine/3.jpg)
 
 ::br
 
 3. **Spacer** For axis X and Z i'm adding some custom made spacer to 
 prevent Z axis collide with X axis.
 
-<div class="row">
-    <div class="col-sm-2"></div>
-    <div class="col-sm-8">
-        <div class="img-thumbnail">
-            <img class="img-fluid" loading="lazy" src="./posts/2017-08-18-3-axis-cnc-machine/4.jpg" alt="img">
-        </div>
-    </div>
-    <div class="col-sm-2"></div>
-</div>
+![img_lg](./posts/2017-08-18-3-axis-cnc-machine/4.jpg)
 
 ::br
 
@@ -88,15 +56,7 @@ prevent Z axis collide with X axis.
 some improvement... i'm using PC motherboard spacer + screws. so Y axis 
 can move more freely
 
-<div class="row">
-    <div class="col-sm-2"></div>
-    <div class="col-sm-8">
-        <div class="img-thumbnail">
-            <img class="img-fluid" loading="lazy" src="./posts/2017-08-18-3-axis-cnc-machine/5.jpg" alt="img">
-        </div>
-    </div>
-    <div class="col-sm-2"></div>
-</div>
+![img_lg](./posts/2017-08-18-3-axis-cnc-machine/5.jpg)
 
 ::br
 
@@ -112,30 +72,14 @@ download it here <https://github.com/grbl/grbl>
 For Flashing `".HEX"` file to your arduino, I'm using `XLoader` which you 
 can download it here <http://russemotto.com/xloader/>
 
-<div class="row">
-    <div class="col-sm-4"></div>
-    <div class="col-sm-4">
-        <div class="img-thumbnail">
-            <img class="img-fluid" loading="lazy" src="./posts/2017-08-18-3-axis-cnc-machine/6.jpg" alt="img">
-        </div>
-    </div>
-    <div class="col-sm-4"></div>
-</div>
+![img_sm](./posts/2017-08-18-3-axis-cnc-machine/6.jpg)
 
 ::br
 
 And for the fun part. For controlling CNC machine, i'm using "GRBL 
 Controller" which you can download it here <https://github.com/zapmaker/GrblHoming/releases>
 
-<div class="row">
-    <div class="col-sm-2"></div>
-    <div class="col-sm-8">
-        <div class="img-thumbnail">
-            <img class="img-fluid" loading="lazy" src="./posts/2017-08-18-3-axis-cnc-machine/7.jpg" alt="img">
-        </div>
-    </div>
-    <div class="col-sm-2"></div>
-</div> 
+![img_lg](./posts/2017-08-18-3-axis-cnc-machine/7.jpg) 
 
 ::br
 
@@ -150,54 +94,12 @@ BELONG TO IT'S CREATOR) <https://www.mediafire.com/file/nmask9skn7j341u/CNC.zip>
 
 ##### **SOME BONUS PICTURE**
 
-<div class="row">
-    <div class="col-sm-2"></div>
-    <div class="col-sm-8">
-        <div class="img-thumbnail">
-            <img class="img-fluid" loading="lazy" src="./posts/2017-08-18-3-axis-cnc-machine/9.jpg" alt="img">
-        </div>
-    </div>
-    <div class="col-sm-2"></div>
-</div>
-<div class="row">
-    <div class="col-sm-2"></div>
-    <div class="col-sm-8">
-        <div class="img-thumbnail">
-            <img class="img-fluid" loading="lazy" src="./posts/2017-08-18-3-axis-cnc-machine/10.jpg" alt="img">
-        </div>
-    </div>
-    <div class="col-sm-2"></div>
-</div>
-<div class="row">
-    <div class="col-sm-2"></div>
-    <div class="col-sm-8">
-        <div class="img-thumbnail">
-            <img class="img-fluid" loading="lazy" src="./posts/2017-08-18-3-axis-cnc-machine/11.jpg" alt="img">
-        </div>
-    </div>
-    <div class="col-sm-2"></div>
-</div>
-<div class="row">
-    <div class="col-sm-2"></div>
-    <div class="col-sm-8">
-        <div class="img-thumbnail">
-            <img class="img-fluid" loading="lazy" src="./posts/2017-08-18-3-axis-cnc-machine/12.jpg" alt="img">
-        </div>
-    </div>
-    <div class="col-sm-2"></div>
-</div>
-<div class="row">
-    <div class="col-sm-6">
-        <div class="img-thumbnail">
-            <img class="img-fluid" loading="lazy" src="./posts/2017-08-18-3-axis-cnc-machine/8.jpg" alt="img">
-        </div>
-    </div>
-    <div class="col-sm-6">
-        <div class="img-thumbnail">
-            <img class="img-fluid" loading="lazy" src="./posts/2017-08-18-3-axis-cnc-machine/13.jpg" alt="img">
-        </div>
-    </div>
-</div>
+![img_lg](./posts/2017-08-18-3-axis-cnc-machine/9.jpg)
+![img_lg](./posts/2017-08-18-3-axis-cnc-machine/10.jpg)
+![img_lg](./posts/2017-08-18-3-axis-cnc-machine/11.jpg)
+![img_lg](./posts/2017-08-18-3-axis-cnc-machine/12.jpg)
+![img_lg](./posts/2017-08-18-3-axis-cnc-machine/8.jpg)
+![img_lg](./posts/2017-08-18-3-axis-cnc-machine/12.jpg)
 
 ::br
 

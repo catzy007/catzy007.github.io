@@ -8,35 +8,27 @@ host on an Internet Protocol (IP) network. according to
 this time i'll share enhanced ping script that uses microsoft windows ping as the core. 
 tested in Windows 7 and 8 maybe 10 will work well
 
-<br>
 #### Q : what it can do?
 > A : it can do ping in random time and random buffer size plus showing real time percentage of success rate and fail rate
 
-<br>
 #### Q : you mean random time and random buffer size?
 > A : random time for example after doing 1st ping, it will wait in range 1-9 second based on your luck. then it'll send another ping. same thing happen to buffer size
 
-<br>
 #### Q : are this script are dangerous to my computer, it'll download virus and another thing?
 > A : no, it just simple ping
 
-<br>
 #### Q : you sure?
 > A : if you afraid just forget this post
 
-<br>
 #### Q : how to use this script?
 > A : just copy italic text below, put it on notepad, save as .bat file, launch and ready to go
 
-<br>
 #### Q : i know nothing about networking. how i know Url or IP Destination?
 > A : just press enter if you don't know anything about that
 
-<br>
 #### Q : can i modify this script based on my own
 > A : yes, this script uses MIT license https://opensource.org/licenses/MIT so you can do whatever you want to this script
 
-<br>
 #### Q : am i getting any benefit of something else by using this script?
 > A : uhhhhh..... actually nope... hehe. but you can understand some basic of computer here
 

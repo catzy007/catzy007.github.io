@@ -4,14 +4,12 @@ Array adalah kumpulan data yang bertipe sama. Contohnya array of
 int, array of char. Membaca array menggunakan index. index array 
 dalam bahasa C dimulai dari 0.
 
-<br>
 #### `Inisialisasi array`
 inisialisasi array of int dengan nama arr dan ukuran 10
 ```
 int arr[10];
 ```
 
-<br>
 #### `Mengisikan data ke array`
 Mengisi data 255 ke array index ke 0 sampai 2
 ```
@@ -26,7 +24,6 @@ arr[2]=255;
 
 * `* stack smashing detected `*: <unknown> terminated
 
-<br>
 #### `Membaca data array`
 membaca isi dari array index ke 2
 ```
@@ -34,7 +31,6 @@ printf("%d",arr[2]);
 ```
 * apabila anda mengakses array yang tidak di inisialisasi maka akan mendapat nilai random
 
-<br>
 #### `Mengisi dan mengakses array menggunakan loop`
 misal
 ```
@@ -48,7 +44,6 @@ for(i=0;i<10;i++){
 }
 ```
 
-<br>
 #### `Operasi numerik array`
 misal menambahkan nilai array a dan b dan disimpan di array c
 ```
@@ -70,7 +65,6 @@ for(i=0;i<5;i++){
 }
 ```
 
-<br>
 #### `Array of char (string)`
 string adalah kumpulan tipe data char dalam bentuk array dan dapat diakses satu persatu
 ```
@@ -100,10 +94,8 @@ while(kalimat[i]!='\0'){
 
 selama kalimat ke-i tidak sama dengan nul character, print karakter dalam kalimat
 
-<br>
 *Sekian materi dasar pemrograman bahasa C semoga bermanfaat.*
 
-<br>
 #### `Sumber Bacaan`
 
 <https://en.wikipedia.org/wiki/Array_data_structure>

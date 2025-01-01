@@ -18,15 +18,7 @@ working anymore, i previously using xrandr to set this which is not working afte
 using Wayland. So how to set this in Ubuntu 22.04, first go to `Settings > Displays > 
 Check Fractional Scaling`.
 
-<div class="row">
-	<div class="col-sm-2"></div>
-	<div class="col-sm-8">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2022-09-20-custom-display-scaling-in-wayland-ubuntu-22-04/01.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-2"></div>
-</div>
+![img_lg](./posts/2022-09-20-custom-display-scaling-in-wayland-ubuntu-22-04/01.png)
 
 Before you proceed, divide your vertical resolution with resolution you want. 
 For example mine is 900p and i wanted 1080p, divide 900/1080 = 0.83 (use 2 decimal 
@@ -34,15 +26,7 @@ places only).
 
 Next, open terminal and type `sudo nano ~/.config/monitors.xml`
 
-<div class="row">
-	<div class="col-sm-2"></div>
-	<div class="col-sm-8">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2022-09-20-custom-display-scaling-in-wayland-ubuntu-22-04/02.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-2"></div>
-</div>
+![img_lg](./posts/2022-09-20-custom-display-scaling-in-wayland-ubuntu-22-04/02.png)
 
 Find the `<scale>` and set the value according to your previous calculation, then 
 save and exit by pressing `Ctrl + X` then `Y` and `Enter` followed by a system reboot 

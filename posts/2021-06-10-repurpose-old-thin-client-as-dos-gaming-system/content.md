@@ -20,15 +20,8 @@ Then i take it home and notice a `Asset code` from local bank, when i plug it up
 data still there. So what i do is format the disk and everything is mine now. Then what i found 
 interesting is that the two different sticker said different thing, so one of them said T5000 
 and the other one said T5700. If any of you need this, look for both keyword.
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2021-06-10-repurpose-old-thin-client-as-dos-gaming-system/1.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+
+![img](./posts/2021-06-10-repurpose-old-thin-client-as-dos-gaming-system/1.jpg)
 
 The specification for this is Transmeta Crusoe TM5800 in my case the clock speed is 733MHz with 
 512MB of DDR memory, 512MB of storage (IDE DOM) and ATI Rage XL GPU. From the sticker it should come 
@@ -40,15 +33,9 @@ running x86 code using [Code Morphing](https://en.wikipedia.org/wiki/Transmeta#C
 As far as i can remember, only few companies own x86 license. Intel, AMD, VIA and other that i can't 
 remember. So the way Transmeta achieve this is to translate x86 code to native code then execute it 
 accordingly.
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2021-06-10-repurpose-old-thin-client-as-dos-gaming-system/2.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+
+![img](./posts/2021-06-10-repurpose-old-thin-client-as-dos-gaming-system/2.jpg)
+
 Here some CPU-Z details <https://valid.x86.fr/ivd4ak>
 <p align="center">
     <a href="https://valid.x86.fr/ivd4ak"><img class="imgrespM" src="https://valid.x86.fr/cache/banner/ivd4ak-99.png" alt="img"></a>
@@ -85,7 +72,6 @@ Thanks to [JazeFox](https://www.vogons.org/viewtopic.php?t=73270) and [PhilsComp
 * First, get it [here](https://www.vogons.org/viewtopic.php?t=73270) or [mirror](./posts/2021-06-10-repurpose-old-thin-client-as-dos-gaming-system/VIASBFM.zip).
 * Then extract and copy to your MS-DOS USB drive.
 * Boot your system and save batch script below as `VIASBFM.BAT`.
-    
     ```
     @echo off
     SET BLASTER=A220 I5 D1 P0 J0
@@ -94,7 +80,6 @@ Thanks to [JazeFox](https://www.vogons.org/viewtopic.php?t=73270) and [PhilsComp
     ```
 * Run the `VIASBFM.BAT` and it should work.
 * If you want to adjust volume, edit `VIASBFM.BAT` according tho this.
-    
     ```
     LH VIASBCFG /V50 /VW50 /VF50 /VP50
 
@@ -103,15 +88,7 @@ Thanks to [JazeFox](https://www.vogons.org/viewtopic.php?t=73270) and [PhilsComp
     /VF FM Volume
     /VP PCSPK Volume
     ```
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2021-06-10-repurpose-old-thin-client-as-dos-gaming-system/5.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img](./posts/2021-06-10-repurpose-old-thin-client-as-dos-gaming-system/5.jpg)
 
 #### Using this as Windows 98 machine
 
@@ -121,7 +98,6 @@ to it, make DOM bootable, copy Windows 98 installer on it, and install it from D
 * First create MS-DOS bootable by following `this as MS-DOS machine` tutorial 
 above.
 * Next, boot MS-DOS USB drive and follow this
-
     ```
     fdisk
     press 5 enter (to change current fixed disk)
@@ -135,7 +111,6 @@ above.
     press esc esc (system will reboot)
     ```
 * Then follow this
-
     ```
     format d: /s
     sys d:
@@ -147,12 +122,10 @@ tings and make it unusable. So what i use is Tiny Core Linux [(The 16MB CLI one)
 After that, plug your USB drive and create a bootable using Unetbootin or 
 something similar. 
 * Then follow this.
-
     ```
     sudo fdisk -l
     ```
 * Find your DOM (in my case it's /dev/sda). Then
-
     ```
     sudo fdisk /dev/sda
     press A enter (to mark partition as bootable)
@@ -165,24 +138,10 @@ something similar.
 * Just follow the On-screen instruction.
 * And that's it.
 * Or if you confused, check this <https://www.youtube.com/watch?v=7_GEsE2_j4Y> (different approach)
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2021-06-10-repurpose-old-thin-client-as-dos-gaming-system/3.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2021-06-10-repurpose-old-thin-client-as-dos-gaming-system/4.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+
+![img](./posts/2021-06-10-repurpose-old-thin-client-as-dos-gaming-system/3.jpg)
+
+![img](./posts/2021-06-10-repurpose-old-thin-client-as-dos-gaming-system/4.jpg)
 
 #### Installing Windows 98 Driver
 

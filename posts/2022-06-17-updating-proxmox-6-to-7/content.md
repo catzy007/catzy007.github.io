@@ -6,41 +6,19 @@ First do a simple update and upgrade to make sure you have latest package (at th
 apt update
 apt dist-upgrade
 ```
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2022-06-17-updating-proxmox-6-to-7/00.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img](./posts/2022-06-17-updating-proxmox-6-to-7/00.png)
 
 Next, check using built-in tools. Open terminal and type
 ```
 pve6to7
 ```
-<div class="row">
-	<div class="col-sm-2"></div>
-	<div class="col-sm-8">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2022-06-17-updating-proxmox-6-to-7/01.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-2"></div>
-</div>
+
+![img_lg](./posts/2022-06-17-updating-proxmox-6-to-7/01.png)
 
 In my case, i need to change `lxc.cgroup` in one of my container to `lxc.cgroup2`. Also i need to change 
 debian security apt source list from `buster/updates` to `bullseye-security`. 
-<div class="row">
-	<div class="col-sm-2"></div>
-	<div class="col-sm-8">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2022-06-17-updating-proxmox-6-to-7/02.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-2"></div>
-</div>
+
+![img_lg](./posts/2022-06-17-updating-proxmox-6-to-7/02.png)
 
 Then go to apt source list directory and change apt sources from buster to bullseye. 
 ```
@@ -54,63 +32,27 @@ if you're using non-subscription repo, do
 ```
 sed -i -e 's/buster/bullseye/g' /etc/apt/sources.list.d/pve-install-repo.list 
 ```
-<div class="row">
-	<div class="col-sm-2"></div>
-	<div class="col-sm-8">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2022-06-17-updating-proxmox-6-to-7/03.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-2"></div>
-</div>
+
+![img_lg](./posts/2022-06-17-updating-proxmox-6-to-7/03.png)
 
 Assuming nothing goes wrong, do update and dist-upgrade.
 ```
 apt update
 apt dist-upgrade
 ```
-<div class="row">
-	<div class="col-sm-2"></div>
-	<div class="col-sm-8">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2022-06-17-updating-proxmox-6-to-7/04.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-2"></div>
-</div>
+
+![img_lg](./posts/2022-06-17-updating-proxmox-6-to-7/04.png)
 
 Sometimes a promopt will shows up and ask you to accept a term or select a configuration.
-<div class="row">
-	<div class="col-sm-2"></div>
-	<div class="col-sm-8">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2022-06-17-updating-proxmox-6-to-7/05.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-2"></div>
-</div>
+
+![img_lg](./posts/2022-06-17-updating-proxmox-6-to-7/05.png)
 
 Assuming everything works properly, your system should boot into proxmox 7.2 and that's it.
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2022-06-17-updating-proxmox-6-to-7/06.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img](./posts/2022-06-17-updating-proxmox-6-to-7/06.png)
 
 In my case, i need to change `lxc.cgroup` in one of my container to `lxc.cgroup2`. Power off the container 
 and edit the config file manually.
-<div class="row">
-	<div class="col-sm-2"></div>
-	<div class="col-sm-8">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2022-06-17-updating-proxmox-6-to-7/07.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-2"></div>
-</div>
+
+![img_lg](./posts/2022-06-17-updating-proxmox-6-to-7/07.png)
 
 [Source Proxmox Wiki Upgrade from 6.x to 7.0](https://pve.proxmox.com/wiki/Upgrade_from_6.x_to_7.0)

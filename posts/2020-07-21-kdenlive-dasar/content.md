@@ -3,29 +3,13 @@ _Tuesday, July 21, 2020_
 
 #### Download dan Install
 Kdenlive mendukung berbagai macam sistem operasi, download sesuai dengan sistem operasi anda <https://kdenlive.org/en/download/>
-<div class="row">
-	<div class="col-sm-1"></div>
-	<div class="col-sm-10">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2020-07-21-kdenlive-dasar/0.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-1"></div>
-</div>
+![img_xl](./posts/2020-07-21-kdenlive-dasar/0.png)
 
 ::br
 
 #### Pengenalan Tampilan
 
-<div class="row">
-	<div class="col-sm-1"></div>
-	<div class="col-sm-10">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2020-07-21-kdenlive-dasar/1.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-1"></div>
-</div>
+![img_xl](./posts/2020-07-21-kdenlive-dasar/1.png)
 
 ::br
 
@@ -33,15 +17,7 @@ Ini adalah tampilan awal `Kdenlive` terdapat 4 bagian utama yaitu `Projek Bin`, 
 
 <https://userbase.kde.org/Kdenlive/Manual>
 
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2020-07-21-kdenlive-dasar/2.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img](./posts/2020-07-21-kdenlive-dasar/2.png)
 
 ::br
 
@@ -51,15 +27,7 @@ langsung kedalam `projek bin` atau dengan `klik kanan pada projek bin` dan pilih
 
 <https://userbase.kde.org/Kdenlive/Manual/Projects_and_Files/Project_Tree>
 
-<div class="row">
-	<div class="col-sm-2"></div>
-	<div class="col-sm-8">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2020-07-21-kdenlive-dasar/3.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-2"></div>
-</div>
+![img_lg](./posts/2020-07-21-kdenlive-dasar/3.png)
 
 ::br
 
@@ -69,15 +37,7 @@ kurang jelas, maka dapat menggunakan `Denoiser` dan sebagainya.
 
 <https://userbase.kde.org/Kdenlive/Manual/Effects>
 
-<div class="row">
-	<div class="col-sm-1"></div>
-	<div class="col-sm-10">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2020-07-21-kdenlive-dasar/4.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-1"></div>
-</div>
+![img_xl](./posts/2020-07-21-kdenlive-dasar/4.png)
 
 ::br
 
@@ -86,15 +46,7 @@ melihat hasil editing secara langsung.
 
 <https://userbase.kde.org/Kdenlive/Manual/Monitors>
 
-<div class="row">
-	<div class="col-sm-2"></div>
-	<div class="col-sm-8">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2020-07-21-kdenlive-dasar/5.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-2"></div>
-</div>
+![img_lg](./posts/2020-07-21-kdenlive-dasar/5.png)
 
 ::br
 
@@ -107,15 +59,7 @@ audio mana yang akan muncul pada hasil akhir.
 Pada timeline juga terdapat beberapa tools, ada tiga tools utama 
 yang harus dipahami.
 
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2020-07-21-kdenlive-dasar/5-1.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img](./posts/2020-07-21-kdenlive-dasar/5-1.png)
 
 ::br
 
@@ -129,15 +73,7 @@ Pada bagian yang berwarna <span style="color:blue">biru</span> adalah `timeline 
 
 #### Basic Workflow
 
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2020-07-21-kdenlive-dasar/6.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img](./posts/2020-07-21-kdenlive-dasar/6.png)
 
 ::br
 
@@ -145,164 +81,68 @@ Pertama buat folder baru, copykan semua clip,video,gambar kedalam folder tersebu
 
 `Sebisa mungkin untuk tidak memindah dan merubah nama file dalam folder! untuk mencegah data corrupt`
 
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2020-07-21-kdenlive-dasar/7.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img](./posts/2020-07-21-kdenlive-dasar/7.png)
 
 Kemudian buka kdenlive dan masukkan clip kedalam projek bin dengan cara `drag and drop` 
 atau dengan `klik kanan pada projek bin > add clip or folder`
 
-<div class="row">
-	<div class="col-sm-1"></div>
-	<div class="col-sm-10">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2020-07-21-kdenlive-dasar/8.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-1"></div>
-</div>
-<div class="row">
-	<div class="col-sm-1"></div>
-	<div class="col-sm-10">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2020-07-21-kdenlive-dasar/9.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-1"></div>
-</div>
+![img_xl](./posts/2020-07-21-kdenlive-dasar/8.png)
+![img_xl](./posts/2020-07-21-kdenlive-dasar/9.png)
 
 ::br
 
 Selanjutnya masukkan clip kedalam timeline dengan cara `drag and drop`
 
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2020-07-21-kdenlive-dasar/10.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img](./posts/2020-07-21-kdenlive-dasar/10.png)
 
 ::br
 
 Sebelum melakukan apapun, pastikan lakukan save dan simpan file dalam folder yang sama dengan clip
 
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2020-07-21-kdenlive-dasar/11.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img](./posts/2020-07-21-kdenlive-dasar/11.png)
 
 ::br
 
 Semisal ingin memotong clip pada detik ke 13, maka click cut atau razor tools
 
 
-<div class="row">
-	<div class="col-sm-2"></div>
-	<div class="col-sm-8">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2020-07-21-kdenlive-dasar/12.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-2"></div>
-</div>
+![img_lg](./posts/2020-07-21-kdenlive-dasar/12.png)
 
 ::br
 
 lalu saat cursor berwarna merah, arahkan pada detik ke 13 di timeline
 
-<div class="row">
-	<div class="col-sm-2"></div>
-	<div class="col-sm-8">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2020-07-21-kdenlive-dasar/13.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-2"></div>
-</div>
+![img_lg](./posts/2020-07-21-kdenlive-dasar/13.png)
 
 ::br
 
 kemudian clip akan terpisah menjadi 2 bagian
 
-<div class="row">
-	<div class="col-sm-2"></div>
-	<div class="col-sm-8">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2020-07-21-kdenlive-dasar/14.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-2"></div>
-</div>
+![img_lg](./posts/2020-07-21-kdenlive-dasar/14.png)
 
 ::br
 
 selanjutnya disini saya akan membuang clip dengan cara click select tool, lalu click pada clip yang ingin dibuang, klik kanan, delete selected item.
 
-<div class="row">
-	<div class="col-sm-2"></div>
-	<div class="col-sm-8">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2020-07-21-kdenlive-dasar/15.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-2"></div>
-</div>
+![img_lg](./posts/2020-07-21-kdenlive-dasar/15.png)
 
 ::br
 
 lalu clip akan hilang
 
-<div class="row">
-	<div class="col-sm-1"></div>
-	<div class="col-sm-10">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2020-07-21-kdenlive-dasar/16.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-1"></div>
-</div>
+![img_xl](./posts/2020-07-21-kdenlive-dasar/16.png)
 
 ::br
 
 kemudian saya akan tambahkan clip baru pada projek bin, lalu drag and drop clip baru ke timeline
 
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2020-07-21-kdenlive-dasar/17.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img](./posts/2020-07-21-kdenlive-dasar/17.png)
 
 ::br
 
 untuk mendapatkan hasil video yang telah diedit, lakukan proses render dengan cara click project menu > render
 
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2020-07-21-kdenlive-dasar/18.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img](./posts/2020-07-21-kdenlive-dasar/18.png)
 
 ::br
 
