@@ -16,15 +16,8 @@ First, make ubuntu bootable cd or usb
 * Open Unetbootin and select `DiskImage`
 * Press tri dot on right corner `...`
 * Select your linux `ISO`
-<div class="row">
-    <div class="col-sm-2"></div>
-    <div class="col-sm-8">
-        <div class="img-thumbnail">
-            <img class="img-fluid" loading="lazy" src="./posts/2018-07-13-repair-grub-after-installing-windows/1.jpg" alt="img">
-        </div>
-    </div>
-    <div class="col-sm-2"></div>
-</div>
+
+![img_lg](./posts/2018-07-13-repair-grub-after-installing-windows/1.jpg)
 
 * Next boot the usb in `live mode` and connect it into internet
 > You might need to change boot order via BIOS. Check your device manual

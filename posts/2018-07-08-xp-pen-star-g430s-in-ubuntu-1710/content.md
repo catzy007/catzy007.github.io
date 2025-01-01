@@ -43,15 +43,7 @@ try it out and it's works. okay enough talks let's get into it.
 * If your pen tab still won't work, try rebooting
 * Aand that's it!
 
-<div class="row">
-    <div class="col-sm-2"></div>
-    <div class="col-sm-8">
-        <div class="img-thumbnail">
-            <img class="img-fluid" loading="lazy" src="./posts/2018-07-08-xp-pen-star-g430s-in-ubuntu-1710/1.jpg" alt="img">
-        </div>
-    </div>
-    <div class="col-sm-2"></div>
-</div>
+![img_lg](./posts/2018-07-08-xp-pen-star-g430s-in-ubuntu-1710/1.jpg)
 
 even the pressure works just fine.
 

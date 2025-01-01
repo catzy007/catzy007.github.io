@@ -49,12 +49,4 @@ is required. The idea is to connect both Host and Client
 to VPN which allow them to communicate over the public 
 network.
 
-<div class="row">
-	<div class="col-sm-2"></div>
-	<div class="col-sm-8">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2024-04-08-low-latency-self-hosted-cloud-gaming/01.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-2"></div>
-</div>
+![img_lg](./posts/2024-04-08-low-latency-self-hosted-cloud-gaming/01.jpg)

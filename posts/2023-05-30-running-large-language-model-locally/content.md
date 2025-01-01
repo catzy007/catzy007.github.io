@@ -60,15 +60,7 @@ format therefore a conversion is required.
 ```
 python3 convert-pth-to-ggml.py models/7B/ 1
 ```
-<div class="row">
-	<div class="col-sm-2"></div>
-	<div class="col-sm-8">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2023-05-30-running-large-language-model-locally/01.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-2"></div>
-</div>
+![img_lg](./posts/2023-05-30-running-large-language-model-locally/01.png)
 
 The original LLAMA weight uses 16-bit precision 
 this require 
@@ -81,15 +73,7 @@ requirements is significantly reduced.
 ```
 python3 quantize.py 7B
 ```
-<div class="row">
-	<div class="col-sm-2"></div>
-	<div class="col-sm-8">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2023-05-30-running-large-language-model-locally/02.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-2"></div>
-</div>
+![img_lg](./posts/2023-05-30-running-large-language-model-locally/02.png)
 
 Then you can run the following example.
 ```

@@ -21,15 +21,7 @@ measurement came up around 8 ohms which according to several sources, the
 measured impedance should be 15% lower than the actual impedance and the 
 impedance rating should be around 10 ohms.
 
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2023-03-30-fixing-my-old-speaker/01.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img](./posts/2023-03-30-fixing-my-old-speaker/01.jpg)
 
 Next thing I did is to find a suitable amplifier for my set-up. If the impedance 
 rating of my drivers is lower than the amplifier expect, it could blow itself to 
@@ -39,30 +31,14 @@ also supports Bluetooth, USB and regular AUX. The only drawback is that this
 amplifier is rated for 4 to 8 ohms driver and my heavy subwoofer driver is 10 
 ohms I guess I just max the subwoofer volume and adjust everything else in EQ.
 
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2023-03-30-fixing-my-old-speaker/02.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img](./posts/2023-03-30-fixing-my-old-speaker/02.jpg)
 
 Compared to the original internals, it is like a night and day. Not only in the 
 size footprint, the sound quality is also improved. The sound stage is wider 
 and sharper and the note is separated quite nicely. Yes it is not the best 
 ever but at 10 USD shipped, it is good enough for me.
 
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2023-03-30-fixing-my-old-speaker/03.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img](./posts/2023-03-30-fixing-my-old-speaker/03.jpg)
 
 The last thing I did is to dismantle the original internals, wire everything up, 
 do a final test before closing the panel then do a test and adjust the EQ. As for 
@@ -73,15 +49,7 @@ way to measure how the system perform compared to a known set of tracks. For
 example if God Knows played in improperly configured stereo set-up, the electric 
 guitar part is going to be missing altogether. 
 
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2023-03-30-fixing-my-old-speaker/04.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img](./posts/2023-03-30-fixing-my-old-speaker/04.jpg)
 
 As for my set-up, everything is passed with flying colours except Golden Time. It 
 has a short burst bass and apparently my power supply I pull from random internet 
@@ -121,15 +89,7 @@ rate, unless you're recording or editing a track it is
 fine for playback purpose. You can get more info in this 
 [YouTube video](https://www.youtube.com/watch?v=cD7YFUYLpDc&feature=youtu.be).
 
-<div class="row">
-	<div class="col-sm-2"></div>
-	<div class="col-sm-8">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2023-03-30-fixing-my-old-speaker/05.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-2"></div>
-</div>
+![img_lg](./posts/2023-03-30-fixing-my-old-speaker/05.png)
 
 Next if you want to improve your playback quality 
 using Bluetooth, you can change the audio codec to 
@@ -160,15 +120,7 @@ simply by installing PulseAudio Volume Control
 `pavucontrol`, go to `Configuration` tab and simply 
 change the codec.
 
-<div class="row">
-	<div class="col-sm-2"></div>
-	<div class="col-sm-8">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2023-03-30-fixing-my-old-speaker/06.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-2"></div>
-</div>
+![img_lg](./posts/2023-03-30-fixing-my-old-speaker/06.png)
 
 As for other device because this is not an official 
 specification, you need a find a "Hacky" ways to get 
@@ -183,12 +135,4 @@ by simply plugging one end of the USB cable to amplifier
 and the other end to my PC. This way I can use it to play 
 music at 16-Bit at 48 kHz with no interference at all.
 
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2023-03-30-fixing-my-old-speaker/07.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img](./posts/2023-03-30-fixing-my-old-speaker/07.png)

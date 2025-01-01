@@ -17,15 +17,8 @@ Alright, now how to run OpenVPN inside LXC?
 * In this case, i assume that you already know how to add LXC image to Proxmox 
 and how to create LXC container.
 * First, create new container as usual but with one catch, Uncheck `Unprivileged container`
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2021-07-09-openvpn-via-proxmox-lxc/01.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+
+![img](./posts/2021-07-09-openvpn-via-proxmox-lxc/01.png)
 
 * Next, boot the container and do update/upgrade.
 * Then, power off the container then open Proxmox `shell`.
@@ -40,7 +33,6 @@ and how to create LXC container.
     lxc.cgroup.devices.allow: c 10:200 rwm
     lxc.mount.entry: /dev/net/tun dev/net/tun none bind,create=file
     ```
-
 * Then do save, exit `ctrl+x, ctrl+y, enter` and start the container back up.
 * Next, install OpenVPN.
     ```
@@ -48,13 +40,11 @@ and how to create LXC container.
     chmod +x openvpn-install.sh
     sudo ./openvpn-install.sh
     ```
-
 * Set it up according to your preferences.
 * After that, make `openvpn` directory in `/root`.
     ```
     mkdir /root/openvpn
     ```
-
 * Then, `nano /etc/systemd/system/openvpn@.service`.
 * Change all `/run/openvpn` occurrence to `/root/openvpn`.
 * Save, exit and restart daemon `systemctl daemon-reload`.
@@ -63,5 +53,4 @@ and how to create LXC container.
     sytemctl status openvpn@server
     journalctl -xe
     ```
-
 And that's it. Have fun, good luck!

@@ -44,6 +44,10 @@
     a, a:hover {
         color: var(--bs-link-hover-color);
     }
+    pre {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
     .stevia-color, #siteBranding {
         color: var(--bs-link-hover-color);
     }

@@ -7,7 +7,6 @@ dan cara proses yang dibutuhkan untuk memproses data tersebut.
 
 Bahasa C mempunyai tipe data dasar yaitu
 
-<br>
 #### `1.) Char`
 tipe data char digunakan untuk deklarasi karakter memiliki ukuran 
 memori sebesar 1 Byte dengan jangkauan nilai sebesar -128 hingga 
@@ -21,7 +20,6 @@ char varchar = 'a';
 printf("Value dari varchar adalah %c",varchar);  
 ```
 
-<br>
 #### `2.) Short`
 Tipe data short atau short int memiliki ukuran memori sebesar 2 Byte 
 dengan jangkauan nilai sebesar −32,767 hingga +32,767. untuk 
@@ -35,7 +33,6 @@ short varshort=1234;
 printf("value dari varshort adalah %d,varshort);
 ```
 
-<br>
 #### `3.) Int`       
 Tipe data integer sesuai namanya integer yang berati "bilangan bulat" 
 memiliki ukuran memori sebesar 2 Byte atau 4 Byte "tergantung 
@@ -50,7 +47,6 @@ int varint=1234;
 printf("value dari varint adalah %d",varint);
 ```
 
-<br>
 #### `4.) Long`
 Tipe data long memiliki ukuran memori sebesar 4 Byte dengan jangkauan 
 nilai sebesar −2,147,483,647 hingga +2,147,483,647. untuk 
@@ -63,7 +59,6 @@ long varlong=1234;
 printf("value dari varlong adalah %li",varlong);
 ```
 
-<br>
 #### `5.) Float`
 Tipe data float atau "single-precision floating-point type" adalah 
 tipe data yang mendukung perhitungan desimal. jangkauan nilai 
@@ -79,7 +74,6 @@ float pi=3.14
 printf("value dari pi adalah %f",pi);
 ```
 
-<br>
 #### `6.) Double`
 Tipe data double atau "double-precision floating-point type" memiliki 
 properti yang mirip2 dengan float atau single presisi. jangkauan nilai 
@@ -94,7 +88,6 @@ double pi=3.14
 printf("value dari pi adalah %lf",pi);
 ```
 
-<br>
 #### `Informasi lebih lanjut`
 * Perbedaan ukuran antar tipe data
 
@@ -114,15 +107,7 @@ printf("value dari pi adalah %lf",pi);
     }
     ```
 
-<div class="row">
-    <div class="col-sm-3"></div>
-    <div class="col-sm-6">
-        <div class="img-thumbnail">
-            <img class="img-fluid" loading="lazy" src="./posts/2018-03-10-dasar-pemrograman-c-part2-tipe-data/1.jpg" alt="img">
-        </div>
-    </div>
-    <div class="col-sm-3"></div>
-</div>
+![img](./posts/2018-03-10-dasar-pemrograman-c-part2-tipe-data/1.jpg)
 
 * Informasi mengenai akurasi float [tutorialspoint.com](https://www.tutorialspoint.com/cprogramming/c_data_types.htm)
 
@@ -188,7 +173,6 @@ printf("value dari pi adalah %lf",pi);
     }
     ```
 
-<br>
 ##### `7.) String`
 sebenarnya ada lagi tipe data lain yaitu string. string adalah 
 kumpulan dari char yang membentuk suatu kata / kalimat.
@@ -203,23 +187,12 @@ char string[14]="Halo Dunia!";
 printf("%s\n",string);
 ```
 
-<br>
 #### `Latihan`
 Buat program dengan bahasa C untuk menampilkan Informasi Toko dan Struk Pembayaran.
-<div class="row">
-    <div class="col-sm-3"></div>
-    <div class="col-sm-6">
-        <div class="img-thumbnail">
-            <img class="img-fluid" loading="lazy" src="./posts/2018-03-10-dasar-pemrograman-c-part2-tipe-data/2.jpg" alt="img">
-            <a href="https://simple.wikipedia.org/wiki/Receipt">simple.wikipedia.org</a>
-        </div>
-    </div>
-    <div class="col-sm-3"></div>
-</div>
+![img](./posts/2018-03-10-dasar-pemrograman-c-part2-tipe-data/2.jpg "simple.wikipedia.org")
 
 *Materi selanjutnya mengenai Input dan Operator*
 
-<br>
 #### `Sumber Bacaan`
 
 <https://en.wikipedia.org/wiki/C_data_types>

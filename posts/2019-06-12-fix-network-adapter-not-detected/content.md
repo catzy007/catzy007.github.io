@@ -24,15 +24,7 @@ sudo lsusb
 ```
 it will do the same thing but via usb
 
-<div class="row">
-    <div class="col-sm-3"></div>
-    <div class="col-sm-6">
-        <div class="img-thumbnail">
-            <img class="img-fluid" loading="lazy" src="./posts/2019-06-12-fix-network-adapter-not-detected/1.jpg" alt="img">
-        </div>
-    </div>
-    <div class="col-sm-3"></div>
-</div>
+![img](./posts/2019-06-12-fix-network-adapter-not-detected/1.jpg)
 
 ::br
 
@@ -41,15 +33,7 @@ as you can see in my `Network Controller` it is `BCM43142` try to remember that.
 #### Next google how to install wifi driver
 just do simple googling.
 
-<div class="row">
-    <div class="col-sm-3"></div>
-    <div class="col-sm-6">
-        <div class="img-thumbnail">
-            <img class="img-fluid" loading="lazy" src="./posts/2019-06-12-fix-network-adapter-not-detected/2.jpg" alt="img">
-        </div>
-    </div>
-    <div class="col-sm-3"></div>
-</div>
+![img](./posts/2019-06-12-fix-network-adapter-not-detected/2.jpg)
 
 ::br
 
@@ -58,39 +42,15 @@ just do simple googling.
 #### Next install your wifi driver
 in my case it's `sudo apt install bcmwl-kernel-source`
 
-<div class="row">
-    <div class="col-sm-3"></div>
-    <div class="col-sm-6">
-        <div class="img-thumbnail">
-            <img class="img-fluid" loading="lazy" src="./posts/2019-06-12-fix-network-adapter-not-detected/3.jpg" alt="img">
-        </div>
-    </div>
-    <div class="col-sm-3"></div>
-</div>
-<div class="row">
-    <div class="col-sm-3"></div>
-    <div class="col-sm-6">
-        <div class="img-thumbnail">
-            <img class="img-fluid" loading="lazy" src="./posts/2019-06-12-fix-network-adapter-not-detected/4.jpg" alt="img">
-        </div>
-    </div>
-    <div class="col-sm-3"></div>
-</div>
+![img](./posts/2019-06-12-fix-network-adapter-not-detected/3.jpg)
+![img](./posts/2019-06-12-fix-network-adapter-not-detected/4.jpg)
 
 ::br
 
 > Your specific device might be different
 
 #### Then reboot your machine and your wifi will work
-<div class="row">
-    <div class="col-sm-3"></div>
-    <div class="col-sm-6">
-        <div class="img-thumbnail">
-            <img class="img-fluid" loading="lazy" src="./posts/2019-06-12-fix-network-adapter-not-detected/5.jpg" alt="img">
-        </div>
-    </div>
-    <div class="col-sm-3"></div>
-</div>
+![img](./posts/2019-06-12-fix-network-adapter-not-detected/5.jpg)
 
 ::br
 

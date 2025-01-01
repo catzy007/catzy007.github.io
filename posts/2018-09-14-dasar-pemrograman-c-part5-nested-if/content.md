@@ -24,7 +24,6 @@ if(makanan==1){
 }
 ```
 
-<br>
 #### `Contoh lain`
 
 ```
@@ -69,10 +68,8 @@ int main(int argc,char *argv[]){
         break;
 ```
 
-<br>
 *Materi selanjutnya Perulangan*
 
-<br>
 #### `Sumber bacaan`
 
 <https://www.tutorialspoint.com/cprogramming/nested_if_statements_in_c.htm>

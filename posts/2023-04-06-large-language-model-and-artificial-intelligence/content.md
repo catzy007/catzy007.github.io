@@ -46,15 +46,7 @@ to pause AI development more powerful than GPT-4 for 6 months
 As for interesting side note, here is what Bing Chat which apparently based on 
 GPT-4 thinks about the future AI and their implications.
 
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2023-04-06-large-language-model-and-artificial-intelligence/01.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img](./posts/2023-04-06-large-language-model-and-artificial-intelligence/01.jpg)
 
 [[1] Large language model - Wikipedia](https://en.wikipedia.org/wiki/Large_language_model)
 

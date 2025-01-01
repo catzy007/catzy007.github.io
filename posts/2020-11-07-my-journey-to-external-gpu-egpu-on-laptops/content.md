@@ -16,15 +16,7 @@ few years back. The original plug is actually PCIE 1x and changed to
 Mini PCIE, so it can be repurposed as external GPU adapter. And the best 
 is it only cost 7-10 USD, yeah great deal.
 
-<div class="row">
-	<div class="col-sm-4"></div>
-	<div class="col-sm-4">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2020-11-07-my-journey-to-external-gpu-egpu-on-laptops/1.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-4"></div>
-</div>
+![img_sm](./posts/2020-11-07-my-journey-to-external-gpu-egpu-on-laptops/1.png)
 
 ::br
 
@@ -37,16 +29,7 @@ basically do some mod to it. The PSU i'm using is standard ATX PSU with
 750W from Aerocool and random old PSU. What should you do is to jump a connection 
 between Green wire and Black wire or `PS_ON#` with `COM`. It basically forces a PSU to stay on. 
 
-<div class="row">
-	<div class="col-sm-4"></div>
-	<div class="col-sm-4">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2020-11-07-my-journey-to-external-gpu-egpu-on-laptops/3.png" alt="img">
-            <a href="https://en.wikipedia.org/wiki/Power_supply_unit_(computer)">Image from Wikipedia</a>
-		</div>
-	</div>
-	<div class="col-sm-4"></div>
-</div>
+![img_sm](./posts/2020-11-07-my-journey-to-external-gpu-egpu-on-laptops/3.png "Image from Wikipedia")
 
 ::br
 
@@ -57,15 +40,7 @@ and done.
 
 The power on Sequence is turn on the ATX PSU, wait for few seconds, then turn on the laptop.
 
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2020-11-07-my-journey-to-external-gpu-egpu-on-laptops/4.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img](./posts/2020-11-07-my-journey-to-external-gpu-egpu-on-laptops/4.jpg)
 
 ::br
 
@@ -88,15 +63,7 @@ The third system i test is Acer Aspire One 756 with Non-UEFI BIOS, Celeron B877,
 and it works great, apart from custom driver because RX560 don't support windows 8.1 yeah it detected 
 in GPU-Z. But still no gaming test.
 
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2020-11-07-my-journey-to-external-gpu-egpu-on-laptops/2.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img](./posts/2020-11-07-my-journey-to-external-gpu-egpu-on-laptops/2.jpg)
 
 ::br
 
@@ -106,15 +73,7 @@ from the picture, the Mini-PCIe connector is bigger than M.2 connector. From <ht
 i assume that the M.2 Connector is Key-E, and the Wifi card is Key-A+E, which means M.2 Key-E adapter is needed 
 to use EGPU in this laptop.
 
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2020-11-07-my-journey-to-external-gpu-egpu-on-laptops/6.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img](./posts/2020-11-07-my-journey-to-external-gpu-egpu-on-laptops/6.jpg)
 
 ::br
 
@@ -122,15 +81,7 @@ to use EGPU in this laptop.
 Today i got free time and i can test EGPU on my primary laptop. It is ASUS X550VXK with UEFI BIOS, i7-7700HQ, 
 Nvidia 950M, Windows 10 2004 + Ubuntu 20.04. As usual just dissasemble the laptop and plug Mini-PCIE adapter in.
 
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2020-11-07-my-journey-to-external-gpu-egpu-on-laptops/7.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img](./posts/2020-11-07-my-journey-to-external-gpu-egpu-on-laptops/7.jpg)
 
 ::br
 
@@ -139,67 +90,27 @@ in the bios, just blank screen. After few try and try suggestion from interweb t
 BIOS to Windows, still no luck. Either it doesn't boot, or it doesn't detected. Then i go to BIOS and Enable `Compatibility 
 Support Module (CSM)`
 
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2020-11-07-my-journey-to-external-gpu-egpu-on-laptops/8.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img](./posts/2020-11-07-my-journey-to-external-gpu-egpu-on-laptops/8.jpg)
 
 ::br
 
 Then it did the trick, just boot normally and detected! my second monitor even works just well. It even detected in 
 Ubuntu 20.04 just fine.
 
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2020-11-07-my-journey-to-external-gpu-egpu-on-laptops/9.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2020-11-07-my-journey-to-external-gpu-egpu-on-laptops/10.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img](./posts/2020-11-07-my-journey-to-external-gpu-egpu-on-laptops/9.jpg)
+![img](./posts/2020-11-07-my-journey-to-external-gpu-egpu-on-laptops/10.jpg)
 
 ::br
 
 After all that, i install AMD Radeon driver and it work just fine. Then let's test some game what about DotA2
 
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2020-11-07-my-journey-to-external-gpu-egpu-on-laptops/11.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img](./posts/2020-11-07-my-journey-to-external-gpu-egpu-on-laptops/11.jpg)
 
 ::br
 
 Well it still updates, so current hot game? Genshin Impact with Max settings at 1080p
 
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2020-11-07-my-journey-to-external-gpu-egpu-on-laptops/12.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img](./posts/2020-11-07-my-journey-to-external-gpu-egpu-on-laptops/12.jpg)
 <div class="row">
 	<div class="col-sm-3"></div>
 	<div class="col-sm-6">
@@ -216,42 +127,10 @@ Because current version this game has no built-in fps counter, i just felt it an
 i meant usually in Mondstadt at night especially when my GPU is overheating, it just mess of fps but now it's butter 
 smooth. Then DotA2 is finished updating and this is the results.
 
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2020-11-07-my-journey-to-external-gpu-egpu-on-laptops/13.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2020-11-07-my-journey-to-external-gpu-egpu-on-laptops/14.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2020-11-07-my-journey-to-external-gpu-egpu-on-laptops/15.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2020-11-07-my-journey-to-external-gpu-egpu-on-laptops/16.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img](./posts/2020-11-07-my-journey-to-external-gpu-egpu-on-laptops/13.jpg)
+![img](./posts/2020-11-07-my-journey-to-external-gpu-egpu-on-laptops/14.jpg)
+![img](./posts/2020-11-07-my-journey-to-external-gpu-egpu-on-laptops/15.jpg)
+![img](./posts/2020-11-07-my-journey-to-external-gpu-egpu-on-laptops/16.jpg)
 
 ::br
 
@@ -260,24 +139,8 @@ combat it down to 35fps Not bad. But as you can see from Task manager and GPU-Z,
 most, so what happend? it think it's down to PCIE-1X used in Mini-PCIE so the GPU bandwith is little bit bottlenecked. 
 What we can do is to use M.2 NVME adapter which is rated Up to PCIE-4X bandwith. Last game i want to test is No Man's Sky.
 
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2020-11-07-my-journey-to-external-gpu-egpu-on-laptops/17.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2020-11-07-my-journey-to-external-gpu-egpu-on-laptops/18.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img](./posts/2020-11-07-my-journey-to-external-gpu-egpu-on-laptops/17.jpg)
+![img](./posts/2020-11-07-my-journey-to-external-gpu-egpu-on-laptops/18.jpg)
 
 ::br
 

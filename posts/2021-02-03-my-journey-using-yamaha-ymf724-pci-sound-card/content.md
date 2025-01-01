@@ -15,15 +15,7 @@ gaming in this sound card should be interesting. Also, i found this
 if this sound card doesn't work, maybe some day i can get Sound Blaster Live or something like that as a 
 replacement.
 
-<div class="row">
-	<div class="col-sm-4"></div>
-	<div class="col-sm-4">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/2.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-4"></div>
-</div>
+![img_md](./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/2.jpg)
 
 ::br
 
@@ -33,15 +25,7 @@ i am looking for a way to check if this card is working. The problem is that dri
 card is 32Bit WDM driver for Windows XP so in order to make this work in 64Bit windows, i had to 
 recompile the driver to 64Bit. 
 
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/3.jpg" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img](./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/3.jpg)
 
 ::br
 
@@ -59,16 +43,7 @@ after trying it on linux again, the noise is gone. I think what happen is that s
 the audio output is routed to audio input and causing lot of ground loop noise then by disabling 
 the problematic port, everything work just fine.
 
-<div class="row">
-	<div class="col-sm-4"></div>
-	<div class="col-sm-4">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/meme.jpeg" alt="img">
-            <a href="https://makeameme.org/meme/virtualize-all-the">makeameme.org</a>
-		</div>
-	</div>
-	<div class="col-sm-4"></div>
-</div>
+![img_md](./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/meme.jpeg "makeameme.org")
 
 ::br
 
@@ -83,15 +58,7 @@ genirq: Flags mismatch irq 18. 00000000 (vfio-intx(0000:01:04.0)) vs. 00000080 (
 The way i solve it is disabling some USB controller in the motherboard from BIOS. Then after everything 
 is clear, it work just fine.
 
-<div class="row">
-	<div class="col-sm-2"></div>
-	<div class="col-sm-8">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/1.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-2"></div>
-</div>
+![img_lg](./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/1.png)
 
 ::br
 
@@ -233,15 +200,7 @@ again similar process but with Windows 95 instead of ME.
 * If everything works, you should see something like this
 * Here my libvirt [XML](./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/win95.xml)
 
-<div class="row">
-	<div class="col-sm-2"></div>
-	<div class="col-sm-8">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/4.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-2"></div>
-</div>
+![img_lg](./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/4.png)
 
 ::br
 
@@ -258,15 +217,7 @@ even hardware passthrough like this.
 After having a some free time from mid-test, i decided to unplug my SB Audigy and use Yamaha once again to test if 
 running it in DOS 6.22 with KVM acceleration will make a difference.
 
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/5.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img](./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/5.png)
 
 ::br
 
@@ -274,44 +225,20 @@ The system spec is similar as win95 with single core CPU, 128 megs RAM, 500 megs
 Then i use [Phils MS-DOS starter pack](https://www.philscomputerlab.com/ms-dos-starter-pack.html) to easily use 
 mouse and extended memory support.
 
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/6.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img](./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/6.png)
 
 ::br
 
 Then i just use `setupds/s` then `dsdma` and still nothing, then i just run setupds and simply test the sound output, 
 the Native 16 bit output is working just fine. The SB mode is disabled or greyed out and the FM mode throw a error.
 
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/7.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img](./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/7.png)
 
 ::br
 
 Then i try edit `FIRSTTRY=` in `ds.ini` file, then run `loadtrs.bat` and get this error instead.
 
-<div class="row">
-	<div class="col-sm-3"></div>
-	<div class="col-sm-6">
-		<div class="img-thumbnail">
-			<img class="img-fluid" loading="lazy" src="./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/8.png" alt="img">
-		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div>
+![img](./posts/2021-02-03-my-journey-using-yamaha-ymf724-pci-sound-card/8.png)
 
 ::br
 

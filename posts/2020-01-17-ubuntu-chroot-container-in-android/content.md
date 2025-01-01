@@ -31,70 +31,22 @@ download and install as usual.
 Here I'm going to set Up i386 Ubuntu 18.04 Container. Why i386 because i have intel processor. You 
 might need to change that yo arm or arm64 based on your device processor.
 
-<div class="row">
-    <div class="col-sm-3"></div>
-    <div class="col-sm-6">
-        <div class="img-thumbnail">
-            <img class="img-fluid" loading="lazy" src="./posts/2020-01-17-ubuntu-chroot-container-in-android/1.jpg" alt="img">
-        </div>
-    </div>
-    <div class="col-sm-3"></div>
-</div>
-<div class="row">
-    <div class="col-sm-3"></div>
-    <div class="col-sm-6">
-        <div class="img-thumbnail">
-            <img class="img-fluid" loading="lazy" src="./posts/2020-01-17-ubuntu-chroot-container-in-android/2.jpg" alt="img">
-        </div>
-    </div>
-    <div class="col-sm-3"></div>
-</div>
+![img](./posts/2020-01-17-ubuntu-chroot-container-in-android/1.jpg)
+![img](./posts/2020-01-17-ubuntu-chroot-container-in-android/2.jpg)
 
 First, press that control panel icon, then change the config based on your need. Here i set 
 [Disk Image](https://en.wikipedia.org/wiki/Disk_image) in sdcard because i had limited internal storage.
 
-<div class="row">
-    <div class="col-sm-3"></div>
-    <div class="col-sm-6">
-        <div class="img-thumbnail">
-            <img class="img-fluid" loading="lazy" src="./posts/2020-01-17-ubuntu-chroot-container-in-android/3.jpg" alt="img">
-        </div>
-    </div>
-    <div class="col-sm-3"></div>
-</div>
-<div class="row">
-    <div class="col-sm-3"></div>
-    <div class="col-sm-6">
-        <div class="img-thumbnail">
-            <img class="img-fluid" loading="lazy" src="./posts/2020-01-17-ubuntu-chroot-container-in-android/4.jpg" alt="img">
-        </div>
-    </div>
-    <div class="col-sm-3"></div>
-</div>
+![img](./posts/2020-01-17-ubuntu-chroot-container-in-android/3.jpg)
+![img](./posts/2020-01-17-ubuntu-chroot-container-in-android/4.jpg)
 
 The next thing i enabled is init system. Because i would run [Apache](https://httpd.apache.org/) server 
 inside my container. The last thing i enabled is [SSH](https://www.ssh.com/ssh) yeah basically i need to 
 access the container so i need to have ssh access. You can actually enable GUI mode which i had tried but 
 in my case, i only had limited amount of RAM, so yeah i disable that.
 
-<div class="row">
-    <div class="col-sm-3"></div>
-    <div class="col-sm-6">
-        <div class="img-thumbnail">
-            <img class="img-fluid" loading="lazy" src="./posts/2020-01-17-ubuntu-chroot-container-in-android/5.jpg" alt="img">
-        </div>
-    </div>
-    <div class="col-sm-3"></div>
-</div>
-<div class="row">
-    <div class="col-sm-3"></div>
-    <div class="col-sm-6">
-        <div class="img-thumbnail">
-            <img class="img-fluid" loading="lazy" src="./posts/2020-01-17-ubuntu-chroot-container-in-android/6.jpg" alt="img">
-        </div>
-    </div>
-    <div class="col-sm-3"></div>
-</div>
+![img](./posts/2020-01-17-ubuntu-chroot-container-in-android/5.jpg)
+![img](./posts/2020-01-17-ubuntu-chroot-container-in-android/6.jpg)
 
 Then back to the front page, Click that 3 dot on the top right corner and click `Install`, after the 
 installation finished, click start to run the container.
@@ -104,48 +56,16 @@ For ssh connection, i use [ConnectBot](https://play.google.com/store/apps/detail
 first, click that `+` button then fill this by `username@127.0.0.1`. if you want to connect from other machine, 
 use `ssh username@your_device_ip`
 
-<div class="row">
-    <div class="col-sm-3"></div>
-    <div class="col-sm-6">
-        <div class="img-thumbnail">
-            <img class="img-fluid" loading="lazy" src="./posts/2020-01-17-ubuntu-chroot-container-in-android/7.jpg" alt="img">
-        </div>
-    </div>
-    <div class="col-sm-3"></div>
-</div>
-<div class="row">
-    <div class="col-sm-3"></div>
-    <div class="col-sm-6">
-        <div class="img-thumbnail">
-            <img class="img-fluid" loading="lazy" src="./posts/2020-01-17-ubuntu-chroot-container-in-android/8.jpg" alt="img">
-        </div>
-    </div>
-    <div class="col-sm-3"></div>
-</div>
+![img](./posts/2020-01-17-ubuntu-chroot-container-in-android/7.jpg)
+![img](./posts/2020-01-17-ubuntu-chroot-container-in-android/8.jpg)
 
 For GUI, i use VNC, to do that you need to config it in the step 3 first. Then use 
 [VNC Viewer](https://play.google.com/store/apps/details?id=com.realvnc.viewer.android&hl=en) 
 Same process as ssh, press that `+` button, fill `ipaddress:port`. here i'm using `127.0.0.1:5901` same as ssh, 
 you can connect vnc from other machine too.
 
-<div class="row">
-    <div class="col-sm-3"></div>
-    <div class="col-sm-6">
-        <div class="img-thumbnail">
-            <img class="img-fluid" loading="lazy" src="./posts/2020-01-17-ubuntu-chroot-container-in-android/9.jpg" alt="img">
-        </div>
-    </div>
-    <div class="col-sm-3"></div>
-</div>
-<div class="row">
-    <div class="col-sm-3"></div>
-    <div class="col-sm-6">
-        <div class="img-thumbnail">
-            <img class="img-fluid" loading="lazy" src="./posts/2020-01-17-ubuntu-chroot-container-in-android/10.jpg" alt="img">
-        </div>
-    </div>
-    <div class="col-sm-3"></div>
-</div>
+![img](./posts/2020-01-17-ubuntu-chroot-container-in-android/9.jpg)
+![img](./posts/2020-01-17-ubuntu-chroot-container-in-android/10.jpg)
 
 #### 5. Some Fix
 In my case, the user that i use cannot connect to the internet. So i need to do some fix
@@ -159,24 +79,8 @@ After that, stop and start the container and you good to go.
 The idea of running (almost full) linux machine inside your pocket size device is great. In fact, 1/3 of this post 
 is written in nano inside that chroot container.
 
-<div class="row">
-    <div class="col-sm-3"></div>
-    <div class="col-sm-6">
-        <div class="img-thumbnail">
-            <img class="img-fluid" loading="lazy" src="./posts/2020-01-17-ubuntu-chroot-container-in-android/11.jpg" alt="img">
-        </div>
-    </div>
-    <div class="col-sm-3"></div>
-</div>
-<div class="row">
-    <div class="col-sm-3"></div>
-    <div class="col-sm-6">
-        <div class="img-thumbnail">
-            <img class="img-fluid" loading="lazy" src="./posts/2020-01-17-ubuntu-chroot-container-in-android/12.jpg" alt="img">
-        </div>
-    </div>
-    <div class="col-sm-3"></div>
-</div>
+![img](./posts/2020-01-17-ubuntu-chroot-container-in-android/11.jpg)
+![img](./posts/2020-01-17-ubuntu-chroot-container-in-android/12.jpg)
 
 #### Some reading
 <https://github.com/meefik/linuxdeploy>
