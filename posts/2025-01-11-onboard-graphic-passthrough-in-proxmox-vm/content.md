@@ -57,9 +57,9 @@ Then Add GPU as PCI Device, Check `PCI Express`, make sure `Primary GPU` is left
 ![img](./posts/2025-01-11-onboard-graphic-passthrough-in-proxmox-vm/02.png)
 
 Another way is to use Intel GVT-g. The way this works is virtualizing the GPU by mediating 
-passthrough device (VFIO mediated device framework based) to provide virtual GPU therefore 
+passthrough device (VFIO mediated device framework based) to provide virtual GPUs, therefore 
 multiple VM can utilize it at the same time. As a side note GVT-g utilize i915 driver, 
-therefore only Intel Broadwell to Comet Lake iGPU is supported. For later device, SR-IOV is 
+therefore only Intel Broadwell to Comet Lake iGPU is supported. For later device, SR-IOV 
 may become an option.
 
 ```
