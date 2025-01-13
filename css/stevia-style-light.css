@@ -9,6 +9,8 @@
     --bs-link-hover-color: #55688A;
     --stevia-search-border-color: #86b7fe;
     --stevia-search-shadow-color: rgba(13,110,253,.25);
+    --stevia-container-height: 75vh;
+    --stevia-container-height-mobile: 25vh;
 }
 
 /* Disable horizontal scroll */
@@ -79,7 +81,7 @@ pre {
 }
 .stevia-container-main {
     padding: 0% 10% 0% 10%;
-    min-height: 75vh;
+    min-height: var(--stevia-container-height);
     border-left: thin solid var(--bs-border-color);
     border-right: thin solid var(--bs-border-color);
 }
@@ -96,7 +98,7 @@ pre {
     background-color: var(--bs-secondary-bg);
 }
 .stevia-error-page {
-    height: 50vh;
+    min-height: var(--stevia-container-height);
 }
 
 @media (max-width: 768px) {
@@ -109,7 +111,7 @@ pre {
     }
     .stevia-container-main {
         padding: 0% 3% 0% 3%;
-        min-height: 25vh;
+        min-height: var(--stevia-container-height-mobile);
     }
     .stevia-container-footer {
         margin-bottom: 2%;
@@ -120,7 +122,7 @@ pre {
         background-color: var(--bs-secondary-bg);
     }
     .stevia-error-page {
-        height: 0vh;
+        min-height: var(--stevia-container-height-mobile);
     }
 }
 

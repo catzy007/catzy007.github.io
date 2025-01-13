@@ -40,6 +40,9 @@ function xhrSuccess() {
 function xhrError(type, status) { 
     console.log("#![" + (this.arguments || type) + "] XMLHttpRequest Error! " + (this.statusText || status || 'Not Found'));
 
+    var r = document.querySelector(':root');
+    r.style.setProperty('--stevia-container-height', '60vh');
+
     var errorPage = "";
     errorPage = errorPage.concat("<table align='center' class='stevia-error-page'>");
     errorPage = errorPage.concat("<tbody>")
