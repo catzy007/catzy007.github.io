@@ -48,7 +48,6 @@ const renderer = {
             + '</div>'
             + '</div>'
             + '<div class="col-sm-' + edge + '"></div>'
-
             + '</div>'
     }
 }
