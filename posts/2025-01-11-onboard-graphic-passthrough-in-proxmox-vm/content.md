@@ -13,18 +13,18 @@ limited but at least something is better than nothing.
 First, go to BIOS and enable Virtualization and VT-D. Then boot into the machine and do the following.
 ```
 nano /etc/default/grub
-	GRUB_CMDLINE_LINUX_DEFAULT="quiet intel_iommu=on iommu=pt nofb video=efifb:off"
+    GRUB_CMDLINE_LINUX_DEFAULT="quiet intel_iommu=on iommu=pt nofb video=efifb:off"
 update-grub
 nano /etc/modules
-	vfio
-	vfio_iommu_type1
-	vfio_virqfd
-	vfio_pci
+    vfio
+    vfio_iommu_type1
+    vfio_virqfd
+    vfio_pci
 nano /etc/initramfs-tools/modules
-	vfio
-	vfio_iommu_type1
-	vfio_virqfd
-	vfio_pci
+    vfio
+    vfio_iommu_type1
+    vfio_virqfd
+    vfio_pci
 nano /etc/modprobe.d/pve-blacklist.conf
     blacklist snd_hda_intel
     blacklist i915
@@ -67,18 +67,18 @@ apt install -y intel-opencl-icd
 ```
 ```
 nano /etc/default/grub 
-	GRUB_CMDLINE_LINUX_DEFAULT="quiet intel_iommu=on i915.enable_gvt=1" 
+    GRUB_CMDLINE_LINUX_DEFAULT="quiet intel_iommu=on i915.enable_gvt=1" 
 update-grub 
 nano /etc/modules 
-	# Modules required for PCI passthrough
-	vfio
-	vfio_iommu_type1
-	vfio_pci
-	vfio_virqfd
-	# Modules required for Intel GVT
-	kvmgt
-	exngt
-	Vfio-mdev 
+    # Modules required for PCI passthrough
+    vfio
+    vfio_iommu_type1
+    vfio_pci
+    vfio_virqfd
+    # Modules required for Intel GVT
+    kvmgt
+    exngt
+    Vfio-mdev 
 update-initramfs -u -k all 
 reboot
 dmesg | grep -e DMAR -e IOMMU 
