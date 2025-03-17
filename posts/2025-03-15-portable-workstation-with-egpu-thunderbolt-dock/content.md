@@ -43,11 +43,18 @@ while in most use cases such as driving a high-definition
 display it is completely fine, using it with GPU or NVME SSD may result in 
 [lower performance compare to using direct PCIE](https://egpu.io/forums/expresscard-mpcie-m-2-adapters/build-m2-vs-thunderbolt). 
 
-With that out the way, let's try it. Here I'm using TH3P4G3 which is a DIY solution 
-which doesn't include a case, PSU, and GPU. The GPU that I'm using for this test is 
-Nvidia Quadro K620, for PSU I'm using an 400W SFX off-brand one as for a case I 
-grab scissor, cardboard and duct-tape then channel my creativity turning it into a box. 
-For device, I'm using good ol' ThinkPad T480s.
+One of the thing that I like from Thunderbolt is the convenience for plugging 
+and unplugging it whenever I wanted unlike using M.2 or OCulink based Dock which require specific power and boot sequence. Except when unplugging Thunderbolt 
+Dock with a GPU while running 3D program which instantly crash the system. 
+Close the 3D program, and you can safely unplug the Dock.
+
+With that out the way, let's try it. Here I'm using 
+[TH3P4G3](https://egpu.io/exp-gdc-th3p4g2-thunderbolt-gpu-dock-review/) 
+which is a DIY solution that doesn't include a case, PSU, and GPU. The GPU that 
+I'm using for this test is Nvidia Quadro K620, for PSU I'm using an 400W SFX 
+off-brand one as for a case I grab scissor, cardboard and duct-tape then channel 
+my creativity turning it into a box. For host device, I'm using good ol' ThinkPad 
+T480s.
 
 ![img](./posts/2025-03-15-portable-workstation-with-egpu-thunderbolt-dock/01.jpg)
 
@@ -58,9 +65,9 @@ and Authorize the TB dock.
 
 ![img](./posts/2025-03-15-portable-workstation-with-egpu-thunderbolt-dock/02.png)
 
-![img](./posts/2025-03-15-portable-workstation-with-egpu-thunderbolt-dock/03.png)
+![img_lg](./posts/2025-03-15-portable-workstation-with-egpu-thunderbolt-dock/03.png)
 
-If you're using Nvidia GPU, Do the following step before Authorize TB dock.
+If you're using Nvidia GPU, do the following step before Authorize TB dock.
 ```
 sudo nano /etc/modprobe.d/nv-blacklist.conf
     blacklist nouveau
@@ -82,3 +89,13 @@ nvidia-smi
 ```
 
 ![img](./posts/2025-03-15-portable-workstation-with-egpu-thunderbolt-dock/04.png)
+
+In Windows, make sure Thunderbolt driver is installed properly it should have shown in
+system tray.
+
+![img_xs](./posts/2025-03-15-portable-workstation-with-egpu-thunderbolt-dock/05.png)
+
+Next connect TB dock and Approve, then select `Always Connect`, install required 
+driver, and that's pretty much it.
+
+![img](./posts/2025-03-15-portable-workstation-with-egpu-thunderbolt-dock/06.png)
