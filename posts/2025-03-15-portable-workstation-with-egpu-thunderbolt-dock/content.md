@@ -19,7 +19,7 @@ reduction compared to its desktop counterpart and yes I get it cramming
 all of that performance in a portable device is not easy and yes physics always 
 win. 
 
-With that in mind I tried a different approach what if I have a High-performance 
+With that in mind I tried a different approach what if I have a capable 
 machine that I can remote with inexpensive thin and light client device which 
 works wonder. All I need is a laptop, tablet or even smartphone and fast internet 
 connection I have access to my server anywhere even space when they have good 
