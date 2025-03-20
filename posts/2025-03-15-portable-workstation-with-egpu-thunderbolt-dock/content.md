@@ -44,9 +44,11 @@ display it is completely fine, using it with GPU or NVME SSD may result in
 [lower performance compare to using direct PCIE](https://egpu.io/forums/expresscard-mpcie-m-2-adapters/build-m2-vs-thunderbolt). 
 
 One of the thing that I like from Thunderbolt is the convenience for plugging 
-and unplugging it whenever I wanted unlike using M.2 or OCulink based Dock which require specific power and boot sequence. Except when unplugging Thunderbolt 
-Dock with a GPU while running 3D program which instantly crash the system. 
-Close the 3D program, and you can safely unplug the Dock.
+and unplugging it whenever I wanted unlike using M.2 or OCulink based Dock which 
+require specific power and boot sequence Thunderbolt is pretty much seamless. 
+Except when unplugging Thunderbolt Dock with a GPU while running 3D program 
+which instantly crash the system. Close the 3D program then you can safely 
+unplug the Dock.
 
 With that out the way, let's try it. Here I'm using 
 [TH3P4G3](https://egpu.io/exp-gdc-th3p4g2-thunderbolt-gpu-dock-review/) 
