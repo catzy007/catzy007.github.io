@@ -77,7 +77,7 @@ sudo update-initramfs -u -k all
 reboot
 ```
 
-Then install Nvidia drivers by opening `Software & Updates > Additional Drivers` 
+Then Authorize TB dock and install Nvidia drivers by opening `Software & Updates > Additional Drivers` 
 or using command line below.
 ```
 sudo ubuntu-drivers list
