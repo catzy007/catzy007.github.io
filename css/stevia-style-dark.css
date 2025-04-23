@@ -5,6 +5,8 @@
         --bs-tertiary-bg: #22272d;
         --bs-text-emphasis: #fff;
         --bs-link-hover-color: #8bb9fe;
+        --stevia-container-height: 75vh;
+        --stevia-container-height-mobile: 25vh;
     }
     
     /* Disable horizontal scroll */
@@ -75,7 +77,7 @@
     }
     .stevia-container-main {
         padding: 0% 10% 0% 10%;
-        min-height: 75vh;
+        min-height: var(--stevia-container-height);
         border-left: thin solid var(--bs-border-color);
         border-right: thin solid var(--bs-border-color);
     }
@@ -92,7 +94,7 @@
         background-color: var(--bs-secondary-bg);
     }
     .stevia-error-page {
-        height: 50vh;
+        min-height: var(--stevia-container-height);
     }
     
     @media (max-width: 768px) {
@@ -105,7 +107,7 @@
         }
         .stevia-container-main {
             padding: 0% 3% 0% 3%;
-            min-height: 25vh;
+            min-height: var(--stevia-container-height-mobile);
         }
         .stevia-container-footer {
             margin-bottom: 2%;
@@ -116,7 +118,7 @@
             background-color: var(--bs-secondary-bg);
         }
         .stevia-error-page {
-            height: 0vh;
+            min-height: var(--stevia-container-height-mobile);
         }
     }
     
