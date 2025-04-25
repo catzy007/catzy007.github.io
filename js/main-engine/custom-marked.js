@@ -49,5 +49,34 @@ const renderer = {
             + '</div>'
             + '<div class="col-sm-' + edge + '"></div>'
             + '</div>'
-    }
+    },
 }
+
+const video = {
+    name: 'video',
+    level: 'inline',
+    start(src) { return src.match(/:/)?.index; },
+    tokenizer(src, tokens) {
+      const rule = /^(!\[video\]\()(.*?)(\))/;
+      const match = rule.exec(src);
+      if (match) {
+        return {
+          type: 'video',
+          raw: match[0],
+          source: match[2]
+        };
+      }
+    },
+    renderer(token) {
+        return '<div class="row">'
+            + '<div class="col-sm-2"></div>'
+            + '<div class="col-sm-8">'
+            + '<video width="100%" height="auto" controls>'
+            + '<source src="' + token.source + '" type="video/mp4">'
+            + 'Your browser does not support the video tag.'
+            + '</video> '
+            + '</div>'
+            + '<div class="col-sm-2"></div>'
+            + '</div>';
+    },
+  };

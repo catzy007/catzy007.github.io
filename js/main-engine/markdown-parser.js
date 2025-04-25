@@ -21,6 +21,7 @@ function showMarkdown(type, errorPage){
             }
         })
     );
+    marked.use({extensions:[video]})
     var html = marked.parse(markdown);
 
     html = DOMPurify.sanitize(html, {

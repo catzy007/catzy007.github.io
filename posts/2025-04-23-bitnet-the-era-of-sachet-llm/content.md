@@ -39,6 +39,8 @@ CMD python run_inference.py \
   -cnv -t $(nproc) -c 2048
 ```
 
+![video](./posts/2025-04-23-bitnet-the-era-of-sachet-llm/vid1.mp4)
+
 ![img_xl](./posts/2025-04-23-bitnet-the-era-of-sachet-llm/img1.png)
 
 ![img_xl](./posts/2025-04-23-bitnet-the-era-of-sachet-llm/img2.png)
@@ -60,7 +62,7 @@ Then i suddenly remember a scene from a k-drama called
 [Start-Up](https://www.imdb.com/title/tt12867810/)
 when they run object detection (similar to AlexNet) in Raspberry Pi. This make me 
 think can i run BitNet in Raspberry Pi? Apparently 
-[someone already did](https://www.bijanbowen.com/bitnet-b1-58-on-raspberry-pi-4b/) 
+[someone already did](https://www.youtube.com/watch?v=3q_ItuNNpmY) 
 it with RPI4 2 GB. Will it work in RPI3 1 GB? Well let's find out. Somehow the alpine 
 based image that i previously use doesn't work in arm64 therefore i need to rewrite 
 the entire thing form scratch.
