@@ -49,7 +49,8 @@ The result is interesting, using the command below i was able to get around 14 t
 tokens per second while using about 200 MB of RAM all of this without the help of a 
 mighty GPU and NPU accelerator. As for context, average human reading speed is 5-7 
 tokens per second, regular 7B LLM with full precision (FP32) require about 28 GB of 
-memory (7B * 4 Bytes) (GPT-4 around 1.76T) while current iPhone 16 has 8 GB of RAM.
+memory (7B * 4 Bytes) (GPT-4 1.76T * 4 roughly 7 TB) while current iPhone 16 has 8 GB 
+of RAM.
 
 ```
 python run_inference.py \
@@ -106,3 +107,8 @@ kompute or even NPU accelerator may bring the performance to an acceptable level
 daily usage and maybe one day everyone carries their own LLM.
 
 ![img_lg](./posts/2025-04-23-bitnet-the-era-of-sachet-llm/img3.png)
+
+Apparently you don't have to wonder what the future may look like, it is already here! 
+LLM running natively on a smartphone with acceptable performance.
+
+![img_sm](./posts/2025-04-23-bitnet-the-era-of-sachet-llm/img4.jpg)
