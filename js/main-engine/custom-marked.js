@@ -48,7 +48,7 @@ const renderer = {
             + '</div>'
             + '</div>'
             + '<div class="col-sm-' + edge + '"></div>'
-            + '</div>'
+            + '</div>';
     },
 }
 
@@ -71,10 +71,12 @@ const video = {
         return '<div class="row">'
             + '<div class="col-sm-2"></div>'
             + '<div class="col-sm-8">'
+            + '<div class="img-thumbnail">'
             + '<video width="100%" height="auto" controls>'
             + '<source src="' + token.source + '" type="video/mp4">'
-            + 'Your browser does not support the video tag.'
+            + 'Sorry, your browser doesn\'t support embedded videos.'
             + '</video> '
+            + '</div>'
             + '</div>'
             + '<div class="col-sm-2"></div>'
             + '</div>';

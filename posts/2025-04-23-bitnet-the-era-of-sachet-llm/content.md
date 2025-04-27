@@ -1,5 +1,5 @@
 #### BitNet: The Era of Sachet LLM?
-_Friday, April 25, 2025_
+_Wednesday, April 23, 2025_
 
 Recently Microsoft released an open-source Large Language Model (LLM) called BitNet. 
 Currently, this model doesn't sit in the top chart what it does is quite interesting. 
@@ -49,8 +49,8 @@ The result is interesting, using the command below i was able to get around 14 t
 tokens per second while using about 200 MB of RAM all of this without the help of a 
 mighty GPU and NPU accelerator. As for context, average human reading speed is 5-7 
 tokens per second, regular 7B LLM with full precision (FP32) require about 28 GB of 
-memory (7B * 4 Bytes) (GPT-4 1.76T * 4 roughly 7 TB) while current iPhone 16 has 8 GB 
-of RAM.
+memory (7B * 4 Bytes) GPT-4 roughly 7 TB (1.76T * 4) while current iPhone 16 has 8 
+GB of RAM.
 
 ```
 python run_inference.py \
@@ -101,7 +101,7 @@ CMD python run_inference.py \
 
 It works! Barely. The best i can get is 0.02 tokens per second not even useable while 
 my laptop got around 16 token per second. To be fair, RPI3 was released 9 years ago 
-with 4 Cortex-A53 cores running at 1.2 Ghz comparable to a cheap smartphone today. 
+with 4 Cortex-A53 cores running at 1.2 GHz comparable to a cheap smartphone today. 
 With newer SoC, advanced ISA, higher clock speed, uses of GPU acceleration with 
 kompute or even NPU accelerator may bring the performance to an acceptable level for 
 daily usage and maybe one day everyone carries their own LLM.
