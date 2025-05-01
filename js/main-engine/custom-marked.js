@@ -99,7 +99,7 @@ const video = {
             + '<div class="img-thumbnail">'
             + '<video width="100%" height="auto" controls>'
             + '<source src="' + token.href + '" type="video/mp4">'
-            + 'Sorry, your browser doesn\'t support embedded videos.'
+            + '<p>Sorry, your browser doesn\'t support embedded videos.</p>'
             + '</video> '
             + '</div>'
             + '</div>'
