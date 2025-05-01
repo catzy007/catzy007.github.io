@@ -2,8 +2,8 @@
 _Wednesday, April 23, 2025_
 
 Recently Microsoft released an open-source Large Language Model (LLM) called BitNet. 
-Currently, this model doesn't sit in the top chart what it does is quite interesting. 
-BitNet uses 
+Currently, this model doesn't sit in the top chart, however what it does is quite 
+interesting. BitNet uses 
 [Ternary Weights](https://arxiv.org/pdf/2402.17764) 
 (1 bit, or more like 1.5 bit) which store its value as {-1,0,1} compared to a regular 
 LLM that uses 32 or 16 bit (FP32, FP16) this meant that BitNet uses less memory, 
@@ -39,7 +39,7 @@ CMD python run_inference.py \
   -cnv -t $(nproc) -c 2048
 ```
 
-![video](./posts/2025-04-23-bitnet-the-era-of-sachet-llm/vid1.mp4)
+![video_lg](./posts/2025-04-23-bitnet-the-era-of-sachet-llm/vid1.mp4)
 
 ![img_xl](./posts/2025-04-23-bitnet-the-era-of-sachet-llm/img1.png)
 
