@@ -106,4 +106,24 @@ const video = {
             + '<div class="col-sm-' + edge + '"></div>'
             + '</div>';
     },
-  };
+};
+
+const emoji = {
+    name: 'emoji',
+    level: 'inline',                           // This is an inline-level tokenizer
+    start(src) { return src.indexOf(':'); },   // Hint to Marked.js to stop and check for a match
+    tokenizer(src, tokens) {
+		const rule = /^:(\w+):/;               // Regex for the complete token, anchor to string start
+		const match = rule.exec(src);
+		if (match) {
+			return {                           // Token to generate
+			type: 'emoji',                     // Should match "name" above
+			raw: match[0],                     // Text to consume from the source
+			emoji: match[1]                    // Additional custom properties
+			};
+		}
+    },
+    renderer(token) {
+		return `<span class="emoji">${nodeEmoji.emojify(":"+token.emoji+":")}</span>`;
+    }
+};

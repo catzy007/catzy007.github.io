@@ -21,7 +21,8 @@ function showMarkdown(type, errorPage){
             }
         })
     );
-    marked.use({extensions:[video]})
+    marked.use({extensions:[video]});
+    marked.use({extensions:[emoji]});
     var html = marked.parse(markdown);
 
     html = DOMPurify.sanitize(html, {
