@@ -5,7 +5,7 @@ function reqParseMarkdown(type, contentPath){
 
 //markdown parser
 function showMarkdown(type, errorPage){
-    console.time("#![PARSER] highlight.js");
+    console.time("#![PARSER] Marked.js");
 
     var markdown = (this.responseText || errorPage || "null");
     marked.use(
@@ -40,7 +40,7 @@ function showMarkdown(type, errorPage){
         loadComments();
     }
 
-    console.timeEnd("#![PARSER] highlight.js");
+    console.timeEnd("#![PARSER] Marked.js");
 }
 
 //load disqus comments

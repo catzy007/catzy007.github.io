@@ -57,16 +57,16 @@ const video = {
     level: 'inline',
     start(src) { return src.match(/:/)?.index; },
     tokenizer(src, tokens) {
-      const rule = /^(!\[)(video.*)(\]\()(.*?)(\))/;
-      const match = rule.exec(src);
-      if (match) {
-        return {
-          type: 'video',
-          raw: match[0],
-          text: match[2],
-          href: match[4]
-        };
-      }
+        const rule = /^(!\[)(video.*)(\]\()(.*?)(\))/;
+        const match = rule.exec(src);
+        if (match) {
+            return {
+                type: 'video',
+                raw: match[0],
+                text: match[2],
+                href: match[4]
+            };
+        }
     },
     renderer(token) {
         var edge=0, center=0;
@@ -92,7 +92,6 @@ const video = {
             default:
                 edge=3; center=6;
         }
-
         return '<div class="row">'
             + '<div class="col-sm-' + edge + '"></div>'
             + '<div class="col-sm-' + center + '">'
@@ -100,7 +99,7 @@ const video = {
             + '<video width="100%" height="auto" controls>'
             + '<source src="' + token.href + '" type="video/mp4">'
             + '<p>Sorry, your browser doesn\'t support embedded videos.</p>'
-            + '</video> '
+            + '</video>'
             + '</div>'
             + '</div>'
             + '<div class="col-sm-' + edge + '"></div>'
@@ -117,13 +116,13 @@ const emoji = {
 		const match = rule.exec(src);
 		if (match) {
 			return {                           // Token to generate
-			type: 'emoji',                     // Should match "name" above
-			raw: match[0],                     // Text to consume from the source
-			emoji: match[1]                    // Additional custom properties
+                type: 'emoji',                 // Should match "name" above
+                raw: match[0],                 // Text to consume from the source
+                emoji: match[1]                // Additional custom properties
 			};
 		}
     },
     renderer(token) {
-		return `<span class="emoji">${nodeEmoji.emojify(":"+token.emoji+":")}</span>`;
+		return `<span class="emoji">${nodeEmoji.emojify(token.raw)}</span>`;
     }
 };
