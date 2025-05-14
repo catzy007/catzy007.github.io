@@ -50,6 +50,9 @@
         margin-top: 1rem;
         margin-bottom: 1rem;
     }
+    .img-thumbnail{
+        box-shadow: none;
+    }
     .emoji {
         text-decoration: none;
         font-variant-emoji: emoji;
