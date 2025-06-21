@@ -15,7 +15,7 @@ I manage to open the Recovery page. Then I grab `sysupgrade` and `kernel`
 file from 
 [OpenWrt firmware selector](https://firmware-selector.openwrt.org/).
 
-![img_md](./posts/2025-06-21-test/1.png)
+![img_md](./posts/2025-06-21-bolt-dual-band-router-with-4g-failover/1.png)
 
 In recovery console go to `Firmware updates > Regular firmware`. 
 In `firmware` section press `Choose File` and point to OpenWrt `kernel` file.
@@ -23,12 +23,12 @@ Make sure `Auto-restart` is `checked` and press `upload`. It will take a
 few moments to flash the firmware and boot to OpenWrt. Once it booted login 
 with empty password, and it will show `System running in recovery mode`.
 
-![img_md](./posts/2025-06-21-test/2.png)
+![img_md](./posts/2025-06-21-bolt-dual-band-router-with-4g-failover/2.png)
 
 Next, go to `System > Backup/Flash Firmware > Flash new firmware image` and 
 choose the `sysupgrade` file, press `Upload` and that's it.
 
-![img_md](./posts/2025-06-21-test/3.png)
+![img_md](./posts/2025-06-21-bolt-dual-band-router-with-4g-failover/3.png)
 
 Then I was curious about using LTE module in BL100, so I decided to grab one 
 for about 5 USD and use this to replace old access point in the 2nd floor.
@@ -49,7 +49,7 @@ reboot
 According to some sources that I read, I need to enable GPIO PIN 28 to enable 
 LTE module, I tried that and it does nothing.
 
-![img_md](./posts/2025-06-21-test/4.png)
+![img_md](./posts/2025-06-21-bolt-dual-band-router-with-4g-failover/4.png)
 
 After some trial and error, apparently in OpenWrt 24.10 instead of GPIO PIN 28, 
 PIN 540 is used. A simple edit to the script and it works!
@@ -70,8 +70,8 @@ echo "Turning On Modem"
 echo 1 > /sys/class/gpio/gpio540/value
 ```
 
-![img_md](./posts/2025-06-21-test/5.png)
-![img_md](./posts/2025-06-21-test/4.png)
+![img_md](./posts/2025-06-21-bolt-dual-band-router-with-4g-failover/5.png)
+![img_md](./posts/2025-06-21-bolt-dual-band-router-with-4g-failover/4.png)
 
 To make the changes permanent, do the following.
 
@@ -79,7 +79,7 @@ To make the changes permanent, do the following.
 nano /etc/rc.local
 ```
 
-![img_sm](./posts/2025-06-21-test/7.png)
+![img_sm](./posts/2025-06-21-bolt-dual-band-router-with-4g-failover/7.png)
 
 Next, open the Web UI, go to `Network > Interfaces > Add new interface` 
 fill the name as `wwan` and set the protocol as `QMI Cellular` and press 
@@ -89,7 +89,7 @@ search is all you need, also in `Firewall Settings` tab assign it to `WAN` zone.
 Then power down the device, put a SIM card in, power it back up and finger cross 
 everything just works.
 
-![img_md](./posts/2025-06-21-test/8.png)
+![img_md](./posts/2025-06-21-bolt-dual-band-router-with-4g-failover/8.png)
 
 As a side note, the built-in LTE module only support 2300MHz or band-40 
 which in my area only 3 carriers supports it. The good news is that because BL100 
