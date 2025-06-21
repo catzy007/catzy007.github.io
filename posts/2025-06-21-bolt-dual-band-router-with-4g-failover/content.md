@@ -5,7 +5,7 @@ A while ago I pick up a network router for about 3 USD shipped the model
 name is Bolt BL201 it has dual-band support which mean it can use 2.4 and 
 5 GHz Wi-Fi and apparently OpenWrt 24.10 just added support for similar 
 device called BL100. From what I can tell both share similar components 
-MT7620A Soc, 64MB RAM, 16MB Flash except for Bolt BL100 which include an 
+MT7620A SoC, 64MB RAM, 16MB Flash except for Bolt BL100 which include an 
 LTE module and external antenna support. 
 
 With that out of the way lets mod this. I begin by booting the device and 
@@ -47,7 +47,7 @@ reboot
 ```
 
 According to some sources that I read, I need to enable GPIO PIN 28 to enable 
-LTE module, I tried that and it does nothing.
+LTE module, I tried that, and it does absolutely nothing.
 
 ![img_md](./posts/2025-06-21-bolt-dual-band-router-with-4g-failover/4.png)
 
@@ -85,7 +85,7 @@ Next, open the Web UI, go to `Network > Interfaces > Add new interface`
 fill the name as `wwan` and set the protocol as `QMI Cellular` and press 
 `Create Interface`. After that, set Modem Device as `/dev/cdc-wdm2`. 
 Also fill carrier info such as APN, username, password a quick 2-minute Google 
-search is all you need, also in `Firewall Settings` tab assign it to `WAN` zone. 
+search should do the job, also in `Firewall Settings` tab assign it to `WAN` zone. 
 Then power down the device, put a SIM card in, power it back up and finger cross 
 everything just works.
 
