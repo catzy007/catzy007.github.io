@@ -84,7 +84,7 @@ reboot
 dmesg | grep -e DMAR -e IOMMU 
 ```
 
-Then Add GPU as PCI Device, Select `Mapped Device` and `Mdev Type`.
+Then Add GPU as PCI Device, Select `Raw Device` and `Mdev Type`.
 
 [Enabled GPU passthrough of Intel HD 610 with GVT-g in Proxmox 8](https://forum.proxmox.com/threads/enabled-gpu-passthrough-of-intel-hd-610-with-gvt-g-in-proxmox-8.134461/)
 
