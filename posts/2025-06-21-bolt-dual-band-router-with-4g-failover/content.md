@@ -31,13 +31,13 @@ choose the `sysupgrade` file, press `Upload` and that's it.
 ![img_md](./posts/2025-06-21-bolt-dual-band-router-with-4g-failover/3.png)
 
 Then I was curious about using LTE module in BL100, so I decided to grab one 
-for about 5 USD and use this to replace old access point in the 2nd floor.
+for about 5 USD and use this to replace old access point in the second floor.
 
 First, I install OpenWrt with the exact same method as BL201. Next I need to 
 install required module to make LTE works. Apparently there are few protocols 
 used by each manufacturer such as PPP, QMI, MBIM, NCM, etc. In this case LTE 
 module in BL100 uses Qualcomm chipset which support QMI. To use that, install 
-the following module and restart the device.
+the following package and restart the device.
 
 ```
 opkg update
@@ -71,15 +71,21 @@ echo 1 > /sys/class/gpio/gpio540/value
 ```
 
 ![img_md](./posts/2025-06-21-bolt-dual-band-router-with-4g-failover/5.png)
-![img_md](./posts/2025-06-21-bolt-dual-band-router-with-4g-failover/4.png)
+![img_md](./posts/2025-06-21-bolt-dual-band-router-with-4g-failover/6.png)
 
 To make the changes permanent, do the following.
 
 ```
 nano /etc/rc.local
 ```
+```
+# Put your custom commands here that should be executed once
+# the system init finished. By default this file does nothing.
 
-![img_sm](./posts/2025-06-21-bolt-dual-band-router-with-4g-failover/7.png)
+sh /root/bootmodem.sh
+
+exit 0
+```
 
 Next, open the Web UI, go to `Network > Interfaces > Add new interface` 
 fill the name as `wwan` and set the protocol as `QMI Cellular` and press 
@@ -89,7 +95,7 @@ search should do the job, also in `Firewall Settings` tab assign it to `WAN` zon
 Then power down the device, put a SIM card in, power it back up and finger cross 
 everything just works.
 
-![img_md](./posts/2025-06-21-bolt-dual-band-router-with-4g-failover/8.png)
+![img_md](./posts/2025-06-21-bolt-dual-band-router-with-4g-failover/7.png)
 
 As a side note, the built-in LTE module only support 2300MHz or band-40 
 which in my area only 3 carriers supports it. The good news is that because BL100 
