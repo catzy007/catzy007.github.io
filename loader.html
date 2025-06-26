@@ -167,17 +167,18 @@
         <div class="row">
             <div class="col text-center">
                 <p><span id="siteCopyright"></span></p>
-                <p>Made with <span style="color:red">&#9829;</span> using <a href="https://github.com/catzy007/stevia-page">Stevia Page</a>.</p>
+                <p>Made with <span class="emoji">&#x2764;</span> using <a href="https://github.com/catzy007/stevia-page">Stevia Page</a>.</p>
             </div>
         </div>
     </div>
 
     <script type="module">
-        import { marked } from './js/marked.esm.js';
-        import { createDirectives, presetDirectiveConfigs } from './js/marked-directive.esm.js';
-        import { markedHighlight } from './js/marked-highlight.esm.js';
-        import DOMPurify from './js/purify.esm.js';
-        import highlightJs from './js/highlight.esm.js';
+        import { marked } from '/npm/marked@15.0.11/+esm.js';
+        import { createDirectives, presetDirectiveConfigs } from '/npm/marked-directive@1.0.7/+esm.js';
+        import { markedHighlight } from '/npm/marked-highlight@2.2.1/+esm.js';
+        import DOMPurify from '/npm/dompurify@3.2.5/+esm.js';
+        import highlightJs from '/npm/highlight.js@11.11.1/+esm.js';
+        import * as nodeEmoji from '/npm/node-emoji@2.2.0/+esm.js';
 
         window.marked = marked;
         window.createDirectives = createDirectives;
@@ -185,6 +186,7 @@
         window.markedHighlight = markedHighlight;
         window.DOMPurify = DOMPurify;
         window.hljs = highlightJs;
+        window.nodeEmoji = nodeEmoji;
 
         window.scrollTo(0, 0); 
         loadSiteMainTitle();

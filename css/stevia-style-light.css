@@ -55,6 +55,17 @@ pre {
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
+.emoji {
+    text-decoration: none;
+    font-variant-emoji: emoji;
+    font-family: "Noto Color Emoji", "Apple Color Emoji", 
+        "Segoe UI Emoji", Times, "Symbola", "Aegyptus", 
+        "Code2000", "Code2001", "Code2002", "Musica", serif, 
+        "LastResort";
+}
+.img-thumbnail{
+    box-shadow: 5px 5px 10px var(--stevia-shadow-color);
+}
 .stevia-color, #siteBranding {
     color: var(--bs-link-hover-color);
 }

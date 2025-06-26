@@ -36,6 +36,7 @@ wget https://raw.githubusercontent.com/openNDS/openNDS/master/community/themespe
 chmod 744 /usr/lib/opennds/theme_voucher.sh
 uci set opennds.@opennds[0].login_option_enabled='3'
 uci set opennds.@opennds[0].themespec_path='/usr/lib/opennds/theme_voucher.sh'
+uci set opennds.@opennds[0].use_outdated_mhd='1'
 uci commit opennds
 service opennds restart
 ```
