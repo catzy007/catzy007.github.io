@@ -70,38 +70,38 @@ Then open VMM and you'll see macOS-Simple-KVM on the list.
 
 Next click `macOS-Simple-KVM` and click `Open`. Then click `Add Hardware` on bottom left
 
-![img](./posts/2019-09-13-running-macos-on-any-linux-machine/2.jpg)
+![img](./posts/2019-09-13-running-macos-on-any-linux-machine/7.jpg)
 
 ::br
 
 Select `Storage` and add the amount of disk you want to have
 
-![img](./posts/2019-09-13-running-macos-on-any-linux-machine/3.jpg)
+![img](./posts/2019-09-13-running-macos-on-any-linux-machine/6.jpg)
 
 ::br
 
 To run it press the `Play Button` then press `Computer Icon` on the left. 
 
-![img](./posts/2019-09-13-running-macos-on-any-linux-machine/4.jpg)
+![img](./posts/2019-09-13-running-macos-on-any-linux-machine/2.jpg)
 
 ::br
 
 In the clover boot menu, press enter and the system will boot into `MacOS Utilities`
 
-![img](./posts/2019-09-13-running-macos-on-any-linux-machine/5.jpg)
+![img](./posts/2019-09-13-running-macos-on-any-linux-machine/3.jpg)
 
 ::br
 
 First select `Disk Utility` then erase partition you want to use
 
-![img](./posts/2019-09-13-running-macos-on-any-linux-machine/6.jpg)
+![img](./posts/2019-09-13-running-macos-on-any-linux-machine/4.jpg)
 
 ::br
 
 Next go to `Reinstall macOS`, Continue, Select partition, Set username, Password, etc. 
 This will take some time because the installer is downloading some files too.
 
-![img](./posts/2019-09-13-running-macos-on-any-linux-machine/7.jpg)
+![img](./posts/2019-09-13-running-macos-on-any-linux-machine/5.jpg)
 
 ::br
 

@@ -1,4 +1,4 @@
 # catzy007.github.io
 ```
-docker run -d --restart=always -v "$(pwd):/usr/local/apache2/htdocs/" -p 8080:80 httpd
+docker run --rm -d -v "$(pwd):/usr/share/caddy" -p 8888:80 caddy
 ```
