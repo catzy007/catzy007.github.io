@@ -77,17 +77,19 @@ MAINTAINER multiverse.bagussaputra@gmail.com
 
 ENV PIP_BREAK_SYSTEM_PACKAGES=1
 RUN apt-get update && apt-get upgrade -y &&\
-   apt-get install -y nano git wget lsb-release software-properties-common gnupg cmake build-essential
+    apt-get install -y nano git wget lsb-release software-properties-common gnupg cmake build-essential
 
-RUN wget -O - https://apt.llvm.org/llvm.sh | bash -s 18
-ENV CC=clang-18
-ENV CXX=clang++-18
+ENV CLANGVER=18
+RUN wget -O - https://apt.llvm.org/llvm.sh | bash -s ${CLANGVER}
+RUN update-alternatives --install /usr/bin/clang clang /usr/bin/clang-${CLANGVER} 100 &&\
+    update-alternatives --install /usr/bin/clang++ clang++ /usr/bin/clang++-${CLANGVER} 100
 
 WORKDIR /home/bitnet
 
 RUN git clone --recursive https://github.com/microsoft/BitNet.git /home/bitnet
-RUN pip install -r requirements.txt
-RUN huggingface-cli download microsoft/BitNet-b1.58-2B-4T-gguf --local-dir models/BitNet-b1.58-2B-4T
+RUN python -m pip install -U pip &&\
+    pip install -r requirements.txt
+RUN hf download microsoft/BitNet-b1.58-2B-4T-gguf --local-dir models/BitNet-b1.58-2B-4T
 
 RUN python setup_env.py -md models/BitNet-b1.58-2B-4T -q i2_s
 
