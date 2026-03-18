@@ -2,8 +2,8 @@
 _Wednesday, May 18, 2026_
 
 Today's weather is nice, a clear blue sky with kind winds, plants blooming 
-birds chirping as if gossiping about the storm that may come from across the 
-hemisphere. What a good day to do a BIOS modding.
+birds chirping as if they are gossiping about the storm that may come from 
+across the hemisphere. What a good day to do a BIOS modding.
 
 There are a few reasons to do a BIOS modding such as unlock turbo frequency 
 of a CPU, unlock hidden menu, disable BIOS lock and so on. What I am interested 
@@ -31,12 +31,12 @@ As for software required is
 * CoffeeTime 0.99
 * UEFItool (optional)
 
-For the device itself simply unplug all cable connected to the board, Take GPU, DISK, 
+For the device itself simply unplug all cable connected to the board, Take GPU, HDD, 
 SSD, RAM and CMOS battery out.
 
 **Backup**
 
-First, locate the BIOS chip in the board, look for black square IC with 6 legs around CMOS 
+First, locate the BIOS chip in the board, look for black square IC with 8 legs around CMOS 
 battery take note of the marking and google them, if it comes out as 8 MB or more SPI Flash 
 then it could be the right one.
 
@@ -44,7 +44,7 @@ Then put Flash Clip into the BIOS chip with RED wire or PIN-1 correspond to PIN-
 Flash chip, usually it is marked with a small indentation. Make sure the connection is solid 
 and all the PIN is connected with the clip.
 
-Next run flashrom if the connection is good it should output similar to this.
+Next, run flashrom if the connection is good it should output similar to this.
 
 ![img_md](./posts/2026-03-18-bios-modding-lenovo-m900/03.jpg)
 
@@ -52,8 +52,8 @@ Then make a backup of the BIOS, in my case I also need to specify the chip.
 
 ![img_md](./posts/2026-03-18-bios-modding-lenovo-m900/04.jpg)
 
-Make at least 3 copy of the BIOS image, and run md5sum to make sure all copy is match. Save 
-BIOS image somewhere safe, upload to Cloud storage if necessary.
+Make at least 3 copy of the BIOS image, and run `md5sum` to make sure all copy is match. Keep 
+the BIOS image somewhere safe, upload to Cloud storage if necessary.
 
 ![img_md](./posts/2026-03-18-bios-modding-lenovo-m900/05.jpg)
 
@@ -67,15 +67,15 @@ BIOS image. In my case I also need to Uncheck NVRAM.
 ![img_md](./posts/2026-03-18-bios-modding-lenovo-m900/06.jpg)
 
 In my case, I upgrade ME to version 11.8 Corporate and set it to Disabled, I also upgrade 
-VBIOS and GOP alongside adding few patches and fix. As for Microcode I added Skylake, Kabylake, 
-4 core and 6 core Coffeelake.
+VBIOS and GOP alongside adding a few patches and fixes. As for Microcode I added Skylake, 
+Kabylake, 4 core and 6 core Coffeelake.
 
 Next simply save the modded BIOS image.
 
 **Writing BIOS**
 
-Before writing the BIOS image, make sure that the connection is good. Then simply write the BIOS image 
-make sure no error occurred, and the flash is verified.
+Before writing the BIOS image, make sure that the connection is good. Then simply write 
+the BIOS image make sure no error occurred, and the flash is verified.
 
 ![img_md](./posts/2026-03-18-bios-modding-lenovo-m900/07.jpg)
 
@@ -83,7 +83,7 @@ make sure no error occurred, and the flash is verified.
 
 After that put everything back together with original CPU installed. Then pray and hope it boots. 
 In my case everything works normally until I swap the CPU with I3-7100 Kabylake it just output a 
-black screen. After moment of debugging I came to the conclusion that either I held a dead chip 
+black screen. After moment of debugging I came to the conclusion that either I held a bad chip 
 or there is something missing in the BIOS itself. 
 
 Then I remember that I also swap the ME from consumer to corporate version which should be able to 
