@@ -87,5 +87,5 @@ black screen. After moment of debugging I came to the conclusion that either I h
 or there is something missing in the BIOS itself. 
 
 Then I remember that I also swap the ME from consumer to corporate version which should be able to 
-boot Xeon based CPUs. I simply took the CPU from my server which is E3-1245v5 and lo and behold it 
+boot Xeon based CPUs. I simply took the CPU from my server which is E3-1245v5 then lo and behold it 
 boots. Next I grab E3-1240v5 for 14 USD which is I7 Skylake without the iGPU and that pretty much it.
