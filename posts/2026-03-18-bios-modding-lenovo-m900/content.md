@@ -1,5 +1,5 @@
 #### BIOS Modding Lenovo M900
-_Wednesday, May 18, 2026_
+_Wednesday, March 18, 2026_
 
 Today's weather is nice, a clear blue sky with kind winds, plants blooming 
 birds chirping as if they are gossiping about the storm that may come from 
@@ -36,9 +36,9 @@ SSD, RAM and CMOS battery out.
 
 **Backup**
 
-First, locate the BIOS chip in the board, look for black square IC with 8 legs around CMOS 
-battery take note of the marking and google them, if it comes out as 8 MB or more SPI Flash 
-then it could be the right one.
+First, locate the BIOS chip in the board, look for black square IC with 8 legs around the 
+CMOS battery take note of the marking and google them, if it comes out as 8 MB or more SPI 
+Flash then it could be the right one.
 
 Then put Flash Clip into the BIOS chip with RED wire or PIN-1 correspond to PIN-1 on the 
 Flash chip, usually it is marked with a small indentation. Make sure the connection is solid 
@@ -82,10 +82,10 @@ the BIOS image make sure no error occurred, and the flash is verified.
 **Moment of truth**
 
 After that put everything back together with original CPU installed. Then pray and hope it boots. 
-In my case everything works normally until I swap the CPU with I3-7100 Kabylake it just output a 
-black screen. After moment of debugging I came to the conclusion that either I held a bad chip 
+In my case everything works normally until I swap the CPU with I3-7100 Kabylake which just output a 
+black screen. After a moment of debugging I came to the conclusion that either I held a bad chip 
 or there is something missing in the BIOS itself. 
 
 Then I remember that I also swap the ME from consumer to corporate version which should be able to 
-boot Xeon based CPUs. I simply took the CPU from my server which is E3-1245v5 then lo and behold it 
-boots. Next I grab E3-1240v5 for 14 USD which is I7 Skylake without the iGPU and that pretty much it.
+boot Xeon based CPUs. I simply took the CPU from my server which is E3-1245v5, lo and behold it boots. 
+Next I grab E3-1240v5 for 14 USD which is I7 Skylake without the iGPU and that pretty much it.
