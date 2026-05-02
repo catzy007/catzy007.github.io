@@ -1,15 +1,10 @@
 @media (prefers-color-scheme: dark) { 
     :root {
-        --bs-body-bg: #1a1814;
-        --bs-secondary-bg: rgba(26, 24, 20, 0.92);
-        --bs-tertiary-bg: #3e3834;
-        --bs-text-emphasis: #ebdecb;
-        --stevia-shadow-color: rgba(175, 160, 144, 0.1);
-        --stevia-shadow-hover: rgba(200, 180, 150, 0.18);
-        --bs-link-color: #cbbbaa;
-        --bs-link-hover-color: #d4bfaa;
-        --stevia-search-border-color: #4a4642;
-        --stevia-search-shadow-color: rgba(200, 180, 150, 0.12);
+        --bs-body-bg: #1a1e29;
+        --bs-secondary-bg: #1b1f22;
+        --bs-tertiary-bg: #22272d;
+        --bs-text-emphasis: #fff;
+        --bs-link-hover-color: #8bb9fe;
         --stevia-container-height: 75vh;
         --stevia-container-height-mobile: 25vh;
     }
@@ -70,7 +65,7 @@
         color: var(--bs-link-hover-color);
     }
     #siteBranding:hover {
-        color: var(--bs-link-color);
+        color: var(--bs-link-hover-color);
     }
     .stevia-hidden {
         display: none;
@@ -80,6 +75,7 @@
     .stevia-container-header {
         margin-top: 2%;
         padding: 2% 10% 0% 10%;
+        /* border-radius: var(--bs-border-radius); */
         border-radius: var(--bs-border-radius) var(--bs-border-radius) 0px 0px;
         border-top: thin solid var(--bs-border-color);
         border-left: thin solid var(--bs-border-color);
@@ -155,7 +151,7 @@
     
     /* Navbar */
     .stevia-navbar {
-        box-shadow: 5px 5px 10px var(--stevia-shadow-color);
+        box-shadow: none;
         padding-top: 0;
         padding-bottom: 0;
         border-radius: var(--bs-border-radius);
@@ -171,8 +167,8 @@
     }
     .stevia-navbar-ul > li > a:hover,
     .stevia-navbar-ul > li > a:focus {
-        color: var(--bs-link-color);
-        background: var(--stevia-shadow-hover);
+        color: var(--bs-link-hover-color);
+        background: var(--bs-secondary-bg);
     }
     .navbar-toggler, .navbar-toggler:focus { 
         box-shadow: none;
@@ -181,18 +177,14 @@
     
     /* search box */
     .stevia-container-search {
-        box-shadow: 5px 5px 10px var(--stevia-shadow-color);
+        box-shadow: none;
         border-radius: var(--bs-border-radius);
         border: thin solid var(--bs-border-color);
     }
     .stevia-container-search:has(input:focus),
     .stevia-container-search:has(button:active) {
-        box-shadow: 0 0 0 .25rem var(--stevia-search-shadow-color);
+        box-shadow: none;
         border: thin solid var(--bs-link-hover-color);
-        color: var(--bs-body-color);
-        background-color: var(--bs-body-bg);
-        border-color: var(--stevia-search-border-color);
-        outline: 0;
     }
     .stevia-container-search button {
         font-size: large;
@@ -202,7 +194,7 @@
         border: none;
     }
     .stevia-container-search button:hover {
-        background: var(--stevia-shadow-hover);
+        background: var(--bs-secondary-bg);
     }
     .stevia-container-search button span {
         color: var(--bs-link-hover-color);
@@ -223,7 +215,7 @@
     /* category */
     .stevia-category > p > a { 
         text-decoration: none;
-        color: var(--bs-link-color)
+        color: var(--bs-text-emphasis)
     }
     .stevia-category > p > a:hover {
         color: var(--bs-link-hover-color)
@@ -232,7 +224,7 @@
     /* featured and post card */
     .stevia-featured-card, .stevia-post-card {
         text-decoration: none;
-        box-shadow: 5px 5px 10px var(--stevia-shadow-color);
+        box-shadow: none;
         padding: 1em;
         margin-bottom: 2em;
         border-radius: var(--bs-border-radius);
@@ -241,7 +233,7 @@
         background-color: var(--bs-body-bg);
     }
     .stevia-featured-card:hover, .stevia-post-card:hover{
-        box-shadow: 5px 5px 10px var(--stevia-shadow-color);
+        box-shadow: none;
         border-radius: var(--bs-border-radius);
         border: thin solid var(--bs-border-color);
         color: var(--bs-link-hover-color);
@@ -258,7 +250,7 @@
     }
 }
 
-@media (prefers-color-scheme: dark) { 
+@media (prefers-color-scheme: dark) {
     iframe[src*="disqus.com"] {
       color-scheme: light;
     }
