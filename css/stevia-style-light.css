@@ -1,14 +1,14 @@
 :root {
-    --bs-body-bg: #f9f8f4;
-    --bs-secondary-bg: rgba(249, 248, 244, 0.92);
-    --bs-tertiary-bg: #3e3834;
-    --bs-text-emphasis: #a69d8b;
-    --stevia-shadow-color: rgba(175, 160, 144, 0.1);
-    --stevia-shadow-hover: rgba(200, 180, 150, 0.18);
-    --bs-link-color: #7b736c;
-    --bs-link-hover-color: #91867a;
-    --stevia-search-border-color: #4a4642;
-    --stevia-search-shadow-color: rgba(200, 180, 150, 0.12);
+    --bs-body-bg: #fff;
+    --bs-secondary-bg: rgba(253, 253, 253, 0.95);
+    --bs-tertiary-bg: #55688A;
+    --bs-text-emphasis: #55688A;
+    --stevia-shadow-color: #ddd;
+    --stevia-shadow-hover: #E7E7E7;
+    --bs-link-color: #283040;
+    --bs-link-hover-color: #55688A;
+    --stevia-search-border-color: #86b7fe;
+    --stevia-search-shadow-color: rgba(13,110,253,.25);
     --stevia-container-height: 75vh;
     --stevia-container-height-mobile: 25vh;
 }
